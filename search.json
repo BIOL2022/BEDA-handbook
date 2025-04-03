@@ -1,22 +1,8 @@
 [
   {
-    "objectID": "02-assessments/index.html",
-    "href": "02-assessments/index.html",
-    "title": "Assessments",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "canvas.html#section",
     "href": "canvas.html#section",
     "title": "Welcome to BIOL2022",
-    "section": "",
-    "text": "Thank you for joining Biology Experimental Design and Analysis, also known as BEDA (🐝-da). This Unit aims to help you learn the core skills in biology that underpins how research is designed, analysed and interpreted. Click on the links below for more information.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote: This entire handbook is also available online.\n\n\nMade with ❤️ by Januar (Unit Coordinator), Clare (Lecturer) and Mat (Lecturer).\nUnless otherwise indicated, the content of this handbook is licensed under a CC-BY 4.0 License. The images on this page are licensed through Adobe Stock and are protected by Adobe’s copyright. These images may not be reproduced, distributed, or used without proper licensing from Adobe."
-  },
-  {
-    "objectID": "index.html#section",
-    "href": "index.html#section",
-    "title": "BIOL2022 Unit Handbook",
     "section": "",
     "text": "Thank you for joining Biology Experimental Design and Analysis, also known as BEDA (🐝-da). This Unit aims to help you learn the core skills in biology that underpins how research is designed, analysed and interpreted. Click on the links below for more information.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote: This entire handbook is also available online.\n\n\nMade with ❤️ by Januar (Unit Coordinator), Clare (Lecturer) and Mat (Lecturer).\nUnless otherwise indicated, the content of this handbook is licensed under a CC-BY 4.0 License. The images on this page are licensed through Adobe Stock and are protected by Adobe’s copyright. These images may not be reproduced, distributed, or used without proper licensing from Adobe."
   },
@@ -28,13 +14,6 @@
     "text": "Two of the twelve apostles at sunrise from Gibsons beach, Great Ocean Road, Victoria, Australia. By Michael Evans.\n\n\n\n\n\nAustralian white tree frog on leaves, dumpy frog on branch, animal closeup, amphibian closeup. By kuritafsheen.\n\n\n\n\n\nGoanna in desert. By moodboard.\n\n\n\n\n\nAerial View of Australian Beaches and Coastline of the Great Ocean Road. By Judah.\n\n\n\n\n\nTiger Quoll. By Craig."
   },
   {
-    "objectID": "content.html",
-    "href": "content.html",
-    "title": "Lectures & practicals",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "BIOL2022",
@@ -42,9 +21,30 @@
     "text": "Many students think of BEDA as yet another statistics unit. This is not quite true. Unlike most other statistical units, BEDA focuses on the practical aspects of data analysis. We assume that you already have a basic understanding of statistical concepts, and we build on that knowledge, focusing on the how and why of statistical methods:\n\nHow do we design a good study?\nWhy does study design make a difference in the results we get?\nWhy is it important to understand the context in which we use statistical tests?\n\nImportantly, attending labs is crucial to your learning as most of the data we use are collected by you – please do not skip any of them!"
   },
   {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "BIOL2022 Unit Handbook",
+    "section": "",
+    "text": "Thank you for joining Biology Experimental Design and Analysis, also known as BEDA (🐝-da). This Unit aims to help you learn the core skills in biology that underpins how research is designed, analysed and interpreted. Click on the links below for more information.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote: This entire handbook is also available online.\n\n\nMade with ❤️ by Januar (Unit Coordinator), Clare (Lecturer) and Mat (Lecturer).\nUnless otherwise indicated, the content of this handbook is licensed under a CC-BY 4.0 License. The images on this page are licensed through Adobe Stock and are protected by Adobe’s copyright. These images may not be reproduced, distributed, or used without proper licensing from Adobe."
+  },
+  {
     "objectID": "help.html",
     "href": "help.html",
     "title": "Help an support",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "02-assessments/index.html",
+    "href": "02-assessments/index.html",
+    "title": "Assessments",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "content.html",
+    "href": "content.html",
+    "title": "Lectures & practicals",
     "section": "",
     "text": "About this site"
   }
