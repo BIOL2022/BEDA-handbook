@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  title: "BIOL2022"
+  navbar:
+    left:
+      - icon: house-fill
+        href: index.qmd
+        text: " "
+      - href: about.qmd
+        text: Unit information
+      - href: 02-assessments/index.qmd
+        text: Assessments
+      - href: content.qmd
+        text: Lectures & Practicals
+      - href: cheatsheets.qmd
+        text: Cheatsheets
+    right:
+      - href: help.qmd
+        text: Contact
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    page-layout: full
+
+execute:
+  freeze: auto

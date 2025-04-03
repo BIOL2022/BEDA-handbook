@@ -1,0 +1,70 @@
+# R and RStudio files
+# ------------------
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.Ruserdata
+
+# RStudio project files
+.Rproj.user/
+
+# Environment variables
+.Renviron
+
+# OAuth2 token
+.httr-oauth
+
+# R Package Development
+# -------------------
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# Example code in package build process
+*-Ex.R
+
+# R Markdown and knitr
+# -------------------
+*_cache/
+/cache/
+
+# Quarto files
+# ------------
+/.quarto/
+_book/
+_site/
+
+# Temporary files
+# --------------
+# Quarto temporary files
+*.utf8.md
+*.knit.md
+*.tex
+*.toc
+*.aux
+*.log
+*_files/
+
+# Project specific files
+# ---------------------
+_solution/
+assets/raw/
+ENVX1002-handbook/
+
+# Memory bank files
+# ----------------
+.roomodes
+.roo/
+memory_bank/
+.cline*
+.clinerules*
+
+# System files
+# -----------
+# macOS
+.DS_Store

@@ -1,0 +1,19 @@
+---
+title: "BIOL2022 Unit Handbook"
+author:
+  - Januar Harianto (Coordinator)
+  - Clare McArthur
+  - Mathew Crowther 
+date: last-modified # today | last-modified
+date-format: "MMM YYYY" # see https://momentjs.com/docs/#/displaying/format/
+navbar: true
+sidebar: false
+toc: false
+format: 
+  html:
+    page-layout: full
+editor:
+  render-on-save: true
+---
+
+{{< include _frontpage.qmd >}}

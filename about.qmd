@@ -1,0 +1,14 @@
+---
+title: " "
+editor:
+  render-on-save: true
+---
+
+
+Many students think of BEDA as yet another statistics unit. This is not quite true. Unlike most other statistical units, BEDA focuses on the **practical** aspects of data analysis. We assume that you already have a basic understanding of statistical concepts, and we build on that knowledge, focusing on the **how** and **why** of statistical methods:
+
+- *How* do we design a good study?
+- *Why* does study design make a difference in the results we get?
+- *Why* is it important to understand the context in which we use statistical tests?
+
+Importantly, **attending labs is crucial to your learning** as most of the data we use are collected by you – please do not skip any of them!

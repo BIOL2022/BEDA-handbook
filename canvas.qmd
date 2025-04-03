@@ -1,0 +1,13 @@
+---
+title: "Welcome to BIOL2022"
+toc: false
+navbar: false
+sidebar: false
+format: 
+  html:
+    page-layout: full
+editor:
+  render-on-save: true
+---
+
+{{< include _frontpage.qmd >}}

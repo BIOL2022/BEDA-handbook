@@ -1,0 +1,17 @@
+---
+title: Image Attributions
+lightbox: auto
+---
+
+![Two of the twelve apostles at sunrise from Gibsons beach, Great Ocean Road, Victoria, Australia. By Michael Evans.](assets/images/apostles.jpeg){group="my-gallery"}
+
+
+![Australian white tree frog on leaves, dumpy frog on branch, animal closeup, amphibian closeup. By kuritafsheen.](assets/images/treefrog.jpeg){group="my-gallery"}
+
+
+![Goanna in desert. By moodboard.](assets/images/goanna.jpeg){group="my-gallery"}
+
+
+![Aerial View of Australian Beaches and Coastline of the Great Ocean Road. By Judah.](assets/images/gor.jpeg){group="my-gallery"}
+
+![Tiger Quoll. By Craig.](assets/images/tigerquoll.jpeg){group="my-gallery"}
