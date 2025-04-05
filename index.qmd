@@ -37,7 +37,7 @@ Thank you for joining Biology Experimental Design and Analysis, also known as **
 
 ::: {.g-col-12 .g-col-md-3}
 
-[![](assets/images/treefrog.png)](02-assessments/index.qmd)
+[![](assets/images/treefrog.png)](02-assessments/assessments.qmd)
 
 :::
 
