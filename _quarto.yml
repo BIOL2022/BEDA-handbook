@@ -10,14 +10,14 @@ website:
         text: " "
       - href: about.qmd
         text: Unit information
-      - href: 02-assessments/assessments.qmd
+      - href: 02-assessments/index.qmd
         text: Assessments
-      - href: content.qmd
+      - href: 03-lectures_pracs/index.qmd
         text: Lectures & Practicals
       - href: cheatsheets.qmd
         text: Cheatsheets
     right:
-      - href: help.qmd
+      - href: 04-help/index.qmd
         text: Contact
 
 format:

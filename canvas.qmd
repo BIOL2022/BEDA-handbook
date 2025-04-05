@@ -31,19 +31,19 @@ Thank you for joining Biology Experimental Design and Analysis, also known as **
 
 ::: {.g-col-12 .g-col-md-3}
 
-[![](assets/images/treefrog.png)](02-assessments/assessments.qmd){target="_blank"}
+[![](assets/images/treefrog.png)](02-assessments/index.qmd){target="_blank"}
 
 :::
 
 ::: {.g-col-12 .g-col-md-3}
 
-[![](assets/images/tiger_quoll.png)](content.qmd){target="_blank"}
+[![](assets/images/tiger_quoll.png)](03-lectures_pracs/index.qmd){target="_blank"}
 
 :::
 
 ::: {.g-col-12 .g-col-md-3}
 
-[![](assets/images/black_cockatoo.png)](help.qmd){target="_blank"}
+[![](assets/images/black_cockatoo.png)](04-help/index.qmd){target="_blank"}
 
 :::
 
