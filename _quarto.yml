@@ -10,7 +10,7 @@ website:
         text: " "
       - href: about.qmd
         text: Unit information
-      - href: 02-assessments/index.qmd
+      - href: 02-assessments/assessments.qmd
         text: Assessments
       - href: content.qmd
         text: Lectures & Practicals
