@@ -16,23 +16,16 @@ editor:
   render-on-save: true
 ---
 
-
-
 ![](assets/images/banner02.png)
 
-## {style="text-align: center;"}
-::: {style="color: black;"}
+::: {style="text-align: center; color: black;"}
 Thank you for joining Biology Experimental Design and Analysis, also known as **BEDA (🐝-da)**. This Unit aims to help you learn the core skills in biology that underpins how research is designed, analysed and interpreted. Click on the links below for more information.
-:::
-
-
 
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-3}
 
 [![](assets/images/goanna.png)](about.qmd)
-
 :::
 
 ::: {.g-col-12 .g-col-md-3}
@@ -43,7 +36,7 @@ Thank you for joining Biology Experimental Design and Analysis, also known as **
 
 ::: {.g-col-12 .g-col-md-3}
 
-[![](assets/images/tiger_quoll.png)](03-lectures_pracs/index.qmd)
+[![](assets/images/tiger_quoll.png)](schedule.qmd)
 
 :::
 
@@ -52,16 +45,14 @@ Thank you for joining Biology Experimental Design and Analysis, also known as **
 [![](assets/images/black_cockatoo.png)](04-help/index.qmd)
 
 :::
-
 :::
-
-
-
-::: {.small}
 
 -----
 
+::: {.small}
 *Made with ❤️ by Januar (Unit Coordinator), Clare (Lecturer) and Mat (Lecturer).* 
 
-Unless otherwise indicated, the content of this handbook is licensed under a [CC-BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). The images on this page are licensed through Adobe Stock and are protected by Adobe's copyright. These images may **not** be reproduced, distributed, or used without proper licensing from Adobe.
+Unless otherwise indicated, the content of this handbook (whether on Canvas, or on GitHub) is licensed under a [CC-BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). The images on this page are licensed through Adobe Stock and are protected by Adobe's copyright. These images may **not** be reproduced, distributed, or used without proper licensing from Adobe.
+:::
+
 :::
