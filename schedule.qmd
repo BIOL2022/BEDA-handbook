@@ -1,0 +1,137 @@
+---
+title: "Schedule"
+format: 
+  html:
+    page-layout: full
+editor: 
+  render-on-save: true
+---
+
+**You can download the entire set of lecture slides [here](#) as a single ZIP file.** Learn how to uncompress ZIP files on [Windows](https://support.microsoft.com/en-au/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5) or [Mac](https://support.apple.com/en-au/guide/mac-help/mchlp2528/mac).
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+#| eval: true
+
+library(kableExtra)
+library(dplyr)
+library(readr) # For read_csv
+library(tidyr) # For pivot_wider and unnest
+library(purrr) # For map functions if needed for dynamic groups
+
+# Load schedule data from CSV
+schedule_data_raw <- readr::read_csv("assets/schedule_data.csv", show_col_types = FALSE)
+
+# Process the schedule data
+schedule_processed <- schedule_data_raw |>
+  # Create Formatted_Activity_Description from Activity_Description and Activity_Link
+  mutate(
+    Formatted_Activity_Description = ifelse(
+      !is.na(Activity_Link) & nzchar(trimws(Activity_Link)), # Check for non-empty, non-NA link
+      sprintf("[%s](%s)", Activity_Description, Activity_Link),
+      Activity_Description
+    )
+  ) |>
+  group_by(Week_Num, Dates_Str, Module_Num, Module_Title, Activity_Type) |>
+  # Summarise using the new Formatted_Activity_Description
+  summarise(Formatted_Activity_Description = paste(Formatted_Activity_Description, collapse = "<br>"), .groups = "drop") |>
+  pivot_wider(
+    names_from = Activity_Type,
+    values_from = Formatted_Activity_Description, # Use the new formatted column
+    values_fill = list(Formatted_Activity_Description = "") # Fill with the new formatted column
+  ) |>
+  rename(
+    Lecture_Topics = Lecture,
+    Practical_Activities = Practical
+  ) |>
+  mutate(
+    Week = sprintf("**Week %02d** %s", Week_Num, Dates_Str)
+  ) |>
+  arrange(Week_Num) |> # Ensure order for gt table and row grouping
+  select(Week, Lecture_Topics, Practical_Activities, Module_Num, Module_Title) # Keep module info for grouping
+
+# Create and format the table
+library(gt)
+
+# Create the base gt table
+gt_table <- gt(schedule_processed, groupname_col = "Module_Title")
+
+# Dynamically add row groups
+# First, get the unique modules and their corresponding row numbers (based on Week_Num)
+module_info <- schedule_processed |>
+  distinct(Module_Num, Module_Title) |>
+  arrange(Module_Num)
+
+# The gt table is already grouped by Module_Title due to groupname_col = "Module_Title"
+# We just need to ensure the order of these groups if necessary,
+# and the labels are automatically taken from Module_Title.
+# The `row_group_order` function will handle the display order of these groups.
+
+gt_table |>
+  tab_header(
+    title = md("**Lectures & Practicals -- schedule**"),
+    subtitle = md("_2025 Semester 2_")
+  ) |>
+  row_group_order(groups = module_info$Module_Title) |> # Use dynamic module titles for order
+  cols_label(
+    Week = md("**Week**"),
+    Lecture_Topics = md("**Lecture Topics**"),
+    Practical_Activities = md("**Practical Activities**")
+  ) |>
+  cols_align(align = "left", columns = Week) |> # No need for vars() here
+  cols_width(
+    Week ~ pct(20),
+    Lecture_Topics ~ pct(50),
+    Practical_Activities ~ pct(30)
+  ) |>
+  fmt_markdown(columns = c("Week", "Lecture_Topics", "Practical_Activities")) |>
+  # Remove Module_Num and Module_Title from the final displayed table
+  cols_hide(columns = c(Module_Num, Module_Title)) |>
+  tab_options(
+    table.background.color = "#f8fafc",
+    table.border.top.color = "#005A8C",
+    table.border.bottom.color = "#005A8C",
+    heading.background.color = "#005A8C",
+    heading.title.font.size = 24,
+    heading.subtitle.font.size = 16,
+    heading.title.font.weight = "bold",
+    heading.subtitle.font.weight = "normal",
+    row_group.background.color = "#e3eaf2",
+    row_group.font.weight = "bold",
+    row_group.font.size = 16,
+    row_group.border.top.color = "#005A8C",
+    row_group.border.bottom.color = "#005A8C",
+    column_labels.background.color = "#e3eaf2",
+    column_labels.font.weight = "bold",
+    column_labels.font.size = 15,
+    column_labels.border.top.color = "#005A8C",
+    column_labels.border.bottom.color = "#005A8C",
+    data_row.padding = px(8),
+    table.font.size = 14
+  ) |>
+  tab_style(
+    style = cell_text(color = "white"),
+    locations = cells_title(groups = "title")
+  ) |>
+  tab_style(
+    style = cell_text(color = "white"),
+    locations = cells_title(groups = "subtitle")
+  ) |>
+  tab_style(
+    style = cell_text(color = "#005A8C", weight = "bold"),
+    locations = cells_column_labels(everything())
+  ) |>
+  tab_style(
+    style = cell_fill(color = "#f0f4f8"),
+    locations = cells_body(rows = seq(1, nrow(schedule_processed), 2))
+  ) |>
+  tab_style(
+    style = cell_text(size = 12),
+    locations = cells_body()
+  )
+
+```
+
+
