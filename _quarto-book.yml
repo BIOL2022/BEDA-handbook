@@ -1,0 +1,31 @@
+project:
+  type: book
+  output-dir: _pdf
+
+date: today
+date-format: "[Semester 2,] YYYY"
+
+
+book:
+  title: Biology Experimental Design and Analysis
+  subtitle: BIOL2022 Unit Manual
+  author:
+    - Dr. Januar Harianto
+    - Prof. Clare McArthur
+    - Prof. Matthew Crowther
+  date: today
+  # site-url: https://biol2022.github.io/BIOL2022-unit-manual/
+  sidebar:
+    # background: "#EEE5E9"
+    # logo: assets/bedalogo.svg
+    search: true
+    style: floating
+  chapters:
+    - index.qmd
+
+format:
+  pdf: 
+    toc: true
+
+execute:
+  freeze: auto

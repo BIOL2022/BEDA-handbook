@@ -9,13 +9,13 @@ website:
         href: index.qmd
         text: " "
       - href: about.qmd
-        text: Unit information
+        text: "Unit information"
       - href: 02-assessments/index.qmd
-        text: Assessments
-      - href: 03-lectures_pracs/index.qmd
-        text: Lectures & Practicals
+        text: "Assessments"
+      - href: schedule.qmd
+        text: "Schedule"
       - href: cheatsheets.qmd
-        text: Cheatsheets
+        text: "Cheatsheets"
     right:
       - href: 04-help/index.qmd
         text: Contact
@@ -25,7 +25,6 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-    page-layout: full
 
 execute:
   freeze: auto
