@@ -1,8 +1,5 @@
 ---
 title: "Schedule"
-format: 
-  html:
-    page-layout: full
 editor: 
   render-on-save: true
 ---
@@ -10,10 +7,7 @@ editor:
 **You can download the entire set of lecture slides [here](#) as a single ZIP file.** Learn how to uncompress ZIP files on [Windows](https://support.microsoft.com/en-au/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5) or [Mac](https://support.apple.com/en-au/guide/mac-help/mchlp2528/mac).
 
 ```{r}
-#| warning: false
-#| message: false
-#| echo: false
-#| eval: true
+#| include: false
 
 library(kableExtra)
 library(dplyr)
@@ -55,6 +49,10 @@ schedule_processed <- schedule_data_raw |>
 # Create and format the table
 library(gt)
 
+```
+
+```{r}
+#| echo: false
 # Create the base gt table
 gt_table <- gt(schedule_processed, groupname_col = "Module_Title")
 
