@@ -1,0 +1,62 @@
+---
+title: "Report 1: Manipulative Experiment"
+---
+
+## 1. Overview
+*   **Brief Description:** You will conduct a manipulative experiment and write a scientific report for it.
+*   **Weighting:** 25%
+*   **Due Date & Time:** [Insert Specific Due Date and Time, e.g., Friday, Week 8, 11:59 PM AEST - Refer to assessments_data.csv for exact date]
+*   **Learning Outcomes Addressed:**
+    *   [Insert Learning Outcome 1 related to experimental design/execution]
+    *   [Insert Learning Outcome 2 related to scientific report writing]
+    *   [Insert Learning Outcome 3 related to data analysis/interpretation]
+    *   [Add more as needed]
+
+## 2. Task Details & Instructions
+*   **Detailed Description:** The detailed instructions for the manipulative experiment, including background, objectives, procedure, and data collection methods, will be provided here or linked from here. Please read them carefully, as the original instructions were noted as comprehensive.
+*   **Key Deliverables:**
+    *   [e.g., A scientific report formatted according to the specified guidelines.]
+    *   [e.g., Any raw data files or analysis scripts if required.]
+
+## 3. Submission Guidelines
+*   **Method:** [Specify submission method, e.g., Submit as a PDF via the Turnitin link on Canvas under 'Report 1 Submission'.]
+*   **Format Requirements:**
+    *   [Specify format, e.g., PDF document.]
+    *   [Specify word/page limit, e.g., Maximum 2000 words (excluding references and appendices).]
+    *   [Specify referencing style, e.g., APA 7th Edition.]
+    *   [Specify font, spacing, etc., e.g., Times New Roman 12pt, double-spaced.]
+*   **File Naming Convention (if any):** [Specify, e.g., StudentID_Report1.pdf]
+*   **Group/Individual:** [Specify, e.g., Individual task.]
+
+## 4. Marking Criteria & Rubric
+*   **Marking Summary:** This assessment is worth 25% of your final grade.
+*   **Detailed Rubric:** A detailed marking rubric outlining the criteria for each section of the report (e.g., Introduction, Methods, Results, Discussion, Presentation) and the marks allocated will be provided here or linked directly. Please review it carefully to understand how your work will be assessed, as the original marking criteria were noted as comprehensive.
+    *   [Example placeholder structure for rubric items:]
+    *   **Introduction ([X] marks):** [Criteria for a good introduction]
+    *   **Methods ([Y] marks):** [Criteria for methods section]
+    *   **Results ([Z] marks):** [Criteria for results section]
+    *   **Discussion ([A] marks):** [Criteria for discussion section]
+    *   **Clarity, Referencing, and Presentation ([B] marks):** [Criteria for overall quality]
+
+## 5. Resources & Support
+*   **Relevant Materials:**
+    *   [Link to experimental protocol/instructions if separate]
+    *   [Link to relevant lecture notes on experimental design, report writing, statistical analysis]
+    *   [Link to example reports if available and appropriate]
+    *   [Link to any datasets or software guides needed]
+*   **Support Channels:**
+    *   [Specify support, e.g., Attend specific Q&A sessions for Report 1.]
+    *   [e.g., Post questions on the 'Report 1' discussion forum on Canvas.]
+    *   [e.g., Consult with your tutor during practical sessions.]
+
+## 6. Policies
+*   **Late Submissions:** [State the policy clearly, e.g., "Late submissions will be penalised by a deduction of 5% of the maximum possible mark for each calendar day or part thereof that the assessment is overdue, up to a maximum of 5 days. Submissions more than 5 days late will receive a mark of zero."]
+*   **Extensions:** [Explain the process, e.g., "Requests for extensions must be made via the formal Special Consideration process. Refer to the Unit of Study Outline for details."]
+*   **Academic Integrity:** [Include a standard reminder, e.g., "This report must be your own individual work. All sources must be appropriately cited. Please familiarize yourself with the University's Academic Integrity Policy: [Link to University Policy]."]
+*   **Resubmission Policy (if any):** [State if applicable, e.g., "Resubmissions are not permitted for this assessment."]
+
+## 7. Estimated Time Commitment
+*   [Provide a guideline, e.g., "It is estimated that this assessment will require approximately [e.g., 15-20] hours of work, including conducting the experiment, analysing data, and writing the report."]
+
+## 8. Feedback
+*   **How and When:** [Explain, e.g., "Feedback, including a marked rubric and comments, will be provided via Canvas within [e.g., three] weeks of the submission deadline."]

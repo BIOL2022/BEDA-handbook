@@ -1,0 +1,47 @@
+---
+title: "Evaluation Quiz (Module 1)"
+---
+
+## 1. Overview
+*   **Brief Description:** This is an open-book, multiple-choice quiz covering the content of Module 1. The goal is to check your understanding of key concepts before moving to Module 2.
+*   **Weighting:** 10%
+*   **Availability Window:** [Specify start and end dates/times for the two-week completion period, e.g., Opens: Monday, Week 4, 9:00 AM AEST; Closes: Friday, Week 5, 11:59 PM AEST - Refer to assessments_data.csv or unit schedule for exact dates]
+*   **Learning Outcomes Addressed:**
+    *   [Insert Learning Outcomes related to Module 1 content]
+    *   [Add more as needed]
+
+## 2. Task Details & Instructions
+*   **Quiz Format:** Open-book, multiple-choice quiz.
+*   **Content Covered:** All content from Module 1.
+*   **Number of Attempts:** Two (2) attempts. The highest score will be recorded.
+*   **Time Limit (per attempt):** [Specify time limit if any, e.g., 60 minutes per attempt]
+*   **Accessing the Quiz:** [Specify how/where to access the quiz, e.g., The quiz can be accessed via the 'Quizzes' section on Canvas.]
+*   **Purpose:** To help you evaluate your understanding of Module 1 concepts and prepare for subsequent modules. You have two weeks to complete it, allowing time to review between attempts.
+
+## 3. Submission Guidelines
+*   **Method:** [e.g., Quiz completed and submitted directly within Canvas.]
+*   **Saving Answers:** [Specify if answers can be saved and returned to, or if it must be completed in one sitting per attempt.]
+*   **Technical Issues:** [Provide contact or instructions for technical difficulties during the quiz.]
+
+## 4. Marking Criteria & Rubric
+*   **Marking Summary:** This quiz is worth 10% of your final grade. Marks are based on the number of correctly answered multiple-choice questions. Your highest score from the two attempts will be taken.
+*   **Detailed Rubric:** [Typically not applicable for MCQs in this format, but specify if there's any variation, e.g., "Each question is worth [X] marks. No partial marks for individual questions."]
+
+## 5. Resources & Support
+*   **Relevant Materials:**
+    *   All lecture notes, readings, and resources from Module 1.
+    *   [Link to any practice quizzes or self-assessment tools if available]
+*   **Support Channels:**
+    *   [Specify support, e.g., If you have questions about Module 1 content, please use the 'Module 1 Discussion Forum' on Canvas before attempting the quiz.]
+
+## 6. Policies
+*   **Late Submissions/Attempts:** The quiz must be completed within the specified two-week window. No attempts will be possible after the closing date/time. Ensure you start your attempts well before the deadline to avoid technical issues.
+*   **Extensions:** [Explain the process, e.g., "Extensions are generally not granted for online quizzes with a long availability window unless there are documented exceptional circumstances. Refer to the Unit of Study Outline for Special Consideration procedures."]
+*   **Academic Integrity:** [Include a standard reminder, e.g., "While this is an open-book quiz, your answers must be your own individual work. Do not collaborate with other students during your attempts. Please familiarize yourself with the University's Academic Integrity Policy: [Link to University Policy]."]
+*   **Resubmission Policy (if any):** Not applicable (covered by two attempts).
+
+## 7. Estimated Time Commitment
+*   [Provide a guideline, e.g., "Allow approximately [e.g., 1-2 hours] per attempt, including review time if you plan to use both attempts strategically."]
+
+## 8. Feedback
+*   **How and When:** [Explain, e.g., "Your score will be available immediately after each attempt. Correct answers and further feedback [will/will not] be released [specify when, e.g., after the quiz window closes for all students]."]
