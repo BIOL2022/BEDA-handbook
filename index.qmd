@@ -1,56 +1,116 @@
 ---
-title: "BIOL2022 Unit Handbook"
+title: "Welcome to the BEDA Handbook"
 author:
   - Januar Harianto (Coordinator)
   - Clare McArthur
   - Mathew Crowther 
 date: last-modified # today | last-modified
-date-format: "MMM YYYY" # see https://momentjs.com/docs/#/displaying/format/
+date-format: "[Semester 2, ]YYYY" # see https://momentjs.com/docs/#/displaying/format/
 navbar: true
-sidebar: false
+sidebar: true
 toc: false
-format: 
-  html:
-    page-layout: full
+format: html
 editor:
   render-on-save: true
 ---
 
 ![](assets/images/banner02.png)
 
-::: {style="text-align: center; color: black;"}
-Thank you for joining Biology Experimental Design and Analysis, also known as **BEDA (🐝-da)**. This Unit aims to help you learn the core skills in biology that underpins how research is designed, analysed and interpreted. Click on the links below for more information.
+## Welcome!
 
+> *BEDA is the Unit of Study I wish had been available to me as an undergraduate. My goal is to create and share that experience with you.*  
+> — **Januar**
+
+
+Thank you for joining BIOL202 Biology Experimental Design and Analysis, also known as **BEDA (🐝-da)**. This unit is a second-year core Biology unit taught at the University of Sydney and is designed to help you develop essential skills in biology, focusing on how research is planned, analysed, and understood. Unlike most statistics courses, BEDA emphasises the **practical/applied** side of data analysis. We expect you [already know the basics of statistics](#) so we concentrate on the **how** and **why** behind statistical methods:
+
+- *How* do we design a strong study?
+- *Why* does the design of a study affect the results?
+- *Why* is it important to consider the context when choosing statistical tests?
+
+### Why BEDA?
+**The ability to think critically about information that is presented to you and evidence is a *fundamental* skill in life itself, and our aim is to help you build a strong foundation in it.**
+
+BEDA has been designed to give you the hands-on skills that will be valuable throughout your career, regardless of your chosen field. While our examples are drawn from biology, the skills in experimental design and analysis are *universal* as you assess information, evaluate evidence, and make decisions in your future roles.
+
+Importantly, you will realise that BEDA is not just about learning statistics. It is about **learning how to think critically** about information and how to evaluate evidence. The statistical software and methods are secondary -- in fact we are software agnostic, meaning we do not focus on any one software, and you can use whichever you prefer. Our main aim is to help you understand how to approach problems and make sense of data.
+
+
+### Using this handbook
+
+If you are reading this handbook online, you can use the sidebar on the left to navigate to different sections. Below are links to the main sections of the handbook and you should be able to click on them to navigate directly to those pages, even if you are on the PDF version:
+
+- [Unit information](unit-info/about.qmd): Find out about the unit's learning outcomes and teaching staff.
+- [Schedule](schedule.qmd): See the week-by-week schedule of lectures, practicals, and assessments.
+- [Assessments](assessments/assessments.qmd): Get detailed information on all assessment tasks and their due dates.
+- [Cheatsheets](cheatsheets.qmd): Access quick guides and summaries for key concepts and tools.
+- [Getting Help](04-help/index.qmd): Find out how to get help from teaching staff and your peers.
+
+<!-- 
+## Your lecturers
+
+::: {.content-visible when-format="html"}
 ::: {.grid}
 
-::: {.g-col-12 .g-col-md-3}
+::: {.g-col-4}
+![](assets/images/januar.jpg){height=200px} 
 
-[![](assets/images/goanna.png)](about.qmd)
+**Dr Januar Harianto**  
+Module 1 Lecturer | **Unit Coordinator**  
+Rm 364, C81 -- Biomedical Building  
+Email
 :::
 
-::: {.g-col-12 .g-col-md-3}
+::: {.g-col-4}
+![](assets/images/clare.jpg){height=200px} 
 
-[![](assets/images/treefrog.png)](02-assessments/index.qmd)
-
+**Prof. Clare McArthur**  
+Module 2 Lecturer  
+Room 303, A08 -- Heydon-Laurence Building  
+Email
 :::
 
-::: {.g-col-12 .g-col-md-3}
+::: {.g-col-4}
+![](assets/images/mat.jpg){height=200px} 
 
-[![](assets/images/tiger_quoll.png)](schedule.qmd)
-
-:::
-
-::: {.g-col-12 .g-col-md-3}
-
-[![](assets/images/black_cockatoo.png)](04-help/index.qmd)
-
+**Prof. Mat Crowther**  
+Module 3 Lecturer  
+Room 225c, A08 -- Heydon-Laurence Building  
+Email
 :::
 :::
 
------
+## Technical officer
 
-::: {.small}
-*Made with ❤️ by Januar (Unit Coordinator), Clare (Lecturer) and Mat (Lecturer).* 
+![](assets/images/heather.jpg){height=200px}
+
+**Heather Sowden**
+Senior Technical Officer  
+F07 - Carslaw Building (F07) 
 :::
 
-:::
+::: {.content-visible when-format="pdf"}
+
+##### Dr Januar Harianto
+Module 1 Lecturer  
+Rm 364, C81 -- Biomedical Building  
+**Unit Coordinator**  
+email: januar.harianto@sydney.edu.au
+
+##### Prof. Clare McArthur
+Module 2 Lecturer  
+Room 303, A08 -- Heydon-Laurence Building  
+email: clare.mcarthur@sydney.edu.au 
+
+##### Prof. Mat Crowther
+Module 3 Lecturer  
+Room 225c, A08 -- Heydon-Laurence Building  
+email: mathew.crowther@sydney.edu.au 
+
+## Technical officer
+
+##### Heather Sowden
+Senior Technical Officer  
+F07 - Carslaw Building (F07)  
+email: heather.sowden@sydney.edu.au
+::: -->
