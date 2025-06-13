@@ -14,18 +14,19 @@ editor:
 ![](assets/images/banner02.png)
 
 ::: {style="text-align: center; color: black;"}
-Thank you for joining Biology Experimental Design and Analysis, also known as **BEDA (🐝-da)**. This Unit aims to help you learn the core skills in biology that underpins how research is designed, analysed and interpreted. Click on the links below for more information.
+Thank you for joining Biology Experimental Design and Analysis, also known as **BEDA (🐝-da)**. This Unit aims to help you learn the core skills in biology that underpins how research is designed, analysed and interpreted. 
+
 
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-3}
 
-[![](assets/images/goanna.png)](about.qmd)
+[![](assets/images/goanna.png)](unit-info/about.qmd)
 :::
 
 ::: {.g-col-12 .g-col-md-3}
 
-[![](assets/images/treefrog.png)](02-assessments/index.qmd)
+[![](assets/images/treefrog.png)](assessments/index.qmd)
 
 :::
 
@@ -46,7 +47,6 @@ Thank you for joining Biology Experimental Design and Analysis, also known as **
 
 ::: {.small}
 *Made with ❤️ by Januar (Unit Coordinator), Clare (Lecturer) and Mat (Lecturer).* 
-
 :::
 
 :::
