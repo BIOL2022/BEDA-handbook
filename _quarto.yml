@@ -3,30 +3,44 @@ project:
 
 website:
   title: "BIOL2022"
-  page-footer: "Unless otherwise indicated, the content of this handbook (whether on Canvas, or on GitHub) is licensed under a [CC-BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). The images on this page are licensed through Adobe Stock and are protected by Adobe's copyright. These images may **not** be reproduced, distributed, or used without proper licensing from Adobe." 
   navbar:
     left:
       - icon: house-fill
         href: index.qmd
-        text: " "
-      - href: about.qmd
-        text: "Unit information"
-      - href: 02-assessments/index.qmd
+        text: "Home"
+      - icon: clipboard-check
         text: "Assessments"
-      - href: schedule.qmd
+        href: assessments/index.qmd
+      - icon: calendar-event
+        href: schedule.qmd
         text: "Schedule"
-      - href: cheatsheets.qmd
+      - icon: file-earmark-text
+        href: cheatsheets.qmd
         text: "Cheatsheets"
     right:
       - href: 04-help/index.qmd
         text: Contact
+  sidebar: 
+    style: floating
+    contents:
+      - icon: house-fill
+        text: Home
+        href: index.qmd
+      - icon: clipboard-check
+        text: Assessments
+        href: assessments/index.qmd
+      - icon: calendar-event
+        text: Schedule
+        href: schedule.qmd
+      - icon: file-earmark-text
+        text: Cheatsheets
+        href: cheatsheets.qmd
+
 
 format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
-  pdf: 
     toc: true
   
 
