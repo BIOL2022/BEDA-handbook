@@ -1,10 +1,16 @@
 ---
 title: "Schedule"
-editor: 
+
+format:
+  html:
+    page-layout: full
+navbar: true
+sidebar: false
+toc: false
+editor:
   render-on-save: true
 ---
 
-**You can download the entire set of lecture slides [here](#) as a single ZIP file.** Learn how to uncompress ZIP files on [Windows](https://support.microsoft.com/en-au/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5) or [Mac](https://support.apple.com/en-au/guide/mac-help/mchlp2528/mac).
 
 ```{r}
 #| include: false
@@ -41,7 +47,7 @@ schedule_processed <- schedule_data_raw |>
     Practical_Activities = Practical
   ) |>
   mutate(
-    Week = sprintf("**Week %02d** %s", Week_Num, Dates_Str)
+    Week = sprintf("**Week %02d**<br>%s", Week_Num, Dates_Str)
   ) |>
   arrange(Week_Num) |> # Ensure order for gt table and row grouping
   select(Week, Lecture_Topics, Practical_Activities, Module_Num, Module_Title) # Keep module info for grouping
