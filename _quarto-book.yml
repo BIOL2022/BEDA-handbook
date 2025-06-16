@@ -1,6 +1,5 @@
 project:
   type: book
-  output-dir: _pdf
 
 date: today
 date-format: "[Semester 2,] YYYY"
@@ -22,10 +21,12 @@ book:
     style: floating
   chapters:
     - index.qmd
-
+    
 format:
   pdf: 
     toc: true
+    # monofont: "DejaVu Sans Mono"
+    mainfont: "Times New Roman"
 
 execute:
   freeze: auto
