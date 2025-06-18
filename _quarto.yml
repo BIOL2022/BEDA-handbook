@@ -10,7 +10,7 @@ website:
         text: "Home"
       - icon: clipboard-check
         text: "Assessments"
-        href: assessments/index.qmd
+        href: assessments/assessments.qmd
       - icon: calendar-event
         href: schedule.qmd
         text: "Schedule"
@@ -28,21 +28,33 @@ website:
         href: index.qmd
       - icon: clipboard-check
         text: Assessments
-        href: assessments/index.qmd
+        href: assessments/assessments.qmd
       - icon: calendar-event
         text: Schedule
         href: schedule.qmd
       - icon: file-earmark-text
         text: Cheatsheets
         href: cheatsheets.qmd
-
+      - icon: envelope-fill
+        text: Contact us
+      - text: ---
+      - text: Lectures
+      - text: Practicals
+      - text: ---
+      - text: Send us feedback
 
 format:
   html:
     theme: cosmo
-    css: styles.css
-    toc: true
+    # css: styles.css
+    toc: false
+    navbar: false
+    sidebar: true
+    # page-layout: full
+    
   
+editor:
+  render-on-save: true
 
 execute:
   freeze: auto
