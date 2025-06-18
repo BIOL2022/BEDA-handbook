@@ -5,32 +5,32 @@ title: "Assessments"
 
 Click on the assessment names to view the details of each assessment.
 
-### Week 3: [Early Feedback Task (EFT)](assessment-eft.qmd)
+## Week 3: [Early Feedback Task (EFT)](assessment-eft.qmd)
 
 - **Category:** Individual (5%)
 - **Submission:** Fri 22 Aug 2025
 
-### Week 4: [Evaluation Quiz (Module 1)](assessment-evaluation-quiz.qmd)
+## Week 4: [Evaluation Quiz (Module 1)](assessment-evaluation-quiz.qmd)
 
 - **Category:** Individual 10%
 - **Submission:** Fri, 29 Aug 2025
 
-### Week 8: [Report 1 (Module 2)](assessment-report-1.qmd)
+## Week 8: [Report 1 (Module 2)](assessment-report-1.qmd)
 
 - **Category:** Individual 25%
 - **Submission:** Sun, 28 Sep 2025
 
-### Week 11: [Dataset submission](assessment-dataset-submission.qmd)
+## Week 11: [Dataset submission](assessment-dataset-submission.qmd)
 
 - **Category:** Group 5%
 - **Submission:** Sun, 2 Nov 2025
 
-### Week 12: [Report 2 (Module 3)](assessment-report-2.qmd)
+## Week 12: [Report 2 (Module 3)](assessment-report-2.qmd)
 
 - **Category:** Individual 15%
 - **Submission:** Sun, 2 Nov 2025
 
-### Exam period: [Final Exam](assessment-final-exam.qmd)
+## Exam period: [Final Exam](assessment-final-exam.qmd)
 
 - **Category:** Individual 40%
 - **Submission:** NA
