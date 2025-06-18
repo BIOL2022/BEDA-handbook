@@ -6,12 +6,6 @@ author:
   - Mathew Crowther 
 date: last-modified # today | last-modified
 date-format: "[Semester 2, ]YYYY" # see https://momentjs.com/docs/#/displaying/format/
-navbar: true
-sidebar: true
-toc: false
-format: html
-editor:
-  render-on-save: true
 ---
 
 ![](assets/images/banner02.png)
