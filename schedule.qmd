@@ -1,17 +1,85 @@
 ---
 title: "Schedule"
-
-format:
-  html:
-    page-layout: full
-navbar: true
-sidebar: false
-toc: false
-editor:
-  render-on-save: true
+toc-depth: 5
 ---
 
+::: {.panel-tabset}
+## Detailed outline
 
+#### **Week 01**: 4 Aug -- 08 Aug
+
+- L01a: Guest lecture
+- L01b: The nature of data and numbers in biology experiments
+- L01c: (Re-) indroduction to experimental design and analysis
+- P01: Week 01 Practical
+
+#### **Week 02**: 11 Aug -- 15 Aug
+
+- L02a: What is a representative sample?
+- L02b: Modelling fundamentals – the linear model
+- L02c: (Almost) every statistical technique is a linear model
+- P02: Week 02 Practical
+
+#### **Week 03**: 18 Aug - 22 Aug	
+
+- L03a: All models are wrong, but some more than others (testing assumptions)
+- L03b: Modelling differences: the t-test
+
+#### **Week 04**: 25 Aug - 29 Aug	
+
+- L04a: Modelling relationships: multiple linear regression
+- L04b: Modelling differences: analysis of variance (ANOCA)
+- L04c: Model transformations – why, and how?
+
+#### **Week 05**: 1 Sep - 5 Sep
+
+- L05a: Control, fixed and random variables
+- L05b: You’ve got this – Module 1 revision
+
+#### **Week 06**: 8 Sep - 12 Sep
+
+- L06a: general refresher
+- L06b: Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables
+
+#### **Week 07**: 15 Sep - 19 Sep
+
+- L07a: Does wind reduce tree growth? Detecting differences versus describing relationships
+- L07b: What are the chances of finding a bandicoot? Dealing with binary response data
+
+#### **Week 08**: 22 Sep - 26 Sep
+
+- L08a: Information-theoretic methods vs. null hypothesis testing
+- L08b: Revision: answering your queries
+
+#### **Mid-semester break**: 29 Sep - 3 Oct
+
+- **Finalise Report 1 and revise the content from weeks 1 to 8**
+
+#### **Week 09**: 6 Oct - 10 Oct
+
+- L09a: Introduction to multivariate analysis
+- L09b: Principal Component Analysis (PCA) and Factor Analysis (FA)
+
+#### **Week 10**: 13 Oct - 17 Oct
+
+- L10a: Clustering
+- L10b: Non-metric multi-dimensional scaling (nMDS) and hypothesis testing
+
+#### **Week 11**: 20 Oct - 24 Oct
+
+- L11a: Multivariate analysis of variance (MANOVA)
+- L11b: Multivariate Revision 1
+
+#### **Week 12**: 27 Oct - 31 Oct
+
+- L12a: Rarefaction and Bayesian analysis
+- L12b: Multivariate Revision 2
+
+#### **Week 13**: 3 Nov - 7 Nov
+
+- Revision and Q&A	
+
+## Summary
 ```{r}
 #| include: false
 
@@ -138,4 +206,6 @@ gt_table |>
 
 ```
 
+
+:::
 
