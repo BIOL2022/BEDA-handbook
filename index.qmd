@@ -1,11 +1,12 @@
 ---
 title: "Welcome to the BEDA Handbook"
-author:
-  - Januar Harianto (Coordinator)
-  - Clare McArthur
-  - Mathew Crowther 
 date: last-modified # today | last-modified
 date-format: "[Semester 2, ]YYYY" # see https://momentjs.com/docs/#/displaying/format/
+toc: false
+navbar: false
+sidebar: true
+editor:
+  render-on-save: true
 ---
 
 ![](assets/images/banner02.png)
@@ -22,23 +23,17 @@ Thank you for joining BIOL202 Biology Experimental Design and Analysis, also kno
 - *Why* does the design of a study affect the results?
 - *Why* is it important to consider the context when choosing statistical tests?
 
-### Why BEDA?
+### Is this unit for me?
+
 **The ability to think critically about information that is presented to you and evidence is a *fundamental* skill in life itself, and our aim is to help you build a strong foundation in it.**
 
-BEDA has been designed to give you the hands-on skills that will be valuable throughout your career, regardless of your chosen field. While our examples are drawn from biology, the skills in experimental design and analysis are *universal* as you assess information, evaluate evidence, and make decisions in your future roles.
+BEDA has been designed to give you the hands-on skills that will be valuable throughout your career. While our examples are drawn from biology, the skills in experimental design and analysis are *universal* as you assess information, evaluate evidence, and make decisions in your future roles -- whether you become a biologist, a veterinarian, a medical professional, or an engineer. 
 
-Importantly, you will realise that BEDA is not just about learning statistics. It is about **learning how to think critically** about information and how to evaluate evidence. The statistical software and methods are secondary -- in fact we are software agnostic, meaning we do not focus on any one software, and you can use whichever you prefer. Our main aim is to help you understand how to approach problems and make sense of data.
-
+Importantly, you will realise that BEDA is not just about learning statistics. It is about **learning how to think critically** about information and how to evaluate evidence. The statistical software and methods are just tools to help you achieve this goal. We do not focus on any one software package, and you are free to use whichever software you prefer (we are software-agnostic!). Our main aim is to help you understand how to approach problems and make sense of data.
 
 ### Using this handbook
 
-If you are reading this handbook online, you can use the sidebar on the left to navigate to different sections. Below are links to the main sections of the handbook and you should be able to click on them to navigate directly to those pages, even if you are on the PDF version:
-
-- [Unit information](unit-info/about.qmd): Find out about the unit's learning outcomes and teaching staff.
-- [Schedule](schedule.qmd): See the week-by-week schedule of lectures, practicals, and assessments.
-- [Assessments](assessments/assessments.qmd): Get detailed information on all assessment tasks and their due dates.
-- [Cheatsheets](cheatsheets.qmd): Access quick guides and summaries for key concepts and tools.
-- [Getting Help](04-help/index.qmd): Find out how to get help from teaching staff and your peers.
+If you are reading this handbook online, you can use the sidebar on the left to navigate to different sections. **A PDF version of this handbook exists, but it is not the primary version and is only intended to be used as a reference during practicals.** We will share printed copies of the PDF version during practicals.
 
 <!-- 
 ## Your lecturers
