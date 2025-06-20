@@ -8,6 +8,9 @@ website:
       - icon: house-fill
         href: index.qmd
         text: "Home"
+      - icon: info-circle-fill
+        text: "Unit Information"
+        href: unit-information.qmd
       - icon: clipboard-check
         text: "Assessments"
         href: assessments/assessments.qmd
@@ -26,6 +29,9 @@ website:
       - icon: house-fill
         text: Home
         href: index.qmd
+      - icon: info-circle-fill
+        text: "Unit Information"
+        href: unit-information.qmd
       - icon: clipboard-check
         text: Assessments
         href: assessments/assessments.qmd
