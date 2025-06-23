@@ -1,0 +1,136 @@
+---
+title: Week 9 -- Part 1
+lightbox: true
+---
+
+:::{.callout-tip appearance="simple"}
+## Objectives
+The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:
+
+- Be familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling.
+- Be familiar with the principles underpinning multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA.
+- Planning and conducting experiments to test multivariate hypotheses.
+- Know how to perform these analyses using relevant software.
+- Be able to interpret, present and report on these analyses. 
+:::
+
+## Outline
+
+**For this specific practical you will:**
+
+- Use PCA to analyse “lecturer perceptions” data gathered in previous years.
+- Design an investigation using a model system to test multivariate hypotheses (in groups) for your reports.
+
+## What you need to submit in Module 3
+The assessment for Module 3 requires two separate submissions in Canvas:
+
+1. **The Excel file (spreadsheets) containing your group’s data.** This needs to be submitted by one group member on behalf of your group and will cover both the species data and habitat data. This must be submitted by 8am on the day of your prac session in Week 11 (worth 5% of the total unit mark).
+2. **Report 2: your individual report on your study.** The report must be submitted in the format of a short scientific article (worth 15% of the total unit mark) -- see assessment information for when this is due. 
+
+### Analyses covered in this practical
+
+- **PCA** – Principal components analysis is essentially a way to extract a reduced set of variables from a larger dataset, accounting for as much variance as possible in the original more complex dataset. 
+
+## Part 1: Principal components analysis – “perceptions of biology lecturers”
+
+You will use PCA to reduce your set of measured variables into a coherent smaller dataset. In addition, you will be comparing your lecturer perceptions between preferred systems (marine, freshwater or terrestrial), preferred taxon (animals or plants) and gender (male or female) using conventional univariate approaches (t-tests/ANOVAs). To perform these univariate approaches, make sure that you not only create the principal components (PCs) but also save the scores (see below) for each component. 
+
+**The process in SPSS is listed below. R instructions are given on Canvas in an R Studio file**
+
+### 1. Running the PCA
+
+a. Import your lecturer data from excel into SPSS. On the command bar, click Analyze, Dimension Reduction, Factor. Move the variables of interest into the Variables Box.
+b. Click Descriptives and then check Initial Solution, Coefficients, and KMO and Bartlett’s Test of Sphericity. Click Continue.
+c. Click Extraction and then select Correlation Matrix, Unrotated Factor Solution, Scree Plot, and Eigenvalues Over 1. Click Continue.
+d. Click Rotation. Select Varimax and Rotated Solution. Click Continue.
+e. Click Scores and select Save Scores.
+f. Click Options. Select Exclude Cases Listwise and Sorted By Size. Click Continue.
+g. Click OK, and SPSS completes the Principal Components Analysis.
+h. Take a good look at the correlation matrix. The PCA captures the essence of the correlations in this matrix. If there are any variables that are not correlated with the other variables, you might as well delete them prior to the PCA. Since we are using PCA to reduce the set of variables to a smaller set of components to be used in additional analyses, you can always reintroduce the unique variables (i.e. those not correlated with other variables) at that time.
+i. Bartlett’s Test of Sphericity, can be used to test the null hypothesis that our sample was randomly drawn from a population in which the correlation matrix was an identity matrix (a matrix full of zeros, except, for ones on the main diagonal). An identity matrix would occur only if each variable only correlated with itself and not any other variable. However, it is easier and more interpretable if you look at your data instead.
+
+::: {.content-visible unless-format="pdf"}
+![Click to enlarge. PCA analysis in SPSS. Note that this analysis selects ALL numerical variables, which may not be necessary depending on the research question.](../assets/spss-pca-analysis.gif)
+:::
+
+
+### 2. Interpreting the PCA
+
+You need to:
+
+a. Look at the correlation matrix.
+b. Examine the scree plot and determine how many PCs you can identify (eigenvalues >1, Kaiser’s Criterion).
+c. Establish a meaningful name for each component based on the loadings for individual variables in the rotated solutions.
+
+### 3. After the PCA
+Examine whether gender, system biases (marine v. terrestrial) and taxon (animal v. plant) biases may affect the perceptions of biology lecturers. You will need to code the columns for each factor (i.e. males = 0, females = 1) for SPSS to perform its standard one-way ANOVAs or t-tests.
+
+Questions to consider:
+
+- Do males and females perceive lecturer qualities the same way?
+- Do botanists and zoologists perceive lecturer qualities the same way?
+- Do marine and terrestrial folk perceive lecturer qualities the same way?
+
+## Part 2: designing your multivariate experiment 
+
+### The data and your model system
+Biologists are becoming more interested in multivariate approaches because the questions we ask and the data we collect tend to be inherently multivariate, relating to both biotic and abiotic variables when dealing with assemblages and habitat assessments respectively. In groups, you will generate your own multivariate datasets using non-biological model systems like cars and the car parks they inhabit, gargoyles and the buildings they live on, or beer types and the type of drinking establishment in which they congregate.
+
+### An example of a non-biological model system
+Cars have proven a useful vehicle for understanding analytical techniques in ecology (Gaston et al. 1993) and they are a good model system for our needs. We can study the assemblages of different cars (as analogues of “species”) that inhabit different suburbs and look at some characteristics of their car parks (as analogues of “habitat use”). See the sample proforma attached illustrating how we can generate a multivariate system with testable hypotheses using car assemblages and the car parks they inhabit as an example. 
+
+### Groups
+In groups, you will need to create your own non-biological multivariate system. Using this model system, come up with several (2 to 3) multivariate hypotheses relating to the assemblages of “species” in different “treatments” (2 factor design is encouraged) and the “habitat variables” that may be influencing “habitat use”. Make sure that your treatments are adequately replicated (you will need at least 3 of each treatment). You will need to make a sampling technique in your groups that will allow you to collect the data necessary to test your hypotheses. You should also decide who will co-ordinate the data preparation. 
+
+Each group will present a short (<5 min) presentation during the practical session in Week 10 (week 2 of the pracs). For this, you will have a short powerpoint presentation containing the following information. This is compulsory for this unit: This enables staff to give feedback so you can collect the appropriate data for analyses in the next 2 weeks. Note this feedback is meant to be friendly, we are not upset or angry if we point out flaws in your design. 
+
+- an introduction to your system (model species and your treatments);
+- your hypotheses (there should be 2 or 3);
+- a description of your taxonomy;
+- your sampling design (including information on sampling effort and sample sizes); 
+- the habitat variables you will be measuring at each site (and how you will measure them);
+- a map of your sites
+ 
+## Assessment
+To make sure that you get the most time to analyse the data and understand its interpretation, you will bring your data in week 11 to be checked by demonstrators. This is a group assessment so only one member of your group needs submit the data file for the whole group. This is worth 5% of your assessment, with near perfect datasets getting the full 5%. It is a group assessment, so Special Considerations, Simple Extensions and Academic Plans do not apply.
+
+For the final assessment, each student will write a short report. The emphasis on the report will be on the methods and results sections, reflected in the attached marking scheme. You do not have to use your imagination in regard to references/ reasons for the study, but are welcome to. You do need to include your hypotheses in the Introduction section.
+
+The report will consider the work you did and the ways you analysed it. It must be **no longer than four single-spaced typed pages** (not including the cover sheet, a title page with the abstract or any pages of references, figures and tables) and will be in the form of a manuscript suitable for submission to Austral Ecology. This report will focus on the methods you used, **in particular how you describe your analyses**, the type(s) of data you collected and **how you present your results**.
+
+Your report is due at **11:59pm on Sunday, before STUVAC. We hope to return reports with summative feedback a week later**. Your report should be submitted electronically, anonymously (use your SID for identification) through Canvas. 
+
+Do not plagiarise or copy from others: 
+
+- Check the website http://sydney.edu.au/students/academic-integrity.html for access to the policies and codes covering academic honesty and conduct at the University
+- We will take marks off if you have obviously used ChatGPT. You are welcome to use it to check grammar, or even R codes, but we can tell if you have used it extensively to write your reports. 
+The “Notice to Contributors” for Austral Ecology is available at http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1442-9993/homepage/ForAuthors.html
+
+
+## Template
+
+::: {.content-visible when-format="pdf"}
+At the end of this section is a simple template to organise your group's study design. You can download it on the HTML version of the Unit Manual.
+:::
+
+::: {.content-hidden when-format="pdf"}
+A template for your study design is provided. You can download it [here](../assets/m3template.docx).
+:::
+
+## References 
+See annotated reading list with lectures posted on unit web site.
+
+
+- Gaston, K. J., T. M. Blackburn, Lawton. J. (1993). Comparing Animals and Automobiles – a Vehicle for Understanding Body Size and Abundance Relationships in Species Assemblages. Oikos 66: 172-179.
+- Quinn G.P. and M.J. Keough. (2002). Experimental design and data analysis for biologists. Cambridge: Cambridge University Press. (appropriate chapters)
+- Quinn G.P. and M.J. Keough. (2023). Experimental design and data analysis for biologists. 2nd edn Cambridge: Cambridge University Press. (appropriate chapters)
+
+::: {.content-visible when-format="pdf"}
+
+\newpage
+
+\includepdf[pages=-, pagecommand={\thispagestyle{plain}}]{assets/m3template.pdf}
+
+
+
+:::

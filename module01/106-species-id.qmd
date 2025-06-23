@@ -1,0 +1,322 @@
+---
+lightbox: auto
+---
+
+# Species ID guide {.unnumbered}
+
+Use this page to identify the species that you sample.
+
+Note: images are only available in the HTML version of this document. 
+
+::: {.content-visible unless-format="pdf"}
+
+# Identification guide {#id-guide}
+
+
+## Common snails
+
+### *Bembiicium nanum* 
+![](assets/id/Bembicium-nanum_a.jpg){group="bnanum" width=100}
+![](assets/id/Bembicium-nanum_b.jpg){group="bnanum" width=100}
+![](assets/id/Bembicium-nanum_c.jpg){group="bnanum" width=100}
+![](assets/id/Bembicium-nanum_d.jpg){group="bnanum" width=100}
+![](assets/id/Bembicium-nanum_f.jpg){group="bnanum" width=100}
+![](assets/id/Bembicium-nanum_g.jpg){group="bnanum" width=100}
+
+Images from Grove, S.J. (2018).
+
+### *Austrocochlea porcata*
+![](assets/id/Austrocochlea-porcata_a.jpg){group="aporcata" width=100}
+![](assets/id/Austrocochlea-porcata_b.jpg){group="aporcata" width=100}
+![](assets/id/Austrocochlea-porcata_c.jpg){group="aporcata" width=100}
+![](assets/id/Austrocochlea-porcata_d.jpg){group="aporcata" width=100}
+![](assets/id/Austrocochlea-porcata_e.jpg){group="aporcata" width=100}
+![](assets/id/Austrocochlea-porcata_f.jpg){group="aporcata" width=100}
+
+Images from Grove, S.J. (2018).
+
+### *Austrococchlea concamerata*
+![](assets/id/Austrococchlea-concamerata_c.jpeg){group="aconcamerata" width=200}
+![](assets/id/Austrococchlea-concamerata_a.jpg){group="aconcamerata" width=140}
+![](assets/id/Austrococchlea-concamerata_b.jpg){group="aconcamerata" width=140}
+
+
+Images from Iredale, T. & McMichael, D. F. (1962) and Australian Museum. 
+
+
+### *Nerita atramentosa*
+
+![](assets/id/Nerita-atramentosa_a.jpg){group="natramentosa" width=100}
+![](assets/id/Nerita-atramentosa_b.jpg){group="natramentosa" width=100}
+![](assets/id/Nerita-atramentosa_c.jpg){group="natramentosa" width=100}
+
+Images from Grove, S.J. (2018).
+
+
+### *Austrolittorina unifasciata*
+
+![](assets/id/Austrolittorina-unifasciata_a.jpg){group="aunifasciata" width=100}
+![](assets/id/Austrolittorina-unifasciata_b.jpg){group="aunifasciata" width=100}
+![](assets/id/Austrolittorina-unifasciata_c.jpg){group="aunifasciata" width=100}
+![](assets/id/Austrolittorina-unifasciata_d.jpg){group="aunifasciata" width=100}
+
+Images from Grove, S.J. (2018).
+
+## Whelks
+
+### *Tenguella marginalba*
+
+![](assets/id/Tenguella-marginalba_c.jpg){group="tmarginalba" width=100}
+![](assets/id/Tenguella-marginalba_a.jpg){group="tmarginalba" width=140}
+![](assets/id/Tenguella-marginalba_b.jpg){group="tmarginalba" width=180}
+
+Images by Donald Hobern, Femorale.com, Joop Trausel and Frans Slieker.
+
+## Limpets
+
+### *Cellana tramoserica*
+
+![](assets/id/Cellana-tramoserica_LA.jpg){group="ctrameserica" width=100}
+![](assets/id/Cellana-tramoserica_LAa.jpg){group="ctrameserica" width=100}
+![](assets/id/Cellana-tramoserica_LAb.jpg){group="ctrameserica" width=100}
+![](assets/id/Cellana-tramoserica_LAc.jpg){group="ctrameserica" width=100}
+![](assets/id/Cellana-tramoserica_LAd.jpg){group="ctrameserica" width=100}
+![](assets/id/Cellana-tramoserica_LAe.jpg){group="ctrameserica" width=100}
+
+Images from Leon Altoff and Grove, S.J. (2018).
+
+### *Montfortula rugosa*
+
+![](assets/id/Montfortula-rugosa_a.jpg){group="mrugosa" width=100}
+![](assets/id/Montfortula-rugosa_b.jpg){group="mrugosa" width=100}
+![](assets/id/Montfortula-rugosa_c.jpg){group="mrugosa" width=100}
+![](assets/id/Montfortula-rugosa_d.jpg){group="mrugosa" width=100}
+![](assets/id/Montfortula-rugosa_e.jpg){group="mrugosa" width=100}
+![](assets/id/Montfortula-rugosa_f.jpg){group="mrugosa" width=100}
+![](assets/id/Montfortula-rugosa_LAb.jpg){group="mrugosa" width=100}
+![](assets/id/Montfortula-rugosa_LAc.jpg){group="mrugosa" width=100}
+![](assets/id/Montfortula-rugosa_LAe.jpg){group="mrugosa" width=100}
+
+Images from Leon Altoff and Grove, S.J. (2018).
+
+### *Patelloida mimula*
+
+![](assets/id/Patelloida-mimula_a.jpg){group="pmimula" width=100}
+![](assets/id/Patelloida-mimula_b.jpg){group="pmimula" width=294}
+![](assets/id/Patelloida-mimula_c.jpeg){group="pmimula" width=210}
+
+Images from Sea Shells of New South Wales and WoRMS Editorial Board (2023).
+
+
+
+### *Patelloida mufria*
+
+![](assets/id/Patelloida-mufria_a.jpg){group="pmufria" width=100}
+![](assets/id/Patelloida-mufria_b.jpg){group="pmufria" width=290}
+
+Images from Sea Shells of New South Wales and WoRMS Editorial Board (2023).
+
+### *Patelloida latistrigata*
+
+![](assets/id/Patelloida-latistrigata_a.jpg){group="platistrigata" width=100}
+![](assets/id/Patelloida-latistrigata_b.jpg){group="platistrigata" width=100}
+![](assets/id/Patelloida-latistrigata_c.jpg){group="platistrigata" width=100}
+![](assets/id/Patelloida-latistrigata_d.jpg){group="platistrigata" width=100}
+![](assets/id/Patelloida-latistrigata_e.jpg){group="platistrigata" width=100}
+![](assets/id/Patelloida-latistrigata_f.jpg){group="platistrigata" width=100}
+![](assets/id/Patelloida-latistrigata_LAa.jpg){group="platistrigata" width=100}
+![](assets/id/Patelloida-latistrigata_LAb.jpg){group="platistrigata" width=100}
+![](assets/id/Patelloida-latistrigata_LAc.jpg){group="platistrigata" width=100}
+
+Images from Leon Altoff and Grove, S.J. (2018).
+
+
+### *Patelloida alticostata*
+
+![](assets/id/Patelloida-alticostata_a.jpg){group="palticostata" width=100}
+![](assets/id/Patelloida-alticostata_b.jpg){group="palticostata" width=100}
+![](assets/id/Patelloida-alticostata_c.jpg){group="palticostata" width=100}
+![](assets/id/Patelloida-alticostata_d.jpg){group="palticostata" width=100}
+![](assets/id/Patelloida-alticostata_e.jpg){group="palticostata" width=100}
+![](assets/id/Patelloida-alticostata_f.jpg){group="palticostata" width=100}
+![](assets/id/Patelloida-alticostata_g.jpg){group="palticostata" width=100}
+![](assets/id/Patelloida-alticostata_h.jpg){group="palticostata" width=100}
+![](assets/id/Patelloida-alticostata_LAa.jpg){group="palticostata" width=100}
+![](assets/id/Patelloida-alticostata_LAb.jpg){group="palticostata" width=100}
+![](assets/id/Patelloida-alticostata_LAc.jpg){group="palticostata" width=100}
+
+Images from Leon Altoff and Grove, S.J. (2018).
+
+
+### *Notoacmea flammea*
+
+![](assets/id/Notoacmea-flammea_a.jpg){group="nflammea" width=100}
+![](assets/id/Notoacmea-flammea_b.jpg){group="nflammea" width=100}
+![](assets/id/Notoacmea-flammea_c.jpg){group="nflammea" width=100}
+![](assets/id/Notoacmea-flammea_d.jpg){group="nflammea" width=100}
+![](assets/id/Notoacmea-flammea_e.jpg){group="nflammea" width=100}
+![](assets/id/Notoacmea-flammea_f.jpg){group="nflammea" width=100}
+![](assets/id/Notoacmea-flammea_g.jpg){group="nflammea" width=100}
+![](assets/id/Notoacmea-flammea_LAa.jpg){group="nflammea" width=100}
+![](assets/id/Notoacmea-flammea_LAb.jpg){group="nflammea" width=100}
+
+Images from Leon Altoff and Grove, S.J. (2018).
+
+
+### *Scutellastra chapmani*
+
+![](assets/id/Scutellastra-chapmani_a.jpg){group="schapmani" width=100}
+![](assets/id/Scutellastra-chapmani_b.jpg){group="schapmani" width=100}
+![](assets/id/Scutellastra-chapmani_c.jpg){group="schapmani" width=100}
+![](assets/id/Scutellastra-chapmani_d.jpg){group="schapmani" width=100}
+![](assets/id/Scutellastra-chapmani_e.jpg){group="schapmani" width=100}
+![](assets/id/Scutellastra-chapmani_f.jpg){group="schapmani" width=100}
+
+
+Images from Grove, S.J. (2018) and Sea Shells of New South Wales.
+
+### *Scutellastra peronii*
+
+![](assets/id/Scutellastra-peronii_a.jpg){group="speronii" width=100}
+![](assets/id/Scutellastra-peronii_b.jpg){group="speronii" width=100}
+![](assets/id/Scutellastra-peronii_c.jpg){group="speronii" width=100}
+![](assets/id/Scutellastra-peronii_d.jpg){group="speronii" width=100}
+![](assets/id/Scutellastra-peronii_e.jpg){group="speronii" width=100}
+![](assets/id/Scutellastra-peronii_f.jpg){group="speronii" width=100}
+![](assets/id/Scutellastra-peronii_g.jpg){group="speronii" width=100}
+![](assets/id/Scutellastra-peronii_h.jpg){group="speronii" width=100}
+![](assets/id/Scutellastra-peroni_LAb.jpg){group="speronii" width=100}
+![](assets/id/Scutellastra-peroni_LAc.jpg){group="speronii" width=100}
+![](assets/id/Scutellastra-peroni_LAd.jpg){group="speronii" width=100}
+![](assets/id/Scutellastra-peroni_LAe.jpg){group="speronii" width=100}
+![](assets/id/Scutellastra-peroni_LAg.jpg){group="speronii" width=100}
+![](assets/id/Scutellastra-peronii_nswa.jpg){group="speronii" width=68}
+![](assets/id/Scutellastra-peronii_nswb.jpg){group="speronii" width=280}
+
+Images from Grove, S.J. (2018) and Sea Shells of New South Wales.
+
+
+## Chitons
+
+### *Sypharochiton pelliserpentis*
+
+![](assets/id/Sypharochiton-pelliserpentis_a.jpg){group="spelliserpentis" width=100}
+![](assets/id/Sypharochiton-pelliserpentis_b.jpg){group="spelliserpentis" width=100}
+![](assets/id/Sypharochiton-pelliserpentis_c.jpg){group="spelliserpentis" width=100}
+![](assets/id/Sypharochiton-pelliserpentis_d.jpg){group="spelliserpentis" width=100}
+
+Images from WoRMS Editorial Board (2023) and Sea Shells of New South Wales.
+
+### *Acanthochiton sp.*
+
+![](assets/id/Acanthochiton_sp_a.jpg){group="acanthochiton" width=100}
+![](assets/id/Acanthochiton_sp_b.jpg){group="acanthochiton" width=100}
+![](assets/id/Acanthochiton_sp_c.jpg){group="acanthochiton" width=100}
+![](assets/id/Acanthochiton_sp_d.jpg){group="acanthochiton" width=100}
+
+
+### *Ischnochiton sp.*
+
+![](assets/id/Ischnochiton-australis.jpg){group="ischnochiton" width=100}
+![](assets/id/Ischnochiton-cariosus.jpg){group="ischnochiton" width=100}
+![](assets/id/Ischnochiton-elongatus_a.jpg){group="ischnochiton" width=100}
+![](assets/id/Ischnochiton-lentiginosus.jpg){group="ischnochiton" width=100}
+![](assets/id/Ischnochiton-lineolatus.jpg){group="ischnochiton" width=100}
+![](assets/id/Ischnochiton-smaragdinus.jpg){group="ischnochiton" width=100}
+![](assets/id/Ischnochiton-torri.jpg){group="ischnochiton" width=100}
+![](assets/id/Ischnochiton-variegatus.jpg){group="ischnochiton" width=100}
+![](assets/id/Ischnochiton-versicolor.jpg){group="ischnochiton" width=100}
+
+
+Images from Grove, S.J. (2018).
+
+## Sea stars
+
+### *Parvulastra exigua*
+
+![](assets/id/Parvulastra-exigua_a.jpg){group="pexigua" width=160}
+![](assets/id/Parvulastra-exigua_b.jpg){group="pexigua" width=100}
+![](assets/id/Parvulastra-exigua_c.jpeg){group="pexigua" width=160}
+
+
+## Barnacles
+
+### *Balanus amphititre*
+
+![](assets/id/Balanus-amphitrite_a.jpg){group="bamphitrite" width=100}
+![](assets/id/Balanus-amphitrite_b.jpg){group="bamphitrite" width=115}
+![](assets/id/Balanus-amphitrite_c.jpg){group="bamphitrite" width=115}
+
+Images from Wikipedia and WoRMS Editorial Board (2023).
+
+### *Balanus trigonus*
+
+![](assets/id/Balanus-trigonus_a.jpg){group="btrigonus" width=155}
+![](assets/id/Balanus-trigonus_b.jpg){group="btrigonus" width=100}
+![](assets/id/Balanus-trigonus_c.jpg){group="btrigonus" width=140}
+
+Images from Wikipedia, Western Australia Museum and WoRMS Editorial Board (2023).
+
+### *Chthamalus antennatus*
+
+![](assets/id/Chthamalus-antennatus_a.jpg){group="cantennatus" width=138}
+![](assets/id/Chthamalus-antennatus_b.jpg){group="cantennatus" width=140}
+![](assets/id/Chthamalus-antennatus_c.jpg){group="cantennatus" width=148}
+![](assets/id/Chthamalus-antennatus_d.jpg){group="cantennatus" width=100}
+
+Images from Wikipedia, Museum Victoria Collections and SA Marine Life.
+
+### *Catomerus polymerus*
+
+![](assets/id/Catomerus-polymerus_a.jpg){group="cpolymerus" width=150}
+![](assets/id/Catomerus-polymerus_b.jpg){group="cpolymerus" width=100}
+![](assets/id/Catomerus-polymerus_c.jpg){group="cpolymerus" width=150}
+![](assets/id/Catomerus-polymerus_d.jpg){group="cpolymerus" width=150}
+![](assets/id/Catomerus-polymerus_e.jpg){group="cpolymerus" width=150}
+
+Images from Wikipedia and Museum Victoria Collections.
+
+### *Tesseropora rosea*
+
+![](assets/id/Tesseropora-rosea_a.jpg){group="trosea" width=100}
+![](assets/id/Tesseropora-rosea_b.jpg){group="trosea" width=136}
+![](assets/id/Tesseropora-rosea_c.jpg){group="trosea" width=150}  
+![](assets/id/Tesseropora-rosea_d.jpg){group="trosea" width=100}
+
+
+images from Wikipedia, Museum Victoria Collections, Atlas of Life and iNaturalist Australia.
+
+### *Tetraclitella purpurascens*
+
+![](assets/id/Tetraclitella-purpurascens_a.jpg){group="tpurpurascens" width=152}
+![](assets/id/Tetraclitella-purpurascens_b.jpg){group="tpurpurascens" width=128}
+![](assets/id/Tetraclitella-purpurascens_c.jpg){group="tpurpurascens" width=100}
+
+Image by Simon Grove via Flickr (2014), Atlas of Living Australia and Museum Victoria Collections.
+
+### *Megabalanus coccopoma*
+
+![](assets/id/Megabalanus-coccopoma_a.jpg){group="mcoccopoma" width=170}
+![](assets/id/Megabalanus-coccopoma_b.jpg){group="mcoccopoma" width=110}
+![](assets/id/Megabalanus-coccopoma_c.jpg){group="mcoccopoma" width=100}
+![](assets/id/Megabalanus-coccopoma_d.jpg){group="mcoccopoma" width=160}
+
+
+Images from Wikipedia, WoRMS Editorial Board (2023) and Invasive.org.
+
+### *Amphibalanus variegatus*
+
+![](assets/id/Amphibalanus-variegatus_a.jpg){group="avariegatus" width=120}
+![](assets/id/Amphibalanus-variegatus_b.jpg){group="avariegatus" width=100}
+![](assets/id/Amphibalanus-variegatus_c.jpg){group="avariegatus" width=120}
+
+Images from Port Phillip Bay Taxonomy, Wikipedia and Denis Riek (2021).
+
+### *Austrobalanus imperator*
+
+![](assets/id/Austrobalanus-imperator_a.jpg){group="aimperator" width=132}
+![](assets/id/Austrobalanus-imperator_b.jpg){group="aimperator" width=100}
+![](assets/id/Austrobalanus-imperator_c.jpg){group="aimperator" width=140}
+
+Images from Wikipedia and iNaturalist Australia.
+:::

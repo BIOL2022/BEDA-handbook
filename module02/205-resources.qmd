@@ -1,0 +1,27 @@
+---
+title: Report 1 -- **Resources**
+---
+
+## Useful documents for Report 1
+
+- Here are two examples: [template1](assets/data-entry-template-01.xlsx) and [template2](assets/data-entry-template-02.xlsx) for Excel group data collection. Generate and complete your group's own Excel file (could be from a GoogleSheets file) **before** Week 8 prac.
+- Here is a [guide to choosing appropriate stats](assets/Appendix1-Clare's%20Hierarchy%20of%20parametric%20stats%20analyses.pdf) and a [guide to using the stats program SPSS](assets/Appendix2-Short%20notes%20on%20how%20to%20use%20SPSS21_final_with%20extras.pdf.)
+- Practice Excel file for [ANOVA or Randomised Block design/GLM](assets/Pre-analysis%20data%20scrutiny-%20eg%20cuticle%20thickness.xls) and [associated paper](assets/McArthur%20et%20al%202010%20wind%20paper.pdf).
+- Practice Excel file for [linear regression (or correlation)](assets/OReilly_intake%20vs%20chem%20Fun%20Ecol_EDAB.xls) and [associated paper](assets/OReilly%20et%20al%202004%20Func%20Ecol_Gen%20chem%20intake.pdf).
+- Practice Excel file for [logistic regression](assets/While%20and%20McArthur_scats_EDAB.xls) and [associated paper](assets/While%20and%20McArthur%202005%20Austral%20Ecol_%20scats.pdf)
+- And an interesting article called "[The importance of stupidity in scientific research](assets/Article%202008%20The%20importance%20of%20stupidity%20in%20scientific%20research.pdf)": directed at PhD students but also, I think, relevant to our Module projects where you take a step into the unknown. Hope you enjoy it.
+
+
+
+## BIRD GROUPS ONLY
+::: callout-important
+## Important Animal Ethics information
+Please use [this monitoring sheet](assets/2024%20Bird%20survey%20monitoring%20sheet.xlsx) for your data collection.
+
+As part of the Animal Ethics requirements each bird group must submit:
+
+1. at least one example of this completed monitoring sheet, along with
+2. a pdf document summarising (a) the sites visited (names with  suburb, and if possible GPS coords and site photos),
+ and (b) the total number of (i) native birds and (ii) invasive birds you estimate you have counted across all your sites.
+
+:::

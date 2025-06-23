@@ -1,0 +1,48 @@
+---
+author: Clare McArthur
+---
+
+# Module 2 (Weeks 4 -- 8) {.unnumbered}
+
+## Preamble
+
+I think one of the most exciting things about being a biologist is discovering how the world works. One skill that helps me do so, is knowing how to set up an experiment to test my ideas about the world. You may need to overcome that initial learning hump, but if you persist, you will have a skill at your fingertips that will stand you in really good stead for the future. It doesn’t matter whether you intend to go on in research or not - knowing what makes good research and good evidence is important in so many walks of life. 
+
+My message is: whether you are doing this unit just because you have to, or because you are interested – take heart! I never did anything much more complicated than a t – test even during my PhD. But now I LOVE designing experiments and grappling with data. It can be frustrating at first, especially if you are time-poor and just want to get the job done. It can be infuriating. It can also be fun (yes – fun!). Most of all it’s incredibly satisfying and extraordinarily useful. 
+So, persist, try your best, and ask for help if you need it.
+
+**Please remember we want you to learn this stuff.**
+
+No question you ask is EVER silly! 
+So ask for help any time. 
+We *do* expect you to have a go at telling us what you *think* the answer is. This helps us understand what you get and what you don’t get, and so helps us help you.
+
+We don’t judge you by the questions you ask, but by what you end up learning. 
+
+
+## What this module is about
+In Module 1, you have learnt the principles for converting a biological observation or question of interest into practice. Here, you will build on this skill. You will sign up to a research project and go through the process of converting a biological idea into a research experiment, which you and your group will then do from start to finish, to answer it.
+
+**READ THE LAB MANUAL BEFORE EACH PRAC.**
+
+**COME/LISTEN TO EACH LECTURE on the day we give them & before the prac.**
+
+You will need to use the lecture information immediately in these pracs. You will use your knowledge and experience to design your project, collect the data, and analyse and interpret it appropriately. 
+
+
+## What you need to submit for this practical component
+
+This assessment requires two separate submissions in Canvas:
+
+1. **Report 1 Group Data**: The Excel file (spreadsheets) containing your Group’s data. This needs to be submitted by one group member on behalf of your group.
+2. **Report 1**:Your Individual Report on your experiment, in the format of a short scientific article (worth 25% of the total unit mark).
+
+## How you will get feedback
+
+- You will receive informative, but not exhaustive, feedback on your report in relation to the marking matrix. This will show what you achieved against each criterion, and why.
+- To help you understand how you could improve, it helps enormously if you make a conscious effort to compare your submitted work against others. To facilitate this, I will post the best report written for your particular project.
+- Should you want feedback beyond this, please reflect on your report and write a summary of how your report compares to the best one, addressing each of the marking criteria. Once you’ve done that, please email me to request an appointment, attaching your summary to the email message. BUT please note that because of the large class size, I may not be able to meet with everyone who wants to. As I am sure you will appreciate, I will give priority to any students with low/fail marks.
+
+
+<!-- \includepdf[pages=1-3, landscape=false, pagecommand={\thispagestyle{plain}}]{assets/timeline_v3.pdf}  -->
+\includepdf[pages=1-3, landscape=false]{assets/timeline_v3.pdf} 

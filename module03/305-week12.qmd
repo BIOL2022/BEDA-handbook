@@ -1,0 +1,22 @@
+---
+title: Week 12 -- Support session
+---
+
+:::{.callout-tip appearance="simple"}
+## Objectives (you should know these by now!)
+The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will;
+
+- Be familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling.
+- Be familiar with the principles underpinning multivariate hypothesis testing using permutational techniques
+- Planning and conducting experiments to test multivariate hypotheses
+- Know how to perform these analyses using relevant software
+- Be able to interpret, present and report on these analyses. 
+:::
+
+## Outline
+
+This week we will be in the lab to help with any analyses that groups wish to undertake. This may involve integrating the analyses (e.g. testing the relationships between PCs and univariate measures) or tweaking (not twerking) your analyses by examining subsets of your data using the options available in PRIMER.
+
+## Marking scheme
+
+The marking scheme can be found on Canvas, in the Assignments section under **Report 2**.

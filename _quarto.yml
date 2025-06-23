@@ -44,8 +44,14 @@ website:
       - icon: envelope-fill
         text: Contact us
       - text: ---
-      - text: Lectures
-      - text: Practicals
+      - icon: book
+        text: "Practicals"
+      - section: "Module 1"
+        contents:
+          - module01/101-intro.qmd
+          - module01/102-week01.qmd
+          - module01/103-week02.qmd
+          - module01/104-week03.qmd
       - text: ---
       - text: Send us feedback
 

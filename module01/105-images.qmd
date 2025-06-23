@@ -1,0 +1,86 @@
+---
+lightbox: true
+---
+
+# Intertidal sites {.unnumbered}
+
+This page contains images of intertidal rocky shore sites along the Great Southern Reef. These images are provided for the purpose of the lab activities in Weeks 2 and 3.
+
+## Two sites
+You will be working with images from two sites: **Site A** and **Site B**. Each site has 20 images, which are randomly selected from a larger set of images.
+
+The advantage of sampling two sites is that you can assess whether your observations from one site can be generalised to another. This is a common approach in ecology, where we often sample multiple sites to understand patterns at a larger scale, and addresses representative sampling and pseudoreplication.
+
+:::{.callout-important}
+**You now get to decide how the story goes:**
+
+- Are you sampling both sites as one?
+- Are you sampling just one of the two sites?
+- Are you sampling each site separately, but comparing them to each other?
+
+Depending on what you decide, your model may need to be tweaked, and your observations may need to be reinterpreted or improved.
+:::
+
+## Assumptions and prior knowledge
+
+- 
+- Images are randomly selected and assumed to be independent.
+- Images are assumed to be representative of their respective site(s).
+
+The next step is to define your sampling strategy, and decide how you will use the images to answer your question.
+
+## Sites
+
+Note: images are only available in the HTML version of this document. 
+
+::: {.content-visible unless-format="pdf"}
+::: {.panel-tabset}
+
+## Site 1
+
+![Image A01](assets/wk2/site01/IMG_0179.jpeg){group="site1" width=125}
+![Image A02](assets/wk2/site01/IMG_0577.jpeg){group="site1" width=125}
+![Image A03](assets/wk2/site01/IMG_1146.jpeg){group="site1" width=125}
+![Image A04](assets/wk2/site01/IMG_1244.jpeg){group="site1" width=125}
+![Image A05](assets/wk2/site01/IMG_1880.jpeg){group="site1" width=125}
+![Image A06](assets/wk2/site01/IMG_3681.jpeg){group="site1" width=125}
+![Image A07](assets/wk2/site01/IMG_4254.jpeg){group="site1" width=125}
+![Image A08](assets/wk2/site01/IMG_4535.jpeg){group="site1" width=125}
+![Image A09](assets/wk2/site01/IMG_4892.jpeg){group="site1" width=125}
+![Image A10](assets/wk2/site01/IMG_4950.jpeg){group="site1" width=125}
+![Image A11](assets/wk2/site01/IMG_5059.jpeg){group="site1" width=125}
+![Image A12](assets/wk2/site01/IMG_5408.jpeg){group="site1" width=125}
+![Image A13](assets/wk2/site01/IMG_7174.jpeg){group="site1" width=125}
+![Image A14](assets/wk2/site01/IMG_7210.jpeg){group="site1" width=125}
+![Image A15](assets/wk2/site01/IMG_7523.jpeg){group="site1" width=125}
+![Image A16](assets/wk2/site01/IMG_7819.jpeg){group="site1" width=125}
+![Image A17](assets/wk2/site01/IMG_8017.jpeg){group="site1" width=125}
+![Image A18](assets/wk2/site01/IMG_9428.jpeg){group="site1" width=125}
+![Image A19](assets/wk2/site01/IMG_9712.jpeg){group="site1" width=125}
+![Image A20](assets/wk2/site01/IMG_9918.jpeg){group="site1" width=125}
+
+## Site 2
+
+![Image B01](assets/wk2/site02/IMG_0889.jpeg){group="site2" width=125}
+![Image B02](assets/wk2/site02/IMG_1121.jpeg){group="site2" width=125}
+![Image B03](assets/wk2/site02/IMG_1172.jpeg){group="site2" width=125}
+![Image B04](assets/wk2/site02/IMG_1185.jpeg){group="site2" width=125}
+![Image B05](assets/wk2/site02/IMG_1242.jpeg){group="site2" width=125}
+![Image B06](assets/wk2/site02/IMG_1686.jpeg){group="site2" width=125}
+![Image B07](assets/wk2/site02/IMG_2431.jpeg){group="site2" width=125}
+![Image B08](assets/wk2/site02/IMG_4757.jpeg){group="site2" width=125}
+![Image B09](assets/wk2/site02/IMG_6045.jpeg){group="site2" width=125}
+![Image B10](assets/wk2/site02/IMG_6077.jpeg){group="site2" width=125}
+![Image B11](assets/wk2/site02/IMG_6158.jpeg){group="site2" width=125}
+![Image B12](assets/wk2/site02/IMG_6355.jpeg){group="site2" width=125}
+![Image B13](assets/wk2/site02/IMG_7066.jpeg){group="site2" width=125}
+![Image B14](assets/wk2/site02/IMG_8123.jpeg){group="site2" width=125}
+![Image B15](assets/wk2/site02/IMG_8150.jpeg){group="site2" width=125}
+![Image B16](assets/wk2/site02/IMG_8175.jpeg){group="site2" width=125}
+![Image B17](assets/wk2/site02/IMG_8338.jpeg){group="site2" width=125}
+![Image B18](assets/wk2/site02/IMG_8515.jpeg){group="site2" width=125}
+![Image B19](assets/wk2/site02/IMG_9254.jpeg){group="site2" width=125}
+![Image B20](assets/wk2/site02/IMG_9688.jpeg){group="site2" width=125}
+
+:::
+:::

@@ -2,11 +2,6 @@
 title: "Welcome to the BEDA Handbook"
 date: last-modified # today | last-modified
 date-format: "[Semester 2, ]YYYY" # see https://momentjs.com/docs/#/displaying/format/
-toc: false
-navbar: false
-sidebar: true
-editor:
-  render-on-save: true
 ---
 
 ![](assets/images/banner02.png)
@@ -26,7 +21,7 @@ This unit is a second-year core Biology unit taught at the University of Sydney 
 
 ### Is this unit for me?
 
-**The ability to think critically about information that is presented to you and evidence is a *fundamental* skill in life itself, and our aim is to help you build a strong foundation in it.**
+**The ability to think critically about information that is presented to you and evidence is a *fundamental* skill in life itself, and our aim is to help you build a strong foundation in it.** 
 
 BEDA has been designed to give you the hands-on skills that will be valuable throughout your career. While our examples are drawn from biology, the skills in experimental design and analysis are *universal* as you assess information, evaluate evidence, and make decisions in your future roles -- whether you become a biologist, a veterinarian, a medical professional, or an engineer. 
 
@@ -38,7 +33,7 @@ BEDA's prerequisite is that you need to have completed at least one first-year u
 
 **If you don’t know what a p-value is, what it means for things to be correlated, or what an integer is, then BEDA is probably going to be very challenging. We recommend you take a first-year statistics unit, such as ENVX1002 or DATA1001, to learm the basics**. Alternatively you may wait until you’ve completed at least two semesters at university. This will help you get used to university life and the expectations and you will be better prepared for the challenges of BEDA.
 
-Nevertheless, if you have not taken a statistics unit and have decided to take on BEDA for one reason another, we are here to help you. The first three week of BEDA will be a refresher on the basics of statistics, and we will provide you with resources to help you catch up, but be aware that the extra effort is your responsibility as we cannot cover everything in detail.
+Nevertheless, if you have not taken a statistics unit and have decided to take on BEDA for one reason another, we are here to help you. The first three week of BEDA will be a refresher on the basics of statistics, and we will provide you with resources to help you catch up, but be aware that the extra effort is your responsibility as we cannot cover everything that a first-year unit would cover in great detail.
 
 ### Using this handbook
 
@@ -46,4 +41,4 @@ If you are reading this handbook online, you can use the sidebar on the left to 
 
 A PDF version of this handbook exists, but it is **not** the primary version and is only intended to be used as a reference during practicals. We will share printed copies of the PDF handbook during practicals.
 
-For now, you need to figure out how BEDA works, so please go to [Unit Information](#) to learn about the unit structure, assessment, our expecations of you and other important information.
+For now, you need to figure out how BEDA works, so please go to [Unit Information](unit-information.qmd) to learn about the unit structure, assessment, our expecations of you and other important information.

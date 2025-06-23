@@ -1,0 +1,163 @@
+---
+title: Report 1 -- **Instructions**
+---
+
+## About 
+- The project written report is the individual component of this assessment It is submitted via the Canvas assignment called **Report 1**. 
+- The other component of this assignment is the data file, which should be submitted by one group member via the Canvas assignment called **Report 1: Group data submission**.
+- **Date due**: Week 9, 11:59 pm on the day of your prac session.
+- **Late penalty**: you will incur a penalty of 5% (5 points out of 100) for each 24 hours or part thereof after the deadline (weekends and public holidays included), unless you have Special Consideration.
+- Length penalty: you will incur a penalty of 5% (5 points out of 100; up to 30 points) for each page or part thereof over the page limit.
+
+## A note about plagiarism
+
+Do not plagiarise or you will face penalties. Check the [academic integrity website](http://sydney.edu.au/students/academic-integrity.html) for access to: 
+
+- the policies and codes covering academic honesty and conduct at the University.
+- a link to the AHEM (Academic Honesty Education Module); complete the module if you haven’t already done so. You cannot submit your report if you have not completed this module.
+- If you are still unsure about how to avoid plagiarism, check with Clare McArthur well before submitting your report. 
+- Your report will be checked for plagiarism using software.
+
+## Submitting your individual report
+
+- **Submitting your anonymous report for marking**: 
+  - ONE electronic document through Canvas. As this needs to be anonymous, do not include your name anywhere in the report.
+  - Use a filename of the form “Day-Time-Project-Your SID”, e.g. “WED2-4pmProj4A-Your SID”.
+- **Using your report to help other students**: so we can provide useful feedback using real examples, your report or parts of it may be used as (anonymous) examples for current and future students. 
+If you wish to opt out of this, please make a statement to this effect on your report.
+- **Page limit**: maximum 10 pages double-spaced, including everything (i.e. abstract, references, your statement about use of AI, and everything else).
+- **References**: minimum of 10 key references from the primary scientific literature, probably a mix of key recent and older papers. They must be relevant, demonstrating that you have read about the topic comprehensively. You will use them to show how you understand what people have already done and how your work fits into and/or extends what is already known, and that you have used the references to help understand what you have found.
+ 
+## Requirements for your report
+
+- You will be marked according to the criteria in the marking rubric for this module. Read and USE this rubric as a check-list before, during and after writing your report and before you submit it.
+- Use minimum of 12 pt font and no less than 2 cm margins all around. 
+- You must write all your report yourself, in your own words, on the experimental research project you have done. **If you use AI, you must follow the university guidelines and you must provide a statement on its use (or if not, state that instead).**
+- Your report should follow the format and general content of a real scientific article. To get a feel for what we expect and how to present each part of your report, read the published literature in your subject area. 
+- Choose a relevant journal style and follow it (but don’t use “newsprint” columns); e.g. note that figure headings are below and table headings are above the figures/tables. 
+- We expect information from the primary literature; i.e. academic peer-reviewed sources, particularly scientific journals. Avoid websites: they usually lack quality control, and they come and go. I recommend that you use:
+  - Web of Science (and Google Scholar) as your main portal for accessing journal articles, searched using key words and 
+  - EndNote or Mendeley for organising your references (but it is not essential). Consult the Library for short courses on how to use these if you don’t know already. 
+- **If you are uncertain about anything seek help early from the teaching staff in class.**
+
+
+## Clare’s tips on writing your report
+
+A great reference on how to write well: 
+
+> Mensh B, Kording K (2017) [Ten simple rules for structuring papers.](https://journals.plos.org/ploscompbiol/article%3Fid%3D10.1371/journal.pcbi.1005619) PLoS Comp. Biol. 13. doi: 10.1371/journal.pcbi.1005619
+
+**START EARLY, START EARLY, START EARLY**: you can start to draft your introduction as early as Week 5, once you have read the literature on the topic and have a feel for what your experiment will cover. Don’t try to make it perfect – just get some words down. You can also start to draft your Materials and Methods section once you have started your experiment and before Week 7. You should be able to draft your result section after Week 7 and then finalise your whole report, including your discussion, in Week 8 and before submitting in Week 9.
+
+**Title**: keep it brief, **relevant**, informative and interesting.
+
+### Abstract
+- Brief abstract (max. 120 words), including (1) background. (providing the context for your problem/project), (2) hypotheses or aims, (3) what you did, (4) what you found, (5) what it means, hence could be five sentences.
+- Do NOT include references or details of statistical results (e.g. no F or P values).
+
+### Introduction 
+- What do we know already? Make sure it leads logically to your aim(s). Provide the context - previous studies on the subject, using published (mainly) primary scientific literature, NOT websites. Integrate information clearly and concisely without loss of original meaning, to provide a logical, well-interpreted review of existing research and other information. 
+- Aim of the experiment and biological hypotheses (IF…) and predictions (THEN…).
+- Why is the study important and/or interesting.
+- Study system – species, location of experiment (brief).
+- Definitions of scientific terms (if needed).
+
+### Materials and Methods
+- Pilot study (if needed, keep it brief).
+- Set-up of experiment. 
+- Sampling design.
+- Data / variables recorded and how.
+- Statistical analyses used, including which are dependent/independent variable(s) (if applicable), unit of replication, actual test(s) & why they are appropriate, statistical package(s).
+
+### Results 
+- Written statements describing results (data and stats). Refer to tables and figures as needed. **Do NOT simply provide the tables and figures without supporting text.**
+- Summary presentation of data (no raw data) as tables, figures or in text as appropriate. Use tables for large amounts of data where detail is important, use figures to illustrate patterns. Indicate sample size and errors, and note whether the latter are standard errors or standard deviations... Format consistently. Make sure decimal places reflect your real capability to measure (e.g. can you really measure a 1 kg plant to 6 decimal places?)
+- Results of statistical analyses presented either in text, on figures, or in tables.
+
+### Discussion 
+- Main conclusions or findings
+- Interpret results – what do they mean? How do they relate to original aims?
+- Compare with and discuss in context of previously published work.
+- Every single study has some limitations to its approach or methods. This does NOT mean it is necessarily flawed. Take a positive approach to your research, given the usual constraints of ANY study, and if you do want to mention/discuss these constraints, do not reduce your discussion to a lengthy apology.
+- Future studies – what would you do next to extend our understanding of the subject and/or improve what you did? Keep this brief.
+
+### General 
+- Write in PLAIN English:
+  - Be succinct and avoid trying to sound “scientific”. 
+  - read it out aloud, if it sounds pompous it is, and it should NOT be.
+- Correct presentation (format/length).
+- References used and cited correctly. 
+You are expected to use at least 10 relevant references from the primary literature.
+
+## More tips on writing your report
+The following is a summary written by Clare’s Lab Group of PhD and Honours students after critically discussing two papers — not for content — but for how they were written.
+
+### Structuring Research Papers: by Clare’s Lab Group
+“Rules” based on Mensh B, Kording K (2017) Ten simple rules for structuring papers. PLoS Comput Biol 13(9): e1005619. https://doi.org/10.1371/journal.pcbi.1005619 
+
+#### Papers discussed:
+> Cline, B. B. and Hunter, M. L. (2014), Different open‐canopy vegetation types affect matrix permeability for a dispersing forest amphibian. J Appl Ecol, 51: 319-329. doi:10.1111/1365-2664.12197
+
+> Palmer, M. S., Fieberg, J. , Swanson, A. , Kosmala, M. and Packer, C. (2017), A ‘dynamic’ landscape of fear: prey responses to spatiotemporal variations in predation risk across the lunar cycle. Ecol Lett, 20: 1364-1373. doi:10.1111/ele.12832
+
+### General notes
+- Do write for your reader, do not write for yourself.
+- If you read the first sentence of every paragraph, it should tell a story.
+- The order of your ideas in each section should be the same; i.e. consistent order in intro, MM, R and probably D of your aims, methods for each aim (provided that works), results and discussion of your results associated with each aim.
+- Subheadings can make sections easier to read and understand the flow of ideas.
+- Avoid zigzagging ideas, i.e. you should never need to say “as mentioned above”.
+- Use consistent wording – DO NOT use a variety of words to mean the same thing because it is confusing for readers. They will not know if you are referring to one thing or several. DO: pick one name for a variable and stick to it.
+- Take the reader by the hand. DO NOT assume they know what you know. DO lead them through your work and explain things as you go along. Justify your decisions. Think like a reviewer: what will they want to know? Pre-empt it by being transparent, explaining what you decided to do and why. 
+
+#### Introduction
+- There will generally be more references in the intro than the discussion. The focus of the intro is on: what do we know already? 
+- References are used to provide background of the research area – do not just list references on a topic. Instead, use them to summarise what we know and understand as a result of these studies. Make it clear what we know from (a) empirical evidence (with examples, i.e. do we know it for lots of individuals/species/contexts/ecosystems or whatever? which? Just one? which?) OR (b) what we think we know (conceptual hypotheses).
+
+#### Suggested Paragraph 1:
+- Introduce the broad topic.
+- Describe what research has been done on this topic.
+
+#### Suggested Paragraph 2:
+- Start to narrow down what area in this topic your paper will be covering
+  - Introduce gaps in knowledge.
+  - Possibly describe issues with previous studies (that your paper will address).
+- This information can show the importance of your paper.
+
+#### Suggested Paragraph 3 to 5:
+- Specifically describe what your paper will investigate.
+- State your aims and hypotheses/predictions. These should follow and funnel down from your background. If you put your hand over your aims, you should be able to guess them from the background you provide above. 
+- Briefly describe how you investigated the topic.
+- State any predictions with information to backup these predictions.
+
+#### Discussion
+- The focus is now on what you found, what it means and so how you have advanced our state of knowledge & understanding as a result of what you have done.
+- Therefore: generally fewer references in the discussion than the introduction.
+- References should be used to support your idea or relate your conclusions/results to previous studies.
+- The following paragraph order makes sense but you can obviously increase or decrease the number of paragraphs depending on the context and size of your study.
+
+#### Suggested Paragraph 1:
+- State any broad results that you found.
+- Provide evidence from your results that enabled you to come to that conclusion.
+- Compare the result to any predictions you made or previous studies.
+
+#### Suggested Paragraph 2 to 4:
+- State more detailed results (e.g. species specific results if dealing with multiple species).
+- Provide evidence from your results that enabled you to come to that conclusion.
+- Compare the result to any predictions made or previous studies.
+
+#### Suggested Paragraph 5:
+- Limitations of your study
+  - No study can answer everything and every study is limited in some way in what is achieves! Don’t worry! That’s life!
+  - Don’t dwell on this or go too much in depth – especially do not be apologetic.
+  - Be positive: just outline the boundaries of the conclusions that can be made with your results.
+- Suggested direction of future studies i.e. what could be done next to move forward in our understanding and/or resolving any unanswered questions given what you have now discovered – again keep this brief.
+
+#### Suggested Paragraph 6:
+- What are the implications of your study for your field of research
+- Describe what this information can affect or be used for (e.g. management decisions). 
+
+#### Suggested Paragraph 7:
+- You do not need a concluding paragraph – but if you do, it is not just a summary.
+- It should be more big picture stuff but take care: it should not state something that could have been said whether or not you had done your study. It must rest on your study.
+ 
+ 

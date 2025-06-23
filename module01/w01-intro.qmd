@@ -1,0 +1,48 @@
+---
+author: Januar Harianto
+draft: false
+---
+
+# Workshop 1 {-}
+
+**Workshop slides are on Canvas.**
+
+
+## Intro to the practicals
+
+Welcome to the first workshop of BEDA. The workshops are designed to help you learn specific skills, understand the practicals and to provide you with an opportunity to ask questions. **Workshops are run only in Module 1 (Januar).**
+
+The workshop pages are designed to provide **supporting information** for the workshop slides. As this is the first workshop we will start with a brief introduction to the practicals and the software we will be using. 
+
+## Software
+
+### R and RStudio
+
+- Download R [here](https://cran.rstudio.com/).
+- Download RStudio Desktop from [here](https://posit.co/download/rstudio-desktop/).
+- If necessary, you can sign up to RStudio Cloud [here](https://posit.cloud/). This applies to those of you who have trouble installing R and RStudio on your computer, and somehow still prefer this to the other software options.
+
+You must have both installed on your computer. If you already have them installed, please make sure they are up-to-date. Once installed, **make sure that you run R via RStudio Desktop** and *not* the base R GUI.
+
+### Jamovi an JASP
+
+- Download Jamovi from [here](https://www.jamovi.org/download.html). 
+- Unless you have reason to **not** use Jamovi, download JASP from [here](https://jasp-stats.org/download/).
+- For JASP, refer to [JASP Materials](https://jasp-stats.org/jasp-materials/#manuals) for documentation and more. We will not support JASP in BEDA this year.
+
+For Jamovi, the **current** branch is recommended. Remember -- if you are on a Mac with Apple Silicon, download the arm64 version for a slightly better performance.
+
+
+### SPSS
+
+- SPSS is only available on University computers. Check your lab computers for availability.
+- Alternatively, you can use the University's [Citrix Workspace](https://uniconnect.cloud.com/Citrix/StoreWeb/#/login) to access SPSS.
+
+ While I don't use SPSS myself, we do provide support for it in BEDA. It is somewhat of mixed bag right now as it has R integration, is point-and-click, and also has a syntax editor for scripting analyses.
+SPSS is perhaps required in other Modules so it is good to know how to access it if you need it.
+
+### PRIMER v7
+
+- This software is only used in Module 3 when we cover multivariate analysis. 
+- Similar to SPSS, PRIMER is only available on University computers. Check your lab computers for availability.
+- It might be available on [Citrix Workspace](https://uniconnect.cloud.com/Citrix/StoreWeb/#/login) but will have licence restrictions (i.e. a limited number of concurrent users).

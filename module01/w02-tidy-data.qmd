@@ -1,0 +1,96 @@
+---
+author: Januar Harianto
+draft: false
+---
+
+```{r setup}
+#| include: false
+
+library(tidyverse)
+library(readxl)
+library(gt)
+
+```
+
+# Workshop 2 {-}
+
+**Workshop slides are on Canvas.**
+
+## Data entry
+
+Data is the reason why we can do science. We tend to invest a lot of time and effort in collecting data -- in fact it forms be bulk of our work.
+
+In thi workshop we will quickly go through the process of data entry and work on a few examples together.
+
+
+## Tidy data
+
+- The tidy data concept was popularised by Hadley Wickham in his paper in the Journal of Statistical Software in 2014 -- [Tidy Data](https://vita.had.co.nz/papers/tidy-data.pdf).
+- Not a new concept -- tidy data is basically data in "long" format as opposed to "wide" format. Excel users tend to prefer the wide format but it is not ideal for data analysis.
+- Both formats contain the exact same information, so there is no loss of data. However, the long format is more suitable for data analysis and visualisation and is the preferred format for most statistical software.
+
+**Recording data in long format will save you time and effort in the long run.**
+
+::: {layout="[ 0.4, -0.1, 0.4 ]" #fig-format}
+
+::: {#first-column}
+```{r}
+#| echo: false
+possums <- readxl::read_excel("possums.xlsx", sheet = 2) |>
+  select(Sex, BW)
+possums |>
+  head(8) |>
+  gt() |>
+  opt_stylize(style = 5, color = "red")
+```
+:::
+
+::: {#second-column}
+```{r}
+#| echo: false
+possums |>
+  group_by(Sex) |>
+  mutate(row = row_number()) |>
+  pivot_wider(names_from = Sex, values_from = BW) |>
+  select(-row) |>
+  head(4) |>
+  gt() |>
+  opt_stylize(style = 5, color = "red")
+```
+:::
+
+Data should be in long format (left) where each row is an observation and each column is a variable. This is the preferred format for most statistical software. Wide format (right) is also common, but may require additional steps to analyse or visualise in some instances.
+:::
+
+## Three rules
+
+- Each variable must have its own column.
+- Each observation must have its own row.
+- Each value must have its own cell.
+
+
+## How to tidy data?
+
+Ideally, you would want to keep raw data intact and document the steps you took to tidy the data. This is important for reproducibility and transparency. Do it in Excel, R, or any other software you are comfortable with -- the key is good record keeping.
+
+
+## Important considerations
+
+1. Each column should ony contain one variable, and the variable should not contain mixed data types (e.g. numeric and character).
+2. When naming columns, avoid spaces and special characters. Use underscores or periods to separate words.
+3. Don't use formatting, and avoid merged cells.
+4. Understand the difference between missing data and zero. It is better to leave cells as blank if the data is missing, or use NA.
+5. Include brief metadata directly in the data table as a separate column. For extensive metadata, it is recommended to document it in a separate file or worksheet.
+
+
+
+
+## Example data
+
+Download the following files for this workshop. 
+
+{{< downloadthis assets/lotr.xlsx dname="lotr" label="lotr.xlsx" icon="database-fill-down" type="info" >}}
+
+{{< downloadthis assets/ferret.xlsx dname="ferret" label="ferret.xlsx" icon="database-fill-down" type="info" >}}
+
+{{< downloadthis assets/fish_station.csv dname="fish_station" label="fish_station.csv" icon="database-fill-down" type="info" >}}

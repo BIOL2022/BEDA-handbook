@@ -1,0 +1,202 @@
+---
+title: Week 2 - Study design
+---
+
+## Welcome
+
+Welcome to the Week 2 practical. Today we will be focusing on data collection and how to prepare your data for analysis.
+
+::: callout-important
+**You will be working in groups of at least 4 students in this practical.**
+:::
+
+
+## Learning objectives
+
+By the end of this practical, you should be able to:
+
+1. Formulate a model and hypothesis based on observations.
+2. Design a study to test your model.
+3. Enter data into a spreadsheet.
+4. Understand the importance of tidy data.
+
+### What to submit at the end of the practical
+
+1. **A simple study design**, documented on Google Docs. In groups, you will describe your model and sampling schemes on a shared document (maybe).
+2. **Data** -- your collected data will need to be submitted to your demonstrators for analysis next week.
+
+## Workshop
+The Week 2 workshop will go through **Tidy data principles**.
+Workshop slides are available on Canvas.
+
+## Exercise 1 -- Modelling from observations
+
+::: callout-important
+Remember, the best models are often the simplest. Focus on logical and critical thinking when designing your study. **The sampling design certainly the bigger focus here in this short exercise.** Keep this in mind as you work through the exercise!
+:::
+
+### Background
+Images are commonly used to quantify patterns in biology, from molecules to ecosystems. In ecology, for instance, satellite images and aerial photographs are used in some ecological studies to quantify patterns of distribution and abundances of animals and plants across habitats. 
+
+Here you will explore experimental design, model formulation and data analysis by collecting data from available images and use both evidence and logic to work out how to explain the patterns you observe.
+
+**Work in groups** -- You will be working in groups of 3-4 students. Your task is to **observe** the images provided and formulate a **model** that explains the patterns you observe. You will then create a **study design** that will allow you to test your model. 
+
+::: callout-important
+Do not proceed to Exercise 2 until you have completed this exercise, and a Demonstrator has sighted your study design.
+:::
+
+### Getting started
+
+You are provided with random, representative, replicate photographs of a common marine habitat that spans > 8,000 km of the Great Southern Reef, i.e. the coastline along the bottom half of Australia -- intertidal rocky shores (Fig 1). 
+
+::: {.content-visible when-format="html"}
+Access the images, including background information, [here](/module01/105-images.qmd){target="_blank"} (note: link will open in a new window/tab).
+:::
+
+::: {.content-visible when-format="pdf"}
+Please check the online Unit Manual for the link to the images. Your demonstrators will also be able to show you how to access the images.
+:::
+
+
+**Using these images and the species identification guide, formulate a model and a (testable) hypothesis. You will then think about what data you need to collect to test your hypothesis.** See below for further details.
+
+
+
+### Study design
+
+::: callout-important
+**Focus on the sampling design as you work on your model.** Keep this in mind as you work through the exercise. If overwhelmed, think simple -- the focus is on working through these sampling design considerations:
+
+- Control
+- Replication
+- Randomisation
+
+See [Lecture 3 slides](https://biol2022.github.io/L02a-represenative-sampling/#/title-slide) for more information.
+:::
+
+You should have a clear model in mind before collecting data. The model determines your sampling strategy and the type of data you need. Consider the following:
+
+- **What is the purpose of your model?** Think about the biological question you are trying to answer, and the kinds of data you need to collect to answer it.
+- Think of how you would collect data to test your model. **What are the variables you need to measure?** How would you measure them?
+- Scrutinise your images with the model in mind. **Can the data be collected representatively from the images?** Are there issues of replication or confounding variables that you need to consider?
+- Do you have the time and resources to complete the study in the time frame provided, i.e. by the end of next week?
+- What is your **backup plan** if data assumptions are not met? 
+
+While you may not have all the answers right away, it's important to have a rough idea of what you want to do, such as comparing groups, measuring correlation, or creating a linear model.
+
+![The Great Southern Reef. © 2021 California Academy of Sciences.](../assets/southern-reef-map.png){width=70%}
+
+### Task
+
+A [Google Docs page](https://docs.google.com/document/d/1JhSevrzpLlDsD0a4225h_dcC4i5ZOII7dkTr8u4gCgs/edit#heading=h.rc1vfwuebyac) is available for you as a guide to record your responses. **On the document, select File > Download to save the file to use in your group.** Note that this document is a guide and you may choose to use a different format to record your progress.
+
+Then, address your study design by answering the following questions:
+
+1. **Model and hypothesis**: What is your model and hypothesis? What are you trying to test and how will you test it? What would the plot look like?
+2. **Variables**: What are the variables you need to measure? What types of variables are they (e.g. continuous, categorical)?
+3. **Data collection**: How would you collect data to test your model? What are the potential issues you need to consider? 
+
+::: {.callout-note collapse="true"}
+## Example
+Note that this example will probably not work for the images, but it should give you an idea of what is expected. Also note that you do not need to follow the template exactly!
+
+- **Project title:** Does rock size influence the number of species that can be found on a rocky shore?
+- **Group name**: Schist happens
+
+1. **Model and hypothesis**: 
+   - We hypothesise that the number of species on the rocky shore is positively correlated with the size of the rocks. 
+   - We will model the relationship between the number of species and the size of the rocks using a linear model.
+   - The plot is expected to be a scatter plot with the number of species on the y-axis and the size of the rocks on the x-axis.
+2. **Variables**: 
+   - We need to measure the number of species and the size of the rocks. 
+   - Number of species is an integer variable.
+   - Size of the rocks is continuous variable.
+3. **Sampling design, control, replication, randomisation**: 
+   - For each image, we will divide it into a 10x10 grid.
+   - 3 random quadrats will be selected from each grid.
+   - The size of all visible rocks will be measured in each quadrat.
+   - The number of unique species in each quadrat will also be counted.
+   - We will then calculate the average size of rocks and the average number of species for each image to minimise pseudoreplication.
+   - Possible confounding could arise from the presence of seaweed, which could affect the number of species present.
+   - If the number of species is too high to count, we will group species into functional groups and count the number of functional groups instead.
+4. **Backup plan**: 
+   - If the assumptions of the linear model are not met, we will transform the data, otherwise we will attempt a non-linear model.
+
+:::
+
+
+## Exercise 2 -- data entry
+
+It is time to sample data from the images. While doing so, consider how you might minimise bias in your sampling. Also, if have not already done so, plan for time: 
+
+- How long will it take to sample data from each image?
+- How many images will you sample from?
+- How many samples will you take from each image?
+
+**Enter your data into a spreadsheet as soon as you have them.** You can use any spreadsheet software you like (e.g. Excel, Google Sheets, Numbers). Google Sheets is easiest if everyone in your group is sampling and entering data at the same time as it is easy to set up a shared spreadsheet, but you may also share the same computer and enter data one at a time.
+
+:::{.callout-important}
+
+## Discuss
+If more than one person is entering data, will it influence the results? Why or why not? Think about how you can reduce the impact of this.
+:::
+
+
+::: {.callout-note collapse="true"}
+
+## Optional: tidy your data
+To make your life easier, *recall* the [tidy data principles](https://r4ds.had.co.nz/tidy-data.html) outlined in the workshop:
+
+1. Each variable must have its own column.
+2. Each observation must have its own row.
+3. Each value must have its own cell. 
+
+The table below is tidy:
+
+```{r}
+#| echo: false
+#| message: false
+library(gt)
+library(tidyverse)
+library(gtExtras)
+person <- c("John", "Mary", "Jane", "John", "Mary", "Jane")
+treatment <- c("A", "A", "A", "B", "B", "B")
+count <- c(5, 3, 2, 6, 4, 5)
+tidy_data <- tibble(person, treatment, count)
+gt(tidy_data) |>
+  gt_theme_espn() |>
+  tab_caption(caption = md("Table 1. Tidy data."))
+```
+
+The table below is not (although it may look "better” to you). Why?
+
+```{r}
+#| echo: false
+
+messy_data <- tibble(
+  person = c("John", "Mary", "Jane"),
+  "treatment A" = c(5, 3, 2),
+  "treatment B" = c(6, 4, 5)
+)
+gt(messy_data) |>
+  gt_theme_espn() |>
+  tab_caption(caption = md("Table 2. Non-tidy data. Treatment A and B represent the same variable (count)."))
+```
+
+
+Note: tidy data will reduce the amount of time you spend cleaning your data during data analysis, but you can also choose not to follow these principles if you prefer.
+
+:::
+
+## Submit your data
+
+Demonstrators will provide you with a USB drive to submit your data. Please make sure that your data are saved in a format that can be opened by Excel or Google Sheets. **Your group will be using this data next week so make sure that we have it!**
+
+::: callout-note
+Alternatively, upload to Google Drive [here](https://drive.google.com/drive/folders/1vt91fyawYoYxv4xAkqFJMG-fFK-au5e7?usp=drive_link). Make sure to rename your file... it's key to data management!
+:::
+
+## End of practical
+
+Don't forget to submit your data! You should also start to look at the [projects available for Module 2](../module02/203-projects.qmd), as you will sign up for one of them **next week** to work on Report 1.

@@ -11,25 +11,25 @@ gtheme_beda <- function(gt_object) {
   gt_object %>%
     # General table options
     tab_options(
-      table.width = pct(100),              # Table width to 100%
-      table.font.size = px(14),            # Base font size for the table
-      table.border.top.style = "none",     # No top border for the table itself
+      table.width = pct(100), # Table width to 100%
+      table.font.size = px(14), # Base font size for the table
+      table.border.top.style = "none", # No top border for the table itself
       table.border.bottom.style = "solid", # Solid bottom border for the table
-      table.border.bottom.width = px(2),   # Slightly thicker bottom border for emphasis
+      table.border.bottom.width = px(2), # Slightly thicker bottom border for emphasis
       table.border.bottom.color = "#333333", # Dark grey for bottom border
 
       # Heading options (if a heading is present)
       heading.align = "left",
-      heading.title.font.size = px(18),    # Font size for title
+      heading.title.font.size = px(18), # Font size for title
       heading.subtitle.font.size = px(15), # Font size for subtitle
-      heading.border.bottom.style = "none",# No border under heading elements
+      heading.border.bottom.style = "none", # No border under heading elements
 
       # Column label options
       column_labels.font.weight = "bold",
       column_labels.background.color = "white", # Clean white background for column labels
       column_labels.border.top.style = "solid",
       column_labels.border.top.width = px(2),
-      column_labels.border.top.color = "#333333",    # Dark grey top border for column labels
+      column_labels.border.top.color = "#333333", # Dark grey top border for column labels
       column_labels.border.bottom.style = "solid",
       column_labels.border.bottom.width = px(1),
       column_labels.border.bottom.color = "#D3D3D3", # Lighter grey bottom border for column labels
@@ -38,7 +38,7 @@ gtheme_beda <- function(gt_object) {
       table_body.border.top.style = "solid", # Separator line between column labels and table body
       table_body.border.top.width = px(1),
       table_body.border.top.color = "#D3D3D3",
-      data_row.padding = px(8),            # Padding for data rows
+      data_row.padding = px(8), # Padding for data rows
 
       # Source notes options (if present)
       source_notes.font.size = px(12),
