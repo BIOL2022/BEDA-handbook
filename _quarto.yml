@@ -36,12 +36,9 @@ website:
       - icon: info-circle-fill
         text: "Unit Information"
         href: unit-information.qmd
-      - icon: clipboard-check
-        text: Assessments
-        href: assessments/assessments.qmd
-      - icon: calendar-event
-        text: Schedule
-        href: schedule.qmd
+      # - icon: calendar-event
+      #   text: Schedule
+      #   href: schedule.qmd
       - icon: file-earmark-text
         text: Cheatsheets
         href: cheatsheets.qmd
@@ -51,6 +48,9 @@ website:
       - icon: easel3-fill
         text: Lectures
         href: lectures.qmd
+      - icon: clipboard-check
+        text: Assessments
+        href: assessments/assessments.qmd
       - text: ---
       - icon: book
         text: "<b>Practicals</b>"
@@ -88,7 +88,7 @@ format:
     grid:
       sidebar-width: 300px
     # css: styles.css
-    toc: false
+    toc: true
     navbar: false
     sidebar: true
     # page-layout: full
