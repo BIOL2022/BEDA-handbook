@@ -2,35 +2,28 @@
 title: "Unit information"
 ---
 
+This is a quick overview of the unit covering how it is structured, how we commumnicate and what is expected of you.
+
 ## Modules
+BEDA is divided into **three modules**, each taught by a different lecturer. The modules vary in length on purpose. 
 
-BEDA is divided into **three modules**, each taught by a different lecturer. The modules vary in length on purpose. **Module 1** gives you a refresher on the basics of experimental design and analysis. Modules 2 and 3 build on this foundation, introducing more advanced topics in univariate and multivariate statistics. You’ll notice some overlap between Modules 1 and 2 – that’s deliberate. Revisiting key ideas helps you learn, and you’ll see familiar concepts in new situations.
-
-- **Module 1**, led by Januar Harianto, covers the essentials of statistics from a fresh angle. If you’re new to stats, this module will set you up well, focusing less on the traditional approach of picking the “right” test and more on understanding why and how to build a solid statistical model to answer your research questions.
+- **Module 1**, led by Januar Harianto, covers the essentials of statistics from a fresh angle. If you are "new" to stats, this module will set you up well, focusing less on the traditional approach of picking the “right” test and more on understanding why and how to build a solid statistical model to answer your research questions.
 - **Module 2**, led by Clare McArthur, critically assesses study designs that have already been done. Using real data examples, we will look at how variations in study design can influence the results. You will notice that the concepts from Module 1 are applicable to more complex models. You will also start working on Report 1 which requires you to design and analyse an experiment.
 - **Module 3**, led by Mathew Crowther, focuses on the application of statistical techniques to real-world data that is often complex and messy and how to deal with it using multivariate techniques. You will start working on Report 2 which requires you to collect and analyse data from your environment, rather than a controlled experiment.
 
 ## Announcements
-**Please make a habit of checking [Ed (also known as Edstem)](https://edstem.org/au/dashboard) for announcements.** Aim to look at it at least once a week, but ideally **every day** so you don’t miss any important updates about the unit. It’s your responsibility to keep up to date, and we can’t accept excuses like “I didn’t know” or “I didn’t see the announcement” for anything posted there. Setting up notifications is a good idea so that announcements come to you directly in your email.
+We will post all important updates and announcements on [Ed (also known as Edstem)](https://edstem.org/au/dashboard). Please get into the habit of checking it regularly (i.e. daily). **It is up to you to stay on top of these announcements. Any special consideration requests or emails that are due to a lack of awareness of announcements will not be considered.**
 
 ## Lectures and practicals
 
-**Lectures and practicals are compulsory**. We take attendance in practicals and expect you to come to all of them. Practicals are where you’ll work on your assessments in groups, so it’s important to show up and support your peers. You are expected to attend two lectures and one practical each week.
+**Attending lectures and practicals is mandatory.** We monitor attendance in practicals, and your participation is crucial since you'll be working on assessments in groups. Your presence is important for your own learning and for supporting your peers. Each week, there are two lectures and one practical.
 
 - **Tuesday Lecture**: 10:00am - 11:00am, [BHB Lecture Theatre 1110](https://maps.sydney.edu.au/?room=H70.01.1110)
 - **Wednesday Lecture**: 10:00am - 11:00am, [Carslaw Lecture Theatre 159-259](https://maps.sydney.edu.au/?room=F07.02.159-259)
-- **Tue, Wed and Fri Practical**: 2:00pm - 4:00pm or 4:00pm - 6:00pm, [Carlsaw Wet Lab 307](https://maps.sydney.edu.au/?room=F07.03.307)
+- **Practical Sessions**: Your practical will be on either Tuesday, Wednesday, or Friday from 2:00pm - 4:00pm or 4:00pm - 6:00pm in [Carlsaw Wet Lab 307](https://maps.sydney.edu.au/?room=F07.03.307).
 
-Please check your timetable for the exact time of your practical. **Because Carslaw 307 is a wet lab, you will need to adhere to the safety rules and wear appropriate clothing.** This includes wearing closed-toe shoes, tied hair, and a lab coat. If you do not follow these rules, you will not be allowed to participate in the practical.
+Make sure to check your personal timetable for your specific practical session time.
 
 ## Assessments
 
-It is important that you work on, and hand in ALL assessments. **Historically, students who do not hand in at least one assessment do not pass the unit**. Please see the [Assessments](assessments/assessments.qmd) page for more details. 
-
-## Generative AI
-
-There’s no escaping generative AI (GenAI) so let’s use it responsibly. The University maintains a Canvas site [AI in Education](https://canvas.sydney.edu.au/courses/51655) which provides information on the use of AI tools in your studies. 
-
-In most cases, we’re happy for you to use AI in our unsecured assessments (Reports 1 and 2) as long as you’re transparent about using it and adhere to the academic integrity guidelines while doing so. In fact, Januar will most likely run a workshop on using AI in Week 3. Just remember that you are here to learn! GenAI is an excellent tool to help you learn better, but using it to do your work defeats that purpose.
-
-**Your report guidelines will outline our expectations on the use of any AI tool. If you’re unsure, ask us!**
+To pass this unit, you must complete and submit all assessment tasks. Importantly, Report 1 and 2 are compulsory assessments you will fail the unit if you do not submit them.  For more information on the assessments, please see the [Assessments](assessments/assessments.qmd) page.

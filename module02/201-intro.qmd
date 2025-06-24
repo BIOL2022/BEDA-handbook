@@ -1,8 +1,7 @@
 ---
+title: "Introduction"
 author: Clare McArthur
 ---
-
-# Module 2 (Weeks 4 -- 8) {.unnumbered}
 
 ## Preamble
 
@@ -35,7 +34,7 @@ You will need to use the lecture information immediately in these pracs. You wil
 This assessment requires two separate submissions in Canvas:
 
 1. **Report 1 Group Data**: The Excel file (spreadsheets) containing your Group’s data. This needs to be submitted by one group member on behalf of your group.
-2. **Report 1**:Your Individual Report on your experiment, in the format of a short scientific article (worth 25% of the total unit mark).
+2. **Report 1**: Your Individual Report on your experiment, in the format of a short scientific article (worth 25% of the total unit mark).
 
 ## How you will get feedback
 

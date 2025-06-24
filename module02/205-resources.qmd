@@ -1,5 +1,5 @@
 ---
-title: Report 1 -- **Resources**
+title: Report 1 -- Resources
 ---
 
 ## Useful documents for Report 1

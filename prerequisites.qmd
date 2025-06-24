@@ -1,0 +1,26 @@
+---
+title: "Am I ready for BEDA?"
+---
+
+BEDA is designed with the assumption that you have some prior experience with statistics from your first year of study. **Most of you will have completed a unit like [ENVX1002]() or [DATA1001](), which provide a solid foundation in statistics.** However, the only formal prerequisite for BEDA is the completion of at least one first-year science unit (see [Enrolment Rules](https://www.sydney.edu.au/units/BIOL2022) for details). We strongly encourage those of you who have not completed a first-year statistics unit to consider doing so before enrolling in BEDA.
+
+::: {.callout-important}
+If you still choose to enrol in BEDA without prior statistics experience, please be aware that you will need to invest extra time and effort to catch up. BEDA is not designed to teach statistics from the ground up as this has already been covered in your first-year units!
+:::
+
+### How to gauge your readiness
+
+To help you determine if you are ready for BEDA, we have translated the key foundational concepts into a short self-assessment. Before starting this unit, you should be able to:
+
+- **Explain a p-value:** What does a p-value represent? How would you interpret a p-value of 0.03 in the context of a biological experiment?
+- **Understand correlation:** What is the difference between positive and negative correlation? Why does correlation not necessarily imply causation?
+- **Identify data types:** Can you distinguish between continuous, discrete, and categorical data and provide a relevant example for each?
+- **Describe central tendency:** When is it more appropriate to use the mean versus the median to describe the centre of a dataset?
+- **Outline hypothesis testing:** What are the core steps involved in hypothesis testing, including the roles of the null and alternative hypotheses?
+- **Interpret statistical tests:** Can you explain the main purpose of a t-test and a simple linear regression? Could you define what a 'confidence interval' or 'standard error' tells you about your results?
+
+The first few weeks of BEDA will include a review of these concepts, but we will not be teaching them in detail. If you are not familiar with these topics, we recommend reviewing them before the unit begins, either through online resources or by reading introductory statistics textbooks. Two that we recommend are available in the Library and are linked below:
+
+- [Experimental Design and Data Analysis for Biologists](https://sydney.primo.exlibrisgroup.com/permalink/61USYD_INST/12rahnq/alma991032734241605106) by Quinn and Keough
+- [Biometry: the principles and practice of statistics in biological research](https://sydney.primo.exlibrisgroup.com/permalink/61USYD_INST/12rahnq/alma991002054149705106) by Sokal and Rohlf
+

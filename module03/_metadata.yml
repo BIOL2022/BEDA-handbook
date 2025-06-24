@@ -1,0 +1,7 @@
+editor:
+  render-on-save: true
+
+execute:
+  freeze: auto
+
+number-sections: true

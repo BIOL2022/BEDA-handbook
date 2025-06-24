@@ -1,6 +1,5 @@
 ---
-title: "Week 1: Getting Started"
-number-sections: true
+title: "**Week 1**: Getting started"
 ---
 
 ## Introduction

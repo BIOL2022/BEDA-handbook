@@ -1,5 +1,5 @@
 ---
-title: Timeline
+title: "**Weeks 4 -- 8**: Timeline"
 ---
 
 If you wish to download the timeline as a table, click [here](../assets/timeline_v3.pdf).

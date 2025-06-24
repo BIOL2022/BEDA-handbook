@@ -1,5 +1,5 @@
 ---
-title: Week 11 -- Part 3
+title: "**Week 11**:Analysing your data"
 ---
 
 :::{.callout-tip appearance="simple"}

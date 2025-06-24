@@ -1,5 +1,5 @@
 ---
-title: Week 10 -- Part 2
+title: "**Week 10**: Permutational techniques"
 ---
 
 :::{.callout-tip appearance="simple"}

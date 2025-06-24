@@ -1,7 +1,7 @@
 ---
+title: "Introduction"
 author: Mathew Crowther
 ---
-# Module 3 (Weeks 9 -- 13) {.unnumbered}
 
 ## Preamble
 The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:

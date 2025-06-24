@@ -6,39 +6,21 @@ date-format: "[Semester 2, ]YYYY" # see https://momentjs.com/docs/#/displaying/f
 
 ![](assets/images/banner02.png)
 
-## Welcome!
+## Introduction
 
+Thank you for joining BIOL202 Biology Experimental Design and Analysis, known to many as **BEDA (🐝-da)**. The ability to critically evaluate evidence is a fundamental life skill, and our aim is to help you build a strong foundation in it by helping you develop essential, hands-on skills in experimental design and analysis. We will move beyond theory and focus on the 'how' and 'why' of research:
 
+- *How* do you design a robust study from the ground up?
+- *Why* does your study's design fundamentally shape its results?
+- *How* do you select the right statistical tools for your specific research question?
 
+The skills you learn will be invaluable not just in biology, but in any future career path you choose. 
 
-Thank you for joining BIOL202 Biology Experimental Design and Analysis, also known as **BEDA (🐝-da)**. 
+**Importante note: We build upon foundational statistical concepts, so a basic understanding is assumed.** If you need a refresher, please see: [Am I ready for BEDA?](prerequisites.qmd)
 
-This unit is a second-year core Biology unit taught at the University of Sydney and is designed to help you develop essential skills in biology, focusing on how research is planned, analysed, and understood. Unlike most statistics courses, BEDA emphasises the **practical/applied** side of data analysis. We expect you [already know the basics of statistics](#) so we concentrate on the **how** and **why** behind statistical methods:
-
-- *How* do we design a strong study?
-- *Why* does the design of a study affect the results?
-- *Why* is it important to consider the context when choosing statistical tests?
-
-### Is this unit for me?
-
-**The ability to think critically about information that is presented to you and evidence is a *fundamental* skill in life itself, and our aim is to help you build a strong foundation in it.** 
-
-BEDA has been designed to give you the hands-on skills that will be valuable throughout your career. While our examples are drawn from biology, the skills in experimental design and analysis are *universal* as you assess information, evaluate evidence, and make decisions in your future roles -- whether you become a biologist, a veterinarian, a medical professional, or an engineer. 
-
-Importantly, you will realise that BEDA is not just about learning statistics. It is about **learning how to think critically** about information and how to evaluate evidence. The statistical software and methods are just tools to help you achieve this goal. We do not focus on any one software package, and you are free to use whichever software you prefer (we are software-agnostic!). Our main aim is to help you understand how to approach problems and make sense of data.
-
-#### What should I already know?
-
-BEDA's prerequisite is that you need to have completed at least one first-year unit (see [Enrolment rules](https://www.sydney.edu.au/units/BIOL2022)). We also have an assumption that you have studied statistics before, but you may still find yourself in this unit without no prior statistical knowledge. 
-
-**If you don’t know what a p-value is, what it means for things to be correlated, or what an integer is, then BEDA is probably going to be very challenging. We recommend you take a first-year statistics unit, such as ENVX1002 or DATA1001, to learm the basics**. Alternatively you may wait until you’ve completed at least two semesters at university. This will help you get used to university life and the expectations and you will be better prepared for the challenges of BEDA.
-
-Nevertheless, if you have not taken a statistics unit and have decided to take on BEDA for one reason another, we are here to help you. The first three week of BEDA will be a refresher on the basics of statistics, and we will provide you with resources to help you catch up, but be aware that the extra effort is your responsibility as we cannot cover everything that a first-year unit would cover in great detail.
 
 ### Using this handbook
 
-If you are reading this handbook online, you can use the sidebar on the left to navigate to different sections. Januar will run through the handbook in Week 1 during the lectures and practicals. 
-
-A PDF version of this handbook exists, but it is **not** the primary version and is only intended to be used as a reference during practicals. We will share printed copies of the PDF handbook during practicals.
-
-For now, you need to figure out how BEDA works, so please go to [Unit Information](unit-information.qmd) to learn about the unit structure, assessment, our expecations of you and other important information.
+This online handbook is your primary resource for BEDA. Use the sidebar to navigate through the content. We will walk you through its structure during our first week. 
+<!-- A simplified [<i class=" bi bi-file-text"></i> PDF version](assets/BEDA-handbook.pdf) is also available for offline use, and printed copies will be provided during practicals for quick reference. -->
+To get started, head over to [Unit Information](unit-information.qmd) to learn about the course structure, assessments, and what to expect.

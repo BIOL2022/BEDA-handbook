@@ -29,6 +29,9 @@ website:
       - icon: house-fill
         text: Home
         href: index.qmd
+      - icon: question-circle-fill
+        text: "<b>Am I ready for BEDA?</b>"
+        href: prerequisites.qmd
       - icon: info-circle-fill
         text: "Unit Information"
         href: unit-information.qmd
@@ -45,19 +48,41 @@ website:
         text: Contact us
       - text: ---
       - icon: book
-        text: "Practicals"
-      - section: "Module 1"
+        text: "<b>Practicals</b>"
+      - section: "🐝 Module 1 (Wk 01-03)"
         contents:
-          - module01/101-intro.qmd
+          - href: module01/101-intro.qmd
+            text: "About"
           - module01/102-week01.qmd
           - module01/103-week02.qmd
+          - "&nbsp; &nbsp; &nbsp; &nbsp; Intertidal site images"
+          - "&nbsp; &nbsp; &nbsp; &nbsp; Species ID guide"
           - module01/104-week03.qmd
+      - section: "🐝 Module 2 (Wk 04-08)"
+        contents:
+          - href: module02/201-intro.qmd
+            text: "About"
+          - module02/202-timeline.qmd
+          - module02/203-projects.qmd
+          - module02/204-report1.qmd
+          - module02/205-resources.qmd
+      - section: "🐝 Module 3 (Wk 09-12)"
+        contents:
+          - href: module03/301-intro.qmd
+            text: "About"
+          - module03/302-week09.qmd
+          - module03/303-week10.qmd
+          - module03/304-week11.qmd
+          - module03/305-week12.qmd
       - text: ---
       - text: Send us feedback
 
 format:
   html:
-    theme: cosmo
+    theme: simplex # cerulean, cosmo, cyborg, darkly, flatly, journal, litera, lumen, lux, materia, minty, pulse, sandstone, simplex, sketchy, slate, solar, spacelab, superhero, united
+    fontsize: 15px
+    grid:
+      sidebar-width: 300px
     # css: styles.css
     toc: false
     navbar: false

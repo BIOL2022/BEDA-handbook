@@ -1,5 +1,5 @@
 ---
-title: Week 12 -- Support session
+title: "**Week 12**: Support session"
 ---
 
 :::{.callout-tip appearance="simple"}

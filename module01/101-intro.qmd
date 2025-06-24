@@ -4,52 +4,10 @@ author: Januar Harianto
 ---
 
 
-**Science is about asking the right questions in the right way, so we can draw meaningful conclusions from the data we collect.**
+**Science is about asking the right questions in the right way so we can draw meaningful conclusions from the data we collect.**
 This is not as simple as it seems, but it is a key skill in scientific enquiry. We need to be able to ask questions in a quantitative way to distinguish between different explanations for the things we observe. *Before* we start using t-tests, regression, or ANOVA; before we perform mixed modelling or moltivariate analyses; before we use the *newest* tools for data analysis, **we must first learn to ask the right questions**. So let’s go back to basics. 
 
 In this module:
 
 - **Lectures (Weeks 1 --5)** will cover the fundamental principles of scientific enquiry, including how to ask the right questions, how to design a study, and how to interpret results. We will also introduce to you the linear modelling framework, which is a powerful tool for understanding the relationships between variables in your data.
 - **Practicals (Weeks 1--3)** aim to help you build the essential skills for scientific enquiry. We will cover experimental design, model formulation, and sampling design. Each week begins with a short 30-minute workshop to introduce the main ideas and techniques. You will then complete the practical work.
-
-## Outline
-
-### Lectures
-
-#### **Week 01**: 4 Aug -- 08 Aug
-
-- L01a: Guest lecture and welcome to BEDA
-- L01b: The nature of data and numbers in biology experiments
-- L01c: (Re-) indroduction to experimental design and analysis
-- P01: Week 01 Practical
-
-#### **Week 02**: 11 Aug -- 15 Aug
-
-- L02a: What is a representative sample?
-- L02b: Modelling fundamentals – the linear model
-- L02c: (Almost) every statistical technique is a linear model
-- P02: Week 02 Practical
-
-#### **Week 03**: 18 Aug - 22 Aug	
-
-- L03a: All models are wrong, but some more than others (testing assumptions)
-- L03b: Modelling differences: the t-test
-
-#### **Week 04**: 25 Aug - 29 Aug	
-
-- L04a: Modelling relationships: multiple linear regression
-- L04b: Modelling differences: analysis of variance (ANOCA)
-- L04c: Model transformations – why, and how?
-
-#### **Week 05**: 1 Sep - 5 Sep
-
-- L05a: Control, fixed and random variables
-- L05b: You’ve got this – Module 1 revision
-
-
-### Practicals
-
-- [**Week 1: Introduction**](102-week01.qmd) – We will introduce the structure of the practicals, the software you will use throughout the unit, and get you started with some modelling exercises.
-- [**Week 2: Data sampling**](103-week02.qmd) – Learn about sampling and how to design a study that can produce meaningful results – by collecting data from images. More modelling exercises will follow.
-- [**Week 3: Data analysis**](104-week03.qmd) – Practise data analysis and diagnostics using the data you collected in the previous week, and discuss what worked well and what did not.
-
