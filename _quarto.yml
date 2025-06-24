@@ -14,9 +14,9 @@ website:
       - icon: clipboard-check
         text: "Assessments"
         href: assessments/assessments.qmd
-      - icon: calendar-event
-        href: schedule.qmd
-        text: "Schedule"
+      # - icon: calendar-event
+      #   href: schedule.qmd
+      #   text: "Schedule"
       - icon: file-earmark-text
         href: cheatsheets.qmd
         text: "Cheatsheets"
@@ -25,6 +25,7 @@ website:
         text: Contact
   sidebar: 
     style: floating
+    collapse-level: 1
     contents:
       - icon: house-fill
         text: Home
@@ -46,6 +47,10 @@ website:
         href: cheatsheets.qmd
       - icon: envelope-fill
         text: Contact us
+      - text: ---
+      - icon: easel3-fill
+        text: Lectures
+        href: lectures.qmd
       - text: ---
       - icon: book
         text: "<b>Practicals</b>"
@@ -74,8 +79,7 @@ website:
           - module03/303-week10.qmd
           - module03/304-week11.qmd
           - module03/305-week12.qmd
-      - text: ---
-      - text: Send us feedback
+
 
 format:
   html:
