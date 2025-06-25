@@ -24,5 +24,123 @@ The skills you learn will be invaluable not just in biology, but in any future c
 
 This online handbook is your primary resource for BEDA. Use the sidebar to navigate through the content. We will walk you through its structure during our first week. 
 <!-- A simplified [<i class=" bi bi-file-text"></i> PDF version](assets/BEDA-handbook.pdf) is also available for offline use, and printed copies will be provided during practicals for quick reference. -->
-To get started, head over to [Unit Information](unit-information.qmd) to learn about the course structure, assessments, and what to expect.
+To get started, head over to [Unit Information](unit-information.qmd) to learn about the course structure, assessments, and what to expect. 
 
+**Below is a quick schedule of the unit, where you can find links to the lectures and practicals.**
+
+
+
+:::{.column-page}
+
+```{r}
+#| include: false
+
+library(kableExtra)
+library(dplyr)
+library(readr) # For read_csv
+library(tidyr) # For pivot_wider and unnest
+library(purrr) # For map functions if needed for dynamic groups
+
+# Load schedule data from CSV
+schedule_data_raw <- readr::read_csv("assets/schedule_data.csv", show_col_types = FALSE)
+
+# Process the schedule data
+schedule_processed <- schedule_data_raw |>
+  # Create Formatted_Activity_Description from Activity_Description and Activity_Link
+  mutate(
+    Formatted_Activity_Description = ifelse(
+      !is.na(Activity_Link) & nzchar(trimws(Activity_Link)), # Check for non-empty, non-NA link
+      sprintf("[%s](%s)", Activity_Description, Activity_Link),
+      Activity_Description
+    )
+  ) |>
+  group_by(Week_Num, Dates_Str, Module_Num, Module_Title, Activity_Type) |>
+  # Summarise using the new Formatted_Activity_Description
+  summarise(Formatted_Activity_Description = paste(Formatted_Activity_Description, collapse = "<br>"), .groups = "drop") |>
+  pivot_wider(
+    names_from = Activity_Type,
+    values_from = Formatted_Activity_Description, # Use the new formatted column
+    values_fill = list(Formatted_Activity_Description = "") # Fill with the new formatted column
+  ) |>
+  rename(
+    Lecture_Topics = Lecture,
+    Practical_Activities = Practical
+  ) |>
+  mutate(
+    Week = sprintf("**Week %02d**<br>%s", Week_Num, Dates_Str)
+  ) |>
+  arrange(Week_Num) |> # Ensure order for gt table and row grouping
+  mutate(
+    Topics_and_Activities = paste0(
+      coalesce(Lecture_Topics, ""),
+      ifelse(!is.na(Lecture_Topics) & !is.na(Practical_Activities) & nzchar(Practical_Activities), "<br>", ""),
+      coalesce(Practical_Activities, "")
+    )
+  ) |>
+  select(Week, Topics_and_Activities, Module_Num, Module_Title) # Only keep merged column and grouping info
+
+# Create and format the table
+library(gt)
+
+```
+
+```{r}
+#| echo: false
+# Create the base gt table
+gt_table <- gt(schedule_processed, groupname_col = "Module_Title")
+
+# Dynamically add row groups
+# First, get the unique modules and their corresponding row numbers (based on Week_Num)
+module_info <- schedule_processed |>
+  distinct(Module_Num, Module_Title) |>
+  arrange(Module_Num)
+
+# The gt table is already grouped by Module_Title due to groupname_col = "Module_Title"
+# We just need to ensure the order of these groups if necessary,
+# and the labels are automatically taken from Module_Title.
+# The `row_group_order` function will handle the display order of these groups.
+gt_table |>
+  tab_header(
+    title = md("**Lectures & Practicals**"),
+    subtitle = md("_2025 Semester 2_")
+  ) |>
+  row_group_order(groups = module_info$Module_Title) |>
+  cols_label(
+    Week = md("**Week**"),
+    Topics_and_Activities = md("**Activities**")
+  ) |>
+  cols_align(align = "left", columns = Week) |>
+  cols_width(
+    Week ~ pct(20),
+    Topics_and_Activities ~ pct(80)
+  ) |>
+  fmt_markdown(columns = everything()) |>
+  cols_hide(columns = c(Module_Num, Module_Title)) |>
+  tab_options(
+    # table.background.color = "#f8fafc",
+    table.border.top.color = "black",
+    table.border.bottom.color = "black",
+    # heading.background.color = "#005A8C",
+    heading.title.font.size = 24,
+    heading.subtitle.font.size = 16,
+    row_group.background.color = "azure",
+    row_group.font.weight = "bold",
+    row_group.font.size = 16,
+    # column_labels.background.color = "#e3eaf2",
+    column_labels.font.weight = "bold",
+    column_labels.font.size = 15,
+    data_row.padding = px(8),
+    table.font.size = 13
+  ) |>
+  tab_style(
+    style = cell_text(color = "black"),
+    locations = cells_title(groups = c("title", "subtitle"))
+  ) |>
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_column_labels(everything())
+  )
+
+```
+
+:::
