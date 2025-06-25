@@ -45,31 +45,43 @@ library(purrr) # For map functions if needed for dynamic groups
 schedule_data_raw <- readr::read_csv("assets/schedule_data.csv", show_col_types = FALSE)
 
 # Process the schedule data
+# Summarise Resources separately
+resources_by_week <- schedule_data_raw |>
+  filter(Activity_Type == "Resource") |>
+  group_by(Week_Num, Dates_Str, Module_Num, Module_Title) |>
+  summarise(Resources = paste(
+    ifelse(!is.na(Activity_Link) & nzchar(trimws(Activity_Link)),
+           sprintf("[%s](%s)", Activity_Description, Activity_Link),
+           Activity_Description),
+    collapse = "<br>"
+  ), .groups = "drop")
+
+# Process other activities
 schedule_processed <- schedule_data_raw |>
-  # Create Formatted_Activity_Description from Activity_Description and Activity_Link
+  filter(Activity_Type != "Resource") |>
   mutate(
     Formatted_Activity_Description = ifelse(
-      !is.na(Activity_Link) & nzchar(trimws(Activity_Link)), # Check for non-empty, non-NA link
+      !is.na(Activity_Link) & nzchar(trimws(Activity_Link)),
       sprintf("[%s](%s)", Activity_Description, Activity_Link),
       Activity_Description
     )
   ) |>
   group_by(Week_Num, Dates_Str, Module_Num, Module_Title, Activity_Type) |>
-  # Summarise using the new Formatted_Activity_Description
   summarise(Formatted_Activity_Description = paste(Formatted_Activity_Description, collapse = "<br>"), .groups = "drop") |>
   pivot_wider(
     names_from = Activity_Type,
-    values_from = Formatted_Activity_Description, # Use the new formatted column
-    values_fill = list(Formatted_Activity_Description = "") # Fill with the new formatted column
+    values_from = Formatted_Activity_Description,
+    values_fill = list(Formatted_Activity_Description = "")
   ) |>
   rename(
     Lecture_Topics = Lecture,
     Practical_Activities = Practical
   ) |>
+  left_join(resources_by_week, by = c("Week_Num", "Dates_Str", "Module_Num", "Module_Title")) |>
   mutate(
     Week = sprintf("**Week %02d**<br>%s", Week_Num, Dates_Str)
   ) |>
-  arrange(Week_Num) |> # Ensure order for gt table and row grouping
+  arrange(Week_Num) |>
   mutate(
     Topics_and_Activities = paste0(
       coalesce(Lecture_Topics, ""),
@@ -77,7 +89,7 @@ schedule_processed <- schedule_data_raw |>
       coalesce(Practical_Activities, "")
     )
   ) |>
-  select(Week, Topics_and_Activities, Module_Num, Module_Title) # Only keep merged column and grouping info
+  select(Week, Topics_and_Activities, Resources, Module_Num, Module_Title)
 
 # Create and format the table
 library(gt)
@@ -107,12 +119,14 @@ gt_table |>
   row_group_order(groups = module_info$Module_Title) |>
   cols_label(
     Week = md("**Week**"),
-    Topics_and_Activities = md("**Activities**")
+    Topics_and_Activities = md("**Activities**"),
+    Resources = md("**Resources**")
   ) |>
   cols_align(align = "left", columns = Week) |>
   cols_width(
     Week ~ pct(20),
-    Topics_and_Activities ~ pct(80)
+    Topics_and_Activities ~ pct(60),
+    Resources ~ pct(20)
   ) |>
   fmt_markdown(columns = everything()) |>
   cols_hide(columns = c(Module_Num, Module_Title)) |>
