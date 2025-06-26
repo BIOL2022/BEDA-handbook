@@ -29,8 +29,8 @@ To get started, head over to [Unit Information](unit-information.qmd) to learn a
 **Below is a quick schedule of the unit, where you can find links to the lectures and practicals.**
 
 
-
 :::{.column-page}
+## Schedule {.text-center}
 
 ```{r}
 #| include: false

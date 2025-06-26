@@ -1,7 +1,8 @@
 Week_Num,Dates_Str,Module_Num,Module_Title,Activity_Type,Activity_Description,Activity_Link
 1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01a:** Guest lecture,https://google.com
 1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01b:** The nature of data and numbers in biology experiments,
-1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01c:** (Re-) indroduction to experimental design and analysis,
+1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01c:** Welcome to BEDA,https://biol2022.github.io/L00-Welcome-to-BEDA
+1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01d:** (Re-) indroduction to experimental design and analysis,
 1,29 Jul - 02 Aug,1,Module 1: fundamentals,Practical,Week 01: Getting started,
 1,29 Jul - 02 Aug,1,Module 1: fundamentals,Resource,Check Google,https://google.com
 2,05 Aug - 09 Aug,1,Module 1: fundamentals,Lecture,**L02a:** What is a representative sample?,
