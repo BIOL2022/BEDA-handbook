@@ -1,27 +1,28 @@
 Week_Num,Dates_Str,Module_Num,Module_Title,Activity_Type,Activity_Description,Activity_Link
-1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01a:** Guest lecture,https://google.com
-1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01b:** The nature of data and numbers in biology experiments,
+1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01a:** Guest lecture,https://canvas.sydney.edu.au/courses/67437/files/44247146?wrap=1
+1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01b:** The nature of data and numbers in biology experiments,https://canvas.sydney.edu.au/courses/67437/files/44247067?wrap=1
 1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01c:** Welcome to BEDA,https://biol2022.github.io/L00-Welcome-to-BEDA
-1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01d:** (Re-) indroduction to experimental design and analysis,
+1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01d:** (Re-) indroduction to experimental design and analysis,https://biol2022.github.io/L01-intro-exp-design-analysis
 1,29 Jul - 02 Aug,1,Module 1: fundamentals,Practical,Week 01: Getting started,
-1,29 Jul - 02 Aug,1,Module 1: fundamentals,Resource,Check Google,https://google.com
-2,05 Aug - 09 Aug,1,Module 1: fundamentals,Lecture,**L02a:** What is a representative sample?,
-2,05 Aug - 09 Aug,1,Module 1: fundamentals,Lecture,**L02b:** Modelling fundamentals  -- the linear model,
-2,05 Aug - 09 Aug,1,Module 1: fundamentals,Lecture,**L02c:** (Almost) every statistical technique is a linear model,
+1,29 Jul - 02 Aug,1,Module 1: fundamentals,Resource,The Central Limit Theorem,https://www.youtube.com/watch?v=jvoxEYmQHNM/
+1,29 Jul - 02 Aug,1,Module 1: fundamentals,Resource,Central Limit Theorem,https://pmc.ncbi.nlm.nih.gov/articles/PMC5370305/
+2,05 Aug - 09 Aug,1,Module 1: fundamentals,Lecture,**L02a:** What is a representative sample?,https://biol2022.github.io/L02a-represenative-sampling/
+2,05 Aug - 09 Aug,1,Module 1: fundamentals,Lecture,**L02b:** Modelling fundamentals  -- the linear model,https://biol2022.github.io/L02b-linear-model/
+2,05 Aug - 09 Aug,1,Module 1: fundamentals,Lecture,**L02c:** (Almost) every statistical technique is a linear model,https://biol2022.github.io/L02c-all-linear-model/
 2,05 Aug - 09 Aug,1,Module 1: fundamentals,Practical,Week 02: Study design,
-3,12 Aug - 16 Aug,1,Module 1: fundamentals,Lecture,"**L03a:** All models are wrong, but some more than others (testing assumptions)",
-3,12 Aug - 16 Aug,1,Module 1: fundamentals,Lecture,**L03b:** Modelling differences: the t-test,
+3,12 Aug - 16 Aug,1,Module 1: fundamentals,Lecture,"**L03a:** All models are wrong, but some more than others (testing assumptions)",https://biol2022.github.io/L03a-model-appropriate/
+3,12 Aug - 16 Aug,1,Module 1: fundamentals,Lecture,**L03b:** Modelling differences: the t-test,https://biol2022.github.io/L03b-ttests/
 3,12 Aug - 16 Aug,1,Module 1: fundamentals,Practical,Week 3: Data analysis,
-4,19 Aug - 23 Aug,1,Module 1: fundamentals,Lecture,**L04a:** Modelling relationships: multiple linear regression,
-4,19 Aug - 23 Aug,1,Module 1: fundamentals,Lecture,**L04b:** Modelling differences: analysis of variance (ANOCA),
-4,19 Aug - 23 Aug,1,Module 1: fundamentals,Lecture,"**L04c:** Model transformations -- why, and how?",
-4,19 Aug - 23 Aug,1,Module 1: fundamentals,Practical,Check timeline,https://google.com
+4,19 Aug - 23 Aug,1,Module 1: fundamentals,Lecture,**L04a:** Modelling relationships: multiple linear regression,https://biol2022.github.io/L04a-mlr/
+4,19 Aug - 23 Aug,1,Module 1: fundamentals,Lecture,**L04b:** Modelling differences: analysis of variance (ANOCA),https://biol2022.github.io/L04b-anova/
+4,19 Aug - 23 Aug,1,Module 1: fundamentals,Lecture,"**L04c:** Model transformations -- why, and how?",https://biol2022.github.io/L04c-model-transformations/
+4,19 Aug - 23 Aug,1,Module 1: fundamentals,Practical,Check timeline,
 4,19 Aug - 23 Aug,1,Module 1: fundamentals,Resource,Check timeline,
 4,19 Aug - 23 Aug,1,Module 1: fundamentals,Resource,Check startpage,
-5,26 Aug - 30 Aug,1,Module 1: fundamentals,Lecture,"**L05a:** Control, fixed and random variables",
-5,26 Aug - 30 Aug,1,Module 1: fundamentals,Lecture,**L05b:** You've got this -- Module 1 revision,
+5,26 Aug - 30 Aug,1,Module 1: fundamentals,Lecture,"**L05a:** Control, fixed and random variables",https://biol2022.github.io/L05a-blocking-fixed-random/
+5,26 Aug - 30 Aug,1,Module 1: fundamentals,Lecture,**L05b:** You've got this -- Module 1 revision,https://biol2022.github.io/L05b-revision/
 5,26 Aug - 30 Aug,1,Module 1: fundamentals,Practical,Check timeline,
-6,02 Sep - 06 Sep,2,Module 2: univariate experiments,Lecture,**L06a:** General refresher,
+6,02 Sep - 06 Sep,2,Module 2: univariate experiments,Lecture,**L06a:** General refresher,https://canvas.sydney.edu.au/courses/67437/files/44247071?wrap=1
 6,02 Sep - 06 Sep,2,Module 2: univariate experiments,Lecture,**L06b:** Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables,
 6,02 Sep - 06 Sep,2,Module 2: univariate experiments,Practical,**No practicals**,
 7,09 Sep - 13 Sep,2,Module 2: univariate experiments,Lecture,**L07a:** Does wind reduce tree growth? Detecting differences versus describing relationships,
