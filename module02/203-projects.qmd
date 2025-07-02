@@ -1,5 +1,7 @@
 ---
 title: Report 1 -- Projects
+number-sections: false
+toc-depth: 4
 ---
 
 ::: callout-important
