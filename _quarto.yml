@@ -45,11 +45,11 @@ website:
       - icon: envelope-fill
         text: Contact us
       - text: ---
-      - icon: easel3-fill
-        text: Lectures
-        href: lectures.qmd
+      # - icon: easel3-fill
+      #   text: Lectures
+      #   href: lectures.qmd
       - icon: clipboard-check
-        text: Assessments
+        text: Assessments (info)
         href: assessments/assessments.qmd
       - text: ---
       - icon: book
