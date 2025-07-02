@@ -50,9 +50,16 @@ resources_by_week <- schedule_data_raw |>
   filter(Activity_Type == "Resource") |>
   group_by(Week_Num, Dates_Str, Module_Num, Module_Title) |>
   summarise(Resources = paste(
-    ifelse(!is.na(Activity_Link) & nzchar(trimws(Activity_Link)),
-           sprintf("[%s](%s)", Activity_Description, Activity_Link),
-           Activity_Description),
+    paste0(
+      ifelse(!is.na(html_link) & nzchar(trimws(html_link)),
+        sprintf("[%s](%s)", Activity_Description, html_link),
+        Activity_Description
+      ),
+      ifelse(!is.na(pdf_link) & nzchar(trimws(pdf_link)),
+        sprintf(' | <a href="%s" target="_blank"><i class="bi bi-filetype-pdf"></i></a>', pdf_link),
+        ""
+      )
+    ),
     collapse = "<br>"
   ), .groups = "drop")
 
@@ -60,11 +67,29 @@ resources_by_week <- schedule_data_raw |>
 schedule_processed <- schedule_data_raw |>
   filter(Activity_Type != "Resource") |>
   mutate(
-    Formatted_Activity_Description = ifelse(
-      !is.na(Activity_Link) & nzchar(trimws(Activity_Link)),
-      sprintf("[%s](%s)", Activity_Description, Activity_Link),
-      Activity_Description
-    )
+    Formatted_Activity_Description = {
+      # Part 1: Main text with optional HTML link
+      main_part <- ifelse(!is.na(html_link) & nzchar(trimws(html_link)),
+        sprintf("[%s](%s)", Activity_Description, html_link),
+        Activity_Description
+      )
+
+      # Part 2: Optional PDF icon link
+      pdf_icon_part <- ifelse(!is.na(pdf_link) & nzchar(trimws(pdf_link)),
+        sprintf(' <a href="%s" target="_blank"><i class="bi bi-filetype-pdf"></i></a>', pdf_link),
+        ""
+      )
+
+      # Combine them
+      formatted_desc <- paste0(main_part, pdf_icon_part)
+
+      # Add a line break before practicals
+      ifelse(
+        startsWith(Activity_Description, "**Practical"),
+        paste0("<br>", formatted_desc),
+        formatted_desc
+      )
+    }
   ) |>
   group_by(Week_Num, Dates_Str, Module_Num, Module_Title, Activity_Type) |>
   summarise(Formatted_Activity_Description = paste(Formatted_Activity_Description, collapse = "<br>"), .groups = "drop") |>
@@ -120,7 +145,7 @@ gt_table |>
   cols_label(
     Week = md("**Week**"),
     Topics_and_Activities = md("**Activities**"),
-    Resources = md("**Resources**")
+    Resources = md("**Note**")
   ) |>
   cols_align(align = "left", columns = Week) |>
   cols_width(
@@ -144,7 +169,7 @@ gt_table |>
     column_labels.font.weight = "bold",
     column_labels.font.size = 15,
     data_row.padding = px(8),
-    table.font.size = 13
+    table.font.size = 14
   ) |>
   tab_style(
     style = cell_text(color = "black"),
