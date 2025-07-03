@@ -1,0 +1,15 @@
+{
+  "hash": "a3832461d20e7e820814ca443e71d13d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"**Weeks 4 -- 8**: Timeline\"\nnumber-sections: false\n---\n\n::: {.cell}\n::: {.cell-output .cell-output-stderr}\n\n```\n\nAttaching package: 'lubridate'\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nThe following objects are masked from 'package:base':\n\n    date, intersect, setdiff, union\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stdout}\n\n```\n<environment: R_GlobalEnv>\n```\n\n\n:::\n:::\n\n\n\n::: {.callout-note icon=false collapse=\"true\"}\n### Weeks 3--4\nSign up to a project group for Module 2 in your practical session.\nEveryone in your group must attend the same practical session.\n:::\n\n::: {.callout-note icon=false collapse=\"true\"}\n### Week 4 {.collapse !expr collapse_w4}\n- Work with your group to discuss and plan your project.\n- Pick up any gear that you need, to run your pilot study.\n- After the practical, contribute to your group’s pilot study practical work, read relevant literature, and start preparing for your written report.\n\nForm your hypothesis: as a group, convert the general biological question into specific biological hypotheses and predictions.\nPlan the design of your main experiment: with your group, design a simple experiment to test the hypothesis. Ensure your design can be analysed using the stats you are familiar with (e.g. from Januar’s and Clare’s lectures, and Module 1 practicals).\nDraw a graph of how you expect your data to look (refer to Clare’s lectures). Decide what stats analysis is appropriate and why (refer to Clare’s lectures). If you can’t work this out, you are not ready to run your experiment.\nDraft your data sheets: as a group, draft your data sheets for data collection (you may need to modify after your pilot study). This will ensure you collect all the data you should and collect it all in the same way.\nWork out what equipment you’ll need: decide equipment you need to do the research based around what we can supply you. Consult Clare, technical staff and/or demonstrators then make a list.\nFor some projects, you will be able to take gear home straight away to run a pilot study.\nFor others, you need to plan now and pick up gear in consultation with the technical staff. When contacting the tech staff, ensure you state your name and day, group number and project, e.g. BIOL2022 WED 2 to 4pm, Group 7 birds, Joe Blogs.\nPlan your pilot study in class and run it before week 5 practical session: this will help you refine your main experiment. Everyone in your group must contribute.\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
