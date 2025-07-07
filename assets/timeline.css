@@ -1,0 +1,60 @@
+/* CSS for Vertical Timeline */
+.timeline-container {
+  position: relative;
+  padding: 2rem 0;
+  margin-left: 1rem;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 15px;
+  height: 100%;
+  width: 4px;
+  background: #dee2e6; /* A light grey color */
+}
+
+.timeline-event {
+  position: relative;
+  margin-bottom: 2rem;
+  margin-left: 40px;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.timeline-event::before {
+  content: '+';
+  position: absolute;
+  left: -31px;
+  top: 1.2rem;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #007bff; /* A blue color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.timeline-event.active::before {
+    content: '−';
+}
+
+.timeline-event h3 {
+  margin-top: 0;
+  color: #007bff; /* A blue color */
+  position: relative;
+}
+
+.timeline-content {
+  display: none;
+  padding-top: 10px;
+}

@@ -87,13 +87,13 @@ format:
     fontsize: 15px
     grid:
       sidebar-width: 300px
-    # css: styles.css
+    css: assets/timeline.css
     toc: true
     navbar: false
     sidebar: true
     # page-layout: full
     
-  
+
 editor:
   render-on-save: true
 
