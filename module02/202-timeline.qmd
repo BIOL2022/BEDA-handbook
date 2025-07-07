@@ -1,57 +1,48 @@
 ---
 title: "**Weeks 4 -- 8**: Timeline"
 number-sections: false
+draft: true
 ---
 
-If you wish to download the timeline as a table, click [here](../assets/timeline_v3.pdf).
+Module 2 practicals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans with both your peers and demonstrators. 
 
-Otherwise, click on the tabs below to see what you need to do each week.
+Below is a brief timeline of what you should aim to do in each week leading up to the submission of your report.
 
 ::: {.timeline-container}
 
 ::: {.timeline-event}
-### Weeks 2--3
+### Weeks 2--3 (before Module 2)
 ::: {.timeline-content}
-*Before* Module 2 begins, sign up to a project group for Module 2 in your practical session.
-
-- View available projects [here](203-projects.qmd).
-- Once you have picked a project of interest, sign up to a group in your practical session on Canvas.
-- Every person in your group should be in the same practical session.
+You will need to **sign up** to a project group on Canvas. All groups will be formed by the end of Week 3, so you can start working on your project in Week 4. All members of your group must be in the same practical session.
 :::
 :::
 
 ::: {.timeline-event}
 ### Week 4
 ::: {.timeline-content}
-#### In your practical session
-- Discuss and plan your project with your group.
-- Pick up any gear you need to run your pilot study.
 
-#### In your own time
-- After the practical in Week 4, contribute to your group’s pilot study work.
-- Read relevant literature.
-- Start preparing for your written report.
+**In your practical session**: Discuss and plan your project with your group. You will also be introduced to the pilot study, which is a small-scale version of your main experiment that you will run this week (or next). Pick up any gear you need to run your pilot study.
+
+**In your own time**: After the practical in Week 4, contribute to your group’s pilot study work. Read relevant literature and start preparing for your written report.
+
 :::
 :::
 
 ::: {.timeline-event}
 ### Week 5
 ::: {.timeline-content}
-#### In your practical session
-- Finalise the design and plans for your main experiment based on your pilot study and your reading of the relevant scientific literature
-- Pick up any gear that you need for your main experiment.
+
+**In your practical session**: Finalise the design and plans for your main experiment based on your pilot study and your reading of the relevant scientific literature. Pick up any gear that you need for your main experiment.
 :::
 :::
 
 ::: {.timeline-event}
 ### Weeks 5--7
 ::: {.timeline-content}
-::: callout-important
-There is no formal practical session in Week 6.
-:::
 
-#### In your own time
-Set up your main experiment, run it, collect and collate the data. Everyone in your group must contribute.
+There is no formal practical session in Week 6.
+
+**In your own time**: Set up your main experiment, run it, collect and collate the data. Everyone in your group must contribute.
 :::
 :::
 

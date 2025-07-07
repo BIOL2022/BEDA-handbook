@@ -92,7 +92,7 @@ format:
     navbar: false
     sidebar: true
     # page-layout: full
-    
+    draft-mode: unlinked
 
 editor:
   render-on-save: true
