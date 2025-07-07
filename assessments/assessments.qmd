@@ -1,35 +1,57 @@
 ---
 title: "Assessments"
+date: today
 ---
 
+<style>
+.assessment-section {
+  border: 2px solid #0072B2;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  background: #f9f9f9;
+}
+</style>
 
 
-### Week 3: Early Feedback Task (EFT)
+BEDA is assessed through a combination of quizzes, reports, and (as usual) a final exam. The assessments are designed to test your understanding of the material and your ability to apply it in practical scenarios. 
 
-- **Category:** Individual (5%)
-- **Submission:** Fri 22 Aug 2025
+::: {.assessment-section}
+### <i class="bi bi-lightbulb"></i> Early Feedback Task (EFT) - 5%
 
-### Week 4: Evaluation Quiz (Module 1)
+This is a short **quiz**, designed to give you early feedback on your prior understanding of statistics. 
+It will help you identify areas where you may need to focus your study efforts. 
 
-- **Category:** Individual 10%
-- **Submission:** Fri, 29 Aug 2025
+[Details](#){.btn .btn-primary} [Submission link](#){.btn .btn-success}
+:::
 
-### Week 8: Report 1 (Module 2)
+::: {.assessment-section}
+### <i class="bi bi-question-circle"></i> Evaluation Quiz (Module 1) - 10%
 
-- **Category:** Individual 25%
-- **Submission:** Sun, 28 Sep 2025
+This is a **quiz** that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.
 
-### Week 11: Dataset submission
+[Details](#){.btn .btn-primary} [Submission link](#){.btn .btn-success}
+:::
 
-- **Category:** Group 5%
-- **Submission:** Sun, 2 Nov 2025
+::: {.assessment-section}
+### <i class="bi bi-file-earmark-text"></i> Report 1 (Module 2) - 25%
 
-### Week 12: Report 2 (Module 3)
+You will use what you have learned so far to design and analyse an experiment based on a project of your choice. The experiments will be completed in groups, but the reports are individually written and assessed. You will have 6 weeks to complete it.
 
-- **Category:** Individual 15%
-- **Submission:** Sun, 2 Nov 2025
+**Role of Practicals:**  
+Practicals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans. Demonstrators act as advisors, similar to how support works in a research group, and you are welcome to interact with them and your peers for advice, just as you would with postdocs or supervisors. If you are organised, you can also request feedback on your report drafts during practicals to help improve your work.
 
-### Exam period: Final Exam
+[Details](#){.btn .btn-primary} [Submission link](#){.btn .btn-success}
+:::
 
-- **Category:** Individual 40%
-- **Submission:** NA
+::: {.assessment-section}
+### <i class="bi bi-file-earmark-bar-graph"></i> Report 2 (Module 3) - 20%
+
+Report 2 is similar to Report 1, but you will need to focus on a project with a multivariate context. Note that there is a 5% group work component to this report that will be assessed via dataset submission, and the report is individually written and assessed (15%). You will have 5 weeks to complete the report.
+
+**Role of Practicals:**  
+Practicals are a mix of structured and unstructured sessions. Each practical begins with a brief workshop to practice a specific analysis technique, followed by time for you to work on your project. Some practicals are dedicated feedback sessions, for example we will prioritise giving feedback on your experimental design and analysis plans in Week 10. As usual, you are welcome to interact with demonstrators and your peers for advice and feedback.
+
+
+[Details](#){.btn .btn-primary} [Submission link](#){.btn .btn-success}
+:::
