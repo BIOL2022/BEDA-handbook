@@ -25,7 +25,7 @@ website:
         text: Contact
   sidebar: 
     style: floating
-    collapse-level: 1
+    # collapse-level: 1
     contents:
       - icon: house-fill
         text: Home
