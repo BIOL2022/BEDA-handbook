@@ -1,6 +1,7 @@
 ---
 title: "**Week 9**: PCA and Report 2"
 lightbox: true
+draft: true
 ---
 
 :::{.callout-tip appearance="simple"}

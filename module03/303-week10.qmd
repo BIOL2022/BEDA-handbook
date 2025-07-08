@@ -1,5 +1,6 @@
 ---
 title: "**Week 10**: Permutational techniques"
+draft: true
 ---
 
 :::{.callout-tip appearance="simple"}

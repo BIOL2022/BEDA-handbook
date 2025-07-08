@@ -1,5 +1,6 @@
 ---
 title: "**Week 12**: Support session"
+draft: true
 ---
 
 :::{.callout-tip appearance="simple"}

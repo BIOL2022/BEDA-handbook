@@ -25,7 +25,7 @@ website:
         text: Contact
   sidebar: 
     style: floating
-    # collapse-level: 1
+    collapse-level: 1
     contents:
       - icon: house-fill
         text: Home
@@ -44,6 +44,7 @@ website:
         href: cheatsheets.qmd
       - icon: envelope-fill
         text: Contact us
+        href: help.qmd
       - text: ---
       # - icon: easel3-fill
       #   text: Lectures
@@ -57,7 +58,7 @@ website:
       - section: "🐝 Module 1 (Wk 01-03)"
         contents:
           - href: module01/101-intro.qmd
-            text: "About"
+            text: "**Please read first**"
           - module01/102-week01.qmd
           - module01/103-week02.qmd
           - "&nbsp; &nbsp; &nbsp; &nbsp; Intertidal site images"
@@ -66,7 +67,7 @@ website:
       - section: "🐝 Module 2 (Wk 04-08)"
         contents:
           - href: module02/201-intro.qmd
-            text: "About"
+            text: "**Please read first**"
           - module02/202-timeline.qmd
           - module02/203-projects.qmd
           - module02/204-report1.qmd
@@ -74,7 +75,7 @@ website:
       - section: "🐝 Module 3 (Wk 09-12)"
         contents:
           - href: module03/301-intro.qmd
-            text: "About"
+            text: "**Please read first**"
           - module03/302-week09.qmd
           - module03/303-week10.qmd
           - module03/304-week11.qmd
