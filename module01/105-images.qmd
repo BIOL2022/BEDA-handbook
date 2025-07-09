@@ -1,8 +1,9 @@
 ---
+title: "Intertidal sites"
+number-sections: false
 lightbox: true
+draft: true
 ---
-
-# Intertidal sites {.unnumbered}
 
 This page contains images of intertidal rocky shore sites along the Great Southern Reef. These images are provided for the purpose of the lab activities in Weeks 2 and 3.
 

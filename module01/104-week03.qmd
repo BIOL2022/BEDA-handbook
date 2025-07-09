@@ -1,5 +1,6 @@
 ---
 title: "**Week 3**: Data analysis"
+draft: true
 ---
 ## Welcome
 

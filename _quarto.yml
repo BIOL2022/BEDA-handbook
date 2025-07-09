@@ -61,7 +61,8 @@ website:
             text: "**Please read first**"
           - module01/102-week01.qmd
           - module01/103-week02.qmd
-          - "&nbsp; &nbsp; &nbsp; &nbsp; Intertidal site images"
+          - href: module01/105-images.qmd
+            text: "&nbsp; &nbsp; &nbsp; &nbsp; Intertidal site images"
           - "&nbsp; &nbsp; &nbsp; &nbsp; Species ID guide"
           - module01/104-week03.qmd
       - section: "🐝 Module 2 (Wk 04-08)"

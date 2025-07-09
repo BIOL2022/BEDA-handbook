@@ -47,42 +47,35 @@ Today’s workshop covers:
 
 The workshop should take about 45 minutes unless Januar gets carried away. Hopefully one of you will keep him on track, but if not, a demonstrator will be there to remind him to wrap it up.
 
-There are no formal exercises in this workshop, but you can ask questions and discuss the topics with your peers and demonstrators.
-
 
 ## Exercise 1 – Cheatsheets
 
-### What is this about?
+This exercise introduces **cheatsheets**: handy one-page guides with common functions and commands to help you get started with new software.
 
-Let us start with **cheatsheets** – handy guides that help you remember important functions and commands. Pick one and have a go at following the tasks outlined in the cheatsheet. These cheatsheets are designed by Januar and are meant to reduce the stress of learning new software. They are not meant to be comprehensive, but they will help you get started. 
+### Your Task
 
-### Give a cheatsheet a try
-
-You will need a web browser to open the cheatsheets. If you are reading this online, you can click here: [<i class="bi bi-file-earmark-text"></i> **Cheatsheets**](../cheatsheets.qmd). This link is always available in the sidebar.
-
-1. You will see a list of cheatsheets. We will add more as we get your feedback and questions on Ed.
-2. **Pick a cheatsheet** – maybe something you have never used before, or one you know well to see if it helps you learn something new.
-3. **Follow the steps on the cheatsheet.** If you get stuck, do not panic! Ask your friends or a demonstrator, and feel free to give feedback so we can make the cheatsheets even better.
+1.  Open [<i class="bi bi-file-earmark-text"></i> **Cheatsheets**](../cheatsheets.qmd), also available in the sidebar.
+2.  **Choose a cheatsheet.** You could try one for a program you have never used, or pick a familiar one to see if you learn something new.
+3.  **Follow the tasks** on the cheatsheet. If you get stuck, please ask a friend or a demonstrator for help.
 
 ::: callout-tip
-Now is your chance to try out different software for the same task. For example, try using R and Jamovi to plot the same data. You might find you prefer something different! 
+This is a good opportunity to compare different software for the same task. For example, try using both R and Jamovi to plot the same data. You might discover a new preference.
 :::
 
-When you are done, please give us feedback on the cheatsheet(s) you tried. There is a quick form on the cheatsheets page – it only takes a minute and really helps us out! **You may also request for new cheatsheets to be added -- Januar will make them for you as you progress through the unit.**x
+### Feedback and Suggestions
 
-Your feedback helps us make the cheatsheets better for everyone.
+Your feedback helps improve these resources. Once you have tried a cheatsheet, please use the quick feedback form on the cheatsheets page. It only takes a minute. You can also request new cheatsheets, which Januar will create as the unit progresses.
 
 ::: {.callout-note collapse="true"}
 ## Want to help improve the cheatsheets? (Optional)
-If you would like to go a step further and *contribute* to the cheatsheets, we would love your suggestions! You can:
 
-- **Email Januar** with your ideas – that is totally fine!
-- **Post a comment on Ed.** We will discuss and update the cheatsheets together.
-- **Submit a pull request on GitHub.** This is a bit more technical, but if you know how, go for it! The link to the GitHub repo is on the cheatsheet.
+If you would like to contribute directly, we welcome your suggestions. You can:
 
-If your changes are accepted, you will be credited as a co-author. Your work will be part of the unit’s resources, and you can even mention it on your CV or portfolio! Ask Januar if you want to know more.
+-   **Email Januar** with your ideas.
+-   **Post on Ed** to discuss your thoughts with the teaching team.
+-   **Submit a pull request on GitHub.** This is more technical, but the repository link is on the cheatsheet page if you are familiar with Git.
 
-**You can suggest or contribute at any time during the semester, so do not stress if you are busy now. We will keep updating the cheatsheets regularly.**
+If your contribution is accepted, you will be credited as a co-author. This is a great way to contribute to the unit's resources and something you can mention on your CV. You can contribute at any time during the semester.
 :::
 
 
@@ -176,15 +169,12 @@ Notice how both plots show the same kind of relationship, but the way we interpr
 If you can **plot** it, you are already **modelling** it!
 :::
 
-
-
-
 ### What do you need?
 
 - MS Excel (or similar) to look at the data files
 - Word, Google Docs, or just pen and paper to sketch your models
 - R, Jamovi, SPSS, or any software you fancy for plotting
-- Data: penguins.csv and possum.xlsx (grab them from Canvas)
+- Data: [penguins.csv]() and [possum.xlsx]() (grab them from Canvas)
 
 ### What do you do?
 
@@ -192,9 +182,9 @@ If you can **plot** it, you are already **modelling** it!
 
 **Step 2.** Pick out some variables from the data and think about how you could model them. You do not need to analyse the data in detail – just focus on what the variables are and how they could be modelled. Try these:
 
-  1. **Histogram** – shows the distribution of a variable. **Think:** what kind of data would make a histogram skewed to the right?
-  2. **Scatterplot** – shows the relationship between two variables.
-  3. **Boxplot** – compares two or more groups.
+  1. **Histogram** – shows the distribution of a variable. **Think:** what kind of data would make a histogram naturally skewed?
+  2. **Scatterplot** – shows the relationship between two variables, like weight and age. **Think:** what kind of data would you need to make a scatterplot useful?
+  3. **Boxplot** – compares two or more groups, showing the median and quartiles.
   4. **Barplot** – compares groups, but with error bars. **Think:** what do the error bars mean? Why might you pick a barplot over a boxplot?
 
 **Step 3.** For plots that compare two or more variables, think about how you could change the way you collect data to use a different model. Is your idea logical and doable?

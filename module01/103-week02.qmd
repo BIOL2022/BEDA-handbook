@@ -1,5 +1,6 @@
 ---
 title: "**Week 2**: Study design"
+draft: true
 ---
 
 ## Introduction
