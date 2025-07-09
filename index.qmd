@@ -149,9 +149,9 @@ gt_table |>
   ) |>
   cols_align(align = "left", columns = Week) |>
   cols_width(
-    Week ~ pct(20),
+    Week ~ pct(12),
     Topics_and_Activities ~ pct(60),
-    Resources ~ pct(20)
+    Resources ~ pct(28)
   ) |>
   fmt_markdown(columns = everything()) |>
   cols_hide(columns = c(Module_Num, Module_Title)) |>
