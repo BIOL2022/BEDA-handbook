@@ -63,7 +63,8 @@ website:
           - module01/103-week02.qmd
           - href: module01/105-images.qmd
             text: "&nbsp; &nbsp; &nbsp; &nbsp; Intertidal site images"
-          - "&nbsp; &nbsp; &nbsp; &nbsp; Species ID guide"
+          - href: module01/106-species-id.qmd
+            text: "&nbsp; &nbsp; &nbsp; &nbsp; Species ID guide"
           - module01/104-week03.qmd
       - section: "🐝 Module 2 (Wk 04-08)"
         contents:
@@ -94,7 +95,7 @@ format:
     navbar: false
     sidebar: true
     # page-layout: full
-    draft-mode: unlinked
+    draft-mode: visible # unlinked
 
 editor:
   render-on-save: true
