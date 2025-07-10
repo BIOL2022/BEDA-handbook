@@ -1,5 +1,6 @@
 ---
 title: "**Week 1**: Getting started"
+toc-depth: 2
 ---
 
 ## Introduction
@@ -80,7 +81,7 @@ If your contribution is accepted, you will be credited as a co-author. This is a
 
 
 
-## Exercise 2 – Introduction to statistical models
+## Exercise 2 – Introduction to models in statistics
 
 ### What is the point?
 
@@ -115,6 +116,8 @@ In other words, “weight depends on age.”
 For now, let us focus on **graphical models** – in other words, plots! Plots are models because they show relationships between variables. For example, you could plot the weight of an animal species against its age or height to see if there is a pattern:
 
 ```{r}
+#| label: fig-weight-age
+#| fig-cap: "Weight vs Age of an animal species. Simulated data. Here, age is a categorical variable."
 #| echo: false
 #| warning: false
 
@@ -139,8 +142,10 @@ ggplot(data, aes(x = Age, y = Weight)) +
 Interestingly, how we consider your variables can drastically change the type of plot and model used for data analysis. For example, consider the same relationship as above, but plotted differently:
 
 ```{r}
+#| label: fig-weight-age-scatter
+#| fig-cap: "Weight vs Age of an animal species. Simulated data. Here, age is a continuous variable."
 #| echo: false
-#|
+
 V_max <- 70 # Assume the maximum weight is 70 kg
 K_M <- 10 # Assume the Michaelis constant is 10 years
 
