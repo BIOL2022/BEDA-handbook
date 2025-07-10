@@ -7,7 +7,7 @@ function startCountdown(targetDate, elementId) {
 
     if (distance < 0) {
       clearInterval(interval);
-      countdownElement.innerHTML = "Time's up!";
+      countdownElement.innerHTML = "0d - time's up!";
       return;
     }
 
