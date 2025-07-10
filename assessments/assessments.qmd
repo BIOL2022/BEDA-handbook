@@ -11,6 +11,10 @@ date: today
   margin-bottom: 1.5em;
   background: #f9f9f9;
 }
+#countdown-eft {
+  font-weight: bold;
+  color: forestgreen;
+}
 </style>
 
 
@@ -22,6 +26,7 @@ BEDA is assessed through a combination of quizzes, reports, and (as usual) a fin
 This is a short **quiz**, designed to give you early feedback on your prior understanding of statistics. 
 It will help you identify areas where you may need to focus your study efforts. 
 
+<p><strong>Due in:</strong> <span id="countdown-eft"></span></p>
 [Details](#){.btn .btn-primary} [Submission link](#){.btn .btn-success}
 :::
 
@@ -55,3 +60,10 @@ Practicals are a mix of structured and unstructured sessions. Each practical beg
 
 [Details](#){.btn .btn-primary} [Submission link](#){.btn .btn-success}
 :::
+
+<script src="../scripts/countdown.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    startCountdown('2025-08-24T23:59:59', 'countdown-eft');
+  });
+</script>
