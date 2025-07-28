@@ -1,51 +1,1308 @@
 [
   {
-    "objectID": "canvas.html#section",
-    "href": "canvas.html#section",
-    "title": "Welcome to BIOL2022",
+    "objectID": "assessments/assessment-evaluation-quiz.html",
+    "href": "assessments/assessment-evaluation-quiz.html",
+    "title": "Evaluation Quiz (Module 1)",
     "section": "",
-    "text": "Thank you for joining Biology Experimental Design and Analysis, also known as BEDA (🐝-da). This Unit aims to help you learn the core skills in biology that underpins how research is designed, analysed and interpreted. Click on the links below for more information.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote: This entire handbook is also available online.\n\n\nMade with ❤️ by Januar (Unit Coordinator), Clare (Lecturer) and Mat (Lecturer).\nUnless otherwise indicated, the content of this handbook is licensed under a CC-BY 4.0 License. The images on this page are licensed through Adobe Stock and are protected by Adobe’s copyright. These images may not be reproduced, distributed, or used without proper licensing from Adobe."
+    "text": "Brief Description: This is an open-book, multiple-choice quiz covering the content of Module 1. The goal is to check your understanding of key concepts before moving to Module 2.\nWeighting: 10%\nAvailability Window: [Specify start and end dates/times for the two-week completion period, e.g., Opens: Monday, Week 4, 9:00 AM AEST; Closes: Friday, Week 5, 11:59 PM AEST - Refer to assessments_data.csv or unit schedule for exact dates]\nLearning Outcomes Addressed:\n\n[Insert Learning Outcomes related to Module 1 content]\n[Add more as needed]"
   },
   {
-    "objectID": "03-lectures_pracs/index.html",
-    "href": "03-lectures_pracs/index.html",
-    "title": "Lectures & practicals",
+    "objectID": "assessments/assessment-evaluation-quiz.html#overview",
+    "href": "assessments/assessment-evaluation-quiz.html#overview",
+    "title": "Evaluation Quiz (Module 1)",
     "section": "",
-    "text": "About this site"
+    "text": "Brief Description: This is an open-book, multiple-choice quiz covering the content of Module 1. The goal is to check your understanding of key concepts before moving to Module 2.\nWeighting: 10%\nAvailability Window: [Specify start and end dates/times for the two-week completion period, e.g., Opens: Monday, Week 4, 9:00 AM AEST; Closes: Friday, Week 5, 11:59 PM AEST - Refer to assessments_data.csv or unit schedule for exact dates]\nLearning Outcomes Addressed:\n\n[Insert Learning Outcomes related to Module 1 content]\n[Add more as needed]"
   },
   {
-    "objectID": "02-assessments/index.html#early-feedback-task",
-    "href": "02-assessments/index.html#early-feedback-task",
+    "objectID": "assessments/assessment-evaluation-quiz.html#task-details-instructions",
+    "href": "assessments/assessment-evaluation-quiz.html#task-details-instructions",
+    "title": "Evaluation Quiz (Module 1)",
+    "section": "2. Task Details & Instructions",
+    "text": "2. Task Details & Instructions\n\nQuiz Format: Open-book, multiple-choice quiz.\nContent Covered: All content from Module 1.\nNumber of Attempts: Two (2) attempts. The highest score will be recorded.\nTime Limit (per attempt): [Specify time limit if any, e.g., 60 minutes per attempt]\nAccessing the Quiz: [Specify how/where to access the quiz, e.g., The quiz can be accessed via the ‘Quizzes’ section on Canvas.]\nPurpose: To help you evaluate your understanding of Module 1 concepts and prepare for subsequent modules. You have two weeks to complete it, allowing time to review between attempts."
+  },
+  {
+    "objectID": "assessments/assessment-evaluation-quiz.html#submission-guidelines",
+    "href": "assessments/assessment-evaluation-quiz.html#submission-guidelines",
+    "title": "Evaluation Quiz (Module 1)",
+    "section": "3. Submission Guidelines",
+    "text": "3. Submission Guidelines\n\nMethod: [e.g., Quiz completed and submitted directly within Canvas.]\nSaving Answers: [Specify if answers can be saved and returned to, or if it must be completed in one sitting per attempt.]\nTechnical Issues: [Provide contact or instructions for technical difficulties during the quiz.]"
+  },
+  {
+    "objectID": "assessments/assessment-evaluation-quiz.html#marking-criteria-rubric",
+    "href": "assessments/assessment-evaluation-quiz.html#marking-criteria-rubric",
+    "title": "Evaluation Quiz (Module 1)",
+    "section": "4. Marking Criteria & Rubric",
+    "text": "4. Marking Criteria & Rubric\n\nMarking Summary: This quiz is worth 10% of your final grade. Marks are based on the number of correctly answered multiple-choice questions. Your highest score from the two attempts will be taken.\nDetailed Rubric: [Typically not applicable for MCQs in this format, but specify if there’s any variation, e.g., “Each question is worth [X] marks. No partial marks for individual questions.”]"
+  },
+  {
+    "objectID": "assessments/assessment-evaluation-quiz.html#resources-support",
+    "href": "assessments/assessment-evaluation-quiz.html#resources-support",
+    "title": "Evaluation Quiz (Module 1)",
+    "section": "5. Resources & Support",
+    "text": "5. Resources & Support\n\nRelevant Materials:\n\nAll lecture notes, readings, and resources from Module 1.\n[Link to any practice quizzes or self-assessment tools if available]\n\nSupport Channels:\n\n[Specify support, e.g., If you have questions about Module 1 content, please use the ‘Module 1 Discussion Forum’ on Canvas before attempting the quiz.]"
+  },
+  {
+    "objectID": "assessments/assessment-evaluation-quiz.html#policies",
+    "href": "assessments/assessment-evaluation-quiz.html#policies",
+    "title": "Evaluation Quiz (Module 1)",
+    "section": "6. Policies",
+    "text": "6. Policies\n\nLate Submissions/Attempts: The quiz must be completed within the specified two-week window. No attempts will be possible after the closing date/time. Ensure you start your attempts well before the deadline to avoid technical issues.\nExtensions: [Explain the process, e.g., “Extensions are generally not granted for online quizzes with a long availability window unless there are documented exceptional circumstances. Refer to the Unit of Study Outline for Special Consideration procedures.”]\nAcademic Integrity: [Include a standard reminder, e.g., “While this is an open-book quiz, your answers must be your own individual work. Do not collaborate with other students during your attempts. Please familiarize yourself with the University’s Academic Integrity Policy: [Link to University Policy].”]\nResubmission Policy (if any): Not applicable (covered by two attempts)."
+  },
+  {
+    "objectID": "assessments/assessment-evaluation-quiz.html#estimated-time-commitment",
+    "href": "assessments/assessment-evaluation-quiz.html#estimated-time-commitment",
+    "title": "Evaluation Quiz (Module 1)",
+    "section": "7. Estimated Time Commitment",
+    "text": "7. Estimated Time Commitment\n\n[Provide a guideline, e.g., “Allow approximately [e.g., 1-2 hours] per attempt, including review time if you plan to use both attempts strategically.”]"
+  },
+  {
+    "objectID": "assessments/assessment-evaluation-quiz.html#feedback",
+    "href": "assessments/assessment-evaluation-quiz.html#feedback",
+    "title": "Evaluation Quiz (Module 1)",
+    "section": "8. Feedback",
+    "text": "8. Feedback\n\nHow and When: [Explain, e.g., “Your score will be available immediately after each attempt. Correct answers and further feedback [will/will not] be released [specify when, e.g., after the quiz window closes for all students].”]"
+  },
+  {
+    "objectID": "assessments/assessment-report-2.html",
+    "href": "assessments/assessment-report-2.html",
+    "title": "Report 2: Observational Study Analysis",
+    "section": "",
+    "text": "Brief Description: A scientific report based on the group dataset you collected and submitted in the previous assessment. This report requires analysis of that data and interpretation of the results.\nWeighting: 15%\nDue Date & Time: [Insert Specific Due Date and Time, e.g., Friday, Week 12, 11:59 PM AEST - Refer to assessments_data.csv for exact date]\nLearning Outcomes Addressed:\n\n[Insert Learning Outcome 1 related to data analysis]\n[Insert Learning Outcome 2 related to interpretation of results]\n[Insert Learning Outcome 3 related to scientific report writing based on observational data]\n[Add more as needed]"
+  },
+  {
+    "objectID": "assessments/assessment-report-2.html#overview",
+    "href": "assessments/assessment-report-2.html#overview",
+    "title": "Report 2: Observational Study Analysis",
+    "section": "",
+    "text": "Brief Description: A scientific report based on the group dataset you collected and submitted in the previous assessment. This report requires analysis of that data and interpretation of the results.\nWeighting: 15%\nDue Date & Time: [Insert Specific Due Date and Time, e.g., Friday, Week 12, 11:59 PM AEST - Refer to assessments_data.csv for exact date]\nLearning Outcomes Addressed:\n\n[Insert Learning Outcome 1 related to data analysis]\n[Insert Learning Outcome 2 related to interpretation of results]\n[Insert Learning Outcome 3 related to scientific report writing based on observational data]\n[Add more as needed]"
+  },
+  {
+    "objectID": "assessments/assessment-report-2.html#task-details-instructions",
+    "href": "assessments/assessment-report-2.html#task-details-instructions",
+    "title": "Report 2: Observational Study Analysis",
+    "section": "2. Task Details & Instructions",
+    "text": "2. Task Details & Instructions\n\nDetailed Description: This report requires you to individually analyse the group dataset your team collected and submitted in the previous assessment (for the ‘Dataset Submission’ task). You will need to formulate research questions/hypotheses relevant to the dataset, perform appropriate statistical analyses, present your findings, and discuss their implications in the context of existing literature. This report will require you to analyse the data and interpret the results. Specific instructions on the scope of analysis, expected sections, and depth of interpretation will be provided [here/in a separate document linked here].\nKey Deliverables:\n\n[e.g., An individual scientific report formatted according to the specified guidelines.]\n[e.g., Any analysis scripts (e.g., R code) as an appendix or separate submission if required.]\n\nUse of Group Dataset: While the dataset was a group collection, this report (analysis and write-up) is an individual task."
+  },
+  {
+    "objectID": "assessments/assessment-report-2.html#submission-guidelines",
+    "href": "assessments/assessment-report-2.html#submission-guidelines",
+    "title": "Report 2: Observational Study Analysis",
+    "section": "3. Submission Guidelines",
+    "text": "3. Submission Guidelines\n\nMethod: [Specify submission method, e.g., Submit as a PDF via the Turnitin link on Canvas under ‘Report 2 Submission’.]\nFormat Requirements:\n\n[Specify format, e.g., PDF document.]\n[Specify word/page limit, e.g., Maximum 2500 words (excluding references and appendices).]\n[Specify referencing style, e.g., APA 7th Edition.]\n[Specify font, spacing, etc., e.g., Times New Roman 12pt, double-spaced.]\n\nFile Naming Convention (if any): [Specify, e.g., StudentID_Report2.pdf]\nGroup/Individual: Individual submission (based on group-collected data)."
+  },
+  {
+    "objectID": "assessments/assessment-report-2.html#marking-criteria-rubric",
+    "href": "assessments/assessment-report-2.html#marking-criteria-rubric",
+    "title": "Report 2: Observational Study Analysis",
+    "section": "4. Marking Criteria & Rubric",
+    "text": "4. Marking Criteria & Rubric\n\nMarking Summary: This assessment is worth 15% of your final grade.\nDetailed Rubric: [Provide details or placeholder. Placeholder: e.g., A detailed marking rubric outlining the criteria for each section of the report (e.g., Introduction, Methods (briefly referencing group data collection), Results, Discussion, Presentation) and the marks allocated will be provided [here/linked directly]. Emphasis will be on your individual analysis, interpretation, and scientific writing.]\n\n[Example placeholder structure for rubric items:]\nIntroduction & Research Questions/Hypotheses ([X] marks): [Criteria]\nData Analysis & Presentation of Results ([Y] marks): [Criteria]\nInterpretation & Discussion of Results ([Z] marks): [Criteria]\nConclusion ([A] marks): [Criteria]\nClarity, Referencing, and Scientific Writing ([B] marks): [Criteria]"
+  },
+  {
+    "objectID": "assessments/assessment-report-2.html#resources-support",
+    "href": "assessments/assessment-report-2.html#resources-support",
+    "title": "Report 2: Observational Study Analysis",
+    "section": "5. Resources & Support",
+    "text": "5. Resources & Support\n\nRelevant Materials:\n\nThe group dataset submitted previously.\n[Link to guidelines for Report 2 (if separate from this document)]\n[Link to relevant lecture notes on statistical analysis, data interpretation, and report writing for observational studies]\n[Link to software guides (e.g., R, SPSS) if specific analyses are expected]\n\nSupport Channels:\n\n[Specify support, e.g., Attend specific Q&A sessions for Report 2.]\n[e.g., Post questions on the ‘Report 2’ discussion forum on Canvas.]\n[e.g., Consult with your tutor regarding data analysis approaches.]"
+  },
+  {
+    "objectID": "assessments/assessment-report-2.html#policies",
+    "href": "assessments/assessment-report-2.html#policies",
+    "title": "Report 2: Observational Study Analysis",
+    "section": "6. Policies",
+    "text": "6. Policies\n\nLate Submissions: [State the policy clearly, e.g., “Late submissions will be penalised by a deduction of 5% of the maximum possible mark for each calendar day or part thereof that the assessment is overdue, up to a maximum of 5 days. Submissions more than 5 days late will receive a mark of zero.”]\nExtensions: [Explain the process, e.g., “Requests for extensions must be made via the formal Special Consideration process. Refer to the Unit of Study Outline for details.”]\nAcademic Integrity: [Include a standard reminder, e.g., “This report must be your own individual work, particularly the analysis and written components. All sources must be appropriately cited. Please familiarize yourself with the University’s Academic Integrity Policy: [Link to University Policy].”]\nResubmission Policy (if any): [State if applicable, e.g., “Resubmissions are not permitted for this assessment.”]"
+  },
+  {
+    "objectID": "assessments/assessment-report-2.html#estimated-time-commitment",
+    "href": "assessments/assessment-report-2.html#estimated-time-commitment",
+    "title": "Report 2: Observational Study Analysis",
+    "section": "7. Estimated Time Commitment",
+    "text": "7. Estimated Time Commitment\n\n[Provide a guideline, e.g., “It is estimated that this assessment will require approximately [e.g., 10-15] hours of work, focusing on data analysis and report writing.”]"
+  },
+  {
+    "objectID": "assessments/assessment-report-2.html#feedback",
+    "href": "assessments/assessment-report-2.html#feedback",
+    "title": "Report 2: Observational Study Analysis",
+    "section": "8. Feedback",
+    "text": "8. Feedback\n\nHow and When: [Explain, e.g., “Feedback, including a marked rubric and comments, will be provided via Canvas within [e.g., three] weeks of the submission deadline.”]"
+  },
+  {
+    "objectID": "assessments/assessments.html",
+    "href": "assessments/assessments.html",
     "title": "Assessments",
-    "section": "Early Feedback Task",
-    "text": "Early Feedback Task"
-  },
-  {
-    "objectID": "index.html#section",
-    "href": "index.html#section",
-    "title": "BIOL2022 Unit Handbook",
     "section": "",
-    "text": "Thank you for joining Biology Experimental Design and Analysis, also known as BEDA (🐝-da). This Unit aims to help you learn the core skills in biology that underpins how research is designed, analysed and interpreted. Click on the links below for more information.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMade with ❤️ by Januar (Unit Coordinator), Clare (Lecturer) and Mat (Lecturer).\nUnless otherwise indicated, the content of this handbook is licensed under a CC-BY 4.0 License. The images on this page are licensed through Adobe Stock and are protected by Adobe’s copyright. These images may not be reproduced, distributed, or used without proper licensing from Adobe."
+    "text": "BEDA is assessed through a combination of quizzes, reports, and (as usual) a final exam. The assessments are designed to test your understanding of the material and your ability to apply it in practical scenarios.\n\n Early Feedback Task (EFT) - 5%\nThis is a short quiz, designed to give you early feedback on your prior understanding of statistics. It will help you identify areas where you may need to focus your study efforts.\nDetails Submission link\n\n\n Evaluation Quiz (Module 1) - 10%\nThis is a quiz that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.\nDetails Submission link\n\n\n Report 1 (Module 2) - 25%\nYou will use what you have learned so far to design and analyse an experiment based on a project of your choice. The experiments will be completed in groups, but the reports are individually written and assessed. You will have 6 weeks to complete it.\nRole of Practicals:\nPracticals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans. Demonstrators act as advisors, similar to how support works in a research group, and you are welcome to interact with them and your peers for advice, just as you would with postdocs or supervisors. If you are organised, you can also request feedback on your report drafts during practicals to help improve your work.\nDetails Submission link\n\n\n Report 2 (Module 3) - 20%\nReport 2 is similar to Report 1, but you will need to focus on a project with a multivariate context. Note that there is a 5% group work component to this report that will be assessed via dataset submission, and the report is individually written and assessed (15%). You will have 5 weeks to complete the report.\nRole of Practicals:\nPracticals are a mix of structured and unstructured sessions. Each practical begins with a brief workshop to practice a specific analysis technique, followed by time for you to work on your project. Some practicals are dedicated feedback sessions, for example we will prioritise giving feedback on your experimental design and analysis plans in Week 10. As usual, you are welcome to interact with demonstrators and your peers for advice and feedback.\nDetails Submission link",
+    "crumbs": [
+      "Home",
+      "Assessments (info)"
+    ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Preface",
+    "objectID": "assessments/assessment-final-exam.html",
+    "href": "assessments/assessment-final-exam.html",
+    "title": "Final Exam",
     "section": "",
-    "text": "Many students think of BEDA as yet another statistics unit. This is not quite true. Unlike most other statistical units, BEDA focuses on the practical aspects of data analysis. We assume that you already have a basic understanding of statistical concepts, and we build on that knowledge, focusing on the how and why of statistical methods:\n\nHow do we design a good study?\nWhy does study design make a difference in the results we get?\nWhy is it important to understand the context in which we use statistical tests?\n\nImportantly, attending labs is crucial to your learning as most of the data we use are collected by you – please do not skip any of them!"
+    "text": "Brief Description: The final exam is a hurdle assessment. Details on the exam format and content will be provided closer to the exam date.\nWeighting: 40%\nDate & Time: [Insert Specific Date and Time - This will be centrally timetabled by the University. Add placeholder: e.g., Refer to the official University exam timetable.]\nDuration: [Specify exam duration, e.g., 2 hours + 10 minutes reading time]\nHurdle Requirement: This is a hurdle assessment. You must achieve a minimum mark of [Specify minimum percentage, e.g., 45% or 50%] on the final exam to pass the unit, regardless of your overall unit mark.\nLearning Outcomes Addressed:\n\n[List all major Learning Outcomes covered by the exam, e.g., LO1, LO2, LO3, LO4, LO5]\n[Add more as needed]"
   },
   {
-    "objectID": "04-help/index.html",
-    "href": "04-help/index.html",
+    "objectID": "assessments/assessment-final-exam.html#overview",
+    "href": "assessments/assessment-final-exam.html#overview",
+    "title": "Final Exam",
+    "section": "",
+    "text": "Brief Description: The final exam is a hurdle assessment. Details on the exam format and content will be provided closer to the exam date.\nWeighting: 40%\nDate & Time: [Insert Specific Date and Time - This will be centrally timetabled by the University. Add placeholder: e.g., Refer to the official University exam timetable.]\nDuration: [Specify exam duration, e.g., 2 hours + 10 minutes reading time]\nHurdle Requirement: This is a hurdle assessment. You must achieve a minimum mark of [Specify minimum percentage, e.g., 45% or 50%] on the final exam to pass the unit, regardless of your overall unit mark.\nLearning Outcomes Addressed:\n\n[List all major Learning Outcomes covered by the exam, e.g., LO1, LO2, LO3, LO4, LO5]\n[Add more as needed]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#task-details-instructions",
+    "href": "assessments/assessment-final-exam.html#task-details-instructions",
+    "title": "Final Exam",
+    "section": "2. Task Details & Instructions",
+    "text": "2. Task Details & Instructions\n\nExam Format: Details will be provided closer to the exam date. [Placeholder: e.g., The exam will consist of [e.g., multiple-choice questions, short answer questions, and problem-solving tasks]. Further details on the structure, number of questions in each section, and specific topics covered will be announced in [e.g., Week 12/via a Canvas announcement].]\nContent Covered: [Specify scope, e.g., The exam will cover all content from Modules 1, 2, and 3 (Lectures, Practicals, Readings).]\nPermitted Materials: [Specify, e.g., This is a closed-book exam. No materials are permitted other than those provided by the exam supervisors OR This is an open-book exam. Specify allowed materials OR Non-programmable calculators are permitted.]\nLocation/Mode: [Specify, e.g., On-campus, invigilated exam OR Online, proctored exam via [Platform].]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#submission-guidelines",
+    "href": "assessments/assessment-final-exam.html#submission-guidelines",
+    "title": "Final Exam",
+    "section": "3. Submission Guidelines",
+    "text": "3. Submission Guidelines\n\nMethod: [e.g., Answers written in provided exam booklets OR Answers submitted via the online exam platform.]\n[Add any other relevant submission details based on exam mode.]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#marking-criteria-rubric",
+    "href": "assessments/assessment-final-exam.html#marking-criteria-rubric",
+    "title": "Final Exam",
+    "section": "4. Marking Criteria & Rubric",
+    "text": "4. Marking Criteria & Rubric\n\nMarking Summary: This exam is worth 40% of your final grade.\nHurdle Condition: A minimum mark of [Specify minimum percentage again, e.g., 45% or 50%] on this exam is required to pass the unit.\nDetailed Rubric/Marking Scheme: Details will be provided closer to the exam date. [Placeholder: e.g., Marks for each section/question will be indicated on the exam paper. General marking criteria for different question types (e.g., short answer, problem-solving) will be discussed in the exam briefing session/document.]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#resources-support",
+    "href": "assessments/assessment-final-exam.html#resources-support",
+    "title": "Final Exam",
+    "section": "5. Resources & Support",
+    "text": "5. Resources & Support\n\nRevision Materials:\n\nAll lecture notes, practical materials, and readings from the unit.\n[Link to any past papers or sample questions if provided]\n[Link to study guides or revision checklists if provided]\n\nSupport Channels:\n\n[Specify support, e.g., Attend pre-exam consultation sessions (details to be announced).]\n[e.g., Use the ‘Final Exam Q&A’ discussion forum on Canvas.]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#policies",
+    "href": "assessments/assessment-final-exam.html#policies",
+    "title": "Final Exam",
+    "section": "6. Policies",
+    "text": "6. Policies\n\nExam Rules & Conduct: [Refer to University exam policies, e.g., “All students must adhere to the University’s examination rules and policies: [Link to University Exam Policy].”]\nSpecial Consideration: [Explain the process for exam-related special consideration, e.g., “If you are unable to attend the exam or your performance is significantly affected due to illness or misadventure, you must apply for Special Consideration through the official University channels.”]\nAcademic Integrity: [Include a standard reminder, e.g., “Academic integrity is expected in all examinations. Any form of cheating will be dealt with according to the University’s Academic Integrity Policy.”]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#estimated-time-commitment",
+    "href": "assessments/assessment-final-exam.html#estimated-time-commitment",
+    "title": "Final Exam",
+    "section": "7. Estimated Time Commitment",
+    "text": "7. Estimated Time Commitment\n\n[Provide a guideline for revision, e.g., “Consistent revision throughout the semester is recommended. Intensive revision should begin at least [e.g., 2-3 weeks] before the exam period.”]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#feedback",
+    "href": "assessments/assessment-final-exam.html#feedback",
+    "title": "Final Exam",
+    "section": "8. Feedback",
+    "text": "8. Feedback\n\nHow and When: [Explain, e.g., “Final exam marks will be released with your overall unit grade as per the University’s official results release schedule. Individual exam scripts are generally not returned, but opportunities for viewing scripts may be available under specific circumstances (refer to University policy).”]"
+  },
+  {
+    "objectID": "help.html",
+    "href": "help.html",
     "title": "Help an support",
     "section": "",
     "text": "About this site"
   },
   {
-    "objectID": "attribution.html",
-    "href": "attribution.html",
-    "title": "Image Attributions",
+    "objectID": "module01/w03-model-fitting-assumptions.html",
+    "href": "module01/w03-model-fitting-assumptions.html",
+    "title": "Workshop 3",
     "section": "",
-    "text": "Two of the twelve apostles at sunrise from Gibsons beach, Great Ocean Road, Victoria, Australia. By Michael Evans.\n\n\n\n\n\nAustralian white tree frog on leaves, dumpy frog on branch, animal closeup, amphibian closeup. By kuritafsheen.\n\n\n\n\n\nGoanna in desert. By moodboard.\n\n\n\n\n\nAerial View of Australian Beaches and Coastline of the Great Ocean Road. By Judah.\n\n\n\n\n\nTiger Quoll. By Craig."
+    "text": "Workshop 3\nWorkshop slides are on Canvas.\n🚧 Under construction. 🚧"
+  },
+  {
+    "objectID": "module01/101-intro.html",
+    "href": "module01/101-intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Science is about asking the right questions in the right way so we can draw meaningful conclusions from the data we collect. This is not as simple as it seems, but it is a key skill in scientific enquiry. We need to be able to ask questions in a quantitative way to distinguish between different explanations for the things we observe. Before we start using t-tests, regression, or ANOVA; before we perform mixed modelling or moltivariate analyses; before we use the newest tools for data analysis, we must first learn to ask the right questions. So let’s go back to basics.\nIn this module:\n\nLectures (Weeks 1 –5) will cover the fundamental principles of scientific enquiry, including how to ask the right questions, how to design a study, and how to interpret results. We will also introduce to you the linear modelling framework, which is a powerful tool for understanding the relationships between variables in your data.\nPracticals (Weeks 1–3) aim to help you build the essential skills for scientific enquiry. We will cover experimental design, model formulation, and sampling design. Each week begins with a short 30-minute workshop to introduce the main ideas and techniques. You will then complete the practical work.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "About"
+    ]
+  },
+  {
+    "objectID": "module01/102-week01.html",
+    "href": "module01/102-week01.html",
+    "title": "Week 1: Getting started",
+    "section": "",
+    "text": "Welcome to your very first BEDA practical. Today we will help you get started by giving you a free, physical lab notebook and making sure you have all the software you need for this unit.\n\n\n\nAttend the first lecture (or watch the recording before the lab).\nBring a laptop. If you need to borrow one, let us know, there are loaners available in the lab.\nBe ready to install software in the lab. Make sure your laptop has admin rights, internet access and enough space.\n\n\n\n\nBy the end of this session, you should be able to:\n\nTrial the software you will be using in this unit.\nUse cheatsheets to help with your data analysis.\nUnderstand what a model is and how it fits into study design.\nCome up with a model, thinking about how you would design a study.\nModel data using plots such as boxplots, scatterplots and barplots.\n\n\n\n\nWe will explain to you how BEDA practicals work, what you will be doing, and how to get the most out of them. Your lecturer (probably Januar) will cover:\n\nCode of conduct and lab rules\nLab and Handbook structure\nDemonstrators and how they can help you\nAttendance and feedback",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 1**: Getting started"
+    ]
+  },
+  {
+    "objectID": "module01/102-week01.html#introduction",
+    "href": "module01/102-week01.html#introduction",
+    "title": "Week 1: Getting started",
+    "section": "",
+    "text": "Welcome to your very first BEDA practical. Today we will help you get started by giving you a free, physical lab notebook and making sure you have all the software you need for this unit.\n\n\n\nAttend the first lecture (or watch the recording before the lab).\nBring a laptop. If you need to borrow one, let us know, there are loaners available in the lab.\nBe ready to install software in the lab. Make sure your laptop has admin rights, internet access and enough space.\n\n\n\n\nBy the end of this session, you should be able to:\n\nTrial the software you will be using in this unit.\nUse cheatsheets to help with your data analysis.\nUnderstand what a model is and how it fits into study design.\nCome up with a model, thinking about how you would design a study.\nModel data using plots such as boxplots, scatterplots and barplots.\n\n\n\n\nWe will explain to you how BEDA practicals work, what you will be doing, and how to get the most out of them. Your lecturer (probably Januar) will cover:\n\nCode of conduct and lab rules\nLab and Handbook structure\nDemonstrators and how they can help you\nAttendance and feedback",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 1**: Getting started"
+    ]
+  },
+  {
+    "objectID": "module01/102-week01.html#workshop",
+    "href": "module01/102-week01.html#workshop",
+    "title": "Week 1: Getting started",
+    "section": "2 Workshop",
+    "text": "2 Workshop\nEach practical in Module 1 begins with a quick workshop. We will cover a key idea, then you will get stuck into some hands-on exercises in the lab. These are your chance to practise what you have heard in lectures and try out study design and data analysis for yourself.\nToday’s workshop covers:\n\nAn informal survey to assess statistical literacy\nA quick introduction to R, SPSS, and Jamovi\n\nThe workshop should take about 45 minutes unless Januar gets carried away. Hopefully one of you will keep him on track, but if not, a demonstrator will be there to remind him to wrap it up.\nThere are no formal exercises in this workshop, but you can ask questions and discuss the topics with your peers and demonstrators.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 1**: Getting started"
+    ]
+  },
+  {
+    "objectID": "module01/102-week01.html#exercise-1-cheatsheets",
+    "href": "module01/102-week01.html#exercise-1-cheatsheets",
+    "title": "Week 1: Getting started",
+    "section": "3 Exercise 1 – Cheatsheets",
+    "text": "3 Exercise 1 – Cheatsheets\n\n3.1 What is this about?\nLet us start with cheatsheets – handy guides that help you remember important functions and commands. Pick one and have a go at following the tasks outlined in the cheatsheet. These cheatsheets are designed by Januar and are meant to reduce the stress of learning new software. They are not meant to be comprehensive, but they will help you get started.\n\n\n3.2 Give a cheatsheet a try\nYou will need a web browser to open the cheatsheets. If you are reading this online, you can click here:  Cheatsheets. This link is always available in the sidebar.\n\nYou will see a list of cheatsheets. We will add more as we get your feedback and questions on Ed.\nPick a cheatsheet – maybe something you have never used before, or one you know well to see if it helps you learn something new.\nFollow the steps on the cheatsheet. If you get stuck, do not panic! Ask your friends or a demonstrator, and feel free to give feedback so we can make the cheatsheets even better.\n\n\n\n\n\n\n\nTip\n\n\n\nNow is your chance to try out different software for the same task. For example, try using R and Jamovi to plot the same data. You might find you prefer something different!\n\n\nWhen you are done, please give us feedback on the cheatsheet(s) you tried. There is a quick form on the cheatsheets page – it only takes a minute and really helps us out! You may also request for new cheatsheets to be added – Januar will make them for you as you progress through the unit.x\nYour feedback helps us make the cheatsheets better for everyone.\n\n\n\n\n\n\nWant to help improve the cheatsheets? (Optional)\n\n\n\n\n\nIf you would like to go a step further and contribute to the cheatsheets, we would love your suggestions! You can:\n\nEmail Januar with your ideas – that is totally fine!\nPost a comment on Ed. We will discuss and update the cheatsheets together.\nSubmit a pull request on GitHub. This is a bit more technical, but if you know how, go for it! The link to the GitHub repo is on the cheatsheet.\n\nIf your changes are accepted, you will be credited as a co-author. Your work will be part of the unit’s resources, and you can even mention it on your CV or portfolio! Ask Januar if you want to know more.\nYou can suggest or contribute at any time during the semester, so do not stress if you are busy now. We will keep updating the cheatsheets regularly.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 1**: Getting started"
+    ]
+  },
+  {
+    "objectID": "module01/102-week01.html#exercise-2-introduction-to-statistical-models",
+    "href": "module01/102-week01.html#exercise-2-introduction-to-statistical-models",
+    "title": "Week 1: Getting started",
+    "section": "4 Exercise 2 – Introduction to statistical models",
+    "text": "4 Exercise 2 – Introduction to statistical models\n\n4.1 What is the point?\nOne of the most important parts of study design is being able to model data. One way to do this is with plots – they are not just pretty pictures, but actually capture the heart of your study design. In this exercise, you will get to grips with what a model is and how it helps you plan and analyse experiments.\n\n4.1.1 What is a model?\nA model is just a simple way to represent something complicated. In data analysis, a model helps us make sense of a dataset, test ideas (hypotheses), or make predictions. Models can be as simple or as fancy as you like, depending on your data and your research question.\nSoon, you will be using what is called an empirical model. It might look like a scary equation, but you do not need to be a maths genius to get the idea.\nHere is an example:\n\\[y = \\beta_0 + \\beta_1 x_1 + \\epsilon\\]\nThis just means: “the value of \\(y\\) is equal to a constant, plus \\(x_1\\) times another constant, plus a bit of random error.”\nBut we can make it even simpler by thinking of it as a relationship:\n\\[y \\sim x_1\\]\nThis means: “\\(y\\) is influenced by \\(x_1\\).”\nSo if \\(y\\) is weight and \\(x_1\\) is age, it is:\n\\[\\text{weight} \\sim \\text{age}\\]\nIn other words, “weight depends on age.”\n\n\n4.1.2 Plots as models\nFor now, let us focus on graphical models – in other words, plots! Plots are models because they show relationships between variables. For example, you could plot the weight of an animal species against its age or height to see if there is a pattern:\n\n\n\n\n\n\n\n\n\nInterestingly, how we consider your variables can drastically change the type of plot and model used for data analysis. For example, consider the same relationship as above, but plotted differently:\n\n\n\n\n\n\n\n\n\nNotice how both plots show the same kind of relationship, but the way we interpret them – and the type of model we use – is different. This is what study design and data analysis are all about: the model you choose can totally change your results, so planning ahead is key!\n\n\n\n\n\n\nTip\n\n\n\nIf you can plot it, you are already modelling it!\n\n\n\n\n\n4.2 What do you need?\n\nMS Excel (or similar) to look at the data files\nWord, Google Docs, or just pen and paper to sketch your models\nR, Jamovi, SPSS, or any software you fancy for plotting\nData: penguins.csv and possum.xlsx (grab them from Canvas)\n\n\n\n4.3 What do you do?\nStep 1. Download and have a look at the data: penguins.csv and possum.xlsx.\nStep 2. Pick out some variables from the data and think about how you could model them. You do not need to analyse the data in detail – just focus on what the variables are and how they could be modelled. Try these:\n\nHistogram – shows the distribution of a variable. Think: what kind of data would make a histogram skewed to the right?\nScatterplot – shows the relationship between two variables.\nBoxplot – compares two or more groups.\nBarplot – compares groups, but with error bars. Think: what do the error bars mean? Why might you pick a barplot over a boxplot?\n\nStep 3. For plots that compare two or more variables, think about how you could change the way you collect data to use a different model. Is your idea logical and doable?\nStep 4. These plots are linked to specific empirical models and statistical analyses, which we will cover soon. Can you guess what kind of statistical model you would use for the data in Steps 1 and 2? Do not worry if you are not sure yet – chat about it with your friends and demonstrators.\nYou should hand-draw your models on your new notebook for future reference.\n\n\n\n\n\n\nExample\n\n\n\n\n\n\nOpen the possum data in Excel. Let’s think about how the weight of a possum changes with age.\nWhat kind of variables are these? Are they continuous, categorical, or something else? With that in mind, sketch the plot(s) you think will help you understand the data. Weight is continuous and age is categorical, so a boxplot is a good start.\nWhat if you collected age in years instead of categories? Then you could use a scatterplot. But maybe you can’t tell a possum’s exact age, so that might not be practical.\nThe first model would probably use a two-sample t-test, while the second could use linear regression.\n\nA model comparing the weights of juvenile and adult possums could be shown as a boxplot or barplot. Here’s a boxplot of the possum data:\n\n\nCode\nlibrary(readxl)\npossums &lt;- read_excel(\"possums.xlsx\", sheet = 2)\n\nlibrary(ggplot2)\nggplot(possums, aes(x = Age, y = BW)) +\n  geom_boxplot() +\n  theme_classic()\n\n\n\n\n\n\n\n\n\nSee how thinking about how to interpret the data is a big part of study design? It helps you decide what data to collect and how to analyse it. But notice – there is only one juvenile possum in the dataset, so you could not really analyse this properly!\nFood for thought: Can age still be used to construct a model given that there is only one juvenile possum?",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 1**: Getting started"
+    ]
+  },
+  {
+    "objectID": "module01/102-week01.html#that-is-a-wrap",
+    "href": "module01/102-week01.html#that-is-a-wrap",
+    "title": "Week 1: Getting started",
+    "section": "5 That is a wrap!",
+    "text": "5 That is a wrap!\nThat is all for today! If you have any questions, just ask your demonstrators – they are here to help. Do not forget to give feedback on the cheatsheets and have a go at the exercises in your own time. See you next week for more on study design and data analysis!",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 1**: Getting started"
+    ]
+  },
+  {
+    "objectID": "module01/102-week01.html#take-home-exercises",
+    "href": "module01/102-week01.html#take-home-exercises",
+    "title": "Week 1: Getting started",
+    "section": "6 Take-home exercises",
+    "text": "6 Take-home exercises\nThese exercises are not mandatory but will help you get the most out of today’s practical by testinng your knowledge and understanding of what you have learned today.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 1**: Getting started"
+    ]
+  },
+  {
+    "objectID": "module01/w02-tidy-data.html",
+    "href": "module01/w02-tidy-data.html",
+    "title": "Workshop 2",
+    "section": "",
+    "text": "Workshop slides are on Canvas.\n\n\nData is the reason why we can do science. We tend to invest a lot of time and effort in collecting data – in fact it forms be bulk of our work.\nIn thi workshop we will quickly go through the process of data entry and work on a few examples together.\n\n\n\n\nThe tidy data concept was popularised by Hadley Wickham in his paper in the Journal of Statistical Software in 2014 – Tidy Data.\nNot a new concept – tidy data is basically data in “long” format as opposed to “wide” format. Excel users tend to prefer the wide format but it is not ideal for data analysis.\nBoth formats contain the exact same information, so there is no loss of data. However, the long format is more suitable for data analysis and visualisation and is the preferred format for most statistical software.\n\nRecording data in long format will save you time and effort in the long run.\n\n\n\n\n\n\n\n\n\n\n\n\n\nSex\nBW\n\n\n\n\nF\n2.15\n\n\nM\n2.55\n\n\nF\n2.95\n\n\nF\n2.70\n\n\nM\n2.20\n\n\nF\n1.85\n\n\nM\n2.55\n\n\nM\n2.60\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\nF\nM\n\n\n\n\n2.15\n2.55\n\n\n2.95\n2.20\n\n\n2.70\n2.55\n\n\n1.85\n2.60\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Data should be in long format (left) where each row is an observation and each column is a variable. This is the preferred format for most statistical software. Wide format (right) is also common, but may require additional steps to analyse or visualise in some instances.\n\n\n\n\n\n\n\nEach variable must have its own column.\nEach observation must have its own row.\nEach value must have its own cell.\n\n\n\n\nIdeally, you would want to keep raw data intact and document the steps you took to tidy the data. This is important for reproducibility and transparency. Do it in Excel, R, or any other software you are comfortable with – the key is good record keeping.\n\n\n\n\nEach column should ony contain one variable, and the variable should not contain mixed data types (e.g. numeric and character).\nWhen naming columns, avoid spaces and special characters. Use underscores or periods to separate words.\nDon’t use formatting, and avoid merged cells.\nUnderstand the difference between missing data and zero. It is better to leave cells as blank if the data is missing, or use NA.\nInclude brief metadata directly in the data table as a separate column. For extensive metadata, it is recommended to document it in a separate file or worksheet.\n\n\n\n\nDownload the following files for this workshop.\n{{&lt; downloadthis assets/lotr.xlsx dname=\"lotr\" label=\"lotr.xlsx\" icon=\"database-fill-down\" type=\"info\" &gt;}}\n{{&lt; downloadthis assets/ferret.xlsx dname=\"ferret\" label=\"ferret.xlsx\" icon=\"database-fill-down\" type=\"info\" &gt;}}\n{{&lt; downloadthis assets/fish_station.csv dname=\"fish_station\" label=\"fish_station.csv\" icon=\"database-fill-down\" type=\"info\" &gt;}}"
+  },
+  {
+    "objectID": "module01/w02-tidy-data.html#data-entry",
+    "href": "module01/w02-tidy-data.html#data-entry",
+    "title": "Workshop 2",
+    "section": "",
+    "text": "Data is the reason why we can do science. We tend to invest a lot of time and effort in collecting data – in fact it forms be bulk of our work.\nIn thi workshop we will quickly go through the process of data entry and work on a few examples together."
+  },
+  {
+    "objectID": "module01/w02-tidy-data.html#tidy-data",
+    "href": "module01/w02-tidy-data.html#tidy-data",
+    "title": "Workshop 2",
+    "section": "",
+    "text": "The tidy data concept was popularised by Hadley Wickham in his paper in the Journal of Statistical Software in 2014 – Tidy Data.\nNot a new concept – tidy data is basically data in “long” format as opposed to “wide” format. Excel users tend to prefer the wide format but it is not ideal for data analysis.\nBoth formats contain the exact same information, so there is no loss of data. However, the long format is more suitable for data analysis and visualisation and is the preferred format for most statistical software.\n\nRecording data in long format will save you time and effort in the long run.\n\n\n\n\n\n\n\n\n\n\n\n\n\nSex\nBW\n\n\n\n\nF\n2.15\n\n\nM\n2.55\n\n\nF\n2.95\n\n\nF\n2.70\n\n\nM\n2.20\n\n\nF\n1.85\n\n\nM\n2.55\n\n\nM\n2.60\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\nF\nM\n\n\n\n\n2.15\n2.55\n\n\n2.95\n2.20\n\n\n2.70\n2.55\n\n\n1.85\n2.60\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Data should be in long format (left) where each row is an observation and each column is a variable. This is the preferred format for most statistical software. Wide format (right) is also common, but may require additional steps to analyse or visualise in some instances."
+  },
+  {
+    "objectID": "module01/w02-tidy-data.html#three-rules",
+    "href": "module01/w02-tidy-data.html#three-rules",
+    "title": "Workshop 2",
+    "section": "",
+    "text": "Each variable must have its own column.\nEach observation must have its own row.\nEach value must have its own cell."
+  },
+  {
+    "objectID": "module01/w02-tidy-data.html#how-to-tidy-data",
+    "href": "module01/w02-tidy-data.html#how-to-tidy-data",
+    "title": "Workshop 2",
+    "section": "",
+    "text": "Ideally, you would want to keep raw data intact and document the steps you took to tidy the data. This is important for reproducibility and transparency. Do it in Excel, R, or any other software you are comfortable with – the key is good record keeping."
+  },
+  {
+    "objectID": "module01/w02-tidy-data.html#important-considerations",
+    "href": "module01/w02-tidy-data.html#important-considerations",
+    "title": "Workshop 2",
+    "section": "",
+    "text": "Each column should ony contain one variable, and the variable should not contain mixed data types (e.g. numeric and character).\nWhen naming columns, avoid spaces and special characters. Use underscores or periods to separate words.\nDon’t use formatting, and avoid merged cells.\nUnderstand the difference between missing data and zero. It is better to leave cells as blank if the data is missing, or use NA.\nInclude brief metadata directly in the data table as a separate column. For extensive metadata, it is recommended to document it in a separate file or worksheet."
+  },
+  {
+    "objectID": "module01/w02-tidy-data.html#example-data",
+    "href": "module01/w02-tidy-data.html#example-data",
+    "title": "Workshop 2",
+    "section": "",
+    "text": "Download the following files for this workshop.\n{{&lt; downloadthis assets/lotr.xlsx dname=\"lotr\" label=\"lotr.xlsx\" icon=\"database-fill-down\" type=\"info\" &gt;}}\n{{&lt; downloadthis assets/ferret.xlsx dname=\"ferret\" label=\"ferret.xlsx\" icon=\"database-fill-down\" type=\"info\" &gt;}}\n{{&lt; downloadthis assets/fish_station.csv dname=\"fish_station\" label=\"fish_station.csv\" icon=\"database-fill-down\" type=\"info\" &gt;}}"
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Welcome to the BEDA Handbook",
+    "section": "Introduction",
+    "text": "Introduction\nThank you for joining BIOL202 Biology Experimental Design and Analysis, known to many as BEDA (🐝-da). The ability to critically evaluate evidence is a fundamental life skill, and our aim is to help you build a strong foundation in it by helping you develop essential, hands-on skills in experimental design and analysis. We will move beyond theory and focus on the ‘how’ and ‘why’ of research:\n\nHow do you design a robust study from the ground up?\nWhy does your study’s design fundamentally shape its results?\nHow do you select the right statistical tools for your specific research question?\n\nThe skills you learn will be invaluable not just in biology, but in any future career path you choose.\nImportante note: We build upon foundational statistical concepts, so a basic understanding is assumed. If you need a refresher, please see: Am I ready for BEDA?\n\nUsing this handbook\nThis online handbook is your primary resource for BEDA. Use the sidebar to navigate through the content. We will walk you through its structure during our first week.  To get started, head over to Unit Information to learn about the course structure, assessments, and what to expect.\nBelow is a quick schedule of the unit, where you can find links to the lectures and practicals.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Welcome to the BEDA Handbook",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\n\n\n\n\nLectures & Practicals\n\n\n2025 Semester 2\n\n\nWeek\nActivities\nNote\n\n\n\n\nModule 1: fundamentals\n\n\nWeek 0129 Jul - 02 Aug\nL01a Tue: Guest lectureL01b Tue: The nature of data and numbers in biology experimentsL01c Tue: Welcome to BEDAL01d Wed: (Re-) indroduction to experimental design and analysisPractical Week 01: Getting started\nQuiz 1\n\n\nWeek 0205 Aug - 09 Aug\nL02a: What is a representative sample?L02b: Modelling fundamentals – the linear modelL02c: (Almost) every statistical technique is a linear model (or, identifying response and predictors)Practical Week 02: Study design\nQuiz 2\n\n\nWeek 0312 Aug - 16 Aug\nL03a: All models are wrong, but some more than others (testing assumptions)L03b: Modelling differences between two groups (or, the t-test)Practical Week 03: Data analysis\nQuiz 3Early Feedback Task (5%)\n\n\nWeek 0419 Aug - 23 Aug\nL04a: Modelling relationships: multiple linear regressionL04b: Modelling differences between two or more groups (or, ANOVA)L04c: Model transformations – why, and how?Practical Week 04: Check timeline\nEvaluation Quiz (10%)\n\n\nWeek 0526 Aug - 30 Aug\nL05a: Control, fixed and random variables – adding sense to models (or, mixed models)L05b: You’ve got this – Module 1 revisionPractical Week 05: Check timeline\nWork on your experiments\n\n\nModule 2: univariate experiments\n\n\nWeek 0602 Sep - 06 Sep\nL06a: General refresherL06b: Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variablesNo practicals\n–\n\n\nWeek 0709 Sep - 13 Sep\nL07a: Does wind reduce tree growth? Detecting differences versus describing relationshipsL07b: What are the chances of finding a bandicoot? Dealing with binary response dataPractical Week 07: Check timeline\n–\n\n\nWeek 0816 Sep - 20 Sep\nL08a: Information-theoretic methods vs. null hypothesis testingL08b: Revision: answering your queriesPractical Week 08: Check timeline\n–\n\n\nModule 3: multivariate experiments\n\n\nWeek 0923 Sep - 27 Sep\nL09a: Introduction to multivariate analysisL09b: Principal Component Analysis (PCA) and Factor Analysis (FA)Practical Week 09:\nReport 1 (25%)\n\n\nWeek 1030 Sep - 04 Oct\nL10a: ClusteringL10b: Non-metric multi-dimensional scaling (nMDS) and hypothesis testingPractical Week 10:\nInformal presentations\n\n\nWeek 1107 Oct - 11 Oct\nL11a: Multivariate analysis of variance (MANOVA)L11b: Multivariate Revision 1 (no slides)Practical Week 11:\nGroup dataset submission (5%)\n\n\nWeek 1214 Oct - 18 Oct\nL12a: Rarefaction and Bayesian analysisL12b: Multivariate Revision 2 (no slides)Practical Week 12:\n–\n\n\nWeek 1321 Oct - 25 Oct\nRevision and Q&APractical Week 13:Feedback. Exam and Discussions\nReport 2 (15%)",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "module03/304-week11.html",
+    "href": "module03/304-week11.html",
+    "title": "Week 11:Analysing your data",
+    "section": "",
+    "text": "Objectives\n\n\n\nThe aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:\n\nBe familiar with the principles underpinning principal components analysis (PCA) and non-metric multidimensional scaling.\nBe familiar with the principles underpinning multivariate hypothesis testing using permutational techniques\nPlanning and conducting experiments to test multivariate hypotheses\nKnow how to perform these analyses using relevant software\nBe able to interpret, present and report on these analyses. For this specific practical you will:\nAnalyse and interpret your group data using multivariate techniques learnt in weeks 1 (PCA) and 2 (nMDS, PERMANOVA, SIMPER (if appropriate, etc).\nPerform analyses (ANOVA, regressions etc) to test additional univariate hypotheses.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 11**:Analysing your data"
+    ]
+  },
+  {
+    "objectID": "module03/304-week11.html#outline",
+    "href": "module03/304-week11.html#outline",
+    "title": "Week 11:Analysing your data",
+    "section": "1 Outline",
+    "text": "1 Outline\nAt the end of the practical you should have:\n\nAppropriate outputs for your community structure analyses:\n\nCluster analysis details and dendrogram (if appropriate)\nnMDS (saved as suitable image file)\nPERMANOVA results (in rtf/doc file)\nSIMPER if justified\n\nAppropriate outputs for your PCA:\n\nRTF file with SPSS or R output\n\nUnivariate tests using your PCA results\n\nRTF file with SPSS or R output with Regression and/or ANOVA results (testing hypotheses using your newly derived PCs)",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 11**:Analysing your data"
+    ]
+  },
+  {
+    "objectID": "module03/304-week11.html#your-own-data",
+    "href": "module03/304-week11.html#your-own-data",
+    "title": "Week 11:Analysing your data",
+    "section": "2 Your own data",
+    "text": "2 Your own data\nAt this stage it’s very easy to fiddle with your data – is there any reason you might want to standardise or transform your data in any way? Some things to consider at this stage:\n\nDo the abundances matter?\nAre you intending to make every sample equal?\nWould it be worth analysing using your data at a higher “taxonomic” level?",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 11**:Analysing your data"
+    ]
+  },
+  {
+    "objectID": "module03/304-week11.html#tips-for-primer",
+    "href": "module03/304-week11.html#tips-for-primer",
+    "title": "Week 11:Analysing your data",
+    "section": "3 Tips for PRIMER",
+    "text": "3 Tips for PRIMER\nThe graphics are not fantastic – for some outputs you may need to save the coordinates and make a new graph. You can save the images as a windows metafile or bitmap if you wish, they are good enough for your report. Resolution is too low for most journals. You should save appropriate output files using standard formats you can incorporate into your report.\nIf you don’t complete your analyses, I will make the program available to you outside of prac times. There will also be time in Week 12 to do any extras.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 11**:Analysing your data"
+    ]
+  },
+  {
+    "objectID": "module03/303-week10.html",
+    "href": "module03/303-week10.html",
+    "title": "Week 10: Permutational techniques",
+    "section": "",
+    "text": "Objectives\n\n\n\nThe aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:\n\nBe familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling.\nBe familiar with the principles underpinning multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA.\nPlanning and conducting experiments to test multivariate hypotheses.\nKnow how to perform these analyses using relevant software.\nBe able to interpret, present and report on these analyses.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 10**: Permutational techniques"
+    ]
+  },
+  {
+    "objectID": "module03/303-week10.html#outline",
+    "href": "module03/303-week10.html#outline",
+    "title": "Week 10: Permutational techniques",
+    "section": "1 Outline",
+    "text": "1 Outline\nFor this specific practical you will:\n\nPresent group presentations of model systems and experimental design.\nAnalyse sample data in the software package PRIMER or R to:\n\nvisualize data using cluster analysis and nMDS.\ntest one and two factor multivariate hypotheses using ANOSIM and PERMANOVA with a focus on permutational techniques (PERMANOVA).\ndetermine variables contributing to the differences between groups using SIMPER.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 10**: Permutational techniques"
+    ]
+  },
+  {
+    "objectID": "module03/303-week10.html#analyses-covered-in-practical-2",
+    "href": "module03/303-week10.html#analyses-covered-in-practical-2",
+    "title": "Week 10: Permutational techniques",
+    "section": "2 Analyses covered in practical 2",
+    "text": "2 Analyses covered in practical 2\n\nnMDS and multivariate hypothesis testing (ANOSIM, PERMANOVA and SIMPER) – Mainly used to produce an ordination in order to visualize patterns in the multivariate cloud of data (by reducing dimensions in some way) and also to rigorously test explicit hypotheses concerning those patterns by reference to a priori groups or relationships with predictors, such as environmental variables.\nANOSIM –- testing hypotheses comparing different groups based on their similarity (Among c.f. within) using distance measures. Most effective with simple designs.\nPERMANOVA –- more powerful approach to multivariate hypothesis testing using permutational methods, capable of analysing more complex designs.\nSIMPER –- used when a significant difference is found to identify which components of the data set are driving the differences (e.g. the contribution each species makes to differences among communities.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 10**: Permutational techniques"
+    ]
+  },
+  {
+    "objectID": "module03/303-week10.html#community-structureassemblage-structure",
+    "href": "module03/303-week10.html#community-structureassemblage-structure",
+    "title": "Week 10: Permutational techniques",
+    "section": "3 Community structure/Assemblage structure",
+    "text": "3 Community structure/Assemblage structure\nThe process for looking at community structure is straight forward. We will use both cluster analysis and nMDS/ANOSIM/SIMPER to do this. This involves;\n\nTransforming/standardising your data as appropriate.\nCalculating Bray Curtis dissimilarities (you could use something else from BC if the data are suitable) and generating dissimilarity matrix.\nPerforming MDS (and follow on below).\nPERMANOVA (or ANOSIM) to test for difference between treatments.\nSIMPER for identifying which variables contribute to the differences.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 10**: Permutational techniques"
+    ]
+  },
+  {
+    "objectID": "module03/303-week10.html#using-primer-r-instructions-are-given-on-canvas-within-an-r-studio-files",
+    "href": "module03/303-week10.html#using-primer-r-instructions-are-given-on-canvas-within-an-r-studio-files",
+    "title": "Week 10: Permutational techniques",
+    "section": "4 Using PRIMER (R instructions are given on Canvas within an R Studio files)",
+    "text": "4 Using PRIMER (R instructions are given on Canvas within an R Studio files)\n\n4.1 PERMANOVA, SIMPER and MDS analysis with PRIMER\n\nOpen the Excel document you wish to analyse.\nOpen PRIMER\nIn PRIMER go to Open and select Excel file you wish to analyse.\nSelect worksheet to be analysed. Keep “Data Type” as Sample Data. Clear button “Title”.\nCheck to ensure you have the correct number of rows and columns and all looks well.\nGo to Edit, go to Factors, go to Add and name your new factor(s) appropriately, code each site for that factor and press OK.\nGo to Pre-treatment and then to Transform (overall), and select an appropriate transformation for your data. (4th root or presence/absence, etc1.)\nTo make an nMDS plot: Go to Analyse then Resemblance and click ‘analyse between samples’ and ‘Bray-Curtis similarity’. Go to Analyse then to Non-metric MDS, change number of restarts to 20 and select configuration plot. You can modify how the nMDS plot is displayed by right clicking on the figure.\nTo perform a PERMANOVA you need to firstly create a PERMANOVA design, and then run the PERMANOVA you have designed\n\nTo create a PERMANOVA design: Return to the resemblance matrix. Go to PERMANOVA+ then Create PERMANOVA design. Create a title for the design and select appropriate number of factors. Enter in each factor you want to incorporate into the design, and code as either fixed or random factor. Complex designs can be created at this point.\nTo run the PERMANOVA: Return to the resemblance matrix. Go to PERMANOVA+ then PERMANOVA. Select the correct design (usually the highest number). Select Mains test and your permutational method (reduced model is usually fine), the sum of squares type (type III) and the number of permutations (999 recommended) then OK.\n\nInterpret the PERMANOVA output. If one or more of your factors are significant, then you run the PERMANOVA design again, selecting Pair-wise test and select the factor/interaction of interest. Press OK.\nIf appropriate, return to transformed data set and go to Analyse and then SIMPER. Select appropriate factor and click OK.\nSave result(s) to a file.\n\n\n\n4.2 ANOSIM\nAs an alternative to PERMANOVA, many studies will test differences between treatments using Analysis of Similarities (ANOSIM). Unlike PERMANOVA which can be used for multi-factorial designs, ANOSIM is best used for simple one-factor analyses. PERMANOVA and ANOSIM will generate the same (or very similar results) for one-factor analyses.\n\n4.2.1 To perform an ANOSIM\nReturn to resemblance matrix, go to Analyse then to ANOSIM, select appropriate factor which you added before.\nSignificance level in % in ANOSIM becomes probability if divided by 100. e.g. 0.2 ÷ 100 = 0.002 = P (in this case P &lt; 0.05). If ‘Significance level of sample statistic’ in ‘Global Test’ section of the output is more than 5 (which is &gt; 0.05), than there is no significant difference among any of the treatments even if ‘Pairwise Tests’ section has significant differences between pairs of particular treatments. ANOSIM results are presented as: (P = 0.076, Global R = 0.148, 999 permutations) where P is a global significance level.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 10**: Permutational techniques"
+    ]
+  },
+  {
+    "objectID": "module03/303-week10.html#for-next-week",
+    "href": "module03/303-week10.html#for-next-week",
+    "title": "Week 10: Permutational techniques",
+    "section": "5 For next week",
+    "text": "5 For next week\nOur first steps involve organizing the data so that we can get it into our analytical software (SPSS, PRIMER, R etc,) and generating summary statistics and figures. Different analytical software requires slightly different formats but there are usually some generalities that apply across programs.\nFor the start of next week’s practical each group will need to have collated their group data into three spreadsheets; These spreadsheets will be marked out of 5 by demonstrators.\n\nHabitat data: an SPSS or R ready excel file with sites as rows and habitat variables as columns (see below)\nAssemblage/Community data: a PRIMER or R ready excel file with species ID as rows and sites as columns (see below)\nSummary statistics: additional excel files as above (1 and 2) but with summary statistics (numbers of spp., individuals, habitat variables etc.) calculated for your data. This may be done on a site specific or treatment specific basis depending on your question.\n\n\n5.1 1. Your habitat data for PCA\nHabitat data – You will need to enter your data on habitat characteristics into SPSS or R for analysis next week. Make sure you are familiar with how to organise it for SPSS. Every site needs its own row where every habitat variable measured is listed, i.e. every site assessment has an independent row. If you have treatments you need to include a column labeling those treatments too (in addition to “site name”).\n\n\n5.2 2. Organising and entering assemblage data for PRIMER\nAssemblage/Community data – You will need to generate your spp*site matrix into a PRIMER ready file so that we are ready to analyse your data at the labs next week. These will take the form of a spreadsheet with a single column identifying species (unique species identifiers are fine) with the abundances for each site in rows (page 22). This sheet must start in the top left cell of that worksheet with only a single row of column labels. Make sure that you keep a reference file where you have recorded the specific identity of the unique species identifiers (e.g. A= Toyota Corolla, B= Leyland P76 etc.).\n\n\n5.3 3. Generating summary statistics for additional (univariate) analyses\nOn an additional spreadsheet/workspace, you should calculate summary statistics to perform additional univariate analyses. Create a copy of your completed excel file and or worksheet. You should generate a column in the far right of your spreadsheet summing the number of things in each row. You can then sort the data (REMEMBER TO SELECT IT ALL!) by that column and delete all the zero rows (i.e. no evidence of that species in your system).\nOwing to the high degree of variation and the number of singletons you will encounter it is possible (and likely) that some groups will pool species into more coarse groupings (i.e. “genera” or “family”).\nThe easiest way to calculate some of these summary statistics will be to use the pivot table command in Excel to sort your data for you. To do this:\n\nHighlight the dataset you want to use\nChoose Pivot Table from the Data menu\nWork through the wizard creating a pivot table in a new worksheet\nThen change the drop down menu in the box to “to data area” and click on the different sites to add them.\n\nYou should have a functional summary pivot table of your data. You can change the pivot tables to look at “counts” (equivalent of presence absence data) or “sums” (abundance data) for your spreadsheet.  \n\n\n\n\n\n\nFigure 1: Example of data sheet for importing data into SPSS for PCA\n\n\n\n\n\n\n\n\n\nFigure 2: Example of data sheet for importing data into PRIMER",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 10**: Permutational techniques"
+    ]
+  },
+  {
+    "objectID": "module03/303-week10.html#footnotes",
+    "href": "module03/303-week10.html#footnotes",
+    "title": "Week 10: Permutational techniques",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nWhen you are analyzing your group data (week 11), you will be able to apply multiple transformations to your data. I’d encourage you to use a range of them to see how it affects your data. Note that PRIMER will be reluctant to undertake any analyses when data are not transformed!↩︎",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 10**: Permutational techniques"
+    ]
+  },
+  {
+    "objectID": "module03/305-week12.html",
+    "href": "module03/305-week12.html",
+    "title": "Week 12: Support session",
+    "section": "",
+    "text": "Objectives (you should know these by now!)\n\n\n\nThe aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will;\n\nBe familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling.\nBe familiar with the principles underpinning multivariate hypothesis testing using permutational techniques\nPlanning and conducting experiments to test multivariate hypotheses\nKnow how to perform these analyses using relevant software\nBe able to interpret, present and report on these analyses.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 12**: Support session"
+    ]
+  },
+  {
+    "objectID": "module03/305-week12.html#outline",
+    "href": "module03/305-week12.html#outline",
+    "title": "Week 12: Support session",
+    "section": "1 Outline",
+    "text": "1 Outline\nThis week we will be in the lab to help with any analyses that groups wish to undertake. This may involve integrating the analyses (e.g. testing the relationships between PCs and univariate measures) or tweaking (not twerking) your analyses by examining subsets of your data using the options available in PRIMER.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 12**: Support session"
+    ]
+  },
+  {
+    "objectID": "module03/305-week12.html#marking-scheme",
+    "href": "module03/305-week12.html#marking-scheme",
+    "title": "Week 12: Support session",
+    "section": "2 Marking scheme",
+    "text": "2 Marking scheme\nThe marking scheme can be found on Canvas, in the Assignments section under Report 2.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 12**: Support session"
+    ]
+  },
+  {
+    "objectID": "module03/301-intro.html",
+    "href": "module03/301-intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:\n\nBe familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling.\nBe familiar with the principles underpinning multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA.\nPlanning and conducting experiments to test multivariate hypotheses.\nKnow how to perform these analyses using relevant software.\nBe able to interpret, present and report on these analyses.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "About"
+    ]
+  },
+  {
+    "objectID": "module03/301-intro.html#preamble",
+    "href": "module03/301-intro.html#preamble",
+    "title": "Introduction",
+    "section": "",
+    "text": "The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:\n\nBe familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling.\nBe familiar with the principles underpinning multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA.\nPlanning and conducting experiments to test multivariate hypotheses.\nKnow how to perform these analyses using relevant software.\nBe able to interpret, present and report on these analyses.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "About"
+    ]
+  },
+  {
+    "objectID": "module03/301-intro.html#background",
+    "href": "module03/301-intro.html#background",
+    "title": "Introduction",
+    "section": "2 Background",
+    "text": "2 Background\nMultivariate analyses are becoming more prevalent in biology as tools performing the necessary complex computations become more accessible. As the lectures outline, this accessibility has given rise to the uncritical use of methods leading to inappropriate analyses being used to deal with multivariate data sets. At the very least, biologists need to have a working understanding of how to choose appropriate tests and how to identify when someone has chosen poorly.\nSome of the more common uses of multivariate approaches permit us to describe complex patterns simply, identify patterns of groupings in complex data sets and test statistical hypotheses using multivariate datasets.\nIn this section of the unit, you will be able to practice performing these multivariate techniques using sample data sets. Then you need to demonstrate your ability to use these multivariate methods to analyse data that you will collect in groups to highlight the nuances of different techniques. Whilst best practice normally dictates that we would normally decide on appropriate tests before we collect our data, this task will enable us to explore options for analysis more effectively.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "About"
+    ]
+  },
+  {
+    "objectID": "module03/301-intro.html#analyses-and-programs-well-use",
+    "href": "module03/301-intro.html#analyses-and-programs-well-use",
+    "title": "Introduction",
+    "section": "3 Analyses and programs we’ll use",
+    "text": "3 Analyses and programs we’ll use\nThe main programs we will use are SPSS and PRIMER. However, R instructions for all methods, in the form of R scripts, will be supplied on Canvas for those who prefer to use R.\n\nPCA – Principal components analysis lets us extract a reduced dataset from a larger dataset, accounting for as much variance as possible in the original more complex dataset. This will be useful for your habitat data as we can determine a reduced number of newly derived variables to describe them. We will do this in SPSS (or R). \nnMDS and multivariate hypothesis testing (using ANOSIM, PERMANOVA and SIMPER) – Mainly used to produce an ordination in order to visualize patterns in the multivariate cloud of data (by reducing dimensions in some way) and also to rigorously test explicit hypotheses concerning those patterns by reference to a priori groups or relationships with predictors, such as environmental variables. We will use PRIMER for this (or R).\nANOSIM – testing hypotheses comparing different groups based on their similarity (Among c.f. within) using distance measures. Most effective with simple designs. We will use PRIMER for this (or R).\nPERMANOVA – more powerful approach to multivariate hypothesis testing using permutational methods, capable of analysing more complex designs. We will use PRIMER for this (or R).\nSIMPER – used when a significant difference is found to identify which components of the data set are driving the differences (e.g. the contribution each species makes to differences among communities. We will use PRIMER for this (or R).",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "About"
+    ]
+  },
+  {
+    "objectID": "module03/301-intro.html#timeline",
+    "href": "module03/301-intro.html#timeline",
+    "title": "Introduction",
+    "section": "4 Timeline",
+    "text": "4 Timeline\n\nWeek 9: introduction, PCA of lecture data and designing model systems to test multivariate hypotheses (in groups) for your reports.\nWeek 10: group presentations of model systems and experimental design, and how to perform nMDS, PERMANOVA (and ANOSIM) and SIMPER using sample data.\nWeek 11: submitting your complete datafiles onto Canvas, analysing your report data.\nWeek 12: additional analyses and summary of findings and guidelines for describing multivariate methods and results for your report.\nWeek 13: final report due.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "About"
+    ]
+  },
+  {
+    "objectID": "module03/302-week09.html",
+    "href": "module03/302-week09.html",
+    "title": "Week 9: PCA and Report 2",
+    "section": "",
+    "text": "Objectives\n\n\n\nThe aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:\n\nBe familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling.\nBe familiar with the principles underpinning multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA.\nPlanning and conducting experiments to test multivariate hypotheses.\nKnow how to perform these analyses using relevant software.\nBe able to interpret, present and report on these analyses.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 9**: PCA and Report 2"
+    ]
+  },
+  {
+    "objectID": "module03/302-week09.html#outline",
+    "href": "module03/302-week09.html#outline",
+    "title": "Week 9: PCA and Report 2",
+    "section": "1 Outline",
+    "text": "1 Outline\nFor this specific practical you will:\n\nUse PCA to analyse “lecturer perceptions” data gathered in previous years.\nDesign an investigation using a model system to test multivariate hypotheses (in groups) for your reports.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 9**: PCA and Report 2"
+    ]
+  },
+  {
+    "objectID": "module03/302-week09.html#what-you-need-to-submit-in-module-3",
+    "href": "module03/302-week09.html#what-you-need-to-submit-in-module-3",
+    "title": "Week 9: PCA and Report 2",
+    "section": "2 What you need to submit in Module 3",
+    "text": "2 What you need to submit in Module 3\nThe assessment for Module 3 requires two separate submissions in Canvas:\n\nThe Excel file (spreadsheets) containing your group’s data. This needs to be submitted by one group member on behalf of your group and will cover both the species data and habitat data. This must be submitted by 8am on the day of your prac session in Week 11 (worth 5% of the total unit mark).\nReport 2: your individual report on your study. The report must be submitted in the format of a short scientific article (worth 15% of the total unit mark) – see assessment information for when this is due.\n\n\n2.1 Analyses covered in this practical\n\nPCA – Principal components analysis is essentially a way to extract a reduced set of variables from a larger dataset, accounting for as much variance as possible in the original more complex dataset.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 9**: PCA and Report 2"
+    ]
+  },
+  {
+    "objectID": "module03/302-week09.html#part-1-principal-components-analysis-perceptions-of-biology-lecturers",
+    "href": "module03/302-week09.html#part-1-principal-components-analysis-perceptions-of-biology-lecturers",
+    "title": "Week 9: PCA and Report 2",
+    "section": "3 Part 1: Principal components analysis – “perceptions of biology lecturers”",
+    "text": "3 Part 1: Principal components analysis – “perceptions of biology lecturers”\nYou will use PCA to reduce your set of measured variables into a coherent smaller dataset. In addition, you will be comparing your lecturer perceptions between preferred systems (marine, freshwater or terrestrial), preferred taxon (animals or plants) and gender (male or female) using conventional univariate approaches (t-tests/ANOVAs). To perform these univariate approaches, make sure that you not only create the principal components (PCs) but also save the scores (see below) for each component.\nThe process in SPSS is listed below. R instructions are given on Canvas in an R Studio file\n\n3.1 1. Running the PCA\n\nImport your lecturer data from excel into SPSS. On the command bar, click Analyze, Dimension Reduction, Factor. Move the variables of interest into the Variables Box.\nClick Descriptives and then check Initial Solution, Coefficients, and KMO and Bartlett’s Test of Sphericity. Click Continue.\nClick Extraction and then select Correlation Matrix, Unrotated Factor Solution, Scree Plot, and Eigenvalues Over 1. Click Continue.\nClick Rotation. Select Varimax and Rotated Solution. Click Continue.\nClick Scores and select Save Scores.\nClick Options. Select Exclude Cases Listwise and Sorted By Size. Click Continue.\nClick OK, and SPSS completes the Principal Components Analysis.\nTake a good look at the correlation matrix. The PCA captures the essence of the correlations in this matrix. If there are any variables that are not correlated with the other variables, you might as well delete them prior to the PCA. Since we are using PCA to reduce the set of variables to a smaller set of components to be used in additional analyses, you can always reintroduce the unique variables (i.e. those not correlated with other variables) at that time.\nBartlett’s Test of Sphericity, can be used to test the null hypothesis that our sample was randomly drawn from a population in which the correlation matrix was an identity matrix (a matrix full of zeros, except, for ones on the main diagonal). An identity matrix would occur only if each variable only correlated with itself and not any other variable. However, it is easier and more interpretable if you look at your data instead.\n\n\n\n\nClick to enlarge. PCA analysis in SPSS. Note that this analysis selects ALL numerical variables, which may not be necessary depending on the research question.\n\n\n\n\n3.2 2. Interpreting the PCA\nYou need to:\n\nLook at the correlation matrix.\nExamine the scree plot and determine how many PCs you can identify (eigenvalues &gt;1, Kaiser’s Criterion).\nEstablish a meaningful name for each component based on the loadings for individual variables in the rotated solutions.\n\n\n\n3.3 3. After the PCA\nExamine whether gender, system biases (marine v. terrestrial) and taxon (animal v. plant) biases may affect the perceptions of biology lecturers. You will need to code the columns for each factor (i.e. males = 0, females = 1) for SPSS to perform its standard one-way ANOVAs or t-tests.\nQuestions to consider:\n\nDo males and females perceive lecturer qualities the same way?\nDo botanists and zoologists perceive lecturer qualities the same way?\nDo marine and terrestrial folk perceive lecturer qualities the same way?",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 9**: PCA and Report 2"
+    ]
+  },
+  {
+    "objectID": "module03/302-week09.html#part-2-designing-your-multivariate-experiment",
+    "href": "module03/302-week09.html#part-2-designing-your-multivariate-experiment",
+    "title": "Week 9: PCA and Report 2",
+    "section": "4 Part 2: designing your multivariate experiment",
+    "text": "4 Part 2: designing your multivariate experiment\n\n4.1 The data and your model system\nBiologists are becoming more interested in multivariate approaches because the questions we ask and the data we collect tend to be inherently multivariate, relating to both biotic and abiotic variables when dealing with assemblages and habitat assessments respectively. In groups, you will generate your own multivariate datasets using non-biological model systems like cars and the car parks they inhabit, gargoyles and the buildings they live on, or beer types and the type of drinking establishment in which they congregate.\n\n\n4.2 An example of a non-biological model system\nCars have proven a useful vehicle for understanding analytical techniques in ecology (Gaston et al. 1993) and they are a good model system for our needs. We can study the assemblages of different cars (as analogues of “species”) that inhabit different suburbs and look at some characteristics of their car parks (as analogues of “habitat use”). See the sample proforma attached illustrating how we can generate a multivariate system with testable hypotheses using car assemblages and the car parks they inhabit as an example.\n\n\n4.3 Groups\nIn groups, you will need to create your own non-biological multivariate system. Using this model system, come up with several (2 to 3) multivariate hypotheses relating to the assemblages of “species” in different “treatments” (2 factor design is encouraged) and the “habitat variables” that may be influencing “habitat use”. Make sure that your treatments are adequately replicated (you will need at least 3 of each treatment). You will need to make a sampling technique in your groups that will allow you to collect the data necessary to test your hypotheses. You should also decide who will co-ordinate the data preparation.\nEach group will present a short (&lt;5 min) presentation during the practical session in Week 10 (week 2 of the pracs). For this, you will have a short powerpoint presentation containing the following information. This is compulsory for this unit: This enables staff to give feedback so you can collect the appropriate data for analyses in the next 2 weeks. Note this feedback is meant to be friendly, we are not upset or angry if we point out flaws in your design.\n\nan introduction to your system (model species and your treatments);\nyour hypotheses (there should be 2 or 3);\na description of your taxonomy;\nyour sampling design (including information on sampling effort and sample sizes);\nthe habitat variables you will be measuring at each site (and how you will measure them);\na map of your sites",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 9**: PCA and Report 2"
+    ]
+  },
+  {
+    "objectID": "module03/302-week09.html#assessment",
+    "href": "module03/302-week09.html#assessment",
+    "title": "Week 9: PCA and Report 2",
+    "section": "5 Assessment",
+    "text": "5 Assessment\nTo make sure that you get the most time to analyse the data and understand its interpretation, you will bring your data in week 11 to be checked by demonstrators. This is a group assessment so only one member of your group needs submit the data file for the whole group. This is worth 5% of your assessment, with near perfect datasets getting the full 5%. It is a group assessment, so Special Considerations, Simple Extensions and Academic Plans do not apply.\nFor the final assessment, each student will write a short report. The emphasis on the report will be on the methods and results sections, reflected in the attached marking scheme. You do not have to use your imagination in regard to references/ reasons for the study, but are welcome to. You do need to include your hypotheses in the Introduction section.\nThe report will consider the work you did and the ways you analysed it. It must be no longer than four single-spaced typed pages (not including the cover sheet, a title page with the abstract or any pages of references, figures and tables) and will be in the form of a manuscript suitable for submission to Austral Ecology. This report will focus on the methods you used, in particular how you describe your analyses, the type(s) of data you collected and how you present your results.\nYour report is due at 11:59pm on Sunday, before STUVAC. We hope to return reports with summative feedback a week later. Your report should be submitted electronically, anonymously (use your SID for identification) through Canvas.\nDo not plagiarise or copy from others:\n\nCheck the website http://sydney.edu.au/students/academic-integrity.html for access to the policies and codes covering academic honesty and conduct at the University\nWe will take marks off if you have obviously used ChatGPT. You are welcome to use it to check grammar, or even R codes, but we can tell if you have used it extensively to write your reports. The “Notice to Contributors” for Austral Ecology is available at http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1442-9993/homepage/ForAuthors.html",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 9**: PCA and Report 2"
+    ]
+  },
+  {
+    "objectID": "module03/302-week09.html#template",
+    "href": "module03/302-week09.html#template",
+    "title": "Week 9: PCA and Report 2",
+    "section": "6 Template",
+    "text": "6 Template\nA template for your study design is provided. You can download it here.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 9**: PCA and Report 2"
+    ]
+  },
+  {
+    "objectID": "module03/302-week09.html#references",
+    "href": "module03/302-week09.html#references",
+    "title": "Week 9: PCA and Report 2",
+    "section": "7 References",
+    "text": "7 References\nSee annotated reading list with lectures posted on unit web site.\n\nGaston, K. J., T. M. Blackburn, Lawton. J. (1993). Comparing Animals and Automobiles – a Vehicle for Understanding Body Size and Abundance Relationships in Species Assemblages. Oikos 66: 172-179.\nQuinn G.P. and M.J. Keough. (2002). Experimental design and data analysis for biologists. Cambridge: Cambridge University Press. (appropriate chapters)\nQuinn G.P. and M.J. Keough. (2023). Experimental design and data analysis for biologists. 2nd edn Cambridge: Cambridge University Press. (appropriate chapters)",
+    "crumbs": [
+      "Home",
+      "🐝 Module 3 (Wk 09-12)",
+      "**Week 9**: PCA and Report 2"
+    ]
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Detailed outlineSummary\n\n\n\nWeek 01: 4 Aug – 08 Aug\n\nL01a: Guest lecture\nL01b: The nature of data and numbers in biology experiments\nL01c: (Re-) indroduction to experimental design and analysis\nP01: Week 01 Practical\n\n\n\nWeek 02: 11 Aug – 15 Aug\n\nL02a: What is a representative sample?\nL02b: Modelling fundamentals – the linear model\nL02c: (Almost) every statistical technique is a linear model\nP02: Week 02 Practical\n\n\n\nWeek 03: 18 Aug - 22 Aug\n\nL03a: All models are wrong, but some more than others (testing assumptions)\nL03b: Modelling differences: the t-test\n\n\n\nWeek 04: 25 Aug - 29 Aug\n\nL04a: Modelling relationships: multiple linear regression\nL04b: Modelling differences: analysis of variance (ANOCA)\nL04c: Model transformations – why, and how?\n\n\n\nWeek 05: 1 Sep - 5 Sep\n\nL05a: Control, fixed and random variables\nL05b: You’ve got this – Module 1 revision\n\n\n\nWeek 06: 8 Sep - 12 Sep\n\nL06a: general refresher\nL06b: Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables\n\n\n\nWeek 07: 15 Sep - 19 Sep\n\nL07a: Does wind reduce tree growth? Detecting differences versus describing relationships\nL07b: What are the chances of finding a bandicoot? Dealing with binary response data\n\n\n\nWeek 08: 22 Sep - 26 Sep\n\nL08a: Information-theoretic methods vs. null hypothesis testing\nL08b: Revision: answering your queries\n\n\n\nMid-semester break: 29 Sep - 3 Oct\n\nFinalise Report 1 and revise the content from weeks 1 to 8\n\n\n\nWeek 09: 6 Oct - 10 Oct\n\nL09a: Introduction to multivariate analysis\nL09b: Principal Component Analysis (PCA) and Factor Analysis (FA)\n\n\n\nWeek 10: 13 Oct - 17 Oct\n\nL10a: Clustering\nL10b: Non-metric multi-dimensional scaling (nMDS) and hypothesis testing\n\n\n\nWeek 11: 20 Oct - 24 Oct\n\nL11a: Multivariate analysis of variance (MANOVA)\nL11b: Multivariate Revision 1\n\n\n\nWeek 12: 27 Oct - 31 Oct\n\nL12a: Rarefaction and Bayesian analysis\nL12b: Multivariate Revision 2\n\n\n\nWeek 13: 3 Nov - 7 Nov\n\nRevision and Q&A\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLectures & Practicals – schedule\n\n\n2025 Semester 2\n\n\nWeek\nLecture Topics\nPractical Activities\n\n\n\n\nModule 1: fundamentals\n\n\nWeek 0129 Jul - 02 Aug\nL01a: Guest lectureL01b: The nature of data and numbers in biology experimentsL01c: (Re-) indroduction to experimental design and analysis\nWeek 01 Practical\n\n\nWeek 0205 Aug - 09 Aug\nL02a: What is a representative sample?L02b: Modelling fundamentals – the linear modelL02c: (Almost) every statistical technique is a linear model\nWeek 02 Practical\n\n\nWeek 0312 Aug - 16 Aug\nL03a: All models are wrong, but some more than others (testing assumptions)L03b: Modelling differences: the t-test\nWeek 3 Practical\n\n\nWeek 0419 Aug - 23 Aug\nL04a: Modelling relationships: multiple linear regressionL04b: Modelling differences: analysis of variance (ANOCA)L04c: Model transformations – why, and how?\nWeek 4 Practical\n\n\nWeek 0526 Aug - 30 Aug\nL05a: Control, fixed and random variablesL05b: You’ve got this – Module 1 revision\nWeek 5 Practical\n\n\nModule 2: univariate experiments\n\n\nWeek 0602 Sep - 06 Sep\nL06a: general refresherL06b: Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables\nNo practicals\n\n\nWeek 0709 Sep - 13 Sep\nL07a: Does wind reduce tree growth? Detecting differences versus describing relationshipsL07b: What are the chances of finding a bandicoot? Dealing with binary response data\nWeek 7 Practical\n\n\nWeek 0816 Sep - 20 Sep\nL08a: Information-theoretic methods vs. null hypothesis testingL08b: Revision: answering your queries\nWeek 8 Practical\n\n\nModule 3: multivariate experiments\n\n\nWeek 0923 Sep - 27 Sep\nL09a: Introduction to multivariate analysisL09b: Principal Component Analysis (PCA) and Factor Analysis (FA)\nWeek 9 Practical\n\n\nWeek 1030 Sep - 04 Oct\nL10a: ClusteringL10b: Non-metric multi-dimensional scaling (nMDS) and hypothesis testing\nWeek 10 Practical\n\n\nWeek 1107 Oct - 11 Oct\nL11a: Multivariate analysis of variance (MANOVA)L11b: Multivariate Revision 1\nWeek 11 Practical\n\n\nWeek 1214 Oct - 18 Oct\nL12a: Rarefaction and Bayesian analysisL12b: Multivariate Revision 2\nWeek 12 Practical\n\n\nWeek 1321 Oct - 25 Oct\nRevision and Q&A\nWeek 13 Practical"
+  },
+  {
+    "objectID": "module02/201-intro.html",
+    "href": "module02/201-intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "I think one of the most exciting things about being a biologist is discovering how the world works. One skill that helps me do so, is knowing how to set up an experiment to test my ideas about the world. You may need to overcome that initial learning hump, but if you persist, you will have a skill at your fingertips that will stand you in really good stead for the future. It doesn’t matter whether you intend to go on in research or not - knowing what makes good research and good evidence is important in so many walks of life.\nMy message is: whether you are doing this unit just because you have to, or because you are interested – take heart! I never did anything much more complicated than a t – test even during my PhD. But now I LOVE designing experiments and grappling with data. It can be frustrating at first, especially if you are time-poor and just want to get the job done. It can be infuriating. It can also be fun (yes – fun!). Most of all it’s incredibly satisfying and extraordinarily useful. So, persist, try your best, and ask for help if you need it.\nPlease remember we want you to learn this stuff.\nNo question you ask is EVER silly! So ask for help any time. We do expect you to have a go at telling us what you think the answer is. This helps us understand what you get and what you don’t get, and so helps us help you.\nWe don’t judge you by the questions you ask, but by what you end up learning.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 2 (Wk 04-08)",
+      "About"
+    ]
+  },
+  {
+    "objectID": "module02/201-intro.html#preamble",
+    "href": "module02/201-intro.html#preamble",
+    "title": "Introduction",
+    "section": "",
+    "text": "I think one of the most exciting things about being a biologist is discovering how the world works. One skill that helps me do so, is knowing how to set up an experiment to test my ideas about the world. You may need to overcome that initial learning hump, but if you persist, you will have a skill at your fingertips that will stand you in really good stead for the future. It doesn’t matter whether you intend to go on in research or not - knowing what makes good research and good evidence is important in so many walks of life.\nMy message is: whether you are doing this unit just because you have to, or because you are interested – take heart! I never did anything much more complicated than a t – test even during my PhD. But now I LOVE designing experiments and grappling with data. It can be frustrating at first, especially if you are time-poor and just want to get the job done. It can be infuriating. It can also be fun (yes – fun!). Most of all it’s incredibly satisfying and extraordinarily useful. So, persist, try your best, and ask for help if you need it.\nPlease remember we want you to learn this stuff.\nNo question you ask is EVER silly! So ask for help any time. We do expect you to have a go at telling us what you think the answer is. This helps us understand what you get and what you don’t get, and so helps us help you.\nWe don’t judge you by the questions you ask, but by what you end up learning.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 2 (Wk 04-08)",
+      "About"
+    ]
+  },
+  {
+    "objectID": "module02/201-intro.html#what-this-module-is-about",
+    "href": "module02/201-intro.html#what-this-module-is-about",
+    "title": "Introduction",
+    "section": "2 What this module is about",
+    "text": "2 What this module is about\nIn Module 1, you have learnt the principles for converting a biological observation or question of interest into practice. Here, you will build on this skill. You will sign up to a research project and go through the process of converting a biological idea into a research experiment, which you and your group will then do from start to finish, to answer it.\nREAD THE LAB MANUAL BEFORE EACH PRAC.\nCOME/LISTEN TO EACH LECTURE on the day we give them & before the prac.\nYou will need to use the lecture information immediately in these pracs. You will use your knowledge and experience to design your project, collect the data, and analyse and interpret it appropriately.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 2 (Wk 04-08)",
+      "About"
+    ]
+  },
+  {
+    "objectID": "module02/201-intro.html#what-you-need-to-submit-for-this-practical-component",
+    "href": "module02/201-intro.html#what-you-need-to-submit-for-this-practical-component",
+    "title": "Introduction",
+    "section": "3 What you need to submit for this practical component",
+    "text": "3 What you need to submit for this practical component\nThis assessment requires two separate submissions in Canvas:\n\nReport 1 Group Data: The Excel file (spreadsheets) containing your Group’s data. This needs to be submitted by one group member on behalf of your group.\nReport 1: Your Individual Report on your experiment, in the format of a short scientific article (worth 25% of the total unit mark).",
+    "crumbs": [
+      "Home",
+      "🐝 Module 2 (Wk 04-08)",
+      "About"
+    ]
+  },
+  {
+    "objectID": "module02/201-intro.html#how-you-will-get-feedback",
+    "href": "module02/201-intro.html#how-you-will-get-feedback",
+    "title": "Introduction",
+    "section": "4 How you will get feedback",
+    "text": "4 How you will get feedback\n\nYou will receive informative, but not exhaustive, feedback on your report in relation to the marking matrix. This will show what you achieved against each criterion, and why.\nTo help you understand how you could improve, it helps enormously if you make a conscious effort to compare your submitted work against others. To facilitate this, I will post the best report written for your particular project.\nShould you want feedback beyond this, please reflect on your report and write a summary of how your report compares to the best one, addressing each of the marking criteria. Once you’ve done that, please email me to request an appointment, attaching your summary to the email message. BUT please note that because of the large class size, I may not be able to meet with everyone who wants to. As I am sure you will appreciate, I will give priority to any students with low/fail marks.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 2 (Wk 04-08)",
+      "About"
+    ]
+  },
+  {
+    "objectID": "lectures.html",
+    "href": "lectures.html",
+    "title": "Lectures",
+    "section": "",
+    "text": "Week 01: 4 Aug – 08 Aug\n\nL01a: Guest lecture – by Angelica Geiselr-Edge\nL01b: The nature of data and numbers in biology experiments – by Clare McArthur\nL01c: (Re-) introduction to experimental design and analysis – by Januar Harianto\n\n\n\nWeek 02: 11 Aug – 15 Aug\n\nL02a: What is a representative sample?\nL02b: Modelling fundamentals – the linear model\nL02c: (Almost) every statistical technique is a linear model\n\n\n\nWeek 03: 18 Aug - 22 Aug\n\nL03a: All models are wrong, but some more than others (testing assumptions)\nL03b: Modelling differences between two groups only\n\n\n\nWeek 04: 25 Aug - 29 Aug\n\nL04a: Modelling relationships between variable that are continuous\nL04b: Modelling differences between two or more groups\nL04c: Model transformations – why, and how?\n\n\n\nWeek 05: 1 Sep - 5 Sep\n\nL05a: Control, fixed and random variables\nL05b: You’ve got this – Module 1 revision\n\n\n\nWeek 06: 8 Sep - 12 Sep\n\nL06a: general refresher\nL06b: Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables\n\n\n\nWeek 07: 15 Sep - 19 Sep\n\nL07a: Does wind reduce tree growth? Detecting differences versus describing relationships\nL07b: What are the chances of finding a bandicoot? Dealing with binary response data\n\n\n\nWeek 08: 22 Sep - 26 Sep\n\nL08a: Information-theoretic methods vs. null hypothesis testing\nL08b: Revision: answering your queries\n\n\n\nMid-semester break: 29 Sep - 3 Oct\n\nFinalise Report 1 and revise the content from weeks 1 to 8\n\n\n\nWeek 09: 6 Oct - 10 Oct\n\nL09a: Introduction to multivariate analysis\nL09b: Principal Component Analysis (PCA) and Factor Analysis (FA)\n\n\n\nWeek 10: 13 Oct - 17 Oct\n\nL10a: Clustering\nL10b: Non-metric multi-dimensional scaling (nMDS) and hypothesis testing\n\n\n\nWeek 11: 20 Oct - 24 Oct\n\nL11a: Multivariate analysis of variance (MANOVA)\nL11b: Multivariate Revision 1\n\n\n\nWeek 12: 27 Oct - 31 Oct\n\nL12a: Rarefaction and Bayesian analysis\nL12b: Multivariate Revision 2\n\n\n\nWeek 13: 3 Nov - 7 Nov\n\nRevision and Q&A"
+  },
+  {
+    "objectID": "prerequisites.html",
+    "href": "prerequisites.html",
+    "title": "Am I ready for BEDA?",
+    "section": "",
+    "text": "BEDA is designed with the assumption that you have some prior experience with statistics from your first year of study. Most of you will have completed a unit like ENVX1002 or DATA1001, which provide a solid foundation in statistics. However, the only formal prerequisite for BEDA is the completion of at least one first-year science unit (see Enrolment Rules for details). We strongly encourage those of you who have not completed a first-year statistics unit to consider doing so before enrolling in BEDA.\n\n\n\n\n\n\nImportant\n\n\n\nIf you still choose to enrol in BEDA without prior statistics experience, please be aware that you will need to invest extra time and effort to catch up. BEDA is not designed to teach statistics from the ground up as this has already been covered in your first-year units!\n\n\n\nHow to gauge your readiness\nTo help you determine if you are ready for BEDA, we have translated the key foundational concepts into a short self-assessment. Before starting this unit, you should be able to:\n\nExplain a p-value: What does a p-value represent? How would you interpret a p-value of 0.03 in the context of a biological experiment?\nUnderstand correlation: What is the difference between positive and negative correlation? Why does correlation not necessarily imply causation?\nIdentify data types: Can you distinguish between continuous, discrete, and categorical data and provide a relevant example for each?\nDescribe central tendency: When is it more appropriate to use the mean versus the median to describe the centre of a dataset?\nOutline hypothesis testing: What are the core steps involved in hypothesis testing, including the roles of the null and alternative hypotheses?\nInterpret statistical tests: Can you explain the main purpose of a t-test and a simple linear regression? Could you define what a ‘confidence interval’ or ‘standard error’ tells you about your results?\n\nThe first few weeks of BEDA will include a review of these concepts, but we will not be teaching them in detail. If you are not familiar with these topics, we recommend reviewing them before the unit begins, either through online resources or by reading introductory statistics textbooks. Two that we recommend are available in the Library and are linked below:\n\nExperimental Design and Data Analysis for Biologists by Quinn and Keough\nBiometry: the principles and practice of statistics in biological research by Sokal and Rohlf",
+    "crumbs": [
+      "Home",
+      "<b>Am I ready for BEDA?</b>"
+    ]
+  },
+  {
+    "objectID": "module01/103-week02.html",
+    "href": "module01/103-week02.html",
+    "title": "Week 2: Study design",
+    "section": "",
+    "text": "Today we will be focusing on data collection and how to prepare your data for analysis. You will be working in groups of at least 4 students in this practical.\n\n\n\nReview Lecture 2a and 2b. These cover key ideas for today’s practical and were discussed in Tuesday’s lecture. If you missed the lecture, please read through the material beforehand so you are prepared (it beats doing nothing and waiting for the demonstrator to catch up with you).\nLab notebook. You received a blank notebook in Week 1. Use it to jot down your observations, models, and data collection. This will help you keep track of your work. Note: it’s not compulsory, but good practice.\nA computer with spreadsheet software (such as Excel, Google Sheets, or Numbers) and the statistical software of your choice. You can use your own laptop or a lab computer. iPads are fine if you plan to use R, but make sure you know how to use Posit Cloud.\n\n\n\n\nBy the end of this practical, you should be able to:\n\nFormulate a model and hypothesis based on observations.\nDesign a study to test your model.\nEnter data in a manner that improves redundancy (using a notebook) and is also tidy in preparation for analysis.\nUnderstand the importance of tidy data.\n\n\n\n\n\nA (simple) study design based on your observations of the photos provided, documented on Google Docs. This will be sighted by a Demonstrator during the practical before you can proceed to the next exercise.\nData in the form of a tidy spreadsheet – your collected data will need to be submitted to Canvas. This submission is not a formal assessment (it is not graded), but it is essential for the next practical, so please make sure you submit it.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 2**: Study design"
+    ]
+  },
+  {
+    "objectID": "module01/103-week02.html#introduction",
+    "href": "module01/103-week02.html#introduction",
+    "title": "Week 2: Study design",
+    "section": "",
+    "text": "Today we will be focusing on data collection and how to prepare your data for analysis. You will be working in groups of at least 4 students in this practical.\n\n\n\nReview Lecture 2a and 2b. These cover key ideas for today’s practical and were discussed in Tuesday’s lecture. If you missed the lecture, please read through the material beforehand so you are prepared (it beats doing nothing and waiting for the demonstrator to catch up with you).\nLab notebook. You received a blank notebook in Week 1. Use it to jot down your observations, models, and data collection. This will help you keep track of your work. Note: it’s not compulsory, but good practice.\nA computer with spreadsheet software (such as Excel, Google Sheets, or Numbers) and the statistical software of your choice. You can use your own laptop or a lab computer. iPads are fine if you plan to use R, but make sure you know how to use Posit Cloud.\n\n\n\n\nBy the end of this practical, you should be able to:\n\nFormulate a model and hypothesis based on observations.\nDesign a study to test your model.\nEnter data in a manner that improves redundancy (using a notebook) and is also tidy in preparation for analysis.\nUnderstand the importance of tidy data.\n\n\n\n\n\nA (simple) study design based on your observations of the photos provided, documented on Google Docs. This will be sighted by a Demonstrator during the practical before you can proceed to the next exercise.\nData in the form of a tidy spreadsheet – your collected data will need to be submitted to Canvas. This submission is not a formal assessment (it is not graded), but it is essential for the next practical, so please make sure you submit it.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 2**: Study design"
+    ]
+  },
+  {
+    "objectID": "module01/103-week02.html#workshop",
+    "href": "module01/103-week02.html#workshop",
+    "title": "Week 2: Study design",
+    "section": "2 Workshop",
+    "text": "2 Workshop\nThe Week 2 workshop will go through Tidy data principles. Tidy data is a way of structuring your data so that it is easy to work with and analyse. It is a key principle in data analysis and will help you avoid common pitfalls when working with data. Download the following data files:\n\nLord of the Rings\nMario Kart\nStar Wars\n\nWe will quickly go through the datasets and discuss how they are structured. Your task will be to pick one of the datasets and tidy it up manually.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 2**: Study design"
+    ]
+  },
+  {
+    "objectID": "module01/103-week02.html#exercise-1-modelling-from-observations",
+    "href": "module01/103-week02.html#exercise-1-modelling-from-observations",
+    "title": "Week 2: Study design",
+    "section": "3 Exercise 1 – Modelling from observations",
+    "text": "3 Exercise 1 – Modelling from observations\n\n3.1 Background\nImages are commonly used to quantify patterns in biology, from molecules to ecosystems. In ecology, for instance, satellite images and aerial photographs are used in some ecological studies to quantify patterns of distribution and abundances of animals and plants across habitats.\nHere you will explore experimental design, model formulation and data analysis by collecting data from available images and use both evidence and logic to work out how to explain the patterns you observe.\nWork in groups – You will be working in groups of 3-4 students. Your task is to observe the images provided and formulate a model that explains the patterns you observe. You will then create a study design that will allow you to test your model.\nRemember, the best models are often the simplest. Focus on logical and critical thinking when designing your study. The sampling design certainly the bigger focus here in this short exercise. Keep this in mind as you work through the exercise!\n\n\n\n\n\n\nImportant\n\n\n\nDo not proceed to Exercise 2 until you have completed this exercise, and a Demonstrator has sighted your study design.\n\n\n\n\n3.2 Getting started\nYou are provided with random, representative, replicate photographs of a common marine habitat that spans &gt; 8,000 km of the Great Southern Reef, i.e. the coastline along the bottom half of Australia – intertidal rocky shores (Fig 1).\nAccess the images, including background information, here (note: link will open in a new window/tab).\nUsing these images and the species identification guide, formulate a model and a (testable) hypothesis. You will then think about what data you need to collect to test your hypothesis. See below for further details.\n\n\n3.3 Study design\nFocus on the sampling design as you work on your model. Keep this in mind as you work through the exercise. If overwhelmed, think simple – the focus is on working through these sampling design considerations explained in this week’s lectures:\n\nControl\nReplication\nRandomisation\n\nHave a clear model in mind before collecting data. The model determines your sampling strategy and the type of data you need. Consider the following:\n\nWhat is the point of your model? Think about the biological question you are trying to answer, and the kinds of data you need to collect to answer it. Remember that the model is a simplified representation of reality, so it should be as simple as possible while still capturing the essence of the question you are trying to answer.\nThink of how you would collect data to test your model. What are the variables you need to measure? How would you measure them?\nScrutinise your images with the model in mind. Can the data be collected representatively from the images? Are there issues of replication or confounding variables that you need to consider?\nDo you have the time and resources to complete the study in the time frame provided, i.e. by the end of next week?\nWhat is your backup plan if data assumptions are not met?\n\nWhile you may not have all the answers right away, it’s important to have a rough idea of what you want to do, such as comparing groups, measuring correlation, or creating a linear model.\n\n\n\nThe Great Southern Reef. © 2021 California Academy of Sciences.\n\n\n\n\n3.4 Task\nA Google Docs page is available for you as a guide to record your responses. On the document, select File &gt; Download to save the file to use in your group. Note that this document is a guide and you may choose to use a different format to record your progress.\nThen, address your study design by answering the following questions:\n\nModel and hypothesis: What is your model and hypothesis? What are you trying to test and how will you test it? What would the plot look like?\nVariables: What are the variables you need to measure? What types of variables are they (e.g. continuous, categorical)?\nData collection: How would you collect data to test your model? What are the potential issues you need to consider?\n\n\n\n\n\n\n\nExample\n\n\n\n\n\nNote that this example will probably not work for the images, but it should give you an idea of what is expected. Also note that you do not need to follow the template exactly!\n\nProject title: Does rock size influence the number of species that can be found on a rocky shore?\nGroup name: Schist happens\n\n\nModel and hypothesis:\n\nWe hypothesise that the number of species on the rocky shore is positively correlated with the size of the rocks.\nWe will model the relationship between the number of species and the size of the rocks using a linear model.\nThe plot is expected to be a scatter plot with the number of species on the y-axis and the size of the rocks on the x-axis.\n\nVariables:\n\nWe need to measure the number of species and the size of the rocks.\nNumber of species is an integer variable.\nSize of the rocks is continuous variable.\n\nSampling design, control, replication, randomisation:\n\nFor each image, we will divide it into a 10x10 grid.\n3 random quadrats will be selected from each grid.\nThe size of all visible rocks will be measured in each quadrat.\nThe number of unique species in each quadrat will also be counted.\nWe will then calculate the average size of rocks and the average number of species for each image to minimise pseudoreplication.\nPossible confounding could arise from the presence of seaweed, which could affect the number of species present.\nIf the number of species is too high to count, we will group species into functional groups and count the number of functional groups instead.\n\nBackup plan:\n\nIf the assumptions of the linear model are not met, we will transform the data, otherwise we will attempt a non-linear model.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 2**: Study design"
+    ]
+  },
+  {
+    "objectID": "module01/103-week02.html#exercise-2-data-entry",
+    "href": "module01/103-week02.html#exercise-2-data-entry",
+    "title": "Week 2: Study design",
+    "section": "4 Exercise 2 – data entry",
+    "text": "4 Exercise 2 – data entry\nIt is time to sample data from the images. While doing so, consider how you might minimise bias in your sampling. Also, if have not already done so, plan for time:\n\nHow long will it take to sample data from each image?\nHow many images will you sample from?\nHow many samples will you take from each image?\n\nEnter your data into a spreadsheet as soon as you have them. You can use any spreadsheet software you like (e.g. Excel, Google Sheets, Numbers). Google Sheets is easiest if everyone in your group is sampling and entering data at the same time as it is easy to set up a shared spreadsheet, but you may also share the same computer and enter data one at a time.\n\n\n\n\n\n\nDiscuss\n\n\n\nIf more than one person is entering data, will it influence the results? Why or why not? Think about how you can reduce the impact of this.\n\n\n\n\n\n\n\n\nOptional: tidy your data\n\n\n\n\n\nTo make your life easier, recall the tidy data principles outlined in the workshop:\n\nEach variable must have its own column.\nEach observation must have its own row.\nEach value must have its own cell.\n\nThe table below is tidy:\n\n\n\n\n\n\nTable 1. Tidy data.\n\n\nperson\ntreatment\ncount\n\n\n\n\nJohn\nA\n5\n\n\nMary\nA\n3\n\n\nJane\nA\n2\n\n\nJohn\nB\n6\n\n\nMary\nB\n4\n\n\nJane\nB\n5\n\n\n\n\n\n\n\nThe table below is not (although it may look “better” to you). Why?\n\n\n\n\n\n\nTable 2. Non-tidy data. Treatment A and B represent the same variable (count).\n\n\nperson\ntreatment A\ntreatment B\n\n\n\n\nJohn\n5\n6\n\n\nMary\n3\n4\n\n\nJane\n2\n5\n\n\n\n\n\n\n\nNote: tidy data will reduce the amount of time you spend cleaning your data during data analysis, but you can also choose not to follow these principles if you prefer.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 2**: Study design"
+    ]
+  },
+  {
+    "objectID": "module01/103-week02.html#submit-your-data",
+    "href": "module01/103-week02.html#submit-your-data",
+    "title": "Week 2: Study design",
+    "section": "5 Submit your data",
+    "text": "5 Submit your data\nDemonstrators will provide you with a USB drive to submit your data. Please make sure that your data are saved in a format that can be opened by Excel or Google Sheets. Your group will be using this data next week so make sure that we have it!\n\n\n\n\n\n\nNote\n\n\n\nAlternatively, upload to Google Drive here. Make sure to rename your file… it’s key to data management!",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 2**: Study design"
+    ]
+  },
+  {
+    "objectID": "module01/103-week02.html#end-of-practical",
+    "href": "module01/103-week02.html#end-of-practical",
+    "title": "Week 2: Study design",
+    "section": "6 End of practical",
+    "text": "6 End of practical\nDon’t forget to submit your data! You should also start to look at the projects available for Module 2, as you will sign up for one of them next week to work on Report 1.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 2**: Study design"
+    ]
+  },
+  {
+    "objectID": "module01/w01-intro.html",
+    "href": "module01/w01-intro.html",
+    "title": "Workshop 1",
+    "section": "",
+    "text": "Workshop slides are on Canvas.\n\n\nWelcome to the first workshop of BEDA. The workshops are designed to help you learn specific skills, understand the practicals and to provide you with an opportunity to ask questions. Workshops are run only in Module 1 (Januar).\nThe workshop pages are designed to provide supporting information for the workshop slides. As this is the first workshop we will start with a brief introduction to the practicals and the software we will be using.\n\n\n\n\n\n\nDownload R here.\nDownload RStudio Desktop from here.\nIf necessary, you can sign up to RStudio Cloud here. This applies to those of you who have trouble installing R and RStudio on your computer, and somehow still prefer this to the other software options.\n\nYou must have both installed on your computer. If you already have them installed, please make sure they are up-to-date. Once installed, make sure that you run R via RStudio Desktop and not the base R GUI.\n\n\n\n\nDownload Jamovi from here.\nUnless you have reason to not use Jamovi, download JASP from here.\nFor JASP, refer to JASP Materials for documentation and more. We will not support JASP in BEDA this year.\n\nFor Jamovi, the current branch is recommended. Remember – if you are on a Mac with Apple Silicon, download the arm64 version for a slightly better performance.\n\n\n\n\nSPSS is only available on University computers. Check your lab computers for availability.\nAlternatively, you can use the University’s Citrix Workspace to access SPSS.\n\nWhile I don’t use SPSS myself, we do provide support for it in BEDA. It is somewhat of mixed bag right now as it has R integration, is point-and-click, and also has a syntax editor for scripting analyses. SPSS is perhaps required in other Modules so it is good to know how to access it if you need it.\n\n\n\n\nThis software is only used in Module 3 when we cover multivariate analysis.\nSimilar to SPSS, PRIMER is only available on University computers. Check your lab computers for availability.\nIt might be available on Citrix Workspace but will have licence restrictions (i.e. a limited number of concurrent users)."
+  },
+  {
+    "objectID": "module01/w01-intro.html#intro-to-the-practicals",
+    "href": "module01/w01-intro.html#intro-to-the-practicals",
+    "title": "Workshop 1",
+    "section": "",
+    "text": "Welcome to the first workshop of BEDA. The workshops are designed to help you learn specific skills, understand the practicals and to provide you with an opportunity to ask questions. Workshops are run only in Module 1 (Januar).\nThe workshop pages are designed to provide supporting information for the workshop slides. As this is the first workshop we will start with a brief introduction to the practicals and the software we will be using."
+  },
+  {
+    "objectID": "module01/w01-intro.html#software",
+    "href": "module01/w01-intro.html#software",
+    "title": "Workshop 1",
+    "section": "",
+    "text": "Download R here.\nDownload RStudio Desktop from here.\nIf necessary, you can sign up to RStudio Cloud here. This applies to those of you who have trouble installing R and RStudio on your computer, and somehow still prefer this to the other software options.\n\nYou must have both installed on your computer. If you already have them installed, please make sure they are up-to-date. Once installed, make sure that you run R via RStudio Desktop and not the base R GUI.\n\n\n\n\nDownload Jamovi from here.\nUnless you have reason to not use Jamovi, download JASP from here.\nFor JASP, refer to JASP Materials for documentation and more. We will not support JASP in BEDA this year.\n\nFor Jamovi, the current branch is recommended. Remember – if you are on a Mac with Apple Silicon, download the arm64 version for a slightly better performance.\n\n\n\n\nSPSS is only available on University computers. Check your lab computers for availability.\nAlternatively, you can use the University’s Citrix Workspace to access SPSS.\n\nWhile I don’t use SPSS myself, we do provide support for it in BEDA. It is somewhat of mixed bag right now as it has R integration, is point-and-click, and also has a syntax editor for scripting analyses. SPSS is perhaps required in other Modules so it is good to know how to access it if you need it.\n\n\n\n\nThis software is only used in Module 3 when we cover multivariate analysis.\nSimilar to SPSS, PRIMER is only available on University computers. Check your lab computers for availability.\nIt might be available on Citrix Workspace but will have licence restrictions (i.e. a limited number of concurrent users)."
+  },
+  {
+    "objectID": "module01/105-images.html",
+    "href": "module01/105-images.html",
+    "title": "Intertidal sites",
+    "section": "",
+    "text": "This page contains images of intertidal rocky shore sites along the Great Southern Reef. These images are provided for the purpose of the lab activities in Weeks 2 and 3.\n\n\nYou will be working with images from two sites: Site A and Site B. Each site has 20 images, which are randomly selected from a larger set of images.\nThe advantage of sampling two sites is that you can assess whether your observations from one site can be generalised to another. This is a common approach in ecology, where we often sample multiple sites to understand patterns at a larger scale, and addresses representative sampling and pseudoreplication.\n\n\n\n\n\n\nImportant\n\n\n\nYou now get to decide how the story goes:\n\nAre you sampling both sites as one?\nAre you sampling just one of the two sites?\nAre you sampling each site separately, but comparing them to each other?\n\nDepending on what you decide, your model may need to be tweaked, and your observations may need to be reinterpreted or improved.\n\n\n\n\n\n\n\nImages are randomly selected and assumed to be independent.\nImages are assumed to be representative of their respective site(s).\n\nThe next step is to define your sampling strategy, and decide how you will use the images to answer your question.\n\n\n\nNote: images are only available in the HTML version of this document.\n\nSite 1Site 2"
+  },
+  {
+    "objectID": "module01/105-images.html#two-sites",
+    "href": "module01/105-images.html#two-sites",
+    "title": "Intertidal sites",
+    "section": "",
+    "text": "You will be working with images from two sites: Site A and Site B. Each site has 20 images, which are randomly selected from a larger set of images.\nThe advantage of sampling two sites is that you can assess whether your observations from one site can be generalised to another. This is a common approach in ecology, where we often sample multiple sites to understand patterns at a larger scale, and addresses representative sampling and pseudoreplication.\n\n\n\n\n\n\nImportant\n\n\n\nYou now get to decide how the story goes:\n\nAre you sampling both sites as one?\nAre you sampling just one of the two sites?\nAre you sampling each site separately, but comparing them to each other?\n\nDepending on what you decide, your model may need to be tweaked, and your observations may need to be reinterpreted or improved."
+  },
+  {
+    "objectID": "module01/105-images.html#assumptions-and-prior-knowledge",
+    "href": "module01/105-images.html#assumptions-and-prior-knowledge",
+    "title": "Intertidal sites",
+    "section": "",
+    "text": "Images are randomly selected and assumed to be independent.\nImages are assumed to be representative of their respective site(s).\n\nThe next step is to define your sampling strategy, and decide how you will use the images to answer your question."
+  },
+  {
+    "objectID": "module01/105-images.html#sites",
+    "href": "module01/105-images.html#sites",
+    "title": "Intertidal sites",
+    "section": "",
+    "text": "Note: images are only available in the HTML version of this document.\n\nSite 1Site 2"
+  },
+  {
+    "objectID": "module01/104-week03.html",
+    "href": "module01/104-week03.html",
+    "title": "Week 3: Data analysis",
+    "section": "",
+    "text": "In today’s practical, we will focus on data analysis. You will work with your group to analyse the data you collected in the previous lab. Cheatsheets are available for you to use, and your demonstrators are ready to help.\nYou may need to clean your data before you can analyse it, so be prepared to spend some time on this.\n\n\n\n\n\n\nImportant\n\n\n\nYou will be working in the same groups as last week. If you were not present last week, join the group closest to you and work with them.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 3**: Data analysis"
+    ]
+  },
+  {
+    "objectID": "module01/104-week03.html#welcome",
+    "href": "module01/104-week03.html#welcome",
+    "title": "Week 3: Data analysis",
+    "section": "",
+    "text": "In today’s practical, we will focus on data analysis. You will work with your group to analyse the data you collected in the previous lab. Cheatsheets are available for you to use, and your demonstrators are ready to help.\nYou may need to clean your data before you can analyse it, so be prepared to spend some time on this.\n\n\n\n\n\n\nImportant\n\n\n\nYou will be working in the same groups as last week. If you were not present last week, join the group closest to you and work with them.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 3**: Data analysis"
+    ]
+  },
+  {
+    "objectID": "module01/104-week03.html#learning-objectives",
+    "href": "module01/104-week03.html#learning-objectives",
+    "title": "Week 3: Data analysis",
+    "section": "2 Learning objectives",
+    "text": "2 Learning objectives\nBy the end of this practical, you should be able to:\n\nFit a model to your data.\nCheck if the data meets the assumptions of the model.\nInterpret the model output.\n(optional) have working templates for different types of analyses that are GLM equivalents of the t-test, ANOVA and regression.\n\n\n2.1 What to submit at the end of the practical\nYour plot and model output, on Google Drive. We will spend some time discussing the results at the end of the tutorial.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 3**: Data analysis"
+    ]
+  },
+  {
+    "objectID": "module01/104-week03.html#workshop",
+    "href": "module01/104-week03.html#workshop",
+    "title": "Week 3: Data analysis",
+    "section": "3 Workshop",
+    "text": "3 Workshop\nIn today’s workshop we will go through general linear modelling and performing traditional statistics in Jamovi and R. The planned workshop on reproducible analyses in R and AI workflows will now be implemented as cheatsheets on a later date.\nWorkshop slides are available on Canvas.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 3**: Data analysis"
+    ]
+  },
+  {
+    "objectID": "module01/104-week03.html#lab-activity",
+    "href": "module01/104-week03.html#lab-activity",
+    "title": "Week 3: Data analysis",
+    "section": "4 Lab activity",
+    "text": "4 Lab activity\n\n4.1 Google Drive\nWhen ready, work with your group to analyse the data you collected in the previous lab using a general linear model. Click on the link above to access the data that you have collected.\nYou will need to:\n\nFit your intended model to the data.\nCheck if the data meets the assumptions of the model.\nInterpret the model output.\n\nOf particular importance is the assessment of assumptions using residual plots, rather than formal tests of assumptions.\nYour demonstrators are ready to help. We expect you to be able to select the appropriate model to your data, but you can consult our cheatsheets and your demonstrators for help.\n\n\n\n\n\n\nIf using Jamovi\n\n\n\nPlease install the GAMLj3 module in Jamovi. This will allow you to run general linear models in Jamovi with a lot of options:\n\nSelect the Analyses tab.\nClick on the Modules button and select jamovi library.\nIn the Available tab, search for GAMLj3 and click on the INSTALL button.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 3**: Data analysis"
+    ]
+  },
+  {
+    "objectID": "module01/104-week03.html#exercise-1-preparing-your-data-for-analysis",
+    "href": "module01/104-week03.html#exercise-1-preparing-your-data-for-analysis",
+    "title": "Week 3: Data analysis",
+    "section": "5 Exercise 1 – Preparing your data for analysis",
+    "text": "5 Exercise 1 – Preparing your data for analysis\nYour data is available to download on Canvas. Please check that you have all the data you need before proceeding. You also have access to the data collected by other groups should you wish to practice your data analysis skills.\n\n5.1 Background\nIf you have followed study design principles, the data you have collected should be clean and ready for analysis. However, it is still a good idea to inspect your data further before proceeding with the analysis. This includes a check for:\n\nMissing data\nOutliers\nData entry errors\nAssumptions of the statistical model, and whether the data meets them\n\n\n\n5.2 Missing data, outliers and data entry errors\nThese are what we sometimes call systematic errors. They can be detected by looking at the data and checking for unusual values, or cross-checking methods within your group. Make sure to remove or correct these errors before proceeding with the analysis.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 3**: Data analysis"
+    ]
+  },
+  {
+    "objectID": "module01/104-week03.html#exercise-2-data-analysis",
+    "href": "module01/104-week03.html#exercise-2-data-analysis",
+    "title": "Week 3: Data analysis",
+    "section": "6 Exercise 2 – Data analysis",
+    "text": "6 Exercise 2 – Data analysis\n\n6.1 Fitting a model to data\nRecall that you have an empirical model e.g. y ~ x. You will need to use an appropriate statistical model to fit this relationship to your data.\n\n\n\n\n\n\nNote\n\n\n\nYou should already know what model you are fitting to your data as it it part of your study design!\n\n\n\n\n6.2 Checking assumptions\nAssumptions need to be checked as they basically tell you whether the model you have fitted is appropriate for your data. If the assumptions are not met, you may need to transform your data or use a different model.\nCommon assumptions include:\n\nNormality (of residuals)\nHomogeneity of variance\nIndependence of observations\n\nWe recommend looking at residual plots, rather than formal tests of assumptions. Formal tests of assumptions can be overly sensitive to large sample sizes and can lead to you rejecting a model that is actually appropriate for your data.\nWhat to do if assumptions are not met? This is a common problem in data analysis, and interestingly, it is not always a problem. Provided that you have ensured that your data is representative of the population you are interested in, violations of normality can actually be ignored in many cases, although you should still report them. A larger problem is homogeneity of variance.\nNevertheless, you get to decide on what to do here to avoid violation of assumptions. The first step would be to try and transform your data. If this does not work, you will need to use a different model or a non-parametric equivalent of the model you are using.\n\n\n6.3 Statistical testing\nRunning the statistical test is probably the least eventful part of the analytical workflow and will take you a few seconds regardless of the software you are using, especially if you are running GLMs. Make sure that you record the software used and the specific statistical technique selected such that the analysis is reproducible.\n\n\n6.4 Interpretation\nInterpreting the output of a statistical test is a skill that takes time to develop. You will need to be able to:\n\nUnderstand the important parts of the output e.g. F-statistic, p-value, degrees of freedom, etc.\nExplain what the output means in the context of your data.\nExplain what the output means in the context of your research question.\n\nYour lectures and this week’s workshop will help you develop these skills.\nYour data may not be interpretable due to the way it was collected. This is ok – a lesson learnt. You can still discuss the issues with the data and what you would do differently next time. Meanwhile, you can still practice your data analysis skills on your data (or download another group’s data).",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 3**: Data analysis"
+    ]
+  },
+  {
+    "objectID": "module01/104-week03.html#exercise-3-putting-it-all-together",
+    "href": "module01/104-week03.html#exercise-3-putting-it-all-together",
+    "title": "Week 3: Data analysis",
+    "section": "7 Exercise 3 – putting it all together",
+    "text": "7 Exercise 3 – putting it all together\nThe general linear modelling framework is incredibly intuitive for building statistical models. Use the datasets below to repeat Exercises 1 and 2. Some hints:\n\nTry to add more than one predictor to your model and see how the output changes.\nUse your understanding of data structure to determine if you have set your model up correctly – i.e. is that variable really numeric?\nThe data may need to be cleaned before you can analyse it. This is a good opportunity to practice your data cleaning skills.\n\n\n\n\n\n\n\nNote\n\n\n\nOn top of what you have been taught so far (linear regression and t-test), you will most likely create models that are equivalent to Analysis of Variance, Multiple Linear Regression and Analysis of Covariance techniques. These will be touched on in the next few weeks but you can get a head start now – that’s the beauty of GLMs!\n\n\n\n7.0.1 Weight data for domestic cats\nHandy hints:\n\nRead the metadata if you are unsure what the variables mean.\nYou can look at the relationships between the continuous variables for each gender of cat. Is there a way to combine these relationships into one model?\nCan Sex be used as a response variable in this model? You don’t have to do this, but it is an interesting question to consider.\n\n{{&lt; downloadthis assets/cats.xlsx dname=\"cats\" label=\"Download cats.xlsx\" icon=\"database-fill-down\" type=\"info\" &gt;}}\n\n\n7.0.2 Cherry trees\nHandy hints:\n\nThis dataset seems very simple and should be easy to analyse… or is it?\nUse what you have learnt about simple linear regression and add more predictors to your model!\nThink about the assumptions of the model and whether they are met. Do you need to alter your interpretation of these diagnostic plots in any way?\n\n{{&lt; downloadthis assets/cherry.xlsx dname=\"cherry\" label=\"Download cherry.xlsx\" icon=\"database-fill-down\" type=\"info\" &gt;}}\n\n\n7.0.3 Effects of dietary protein on pigs\nHandy hints:\n\nThis dataset is messy and may need to be tidied up before you can analyse it.\nThink of how the idea of a t-test, which compares two groups, can be extended to this dataset where you are comparing multiple groups. Does this change the way you need to set up your model?\nAre you brave enough to look for interactions between variables?\n\n{{&lt; downloadthis assets/pigs.xlsx dname=\"pigs\" label=\"Download pigs.xlsx\" icon=\"database-fill-down\" type=\"info\" &gt;}}\n\n\n7.0.4 Sugar cane disease data\nHandy hints:\n\nThis dataset is a bit more complex than the others. You may need to spend some time understanding the variables before you can analyse the data.\nYou do not need to use all the variables in your analysis. There are two possible response variables in this dataset - you can choose which one to use.\n\n{{&lt; downloadthis assets/cane.xlsx dname=\"cane\" label=\"Download cane.xlsx\" icon=\"database-fill-down\" type=\"info\" &gt;}}",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 3**: Data analysis"
+    ]
+  },
+  {
+    "objectID": "module01/104-week03.html#submit-your-results",
+    "href": "module01/104-week03.html#submit-your-results",
+    "title": "Week 3: Data analysis",
+    "section": "8 Submit your results",
+    "text": "8 Submit your results\nOnce complete, please upload your results to Google Drive for archival. If there’s time, we will discuss the results together.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 3**: Data analysis"
+    ]
+  },
+  {
+    "objectID": "module01/104-week03.html#end",
+    "href": "module01/104-week03.html#end",
+    "title": "Week 3: Data analysis",
+    "section": "9 End",
+    "text": "9 End\nThat’s it. Module 1 practicals are now complete. I hope you have learnt a few things about experimental design and data analysis. We will continue to build on these skills in the next module using real-world data.",
+    "crumbs": [
+      "Home",
+      "🐝 Module 1 (Wk 01-03)",
+      "**Week 3**: Data analysis"
+    ]
+  },
+  {
+    "objectID": "module01/106-species-id.html",
+    "href": "module01/106-species-id.html",
+    "title": "Species ID guide",
+    "section": "",
+    "text": "Use this page to identify the species that you sample.\nNote: images are only available in the HTML version of this document."
+  },
+  {
+    "objectID": "module01/106-species-id.html#common-snails",
+    "href": "module01/106-species-id.html#common-snails",
+    "title": "Species ID guide",
+    "section": "1.1 Common snails",
+    "text": "1.1 Common snails\n\n1.1.1 Bembiicium nanum\n     \nImages from Grove, S.J. (2018).\n\n\n1.1.2 Austrocochlea porcata\n     \nImages from Grove, S.J. (2018).\n\n\n1.1.3 Austrococchlea concamerata\n  \nImages from Iredale, T. & McMichael, D. F. (1962) and Australian Museum.\n\n\n1.1.4 Nerita atramentosa\n  \nImages from Grove, S.J. (2018).\n\n\n1.1.5 Austrolittorina unifasciata\n   \nImages from Grove, S.J. (2018)."
+  },
+  {
+    "objectID": "module01/106-species-id.html#whelks",
+    "href": "module01/106-species-id.html#whelks",
+    "title": "Species ID guide",
+    "section": "1.2 Whelks",
+    "text": "1.2 Whelks\n\n1.2.1 Tenguella marginalba\n  \nImages by Donald Hobern, Femorale.com, Joop Trausel and Frans Slieker."
+  },
+  {
+    "objectID": "module01/106-species-id.html#limpets",
+    "href": "module01/106-species-id.html#limpets",
+    "title": "Species ID guide",
+    "section": "1.3 Limpets",
+    "text": "1.3 Limpets\n\n1.3.1 Cellana tramoserica\n     \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\n1.3.2 Montfortula rugosa\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\n1.3.3 Patelloida mimula\n  \nImages from Sea Shells of New South Wales and WoRMS Editorial Board (2023).\n\n\n1.3.4 Patelloida mufria\n \nImages from Sea Shells of New South Wales and WoRMS Editorial Board (2023).\n\n\n1.3.5 Patelloida latistrigata\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\n1.3.6 Patelloida alticostata\n          \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\n1.3.7 Notoacmea flammea\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\n1.3.8 Scutellastra chapmani\n     \nImages from Grove, S.J. (2018) and Sea Shells of New South Wales.\n\n\n1.3.9 Scutellastra peronii\n              \nImages from Grove, S.J. (2018) and Sea Shells of New South Wales."
+  },
+  {
+    "objectID": "module01/106-species-id.html#chitons",
+    "href": "module01/106-species-id.html#chitons",
+    "title": "Species ID guide",
+    "section": "1.4 Chitons",
+    "text": "1.4 Chitons\n\n1.4.1 Sypharochiton pelliserpentis\n   \nImages from WoRMS Editorial Board (2023) and Sea Shells of New South Wales.\n\n\n1.4.2 Acanthochiton sp.\n   \n\n\n1.4.3 Ischnochiton sp.\n        \nImages from Grove, S.J. (2018)."
+  },
+  {
+    "objectID": "module01/106-species-id.html#sea-stars",
+    "href": "module01/106-species-id.html#sea-stars",
+    "title": "Species ID guide",
+    "section": "1.5 Sea stars",
+    "text": "1.5 Sea stars\n\n1.5.1 Parvulastra exigua"
+  },
+  {
+    "objectID": "module01/106-species-id.html#barnacles",
+    "href": "module01/106-species-id.html#barnacles",
+    "title": "Species ID guide",
+    "section": "1.6 Barnacles",
+    "text": "1.6 Barnacles\n\n1.6.1 Balanus amphititre\n  \nImages from Wikipedia and WoRMS Editorial Board (2023).\n\n\n1.6.2 Balanus trigonus\n  \nImages from Wikipedia, Western Australia Museum and WoRMS Editorial Board (2023).\n\n\n1.6.3 Chthamalus antennatus\n   \nImages from Wikipedia, Museum Victoria Collections and SA Marine Life.\n\n\n1.6.4 Catomerus polymerus\n    \nImages from Wikipedia and Museum Victoria Collections.\n\n\n1.6.5 Tesseropora rosea\n  \n\nimages from Wikipedia, Museum Victoria Collections, Atlas of Life and iNaturalist Australia.\n\n\n1.6.6 Tetraclitella purpurascens\n  \nImage by Simon Grove via Flickr (2014), Atlas of Living Australia and Museum Victoria Collections.\n\n\n1.6.7 Megabalanus coccopoma\n   \nImages from Wikipedia, WoRMS Editorial Board (2023) and Invasive.org.\n\n\n1.6.8 Amphibalanus variegatus\n  \nImages from Port Phillip Bay Taxonomy, Wikipedia and Denis Riek (2021).\n\n\n1.6.9 Austrobalanus imperator\n  \nImages from Wikipedia and iNaturalist Australia."
+  },
+  {
+    "objectID": "unit-information.html",
+    "href": "unit-information.html",
+    "title": "Unit information",
+    "section": "",
+    "text": "This is a quick overview of the unit covering how it is structured, how we commumnicate and what is expected of you.",
+    "crumbs": [
+      "Home",
+      "Unit Information"
+    ]
+  },
+  {
+    "objectID": "unit-information.html#modules",
+    "href": "unit-information.html#modules",
+    "title": "Unit information",
+    "section": "Modules",
+    "text": "Modules\nBEDA is divided into three modules, each taught by a different lecturer. The modules vary in length on purpose.\n\nModule 1, led by Januar Harianto, covers the essentials of statistics from a fresh angle. If you are “new” to stats, this module will set you up well, focusing less on the traditional approach of picking the “right” test and more on understanding why and how to build a solid statistical model to answer your research questions.\nModule 2, led by Clare McArthur, critically assesses study designs that have already been done. Using real data examples, we will look at how variations in study design can influence the results. You will notice that the concepts from Module 1 are applicable to more complex models. You will also start working on Report 1 which requires you to design and analyse an experiment.\nModule 3, led by Mathew Crowther, focuses on the application of statistical techniques to real-world data that is often complex and messy and how to deal with it using multivariate techniques. You will start working on Report 2 which requires you to collect and analyse data from your environment, rather than a controlled experiment.",
+    "crumbs": [
+      "Home",
+      "Unit Information"
+    ]
+  },
+  {
+    "objectID": "unit-information.html#announcements",
+    "href": "unit-information.html#announcements",
+    "title": "Unit information",
+    "section": "Announcements",
+    "text": "Announcements\nWe will post all important updates and announcements on Ed (also known as Edstem). Please get into the habit of checking it regularly (i.e. daily). It is up to you to stay on top of these announcements. Any special consideration requests or emails that are due to a lack of awareness of announcements will not be considered.",
+    "crumbs": [
+      "Home",
+      "Unit Information"
+    ]
+  },
+  {
+    "objectID": "unit-information.html#lectures-and-practicals",
+    "href": "unit-information.html#lectures-and-practicals",
+    "title": "Unit information",
+    "section": "Lectures and practicals",
+    "text": "Lectures and practicals\nAttending lectures and practicals is mandatory. We monitor attendance in practicals, and your participation is crucial since you’ll be working on assessments in groups. Your presence is important for your own learning and for supporting your peers. Each week, there are two lectures and one practical.\n\nTuesday Lecture: 10:00am - 11:00am, BHB Lecture Theatre 1110\nWednesday Lecture: 10:00am - 11:00am, Carslaw Lecture Theatre 159-259\nPractical Sessions: Your practical will be on either Tuesday, Wednesday, or Friday from 2:00pm - 4:00pm or 4:00pm - 6:00pm in Carlsaw Wet Lab 307.\n\nMake sure to check your personal timetable for your specific practical session time.",
+    "crumbs": [
+      "Home",
+      "Unit Information"
+    ]
+  },
+  {
+    "objectID": "unit-information.html#assessments",
+    "href": "unit-information.html#assessments",
+    "title": "Unit information",
+    "section": "Assessments",
+    "text": "Assessments\nTo pass this unit, you must complete and submit all assessment tasks. Importantly, Report 1 and 2 are compulsory assessments you will fail the unit if you do not submit them. For more information on the assessments, please see the Assessments page.",
+    "crumbs": [
+      "Home",
+      "Unit Information"
+    ]
+  },
+  {
+    "objectID": "assessments/assessment-dataset-submission.html",
+    "href": "assessments/assessment-dataset-submission.html",
+    "title": "Dataset Submission for Report 2",
+    "section": "",
+    "text": "Brief Description: As part of Report 2, you will submit the dataset collected during your observational study.\nWeighting: 5%\nDue Date & Time: [Insert Specific Due Date and Time, e.g., Friday, Week 11, 11:59 PM AEST - Refer to assessments_data.csv for exact date]\nLearning Outcomes Addressed:\n\n[Insert Learning Outcome 1 related to data collection/management]\n[Insert Learning Outcome 2 related to collaborative work (as it’s a group assignment)]\n[Add more as needed]"
+  },
+  {
+    "objectID": "assessments/assessment-dataset-submission.html#overview",
+    "href": "assessments/assessment-dataset-submission.html#overview",
+    "title": "Dataset Submission for Report 2",
+    "section": "",
+    "text": "Brief Description: As part of Report 2, you will submit the dataset collected during your observational study.\nWeighting: 5%\nDue Date & Time: [Insert Specific Due Date and Time, e.g., Friday, Week 11, 11:59 PM AEST - Refer to assessments_data.csv for exact date]\nLearning Outcomes Addressed:\n\n[Insert Learning Outcome 1 related to data collection/management]\n[Insert Learning Outcome 2 related to collaborative work (as it’s a group assignment)]\n[Add more as needed]"
+  },
+  {
+    "objectID": "assessments/assessment-dataset-submission.html#task-details-instructions",
+    "href": "assessments/assessment-dataset-submission.html#task-details-instructions",
+    "title": "Dataset Submission for Report 2",
+    "section": "2. Task Details & Instructions",
+    "text": "2. Task Details & Instructions\n\nDetailed Description: As part of Report 2, you will need to submit the dataset you collected during your observational study. This task requires your group to submit the complete dataset collected during the observational study for Report 2. [Elaborate on what constitutes the dataset, what format, any specific variables or structure required. The original text mentioned ‘Information about the assessment is found here’ - this information should be detailed here or clearly linked, e.g., in the Report 2 guidelines.]\nKey Deliverables:\n\n[e.g., A single data file (e.g., .csv, .xlsx) containing all collected observational data.]\n[e.g., A brief data dictionary or codebook explaining variables, if required.]"
+  },
+  {
+    "objectID": "assessments/assessment-dataset-submission.html#submission-guidelines",
+    "href": "assessments/assessment-dataset-submission.html#submission-guidelines",
+    "title": "Dataset Submission for Report 2",
+    "section": "3. Submission Guidelines",
+    "text": "3. Submission Guidelines\n\nMethod: [Specify submission method, e.g., Submit as a single file via the Canvas group assignment link under ‘Dataset Submission’.]\nFormat Requirements:\n\n[Specify file format, e.g., .csv (comma-separated values) or .xlsx (Excel spreadsheet).]\n[Specify any data structure requirements.]\n\nFile Naming Convention (if any): [Specify, e.g., GroupName_Dataset.csv]\nGroup/Individual: Group assignment. This dataset will be submitted as a group assignment. [Specify details on how group submission works, e.g., “One submission per group required.”]"
+  },
+  {
+    "objectID": "assessments/assessment-dataset-submission.html#marking-criteria-rubric",
+    "href": "assessments/assessment-dataset-submission.html#marking-criteria-rubric",
+    "title": "Dataset Submission for Report 2",
+    "section": "4. Marking Criteria & Rubric",
+    "text": "4. Marking Criteria & Rubric\n\nMarking Summary: This assessment is worth 5% of your final grade.\nDetailed Rubric: [Detail how the dataset submission will be marked. Placeholder: e.g., Marking will be based on: * Completeness of data ([X] marks): [Criteria] * Accuracy and consistency of data ([Y] marks): [Criteria] * Adherence to formatting guidelines ([Z] marks): [Criteria] * Clarity of data dictionary/codebook (if required) ([A] marks): [Criteria] A detailed rubric will be provided [here/linked].]"
+  },
+  {
+    "objectID": "assessments/assessment-dataset-submission.html#resources-support",
+    "href": "assessments/assessment-dataset-submission.html#resources-support",
+    "title": "Dataset Submission for Report 2",
+    "section": "5. Resources & Support",
+    "text": "5. Resources & Support\n\nRelevant Materials:\n\n[Link to Report 2 guidelines, which should contain details about the observational study and data collection]\n[Link to any templates for the dataset or data dictionary]\n[Link to relevant lecture notes on data management or observational studies]\n\nSupport Channels:\n\n[Specify support, e.g., Discuss data collection and formatting with your tutor during practicals.]\n[e.g., Post questions on the ‘Report 2 & Dataset’ discussion forum on Canvas.]"
+  },
+  {
+    "objectID": "assessments/assessment-dataset-submission.html#policies",
+    "href": "assessments/assessment-dataset-submission.html#policies",
+    "title": "Dataset Submission for Report 2",
+    "section": "6. Policies",
+    "text": "6. Policies\n\nLate Submissions: [State the policy clearly, e.g., “Late submissions will be penalised by a deduction of 5% of the maximum possible mark for each calendar day or part thereof that the assessment is overdue. This applies to the group submission.”]\nExtensions: [Explain the process for group extensions, e.g., “Requests for extensions for the group must be made by one group member via the formal Special Consideration process, outlining the impact on all group members. Refer to the Unit of Study Outline for details.”]\nAcademic Integrity: [Include a standard reminder, e.g., “The submitted dataset must be the genuine result of your group’s observational study. Please familiarize yourself with the University’s Academic Integrity Policy: [Link to University Policy].”]\nResubmission Policy (if any): [State if applicable, e.g., “Resubmissions are not permitted for this assessment.”]"
+  },
+  {
+    "objectID": "assessments/assessment-dataset-submission.html#estimated-time-commitment",
+    "href": "assessments/assessment-dataset-submission.html#estimated-time-commitment",
+    "title": "Dataset Submission for Report 2",
+    "section": "7. Estimated Time Commitment",
+    "text": "7. Estimated Time Commitment\n\n[Provide a guideline, e.g., “The time for preparing and submitting the dataset is integrated with the work for Report 2. Allow approximately [e.g., 1-2] additional hours for final data compilation and formatting for submission.”]"
+  },
+  {
+    "objectID": "assessments/assessment-dataset-submission.html#feedback",
+    "href": "assessments/assessment-dataset-submission.html#feedback",
+    "title": "Dataset Submission for Report 2",
+    "section": "8. Feedback",
+    "text": "8. Feedback\n\nHow and When: [Explain, e.g., “Feedback on the dataset submission will be provided as part of the overall feedback for Report 2, within [e.g., three] weeks of the Report 2 submission deadline.”]"
+  },
+  {
+    "objectID": "assessments/assessment-report-1.html",
+    "href": "assessments/assessment-report-1.html",
+    "title": "Report 1: Manipulative Experiment",
+    "section": "",
+    "text": "Brief Description: You will conduct a manipulative experiment and write a scientific report for it.\nWeighting: 25%\nDue Date & Time: [Insert Specific Due Date and Time, e.g., Friday, Week 8, 11:59 PM AEST - Refer to assessments_data.csv for exact date]\nLearning Outcomes Addressed:\n\n[Insert Learning Outcome 1 related to experimental design/execution]\n[Insert Learning Outcome 2 related to scientific report writing]\n[Insert Learning Outcome 3 related to data analysis/interpretation]\n[Add more as needed]"
+  },
+  {
+    "objectID": "assessments/assessment-report-1.html#overview",
+    "href": "assessments/assessment-report-1.html#overview",
+    "title": "Report 1: Manipulative Experiment",
+    "section": "",
+    "text": "Brief Description: You will conduct a manipulative experiment and write a scientific report for it.\nWeighting: 25%\nDue Date & Time: [Insert Specific Due Date and Time, e.g., Friday, Week 8, 11:59 PM AEST - Refer to assessments_data.csv for exact date]\nLearning Outcomes Addressed:\n\n[Insert Learning Outcome 1 related to experimental design/execution]\n[Insert Learning Outcome 2 related to scientific report writing]\n[Insert Learning Outcome 3 related to data analysis/interpretation]\n[Add more as needed]"
+  },
+  {
+    "objectID": "assessments/assessment-report-1.html#task-details-instructions",
+    "href": "assessments/assessment-report-1.html#task-details-instructions",
+    "title": "Report 1: Manipulative Experiment",
+    "section": "2. Task Details & Instructions",
+    "text": "2. Task Details & Instructions\n\nDetailed Description: The detailed instructions for the manipulative experiment, including background, objectives, procedure, and data collection methods, will be provided here or linked from here. Please read them carefully, as the original instructions were noted as comprehensive.\nKey Deliverables:\n\n[e.g., A scientific report formatted according to the specified guidelines.]\n[e.g., Any raw data files or analysis scripts if required.]"
+  },
+  {
+    "objectID": "assessments/assessment-report-1.html#submission-guidelines",
+    "href": "assessments/assessment-report-1.html#submission-guidelines",
+    "title": "Report 1: Manipulative Experiment",
+    "section": "3. Submission Guidelines",
+    "text": "3. Submission Guidelines\n\nMethod: [Specify submission method, e.g., Submit as a PDF via the Turnitin link on Canvas under ‘Report 1 Submission’.]\nFormat Requirements:\n\n[Specify format, e.g., PDF document.]\n[Specify word/page limit, e.g., Maximum 2000 words (excluding references and appendices).]\n[Specify referencing style, e.g., APA 7th Edition.]\n[Specify font, spacing, etc., e.g., Times New Roman 12pt, double-spaced.]\n\nFile Naming Convention (if any): [Specify, e.g., StudentID_Report1.pdf]\nGroup/Individual: [Specify, e.g., Individual task.]"
+  },
+  {
+    "objectID": "assessments/assessment-report-1.html#marking-criteria-rubric",
+    "href": "assessments/assessment-report-1.html#marking-criteria-rubric",
+    "title": "Report 1: Manipulative Experiment",
+    "section": "4. Marking Criteria & Rubric",
+    "text": "4. Marking Criteria & Rubric\n\nMarking Summary: This assessment is worth 25% of your final grade.\nDetailed Rubric: A detailed marking rubric outlining the criteria for each section of the report (e.g., Introduction, Methods, Results, Discussion, Presentation) and the marks allocated will be provided here or linked directly. Please review it carefully to understand how your work will be assessed, as the original marking criteria were noted as comprehensive.\n\n[Example placeholder structure for rubric items:]\nIntroduction ([X] marks): [Criteria for a good introduction]\nMethods ([Y] marks): [Criteria for methods section]\nResults ([Z] marks): [Criteria for results section]\nDiscussion ([A] marks): [Criteria for discussion section]\nClarity, Referencing, and Presentation ([B] marks): [Criteria for overall quality]"
+  },
+  {
+    "objectID": "assessments/assessment-report-1.html#resources-support",
+    "href": "assessments/assessment-report-1.html#resources-support",
+    "title": "Report 1: Manipulative Experiment",
+    "section": "5. Resources & Support",
+    "text": "5. Resources & Support\n\nRelevant Materials:\n\n[Link to experimental protocol/instructions if separate]\n[Link to relevant lecture notes on experimental design, report writing, statistical analysis]\n[Link to example reports if available and appropriate]\n[Link to any datasets or software guides needed]\n\nSupport Channels:\n\n[Specify support, e.g., Attend specific Q&A sessions for Report 1.]\n[e.g., Post questions on the ‘Report 1’ discussion forum on Canvas.]\n[e.g., Consult with your tutor during practical sessions.]"
+  },
+  {
+    "objectID": "assessments/assessment-report-1.html#policies",
+    "href": "assessments/assessment-report-1.html#policies",
+    "title": "Report 1: Manipulative Experiment",
+    "section": "6. Policies",
+    "text": "6. Policies\n\nLate Submissions: [State the policy clearly, e.g., “Late submissions will be penalised by a deduction of 5% of the maximum possible mark for each calendar day or part thereof that the assessment is overdue, up to a maximum of 5 days. Submissions more than 5 days late will receive a mark of zero.”]\nExtensions: [Explain the process, e.g., “Requests for extensions must be made via the formal Special Consideration process. Refer to the Unit of Study Outline for details.”]\nAcademic Integrity: [Include a standard reminder, e.g., “This report must be your own individual work. All sources must be appropriately cited. Please familiarize yourself with the University’s Academic Integrity Policy: [Link to University Policy].”]\nResubmission Policy (if any): [State if applicable, e.g., “Resubmissions are not permitted for this assessment.”]"
+  },
+  {
+    "objectID": "assessments/assessment-report-1.html#estimated-time-commitment",
+    "href": "assessments/assessment-report-1.html#estimated-time-commitment",
+    "title": "Report 1: Manipulative Experiment",
+    "section": "7. Estimated Time Commitment",
+    "text": "7. Estimated Time Commitment\n\n[Provide a guideline, e.g., “It is estimated that this assessment will require approximately [e.g., 15-20] hours of work, including conducting the experiment, analysing data, and writing the report.”]"
+  },
+  {
+    "objectID": "assessments/assessment-report-1.html#feedback",
+    "href": "assessments/assessment-report-1.html#feedback",
+    "title": "Report 1: Manipulative Experiment",
+    "section": "8. Feedback",
+    "text": "8. Feedback\n\nHow and When: [Explain, e.g., “Feedback, including a marked rubric and comments, will be provided via Canvas within [e.g., three] weeks of the submission deadline.”]"
+  },
+  {
+    "objectID": "assessments/assessment-eft.html",
+    "href": "assessments/assessment-eft.html",
+    "title": "Early Feedback Task",
+    "section": "",
+    "text": "In this assessment you will complete a quick survey and write a short reflection (about 100 words) on how things are going (so far). Tell us what you’ve learned, any challenges you’re facing, and what you’d like to improve. The goal is to help you reflect on whether you are actually prepared for BEDA. We want to make sure that you are ready to tackle the challenges ahead and this task will help us understand how we can support you better.\nThink of it as a check-in, not a test—no trick questions, and definitely no pop quizzes.\n\nWeighting: 5%\nDue Date: [Insert Due Date, e.g., Friday, Week 3, 11:59 PM AEST]\nLearning Outcomes: [Optional: Insert relevant learning outcomes or remove this line if not needed]"
+  },
+  {
+    "objectID": "assessments/assessment-eft.html#overview",
+    "href": "assessments/assessment-eft.html#overview",
+    "title": "Early Feedback Task",
+    "section": "",
+    "text": "In this assessment you will complete a quick survey and write a short reflection (about 100 words) on how things are going (so far). Tell us what you’ve learned, any challenges you’re facing, and what you’d like to improve. The goal is to help you reflect on whether you are actually prepared for BEDA. We want to make sure that you are ready to tackle the challenges ahead and this task will help us understand how we can support you better.\nThink of it as a check-in, not a test—no trick questions, and definitely no pop quizzes.\n\nWeighting: 5%\nDue Date: [Insert Due Date, e.g., Friday, Week 3, 11:59 PM AEST]\nLearning Outcomes: [Optional: Insert relevant learning outcomes or remove this line if not needed]"
+  },
+  {
+    "objectID": "assessments/assessment-eft.html#task-submission",
+    "href": "assessments/assessment-eft.html#task-submission",
+    "title": "Early Feedback Task",
+    "section": "Task & Submission",
+    "text": "Task & Submission\n\nWhat to do: Complete a quick survey and write a short reflection (approximately 100 words).\nSurvey Access: [Specify how/where to access the survey, e.g., Link on Canvas]\nReflection Submission: [Specify how/where to submit the reflection, e.g., Canvas text box]"
+  },
+  {
+    "objectID": "assessments/assessment-eft.html#marking",
+    "href": "assessments/assessment-eft.html#marking",
+    "title": "Early Feedback Task",
+    "section": "Marking",
+    "text": "Marking\nYou will get full marks (5%) as long as you complete both parts of this EFT (the survey and the reflection) by the due date."
+  },
+  {
+    "objectID": "assessments/assessment-eft.html#policies",
+    "href": "assessments/assessment-eft.html#policies",
+    "title": "Early Feedback Task",
+    "section": "Policies",
+    "text": "Policies\n\nLate Submissions: [Specify policy, e.g., “Late submissions will receive a mark of zero unless prior arrangements are made due to exceptional circumstances.”]\nAcademic Integrity: All work submitted must be your own. Please refer to the University’s Academic Integrity Policy."
   }
 ]
