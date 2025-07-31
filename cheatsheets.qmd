@@ -1,3 +1,46 @@
 ---
 title: Cheatsheets
 ---
+
+All cheatsheets are open source and available on the [SOLES GitHub repository](https://github.com/usyd-soles-edu). 
+
+::: {.callout-note}
+Please provide feedback on the cheatsheets here. 
+:::
+
+## RStudio/R
+
+- importing data into R - `data`
+- boxplots - `vis`
+- scatterplots - `vis`
+- histograms - `vis`
+- one-sample t-test - `stats`
+- two-sample t-test - `stats`
+- ANOVA - `stats`
+- linear regression - `stats`
+
+
+
+## Jamovi
+
+- boxplots - `vis`
+- scatterplots - `vis`
+- histograms - `vis`
+- t-tests/ANOVA - `stats`
+- regression (planned) - `stats`
+- Principal Component Analysis (PCA) - `stats`
+
+
+## General
+
+- publication-ready ANOVA tables - `vis`
+- publicaton-ready regression tables - `vis`
+- how to report statistics in text (planned) - `stats`
+- R and GitHub Copilot - `gen_ai`
+
+
+## SPSS
+
+- boxplots - `vis`
+- scatterplots - `vis`
+- using the chart builder - `vis`
