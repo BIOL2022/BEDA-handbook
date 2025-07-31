@@ -136,6 +136,13 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><strong>Assessments</strong></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html#schedule" class="sidebar-item-text sidebar-link"><i class="bi bi-easel3-fill" role="img">
+</i> 
+ <span class="menu-text"><strong>Lectures</strong> (schedule)</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true"><i class="bi bi-book" role="img">
@@ -150,6 +157,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../module01/102-week01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week <strong>1</strong> prac: getting started</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../module01/w01-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">&nbsp; &nbsp; &nbsp; &nbsp; Workshop 01</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -270,6 +283,9 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Module 2 practicals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans with both your peers and demonstrators.</p>
 <p>Below is a brief timeline of what you should aim to do in each week leading up to the submission of your report.</p>
+<div class="timeline-controls">
+<p><button id="expand-all" class="btn btn-sm btn-default">Expand All</button> <button id="collapse-all" class="btn btn-sm btn-default">Collapse All</button></p>
+</div>
 <div class="timeline-container">
 <section id="weeks-23-before-module-2" class="level3 timeline-event">
 <h3 class="anchored" data-anchor-id="weeks-23-before-module-2">Weeks 2–3 (before Module 2)</h3>
@@ -281,6 +297,10 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="week-4">Week 4</h3>
 <div class="timeline-content">
 <p><strong>In your practical session</strong>: Discuss and plan your project with your group. You will also be introduced to the pilot study, which is a small-scale version of your main experiment that you will run this week (or next). Pick up any gear you need to run your pilot study.</p>
+<p><strong>Details</strong>:</p>
+<ul>
+<li>Form your hypothesis: as a group, convert the general biological question into specific biological hypotheses and predictions.</li>
+</ul>
 <p><strong>In your own time</strong>: After the practical in Week 4, contribute to your group’s pilot study work. Read relevant literature and start preparing for your written report.</p>
 </div>
 </section>
@@ -339,15 +359,49 @@ ul.task-list li input[type="checkbox"] {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const events = document.querySelectorAll('.timeline-event');
+  const expandAllBtn = document.getElementById('expand-all');
+  const collapseAllBtn = document.getElementById('collapse-all');
+
+  function openItem(event) {
+    event.classList.add('active');
+    const content = event.querySelector('.timeline-content');
+    content.style.display = 'block';
+  }
+
+  function closeItem(event) {
+    event.classList.remove('active');
+    const content = event.querySelector('.timeline-content');
+    content.style.display = 'none';
+  }
+
   events.forEach(event => {
-    event.addEventListener('click', () => {
-      event.classList.toggle('active');
-      const content = event.querySelector('.timeline-content');
-      if (content.style.display === 'block') {
-        content.style.display = 'none';
-      } else {
-        content.style.display = 'block';
+    // Set the initial state to collapsed
+    closeItem(event);
+    
+    event.addEventListener('click', (e) => {
+      // Stop propagation to prevent the click from bubbling up to parent elements
+      if (e.target.tagName === 'A') {
+        return;
       }
+      
+      // Toggle individual item
+      if (event.classList.contains('active')) {
+        closeItem(event);
+      } else {
+        openItem(event);
+      }
+    });
+  });
+
+  expandAllBtn.addEventListener('click', () => {
+    events.forEach(event => {
+      openItem(event);
+    });
+  });
+
+  collapseAllBtn.addEventListener('click', () => {
+    events.forEach(event => {
+      closeItem(event);
     });
   });
 });
