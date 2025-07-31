@@ -25,7 +25,11 @@ You will need to **sign up** to a project group on Canvas. All groups will be fo
 ### Week 4
 ::: {.timeline-content}
 
-**In your practical session**: Discuss and plan your project with your group. You will also be introduced to the pilot study, which is a small-scale version of your main experiment that you will run this week (or next). Pick up any gear you need to run your pilot study.
+**In your practical session**: Discuss and plan your project with your group. You will also be introduced to the pilot study, which is a small-scale version of your main experiment that you will run this week (or next). Pick up any gear you need to run your pilot study. 
+
+**Details**:
+
+- Form your hypothesis: as a group, convert the general biological question into specific biological hypotheses and predictions.
 
 **In your own time**: After the practical in Week 4, contribute to your group’s pilot study work. Read relevant literature and start preparing for your written report.
 
