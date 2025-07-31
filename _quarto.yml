@@ -46,12 +46,12 @@ website:
         text: Contact us
         href: help.qmd
       - text: ---
-      # - icon: easel3-fill
-      #   text: Lectures
-      #   href: lectures.qmd
       - icon: clipboard-check
         text: "**Assessments**"
         href: assessments/assessments.qmd
+      - icon: easel3-fill
+        text: "**Lectures** (schedule)"
+        href: index.qmd#schedule
       - icon: book
         section: "**Practicals**"
         contents:
