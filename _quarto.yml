@@ -57,6 +57,8 @@ website:
         contents:
           - href: module01/102-week01.qmd
             text: "Week **1** prac: getting started"
+          - href: module01/w01-intro.qmd
+            text: "&nbsp; &nbsp; &nbsp; &nbsp; Workshop 01"
           - href: module01/103-week02.qmd
             text: "Week **2** prac: sudy design"
           - href: module01/105-images.qmd
