@@ -25,7 +25,7 @@ website:
         text: Contact
   sidebar: 
     style: floating
-    collapse-level: 1
+    collapse-level: 2
     contents:
       - icon: house-fill
         text: Home
@@ -50,38 +50,37 @@ website:
       #   text: Lectures
       #   href: lectures.qmd
       - icon: clipboard-check
-        text: Assessments (info)
+        text: "**Assessments**"
         href: assessments/assessments.qmd
-      - text: ---
       - icon: book
-        text: "<b>Practicals</b>"
-      - section: "🐝 Module 1 (Wk 01-03)"
+        section: "**Practicals**"
         contents:
-          - href: module01/101-intro.qmd
-            text: "**Please read first**"
-          - module01/102-week01.qmd
-          - module01/103-week02.qmd
+          - href: module01/102-week01.qmd
+            text: "Week **1** prac: getting started"
+          - href: module01/103-week02.qmd
+            text: "Week **2** prac: sudy design"
           - href: module01/105-images.qmd
             text: "&nbsp; &nbsp; &nbsp; &nbsp; Intertidal site images"
           - href: module01/106-species-id.qmd
             text: "&nbsp; &nbsp; &nbsp; &nbsp; Species ID guide"
-          - module01/104-week03.qmd
-      - section: "🐝 Module 2 (Wk 04-08)"
+          - href: module01/104-week03.qmd
+            text: "Week **3** prac: data analysis"
+          - href: module02/202-timeline.qmd
+            text: "Week **4 -- 8** pracs: timeline"
+          - href: module03/302-week09.qmd
+            text: "Week **9** prac: PCA and Report 2"
+          - href: module03/303-week10.qmd
+            text: "Week **10** prac: permutation"
+          - href: module03/304-week11.qmd
+            text: "Week **11** prac: Report 2 data analysis"
+          - href: module03/305-week12.qmd
+            text: "Week **12** prac: Report 2 support"
+      - icon: book
+        section: "**Report 1**"
         contents:
-          - href: module02/201-intro.qmd
-            text: "**Please read first**"
-          - module02/202-timeline.qmd
           - module02/203-projects.qmd
           - module02/204-report1.qmd
           - module02/205-resources.qmd
-      - section: "🐝 Module 3 (Wk 09-12)"
-        contents:
-          - href: module03/301-intro.qmd
-            text: "**Please read first**"
-          - module03/302-week09.qmd
-          - module03/303-week10.qmd
-          - module03/304-week11.qmd
-          - module03/305-week12.qmd
 
 
 format:
