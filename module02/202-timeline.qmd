@@ -7,6 +7,11 @@ Module 2 practicals are designed to be flexible and student-driven. Rather than 
 
 Below is a brief timeline of what you should aim to do in each week leading up to the submission of your report.
 
+<div class="timeline-controls">
+  <button id="expand-all" class="btn btn-sm btn-default">Expand All</button>
+  <button id="collapse-all" class="btn btn-sm btn-default">Collapse All</button>
+</div>
+
 ::: {.timeline-container}
 
 ::: {.timeline-event}
@@ -86,15 +91,49 @@ Submit your group’s data and your written report in separate assignments in Ca
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const events = document.querySelectorAll('.timeline-event');
+  const expandAllBtn = document.getElementById('expand-all');
+  const collapseAllBtn = document.getElementById('collapse-all');
+
+  function openItem(event) {
+    event.classList.add('active');
+    const content = event.querySelector('.timeline-content');
+    content.style.display = 'block';
+  }
+
+  function closeItem(event) {
+    event.classList.remove('active');
+    const content = event.querySelector('.timeline-content');
+    content.style.display = 'none';
+  }
+
   events.forEach(event => {
-    event.addEventListener('click', () => {
-      event.classList.toggle('active');
-      const content = event.querySelector('.timeline-content');
-      if (content.style.display === 'block') {
-        content.style.display = 'none';
-      } else {
-        content.style.display = 'block';
+    // Set the initial state to collapsed
+    closeItem(event);
+    
+    event.addEventListener('click', (e) => {
+      // Stop propagation to prevent the click from bubbling up to parent elements
+      if (e.target.tagName === 'A') {
+        return;
       }
+      
+      // Toggle individual item
+      if (event.classList.contains('active')) {
+        closeItem(event);
+      } else {
+        openItem(event);
+      }
+    });
+  });
+
+  expandAllBtn.addEventListener('click', () => {
+    events.forEach(event => {
+      openItem(event);
+    });
+  });
+
+  collapseAllBtn.addEventListener('click', () => {
+    events.forEach(event => {
+      closeItem(event);
     });
   });
 });
