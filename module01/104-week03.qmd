@@ -1,6 +1,5 @@
 ---
 title: "**Week 3**: Data analysis"
-draft: true
 ---
 ## Welcome
 
@@ -34,7 +33,7 @@ Workshop slides are available on Canvas.
 
 ## Lab activity
 
-### [Google Drive](https://drive.google.com/drive/folders/1vt91fyawYoYxv4xAkqFJMG-fFK-au5e7?usp=drive_link)
+### [Google Drive](#)
 
 When ready, work with your group to analyse the data you collected in the previous lab using a **general linear model**. Click on the link above to access the data that you have collected.
 
@@ -181,7 +180,7 @@ Handy hints:
 
 ## Submit your results
 
-Once complete, please upload your results to [Google Drive](https://drive.google.com/drive/folders/1vt91fyawYoYxv4xAkqFJMG-fFK-au5e7?usp=drive_link) for archival. If there's time, we will discuss the results together.
+Once complete, please upload your results to [Google Drive](#)) for archival. If there's time, we will discuss the results together.
 
 ## End
 

@@ -1,6 +1,5 @@
 ---
 author: Januar Harianto
-draft: false
 ---
 
 ```{r setup}

@@ -1,7 +1,6 @@
 ---
 title: "**Weeks 4 -- 8**: Timeline"
 number-sections: false
-draft: true
 ---
 
 Module 2 practicals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans with both your peers and demonstrators. 

@@ -1,6 +1,5 @@
 ---
 title: Report 1 -- Resources
-draft: true
 ---
 
 ## Useful documents for Report 1

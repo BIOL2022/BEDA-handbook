@@ -1,7 +1,6 @@
 ---
 title: "Species ID guide"
 lightbox: true
-draft: true
 ---
 
 
