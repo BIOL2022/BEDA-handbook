@@ -29,6 +29,7 @@ Depending on what you decide, your model may need to be tweaked, and your observ
 
 The next step is to define your sampling strategy, and decide how you will use the images to answer your question.
 
+::: {.column-page}
 ## Sites
 
 Note: images are only available in the HTML version of this document. 
@@ -38,49 +39,50 @@ Note: images are only available in the HTML version of this document.
 
 ## Site 1
 
-![Image A01](assets/wk2/site01/IMG_0179.jpeg){group="site1" width=125}
-![Image A02](assets/wk2/site01/IMG_0577.jpeg){group="site1" width=125}
-![Image A03](assets/wk2/site01/IMG_1146.jpeg){group="site1" width=125}
-![Image A04](assets/wk2/site01/IMG_1244.jpeg){group="site1" width=125}
-![Image A05](assets/wk2/site01/IMG_1880.jpeg){group="site1" width=125}
-![Image A06](assets/wk2/site01/IMG_3681.jpeg){group="site1" width=125}
-![Image A07](assets/wk2/site01/IMG_4254.jpeg){group="site1" width=125}
-![Image A08](assets/wk2/site01/IMG_4535.jpeg){group="site1" width=125}
-![Image A09](assets/wk2/site01/IMG_4892.jpeg){group="site1" width=125}
-![Image A10](assets/wk2/site01/IMG_4950.jpeg){group="site1" width=125}
-![Image A11](assets/wk2/site01/IMG_5059.jpeg){group="site1" width=125}
-![Image A12](assets/wk2/site01/IMG_5408.jpeg){group="site1" width=125}
-![Image A13](assets/wk2/site01/IMG_7174.jpeg){group="site1" width=125}
-![Image A14](assets/wk2/site01/IMG_7210.jpeg){group="site1" width=125}
-![Image A15](assets/wk2/site01/IMG_7523.jpeg){group="site1" width=125}
-![Image A16](assets/wk2/site01/IMG_7819.jpeg){group="site1" width=125}
-![Image A17](assets/wk2/site01/IMG_8017.jpeg){group="site1" width=125}
-![Image A18](assets/wk2/site01/IMG_9428.jpeg){group="site1" width=125}
-![Image A19](assets/wk2/site01/IMG_9712.jpeg){group="site1" width=125}
-![Image A20](assets/wk2/site01/IMG_9918.jpeg){group="site1" width=125}
+![Image A01](assets/site01/IMG_0179.jpeg){group="site1" width=125 .lightbox}
+![Image A02](assets/site01/IMG_0577.jpeg){group="site1" width=125 .lightbox}
+![Image A03](assets/site01/IMG_1146.jpeg){group="site1" width=125 .lightbox}
+![Image A04](assets/site01/IMG_1244.jpeg){group="site1" width=125 .lightbox}
+![Image A05](assets/site01/IMG_1880.jpeg){group="site1" width=125 .lightbox}
+![Image A06](assets/site01/IMG_3681.jpeg){group="site1" width=125 .lightbox}
+![Image A07](assets/site01/IMG_4254.jpeg){group="site1" width=125 .lightbox}
+![Image A08](assets/site01/IMG_4535.jpeg){group="site1" width=125 .lightbox}
+![Image A09](assets/site01/IMG_4892.jpeg){group="site1" width=125 .lightbox}
+![Image A10](assets/site01/IMG_4950.jpeg){group="site1" width=125 .lightbox}
+![Image A11](assets/site01/IMG_5059.jpeg){group="site1" width=125 .lightbox}
+![Image A12](assets/site01/IMG_5408.jpeg){group="site1" width=125 .lightbox}
+![Image A13](assets/site01/IMG_7174.jpeg){group="site1" width=125 .lightbox}
+![Image A14](assets/site01/IMG_7210.jpeg){group="site1" width=125 .lightbox}
+![Image A15](assets/site01/IMG_7523.jpeg){group="site1" width=125 .lightbox}
+![Image A16](assets/site01/IMG_7819.jpeg){group="site1" width=125 .lightbox}
+![Image A17](assets/site01/IMG_8017.jpeg){group="site1" width=125 .lightbox}
+![Image A18](assets/site01/IMG_9428.jpeg){group="site1" width=125 .lightbox}
+![Image A19](assets/site01/IMG_9712.jpeg){group="site1" width=125 .lightbox}
+![Image A20](assets/site01/IMG_9918.jpeg){group="site1" width=125 .lightbox}
 
 ## Site 2
 
-![Image B01](assets/wk2/site02/IMG_0889.jpeg){group="site2" width=125}
-![Image B02](assets/wk2/site02/IMG_1121.jpeg){group="site2" width=125}
-![Image B03](assets/wk2/site02/IMG_1172.jpeg){group="site2" width=125}
-![Image B04](assets/wk2/site02/IMG_1185.jpeg){group="site2" width=125}
-![Image B05](assets/wk2/site02/IMG_1242.jpeg){group="site2" width=125}
-![Image B06](assets/wk2/site02/IMG_1686.jpeg){group="site2" width=125}
-![Image B07](assets/wk2/site02/IMG_2431.jpeg){group="site2" width=125}
-![Image B08](assets/wk2/site02/IMG_4757.jpeg){group="site2" width=125}
-![Image B09](assets/wk2/site02/IMG_6045.jpeg){group="site2" width=125}
-![Image B10](assets/wk2/site02/IMG_6077.jpeg){group="site2" width=125}
-![Image B11](assets/wk2/site02/IMG_6158.jpeg){group="site2" width=125}
-![Image B12](assets/wk2/site02/IMG_6355.jpeg){group="site2" width=125}
-![Image B13](assets/wk2/site02/IMG_7066.jpeg){group="site2" width=125}
-![Image B14](assets/wk2/site02/IMG_8123.jpeg){group="site2" width=125}
-![Image B15](assets/wk2/site02/IMG_8150.jpeg){group="site2" width=125}
-![Image B16](assets/wk2/site02/IMG_8175.jpeg){group="site2" width=125}
-![Image B17](assets/wk2/site02/IMG_8338.jpeg){group="site2" width=125}
-![Image B18](assets/wk2/site02/IMG_8515.jpeg){group="site2" width=125}
-![Image B19](assets/wk2/site02/IMG_9254.jpeg){group="site2" width=125}
-![Image B20](assets/wk2/site02/IMG_9688.jpeg){group="site2" width=125}
+![Image B01](assets/site02/IMG_0889.jpeg){group="site2" width=125 .lightbox}
+![Image B02](assets/site02/IMG_1121.jpeg){group="site2" width=125 .lightbox}
+![Image B03](assets/site02/IMG_1172.jpeg){group="site2" width=125 .lightbox}
+![Image B04](assets/site02/IMG_1185.jpeg){group="site2" width=125 .lightbox}
+![Image B05](assets/site02/IMG_1242.jpeg){group="site2" width=125 .lightbox}
+![Image B06](assets/site02/IMG_1686.jpeg){group="site2" width=125 .lightbox}
+![Image B07](assets/site02/IMG_2431.jpeg){group="site2" width=125 .lightbox}
+![Image B08](assets/site02/IMG_4757.jpeg){group="site2" width=125 .lightbox}
+![Image B09](assets/site02/IMG_6045.jpeg){group="site2" width=125 .lightbox}
+![Image B10](assets/site02/IMG_6077.jpeg){group="site2" width=125 .lightbox}
+![Image B11](assets/site02/IMG_6158.jpeg){group="site2" width=125 .lightbox}
+![Image B12](assets/site02/IMG_6355.jpeg){group="site2" width=125 .lightbox}
+![Image B13](assets/site02/IMG_7066.jpeg){group="site2" width=125 .lightbox}
+![Image B14](assets/site02/IMG_8123.jpeg){group="site2" width=125 .lightbox}
+![Image B15](assets/site02/IMG_8150.jpeg){group="site2" width=125 .lightbox}
+![Image B16](assets/site02/IMG_8175.jpeg){group="site2" width=125 .lightbox}
+![Image B17](assets/site02/IMG_8338.jpeg){group="site2" width=125 .lightbox}
+![Image B18](assets/site02/IMG_8515.jpeg){group="site2" width=125 .lightbox}
+![Image B19](assets/site02/IMG_9254.jpeg){group="site2" width=125 .lightbox}
+![Image B20](assets/site02/IMG_9688.jpeg){group="site2" width=125 .lightbox}
 
+:::
 :::
 :::
