@@ -36,12 +36,11 @@ We will explain to you how BEDA practicals work, what you will be doing, and how
 4. Attendance and feedback
 
 
-## Workshop
+## Workshop 01
 
+Each practical in Module 1 begins with a quick **workshop**. We will cover a key idea, then you will get stuck into some quick hands-on exercises in the lab. These are your chance to practise what you have heard in lectures and try out study design and data analysis for yourself.
 
-Each practical in Module 1 begins with a quick **workshop**. We will cover a key idea, then you will get stuck into some hands-on exercises in the lab. These are your chance to practise what you have heard in lectures and try out study design and data analysis for yourself.
-
-Today’s workshop covers:
+[Today’s workshop](w01-intro.qmd),  covers:
 
 1. An informal survey to assess statistical literacy
 2. A quick introduction to R, SPSS, and Jamovi
@@ -51,7 +50,7 @@ The workshop should take about 45 minutes unless Januar gets carried away. Hopef
 
 ## Exercise 1 – Cheatsheets
 
-This exercise introduces **cheatsheets**: handy one-page guides with common functions and commands to help you get started with new software.
+This exercise introduces [<i class="bi bi-file-earmark-text"></i> **Cheatsheets**](../cheatsheets.qmd): handy guides with common functions and commands to help you get started with new software.
 
 ### Your Task
 
