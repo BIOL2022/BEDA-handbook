@@ -17,7 +17,7 @@ To help you determine if you are ready for BEDA, we have translated the key foun
 - **Identify data types:** Can you distinguish between continuous, discrete, and categorical data and provide a relevant example for each?
 - **Describe central tendency:** When is it more appropriate to use the mean versus the median to describe the centre of a dataset?
 - **Outline hypothesis testing:** What are the core steps involved in hypothesis testing, including the roles of the null and alternative hypotheses?
-- **Interpret statistical tests:** Can you explain the main purpose of a t-test and a simple linear regression? Could you define what a 'confidence interval' or 'standard error' tells you about your results?
+- **Interpret first-year level statistical tests:** Can you explain the main purpose of a t-test and a simple linear regression? Could you define what a 'confidence interval' or 'standard error' tells you about your results? *Note: you may have forgotten these concepts since your first year, but can you recall these concepts once you have had a refresher?*
 
 The first few weeks of BEDA will include a review of these concepts, but we will not be teaching them in detail. If you are not familiar with these topics, we recommend reviewing them before the unit begins, either through online resources or by reading introductory statistics textbooks. Two that we recommend are available in the Library and are linked below:
 
