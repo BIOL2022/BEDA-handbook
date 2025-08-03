@@ -3,6 +3,17 @@ project:
 
 website:
   title: "BIOL2022"
+  drafts:
+    - module01/103-week02.qmd
+    - module02/202-timeline.qmd
+    - module02/203-projects.qmd
+    - module02/204-report1.qmd
+    - module02/205-resources.qmd
+    - module03/302-week09.qmd
+    - module03/303-week10.qmd
+    - module03/304-week11.qmd
+    - module03/305-week12.qmd
+  draft-mode: visible # unlinked
   navbar:
     left:
       - icon: house-fill
@@ -96,7 +107,7 @@ format:
     navbar: false
     sidebar: true
     # page-layout: full
-    draft-mode: visible # unlinked
+    
 
 editor:
   render-on-save: true
