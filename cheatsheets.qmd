@@ -5,42 +5,43 @@ title: Cheatsheets
 All cheatsheets are open source and available on the [SOLES GitHub repository](https://github.com/usyd-soles-edu). 
 
 ::: {.callout-note}
-Please provide feedback on the cheatsheets here. 
+Please provide feedback on the cheatsheets here: [**Give Feedback**](#)
 :::
 
 ## RStudio/R
 
-- importing data into R - `data`
-- boxplots - `vis`
-- scatterplots - `vis`
-- histograms - `vis`
-- one-sample t-test - `stats`
-- two-sample t-test - `stats`
-- ANOVA - `stats`
-- linear regression - `stats`
+- [importing data into R](https://usyd-soles-edu.github.io/cheatsheet-r-data-import/){target="_blank"} - `data`
+- [boxplots](https://usyd-soles-edu.github.io/cheatsheet-R-boxplot/){target="_blank"} - `vis`
+- [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-r-scatterplot/){target="_blank"} - `vis`
+- [histograms](https://usyd-soles-edu.github.io/cheatsheet-r-histogram/){target="_blank"} - `vis`
+- [one-sample t-test](https://usyd-soles-edu.github.io/cheatsheet-r-ttest/){target="_blank"} - `stats`
+- [two-sample t-test](https://usyd-soles-edu.github.io/cheatsheet-r-two-sample-ttest/){target="_blank"} - `stats`
+- [ANOVA](https://usyd-soles-edu.github.io/cheatsheet-r-anova/){target="_blank"} - `stats`
+- [linear regression](https://usyd-soles-edu.github.io/cheatsheet-r-regression/){target="_blank"} - `stats`
+- [Publication-ready(-ish) ANOVA/regression tables in R](https://usyd-soles-edu.github.io/cheatsheet-r-html-tables/){target="_blank"} - `vis`
 
 
 
 ## Jamovi
 
-- boxplots - `vis`
-- scatterplots - `vis`
-- histograms - `vis`
-- t-tests/ANOVA - `stats`
-- regression (planned) - `stats`
-- Principal Component Analysis (PCA) - `stats`
+- [boxplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-boxplot/){target="_blank"} - `vis`
+- [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-scatterplot/){target="_blank"} - `vis`
+- [histograms](https://usyd-soles-edu.github.io/cheatsheet-jamovi-histogram/){target="_blank"} - `vis`
+- [t-tests/ANOVA](https://usyd-soles-edu.github.io/cheatsheet-jamovi-anova/){target="_blank"} - `stats`
+- [regression](#){target="_blank"} - `stats`
+- [Principal Component Analysis (PCA)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-pca/){target="_blank"} - `stats`
 
 
 ## General
 
-- publication-ready ANOVA tables - `vis`
-- publicaton-ready regression tables - `vis`
-- how to report statistics in text (planned) - `stats`
-- R and GitHub Copilot - `gen_ai`
+- [publication-ready ANOVA tables](https://biol2022.github.io/BIOL2022-unit-manual/assets/cheatsheet_manual_anova_table.pdf) - `vis`
+- [publication-ready regression tables](https://biol2022.github.io/BIOL2022-unit-manual/assets/cheatsheet_manual_lm_table.pdf) - `vis`
+- [how to report statistics in text (planned)]() - `stats`
+- [R and GitHub Copilot]() - `gen_ai`
 
 
 ## SPSS
 
-- boxplots - `vis`
-- scatterplots - `vis`
-- using the chart builder - `vis`
+- [boxplots](https://envx-resources.github.io/cheatsheet-spss-boxplot/){target="_blank"} - `vis`
+- [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-spss-scatterplot/){target="_blank"} - `vis`
+- [using the chart builder](https://usyd-soles-edu.github.io/cheatsheet-spss-chart-builder/){target="_blank"} - `vis`
