@@ -18,24 +18,26 @@ In this specific practical you will:
 - [ ] Use **PCA** to analyse “lecturer perceptions” data gathered in previous years
 - [ ] In groups, design an investigation using a model system to test a multivariate hypothesis for your upcoming report
 
-## What you need to submit in Module 3
-This assessment involves two separate submissions via Canvas:
+## Module 3 Submission Requirements
 
-1. Group Data Submission (Excel File)
-   - Submit one Excel file containing your group’s:
-     - Species (assemblage) data
-     - Habitat data
-   - Only one group member needs to upload the file on behalf of the group.
-   - Due: By 8:00am on the day of your Week 11 practical session
-   - Worth: 5% of your total unit mark
-   
-Make sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi.
+This assessment has two components, each with a separate submission on Canvas.
 
-2. Individual Report
-   - Submit your individual report based on your group's study.
-   -	Format: A short scientific article (see assessment guidelines on Canvas for details).
-   -	Worth: 15% of your total unit mark
-   -	Due date: Refer to the Assessment Information section on Canvas.
+### 1. Group Data File
+
+*   **What to submit:** A single Excel file (`.xlsx`) containing your group's raw data. This file must contain two clearly labelled worksheets:
+    *   **Worksheet 1: Species Data:** Your species assemblage data.
+    *   **Worksheet 2: Habitat Data:** Your habitat data.
+*   **Who submits:** Only **one** member of your group should upload the file.
+*   **Deadline:** 8:00am on the day of your practical session in Week 11.
+*   **Value:** This component is worth 5% of your final mark for the unit.
+
+### 2. Individual Report
+
+*   **What to submit:** A scientific report based on the analysis of your group's data.
+*   **Who submits:** This is an **individual** submission. Every student must submit their own report.
+*   **Format:** The report must be formatted as a short scientific article. For detailed formatting requirements, refer to the assessment guidelines available on Canvas.
+*   **Deadline:** The due date is listed in the "Assessments" section on Canvas.
+*   **Value:** This component is worth 15% of your final mark for the unit.
 
 
 ## Analyses covered in this practical
