@@ -1177,7 +1177,7 @@
     "href": "cheatsheets.html#rstudior",
     "title": "Cheatsheets",
     "section": "RStudio/R",
-    "text": "RStudio/R\n\nimporting data into R - data\nboxplots - vis\nscatterplots - vis\nhistograms - vis\none-sample t-test - stats\ntwo-sample t-test - stats\nANOVA - stats\nlinear regression - stats",
+    "text": "RStudio/R\n\nimporting data into R - data\nboxplots - vis\nscatterplots - vis\nhistograms - vis\none-sample t-test - stats\ntwo-sample t-test - stats\nANOVA - stats\nlinear regression - stats\nPublication-ready(-ish) ANOVA/regression tables in R - vis",
     "crumbs": [
       "Home",
       "Cheatsheets"
@@ -1188,7 +1188,7 @@
     "href": "cheatsheets.html#jamovi",
     "title": "Cheatsheets",
     "section": "Jamovi",
-    "text": "Jamovi\n\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nt-tests/ANOVA - stats\nregression (planned) - stats\nPrincipal Component Analysis (PCA) - stats",
+    "text": "Jamovi\n\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nt-tests/ANOVA - stats\nregression - stats\nPrincipal Component Analysis (PCA) - stats",
     "crumbs": [
       "Home",
       "Cheatsheets"
@@ -1199,7 +1199,7 @@
     "href": "cheatsheets.html#general",
     "title": "Cheatsheets",
     "section": "General",
-    "text": "General\n\npublication-ready ANOVA tables - vis\npublicaton-ready regression tables - vis\nhow to report statistics in text (planned) - stats\nR and GitHub Copilot - gen_ai",
+    "text": "General\n\npublication-ready ANOVA tables - vis\npublication-ready regression tables - vis\nhow to report statistics in text (planned) - stats\nR and GitHub Copilot - gen_ai",
     "crumbs": [
       "Home",
       "Cheatsheets"
