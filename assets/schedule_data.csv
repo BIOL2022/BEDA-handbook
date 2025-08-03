@@ -1,7 +1,7 @@
 Week_Num,Dates_Str,Module_Num,Module_Title,Activity_Type,Activity_Description,html_link,pdf_link
 1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01a Tue:** Guest lecture,https://canvas.sydney.edu.au/courses/67437/modules/items/2829563,
 1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01b Tue:** The nature of data and numbers in biology experiments,https://canvas.sydney.edu.au/courses/67437/modules/items/2831187,
-1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01c Tue:** Welcome to BEDA,https://biol2022.github.io/L00-Welcome-to-BEDA,
+1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01c Tue:** Welcome to BEDA,https://biol2022.github.io/L00-Welcome-to-BEDA,https://canvas.sydney.edu.au/files/44779723/download?download_frd=1
 1,29 Jul - 02 Aug,1,Module 1: fundamentals,Lecture,**L01d Wed:** (Re-) indroduction to experimental design and analysis,https://biol2022.github.io/L01-intro-exp-design-analysis,
 1,29 Jul - 02 Aug,1,Module 1: fundamentals,Practical,**Practical Week 01:** Getting started,,
 1,29 Jul - 02 Aug,1,Module 1: fundamentals,Resource,"<a><i class=""bi bi-bookmark-star-fill""></i></a>  [Am I ready for BEDA?](prerequisites.qmd)",,
