@@ -31,7 +31,7 @@ The next step is to define your sampling strategy, and decide how you will use t
 ::: {.column-page}
 ## Sites
 
-Note: images are only available in the HTML version of this document. 
+Note: images are only available in the HTML version of this document. If you choose to (or if the images below do not load), **you can also access the images by downloading them as a zipped archive [here](https://canvas.sydney.edu.au/courses/67437/files/44780164?wrap=1)**.
 
 ::: {.content-visible unless-format="pdf"}
 ::: {.panel-tabset}
