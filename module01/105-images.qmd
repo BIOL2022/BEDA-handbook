@@ -23,7 +23,6 @@ Depending on what you decide, your model may need to be tweaked, and your observ
 
 ## Assumptions and prior knowledge
 
-- 
 - Images are randomly selected and assumed to be independent.
 - Images are assumed to be representative of their respective site(s).
 
