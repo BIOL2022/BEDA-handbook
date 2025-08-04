@@ -36,8 +36,8 @@ Please provide feedback on the cheatsheets here: [**Give Feedback**](https://for
 
 - [publication-ready ANOVA tables](https://biol2022.github.io/BIOL2022-unit-manual/assets/cheatsheet_manual_anova_table.pdf) - `vis`
 - [publication-ready regression tables](https://biol2022.github.io/BIOL2022-unit-manual/assets/cheatsheet_manual_lm_table.pdf) - `vis`
-- [how to report statistics in text (planned)]() - `stats`
-- [R and GitHub Copilot]() - `gen_ai`
+- how to report statistics in text (planned) - `stats`
+- R and GitHub Copilot (planned) - `gen_ai`
 
 
 ## SPSS
