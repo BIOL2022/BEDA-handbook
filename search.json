@@ -531,11 +531,35 @@
     ]
   },
   {
+    "objectID": "module01/w01-intro.html#survey",
+    "href": "module01/w01-intro.html#survey",
+    "title": "Workshop 1: Software",
+    "section": "Survey",
+    "text": "Survey\nPlease fill out the Module 1 Survey before you start the practicals. This will help us understand your background and tailor the practicals to your needs. Note: the survey needs to be published before you can access it, so please wait for us to do so during the practical.\nTue 2-4 | Wed 2-4 | Wed 4-6 | Fri 2-4 | Fri 4-6",
+    "crumbs": [
+      "Home",
+      "**Practicals**",
+      "&nbsp; &nbsp; &nbsp; &nbsp; Workshop 01"
+    ]
+  },
+  {
     "objectID": "module01/w01-intro.html#software",
     "href": "module01/w01-intro.html#software",
     "title": "Workshop 1: Software",
     "section": "Software",
     "text": "Software\n\nR and RStudio\n\nDownload R here.\nDownload RStudio Desktop from here.\nIf necessary, you can sign up to RStudio Cloud here. This applies to those of you who have trouble installing R and RStudio on your computer, and somehow still prefer this to the other software options.\n\nYou must have both installed on your computer. If you already have them installed, please make sure they are up-to-date. Once installed, make sure that you run R via RStudio Desktop and not the base R GUI.\n\n\nJamovi and JASP\n\nDownload Jamovi from here.\nUnless you have reason to not use Jamovi, download JASP from here.\nFor JASP, refer to JASP Materials for documentation and more. JASP has an interface that is almost identical to Jamovi, so we will not cover it in detail here.\n\nFor Jamovi, the current branch is recommended. Remember – if you are on a Mac with Apple Silicon, download the arm64 version for a slightly better performance.\n\n\nSPSS\n\nSPSS is only available on University computers. Check your lab computers for availability.\nAlternatively, you can use the University’s Citrix Workspace to access SPSS. Note that using Citrix is not a common solution for statistical software. Your demonstrators are not trained in Citrix so they will probably need to troubleshoot with you to get it working.\n\nWhile I don’t use SPSS myself, we do provide support for it in BEDA. It is somewhat of a mixed bag right now as it has R integration, is point-and-click, and also has a syntax editor for scripting analyses. If you’d rather not use Citrix, PSPP is an excellent free alternative to SPSS. It has a very similar interface and syntax, and because it is free software, it will not expire or require separate licenses for advanced features.\n\n\nPRIMER v7\n\nThis software is only used in Module 3 when we cover multivariate analysis.\nSimilar to SPSS, PRIMER is only available on University computers.\nThere is no current, free alternative to PRIMER v7 unless you can use R fluently. You must use the University computers to access it.\nWhen we get to Module 3, we will provide more information on how to access it.",
+    "crumbs": [
+      "Home",
+      "**Practicals**",
+      "&nbsp; &nbsp; &nbsp; &nbsp; Workshop 01"
+    ]
+  },
+  {
+    "objectID": "module01/w01-intro.html#github",
+    "href": "module01/w01-intro.html#github",
+    "title": "Workshop 1: Software",
+    "section": "GitHub",
+    "text": "GitHub\nGitHub is a platform for version control and collaboration. It is widely used in software development, but it is also increasingly used in research to manage code, data, and documentation. In BEDA, we use GitHub to share resources, track changes, and collaborate on statistical projects and resources on open-source and creative commons licenses.\nPlease follow the following GitHub organisations, if possible. I am trying to build a community and convince the powers that be that this is a good idea, and the metrics will help. You will need to sign up for a GitHub account (if you don’t have one already).\n\nUSYD SOLES Open Educational Resources\nBIOL2022\n\nBy joining GitHub you will also be able to apply for and receive a free student license for GitHub Copilot. You also get access to chat.",
     "crumbs": [
       "Home",
       "**Practicals**",
