@@ -5,7 +5,7 @@ title: Cheatsheets
 All cheatsheets are open source and available on the [SOLES GitHub repository](https://github.com/usyd-soles-edu). 
 
 ::: {.callout-note}
-Please provide feedback on the cheatsheets here: [**Give Feedback**](#)
+Please provide feedback on the cheatsheets here: [**Give Feedback**](https://forms.cloud.microsoft/r/Pr6Ek91xCu)
 :::
 
 ## RStudio/R
