@@ -202,3 +202,39 @@ Alternatively, upload to Google Drive [here](https://drive.google.com/drive/fold
 ## End of practical
 
 Don't forget to submit your data! You should also start to look at the [projects available for Module 2](../module02/203-projects.qmd), as you will sign up for one of them **next week** to work on Report 1.
+
+## Fancy a challenge?
+
+A core part of BEDA is developing hands-on skills in experimental design by working with real data and organisms. This is your first opportunity to contribute to one of the available student-led projects. For one of the upcoming Module 2 projects, we plan to investigate the feeding preferences of the common garden snail (*Helix aspersa*), and to do this, we need... well, snails!
+
+### We need your help!
+
+Gary, our lab technical officer, will purchase about 300 commercially-raised snails for this experiment, but this is also a unique opportunity to see if wild-caught snails behave differently. If you have a backyard and are willing to do a little bit of exploring, your contribution would be a massive help and add a dimension to the project.
+
+**To thank you for your help, we are offering a small reward for your efforts. We have a selection of free textbooks, gift cards, and coffee vouchers available for students who contribute snails to the project.** Details on how to claim your reward will be provided in the next practical.
+
+
+::: callout-warning
+### Safety First!
+For your safety and privacy, please **only collect snails from your own backyard**. Do not enter public parks after dark or go onto any private property that is not your own.
+:::
+
+
+#### What you will need
+*   A container with a secure lid (we can provide one). Poke small holes in the lid for air.
+*   Gloves (if you prefer not to touch them) -- we can provide these too.
+*   A torch (to find them at night).
+*  A piece of fruit or vegetable (like lettuce, carrot, or apple slices) to lure them out. 
+
+#### How to find snails 
+
+*   **Best time to look**: Snails are nocturnal and love damp conditions. The best time to find them is at night (use a torch!), in the early morning, or just after it has rained.
+*   **Where to look**: Check shady, damp spots. Look under rocks, logs, bricks, large leaves, and flowerpots. Compost heaps are also a snail paradise.
+*   **How to attract them**: You can lure snails out! The night before your search, place a piece of fruit or vegetable (like lettuce, carrot, or apple slices) in a damp, sheltered spot. You can also lay a wooden plank or a piece of cardboard on the ground. Snails will often gather underneath it to stay moist.
+
+#### Collection & care
+When collecting snails, please handle them gently by picking them up carefully by their shells so you do not harm them. Place the snails in a container with some moist soil or a damp paper towel and a few leaves to make a comfortable temporary home. Add a small piece of lettuce or carrot for them to eat, and ensure the lid of the container has small holes for air so the snails can breathe. Keep the container in a cool, dark, and safe place until you are able to bring the snails to your next practical session.
+
+#### Bringing them in
+Please bring your snails to the lab next week. Your contribution will be a huge help. Thank you!
+
