@@ -1224,7 +1224,7 @@
     "href": "cheatsheets.html#jamovi",
     "title": "Cheatsheets",
     "section": "Jamovi",
-    "text": "Jamovi\n\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nt-tests/ANOVA - stats\nregression - stats\nPrincipal Component Analysis (PCA) - stats",
+    "text": "Jamovi\n\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nt-tests/ANOVA - stats\nregression - todo - stats\nPrincipal Component Analysis (PCA) - stats",
     "crumbs": [
       "Home",
       "Cheatsheets"
@@ -1378,7 +1378,7 @@
     "href": "module01/102-week01.html#fancy-a-challenge",
     "title": "Week 1: Getting started",
     "section": "6 Fancy a challenge?",
-    "text": "6 Fancy a challenge?\nThis section is for those who finish early or would like extra practice at home. Use the penguins and possums datasets from this practical.\n\nPenguins dataset: Create a plot to show the relationship between bill_length_mm, bill_depth_mm, and flipper_length_mm. Is it possible? What model are you constructing and can you put it into words?\nPossums dataset: Investigate the relationship between body weight (BW) and the personality trait for boldness (BoldBLUP). How do Sex and Age influence this relationship? How would you model three variables together in a plot? Can you model all four of them (BW, BoldBLUP, Sex, and Age) together?",
+    "text": "6 Fancy a challenge?\nThis section is for those who finish early or would like extra practice at home. Use the penguins and possums datasets from this practical. Don’t forget that you are either drawing plots or writing\n\nPenguins dataset: Create a plot to show the relationship between bill_length_mm, bill_depth_mm, and flipper_length_mm. Is it possible? What model are you constructing and can you put it into words?\nPossums dataset: Investigate the relationship between body weight (BW) and the personality trait for boldness (BoldBLUP). How do Sex and Age influence this relationship? How would you model three variables together in a plot? Can you model all four of them (BW, BoldBLUP, Sex, and Age) together?",
     "crumbs": [
       "Home",
       "**Practicals**",
