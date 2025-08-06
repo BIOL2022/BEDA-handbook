@@ -28,7 +28,7 @@ Please provide feedback on the cheatsheets here: [**Give Feedback**](https://for
 - [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-scatterplot/){target="_blank"} - `vis`
 - [histograms](https://usyd-soles-edu.github.io/cheatsheet-jamovi-histogram/){target="_blank"} - `vis`
 - [t-tests/ANOVA](https://usyd-soles-edu.github.io/cheatsheet-jamovi-anova/){target="_blank"} - `stats`
-- [regression](#){target="_blank"} - `stats`
+- regression - todo - `stats`
 - [Principal Component Analysis (PCA)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-pca/){target="_blank"} - `stats`
 
 

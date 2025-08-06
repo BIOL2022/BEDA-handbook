@@ -177,7 +177,7 @@ Notice how both plots show the same kind of relationship, but the way we interpr
 - MS Excel (or similar) to look at the data files
 - Word, Google Docs, or just pen and paper to sketch your models
 - R, Jamovi, SPSS, or any software you fancy for plotting
-- Data: [penguins.csv](https://canvas.sydney.edu.au/files/44247073/download?download_frd=1&verifier=Dlxf3Nix6XHMgS07tA93Z7KpcilKMwDkVQNvuxgR) and [possums.xlsx](https://canvas.sydney.edu.au/files/44247072/download?download_frd=1&verifier=NFLXvOu0pMFrVUhXaQIaVNEOPFOKbU6EFdSNrKnf) (grab them from Canvas)
+- Data: [penguins.csv](https://canvas.sydney.edu.au/files/44247073/download?download_frd=1&verifier=Dlxf3Nix6XHMgS07tA93Z7KpcilKMwDkVQNvuxgR) and [possums.xlsx](https://canvas.sydney.edu.au/files/44806116/download?download_frd=1&verifier=dUZ2oiezFxTiXooBZEiQh1HC3dzmMCm1csLU2gxf) (grab them from Canvas)
 
 ### Your task
 
@@ -233,7 +233,7 @@ That is all for today! If you have any questions, just ask your demonstrators â€
 
 ## Fancy a challenge?
 
-This section is for those who finish early or would like extra practice at home. Use the `penguins` and `possums` datasets from this practical.
+This section is for those who finish early or would like extra practice at home. Use the `penguins` and `possums` datasets from this practical. Don't forget that you are either drawing plots or writing
 
 1.  **Penguins dataset:** Create a plot to show the relationship between `bill_length_mm`, `bill_depth_mm`, and `flipper_length_mm`. Is it possible? What model are you constructing and can you put it into words?
 
