@@ -8,7 +8,7 @@ Today we will be focusing on data collection and how to prepare your data for an
 **You will be working in groups of at least 4 students in this practical.**
 
 ### Things to prepare
-1. **Review Lecture 2a and 2b**. These cover key ideas for today’s practical and were discussed in Tuesday’s lecture. If you missed the lecture, please read through the material beforehand so you are prepared (it beats doing nothing and waiting for the demonstrator to catch up with you).
+1. [**Review Lecture 2a**](https://biol2022.github.io/L02a-represenative-sampling/). These cover key ideas for today’s practical. If you missed the lecture, please read through the material beforehand so you are prepared (it beats doing nothing and waiting for the demonstrator to catch up with you).
 2. **Lab notebook**. You received a blank notebook in Week 1. Use it to jot down your observations, models, and data collection. This will help you keep track of your work. *Note: it’s not compulsory, but good practice.* 
 3. **A computer** with spreadsheet software (such as Excel, Google Sheets, or Numbers) and the statistical software of your choice. You can use your own laptop or a lab computer. iPads are fine if you plan to use R, but make sure you know how to use Posit Cloud.
 
@@ -26,13 +26,8 @@ By the end of this practical, you should be able to:
 2. **Data in the form of a tidy spreadsheet** -- your collected data will need to be submitted to Canvas. This submission is not a formal assessment (it is not graded), but it is essential for the next practical, so please make sure you submit it.
 
 ## Workshop
-The Week 2 workshop will go through **Tidy data principles**. Tidy data is a way of structuring your data so that it is easy to work with and analyse. It is a key principle in data analysis and will help you avoid common pitfalls when working with data. Download the following data files:
+The Week 2 workshop will go through **Tidy data principles**. Tidy data is a way of structuring your data so that it is easy to work with and analyse. It is a key principle in data analysis and will help you avoid common pitfalls when working with data. [Go to workshop 02](w02-tidy-data.qmd).
 
-- Lord of the Rings
-- Mario Kart
-- Star Wars
-
-We will quickly go through the datasets and discuss how they are structured. Your task will be to pick one of the datasets and tidy it up manually. 
 
 ## Exercise 1 -- Modelling from observations
 

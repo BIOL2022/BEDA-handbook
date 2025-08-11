@@ -1,5 +1,10 @@
 ---
+title: "Workshop 2: tidy data"
 author: Januar Harianto
+resources:
+  - assets/lotr.xlsx
+  - assets/ferret.xlsx
+  - assets/fish_station.csv
 ---
 
 ```{r setup}
@@ -11,9 +16,14 @@ library(gt)
 
 ```
 
-# Workshop 2 {-}
+## Example data
 
-**Workshop slides are on Canvas.**
+Download the following files for this workshop. 
+
+[lotr.xlsx](assets/lotr.xlsx) |
+[ferret.xlsx](assets/ferret.xlsx) |
+[fish_station.csv](assets/fish_station.csv)
+
 
 ## Data entry
 
@@ -35,7 +45,7 @@ In thi workshop we will quickly go through the process of data entry and work on
 ::: {#first-column}
 ```{r}
 #| echo: false
-possums <- readxl::read_excel("possums.xlsx", sheet = 2) |>
+possums <- readxl::read_excel("assets/possums.xlsx", sheet = 2) |>
   select(Sex, BW)
 possums |>
   head(8) |>
@@ -67,6 +77,7 @@ Data should be in long format (left) where each row is an observation and each c
 - Each observation must have its own row.
 - Each value must have its own cell.
 
+**The above rules means that you need a clear understanding of what a variable, observation and value are.**
 
 ## How to tidy data?
 
@@ -83,13 +94,3 @@ Ideally, you would want to keep raw data intact and document the steps you took 
 
 
 
-
-## Example data
-
-Download the following files for this workshop. 
-
-{{< downloadthis assets/lotr.xlsx dname="lotr" label="lotr.xlsx" icon="database-fill-down" type="info" >}}
-
-{{< downloadthis assets/ferret.xlsx dname="ferret" label="ferret.xlsx" icon="database-fill-down" type="info" >}}
-
-{{< downloadthis assets/fish_station.csv dname="fish_station" label="fish_station.csv" icon="database-fill-down" type="info" >}}

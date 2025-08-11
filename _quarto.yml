@@ -73,6 +73,8 @@ website:
             text: "&nbsp; &nbsp; &nbsp; &nbsp; Workshop 01"
           - href: module01/103-week02.qmd
             text: "Week **2** prac: study design"
+          - href: module01/w02-tidy-data.qmd
+            text: "&nbsp; &nbsp; &nbsp; &nbsp; Workshop 02"
           - href: module01/105-images.qmd
             text: "&nbsp; &nbsp; &nbsp; &nbsp; Intertidal site images"
           - href: module01/106-species-id.qmd

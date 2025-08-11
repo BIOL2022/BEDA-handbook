@@ -4,7 +4,7 @@ number-sections: false
 lightbox: true
 ---
 
-This page contains images of intertidal rocky shore sites along the Great Southern Reef. These images are provided for the purpose of the lab activities in Weeks 2 and 3.
+This page contains images of intertidal rocky shore sites along the Great Southern Reef. These images are provided for the purpose of the lab activities in Weeks 2 (and maybe 3).
 
 ## Two sites
 You will be working with images from two sites: **Site A** and **Site B**. Each site has 20 images, which are randomly selected from a larger set of images.
