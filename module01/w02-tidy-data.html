@@ -8,7 +8,7 @@
 
 <meta name="author" content="Januar Harianto">
 
-<title>w02-tidy-data – BIOL2022</title>
+<title>Workshop 2: tidy data – BIOL2022</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../module01/102-week01.html"><strong>Practicals</strong></a></li><li class="breadcrumb-item"><a href="../module01/w02-tidy-data.html">&nbsp; &nbsp; &nbsp; &nbsp; Workshop 02</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -170,6 +170,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../module01/103-week02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week <strong>2</strong> prac: study design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../module01/w02-tidy-data.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">&nbsp; &nbsp; &nbsp; &nbsp; Workshop 02</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -262,23 +268,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#workshop-2" id="toc-workshop-2" class="nav-link active" data-scroll-target="#workshop-2">Workshop 2</a>
-  <ul class="collapse">
-  <li><a href="#data-entry" id="toc-data-entry" class="nav-link" data-scroll-target="#data-entry"><span class="header-section-number">0.1</span> Data entry</a></li>
-  <li><a href="#tidy-data" id="toc-tidy-data" class="nav-link" data-scroll-target="#tidy-data"><span class="header-section-number">0.2</span> Tidy data</a></li>
-  <li><a href="#three-rules" id="toc-three-rules" class="nav-link" data-scroll-target="#three-rules"><span class="header-section-number">0.3</span> Three rules</a></li>
-  <li><a href="#how-to-tidy-data" id="toc-how-to-tidy-data" class="nav-link" data-scroll-target="#how-to-tidy-data"><span class="header-section-number">0.4</span> How to tidy data?</a></li>
-  <li><a href="#important-considerations" id="toc-important-considerations" class="nav-link" data-scroll-target="#important-considerations"><span class="header-section-number">0.5</span> Important considerations</a></li>
-  <li><a href="#example-data" id="toc-example-data" class="nav-link" data-scroll-target="#example-data"><span class="header-section-number">0.6</span> Example data</a></li>
-  </ul></li>
+  <li><a href="#example-data" id="toc-example-data" class="nav-link active" data-scroll-target="#example-data"><span class="header-section-number">1</span> Example data</a></li>
+  <li><a href="#data-entry" id="toc-data-entry" class="nav-link" data-scroll-target="#data-entry"><span class="header-section-number">2</span> Data entry</a></li>
+  <li><a href="#tidy-data" id="toc-tidy-data" class="nav-link" data-scroll-target="#tidy-data"><span class="header-section-number">3</span> Tidy data</a></li>
+  <li><a href="#three-rules" id="toc-three-rules" class="nav-link" data-scroll-target="#three-rules"><span class="header-section-number">4</span> Three rules</a></li>
+  <li><a href="#how-to-tidy-data" id="toc-how-to-tidy-data" class="nav-link" data-scroll-target="#how-to-tidy-data"><span class="header-section-number">5</span> How to tidy data?</a></li>
+  <li><a href="#important-considerations" id="toc-important-considerations" class="nav-link" data-scroll-target="#important-considerations"><span class="header-section-number">6</span> Important considerations</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../module01/102-week01.html"><strong>Practicals</strong></a></li><li class="breadcrumb-item"><a href="../module01/w02-tidy-data.html">&nbsp; &nbsp; &nbsp; &nbsp; Workshop 02</a></li></ol></nav>
 <div class="quarto-title">
+<h1 class="title">Workshop 2: tidy data</h1>
 </div>
 
 
@@ -301,16 +305,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="workshop-2" class="level1 unnumbered">
-<h1 class="unnumbered">Workshop 2</h1>
-<p><strong>Workshop slides are on Canvas.</strong></p>
-<section id="data-entry" class="level2" data-number="0.1">
-<h2 data-number="0.1" class="anchored" data-anchor-id="data-entry"><span class="header-section-number">0.1</span> Data entry</h2>
+<section id="example-data" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="example-data"><span class="header-section-number">1</span> Example data</h2>
+<p>Download the following files for this workshop.</p>
+<p><a href="assets/lotr.xlsx">lotr.xlsx</a> | <a href="assets/ferret.xlsx">ferret.xlsx</a> | <a href="assets/fish_station.csv">fish_station.csv</a></p>
+</section>
+<section id="data-entry" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="data-entry"><span class="header-section-number">2</span> Data entry</h2>
 <p>Data is the reason why we can do science. We tend to invest a lot of time and effort in collecting data – in fact it forms be bulk of our work.</p>
 <p>In thi workshop we will quickly go through the process of data entry and work on a few examples together.</p>
 </section>
-<section id="tidy-data" class="level2" data-number="0.2">
-<h2 data-number="0.2" class="anchored" data-anchor-id="tidy-data"><span class="header-section-number">0.2</span> Tidy data</h2>
+<section id="tidy-data" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="tidy-data"><span class="header-section-number">3</span> Tidy data</h2>
 <ul>
 <li>The tidy data concept was popularised by Hadley Wickham in his paper in the Journal of Statistical Software in 2014 – <a href="https://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data</a>.</li>
 <li>Not a new concept – tidy data is basically data in “long” format as opposed to “wide” format. Excel users tend to prefer the wide format but it is not ideal for data analysis.</li>
@@ -324,23 +330,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="first-column" class="quarto-layout-cell" style="flex-basis: 44.4%;justify-content: center;">
 <div class="cell">
 <div class="cell-output-display">
-<div id="fajtlvksqn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#fajtlvksqn table {
+<div id="qrcaysxygj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qrcaysxygj table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#fajtlvksqn thead, #fajtlvksqn tbody, #fajtlvksqn tfoot, #fajtlvksqn tr, #fajtlvksqn td, #fajtlvksqn th {
+#qrcaysxygj thead, #qrcaysxygj tbody, #qrcaysxygj tfoot, #qrcaysxygj tr, #qrcaysxygj td, #qrcaysxygj th {
   border-style: none;
 }
 
-#fajtlvksqn p {
+#qrcaysxygj p {
   margin: 0;
   padding: 0;
 }
 
-#fajtlvksqn .gt_table {
+#qrcaysxygj .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -366,12 +372,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D5D5D5;
 }
 
-#fajtlvksqn .gt_caption {
+#qrcaysxygj .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#fajtlvksqn .gt_title {
+#qrcaysxygj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -383,7 +389,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#fajtlvksqn .gt_subtitle {
+#qrcaysxygj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -395,7 +401,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#fajtlvksqn .gt_heading {
+#qrcaysxygj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -407,13 +413,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#fajtlvksqn .gt_bottom_border {
+#qrcaysxygj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D5D5D5;
 }
 
-#fajtlvksqn .gt_col_headings {
+#qrcaysxygj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D5D5D5;
@@ -428,7 +434,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#fajtlvksqn .gt_col_heading {
+#qrcaysxygj .gt_col_heading {
   color: #FFFFFF;
   background-color: #A81600;
   font-size: 100%;
@@ -448,7 +454,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#fajtlvksqn .gt_column_spanner_outer {
+#qrcaysxygj .gt_column_spanner_outer {
   color: #FFFFFF;
   background-color: #A81600;
   font-size: 100%;
@@ -460,15 +466,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#fajtlvksqn .gt_column_spanner_outer:first-child {
+#qrcaysxygj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fajtlvksqn .gt_column_spanner_outer:last-child {
+#qrcaysxygj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fajtlvksqn .gt_column_spanner {
+#qrcaysxygj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D5D5D5;
@@ -480,11 +486,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#fajtlvksqn .gt_spanner_row {
+#qrcaysxygj .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#fajtlvksqn .gt_group_heading {
+#qrcaysxygj .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -510,7 +516,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#fajtlvksqn .gt_empty_group_heading {
+#qrcaysxygj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -525,15 +531,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#fajtlvksqn .gt_from_md > :first-child {
+#qrcaysxygj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fajtlvksqn .gt_from_md > :last-child {
+#qrcaysxygj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fajtlvksqn .gt_row {
+#qrcaysxygj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -552,7 +558,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#fajtlvksqn .gt_stub {
+#qrcaysxygj .gt_stub {
   color: #FFFFFF;
   background-color: #929292;
   font-size: 100%;
@@ -565,7 +571,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fajtlvksqn .gt_stub_row_group {
+#qrcaysxygj .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -579,15 +585,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#fajtlvksqn .gt_row_group_first td {
+#qrcaysxygj .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fajtlvksqn .gt_row_group_first th {
+#qrcaysxygj .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#fajtlvksqn .gt_summary_row {
+#qrcaysxygj .gt_summary_row {
   color: #FFFFFF;
   background-color: #5F5F5F;
   text-transform: inherit;
@@ -597,16 +603,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fajtlvksqn .gt_first_summary_row {
+#qrcaysxygj .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D5D5D5;
 }
 
-#fajtlvksqn .gt_first_summary_row.thick {
+#qrcaysxygj .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fajtlvksqn .gt_last_summary_row {
+#qrcaysxygj .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -616,7 +622,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D5D5D5;
 }
 
-#fajtlvksqn .gt_grand_summary_row {
+#qrcaysxygj .gt_grand_summary_row {
   color: #FFFFFF;
   background-color: #929292;
   text-transform: inherit;
@@ -626,7 +632,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fajtlvksqn .gt_first_grand_summary_row {
+#qrcaysxygj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -636,7 +642,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D5D5D5;
 }
 
-#fajtlvksqn .gt_last_grand_summary_row_top {
+#qrcaysxygj .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -646,11 +652,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D5D5D5;
 }
 
-#fajtlvksqn .gt_striped {
+#qrcaysxygj .gt_striped {
   background-color: #F4F4F4;
 }
 
-#fajtlvksqn .gt_table_body {
+#qrcaysxygj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D5D5D5;
@@ -659,7 +665,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D5D5D5;
 }
 
-#fajtlvksqn .gt_footnotes {
+#qrcaysxygj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -673,7 +679,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#fajtlvksqn .gt_footnote {
+#qrcaysxygj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -682,7 +688,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fajtlvksqn .gt_sourcenotes {
+#qrcaysxygj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -696,7 +702,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#fajtlvksqn .gt_sourcenote {
+#qrcaysxygj .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -704,72 +710,72 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fajtlvksqn .gt_left {
+#qrcaysxygj .gt_left {
   text-align: left;
 }
 
-#fajtlvksqn .gt_center {
+#qrcaysxygj .gt_center {
   text-align: center;
 }
 
-#fajtlvksqn .gt_right {
+#qrcaysxygj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fajtlvksqn .gt_font_normal {
+#qrcaysxygj .gt_font_normal {
   font-weight: normal;
 }
 
-#fajtlvksqn .gt_font_bold {
+#qrcaysxygj .gt_font_bold {
   font-weight: bold;
 }
 
-#fajtlvksqn .gt_font_italic {
+#qrcaysxygj .gt_font_italic {
   font-style: italic;
 }
 
-#fajtlvksqn .gt_super {
+#qrcaysxygj .gt_super {
   font-size: 65%;
 }
 
-#fajtlvksqn .gt_footnote_marks {
+#qrcaysxygj .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#fajtlvksqn .gt_asterisk {
+#qrcaysxygj .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fajtlvksqn .gt_indent_1 {
+#qrcaysxygj .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fajtlvksqn .gt_indent_2 {
+#qrcaysxygj .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fajtlvksqn .gt_indent_3 {
+#qrcaysxygj .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fajtlvksqn .gt_indent_4 {
+#qrcaysxygj .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fajtlvksqn .gt_indent_5 {
+#qrcaysxygj .gt_indent_5 {
   text-indent: 25px;
 }
 
-#fajtlvksqn .katex-display {
+#qrcaysxygj .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#fajtlvksqn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#qrcaysxygj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -827,23 +833,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="second-column" class="quarto-layout-cell" style="flex-basis: 44.4%;justify-content: center;">
 <div class="cell">
 <div class="cell-output-display">
-<div id="yyrpeamxnr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#yyrpeamxnr table {
+<div id="jrgdxvbzip" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jrgdxvbzip table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#yyrpeamxnr thead, #yyrpeamxnr tbody, #yyrpeamxnr tfoot, #yyrpeamxnr tr, #yyrpeamxnr td, #yyrpeamxnr th {
+#jrgdxvbzip thead, #jrgdxvbzip tbody, #jrgdxvbzip tfoot, #jrgdxvbzip tr, #jrgdxvbzip td, #jrgdxvbzip th {
   border-style: none;
 }
 
-#yyrpeamxnr p {
+#jrgdxvbzip p {
   margin: 0;
   padding: 0;
 }
 
-#yyrpeamxnr .gt_table {
+#jrgdxvbzip .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -869,12 +875,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D5D5D5;
 }
 
-#yyrpeamxnr .gt_caption {
+#jrgdxvbzip .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#yyrpeamxnr .gt_title {
+#jrgdxvbzip .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -886,7 +892,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#yyrpeamxnr .gt_subtitle {
+#jrgdxvbzip .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -898,7 +904,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#yyrpeamxnr .gt_heading {
+#jrgdxvbzip .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -910,13 +916,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#yyrpeamxnr .gt_bottom_border {
+#jrgdxvbzip .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D5D5D5;
 }
 
-#yyrpeamxnr .gt_col_headings {
+#jrgdxvbzip .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D5D5D5;
@@ -931,7 +937,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#yyrpeamxnr .gt_col_heading {
+#jrgdxvbzip .gt_col_heading {
   color: #FFFFFF;
   background-color: #A81600;
   font-size: 100%;
@@ -951,7 +957,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#yyrpeamxnr .gt_column_spanner_outer {
+#jrgdxvbzip .gt_column_spanner_outer {
   color: #FFFFFF;
   background-color: #A81600;
   font-size: 100%;
@@ -963,15 +969,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#yyrpeamxnr .gt_column_spanner_outer:first-child {
+#jrgdxvbzip .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yyrpeamxnr .gt_column_spanner_outer:last-child {
+#jrgdxvbzip .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yyrpeamxnr .gt_column_spanner {
+#jrgdxvbzip .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D5D5D5;
@@ -983,11 +989,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#yyrpeamxnr .gt_spanner_row {
+#jrgdxvbzip .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#yyrpeamxnr .gt_group_heading {
+#jrgdxvbzip .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1013,7 +1019,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#yyrpeamxnr .gt_empty_group_heading {
+#jrgdxvbzip .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1028,15 +1034,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#yyrpeamxnr .gt_from_md > :first-child {
+#jrgdxvbzip .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yyrpeamxnr .gt_from_md > :last-child {
+#jrgdxvbzip .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yyrpeamxnr .gt_row {
+#jrgdxvbzip .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1055,7 +1061,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#yyrpeamxnr .gt_stub {
+#jrgdxvbzip .gt_stub {
   color: #FFFFFF;
   background-color: #929292;
   font-size: 100%;
@@ -1068,7 +1074,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#yyrpeamxnr .gt_stub_row_group {
+#jrgdxvbzip .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1082,15 +1088,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#yyrpeamxnr .gt_row_group_first td {
+#jrgdxvbzip .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#yyrpeamxnr .gt_row_group_first th {
+#jrgdxvbzip .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#yyrpeamxnr .gt_summary_row {
+#jrgdxvbzip .gt_summary_row {
   color: #FFFFFF;
   background-color: #5F5F5F;
   text-transform: inherit;
@@ -1100,16 +1106,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#yyrpeamxnr .gt_first_summary_row {
+#jrgdxvbzip .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D5D5D5;
 }
 
-#yyrpeamxnr .gt_first_summary_row.thick {
+#jrgdxvbzip .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#yyrpeamxnr .gt_last_summary_row {
+#jrgdxvbzip .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1119,7 +1125,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D5D5D5;
 }
 
-#yyrpeamxnr .gt_grand_summary_row {
+#jrgdxvbzip .gt_grand_summary_row {
   color: #FFFFFF;
   background-color: #929292;
   text-transform: inherit;
@@ -1129,7 +1135,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#yyrpeamxnr .gt_first_grand_summary_row {
+#jrgdxvbzip .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1139,7 +1145,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D5D5D5;
 }
 
-#yyrpeamxnr .gt_last_grand_summary_row_top {
+#jrgdxvbzip .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1149,11 +1155,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D5D5D5;
 }
 
-#yyrpeamxnr .gt_striped {
+#jrgdxvbzip .gt_striped {
   background-color: #F4F4F4;
 }
 
-#yyrpeamxnr .gt_table_body {
+#jrgdxvbzip .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D5D5D5;
@@ -1162,7 +1168,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D5D5D5;
 }
 
-#yyrpeamxnr .gt_footnotes {
+#jrgdxvbzip .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1176,7 +1182,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#yyrpeamxnr .gt_footnote {
+#jrgdxvbzip .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1185,7 +1191,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#yyrpeamxnr .gt_sourcenotes {
+#jrgdxvbzip .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1199,7 +1205,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#yyrpeamxnr .gt_sourcenote {
+#jrgdxvbzip .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1207,72 +1213,72 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#yyrpeamxnr .gt_left {
+#jrgdxvbzip .gt_left {
   text-align: left;
 }
 
-#yyrpeamxnr .gt_center {
+#jrgdxvbzip .gt_center {
   text-align: center;
 }
 
-#yyrpeamxnr .gt_right {
+#jrgdxvbzip .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yyrpeamxnr .gt_font_normal {
+#jrgdxvbzip .gt_font_normal {
   font-weight: normal;
 }
 
-#yyrpeamxnr .gt_font_bold {
+#jrgdxvbzip .gt_font_bold {
   font-weight: bold;
 }
 
-#yyrpeamxnr .gt_font_italic {
+#jrgdxvbzip .gt_font_italic {
   font-style: italic;
 }
 
-#yyrpeamxnr .gt_super {
+#jrgdxvbzip .gt_super {
   font-size: 65%;
 }
 
-#yyrpeamxnr .gt_footnote_marks {
+#jrgdxvbzip .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#yyrpeamxnr .gt_asterisk {
+#jrgdxvbzip .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#yyrpeamxnr .gt_indent_1 {
+#jrgdxvbzip .gt_indent_1 {
   text-indent: 5px;
 }
 
-#yyrpeamxnr .gt_indent_2 {
+#jrgdxvbzip .gt_indent_2 {
   text-indent: 10px;
 }
 
-#yyrpeamxnr .gt_indent_3 {
+#jrgdxvbzip .gt_indent_3 {
   text-indent: 15px;
 }
 
-#yyrpeamxnr .gt_indent_4 {
+#jrgdxvbzip .gt_indent_4 {
   text-indent: 20px;
 }
 
-#yyrpeamxnr .gt_indent_5 {
+#jrgdxvbzip .gt_indent_5 {
   text-indent: 25px;
 }
 
-#yyrpeamxnr .katex-display {
+#jrgdxvbzip .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#yyrpeamxnr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jrgdxvbzip div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1316,20 +1322,21 @@ Figure&nbsp;1: Data should be in long format (left) where each row is an observa
 </figure>
 </div>
 </section>
-<section id="three-rules" class="level2" data-number="0.3">
-<h2 data-number="0.3" class="anchored" data-anchor-id="three-rules"><span class="header-section-number">0.3</span> Three rules</h2>
+<section id="three-rules" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="three-rules"><span class="header-section-number">4</span> Three rules</h2>
 <ul>
 <li>Each variable must have its own column.</li>
 <li>Each observation must have its own row.</li>
 <li>Each value must have its own cell.</li>
 </ul>
+<p><strong>The above rules means that you need a clear understanding of what a variable, observation and value are.</strong></p>
 </section>
-<section id="how-to-tidy-data" class="level2" data-number="0.4">
-<h2 data-number="0.4" class="anchored" data-anchor-id="how-to-tidy-data"><span class="header-section-number">0.4</span> How to tidy data?</h2>
+<section id="how-to-tidy-data" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="how-to-tidy-data"><span class="header-section-number">5</span> How to tidy data?</h2>
 <p>Ideally, you would want to keep raw data intact and document the steps you took to tidy the data. This is important for reproducibility and transparency. Do it in Excel, R, or any other software you are comfortable with – the key is good record keeping.</p>
 </section>
-<section id="important-considerations" class="level2" data-number="0.5">
-<h2 data-number="0.5" class="anchored" data-anchor-id="important-considerations"><span class="header-section-number">0.5</span> Important considerations</h2>
+<section id="important-considerations" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="important-considerations"><span class="header-section-number">6</span> Important considerations</h2>
 <ol type="1">
 <li>Each column should ony contain one variable, and the variable should not contain mixed data types (e.g.&nbsp;numeric and character).</li>
 <li>When naming columns, avoid spaces and special characters. Use underscores or periods to separate words.</li>
@@ -1337,16 +1344,8 @@ Figure&nbsp;1: Data should be in long format (left) where each row is an observa
 <li>Understand the difference between missing data and zero. It is better to leave cells as blank if the data is missing, or use NA.</li>
 <li>Include brief metadata directly in the data table as a separate column. For extensive metadata, it is recommended to document it in a separate file or worksheet.</li>
 </ol>
-</section>
-<section id="example-data" class="level2" data-number="0.6">
-<h2 data-number="0.6" class="anchored" data-anchor-id="example-data"><span class="header-section-number">0.6</span> Example data</h2>
-<p>Download the following files for this workshop.</p>
-{{&lt; downloadthis assets/lotr.xlsx dname="lotr" label="lotr.xlsx" icon="database-fill-down" type="info" &gt;}}
-{{&lt; downloadthis assets/ferret.xlsx dname="ferret" label="ferret.xlsx" icon="database-fill-down" type="info" &gt;}}
-{{&lt; downloadthis assets/fish_station.csv dname="fish_station" label="fish_station.csv" icon="database-fill-down" type="info" &gt;}}
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
