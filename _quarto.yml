@@ -7,7 +7,7 @@ website:
     # - module01/103-week02.qmd
     - module01/104-week03.qmd
     - module02/202-timeline.qmd
-    - module02/203-projects.qmd
+    # - module02/203-projects.qmd
     - module02/204-report1.qmd
     - module02/205-resources.qmd
     - module03/302-week09.qmd
