@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Introduction to Module 2"
 author: Clare McArthur
 ---
 
@@ -7,10 +7,10 @@ author: Clare McArthur
 
 I think one of the most exciting things about being a biologist is discovering how the world works. One skill that helps me do so, is knowing how to set up an experiment to test my ideas about the world. You may need to overcome that initial learning hump, but if you persist, you will have a skill at your fingertips that will stand you in really good stead for the future. It doesn’t matter whether you intend to go on in research or not - knowing what makes good research and good evidence is important in so many walks of life. 
 
-My message is: whether you are doing this unit just because you have to, or because you are interested – take heart! I never did anything much more complicated than a t – test even during my PhD. But now I LOVE designing experiments and grappling with data. It can be frustrating at first, especially if you are time-poor and just want to get the job done. It can be infuriating. It can also be fun (yes – fun!). Most of all it’s incredibly satisfying and extraordinarily useful. 
+My message is: whether you are doing this unit just because you have to, or because you are interested – take heart! I never did anything much more complicated than a *t*-test even during my PhD. But now I LOVE designing experiments and grappling with data. It can be frustrating at first, especially if you are time-poor and just want to get the job done. It can be infuriating. It can also be fun (yes – fun!). Most of all it’s incredibly satisfying and extraordinarily useful. 
 So, persist, try your best, and ask for help if you need it.
 
-**Please remember we want you to learn this stuff.**
+[**Please remember we want you to learn this stuff.**]{style="color: firebrick; font-size: 125%;"}
 
 No question you ask is EVER silly! 
 So ask for help any time. 
@@ -22,9 +22,10 @@ We don’t judge you by the questions you ask, but by what you end up learning.
 ## What this module is about
 In Module 1, you have learnt the principles for converting a biological observation or question of interest into practice. Here, you will build on this skill. You will sign up to a research project and go through the process of converting a biological idea into a research experiment, which you and your group will then do from start to finish, to answer it.
 
-**READ THE LAB MANUAL BEFORE EACH PRAC.**
+Two important things to note:
 
-**COME/LISTEN TO EACH LECTURE on the day we give them & before the prac.**
+- **Read the Lab Manual before each practical (check the timeline)**
+- **Come/listen to each lecture on the day we give them, or before your practical**
 
 You will need to use the lecture information immediately in these pracs. You will use your knowledge and experience to design your project, collect the data, and analyse and interpret it appropriately. 
 
@@ -33,8 +34,8 @@ You will need to use the lecture information immediately in these pracs. You wil
 
 This assessment requires two separate submissions in Canvas:
 
-1. **Report 1 Group Data**: The Excel file (spreadsheets) containing your Group’s data. This needs to be submitted by one group member on behalf of your group.
-2. **Report 1**: Your Individual Report on your experiment, in the format of a short scientific article (worth 25% of the total unit mark).
+1. **Report 1 group data [0%]**: The Excel file (spreadsheets) containing your Group’s data. This needs to be submitted by one group member on behalf of your group. **We will not mark your submission if the data is not provided.**
+2. **Report 1 [25%]**: Your Individual Report on your experiment, in the format of a short scientific article.
 
 ## How you will get feedback
 
