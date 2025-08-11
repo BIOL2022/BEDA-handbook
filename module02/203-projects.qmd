@@ -4,106 +4,126 @@ number-sections: false
 toc-depth: 4
 ---
 
-::: callout-important
+<style>
+.project-section {
+  border: 1px solid #d54e00ff;
+  border-radius: 2px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  background: #f9f9f9;
+}
+</style>
+
+
+::: {.callout-important}
 **FOR ALL PROJECTS – KEEP YOUR EXPERIMENT SIMPLE.**
-
- - You should be able to design an experiment that could be analysed using one of the following: 
-   - a paired t-test, 
-   - an independent t-test, 
-   - 1-way ANOVA, 
-   - 2-way ANOVA, 
-   - correlation, 
-   - linear regression, 
-   - Chi-Square analysis or 
-   - logistic regression. 
-- General linear models (GLMs, which cover a lot of the analyses above anyway) and generalised linear mixed models (GLMM) are *fine* **PROVIDED you do them correctly**. 
-- You will be rewarded for doing a simple appropriate analysis correctly. 
-- **You will be penalised for doing a complicated analysis wrong.**
-
 :::
 
------
+::: {.callout-note}
+- You should be able to design an experiment that could be analysed using one of the following: a paired t-test, an independent t-test, 1-way ANOVA, 2-way ANOVA, correlation, linear regression, Chi-Square analysis or logistic regression. 
+- GLM (which covers a lot of the analyses above anyway) and GLMM are fine PROVIDED you do them correctly
+- You will be rewarded for doing a simple appropriate analysis correctly
+- **You will be penalised for doing a complicated analysis wrong**
+:::
 
-#### Project 1 – Plant-herbivore interactions: Does previous damage to tomato plants affect their vulnerability to subsequent herbivory? Does the amount of previous damage matter?
+::: {.project-section}
+#### **🌱🐌🍅 Project 1** – Plant-herbivore interactions: Does previous damage to tomato plants affect their vulnerability to subsequent herbivory? Does the amount of previous damage matter?
+<br>
 
-**Background**: Many plants have plant secondary metabolites (PSMs), which often play a role in defence against herbivores. In some plant species, PSMs can be induced (levels increase) after damage from herbivores chewing on leaves. This change can take place within a day, affecting subsequent leaf damage by herbivores, and result in less subsequent damage. Is the evidence consistent with this idea in tomatoes?
+**Background**: Many plants have plant secondary metabolites (PSMs), which often play a role in defence against herbivores. In some plant species, PSMs can be induced (levels increase) after damage from herbivores chewing on leaves. This change can take place within a day, affecting subsequent leaf damage by herbivores, and result in less subsequent damage. Is the evidence consistent with this idea?
+
+**Plants and herbivores**: this project will likely use tomato seedlings and common garden snails. Your group may need to collect at least some snails yourself.
 
 **Variation**: If you want to answer a more complicated question, you could ask whether the amount of initial damage (a little versus lots?) affects the outcome.
 
 ::: callout-note
 You do not need to measure PSMs. Rather, they provide a potential mechanism to explain any difference in subsequent herbivory.
 :::
+:::
 
------
 
-#### Project 2 – Plant-herbivore interactions: Does previous damage affect vulnerability of vegetables to subsequent herbivory? Does it depend on plant species?
+::: {.project-section}
+#### **🥒🐌🍅 Project 2** – Plant-herbivore interactions: Does previous damage affect vulnerability of vegetables to subsequent herbivory? Does it depend on plant species?
+<br>
 
 **Background**: Many plants have plant secondary metabolites (PSMs), which often play a role in defence against herbivores. In some plant species, PSMs can be induced (levels increase) after damage from herbivores chewing on leaves. This change can take place within a day, affecting subsequent leaf damage by herbivores, and result in less subsequent damage. Is the evidence consistent with this idea? Does it depend on plant species? 
+
+**Plants and herbivores**: this project will likely use tomato and cucumber seedlings and common garden snails. Your group may need to collect at least some snails yourself.
 
 ::: callout-note
 You do not need to measure PSMs. Rather, they provide a potential mechanism to explain any difference in subsequent herbivory.
 :::
+:::
 
------
-
-#### Project 3 & 9 – Foraging strategies in relation to food type: Do ants prefer some food over others?
+::: {.project-section}
+#### **🍣🐜🍯 Project 3 & 9** – Foraging strategies in relation to food type: Do ants prefer some food over others?
+<br>
 
 **Background**: Ants spend a lot of their time searching for food, but the food they find varies in its nutritional and energetic value. Do they just forage for any foods or do they show preferences? Honey and tuna, for example, are very different foods. Do ants care? Honey is a high-carbohydrate low-protein food, while tuna is high protein, low carbs; although there are lots of other differences between these food as well. 
 
 Scout ants go out and look for food, then return to the nest and recruit others to help them. We can understand something about the requirements ants have for different foods by looking at how quickly and/or how many ants are recruited to a food source once it has been located by the scout ant. 
+:::
 
------
-
-#### Project 4 & 10 – Foraging strategies in relation to costs and benefits: Do ants seek food that is easier to access?  
+::: {.project-section}
+#### **🍯🚧🐜 Project 4 & 10** – Foraging strategies in relation to costs and benefits: Do ants seek food that is easier to access?  
+<br>
 
 **Background**: Ants spend a lot of time searching for food, but the effort needed to harvest a given food could affect how they value it. For example, food that is difficult or slow to access (e.g. surrounded by complicated 3-D local habitat or with narrow access points slowing ant traffic) may be less preferred than food that is easy to access.
 
 **Variation**: IF you want to answer a more complicated question, you could ask whether ants balance the effort of getting food against the value of that food. Does food that is hard to access need to be higher in value (e.g. more concentrated) than food that is easy and less energetically costly to access?
 
 Scout ants go out and look for food, then return to the nest and recruit others to help them. We can understand something about the requirements ants have for different foods by looking at how quickly and/or how many ants are recruited to a food source once it has been located by the scout ant. 
-
------
-
-#### Project 5 – Germination of native grass seeds in relation to water availability
-
-**Background**: Germination of native plants is triggered by a range of factors in Australia. Some plants need heat initially, others simply need water. Microlaena stipoides (weeping grass) is a native grass that is also used for turf and feed for livestock. It occurs along much of eastern mainland Australia, Tasmania and even in SW Western Australia. It is eaten by our marsupial herbivores, e.g. wombats. Its seeds germinate in a range of conditions within 1 to 2 weeks (>10 &deg;C, faster when warmer), do not need fire but do need moisture. How often it rains may affect whether seeds germinate, in turn affecting recruitment and regeneration. Understanding the relationship between rain (watering) frequency and probability of seeds germinating helps us understand how climate influences the dynamics of our grasslands and use of native plants in agriculture. 
-
-::: callout-note
-In your main trial, if you get no germination after 10 days, your group can choose to switch to wheat (Project 6) to ask the same question, because wheat germinates quickly. 
 :::
 
------
+::: {.project-section}
+#### **🌧️🌾 Project 5** – – Germination and growth of wheat in relation to water availability 
+<br>
 
-#### Project 6 – Germination and growth of wheat in relation to water availability 
+**Background**: Growing crops such as wheat is crucial for food security. In Australia, our rainfall is highly variable, and this can be daunting for farmers wondering whether to sow seed and whether it will germinate if they do. White wheat varieties in Australia can germinate under a range of temperatures (12 to 25oC), but whether the initial rainfall is light (e.g. shower) versus heavy (e.g. soaking) may affect whether seeds germinate and/or seedlings grow and/or survive. 
 
-**Background**: Growing crops such as wheat is crucial for food security. In Australia, our rainfall is highly variable, and this can be daunting for farmers wondering whether to sow seed and whether it will germinate if they do. White wheat varieties in Australia can germinate under a range of temperatures (12 to 25 &deg;C), but whether the initial rainfall is light (e.g. shower) versus heavy (e.g. soaking) may affect whether seeds germinate and/or seedlings grow and/or survive. Understanding these relationships is one step in understanding the conditions required to help ensure our food security. 
+Understanding these relationships is one step in understanding the conditions required to help ensure our food security. 
+:::
 
------
+::: {.project-section}
+#### **🪻🥬 Project 6** – Germination of native grass seeds OR a horticultural plant (flower or veggie) in relation to water availability
+<br>
 
-#### Project 7 & 11 – Are birds active at different times of day? 
+**Background**: Germination of **native plants** is triggered by a range of factors in Australia. Some plants need heat initially, others simply need water. If we can, we will provide you with seed from a native plant that germinates quickly under the right conditions. How often it rains may affect whether seeds germinate, in turn affecting recruitment and regeneration. Understanding the relationship between rain (watering) frequency and probability of seeds germinating helps us understand how climate influences the dynamics of our grasslands and use of native plants in agriculture.
+
+Germination of **horticultural plants** is crucial for the cut flower or veggie industries; no germination, no plants, no business! How often it rains or how often seeds are watered may affect whether or how quickly and/or how many seeds germinate – but you need to find this out. 
+
+::: {.callout-note}
+In your main trial, if you get no germination after 7 days, your group can choose to switch to wheat (Project 5) to ask the same question, because wheat germinates quickly. 
+:::
+:::
+
+::: {.project-section}
+#### **🐦🌅 Project 7 & 11** – Are birds active at different times of day? 
+<br>
 
 **Background**: Birds may be active at different times of day for a variety of reasons. As a first step in understanding bird abundance and diversity we need to be able to measure it and know whether when we measure it makes a difference. If you stand in the same spot and count birds, does the outcome depend on when you did it? Are there other factors you need to control or at least take into account? 
 
 ::: callout-note
 Animal Ethics conditions apply (see below).
 :::
-
------
-
-#### Project 8 – Use of urban water bodies by birds: Do characteristics of urban water bodies influence which birds use them?
-
-- **Background**: Bird diversity within cities is affected by many factors, including availability of food, sites for nesting and shelter from predators. Water bodies, such as ponds and lakes, in parks and gardens can attract native (and introduced) birds. The Sydney Council, for example, has upgraded and revegetated the ponds in Sydney Park, just south of Sydney Uni, to encourage water birds. To maximise bird diversity, as well as simply maximise bird numbers, it is important to understand the relationship between characteristics of different water bodies and the diversity of birds they support. 
-
-::: callout-note
-Animal Ethics conditions apply (see below).
 :::
 
------
+::: {.project-section}
+#### **🐦🌊💧 Project 8** – Use of urban water bodies by birds: Do characteristics of urban water bodies influence which birds use them?
+<br>
+
+**Background**: Bird diversity within cities is affected by many factors, including availability of food, sites for nesting and shelter from predators. Water bodies, such as ponds and lakes, in parks and gardens can attract native (and introduced) birds. The Sydney Council, for example, has upgraded and revegetated the ponds in Sydney Park, just south of Sydney Uni, to encourage water birds. To maximise bird diversity, as well as simply maximise bird numbers, it is important to understand the relationship between characteristics of different water bodies and the diversity of birds they support. 
+
+::: callout-note
+**Animal Ethics conditions apply (see below).**
+:::
+:::
 
 ## Animal Ethics requirements for Projects on birds
 
 If you sign up to these projects, you must follow the animal ethics requirements as approved by the University of Sydney Animal Ethics Committee: 
-Project “Ecology teaching – bird surveys”. Project Number: 2022/2148.
+
+**Project “Ecology teaching – bird surveys”. Project Number: 2022/2148.**
 
 You may collect data for up to 10 visits per site over a 2 to 4 week period. 
 For the bird survey, you may observe birds, count them and identify each to species if you can, using binoculars where needed. You may observe birds at a site for up to ~ one hour per visit, but must not interfere with nor handle the birds. 
@@ -114,7 +134,7 @@ Depending on your project, you may quantify other data, such as vegetation asses
 
 Observers will remain far enough from birds that the birds are not visibly affected by them (i.e. do not alter their behaviour, either by moving away or by altering what they are doing). This avoids any potential impact of the observer on time or energy budgets of the birds (as described in Bateman et al. 2011). 
 
-Reference: Bateman, P. W., and P. A. Fleming. 2011. Who are you looking at? Hadeda ibises use direction of gaze, head orientation and approach speed in their risk assessment of a potential predator. Journal of Zoology 285:316-323.
+**Reference:** Bateman, P. W., and P. A. Fleming. 2011. Who are you looking at? Hadeda ibises use direction of gaze, head orientation and approach speed in their risk assessment of a potential predator. Journal of Zoology 285:316-323.
 
 ### Conditions of bird project approval:
 
