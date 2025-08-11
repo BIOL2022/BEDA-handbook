@@ -4,7 +4,7 @@ project:
 website:
   title: "BIOL2022"
   drafts:
-    - module01/103-week02.qmd
+    # - module01/103-week02.qmd
     - module01/104-week03.qmd
     - module02/202-timeline.qmd
     - module02/203-projects.qmd
