@@ -7,13 +7,13 @@ number-sections: false
 
 ## Intro to the practicals
 
-Welcome to the first workshop of BEDA. The workshops are designed to help you learn specific skills, understand the practicals and to provide you with an opportunity to ask questions. **Workshops are run only in Module 1 (Januar).**
+Welcome to the first workshop of BEDA. The workshops are designed to help you learn specific skills, understand the practicals, and provide you with an opportunity to ask questions. **Workshops are run only in Module 1 (Januar).**
 
-As this is the first workshop we will start with a brief introduction to the practicals and the software we will be using. 
+As this is the first workshop, we will begin with a brief introduction to the practicals and the software we will be using.
 
 ## Survey
 
-Please fill out a survey before you start the workshop. This will help us understand your background and tailor the practicals to your needs. *Note: the survey needs to be published before you can access it, so please wait for us to do so during the practical.*
+Please complete a survey before you start the workshop. This will help us understand your background and tailor the practicals to your needs. *Note: the survey must be published before you can access it, so please wait for us to do so during the practical.*
 
 [Tue 2-4](https://docs.google.com/forms/d/e/1FAIpQLSf9eckurfxTqmPE5Pajm0s9biDq7HBDpPhCFaXJ1bqpfSeAbQ/viewform?usp=header) | 
 [Wed 2-4](https://docs.google.com/forms/d/e/1FAIpQLSdkIV_MjseIoopyAFudXyKPYIMGPYzXxWpiiVkAOZJV_jIvzw/viewform?usp=header) | 
@@ -28,40 +28,40 @@ Please fill out a survey before you start the workshop. This will help us unders
 
 - Download R [here](https://cran.rstudio.com/){target="_blank"}.
 - Download RStudio Desktop from [here](https://posit.co/download/rstudio-desktop/){target="_blank"}.
-- If necessary, you can sign up to RStudio Cloud [here](https://posit.cloud/){target="_blank"}. This applies to those of you who have trouble installing R and RStudio on your computer, and somehow still prefer this to the other software options.
+- If necessary, you may sign up to RStudio Cloud [here](https://posit.cloud/){target="_blank"}. This applies to those who have trouble installing R and RStudio on their computer, and still prefer this to the other software options.
 
-You must have both installed on your computer. If you already have them installed, please make sure they are up-to-date. Once installed, **make sure that you run R via RStudio Desktop** and *not* the base R GUI.
+You must have both installed on your computer. If you already have them installed, please ensure they are up-to-date. Once installed, **ensure that you run R via RStudio Desktop**, and *not* the base R GUI.
 
 ### Jamovi and JASP
 
 - Download Jamovi from [here](https://www.jamovi.org/download.html). 
-- Unless you have reason to **not** use Jamovi, download JASP from [here](https://jasp-stats.org/download/).
- - For JASP, refer to [JASP Materials](https://jasp-stats.org/jasp-materials/#manuals) for documentation and more. JASP has an interface that is almost identical to Jamovi, so we will not cover it in detail here.
+- Unless you have a reason to **not** use Jamovi, download JASP from [here](https://jasp-stats.org/download/).
+- For JASP, refer to [JASP Materials](https://jasp-stats.org/jasp-materials/#manuals) for documentation and more. JASP has an interface that is almost identical to Jamovi, so it will not be covered in detail here.
 
-For Jamovi, the **current** branch is recommended. Remember -- if you are on a Mac with Apple Silicon, download the arm64 version for a slightly better performance.
+For Jamovi, the **current** branch is recommended. Remember — if you are on a Mac with Apple Silicon, download the arm64 version for slightly better performance.
 
 
 ### SPSS
 
 - SPSS is only available on University computers. Check your lab computers for availability.
-- Alternatively, you can use the University's [Citrix Workspace](https://uniconnect.cloud.com/Citrix/StoreWeb/#/login){target="_blank"} to access SPSS. Note that using Citrix is not a common solution for statistical software. Your demonstrators are *not* trained in Citrix so they will probably need to troubleshoot with you to get it working.
+- Alternatively, you can use the University's [Citrix Workspace](https://uniconnect.cloud.com/Citrix/StoreWeb/#/login){target="_blank"} to access SPSS. Note that using Citrix is not a common solution for statistical software. Your demonstrators are *not* trained in Citrix, so they will probably need to troubleshoot with you to get it working.
 
-While I don't use SPSS myself, we do provide support for it in BEDA. It is somewhat of a mixed bag right now as it has R integration, is point-and-click, and also has a syntax editor for scripting analyses. If you'd rather not use Citrix, [PSPP](https://www.gnu.org/software/pspp/){target="_blank"} is an excellent free alternative to SPSS. It has a very similar interface and syntax, and because it is free software, it will not expire or require separate licenses for advanced features.
+While I do not use SPSS myself, we do provide support for it in BEDA. It is somewhat of a mixed bag at present, as it has R integration, is point-and-click, and also has a syntax editor for scripting analyses. If you would prefer not to use Citrix, [PSPP](https://www.gnu.org/software/pspp/){target="_blank"} is an excellent free alternative to SPSS. It has a very similar interface and syntax, and because it is free software, it will not expire or require separate licences for advanced features.
 
 ### PRIMER v7
 
 - This software is only used in Module 3 when we cover multivariate analysis. 
 - Similar to SPSS, PRIMER is only available on University computers.
-- There is no current, free alternative to PRIMER v7 unless you can use R fluently. You must use the University computers to access it.
+- There is currently no free alternative to PRIMER v7 unless you can use R fluently. You must use the University computers to access it.
 - **When we get to Module 3, we will provide more information on how to access it.**
 
 ## GitHub
 
-GitHub is a platform for version control and collaboration. It is widely used in software development, but it is also increasingly used in research to manage code, data, and documentation. In BEDA, we use GitHub to share resources, track changes, and collaborate on statistical projects and resources on open-source and creative commons licenses.
+GitHub is a platform for version control and collaboration. It is widely used in software development, but it is also increasingly used in research to manage code, data, and documentation. In BEDA, we use GitHub to share resources, track changes, and collaborate on statistical projects and resources under open-source and Creative Commons licences.
 
-Please follow the following GitHub organisations, if possible. I am trying to build a community and convince the powers that be that this is a good idea, and the metrics will help. You will need to sign up for a GitHub account (if you don't have one already).
+Please follow the GitHub organisations below, if possible. I am trying to build a community and convince the powers that be that this is a good idea, and the metrics will help. You will need to sign up for a GitHub account if you do not have one already.
 
 -   [USYD SOLES Open Educational Resources](https://github.com/usyd-soles-edu)
 -   [BIOL2022](https://github.com/BIOL2022)
 
-By joining GitHub you will also be able to apply for and receive a free student license for [GitHub Copilot](https://github.com/features/copilot). **You also get access to [chat](https://github.com/copilot).**
+By joining GitHub, you will also be able to apply for and receive a free student licence for [GitHub Copilot](https://github.com/features/copilot). **You also get access to [chat](https://github.com/copilot).**
