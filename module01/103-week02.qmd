@@ -23,7 +23,7 @@ By the end of this practical, you should be able to:
 
 ### What to submit
 1. **A (simple) study design** based on your observations of the photos provided, documented on Google Docs. This will be sighted by a Demonstrator during the practical before you can proceed to the next exercise.
-2. **Data in the form of a tidy spreadsheet** -- your collected data will need to be submitted to Canvas. This submission is not a formal assessment (it is not graded), but it is essential for the next practical, so please make sure you submit it.
+2. **Data in the form of a tidy spreadsheet** -- your collected data will need to be submitted to Google Drive. This submission is not a formal assessment (it is not graded), but it is essential for the next practical, so please make sure you submit it.
 
 ## Workshop
 The Week 2 workshop will go through **Tidy data principles**. Tidy data is a way of structuring your data so that it is easy to work with and analyse. It is a key principle in data analysis and will help you avoid common pitfalls when working with data. [Go to workshop 02](w02-tidy-data.qmd).
@@ -188,15 +188,13 @@ Note: tidy data will reduce the amount of time you spend cleaning your data duri
 
 ## Submit your data
 
-Demonstrators will provide you with a USB drive to submit your data. Please make sure that your data are saved in a format that can be opened by Excel or Google Sheets. **Your group will be using this data next week so make sure that we have it!**
+Submit your data to [Google Drive](https://drive.google.com/drive/folders/1rDyHyzgTVWUmPEzNte0F1CgVb3_Eitlk?usp=drive_link) as an Excel file.
+ **Your group will be using this data next week so make sure that we have it!**
 
-::: callout-note
-Alternatively, upload to Google Drive [here](https://drive.google.com/drive/folders/1vt91fyawYoYxv4xAkqFJMG-fFK-au5e7?usp=drive_link). Make sure to rename your file... it's key to data management!
-:::
 
 ## End of practical
 
-Don't forget to submit your data! You should also start to look at the [projects available for Module 2](../module02/203-projects.qmd), as you will sign up for one of them **next week** to work on Report 1.
+Don't forget to submit your data! You should also start to look at the [projects available for Report 1](../module02/203-projects.qmd), as you will sign up for one of them **next week** to work on Report 1.
 
 ## Fancy a challenge?
 
