@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="assets/timeline.css">
 </head>
@@ -328,23 +357,23 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="text-center anchored" data-anchor-id="schedule">Schedule</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="mowcedymql" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#mowcedymql table {
+<div id="xjsdatgepc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xjsdatgepc table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#mowcedymql thead, #mowcedymql tbody, #mowcedymql tfoot, #mowcedymql tr, #mowcedymql td, #mowcedymql th {
+#xjsdatgepc thead, #xjsdatgepc tbody, #xjsdatgepc tfoot, #xjsdatgepc tr, #xjsdatgepc td, #xjsdatgepc th {
   border-style: none;
 }
 
-#mowcedymql p {
+#xjsdatgepc p {
   margin: 0;
   padding: 0;
 }
 
-#mowcedymql .gt_table {
+#xjsdatgepc .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -370,12 +399,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#mowcedymql .gt_caption {
+#xjsdatgepc .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#mowcedymql .gt_title {
+#xjsdatgepc .gt_title {
   color: #333333;
   font-size: 24px;
   font-weight: initial;
@@ -387,7 +416,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#mowcedymql .gt_subtitle {
+#xjsdatgepc .gt_subtitle {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -399,7 +428,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#mowcedymql .gt_heading {
+#xjsdatgepc .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -411,13 +440,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#mowcedymql .gt_bottom_border {
+#xjsdatgepc .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#mowcedymql .gt_col_headings {
+#xjsdatgepc .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -432,7 +461,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#mowcedymql .gt_col_heading {
+#xjsdatgepc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 15px;
@@ -452,7 +481,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#mowcedymql .gt_column_spanner_outer {
+#xjsdatgepc .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 15px;
@@ -464,15 +493,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#mowcedymql .gt_column_spanner_outer:first-child {
+#xjsdatgepc .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#mowcedymql .gt_column_spanner_outer:last-child {
+#xjsdatgepc .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#mowcedymql .gt_column_spanner {
+#xjsdatgepc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -484,11 +513,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#mowcedymql .gt_spanner_row {
+#xjsdatgepc .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#mowcedymql .gt_group_heading {
+#xjsdatgepc .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -514,7 +543,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#mowcedymql .gt_empty_group_heading {
+#xjsdatgepc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #F0FFFF;
@@ -529,15 +558,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#mowcedymql .gt_from_md > :first-child {
+#xjsdatgepc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#mowcedymql .gt_from_md > :last-child {
+#xjsdatgepc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#mowcedymql .gt_row {
+#xjsdatgepc .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -556,7 +585,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#mowcedymql .gt_stub {
+#xjsdatgepc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -569,7 +598,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#mowcedymql .gt_stub_row_group {
+#xjsdatgepc .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -583,15 +612,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#mowcedymql .gt_row_group_first td {
+#xjsdatgepc .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#mowcedymql .gt_row_group_first th {
+#xjsdatgepc .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#mowcedymql .gt_summary_row {
+#xjsdatgepc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -601,16 +630,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#mowcedymql .gt_first_summary_row {
+#xjsdatgepc .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#mowcedymql .gt_first_summary_row.thick {
+#xjsdatgepc .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#mowcedymql .gt_last_summary_row {
+#xjsdatgepc .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -620,7 +649,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#mowcedymql .gt_grand_summary_row {
+#xjsdatgepc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -630,7 +659,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#mowcedymql .gt_first_grand_summary_row {
+#xjsdatgepc .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -640,7 +669,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#mowcedymql .gt_last_grand_summary_row_top {
+#xjsdatgepc .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -650,11 +679,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#mowcedymql .gt_striped {
+#xjsdatgepc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#mowcedymql .gt_table_body {
+#xjsdatgepc .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -663,7 +692,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#mowcedymql .gt_footnotes {
+#xjsdatgepc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -677,7 +706,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#mowcedymql .gt_footnote {
+#xjsdatgepc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -686,7 +715,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#mowcedymql .gt_sourcenotes {
+#xjsdatgepc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -700,7 +729,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#mowcedymql .gt_sourcenote {
+#xjsdatgepc .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -708,72 +737,72 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#mowcedymql .gt_left {
+#xjsdatgepc .gt_left {
   text-align: left;
 }
 
-#mowcedymql .gt_center {
+#xjsdatgepc .gt_center {
   text-align: center;
 }
 
-#mowcedymql .gt_right {
+#xjsdatgepc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mowcedymql .gt_font_normal {
+#xjsdatgepc .gt_font_normal {
   font-weight: normal;
 }
 
-#mowcedymql .gt_font_bold {
+#xjsdatgepc .gt_font_bold {
   font-weight: bold;
 }
 
-#mowcedymql .gt_font_italic {
+#xjsdatgepc .gt_font_italic {
   font-style: italic;
 }
 
-#mowcedymql .gt_super {
+#xjsdatgepc .gt_super {
   font-size: 65%;
 }
 
-#mowcedymql .gt_footnote_marks {
+#xjsdatgepc .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#mowcedymql .gt_asterisk {
+#xjsdatgepc .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#mowcedymql .gt_indent_1 {
+#xjsdatgepc .gt_indent_1 {
   text-indent: 5px;
 }
 
-#mowcedymql .gt_indent_2 {
+#xjsdatgepc .gt_indent_2 {
   text-indent: 10px;
 }
 
-#mowcedymql .gt_indent_3 {
+#xjsdatgepc .gt_indent_3 {
   text-indent: 15px;
 }
 
-#mowcedymql .gt_indent_4 {
+#xjsdatgepc .gt_indent_4 {
   text-indent: 20px;
 }
 
-#mowcedymql .gt_indent_5 {
+#xjsdatgepc .gt_indent_5 {
   text-indent: 25px;
 }
 
-#mowcedymql .katex-display {
+#xjsdatgepc .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#mowcedymql div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#xjsdatgepc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -808,17 +837,17 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="Module 1: fundamentals  Week"><strong>Week 02</strong><br>11 aug - 15 aug</td>
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Topics_and_Activities"><a href="https://biol2022.github.io/L02a-represenative-sampling/"><strong>L02a:</strong> What is a representative sample?</a> <a href="https://biol2022.github.io/L02a-represenative-sampling/L02a-representative-sampling.pdf" target="_blank"><i class="bi bi-filetype-pdf"></i></a><br><a href="https://biol2022.github.io/L02b-linear-model/"><strong>L02b:</strong> Modelling fundamentals – the linear model</a> <a href="https://biol2022.github.io/L02b-linear-model/L02b-linear-model.pdf" target="_blank"><i class="bi bi-filetype-pdf"></i></a><br><a href="https://biol2022.github.io/L02c-all-linear-model/"><strong>L02c:</strong> (Almost) every statistical technique is a linear model (or, identifying response and predictors)</a> <a href="https://biol2022.github.io/L02c-all-linear-model/L02c-general-linear-model.pdf" target="_blank"><i class="bi bi-filetype-pdf"></i></a><br><br><a href="https://biol2022.github.io/BEDA-handbook/module01/103-week02.html"><strong>Practical Week 02:</strong> Study design</a></td>
+<td class="gt_row gt_left" headers="Module 1: fundamentals  Topics_and_Activities"><a href="https://biol2022.github.io/L02a-represenative-sampling/"><strong>L02a:</strong> What is a representative sample?</a> <a href="https://biol2022.github.io/L02a-represenative-sampling/L02a-representative-sampling.pdf" target="_blank"><i class="bi bi-filetype-pdf"></i></a><br><a href="https://biol2022.github.io/L02b-linear-model/"><strong>L02b:</strong> Modelling fundamentals – a linear model with a single, continuous <span class="math inline">\(X\)</span></a> <a href="https://biol2022.github.io/L02b-linear-model/L02b-linear-model.pdf" target="_blank"><i class="bi bi-filetype-pdf"></i></a><br><a href="https://biol2022.github.io/L02c-all-linear-model/"><strong>L02c:</strong> (Almost) every statistical technique is a linear model (or, identifying response and predictors)</a> <a href="https://biol2022.github.io/L02c-all-linear-model/L02c-general-linear-model.pdf" target="_blank"><i class="bi bi-filetype-pdf"></i></a><br><br><a href="https://biol2022.github.io/BEDA-handbook/module01/103-week02.html"><strong>Practical Week 02:</strong> Study design</a></td>
 <td class="gt_row gt_left" headers="Module 1: fundamentals  Resources"><a><i class="bi bi-bookmark-star-fill"></i></a> <a href="https://lindeloev.github.io/tests-as-linear/">Common statistical tests are linear models</a><br><a><i class="bi bi-calendar2"></i></a> <a href="https://canvas.sydney.edu.au/courses/67437/assignments/626421"><strong>Quiz 2</strong> [0%] – opens Friday</a></td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="Module 1: fundamentals  Week"><strong>Week 03</strong><br>18 aug - 22 aug</td>
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Topics_and_Activities"><a href="https://biol2022.github.io/L03a-model-appropriate/"><strong>L03a:</strong> All models are wrong, but some more than others (testing assumptions)</a><br><a href="https://biol2022.github.io/L03b-ttests/"><strong>L03b:</strong> Modelling differences between two groups (or, the t-test)</a><br><br><strong>Practical Week 03:</strong> Data analysis</td>
+<td class="gt_row gt_left" headers="Module 1: fundamentals  Topics_and_Activities"><a href="https://biol2022.github.io/L03a-model-appropriate/"><strong>L03a:</strong> All models are wrong, but some more than others (testing assumptions)</a><br><a href="https://biol2022.github.io/L03b-ttests/"><strong>L03b:</strong> A linear model with a single, categorical <span class="math inline">\(X\)</span></a><br><br><strong>Practical Week 03:</strong> Data analysis</td>
 <td class="gt_row gt_left" headers="Module 1: fundamentals  Resources">Quiz 3 [ 0%] – opens Friday<br>Early Feedback Task [5%] – opens Sunday</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="Module 1: fundamentals  Week"><strong>Week 04</strong><br>25 aug - 29 aug</td>
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Topics_and_Activities"><a href="https://biol2022.github.io/L04a-mlr/"><strong>L04a:</strong> Modelling relationships: multiple linear regression</a><br><a href="https://biol2022.github.io/L04b-anova/"><strong>L04b:</strong> Modelling differences between two or more groups (or, ANOVA)</a><br><a href="https://biol2022.github.io/L04c-model-transformations/"><strong>L04c:</strong> Model transformations – why, and how?</a><br><br><strong>Practical Week 04:</strong> Check timeline</td>
+<td class="gt_row gt_left" headers="Module 1: fundamentals  Topics_and_Activities"><a href="https://biol2022.github.io/L04a-mlr/"><strong>L04a:</strong> Modelling multiple relationships: a linear model with multiple, continuous <span class="math inline">\(X\)</span> variables</a><br><a href="https://biol2022.github.io/L04b-anova/"><strong>L04b:</strong> Modelling multiple differences: a linear model with two or more categorical <span class="math inline">\(X\)</span> variables</a><br><a href="https://biol2022.github.io/L04c-model-transformations/"><strong>L04c:</strong> Model transformations – why, and how?</a><br><br><strong>Practical Week 04:</strong> Check timeline</td>
 <td class="gt_row gt_left" headers="Module 1: fundamentals  Resources">Evaluation Quiz (10%)</td>
 </tr>
 <tr class="even">
