@@ -155,7 +155,7 @@
     "href": "module01/w01-intro.html",
     "title": "Workshop 1: Software",
     "section": "",
-    "text": "Welcome to the first workshop of BEDA. The workshops are designed to help you learn specific skills, understand the practicals and to provide you with an opportunity to ask questions. Workshops are run only in Module 1 (Januar).\nAs this is the first workshop we will start with a brief introduction to the practicals and the software we will be using.",
+    "text": "Welcome to the first workshop of BEDA. The workshops are designed to help you learn specific skills, understand the practicals, and provide you with an opportunity to ask questions. Workshops are run only in Module 1 (Januar).\nAs this is the first workshop, we will begin with a brief introduction to the practicals and the software we will be using.",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -167,7 +167,7 @@
     "href": "module01/w01-intro.html#intro-to-the-practicals",
     "title": "Workshop 1: Software",
     "section": "",
-    "text": "Welcome to the first workshop of BEDA. The workshops are designed to help you learn specific skills, understand the practicals and to provide you with an opportunity to ask questions. Workshops are run only in Module 1 (Januar).\nAs this is the first workshop we will start with a brief introduction to the practicals and the software we will be using.",
+    "text": "Welcome to the first workshop of BEDA. The workshops are designed to help you learn specific skills, understand the practicals, and provide you with an opportunity to ask questions. Workshops are run only in Module 1 (Januar).\nAs this is the first workshop, we will begin with a brief introduction to the practicals and the software we will be using.",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -179,7 +179,7 @@
     "href": "module01/w01-intro.html#survey",
     "title": "Workshop 1: Software",
     "section": "Survey",
-    "text": "Survey\nPlease fill out a survey before you start the workshop. This will help us understand your background and tailor the practicals to your needs. Note: the survey needs to be published before you can access it, so please wait for us to do so during the practical.\nTue 2-4 | Wed 2-4 | Wed 4-6 | Fri 2-4 | Fri 4-6",
+    "text": "Survey\nPlease complete a survey before you start the workshop. This will help us understand your background and tailor the practicals to your needs. Note: the survey must be published before you can access it, so please wait for us to do so during the practical.\nTue 2-4 | Wed 2-4 | Wed 4-6 | Fri 2-4 | Fri 4-6",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -191,7 +191,7 @@
     "href": "module01/w01-intro.html#software",
     "title": "Workshop 1: Software",
     "section": "Software",
-    "text": "Software\n\nR and RStudio\n\nDownload R here.\nDownload RStudio Desktop from here.\nIf necessary, you can sign up to RStudio Cloud here. This applies to those of you who have trouble installing R and RStudio on your computer, and somehow still prefer this to the other software options.\n\nYou must have both installed on your computer. If you already have them installed, please make sure they are up-to-date. Once installed, make sure that you run R via RStudio Desktop and not the base R GUI.\n\n\nJamovi and JASP\n\nDownload Jamovi from here.\nUnless you have reason to not use Jamovi, download JASP from here.\nFor JASP, refer to JASP Materials for documentation and more. JASP has an interface that is almost identical to Jamovi, so we will not cover it in detail here.\n\nFor Jamovi, the current branch is recommended. Remember – if you are on a Mac with Apple Silicon, download the arm64 version for a slightly better performance.\n\n\nSPSS\n\nSPSS is only available on University computers. Check your lab computers for availability.\nAlternatively, you can use the University’s Citrix Workspace to access SPSS. Note that using Citrix is not a common solution for statistical software. Your demonstrators are not trained in Citrix so they will probably need to troubleshoot with you to get it working.\n\nWhile I don’t use SPSS myself, we do provide support for it in BEDA. It is somewhat of a mixed bag right now as it has R integration, is point-and-click, and also has a syntax editor for scripting analyses. If you’d rather not use Citrix, PSPP is an excellent free alternative to SPSS. It has a very similar interface and syntax, and because it is free software, it will not expire or require separate licenses for advanced features.\n\n\nPRIMER v7\n\nThis software is only used in Module 3 when we cover multivariate analysis.\nSimilar to SPSS, PRIMER is only available on University computers.\nThere is no current, free alternative to PRIMER v7 unless you can use R fluently. You must use the University computers to access it.\nWhen we get to Module 3, we will provide more information on how to access it.",
+    "text": "Software\n\nR and RStudio\n\nDownload R here.\nDownload RStudio Desktop from here.\nIf necessary, you may sign up to RStudio Cloud here. This applies to those who have trouble installing R and RStudio on their computer, and still prefer this to the other software options.\n\nYou must have both installed on your computer. If you already have them installed, please ensure they are up-to-date. Once installed, ensure that you run R via RStudio Desktop, and not the base R GUI.\n\n\nJamovi and JASP\n\nDownload Jamovi from here.\nUnless you have a reason to not use Jamovi, download JASP from here.\nFor JASP, refer to JASP Materials for documentation and more. JASP has an interface that is almost identical to Jamovi, so it will not be covered in detail here.\n\nFor Jamovi, the current branch is recommended. Remember — if you are on a Mac with Apple Silicon, download the arm64 version for slightly better performance.\n\n\nSPSS\n\nSPSS is only available on University computers. Check your lab computers for availability.\nAlternatively, you can use the University’s Citrix Workspace to access SPSS. Note that using Citrix is not a common solution for statistical software. Your demonstrators are not trained in Citrix, so they will probably need to troubleshoot with you to get it working.\n\nWhile I do not use SPSS myself, we do provide support for it in BEDA. It is somewhat of a mixed bag at present, as it has R integration, is point-and-click, and also has a syntax editor for scripting analyses. If you would prefer not to use Citrix, PSPP is an excellent free alternative to SPSS. It has a very similar interface and syntax, and because it is free software, it will not expire or require separate licences for advanced features.\n\n\nPRIMER v7\n\nThis software is only used in Module 3 when we cover multivariate analysis.\nSimilar to SPSS, PRIMER is only available on University computers.\nThere is currently no free alternative to PRIMER v7 unless you can use R fluently. You must use the University computers to access it.\nWhen we get to Module 3, we will provide more information on how to access it.",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -203,7 +203,7 @@
     "href": "module01/w01-intro.html#github",
     "title": "Workshop 1: Software",
     "section": "GitHub",
-    "text": "GitHub\nGitHub is a platform for version control and collaboration. It is widely used in software development, but it is also increasingly used in research to manage code, data, and documentation. In BEDA, we use GitHub to share resources, track changes, and collaborate on statistical projects and resources on open-source and creative commons licenses.\nPlease follow the following GitHub organisations, if possible. I am trying to build a community and convince the powers that be that this is a good idea, and the metrics will help. You will need to sign up for a GitHub account (if you don’t have one already).\n\nUSYD SOLES Open Educational Resources\nBIOL2022\n\nBy joining GitHub you will also be able to apply for and receive a free student license for GitHub Copilot. You also get access to chat.",
+    "text": "GitHub\nGitHub is a platform for version control and collaboration. It is widely used in software development, but it is also increasingly used in research to manage code, data, and documentation. In BEDA, we use GitHub to share resources, track changes, and collaborate on statistical projects and resources under open-source and Creative Commons licences.\nPlease follow the GitHub organisations below, if possible. I am trying to build a community and convince the powers that be that this is a good idea, and the metrics will help. You will need to sign up for a GitHub account if you do not have one already.\n\nUSYD SOLES Open Educational Resources\nBIOL2022\n\nBy joining GitHub, you will also be able to apply for and receive a free student licence for GitHub Copilot. You also get access to chat.",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -1616,7 +1616,7 @@
     "href": "module01/w02-tidy-data.html#data-entry",
     "title": "Workshop 2: tidy data",
     "section": "2 Data entry",
-    "text": "2 Data entry\nData is the reason why we can do science. We tend to invest a lot of time and effort in collecting data – in fact it forms be bulk of our work.\nIn thi workshop we will quickly go through the process of data entry and work on a few examples together.",
+    "text": "2 Data entry\nData is the reason why we can do science. We tend to invest a lot of time and effort in collecting data – in fact it forms the bulk of our work.\nIn this workshop we will quickly go through the process of data entry and work on a few examples together.",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -1640,7 +1640,7 @@
     "href": "module01/w02-tidy-data.html#three-rules",
     "title": "Workshop 2: tidy data",
     "section": "4 Three rules",
-    "text": "4 Three rules\n\nEach variable must have its own column.\nEach observation must have its own row.\nEach value must have its own cell.\n\nThe above rules means that you need a clear understanding of what a variable, observation and value are.",
+    "text": "4 Three rules\n\nEach variable must have its own column.\nEach observation must have its own row.\nEach value must have its own cell.\n\nThe above rules mean that you need a clear understanding of what a variable, observation and value are.",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -1664,7 +1664,7 @@
     "href": "module01/w02-tidy-data.html#important-considerations",
     "title": "Workshop 2: tidy data",
     "section": "6 Important considerations",
-    "text": "6 Important considerations\n\nEach column should ony contain one variable, and the variable should not contain mixed data types (e.g. numeric and character).\nWhen naming columns, avoid spaces and special characters. Use underscores or periods to separate words.\nDon’t use formatting, and avoid merged cells.\nUnderstand the difference between missing data and zero. It is better to leave cells as blank if the data is missing, or use NA.\nInclude brief metadata directly in the data table as a separate column. For extensive metadata, it is recommended to document it in a separate file or worksheet.",
+    "text": "6 Important considerations\n\nEach column should only contain one variable, and the variable should not contain mixed data types (e.g. numeric and character).\nWhen naming columns, avoid spaces and special characters. Use underscores or periods to separate words.\nDon’t use formatting, and avoid merged cells.\nUnderstand the difference between missing data and zero. It is better to leave cells as blank if the data is missing, or use NA.\nInclude brief metadata directly in the data table as a separate column. For extensive metadata, it is recommended to document it in a separate file or worksheet.",
     "crumbs": [
       "Home",
       "**Practicals**",
