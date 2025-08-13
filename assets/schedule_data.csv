@@ -7,22 +7,22 @@ Week_Num,Dates_Str,Module_Num,Module_Title,Activity_Type,Activity_Description,ht
 1,4 aug - 8 aug,1,Module 1: fundamentals,Resource,"<a><i class=""bi bi-bookmark-star-fill""></i></a>  [Am I ready for BEDA?](prerequisites.qmd)",,
 1,4 aug - 8 aug,1,Module 1: fundamentals,Resource,"<a><i class=""bi bi-calendar2""></i></a> [**Quiz 1** [0%] -- opens Friday](https://canvas.sydney.edu.au/courses/67437/assignments/626420)",,
 2,11 aug - 15 aug,1,Module 1: fundamentals,Lecture,**L02a:** What is a representative sample?,https://biol2022.github.io/L02a-represenative-sampling/,https://biol2022.github.io/L02a-represenative-sampling/L02a-representative-sampling.pdf
-2,11 aug - 15 aug,1,Module 1: fundamentals,Lecture,"**L02b:** Modelling fundamentals  -- a linear model with a single, continuous $X$",https://biol2022.github.io/L02b-linear-model/,https://biol2022.github.io/L02b-linear-model/L02b-linear-model.pdf
+2,11 aug - 15 aug,1,Module 1: fundamentals,Lecture,"**L02b:** Modelling fundamentals  -- a linear model with a single, continuous  *X*",https://biol2022.github.io/L02b-linear-model/,https://biol2022.github.io/L02b-linear-model/L02b-linear-model.pdf
 2,11 aug - 15 aug,1,Module 1: fundamentals,Lecture,"**L02c:** (Almost) every statistical technique is a linear model (or, identifying response and predictors)",https://biol2022.github.io/L02c-all-linear-model/,https://biol2022.github.io/L02c-all-linear-model/L02c-general-linear-model.pdf
 2,11 aug - 15 aug,1,Module 1: fundamentals,Resource,"<a><i class=""bi bi-bookmark-star-fill""></i></a>  [Common statistical tests are linear models](https://lindeloev.github.io/tests-as-linear/)",,
 2,11 aug - 15 aug,1,Module 1: fundamentals,Resource,"<a><i class=""bi bi-calendar2""></i></a> [**Quiz 2** [0%] -- opens Friday](https://canvas.sydney.edu.au/courses/67437/assignments/626421)",,
 2,11 aug - 15 aug,1,Module 1: fundamentals,Practical,**Practical Week 02:** Study design,https://biol2022.github.io/BEDA-handbook/module01/103-week02.html,
 3,18 aug - 22 aug,1,Module 1: fundamentals,Lecture,"**L03a:** All models are wrong, but some more than others (testing assumptions)",https://biol2022.github.io/L03a-model-appropriate/,
-3,18 aug - 22 aug,1,Module 1: fundamentals,Lecture,"**L03b:** A linear model with a single, categorical $X$ ",https://biol2022.github.io/L03b-ttests/,
+3,18 aug - 22 aug,1,Module 1: fundamentals,Lecture,"**L03b:** Modelling differences between two things: A linear model with a single, categorical (and binary) *X*",https://biol2022.github.io/L03b-ttests/,
 3,18 aug - 22 aug,1,Module 1: fundamentals,Practical,**Practical Week 03:**  Data analysis,,
 3,18 aug - 22 aug,1,Module 1: fundamentals,Resource,Quiz 3 [ 0%] -- opens Friday,,
 3,18 aug - 22 aug,1,Module 1: fundamentals,Resource,Early Feedback Task  [5%] -- opens Sunday,,
-4,25 aug - 29 aug,1,Module 1: fundamentals,Lecture,"**L04a:** Modelling multiple relationships: a linear model with multiple, continuous $X$ variables",https://biol2022.github.io/L04a-mlr/,
-4,25 aug - 29 aug,1,Module 1: fundamentals,Lecture,**L04b:** Modelling multiple differences: a linear model with two or more categorical $X$ variables,https://biol2022.github.io/L04b-anova/,
+4,25 aug - 29 aug,1,Module 1: fundamentals,Lecture,"**L04a:** Modelling multiple relationships: a linear model with multiple, continuous  *X* variables",https://biol2022.github.io/L04a-mlr/,
+4,25 aug - 29 aug,1,Module 1: fundamentals,Lecture,**L04b:** Modelling multiple differences: a linear model with two or more categorical  *X* variables,https://biol2022.github.io/L04b-anova/,
 4,25 aug - 29 aug,1,Module 1: fundamentals,Lecture,"**L04c:** Model transformations -- why, and how?",https://biol2022.github.io/L04c-model-transformations/,
 4,25 aug - 29 aug,1,Module 1: fundamentals,Practical,**Practical Week 04:** Check timeline,,
 4,25 aug - 29 aug,1,Module 1: fundamentals,Resource,Evaluation Quiz (10%),,
-5,1 sep - 5 sep,1,Module 1: fundamentals,Lecture,"**L05a:** Control, fixed and random variables -- adding sense to models (or, mixed models)",https://biol2022.github.io/L05a-blocking-fixed-random/,
+5,1 sep - 5 sep,1,Module 1: fundamentals,Lecture,"**L05a:** Control, fixed and random variables -- adding sense to models (ANCOVA and  mixed models)",https://biol2022.github.io/L05a-blocking-fixed-random/,
 5,1 sep - 5 sep,1,Module 1: fundamentals,Lecture,**L05b:** You've got this -- Module 1 revision,https://biol2022.github.io/L05b-revision/,
 5,1 sep - 5 sep,1,Module 1: fundamentals,Practical,**Practical Week 05:** Check timeline,,
 5,1 sep - 5 sep,1,Module 1: fundamentals,Resource,Work on your experiments,,
