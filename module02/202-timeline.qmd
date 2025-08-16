@@ -1,11 +1,35 @@
 ---
 title: "**Weeks 4 -- 8**: Timeline"
 number-sections: false
+toc: true
+toc-depth: 3
+toc-location: right-body
 ---
+
+<style>
+.practical-session {
+  background-color: #d9ead3;
+  padding: 0.5em 1em 1em;
+  border-radius: 5px;
+}
+.own-time-session {
+  background-color: #d0e0e3;
+  padding: 0.5em 1em 1em;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+.practical-session h4, .own-time-session h4 {
+  margin-top: .5em;
+}
+</style>
 
 Below is a brief timeline of what you should aim to do in each week leading up to the submission of your report. **A table version is avaiable as PDF: download it [here](#).**
 
 For technical help outside of practical sessions, please contact Gary Truong, our technical officer, via email -- the link is available on [Canvas](https://canvas.sydney.edu.au/courses/67437/pages/biology-experimental-design-and-analysis-beda).
+
+**Jump to:** [Weeks 2--3](#wk2) | [Week 4](#wk4) | [Week 5](#wk5) | [Week 6](#wk6) | [Week 7](#wk7) | [Week 8](#wk8) | [Week 9](#wk9)
+
+*Click on any week to expand or collapse its content.*
 
 <div class="timeline-controls">
   <button id="expand-all" class="btn btn-sm btn-default">Expand All</button>
@@ -15,26 +39,29 @@ For technical help outside of practical sessions, please contact Gary Truong, ou
 ::: {.timeline-container}
 
 ::: {.timeline-event}
-### Weeks 2--3 (before Module 2)
+### Weeks 2--3 (before Module 2){#wk2}
 
-**Summary:** You will need to **sign up** to a project group on Canvas. All groups will be formed by the end of Week 3, so you can start working on your project in Week 4. 
+**Summary:** You will need to **sign up** to a project group on Canvas. All groups will be formed by the end of Week 3, so you can start working on your project in Week 4.
 
 ::: {.timeline-content}
+::: {.practical-session}
+#### In your practical session
+Join a group on Canvas.
 
 **All members of your group must be in the same practical session.**
 Groups will be released in your practical session. You will need to go to Canvas site for BIOL2022, select "**People**" in the sidebar and click on the "**Report 1 Research Groups**" tab. There, you will see project groups which you can "enrol" in. Make sure to check the [Projects](203-projects.qmd) page for more information about each research project.
 :::
 :::
+:::
 
 ::: {.timeline-event}
-### Week 4 -- Module 2 begins in the Lab
+### Week 4 -- Module 2 begins in the Lab {#wk4}
 
 
-#### Summary
-Work with your group to discuss and plan your project. Pick up any gear that you need, to run your pilot study. Click to expand.
-
+**Summary:** Work with your group to discuss and plan your project. Pick up any gear that you need, to run your pilot study.
 
 ::: {.timeline-content}
+::: {.practical-session}
 #### In your practical session
 Discuss and plan your project with your group. You will also be introduced to the pilot study—a small-scale version of your main experiment that you will run this week (or next). Pick up any gear you need to run your pilot study.
 
@@ -45,51 +72,61 @@ Discuss and plan your project with your group. You will also be introduced to th
 - **Draft your data sheets:** As a group, draft your data sheets for data collection (you may need to modify these after your pilot study). This will ensure you collect all the necessary data, and do so consistently.
 - **Work out what equipment you’ll need:** Decide what equipment you need for your research, based on what we can supply. Consult Clare, technical staff, and/or demonstrators, then make a list. For some projects, you will be able to take gear home straight away to run a pilot study. For others, you need to plan now and pick up gear in consultation with the technical staff. When contacting technical staff, ensure you state your name, day, group number, and project (e.g., BIOL2022 WED 2–4pm, Group 7 birds, Joe Blogs).
 - **Plan and run your pilot study:** Plan your pilot study in class and run it before the Week 5 practical session. This will help you refine your main experiment. **Everyone in your group must contribute.**
+:::
 
+::: {.own-time-session}
 #### In your own time
 
 After the prac in Week 4, contribute to your group’s pilot study practical work, read relevant literature, and start preparing for your written report.
+:::
 
 :::
 :::
 
 ::: {.timeline-event}
-### Week 5
-::: {.timeline-content}
+### Week 5 {#wk5}
+**Summary:** Finalise the design and plans for your main experiment based on your pilot study and your reading of the relevant scientific literature. Pick up any gear you need for your main experiment.
 
+::: {.timeline-content}
+::: {.practical-session}
 #### In your practical session
 
-Finalise the design and plans for your main experiment based on your pilot study and your reading of the relevant scientific literature. Pick up any gear you need for your main experiment.
-
-- Discuss what you learned from your pilot study with your group.
+- **Discuss** what you learned from your pilot study with your group.
 - **Adjust the design of your main experiment if needed:** make any necessary changes to your plans, and finalise your experimental design.
 - **Confirm your statistical analysis:** ensure you know how you will analyse your results, including identifying your response and explanatory variables, and selecting the appropriate statistical test.
+:::
 
+::: {.own-time-session}
 #### In your own time
 
+- Set up your main experiment, run it, collect and collate the data. **Everyone in your group must contribute.** 
+- **Collate the data:** collate your group’s data into one Excel file – e.g. using Google Sheets. Include both a metadata worksheet and a clean results array in its own worksheet for data analysis. You can also have other worksheets for anything you want to record, plot, etc.
+Finalise data collation before week 7 prac if you can, leaving you more time for data analysis in Week 7 prac.
+:::
+
+:::
+:::
+
+::: {.timeline-event}
+### Week 6 {#wk6}
+
+**There is no formal practical session in Week 6.**
+
+::: {.own-time-session}
+#### In your own time
 Set up your main experiment, run it, collect and collate the data. **Everyone in your group must contribute.**
 :::
 :::
 
-::: {.timeline-event}
-### Weeks 6
-::: {.timeline-content}
-
-**There is no formal practical session in Week 6.**
-
-**In your own time**: Set up your main experiment, run it, collect and collate the data. **Everyone in your group must contribute.**
-:::
-:::
 
 ::: {.timeline-event}
-### Week 7
-::: {.timeline-content}
+### Week 7 {#wk7}
 
+**Summary:** Finalise collation of your main experiment data (including metadata). Begin analysing your main experiment data; aim to complete this if possible. Decide which plots and statistical outputs you will include in the results section of your written report.
+
+::: {.timeline-content}
+::: {.practical-session}
 #### In your practical session
-
-- Finalise collation of your main experiment data (including metadata).
-- Begin analysing your main experiment data; aim to complete this if possible.
-- Decide which plots and statistical outputs you will include in the results section of your written report.
 
 **If you have not already done so, finalise your data collation:**  
 Spend no more than 30 minutes of the practical session organising your data into an Excel spreadsheet. Preferably, complete this before the session.
@@ -108,8 +145,10 @@ Include a metadata worksheet summarising key information about your data, such a
 During the remaining practical time (at least one hour), use your group’s dataset to individually learn how to use Excel and R or SPSS to plot your data, run appropriate statistical analyses, and interpret your results. Consider which statistical results you will need for the results section of your written report. Ideally, complete this task by the end of Week 7.
 
 *Note:* It is fine to work with other group members to plot and run analyses. However, each group member should perform the analyses themselves to learn; simply watching others is not sufficient.
+:::
 
 
+::: {.own-time-session}
 #### In your own time
 
 Set up your main experiment, run it, collect and collate the data. Analyse and plot the data (the practicals also give you time to do this) if you have yet to complete it. 
@@ -119,23 +158,19 @@ Set up your main experiment, run it, collect and collate the data. Analyse and p
 - Clare’s tips on writing your report
 - More tips on writing your report
 - Module 2: Marking scheme for project report
+:::
 
 :::
 :::
 
 ::: {.timeline-event}
-### Week 8
+### Week 8 {#wk8}
+
+**Summary:** Clare will go through writing your report. Finalise analyses, stats output and graphs.
+
 ::: {.timeline-content}
-
+::: {.practical-session}
 #### In your practical session
-
-- Clare will go through writing your report.
-- Finalise analyses, stats output and graphs, formatted for your report.
-
-#### In your own time
-
-- Continue your data analysis if you have yet to complete it.
-- Continue drafting your report.
 
 As a group: prepare your Excel data file for submission. The filename should be of the form Day-Time-Project, e.g. “WED2-4pmProj4A”. This file must include:
 
@@ -148,20 +183,30 @@ As individuals: each group member needs to work on writing their report by:
 - completing their own results and graphs
 - deciding what they will include in their individual report.
 - deciding how they will present the data and the associated statistics.
+:::
 
+::: {.own-time-session}
+#### In your own time
 
+- Continue your data analysis if you have yet to complete it.
+- Continue drafting your report.
+:::
 
 :::
 :::
 
 ::: {.timeline-event}
-### Week 9
+### Week 9 {#wk9}
+
+**Summary:** Submit your group’s data and your written report in separate assignments in Canvas. **There is a mid-semester break period where you may, if you wish, continue working on your project.** However, Module 3 begins this week so you will not be able to work on your project in the practical sessions.
+
 ::: {.timeline-content}
 
-**There is a mid-semester break period where you may, if you wish, continue working on your project.**
 
-#### Submission
-Submit your group’s data and your written report in separate assignments in Canvas.
+::: {.own-time-session}
+#### In your own time
+
+##### Submission
 
 There are two Canvas assignments for this assessment:
 
@@ -169,11 +214,11 @@ There are two Canvas assignments for this assessment:
 
 **Report 1: individual practical written report:** each person in your group needs to submit their own report for this Canvas assignment.
 
-
+:::
+:::
 :::
 :::
 
-:::
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -184,22 +229,36 @@ document.addEventListener('DOMContentLoaded', function() {
   function openItem(event) {
     event.classList.add('active');
     const content = event.querySelector('.timeline-content');
-    content.style.display = 'block';
+    const expandLink = event.querySelector('.expand-link');
+    if (content) content.style.display = 'block';
+    if (expandLink) expandLink.style.display = 'none';
   }
 
   function closeItem(event) {
     event.classList.remove('active');
     const content = event.querySelector('.timeline-content');
-    content.style.display = 'none';
+    const expandLink = event.querySelector('.expand-link');
+    if (content) content.style.display = 'none';
+    if (expandLink) expandLink.style.display = 'block';
   }
 
   events.forEach(event => {
-    // Set the initial state to expanded
-    openItem(event);
+    const expandLink = event.querySelector('.expand-link');
+    
+    // Set the initial state to collapsed
+    closeItem(event);
+    
+    if (expandLink) {
+      expandLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        openItem(event);
+      });
+    }
     
     event.addEventListener('click', (e) => {
-      // Stop propagation to prevent the click from bubbling up to parent elements
-      if (e.target.tagName === 'A') {
+      // Allow clicks on links within the content
+      if (e.target.closest('a') && !e.target.classList.contains('expand-link')) {
         return;
       }
       
@@ -223,5 +282,18 @@ document.addEventListener('DOMContentLoaded', function() {
       closeItem(event);
     });
   });
+
+  function handleHashChange() {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetEvent = document.querySelector(hash).closest('.timeline-event');
+      if (targetEvent) {
+        openItem(targetEvent);
+      }
+    }
+  }
+
+  window.addEventListener('hashchange', handleHashChange);
+  handleHashChange(); // Check hash on initial load
 });
 </script>
