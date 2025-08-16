@@ -1,3 +1,5 @@
+library(fs)
+
 # Read the content of the source file
 lines <- readLines("module02/202-timeline.qmd")
 
@@ -28,3 +30,9 @@ output_content <- paste(yaml_header, final_content, sep = "\n")
 writeLines(output_content, "module02/timeline-for-pdf.qmd")
 
 cat("Successfully created module02/timeline-for-pdf.qmd\n")
+
+# Render the Quarto file to PDF
+quarto::quarto_render("module02/timeline-for-pdf.qmd", output_file = "timeline.pdf")
+
+# Move the PDF to the assets folder
+file_move("timeline.pdf", "assets/timeline.pdf", overwrite = TRUE)

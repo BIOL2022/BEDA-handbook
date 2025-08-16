@@ -1,6 +1,5 @@
 project:
   type: website
-  pre-render: scripts/make_timeline_pdf.R
 
 website:
   title: "BIOL2022"
