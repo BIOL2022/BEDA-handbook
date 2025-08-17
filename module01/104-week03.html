@@ -67,16 +67,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<meta name="quarto:status" content="draft">
 
 
 <link rel="stylesheet" href="../assets/timeline.css">
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
+  <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -196,6 +195,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Week <strong>3</strong> prac: data analysis</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../module01/w03-model-fitting-assumptions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">&nbsp; &nbsp; &nbsp; &nbsp; Workshop 03</span></a>
+  </div>
+</li>
           <li class="px-0"><hr class="sidebar-divider hi "></li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
@@ -276,26 +281,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome"><span class="header-section-number">1</span> Welcome</a></li>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives"><span class="header-section-number">2</span> Learning objectives</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#things-to-prepare" id="toc-things-to-prepare" class="nav-link" data-scroll-target="#things-to-prepare"><span class="header-section-number">2</span> Things to prepare</a></li>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes"><span class="header-section-number">3</span> Learning outcomes</a>
   <ul class="collapse">
   <li><a href="#what-to-submit-at-the-end-of-the-practical" id="toc-what-to-submit-at-the-end-of-the-practical" class="nav-link" data-scroll-target="#what-to-submit-at-the-end-of-the-practical">What to submit at the end of the practical</a></li>
   </ul></li>
-  <li><a href="#workshop" id="toc-workshop" class="nav-link" data-scroll-target="#workshop"><span class="header-section-number">3</span> Workshop</a></li>
-  <li><a href="#lab-activity" id="toc-lab-activity" class="nav-link" data-scroll-target="#lab-activity"><span class="header-section-number">4</span> Lab activity</a>
+  <li><a href="#workshop" id="toc-workshop" class="nav-link" data-scroll-target="#workshop"><span class="header-section-number">4</span> Workshop</a></li>
+  <li><a href="#lab-activity" id="toc-lab-activity" class="nav-link" data-scroll-target="#lab-activity"><span class="header-section-number">5</span> Lab activity</a>
   <ul class="collapse">
   <li><a href="#google-drive" id="toc-google-drive" class="nav-link" data-scroll-target="#google-drive">Google Drive</a></li>
-  </ul></li>
-  <li><a href="#exercise-1-preparing-your-data-for-analysis" id="toc-exercise-1-preparing-your-data-for-analysis" class="nav-link" data-scroll-target="#exercise-1-preparing-your-data-for-analysis"><span class="header-section-number">5</span> Exercise 1 – Preparing your data for analysis</a>
-  <ul class="collapse">
   <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
   <li><a href="#missing-data-outliers-and-data-entry-errors" id="toc-missing-data-outliers-and-data-entry-errors" class="nav-link" data-scroll-target="#missing-data-outliers-and-data-entry-errors">Missing data, outliers and data entry errors</a></li>
   </ul></li>
   <li><a href="#exercise-2-data-analysis" id="toc-exercise-2-data-analysis" class="nav-link" data-scroll-target="#exercise-2-data-analysis"><span class="header-section-number">6</span> Exercise 2 – Data analysis</a>
   <ul class="collapse">
   <li><a href="#fitting-a-model-to-data" id="toc-fitting-a-model-to-data" class="nav-link" data-scroll-target="#fitting-a-model-to-data">Fitting a model to data</a></li>
-  <li><a href="#checking-assumptions" id="toc-checking-assumptions" class="nav-link" data-scroll-target="#checking-assumptions">Checking assumptions</a></li>
-  <li><a href="#statistical-testing" id="toc-statistical-testing" class="nav-link" data-scroll-target="#statistical-testing">Statistical testing</a></li>
+  <li><a href="#checking-model-assumptions" id="toc-checking-model-assumptions" class="nav-link" data-scroll-target="#checking-model-assumptions">Checking model assumptions</a></li>
+  <li><a href="#running-models" id="toc-running-models" class="nav-link" data-scroll-target="#running-models">Running models</a></li>
   <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
   </ul></li>
   <li><a href="#exercise-3-putting-it-all-together" id="toc-exercise-3-putting-it-all-together" class="nav-link" data-scroll-target="#exercise-3-putting-it-all-together"><span class="header-section-number">7</span> Exercise 3 – putting it all together</a></li>
@@ -305,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../module01/102-week01.html"><strong>Practicals</strong></a></li><li class="breadcrumb-item"><a href="../module01/104-week03.html">Week <strong>3</strong> prac: data analysis</a></li></ol></nav>
 <div class="quarto-title">
@@ -326,10 +329,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="welcome" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="welcome"><span class="header-section-number">1</span> Welcome</h2>
+<section id="introduction" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1</span> Introduction</h2>
 <p>In today’s practical, we will focus on data analysis. You will work with your group to analyse the data you collected in the previous lab. Cheatsheets are available for you to use, and your demonstrators are ready to help.</p>
-<p><em>You may need to clean your data before you can analyse it, so be prepared to spend some time on this.</em></p>
+<p><em>You may need to clean your data before you can analyse it.</em></p>
+<p>Once you are done with your data, and if you have time, spend some effort to analyse the other data in <strong>Exercise 3</strong>.</p>
+</section>
+<section id="things-to-prepare" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="things-to-prepare"><span class="header-section-number">2</span> Things to prepare</h2>
+<ol type="1">
+<li>Make sure you have access to the data you collected in the previous lab. This can be obtained from your group’s <a href="https://drive.google.com/drive/folders/1rDyHyzgTVWUmPEzNte0F1CgVb3_Eitlk?usp=drive_link">Google Drive folder</a>.</li>
+<li>Bring your laptop and the necessary software (e.g., R, Jamovi) installed for data analysis. See <a href="../module01/w01-intro.html">Workshop 01</a> materials for installation instructions.</li>
+<li><a href="https://biol2022.github.io/L03a-model-appropriate/">Lecture 3a</a> may be helpful for understanding the concepts we will be applying in this practical, as they cover model assumptions and diagnostics.</li>
+</ol>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -344,29 +356,28 @@ Important
 </div>
 </div>
 </section>
-<section id="learning-objectives" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">2</span> Learning objectives</h2>
+<section id="learning-outcomes" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="learning-outcomes"><span class="header-section-number">3</span> Learning outcomes</h2>
 <p>By the end of this practical, you should be able to:</p>
-<ol type="1">
-<li>Fit a model to your data.</li>
-<li>Check if the data meets the assumptions of the model.</li>
-<li>Interpret the model output.</li>
-<li>(optional) have working templates for different types of analyses that are GLM equivalents of the <em>t</em>-test, ANOVA and regression.</li>
-</ol>
+<ul class="task-list">
+<li><label><input type="checkbox">Fit a model to your data.</label></li>
+<li><label><input type="checkbox">Check if the data meets the assumptions of the model.</label></li>
+<li><label><input type="checkbox">Interpret the model output.</label></li>
+<li><label><input type="checkbox">(optional) have working templates for fitting GLMs to data with different structures, such as comparing group means or modelling relationships between continuous variables.</label></li>
+</ul>
 <section id="what-to-submit-at-the-end-of-the-practical" class="level3">
 <h3 class="anchored" data-anchor-id="what-to-submit-at-the-end-of-the-practical">What to submit at the end of the practical</h3>
 <p><strong>Your plot and model output</strong>, on Google Drive. We will spend some time discussing the results at the end of the tutorial.</p>
 </section>
 </section>
-<section id="workshop" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="workshop"><span class="header-section-number">3</span> Workshop</h2>
-<p>In today’s workshop we will go through <strong>general linear modelling</strong> and <strong>performing traditional statistics</strong> in Jamovi and R. <em>The planned workshop on reproducible analyses in R and AI workflows will now be implemented as cheatsheets on a later date.</em></p>
-<p>Workshop slides are available on Canvas.</p>
+<section id="workshop" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="workshop"><span class="header-section-number">4</span> Workshop</h2>
+<p><a href="../module01/w03-model-fitting-assumptions.html">Today’s workshop</a> is a hands-on preview of running models in both R and Jamovi.</p>
 </section>
-<section id="lab-activity" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="lab-activity"><span class="header-section-number">4</span> Lab activity</h2>
+<section id="lab-activity" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="lab-activity"><span class="header-section-number">5</span> Lab activity</h2>
 <section id="google-drive" class="level3">
-<h3 class="anchored" data-anchor-id="google-drive"><a href="#">Google Drive</a></h3>
+<h3 class="anchored" data-anchor-id="google-drive"><a href="https://drive.google.com/drive/folders/1rDyHyzgTVWUmPEzNte0F1CgVb3_Eitlk?usp=drive_link">Google Drive</a></h3>
 <p>When ready, work with your group to analyse the data you collected in the previous lab using a <strong>general linear model</strong>. Click on the link above to access the data that you have collected.</p>
 <p>You will need to:</p>
 <ul>
@@ -386,20 +397,27 @@ If using Jamovi
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Please install the GAMLj3 module in Jamovi. This will allow you to run general linear models in Jamovi with a lot of options:</p>
+<p>Please install the <strong>GAMLj3</strong> module in Jamovi. This will allow you to run general linear models in Jamovi with a lot of options:</p>
 <ol type="1">
 <li>Select the <strong>Analyses</strong> tab.</li>
 <li>Click on the <strong>Modules</strong> button and select <strong>jamovi library</strong>.</li>
 <li>In the Available tab, search for <strong>GAMLj3</strong> and click on the <strong>INSTALL</strong> button.</li>
 </ol>
-<p><img src="assets/install-gamlj3.gif" class="img-fluid"></p>
+<div id="fig-install-gamj3.lightbox" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-install-gamj3.lightbox-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/jamovi_install_GAMLj3.gif" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-install-gamj3.lightbox-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: How to install the GAMLj3 module in Jamovi. Note that version numbers may differ. Click on the image to enlarge it. Image last updated in Aug 2024.
+</figcaption>
+</figure>
+</div>
+<p>While you are at it, you may want to consider installing the <strong>flexplot</strong> module in Jamovi, which uses GLM fundamentals to automatically generate plots for you.</p>
 </div>
 </div>
-</section>
-</section>
-<section id="exercise-1-preparing-your-data-for-analysis" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="exercise-1-preparing-your-data-for-analysis"><span class="header-section-number">5</span> Exercise 1 – Preparing your data for analysis</h2>
 <p>Your data is available to download on Canvas. Please check that you have all the data you need before proceeding. You also have access to the data collected by other groups should you wish to practice your data analysis skills.</p>
+</section>
 <section id="background" class="level3">
 <h3 class="anchored" data-anchor-id="background">Background</h3>
 <p>If you have followed study design principles, the data you have collected should be clean and ready for analysis. However, it is still a good idea to inspect your data further before proceeding with the analysis. This includes a check for:</p>
@@ -415,7 +433,7 @@ If using Jamovi
 <p>These are what we sometimes call systematic errors. They can be detected by looking at the data and checking for unusual values, or cross-checking methods within your group. Make sure to remove or correct these errors before proceeding with the analysis.</p>
 </section>
 </section>
-<section id="exercise-2-data-analysis" class="level2" data-number="6">
+<section id="exercise-2-data-analysis" class="level2 page-columns page-full" data-number="6">
 <h2 data-number="6" class="anchored" data-anchor-id="exercise-2-data-analysis"><span class="header-section-number">6</span> Exercise 2 – Data analysis</h2>
 <section id="fitting-a-model-to-data" class="level3">
 <h3 class="anchored" data-anchor-id="fitting-a-model-to-data">Fitting a model to data</h3>
@@ -434,26 +452,41 @@ Note
 </div>
 </div>
 </section>
-<section id="checking-assumptions" class="level3">
-<h3 class="anchored" data-anchor-id="checking-assumptions">Checking assumptions</h3>
-<p>Assumptions need to be checked as they basically tell you whether the model you have fitted is appropriate for your data. If the assumptions are not met, you may need to transform your data or use a different model.</p>
-<p>Common assumptions include:</p>
+<section id="checking-model-assumptions" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="checking-model-assumptions">Checking model assumptions</h3>
+<p>Before interpreting your results, it is important to check that your chosen model is suitable for your data. This means assessing whether the data meet the assumptions required by the model. If these assumptions are not met, your results may be misleading.</p>
+<p>The main assumptions for general linear models are:</p>
 <ul>
-<li>Normality (of residuals)</li>
-<li>Homogeneity of variance</li>
-<li>Independence of observations</li>
+<li><strong>Normality of residuals</strong>: The differences between observed and predicted values (residuals) should be roughly normally distributed.</li>
+<li><strong>Homogeneity of variance</strong>: The spread of residuals should be similar across all levels of your predictors.</li>
+<li><strong>Independence of observations</strong>: Each data point should be independent of the others. This is assumed, so we do not need to test it explicitly.</li>
 </ul>
-<p><strong>We recommend looking at residual plots</strong>, rather than formal tests of assumptions. Formal tests of assumptions can be overly sensitive to large sample sizes and can lead to you rejecting a model that is actually appropriate for your data.</p>
-<p><strong>What to do if assumptions are not met?</strong> This is a common problem in data analysis, and interestingly, it is not always a problem. Provided that you have ensured that your data is representative of the population you are interested in, violations of normality can actually be ignored in many cases, <strong>although you should still report them</strong>. A larger problem is homogeneity of variance.</p>
-<p>Nevertheless, you get to decide on what to do here to avoid violation of assumptions. The first step would be to try and transform your data. If this does not work, you will need to use a different model or a non-parametric equivalent of the model you are using.</p>
+<p>The simplest way to check these assumptions is by examining residual plots. Formal statistical tests are available such as the Shapiro-Wilk test for normality and Levene’s test for homogeneity of variance, but they can be overly sensitive (especially with large datasets) <strong>and may suggest problems where none exist</strong>.</p>
+<p>Remember, minor violations of normality are often not a major concern (can you explain why?), but large differences in variance can seriously affect your conclusions. Always discuss any issues and how you addressed them in your analysis.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Violation of the normality assumption is often ignored when sampling is large, as the Central Limit Theorem suggests that the sampling distribution of the mean will be normally distributed regardless of the shape of the population distribution.</p>
+</div></div><div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Your demonstrators may show you how to transform variables to better meet the assumptions of your chosen model.</p>
+</div>
+</div>
 </section>
-<section id="statistical-testing" class="level3">
-<h3 class="anchored" data-anchor-id="statistical-testing">Statistical testing</h3>
-<p>Running the statistical test is probably the <em>least</em> eventful part of the analytical workflow and will take you a few seconds regardless of the software you are using, especially if you are running GLMs. Make sure that you record the software used and the specific statistical technique selected such that the analysis is <strong>reproducible</strong>.</p>
+<section id="running-models" class="level3">
+<h3 class="anchored" data-anchor-id="running-models">Running models</h3>
+<p>Running the model is probably the <em>least</em> eventful part of the analytical workflow and will take you a few seconds regardless of the software you are using, especially if you are running GLMs. Make sure that you record the software used and the specific statistical technique selected such that the analysis is <strong>reproducible</strong>.</p>
 </section>
 <section id="interpretation" class="level3">
 <h3 class="anchored" data-anchor-id="interpretation">Interpretation</h3>
-<p>Interpreting the output of a statistical test is a skill that takes time to develop. You will need to be able to:</p>
+<p>Interpreting the output of a statistical model is a skill that takes time to develop. You will need to be able to:</p>
 <ul>
 <li>Understand the important parts of the output e.g.&nbsp;F-statistic, p-value, degrees of freedom, etc.</li>
 <li>Explain what the output means in the context of your data.</li>
@@ -481,47 +514,43 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>On top of what you have been taught so far (linear regression and <em>t</em>-test), you will most likely create models that are equivalent to Analysis of Variance, Multiple Linear Regression and Analysis of Covariance techniques. These will be touched on in the next few weeks but you can get a head start now – that’s the beauty of GLMs!</p>
+<p>On top of the simple models you have been taught so far (e.g., using a single continuous or categorical predictor), you will see how the GLM framework can be extended to include multiple predictors of different types. These will be touched on in the next few weeks but you can get a head start now – that’s the beauty of GLMs!</p>
 </div>
 </div>
-<section id="weight-data-for-domestic-cats" class="level4">
-<h4 class="anchored" data-anchor-id="weight-data-for-domestic-cats">Weight data for domestic cats</h4>
+<section id="weight-data-for-domestic-cats-cats.xlsx" class="level4">
+<h4 class="anchored" data-anchor-id="weight-data-for-domestic-cats-cats.xlsx">Weight data for domestic cats: <a href="assets/cats.xlsx">cats.xlsx</a></h4>
 <p>Handy hints:</p>
 <ul>
 <li>Read the metadata if you are unsure what the variables mean.</li>
 <li>You can look at the relationships between the continuous variables for each gender of cat. Is there a way to combine these relationships into one model?</li>
 <li>Can Sex be used as a response variable in this model? <em>You don’t have to do this, but it is an interesting question to consider.</em></li>
 </ul>
-{{&lt; downloadthis assets/cats.xlsx dname="cats" label="Download cats.xlsx" icon="database-fill-down" type="info" &gt;}}
 </section>
-<section id="cherry-trees" class="level4">
-<h4 class="anchored" data-anchor-id="cherry-trees">Cherry trees</h4>
+<section id="cherry-trees-cherry.xlsx" class="level4">
+<h4 class="anchored" data-anchor-id="cherry-trees-cherry.xlsx">Cherry trees: <a href="assets/cherry.xlsx">cherry.xlsx</a></h4>
 <p>Handy hints:</p>
 <ul>
 <li>This dataset seems very simple and should be easy to analyse… or is it?</li>
 <li>Use what you have learnt about simple linear regression and add more predictors to your model!</li>
 <li>Think about the assumptions of the model and whether they are met. Do you need to alter your interpretation of these diagnostic plots in any way?</li>
 </ul>
-{{&lt; downloadthis assets/cherry.xlsx dname="cherry" label="Download cherry.xlsx" icon="database-fill-down" type="info" &gt;}}
 </section>
-<section id="effects-of-dietary-protein-on-pigs" class="level4">
-<h4 class="anchored" data-anchor-id="effects-of-dietary-protein-on-pigs">Effects of dietary protein on pigs</h4>
+<section id="extra-challenge-effects-of-dietary-protein-on-pigs-pigs.xlsx" class="level4">
+<h4 class="anchored" data-anchor-id="extra-challenge-effects-of-dietary-protein-on-pigs-pigs.xlsx">(<strong>Extra challenge</strong>) effects of dietary protein on pigs: <a href="assets/pigs.xlsx">pigs.xlsx</a></h4>
 <p>Handy hints:</p>
 <ul>
 <li>This dataset is messy and may need to be tidied up before you can analyse it.</li>
-<li>Think of how the idea of a <em>t</em>-test, which compares two groups, can be extended to this dataset where you are comparing multiple groups. Does this change the way you need to set up your model?</li>
+<li>Think of how a model with a two-level categorical predictor (which compares two groups) can be extended to a predictor with multiple levels to compare multiple groups. Does this change the way you need to set up your model?</li>
 <li>Are you brave enough to look for interactions between variables?</li>
 </ul>
-{{&lt; downloadthis assets/pigs.xlsx dname="pigs" label="Download pigs.xlsx" icon="database-fill-down" type="info" &gt;}}
 </section>
-<section id="sugar-cane-disease-data" class="level4">
-<h4 class="anchored" data-anchor-id="sugar-cane-disease-data">Sugar cane disease data</h4>
+<section id="extra-challenge-sugar-cane-disease-data-cane.xlsx" class="level4">
+<h4 class="anchored" data-anchor-id="extra-challenge-sugar-cane-disease-data-cane.xlsx">(<strong>Extra challenge</strong>) Sugar cane disease data: <a href="assets/cane.xlsx">cane.xlsx</a></h4>
 <p>Handy hints:</p>
 <ul>
 <li>This dataset is a bit more complex than the others. You may need to spend some time understanding the variables before you can analyse the data.</li>
 <li>You do not need to use all the variables in your analysis. There are two possible response variables in this dataset - you can choose which one to use.</li>
 </ul>
-{{&lt; downloadthis assets/cane.xlsx dname="cane" label="Download cane.xlsx" icon="database-fill-down" type="info" &gt;}}
 </section>
 </section>
 <section id="submit-your-results" class="level2" data-number="8">
