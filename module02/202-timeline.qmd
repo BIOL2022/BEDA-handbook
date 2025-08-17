@@ -24,7 +24,7 @@ toc-location: right-body
 }
 </style>
 
-Below is a brief timeline of what you should aim to do in each week leading up to the submission of your report. **A table version is avaiable as PDF: download it [here](timeline-for-pdf.pdf).**
+Below is a brief timeline of what you should aim to do in each week leading up to the submission of your report. **A table version is avaiable as PDF: download it [here](module02-timeline.pdf).**
 
 For technical help outside of practical sessions, please contact Gary Truong, our technical officer, via email -- the link is available on [Canvas](https://canvas.sydney.edu.au/courses/67437/pages/biology-experimental-design-and-analysis-beda).
 
@@ -59,14 +59,11 @@ Groups will be released in your practical session. You will need to go to Canvas
 ### Week 4 -- Module 2 begins in the Lab {#wk4}
 
 
-**Summary:** Work with your group to discuss and plan your project. Pick up any gear that you need, to run your pilot study.
+**Summary:** Work with your group to discuss and plan your project. You will also be introduced to the pilot study—a small-scale version of your main experiment that you will run this week (or next). Pick up any gear that you need, to run your pilot study.
 
 ::: {.timeline-content}
 ::: {.practical-session}
 #### In your practical session
-Discuss and plan your project with your group. You will also be introduced to the pilot study—a small-scale version of your main experiment that you will run this week (or next). Pick up any gear you need to run your pilot study.
-
-**Details**:
 
 - **Form your hypothesis:** As a group, convert the general biological question into specific hypotheses and predictions.
 - **Plan the design of your main experiment:** With your group, design a simple experiment to test your hypothesis. Ensure your design can be analysed using the statistical methods you are familiar with (e.g., from Januar’s and Clare’s lectures, and Module 1 practicals). Draw a graph of how you expect your data to look (refer to Clare’s lectures). Decide what statistical analysis is appropriate and why. If you can’t work this out, you are not ready to run your experiment.

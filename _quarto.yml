@@ -86,9 +86,9 @@ website:
             text: "**Introduction to Module 2**"
           - href: module02/202-timeline.qmd
             text: "Week **4 -- 8** pracs: timeline"
+          - "---"
           - href: module03/302-week09.qmd
             text: "Week **9** prac: PCA and Report 2"
-          - "---"
           - href: module03/303-week10.qmd
             text: "Week **10** prac: permutation"
           - href: module03/304-week11.qmd
