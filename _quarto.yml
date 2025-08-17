@@ -5,8 +5,8 @@ website:
   title: "BIOL2022"
   drafts:
     # - module01/103-week02.qmd
-    - module01/104-week03.qmd
-    - module02/202-timeline.qmd
+    # - module01/104-week03.qmd
+    # - module02/202-timeline.qmd
     # - module02/203-projects.qmd
     - module02/204-report1.qmd
     - module02/205-resources.qmd
@@ -81,6 +81,8 @@ website:
             text: "&nbsp; &nbsp; &nbsp; &nbsp; Species ID guide"
           - href: module01/104-week03.qmd
             text: "Week **3** prac: data analysis"
+          - href: module01/w03-model-fitting-assumptions.qmd
+            text: "&nbsp; &nbsp; &nbsp; &nbsp; Workshop 03"
           - "---"
           - href: module02/201-intro.qmd
             text: "**Introduction to Module 2**"

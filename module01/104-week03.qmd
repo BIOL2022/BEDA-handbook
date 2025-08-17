@@ -1,24 +1,37 @@
 ---
 title: "**Week 3**: Data analysis"
+resources:
+  - assets/cats.xlsx
+  - assets/cherry.xlsx
+  - assets/pigs.xlsx
+  - assets/cane.xlsx
 ---
-## Welcome
+## Introduction
 
 In today's practical, we will focus on data analysis. You will work with your group to analyse the data you collected in the previous lab. Cheatsheets are available for you to use, and your demonstrators are ready to help. 
 
-*You may need to clean your data before you can analyse it, so be prepared to spend some time on this.*
+*You may need to clean your data before you can analyse it.*
+
+Once you are done with your data, and if you have time, spend some effort to analyse the other data in **Exercise 3**.
+
+## Things to prepare
+
+1. Make sure you have access to the data you collected in the previous lab. This can be obtained from your group's [Google Drive folder](https://drive.google.com/drive/folders/1rDyHyzgTVWUmPEzNte0F1CgVb3_Eitlk?usp=drive_link).
+2. Bring your laptop and the necessary software (e.g., R, Jamovi) installed for data analysis. See [Workshop 01](w01-intro.qmd) materials for installation instructions.
+3. [Lecture 3a](https://biol2022.github.io/L03a-model-appropriate/) may be helpful for understanding the concepts we will be applying in this practical, as they cover model assumptions and diagnostics.
 
 ::: callout-important
 You will be working in the same groups as **last week**. **If you were not present last week, join the group closest to you and work with them.**
 :::
 
-## Learning objectives
+## Learning outcomes
 
 By the end of this practical, you should be able to:
-
-1. Fit a model to your data.
-2. Check if the data meets the assumptions of the model.
-3. Interpret the model output.
-4. (optional) have working templates for different types of analyses that are GLM equivalents of the *t*-test, ANOVA and regression.
+  
+- [ ] Fit a model to your data.
+- [ ] Check if the data meets the assumptions of the model.
+- [ ] Interpret the model output.
+- [ ] (optional) have working templates for fitting GLMs to data with different structures, such as comparing group means or modelling relationships between continuous variables.
 
 ### What to submit at the end of the practical
 
@@ -27,13 +40,11 @@ By the end of this practical, you should be able to:
 
 ## Workshop
 
-In today's workshop we will go through **general linear modelling** and **performing traditional statistics** in Jamovi and R. *The planned workshop on reproducible analyses in R and AI workflows will now be implemented as cheatsheets on a later date.* 
-
-Workshop slides are available on Canvas.
+[Today's workshop](w03-model-fitting-assumptions.qmd) is a hands-on preview of running models in both R and Jamovi.
 
 ## Lab activity
 
-### [Google Drive](#)
+### [Google Drive](https://drive.google.com/drive/folders/1rDyHyzgTVWUmPEzNte0F1CgVb3_Eitlk?usp=drive_link)
 
 When ready, work with your group to analyse the data you collected in the previous lab using a **general linear model**. Click on the link above to access the data that you have collected.
 
@@ -49,18 +60,19 @@ Of particular importance is the assessment of assumptions using residual plots, 
 
 ::: callout-note
 ## If using Jamovi
-Please install the GAMLj3 module in Jamovi. This will allow you to run general linear models in Jamovi with a lot of options:
+Please install the **GAMLj3** module in Jamovi. This will allow you to run general linear models in Jamovi with a lot of options:
 
 1. Select the **Analyses** tab.
 2. Click on the **Modules** button and select **jamovi library**.
 3. In the Available tab, search for **GAMLj3** and click on the **INSTALL** button.
 
 ::: {.content-visible unless-format="pdf"}
-![](assets/install-gamlj3.gif)
-:::
+![How to install the GAMLj3 module in Jamovi. Note that version numbers may differ. Click on the image to enlarge it. Image last updated in Aug 2024.](assets/jamovi_install_GAMLj3.gif){#fig-install-gamj3.lightbox}
+
 :::
 
-## Exercise 1 -- Preparing your data for analysis
+While you are at it, you may want to consider installing the **flexplot** module in Jamovi, which uses GLM fundamentals to automatically generate plots for you.
+:::
 
 Your data is available to download on Canvas. Please check that you have all the data you need before proceeding. You also have access to the data collected by other groups should you wish to practice your data analysis skills.
 
@@ -89,31 +101,37 @@ You should already know what model you are fitting to your data as it it part of
 :::
 
 
-### Checking assumptions
+### Checking model assumptions
 
-Assumptions need to be checked as they basically tell you whether the model you have fitted is appropriate for your data. If the assumptions are not met, you may need to transform your data or use a different model.
+Before interpreting your results, it is important to check that your chosen model is suitable for your data. This means assessing whether the data meet the assumptions required by the model. If these assumptions are not met, your results may be misleading.
 
-Common assumptions include:
+The main assumptions for general linear models are:
 
-- Normality (of residuals)
-- Homogeneity of variance
-- Independence of observations
+- **Normality of residuals**: The differences between observed and predicted values (residuals) should be roughly normally distributed.
+- **Homogeneity of variance**: The spread of residuals should be similar across all levels of your predictors.
+- **Independence of observations**: Each data point should be independent of the others. This is assumed, so we do not need to test it explicitly.
 
-**We recommend looking at residual plots**, rather than formal tests of assumptions. Formal tests of assumptions can be overly sensitive to large sample sizes and can lead to you rejecting a model that is actually appropriate for your data.
+The simplest way to check these assumptions is by examining residual plots. Formal statistical tests are available such as the Shapiro-Wilk test for normality and Levene's test for homogeneity of variance, but they can be overly sensitive (especially with large datasets) **and may suggest problems where none exist**.
 
-**What to do if assumptions are not met?** This is a common problem in data analysis, and interestingly, it is not always a problem. Provided that you have ensured that your data is representative of the population you are interested in, violations of normality can actually be ignored in many cases, **although you should still report them**. A larger problem is homogeneity of variance.
+Remember, minor violations of normality are often not a major concern (can you explain why?), but large differences in variance can seriously affect your conclusions. Always discuss any issues and how you addressed them in your analysis.
+
+::: {.column-margin}
+Violation of the normality assumption is often ignored when sampling is large, as the Central Limit Theorem suggests that the sampling distribution of the mean will be normally distributed regardless of the shape of the population distribution.
+:::
+
+::: {.callout-note}
+Your demonstrators may show you how to transform variables to better meet the assumptions of your chosen model.
+:::
 
 
-Nevertheless, you get to decide on what to do here to avoid violation of assumptions. The first step would be to try and transform your data. If this does not work, you will need to use a different model or a non-parametric equivalent of the model you are using.
+### Running models
 
-### Statistical testing
-
-Running the statistical test is probably the *least* eventful part of the analytical workflow and will take you a few seconds regardless of the software you are using, especially if you are running GLMs. Make sure that you record the software used and the specific statistical technique selected such that the analysis is **reproducible**.
+Running the model is probably the *least* eventful part of the analytical workflow and will take you a few seconds regardless of the software you are using, especially if you are running GLMs. Make sure that you record the software used and the specific statistical technique selected such that the analysis is **reproducible**.
 
 
 ### Interpretation
 
-Interpreting the output of a statistical test is a skill that takes time to develop. You will need to be able to:
+Interpreting the output of a statistical model is a skill that takes time to develop. You will need to be able to:
 
 - Understand the important parts of the output e.g. F-statistic, p-value, degrees of freedom, etc.
 - Explain what the output means in the context of your data.
@@ -134,12 +152,12 @@ The general linear modelling framework is incredibly intuitive for building stat
 - The data may need to be cleaned before you can analyse it. This is a good opportunity to practice your data cleaning skills.
 
 ::: callout-note
-On top of what you have been taught so far (linear regression and *t*-test), you will most likely create models that are equivalent to Analysis of Variance, Multiple Linear Regression and Analysis of Covariance techniques. These will be touched on in the next few weeks but you can get a head start now -- that's the beauty of GLMs!
+On top of the simple models you have been taught so far (e.g., using a single continuous or categorical predictor), you will see how the GLM framework can be extended to include multiple predictors of different types. These will be touched on in the next few weeks but you can get a head start now -- that's the beauty of GLMs!
 :::
 
 
 
-#### Weight data for domestic cats
+#### Weight data for domestic cats: [cats.xlsx](assets/cats.xlsx)
 
 Handy hints:
 
@@ -147,9 +165,7 @@ Handy hints:
 - You can look at the relationships between the continuous variables for each gender of cat. Is there a way to combine these relationships into one model?
 - Can Sex be used as a response variable in this model? *You don't have to do this, but it is an interesting question to consider.*
 
-{{< downloadthis assets/cats.xlsx dname="cats" label="Download cats.xlsx" icon="database-fill-down" type="info" >}}
-
-#### Cherry trees
+#### Cherry trees: [cherry.xlsx](assets/cherry.xlsx)
 
 Handy hints:
 
@@ -157,26 +173,21 @@ Handy hints:
 - Use what you have learnt about simple linear regression and add more predictors to your model!
 - Think about the assumptions of the model and whether they are met. Do you need to alter your interpretation of these diagnostic plots in any way?
 
-{{< downloadthis assets/cherry.xlsx dname="cherry" label="Download cherry.xlsx" icon="database-fill-down" type="info" >}}
-
-#### Effects of dietary protein on pigs
+#### (**Extra challenge**) effects of dietary protein on pigs: [pigs.xlsx](assets/pigs.xlsx)
 
 Handy hints:
 
 - This dataset is messy and may need to be tidied up before you can analyse it.
- - Think of how the idea of a *t*-test, which compares two groups, can be extended to this dataset where you are comparing multiple groups. Does this change the way you need to set up your model?
+ - Think of how a model with a two-level categorical predictor (which compares two groups) can be extended to a predictor with multiple levels to compare multiple groups. Does this change the way you need to set up your model?
  - Are you brave enough to look for interactions between variables?
 
-{{< downloadthis assets/pigs.xlsx dname="pigs" label="Download pigs.xlsx" icon="database-fill-down" type="info" >}}
-
-#### Sugar cane disease data
+#### (**Extra challenge**) Sugar cane disease data: [cane.xlsx](assets/cane.xlsx)
 
 Handy hints:
 
 - This dataset is a bit more complex than the others. You may need to spend some time understanding the variables before you can analyse the data.
 - You do not need to use all the variables in your analysis. There are two possible response variables in this dataset - you can choose which one to use.
 
-{{< downloadthis assets/cane.xlsx dname="cane" label="Download cane.xlsx" icon="database-fill-down" type="info" >}}
 
 ## Submit your results
 
