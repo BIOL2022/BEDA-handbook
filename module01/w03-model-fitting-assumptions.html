@@ -8,7 +8,7 @@
 
 <meta name="author" content="Januar Harianto">
 
-<title>w03-model-fitting-assumptions – BIOL2022</title>
+<title>Workshop 3: Model fitting and assumptions – BIOL2022</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,11 +69,40 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../assets/timeline.css">
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -82,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../module01/102-week01.html"><strong>Practicals</strong></a></li><li class="breadcrumb-item"><a href="../module01/w03-model-fitting-assumptions.html">&nbsp; &nbsp; &nbsp; &nbsp; Workshop 03</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -196,6 +225,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Week <strong>3</strong> prac: data analysis</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../module01/w03-model-fitting-assumptions.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">&nbsp; &nbsp; &nbsp; &nbsp; Workshop 03</span></a>
+  </div>
+</li>
           <li class="px-0"><hr class="sidebar-divider hi "></li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
@@ -276,15 +311,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#workshop-3" id="toc-workshop-3" class="nav-link active" data-scroll-target="#workshop-3">Workshop 3</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#a-glm-with-a-continuous-predictor" id="toc-a-glm-with-a-continuous-predictor" class="nav-link" data-scroll-target="#a-glm-with-a-continuous-predictor">1. A GLM with a <em>continuous</em> predictor</a></li>
+  <li><a href="#a-glm-with-a-categorical-predictor" id="toc-a-glm-with-a-categorical-predictor" class="nav-link" data-scroll-target="#a-glm-with-a-categorical-predictor">2. A GLM with a <em>categorical</em> predictor</a>
+  <ul class="collapse">
+  <li><a href="#jamovi" id="toc-jamovi" class="nav-link" data-scroll-target="#jamovi">Jamovi</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../module01/102-week01.html"><strong>Practicals</strong></a></li><li class="breadcrumb-item"><a href="../module01/w03-model-fitting-assumptions.html">&nbsp; &nbsp; &nbsp; &nbsp; Workshop 03</a></li></ol></nav>
 <div class="quarto-title">
+<h1 class="title">Workshop 3: Model fitting and assumptions</h1>
 </div>
 
 
@@ -307,10 +349,124 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="workshop-3" class="level1 unnumbered">
-<h1 class="unnumbered">Workshop 3</h1>
-<p><strong>Workshop slides are on Canvas.</strong></p>
-<p>🚧 Under construction. 🚧</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Welcome to the third workshop. In this session, we will explore a crucial step in statistical analysis: checking the assumptions of our models. When we run models under the general linear model framework we are making certain assumptions about our data. If these assumptions are violated, the results of our tests might not be reliable.</p>
+<p>Today, we will learn how to use diagnostic plots to visually inspect these assumptions. <strong>We use R code in this workshop but Januar will also guide (quickly) through Jamovi.</strong></p>
+<p>We will be using the ever-popular <code>palmerpenguins</code> dataset, which contains data on three penguin species from the Palmer Archipelago in Antarctica.</p>
+</section>
+<section id="a-glm-with-a-continuous-predictor" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="a-glm-with-a-continuous-predictor">1. A GLM with a <em>continuous</em> predictor</h2>
+<p>Let’s examine the relationship between a penguin’s body mass and its flipper length. We begin by thinking about how these two variables might be related and construct the model. Words are fine as the GLM will work out the details once the model is fitted!</p>
+<blockquote class="blockquote">
+<p>Body mass is likely to be related to flipper length. We should be able to use flipper length to predict body mass.</p>
+</blockquote>
+<p><span class="math display">\[
+\text{body\_mass\_g} \sim \text{flipper\_length\_mm}
+\]</span></p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Imagine if flipper length were categorical (e.g., short, medium, long). We could still model the relationship with body mass, but the approach would change. We will need to use “dummy variables” to represent the categories and then determine the differences in body mass between these categories. This is explained in <a href="https://biol2022.github.io/L03b-ttests/">Lecture 3b</a> when there are just <em>two</em> categories, and in Lecture 4b next week for more than two categories.</p>
+</div></div><p>The data types for our variables are as follows:</p>
+<ul>
+<li><code>body_mass_g</code>: Continuous numeric</li>
+<li><code>flipper_length_mm</code>: Continuous numeric</li>
+</ul>
+<p>Since we are fitting a continuous outcome variable (<code>body_mass_g</code>) with a continuous predictor (<code>flipper_length_mm</code>), our general linear model will look at how body mass changes with flipper length.</p>
+<section id="checking-assumptions-with-diagnostic-plots" class="level4">
+<h4 class="anchored" data-anchor-id="checking-assumptions-with-diagnostic-plots">Checking assumptions with diagnostic plots</h4>
+<p>We can generate a set of standard diagnostic plots in R, Jamovi and most other statistical software packages when we fit a generalised linear model. For example, below is an output in R.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-lm-diagnostics" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lm-diagnostics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="w03-model-fitting-assumptions_files/figure-html/fig-lm-diagnostics-1.png" class="img-fluid figure-img" width="960">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lm-diagnostics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Diagnostic plots for the linear model of penguin flipper length predicted by body mass. The plots are produced in R.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+
+<div class="no-row-height column-margin column-container"><section id="interpreting-the-plots" class="level4">
+<h4 class="anchored" data-anchor-id="interpreting-the-plots">Interpreting the plots</h4>
+<ol type="1">
+<li><strong>Residuals vs Fitted:</strong> Checks for linearity. Points should be randomly scattered around zero. A curved pattern means the relationship may not be linear. Here, the scatter looks random, so linearity is fine.</li>
+<li><strong>Normal Q-Q:</strong> Checks if residuals are normally distributed. Points should follow the dashed line. Ours do, so normality is met.</li>
+<li><strong>Scale-Location:</strong> Checks for equal variance. Points should be evenly spread, and the red line should be flat. Our plot shows consistent spread, so variance is fine.</li>
+<li><strong>Residuals vs Leverage:</strong> Identifies influential points. Points outside the red dashed lines are influential. We have none, so no concerns.</li>
+</ol>
+</section></div><p>In Jamovi, no specific module is necessary to perform a simple linear regression, so we can use the built-in regression tool to fit the model and check the assumptions. Importantly, there are fewer options to assess the assumptions compared to R, but this does not necessarily mean that the checks are less rigorous.</p>
+<div id="fig-penguins" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-penguins-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/wt_penguin_qqplot.svg" class="img-fluid figure-img" width="230"></p>
+<figcaption>QQ-plot</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/wt_penguin_residuals_fitted.svg" class="img-fluid figure-img" width="300"></p>
+<figcaption>Residuals vs Fitted</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-penguins-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Diagnostic plots for the linear model of penguin flipper length predicted by body mass. The plots are produced in Jamovi.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="a-glm-with-a-categorical-predictor" class="level2">
+<h2 class="anchored" data-anchor-id="a-glm-with-a-categorical-predictor">2. A GLM with a <em>categorical</em> predictor</h2>
+<p>In this case, we are interested in examining the relationship between a penguin’s bill length and its sex (male or female). We can use a general linear model to assess whether there are significant differences in bill length between the two sexes.</p>
+<p>The model can be expressed as:</p>
+<p><span class="math display">\[
+\text{bill\_length\_mm} \sim \text{sex}
+\]</span></p>
+<p>This scenario is often handled with a two-sample t-test, which is a specific application of the general linear model. Because of this, we can check its assumptions by fitting an equivalent linear model and examining the same diagnostic plots!</p>
+<section id="checking-assumptions" class="level4">
+<h4 class="anchored" data-anchor-id="checking-assumptions">Checking assumptions</h4>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-ttest-plots" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ttest-plots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="w03-model-fitting-assumptions_files/figure-html/fig-ttest-plots-1.png" class="img-fluid figure-img" width="960">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ttest-plots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Diagnostic plots for the general linear model with a categorical predictor (sex) and continuous outcome (bill length) to assess the assumptions of a two-sample t-test. The plots are produced in R.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Why are the plots “weird” looking? Can you explain the patterns you see (even though the assumptions are met)?</p>
+</section>
+<section id="jamovi" class="level3">
+<h3 class="anchored" data-anchor-id="jamovi">Jamovi</h3>
+<p>You can perform a two-sample t-test in Jamovi, but the diagnostic plots are not as readily available. This is why the GLM approach is preferred – model assumptions are standardised and much easier to check.</p>
+</section>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<ul>
+<li>General linear models are a flexible framework for modeling relationships in place of traditional statistical tests.</li>
+<li>They allow for the inclusion of both continuous and categorical predictors, making them suitable for a wide range of research questions.</li>
+<li>By checking the assumptions of these models using diagnostic plots, we can ensure the validity of our statistical conclusions.</li>
+</ul>
 
 
 </section>
