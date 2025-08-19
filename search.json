@@ -1337,7 +1337,7 @@
     "href": "cheatsheets.html#rstudior",
     "title": "Cheatsheets",
     "section": "RStudio/R",
-    "text": "RStudio/R\n\nimporting data into R - data\nboxplots - vis\nscatterplots - vis\nhistograms - vis\none-sample t-test - stats\ntwo-sample t-test - stats\nANOVA - stats\nlinear regression - stats\nPublication-ready(-ish) ANOVA/regression tables in R - vis",
+    "text": "RStudio/R\n\nimporting data into R - data\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nPublication-ready(-ish) ANOVA/regression tables in R - vis\nmodelling a numerical response against:\n\nthe intercept only (one-sample or paired t-test) - stats\na categorical predictor with two groups (two-sample t-test) - stats\none or more categorical predictors (ANOVA) - stats\none or more numerical predictors (linear regression) - stats",
     "crumbs": [
       "Home",
       "Cheatsheets"
@@ -1348,7 +1348,7 @@
     "href": "cheatsheets.html#jamovi",
     "title": "Cheatsheets",
     "section": "Jamovi",
-    "text": "Jamovi\n\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nt-tests/ANOVA - stats\nregression - todo - stats\nPrincipal Component Analysis (PCA) - stats",
+    "text": "Jamovi\n\n⭐ New Using flexplot to create most plots in Jamovi - vis\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nmodelling a numerical response against:\n\none or more categorical predictors (t-tests & ANOVA) - stats\none or more numerical predictors (linear regression) - todo - stats\n\nPrincipal Component Analysis (PCA) - stats",
     "crumbs": [
       "Home",
       "Cheatsheets"
