@@ -14,21 +14,24 @@ Please provide feedback on the cheatsheets here: [**Give Feedback**](https://for
 - [boxplots](https://usyd-soles-edu.github.io/cheatsheet-R-boxplot/){target="_blank"} - `vis`
 - [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-r-scatterplot/){target="_blank"} - `vis`
 - [histograms](https://usyd-soles-edu.github.io/cheatsheet-r-histogram/){target="_blank"} - `vis`
-- [one-sample t-test](https://usyd-soles-edu.github.io/cheatsheet-r-ttest/){target="_blank"} - `stats`
-- [two-sample t-test](https://usyd-soles-edu.github.io/cheatsheet-r-two-sample-ttest/){target="_blank"} - `stats`
-- [ANOVA](https://usyd-soles-edu.github.io/cheatsheet-r-anova/){target="_blank"} - `stats`
-- [linear regression](https://usyd-soles-edu.github.io/cheatsheet-r-regression/){target="_blank"} - `stats`
 - [Publication-ready(-ish) ANOVA/regression tables in R](https://usyd-soles-edu.github.io/cheatsheet-r-html-tables/){target="_blank"} - `vis`
+- modelling a numerical response against:
+  - [the **intercept** only (one-sample or paired t-test)](https://usyd-soles-edu.github.io/cheatsheet-r-ttest/){target="_blank"} - `stats`
+  - [a **categorical** predictor with two groups (two-sample t-test)](https://usyd-soles-edu.github.io/cheatsheet-r-two-sample-ttest/){target="_blank"} - `stats`
+  - [one or more **categorical** predictors (ANOVA)](https://usyd-soles-edu.github.io/cheatsheet-r-anova/){target="_blank"} - `stats`
+  - [one or more **numerical** predictors (linear regression)](https://usyd-soles-edu.github.io/cheatsheet-r-regression/){target="_blank"} - `stats`
 
 
 
 ## Jamovi
 
+- <span class="badge rounded-pill bg-danger ms-2">⭐ New</span> [Using flexplot to create *most* plots in Jamovi](https://usyd-soles-edu.github.io/cheatsheet-jamovi-flexplot/flexplot.html){target="_blank"} - `vis` 
 - [boxplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-boxplot/){target="_blank"} - `vis`
 - [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-scatterplot/){target="_blank"} - `vis`
 - [histograms](https://usyd-soles-edu.github.io/cheatsheet-jamovi-histogram/){target="_blank"} - `vis`
-- [t-tests/ANOVA](https://usyd-soles-edu.github.io/cheatsheet-jamovi-anova/){target="_blank"} - `stats`
-- regression - todo - `stats`
+- modelling a numerical response against:
+  - [one or more categorical predictors (t-tests & ANOVA)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-anova/){target="_blank"} - `stats`
+  - one or more numerical predictors (linear regression) - todo - `stats`
 - [Principal Component Analysis (PCA)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-pca/){target="_blank"} - `stats`
 
 
