@@ -21,11 +21,9 @@ Please provide feedback on the cheatsheets here: [**Give Feedback**](https://for
   - [one or more **categorical** predictors (ANOVA)](https://usyd-soles-edu.github.io/cheatsheet-r-anova/){target="_blank"} - `stats`
   - [one or more **numerical** predictors (linear regression)](https://usyd-soles-edu.github.io/cheatsheet-r-regression/){target="_blank"} - `stats`
 
-
-
 ## Jamovi
 
-- <span class="badge rounded-pill bg-danger ms-2">⭐ New</span> [Using flexplot to create *most* plots in Jamovi](https://usyd-soles-edu.github.io/cheatsheet-jamovi-flexplot/flexplot.html){target="_blank"} - `vis` 
+- <span class="badge rounded-pill bg-danger ms-2">⭐ New</span> [Using flexplot to create *common* plots in Jamovi](https://usyd-soles-edu.github.io/cheatsheet-jamovi-flexplot/flexplot.html){target="_blank"} - `vis` 
 - [boxplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-boxplot/){target="_blank"} - `vis`
 - [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-scatterplot/){target="_blank"} - `vis`
 - [histograms](https://usyd-soles-edu.github.io/cheatsheet-jamovi-histogram/){target="_blank"} - `vis`
@@ -34,14 +32,12 @@ Please provide feedback on the cheatsheets here: [**Give Feedback**](https://for
   - one or more numerical predictors (linear regression) - todo - `stats`
 - [Principal Component Analysis (PCA)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-pca/){target="_blank"} - `stats`
 
-
 ## General
 
 - [publication-ready ANOVA tables](https://biol2022.github.io/BIOL2022-unit-manual/assets/cheatsheet_manual_anova_table.pdf) - `vis`
 - [publication-ready regression tables](https://biol2022.github.io/BIOL2022-unit-manual/assets/cheatsheet_manual_lm_table.pdf) - `vis`
 - how to report statistics in text (planned) - `stats`
 - R and GitHub Copilot (planned) - `gen_ai`
-
 
 ## SPSS
 
