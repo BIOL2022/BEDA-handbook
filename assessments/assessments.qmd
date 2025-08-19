@@ -28,7 +28,7 @@ This is a short **quiz**, designed to give you early feedback on your prior unde
 It will help you identify areas where you may need to focus your study efforts. 
 
 <p><strong>Due in:</strong> <span id="countdown-eft"></span></p>
-[Details](#){.btn .btn-primary .disabled} [Submission link](#){.btn .btn-success .disabled}
+[Details](assessment-eft.qmd){.btn .btn-primary} [Submission link](#){.btn .btn-success .disabled}
 :::
 
 ::: {.assessment-section}
@@ -68,7 +68,7 @@ Practicals are a mix of structured and unstructured sessions. Each practical beg
 <script src="../scripts/countdown.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    startCountdown('2025-08-24T23:59:59', 'countdown-eft');
+    startCountdown('2025-08-29T23:59:59', 'countdown-eft');
     startCountdown('2025-08-31T23:59:59', 'countdown-mod1-quiz');
     startCountdown('2025-10-07T23:59:59', 'countdown-report1');
     startCountdown('2025-10-20T23:59:59', 'countdown-report2-dataset');

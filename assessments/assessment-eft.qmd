@@ -3,22 +3,13 @@ title: "Early Feedback Task"
 ---
 
 ## Overview
-In this assessment you will complete a quick survey and write a short reflection (about 100 words) on how things are going (so far). Tell us what you've learned, any challenges you’re facing, and what you’d like to improve. The goal is to help you reflect on whether you are actually prepared for BEDA. We want to make sure that you are ready to tackle the challenges ahead and this task will help us understand how we can support you better.
+ In this assessment you will complete a quiz and write a short reflection (about 100 words) on how things are going (so far). Tell us what you've learned, any challenges you’re facing, and what you’d like to improve. The goal is to help you reflect on whether you are actually prepared for BEDA. We can also use the information you provide to better support you moving forward.
 
-Think of it as a check-in, not a test—no trick questions, and definitely no pop quizzes.  
+Think of it as a check-in, not a test. The questions are designed to help you identify areas where you may need to focus your study efforts.
 
 *   **Weighting:** 5%
-*   **Due Date:** [Insert Due Date, e.g., Friday, Week 3, 11:59 PM AEST]
-*   **Learning Outcomes:** [Optional: Insert relevant learning outcomes or remove this line if not needed]
+*   **Due Date:** Friday, Week 4, 11:59 PM 
 
-## Task & Submission
-*   **What to do:** Complete a quick survey and write a short reflection (approximately 100 words).
-*   **Survey Access:** [Specify how/where to access the survey, e.g., Link on Canvas]
-*   **Reflection Submission:** [Specify how/where to submit the reflection, e.g., Canvas text box]
+**With EFTs, we may reach out to you to provide additional support or resources based on your responses.**
 
-## Marking
-You will get full marks (5%) as long as you complete both parts of this EFT (the survey and the reflection) by the due date.
-
-## Policies
-*   **Late Submissions:** [Specify policy, e.g., "Late submissions will receive a mark of zero unless prior arrangements are made due to exceptional circumstances."]
-*   **Academic Integrity:** All work submitted must be your own. Please refer to the [University's Academic Integrity Policy]([Insert Link to University Policy]).
+[Back to assessments](assessments.qmd)
