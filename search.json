@@ -1327,7 +1327,7 @@
     "href": "cheatsheets.html#jamovi",
     "title": "Cheatsheets",
     "section": "Jamovi",
-    "text": "Jamovi\n\n⭐ New Using flexplot to create common plots in Jamovi - vis\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nmodelling a numerical response against:\n\none or more categorical predictors (t-tests & ANOVA) - stats\none or more numerical predictors (linear regression) - todo - stats\n\nPrincipal Component Analysis (PCA) - stats",
+    "text": "Jamovi\n\n⭐ New Using flexplot to create common plots in Jamovi - vis\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nmodelling a numerical response against:\n\none or more categorical predictors (t-tests & ANOVA) - stats\n⭐ Newone or more numerical predictors (linear regression) - stats\n\nPrincipal Component Analysis (PCA) - stats",
     "crumbs": [
       "Home",
       "Cheatsheets"
