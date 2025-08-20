@@ -29,7 +29,7 @@ Please provide feedback on the cheatsheets here: [**Give Feedback**](https://for
 - [histograms](https://usyd-soles-edu.github.io/cheatsheet-jamovi-histogram/){target="_blank"} - `vis`
 - modelling a numerical response against:
   - [one or more categorical predictors (t-tests & ANOVA)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-anova/){target="_blank"} - `stats`
-  - one or more numerical predictors (linear regression) - todo - `stats`
+  - <span class="badge rounded-pill bg-danger ms-2">⭐ New</span>[one or more numerical predictors (linear regression)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-regression/){target="_blank"} - `stats`
 - [Principal Component Analysis (PCA)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-pca/){target="_blank"} - `stats`
 
 ## General
