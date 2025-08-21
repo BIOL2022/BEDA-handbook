@@ -28,7 +28,7 @@ This is a short **quiz**, designed to give you early feedback on your prior unde
 It will help you identify areas where you may need to focus your study efforts. 
 
 <p><strong>Due in:</strong> <span id="countdown-eft"></span></p>
-[Details](assessment-eft.qmd){.btn .btn-primary} [Submission link](#){.btn .btn-success .disabled}
+[Details](assessment-eft.qmd){.btn .btn-primary} [Submission link](https://canvas.sydney.edu.au/courses/67437/assignments/638396){.btn .btn-success}
 :::
 
 ::: {.assessment-section}
@@ -37,7 +37,7 @@ It will help you identify areas where you may need to focus your study efforts.
 This is a **quiz** that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.
 
 <p><strong>Due in:</strong> <span id="countdown-mod1-quiz"></span></p>
-[Details](#){.btn .btn-primary .disabled} [Submission link](#){.btn .btn-success .disabled}
+[Details](assessment-evaluation-quiz.qmd){.btn .btn-primary} [Submission link](https://canvas.sydney.edu.au/courses/67437/assignments/626423){.btn .btn-success}
 :::
 
 ::: {.assessment-section}
@@ -69,7 +69,7 @@ Practicals are a mix of structured and unstructured sessions. Each practical beg
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     startCountdown('2025-08-29T23:59:59', 'countdown-eft');
-    startCountdown('2025-08-31T23:59:59', 'countdown-mod1-quiz');
+    startCountdown('2025-09-05T23:59:59', 'countdown-mod1-quiz');
     startCountdown('2025-10-07T23:59:59', 'countdown-report1');
     startCountdown('2025-10-20T23:59:59', 'countdown-report2-dataset');
     startCountdown('2025-11-07T23:59:59', 'countdown-report2');
