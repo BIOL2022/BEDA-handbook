@@ -638,63 +638,7 @@
     "href": "assessments/assessment-evaluation-quiz.html",
     "title": "Evaluation Quiz (Module 1)",
     "section": "",
-    "text": "Brief Description: This is an open-book, multiple-choice quiz covering the content of Module 1. The goal is to check your understanding of key concepts before moving to Module 2.\nWeighting: 10%\nAvailability Window: [Specify start and end dates/times for the two-week completion period, e.g., Opens: Monday, Week 4, 9:00 AM AEST; Closes: Friday, Week 5, 11:59 PM AEST - Refer to assessments_data.csv or unit schedule for exact dates]\nLearning Outcomes Addressed:\n\n[Insert Learning Outcomes related to Module 1 content]\n[Add more as needed]"
-  },
-  {
-    "objectID": "assessments/assessment-evaluation-quiz.html#overview",
-    "href": "assessments/assessment-evaluation-quiz.html#overview",
-    "title": "Evaluation Quiz (Module 1)",
-    "section": "",
-    "text": "Brief Description: This is an open-book, multiple-choice quiz covering the content of Module 1. The goal is to check your understanding of key concepts before moving to Module 2.\nWeighting: 10%\nAvailability Window: [Specify start and end dates/times for the two-week completion period, e.g., Opens: Monday, Week 4, 9:00 AM AEST; Closes: Friday, Week 5, 11:59 PM AEST - Refer to assessments_data.csv or unit schedule for exact dates]\nLearning Outcomes Addressed:\n\n[Insert Learning Outcomes related to Module 1 content]\n[Add more as needed]"
-  },
-  {
-    "objectID": "assessments/assessment-evaluation-quiz.html#task-details-instructions",
-    "href": "assessments/assessment-evaluation-quiz.html#task-details-instructions",
-    "title": "Evaluation Quiz (Module 1)",
-    "section": "2. Task Details & Instructions",
-    "text": "2. Task Details & Instructions\n\nQuiz Format: Open-book, multiple-choice quiz.\nContent Covered: All content from Module 1.\nNumber of Attempts: Two (2) attempts. The highest score will be recorded.\nTime Limit (per attempt): [Specify time limit if any, e.g., 60 minutes per attempt]\nAccessing the Quiz: [Specify how/where to access the quiz, e.g., The quiz can be accessed via the ‘Quizzes’ section on Canvas.]\nPurpose: To help you evaluate your understanding of Module 1 concepts and prepare for subsequent modules. You have two weeks to complete it, allowing time to review between attempts."
-  },
-  {
-    "objectID": "assessments/assessment-evaluation-quiz.html#submission-guidelines",
-    "href": "assessments/assessment-evaluation-quiz.html#submission-guidelines",
-    "title": "Evaluation Quiz (Module 1)",
-    "section": "3. Submission Guidelines",
-    "text": "3. Submission Guidelines\n\nMethod: [e.g., Quiz completed and submitted directly within Canvas.]\nSaving Answers: [Specify if answers can be saved and returned to, or if it must be completed in one sitting per attempt.]\nTechnical Issues: [Provide contact or instructions for technical difficulties during the quiz.]"
-  },
-  {
-    "objectID": "assessments/assessment-evaluation-quiz.html#marking-criteria-rubric",
-    "href": "assessments/assessment-evaluation-quiz.html#marking-criteria-rubric",
-    "title": "Evaluation Quiz (Module 1)",
-    "section": "4. Marking Criteria & Rubric",
-    "text": "4. Marking Criteria & Rubric\n\nMarking Summary: This quiz is worth 10% of your final grade. Marks are based on the number of correctly answered multiple-choice questions. Your highest score from the two attempts will be taken.\nDetailed Rubric: [Typically not applicable for MCQs in this format, but specify if there’s any variation, e.g., “Each question is worth [X] marks. No partial marks for individual questions.”]"
-  },
-  {
-    "objectID": "assessments/assessment-evaluation-quiz.html#resources-support",
-    "href": "assessments/assessment-evaluation-quiz.html#resources-support",
-    "title": "Evaluation Quiz (Module 1)",
-    "section": "5. Resources & Support",
-    "text": "5. Resources & Support\n\nRelevant Materials:\n\nAll lecture notes, readings, and resources from Module 1.\n[Link to any practice quizzes or self-assessment tools if available]\n\nSupport Channels:\n\n[Specify support, e.g., If you have questions about Module 1 content, please use the ‘Module 1 Discussion Forum’ on Canvas before attempting the quiz.]"
-  },
-  {
-    "objectID": "assessments/assessment-evaluation-quiz.html#policies",
-    "href": "assessments/assessment-evaluation-quiz.html#policies",
-    "title": "Evaluation Quiz (Module 1)",
-    "section": "6. Policies",
-    "text": "6. Policies\n\nLate Submissions/Attempts: The quiz must be completed within the specified two-week window. No attempts will be possible after the closing date/time. Ensure you start your attempts well before the deadline to avoid technical issues.\nExtensions: [Explain the process, e.g., “Extensions are generally not granted for online quizzes with a long availability window unless there are documented exceptional circumstances. Refer to the Unit of Study Outline for Special Consideration procedures.”]\nAcademic Integrity: [Include a standard reminder, e.g., “While this is an open-book quiz, your answers must be your own individual work. Do not collaborate with other students during your attempts. Please familiarize yourself with the University’s Academic Integrity Policy: [Link to University Policy].”]\nResubmission Policy (if any): Not applicable (covered by two attempts)."
-  },
-  {
-    "objectID": "assessments/assessment-evaluation-quiz.html#estimated-time-commitment",
-    "href": "assessments/assessment-evaluation-quiz.html#estimated-time-commitment",
-    "title": "Evaluation Quiz (Module 1)",
-    "section": "7. Estimated Time Commitment",
-    "text": "7. Estimated Time Commitment\n\n[Provide a guideline, e.g., “Allow approximately [e.g., 1-2 hours] per attempt, including review time if you plan to use both attempts strategically.”]"
-  },
-  {
-    "objectID": "assessments/assessment-evaluation-quiz.html#feedback",
-    "href": "assessments/assessment-evaluation-quiz.html#feedback",
-    "title": "Evaluation Quiz (Module 1)",
-    "section": "8. Feedback",
-    "text": "8. Feedback\n\nHow and When: [Explain, e.g., “Your score will be available immediately after each attempt. Correct answers and further feedback [will/will not] be released [specify when, e.g., after the quiz window closes for all students].”]"
+    "text": "This quiz is an individual task worth 10% of your final grade.\nLocation: You can do this quiz online. This means that you are responsible for picking a time and place that maximises your ability to complete the quiz without interruption, which includes having a stable internet connection.\nTime limit: The quiz has a time limit of 40 minutes. In reality it should take you much less time than that to complete the quiz. The additional time is for unforeseen circumstances.\nResources: The quiz is open book. This means you can use any resources you have available to you, including the internet, your notes, and the course materials. The reason for this is that as an evaluation tool, we hope that you use it as a learning opportunity. There is no point in cheating as you will only be cheating yourself out of evaluating your own understanding of the material. Most of you should do well if you have been keeping up with the content anyway.\nAttempts: you will have two attempts to complete the quiz. The highest score will be recorded. No extra chances will be given for any reason outside of technical issues. A technical issue is defined as a problem with the quiz itself. Internet connection issues will not be good reasons for extra attempts.\nDue: You have about 7 days to complete both attempts of the quiz once it is opened. Note that this is approximate.\nThe quiz consists of multiple choice (one correct answer) and multiple answer (more than one correct answer) questions.\n\nBack to assessments"
   },
   {
     "objectID": "assessments/assessment-dataset-submission.html",
