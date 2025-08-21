@@ -15,8 +15,8 @@ Week_Num,Dates_Str,Module_Num,Module_Title,Activity_Type,Activity_Description,ht
 3,18 aug - 22 aug,1,Module 1: fundamentals,Lecture,"**L03a:** All models are wrong, but some more than others (testing assumptions)",https://biol2022.github.io/L03a-model-appropriate/,https://biol2022.github.io/L03a-model-appropriate/L03a-glm-assumptions.pdf
 3,18 aug - 22 aug,1,Module 1: fundamentals,Lecture,"**L03b:** Modelling differences between two things: A linear model with a single, categorical (and binary) *X*",https://biol2022.github.io/L03b-ttests/,https://biol2022.github.io/L03b-ttests/L03b-ttests.pdf
 3,18 aug - 22 aug,1,Module 1: fundamentals,Practical,**Practical Week 03:**  Data analysis,https://biol2022.github.io/BEDA-handbook/module01/104-week03.html,
-3,18 aug - 22 aug,1,Module 1: fundamentals,Resource,Quiz 3 [ 0%] -- opens Friday,,
-3,18 aug - 22 aug,1,Module 1: fundamentals,Resource,Early Feedback Task  [5%] -- opens Sunday,,
+3,18 aug - 22 aug,1,Module 1: fundamentals,Resource,"<a><i class=""bi bi-calendar2""></i></a>[Quiz 3 [ 0%] -- opens Friday](https://canvas.sydney.edu.au/courses/67437/assignments/626422)",,
+3,18 aug - 22 aug,1,Module 1: fundamentals,Resource,"<a><i class=""bi bi-calendar2""></i></a>[Early Feedback Task  [5%] -- opens Friday 10am](https://canvas.sydney.edu.au/courses/67437/assignments/638396)",,
 4,25 aug - 29 aug,1,Module 1: fundamentals,Lecture,"**L04a:** Modelling multiple relationships: a linear model with multiple, continuous  *X* variables",https://biol2022.github.io/L04a-mlr/,
 4,25 aug - 29 aug,1,Module 1: fundamentals,Lecture,**L04b:** Modelling multiple differences: a linear model with two or more categorical  *X* variables,https://biol2022.github.io/L04b-anova/,
 4,25 aug - 29 aug,1,Module 1: fundamentals,Lecture,"**L04c:** Model transformations -- why, and how?",https://biol2022.github.io/L04c-model-transformations/,
