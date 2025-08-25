@@ -28,158 +28,318 @@ To get started, head over to [Unit Information](unit-information.qmd) to learn a
 
 **Below is a quick schedule of the unit, where you can find links to the lectures and practicals.**
 
-
 :::{.column-page}
-## Schedule {.text-center}
+:::{.text-center}
+## Schedule
 
-```{r}
-#| include: false
 
-library(kableExtra)
-library(dplyr)
-library(readr) # For read_csv
-library(tidyr) # For pivot_wider and unnest
-library(purrr) # For map functions if needed for dynamic groups
+### Module 1: Fundamentals
+:::
+:::{.grid}
+::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
+#### [**Week 01** -- 4 Aug - 8 Aug]{style="color: firebrick;"}
 
-# Load schedule data from CSV
-schedule_data_raw <- readr::read_csv("assets/schedule_data.csv", show_col_types = FALSE)
+**<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-# Process the schedule data
-# Summarise Resources separately
-resources_by_week <- schedule_data_raw |>
-  filter(Activity_Type == "Resource") |>
-  group_by(Week_Num, Dates_Str, Module_Num, Module_Title) |>
-  summarise(Resources = paste(
-    paste0(
-      ifelse(!is.na(html_link) & nzchar(trimws(html_link)),
-        sprintf("[%s](%s)", Activity_Description, html_link),
-        Activity_Description
-      ),
-      ifelse(!is.na(pdf_link) & nzchar(trimws(pdf_link)),
-        sprintf(' | <a href="%s" target="_blank"><i class="bi bi-filetype-pdf"></i></a>', pdf_link),
-        ""
-      )
-    ),
-    collapse = "<br>"
-  ), .groups = "drop")
+[**L01a Tue:**]{style="color: #00598dff;"} [Guest lecture](https://canvas.sydney.edu.au/courses/67437/modules/items/2829563) <br>
+[**L01b Tue:**]{style="color: #00598dff;"} [The nature of data and numbers in biology experiments](https://canvas.sydney.edu.au/courses/67437/modules/items/2831187) <br>
+[**L01c Tue:**]{style="color: #00598dff;"} [Welcome to BEDA](https://biol2022.github.io/L00-Welcome-to-BEDA) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L00-Welcome-to-BEDA/L00-welcome.pdf) <br>
+[**L01d Wed:**]{style="color: #00598dff;"} [(Re-) introduction to experimental design and analysis](https://biol2022.github.io/L01-intro-exp-design-analysis) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L01-intro-exp-design-analysis/L01c-Introduction.pdf) <br>
+[**Practical Week 01:**]{style="color: #006e51ff;"} [Getting started](module01/102-week01.qmd)
+:::
 
-# Process other activities
-schedule_processed <- schedule_data_raw |>
-  filter(Activity_Type != "Resource") |>
-  mutate(
-    Formatted_Activity_Description = {
-      # Part 1: Main text with optional HTML link
-      main_part <- ifelse(!is.na(html_link) & nzchar(trimws(html_link)),
-        sprintf("[%s](%s)", Activity_Description, html_link),
-        Activity_Description
-      )
+::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
+####
 
-      # Part 2: Optional PDF icon link
-      pdf_icon_part <- ifelse(!is.na(pdf_link) & nzchar(trimws(pdf_link)),
-        sprintf(' <a href="%s" target="_blank"><i class="bi bi-filetype-pdf"></i></a>', pdf_link),
-        ""
-      )
+**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
 
-      # Combine them
-      formatted_desc <- paste0(main_part, pdf_icon_part)
+[<i class="bi bi-question-circle-fill"></i> Am I ready for BEDA?](prerequisites.qmd) <br>
+[<i class="bi bi-clipboard-check-fill"></i> Quiz 1 [0%] -- opens Friday](https://canvas.sydney.edu.au/courses/67437/assignments/626420)
+:::
+:::
 
-      # Add a line break before practicals
-      ifelse(
-        startsWith(Activity_Description, "**Practical"),
-        paste0("<br>", formatted_desc),
-        formatted_desc
-      )
-    }
-  ) |>
-  group_by(Week_Num, Dates_Str, Module_Num, Module_Title, Activity_Type) |>
-  summarise(Formatted_Activity_Description = paste(Formatted_Activity_Description, collapse = "<br>"), .groups = "drop") |>
-  pivot_wider(
-    names_from = Activity_Type,
-    values_from = Formatted_Activity_Description,
-    values_fill = list(Formatted_Activity_Description = "")
-  ) |>
-  rename(
-    Lecture_Topics = Lecture,
-    Practical_Activities = Practical
-  ) |>
-  left_join(resources_by_week, by = c("Week_Num", "Dates_Str", "Module_Num", "Module_Title")) |>
-  mutate(
-    Week = sprintf("**Week %02d**<br>%s", Week_Num, Dates_Str)
-  ) |>
-  arrange(Week_Num) |>
-  mutate(
-    Topics_and_Activities = paste0(
-      coalesce(Lecture_Topics, ""),
-      ifelse(!is.na(Lecture_Topics) & !is.na(Practical_Activities) & nzchar(Practical_Activities), "<br>", ""),
-      coalesce(Practical_Activities, "")
-    )
-  ) |>
-  select(Week, Topics_and_Activities, Resources, Module_Num, Module_Title)
+-----
 
-# Create and format the table
-library(gt)
+:::{.grid}
+::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
+#### [**Week 02** -- 11 Aug - 15 Aug]{style="color: firebrick;"}
 
-```
+**<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-```{r}
-#| echo: false
-# Create the base gt table
-gt_table <- gt(schedule_processed, groupname_col = "Module_Title")
+[**L02a Tue:**]{style="color: #00598dff;"} [What is a representative sample?](https://biol2022.github.io/L02a-represenative-sampling/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L02a-represenative-sampling/L02a-representative-sampling.pdf) <br>
+[**L02b Wed:**]{style="color: #00598dff;"} [Modelling fundamentals – a linear model with a single, continuous $X$](https://biol2022.github.io/L02b-linear-model/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L02b-linear-model/L02b-linear-model.pdf) <br>
+[**L02c Wed:**]{style="color: #00598dff;"} [(Almost) every statistical technique is a linear model (or, identifying response and predictors)](https://biol2022.github.io/L02c-all-linear-model/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L02c-all-linear-model/L02c-general-linear-model.pdf) <br>
+[**Practical Week 02:**]{style="color: #006e51ff;"} [Study design](module01/103-week02.qmd)
+:::
 
-# Dynamically add row groups
-# First, get the unique modules and their corresponding row numbers (based on Week_Num)
-module_info <- schedule_processed |>
-  distinct(Module_Num, Module_Title) |>
-  arrange(Module_Num)
+::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
+####
 
-# The gt table is already grouped by Module_Title due to groupname_col = "Module_Title"
-# We just need to ensure the order of these groups if necessary,
-# and the labels are automatically taken from Module_Title.
-# The `row_group_order` function will handle the display order of these groups.
-gt_table |>
-  tab_header(
-    title = md("**Lectures & Practicals**"),
-    subtitle = md("_2025 Semester 2_")
-  ) |>
-  row_group_order(groups = module_info$Module_Title) |>
-  cols_label(
-    Week = md("**Week**"),
-    Topics_and_Activities = md("**Activities**"),
-    Resources = md("**Note**")
-  ) |>
-  cols_align(align = "left", columns = Week) |>
-  cols_width(
-    Week ~ pct(12),
-    Topics_and_Activities ~ pct(60),
-    Resources ~ pct(28)
-  ) |>
-  fmt_markdown(columns = everything()) |>
-  cols_hide(columns = c(Module_Num, Module_Title)) |>
-  tab_options(
-    # table.background.color = "#f8fafc",
-    table.border.top.color = "black",
-    table.border.bottom.color = "black",
-    # heading.background.color = "#005A8C",
-    heading.title.font.size = 24,
-    heading.subtitle.font.size = 16,
-    row_group.background.color = "azure",
-    row_group.font.weight = "bold",
-    row_group.font.size = 16,
-    # column_labels.background.color = "#e3eaf2",
-    column_labels.font.weight = "bold",
-    column_labels.font.size = 15,
-    data_row.padding = px(8),
-    table.font.size = 14
-  ) |>
-  tab_style(
-    style = cell_text(color = "black"),
-    locations = cells_title(groups = c("title", "subtitle"))
-  ) |>
-  tab_style(
-    style = cell_text(weight = "bold"),
-    locations = cells_column_labels(everything())
-  )
+**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
 
-```
+[<i class="bi bi-bookmark-star-fill"></i> Common statistical tests are linear models](https://lindeloev.github.io/tests-as-linear/) <br>
+[<i class="bi bi-calendar2"></i> **Quiz 2** [0%] -- opens Friday](https://canvas.sydney.edu.au/courses/67437/assignments/626421)
 
+:::
+:::
+
+-----
+
+:::{.grid}
+::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
+#### [**Week 03** -- 18 Aug - 22 Aug]{style="color: firebrick;"}
+
+**<i class="bi bi-book-fill"></i> Lectures and Practicals**
+
+[**L03a Tue:**]{style="color: #00598dff;"} [Is my model appropriate? (testing assumptions)](https://biol2022.github.io/L03a-model-appropriate/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L03a-model-appropriate/L03a-glm-assumptions.pdf) <br>
+[**L03b Wed:**]{style="color: #00598dff;"} [Modelling differences between two things: A linear model with a single, categorical (and binary) $X$](https://biol2022.github.io/L03b-ttests/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L03b-ttests/L03b-ttests.pdf) <br>
+[**Practical Week 03:**]{style="color: #006e51ff;"} [Data analysis](https://biol2022.github.io/BEDA-handbook/module01/104-week03.html)
+:::
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
+####
+
+**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
+
+[<i class="bi bi-calendar2"></i> Quiz 3 [0%] -- opens Friday](https://canvas.sydney.edu.au/courses/67437/assignments/626422) <br>
+[<i class="bi bi-calendar2"></i> Early Feedback Task [5%] -- opens Friday 10am](https://canvas.sydney.edu.au/courses/67437/assignments/638396)
+:::
+:::
+
+
+
+
+-----
+
+:::{.grid}
+::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
+#### [**Week 04** -- 25 Aug - 29 Aug]{style="color: firebrick;"}
+
+**<i class="bi bi-book-fill"></i> Lectures and Practicals**
+
+[**L04a Tue:**]{style="color: #00598dff;"} [Modelling multiple relationships: a linear model with multiple, continuous $X$ variables](https://biol2022.github.io/L04a-mlr/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L04a-mlr/L04a-mlr.pdf) <br>
+[**L04b Wed:**]{style="color: #00598dff;"} [Modelling multiple differences: a linear model with two or more categorical $X$ variables](https://biol2022.github.io/L04b-anova/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L04b-anova/L04b-anova.pdf) <br>
+[**L04c Wed:**]{style="color: #00598dff;"} [Model transformations -- why, and how?](https://biol2022.github.io/L04c-model-transformations/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L04c-model-transformations/L04c-model-transformations.pdf) <br>
+[**Practical Week 04:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
+:::
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
+####
+
+**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
+
+[Evaluation Quiz (10%)](#)
+
+:::
+:::
+
+
+-----
+
+:::{.grid}
+::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
+#### [**Week 05** -- 1 Sep - 5 Sep]{style="color: firebrick;"}
+
+**<i class="bi bi-book-fill"></i> Lectures and Practicals**
+
+[**L05a Tue:**]{style="color: #00598dff;"} [Control, fixed and random variables -- adding sense to models (ANCOVA and mixed models)](https://biol2022.github.io/L05a-blocking-fixed-random/) <br>
+[**L05b Wed:**]{style="color: #00598dff;"} [You've got this -- Module 1 revision](https://biol2022.github.io/L05b-revision/) <br>
+[**Practical Week 05:**]{style="color: #006e51ff;"} [Check timeline](#)
+:::
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
+####
+
+**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
+
+Work on your experiments
+:::
+:::
+
+-----
+
+:::{.text-center}
+### Module 2: Univariate experiments
+:::
+
+:::{.grid}
+::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
+#### [**Week 06** -- 8 Sep - 12 Sep <i class="bi bi-exclamation-triangle-fill"></i> **No practicals this week** <i class="bi bi-exclamation-triangle-fill"></i>]{style="color: firebrick;"}
+
+**<i class="bi bi-book-fill"></i> Lectures and Practicals**
+
+[**L06a Tue:**]{style="color: #00598dff;"} [General refresher](https://canvas.sydney.edu.au/courses/67437/modules/items/2829564) <br>
+[**L06b Wed:**]{style="color: #00598dff;"} [Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables](https://canvas.sydney.edu.au/courses/67437/modules/items/2829565) <br>
+**No practicals**
+:::
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
+####
+
+**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
+
+--
+:::
+:::
+
+-----
+
+:::{.grid}
+::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
+#### [**Week 07** -- 15 Sep - 19 Sep]{style="color: firebrick;"}
+
+**<i class="bi bi-book-fill"></i> Lectures and Practicals**
+
+[**L07a Tue:**]{style="color: #00598dff;"} [Does wind reduce tree growth? Detecting differences versus describing relationships](https://canvas.sydney.edu.au/courses/67437/modules/items/2829568) <br>
+[**L07b Wed:**]{style="color: #00598dff;"} [What are the chances of finding a bandicoot? Dealing with binary response data](https://canvas.sydney.edu.au/courses/67437/modules/items/2829566) <br>
+[**Practical Week 07:**]{style="color: #006e51ff;"} [Check timeline](#)
+:::
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
+####
+
+**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
+
+--
+:::
+:::
+
+-----
+
+:::{.grid}
+::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
+#### [**Week 08** -- 22 Sep - 26 Sep]{style="color: firebrick;"}
+
+**<i class="bi bi-book-fill"></i> Lectures and Practicals**
+
+[**L08a Tue:**]{style="color: #00598dff;"} [Information-theoretic methods vs. null hypothesis testing](https://canvas.sydney.edu.au/courses/67437/modules/items/2829569) <br>
+[**L08b Wed:**]{style="color: #00598dff;"} [Revision: answering your queries](#) <br>
+[**Practical Week 08:**]{style="color: #006e51ff;"} [Check timeline](#)
+:::
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
+####
+
+**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
+
+--
+:::
+:::
+
+-----
+
+:::{.text-center}
+### Mid-semester break
+
+-----
+
+### Module 3: Multivariate experiments
+:::
+
+:::{.grid}
+::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
+#### [**Week 09** -- 6 Oct - 10 Oct]{style="color: firebrick;"}
+
+**<i class="bi bi-book-fill"></i> Lectures and Practicals**
+
+[**L09a Tue:**]{style="color: #00598dff;"} [Introduction to multivariate analysis](https://canvas.sydney.edu.au/courses/67437/modules/items/2829678) <br>
+[**L09b Wed:**]{style="color: #00598dff;"} [Principal Component Analysis (PCA) and Factor Analysis (FA)](https://canvas.sydney.edu.au/courses/67437/modules/items/2829679) <br>
+[**Practical Week 09:**]{style="color: #006e51ff;"} [Check timeline](#)
+:::
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
+####
+
+**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
+
+Report 1 (25%)
+:::
+:::
+
+-----
+
+:::{.grid}
+::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
+#### [**Week 10** -- 13 Oct - 17 Oct]{style="color: firebrick;"}
+
+**<i class="bi bi-book-fill"></i> Lectures and Practicals**
+
+[**L10a Tue:**]{style="color: #00598dff;"} [Clustering](https://canvas.sydney.edu.au/courses/67437/modules/items/2829680) <br>
+[**L10b Wed:**]{style="color: #00598dff;"} [Non-metric multi-dimensional scaling (nMDS) and hypothesis testing](https://canvas.sydney.edu.au/courses/67437/modules/items/2829681) <br>
+[**Practical Week 10:**]{style="color: #006e51ff;"} [Check timeline](#)
+:::
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
+####
+
+**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
+
+Informal presentations
+:::
+:::
+
+-----
+
+:::{.grid}
+::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
+#### [**Week 11** -- 20 Oct - 24 Oct]{style="color: firebrick;"}
+
+**<i class="bi bi-book-fill"></i> Lectures and Practicals**
+
+[**L11a Tue:**]{style="color: #00598dff;"} [Multivariate analysis of variance (MANOVA)](https://canvas.sydney.edu.au/courses/67437/modules/items/2829682) <br>
+[**L11b Wed:**]{style="color: #00598dff;"} [Multivariate Revision 1 (no slides)](#) <br>
+[**Practical Week 11:**]{style="color: #006e51ff;"} [Check timeline](#)
+:::
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
+####
+
+**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
+
+Group dataset submission (5%)
+:::
+:::
+
+-----
+
+:::{.grid}
+::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
+#### [**Week 12** -- 27 Oct - 31 Oct]{style="color: firebrick;"}
+
+**<i class="bi bi-book-fill"></i> Lectures and Practicals**
+
+[**L12a Tue:**]{style="color: #00598dff;"} [Rarefaction and Bayesian analysis](https://canvas.sydney.edu.au/courses/67437/modules/items/2829684) <br>
+[**L12b Wed:**]{style="color: #00598dff;"} [Multivariate Revision 2 (no slides)](#) <br>
+[**Practical Week 12:**]{style="color: #006e51ff;"} [Check timeline](#)
+:::
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
+####
+
+**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
+
+--
+:::
+:::
+
+-----
+
+:::{.grid}
+::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
+#### [**Week 13** -- 3 Nov - 7 Nov]{style="color: firebrick;"}
+
+**<i class="bi bi-book-fill"></i> Lectures and Practicals**
+
+[**Revision and Q&amp;A**](#) <br>
+[**Practical Week 13:**]{style="color: #006e51ff;"} [Feedback, Exam and Discussions](#)
+:::
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
+####
+
+**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
+
+Report 2 (15%)
+:::
+:::
 :::
