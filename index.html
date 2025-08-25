@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="assets/timeline.css">
 </head>
@@ -276,14 +305,8 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link active" data-scroll-target="#schedule">Schedule</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
@@ -330,561 +353,194 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Below is a quick schedule of the unit, where you can find links to the lectures and practicals.</strong></p>
 </section>
 </section>
-<section id="schedule" class="level2 text-center column-page">
-<h2 class="text-center anchored" data-anchor-id="schedule">Schedule</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div id="sehvjoyokd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#sehvjoyokd table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#sehvjoyokd thead, #sehvjoyokd tbody, #sehvjoyokd tfoot, #sehvjoyokd tr, #sehvjoyokd td, #sehvjoyokd th {
-  border-style: none;
-}
-
-#sehvjoyokd p {
-  margin: 0;
-  padding: 0;
-}
-
-#sehvjoyokd .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #000000;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #000000;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#sehvjoyokd .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#sehvjoyokd .gt_title {
-  color: #333333;
-  font-size: 24px;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#sehvjoyokd .gt_subtitle {
-  color: #333333;
-  font-size: 16px;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#sehvjoyokd .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#sehvjoyokd .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#sehvjoyokd .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#sehvjoyokd .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#sehvjoyokd .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#sehvjoyokd .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#sehvjoyokd .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#sehvjoyokd .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#sehvjoyokd .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#sehvjoyokd .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #F0FFFF;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#sehvjoyokd .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #F0FFFF;
-  font-size: 16px;
-  font-weight: bold;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#sehvjoyokd .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#sehvjoyokd .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#sehvjoyokd .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#sehvjoyokd .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#sehvjoyokd .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#sehvjoyokd .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#sehvjoyokd .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#sehvjoyokd .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#sehvjoyokd .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#sehvjoyokd .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#sehvjoyokd .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#sehvjoyokd .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#sehvjoyokd .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#sehvjoyokd .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#sehvjoyokd .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#sehvjoyokd .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#sehvjoyokd .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#sehvjoyokd .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#sehvjoyokd .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#sehvjoyokd .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#sehvjoyokd .gt_left {
-  text-align: left;
-}
-
-#sehvjoyokd .gt_center {
-  text-align: center;
-}
-
-#sehvjoyokd .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#sehvjoyokd .gt_font_normal {
-  font-weight: normal;
-}
-
-#sehvjoyokd .gt_font_bold {
-  font-weight: bold;
-}
-
-#sehvjoyokd .gt_font_italic {
-  font-style: italic;
-}
-
-#sehvjoyokd .gt_super {
-  font-size: 65%;
-}
-
-#sehvjoyokd .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#sehvjoyokd .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#sehvjoyokd .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#sehvjoyokd .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#sehvjoyokd .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#sehvjoyokd .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#sehvjoyokd .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#sehvjoyokd .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#sehvjoyokd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<colgroup>
-<col style="width: 12%">
-<col style="width: 60%">
-<col style="width: 28%">
-</colgroup>
-<thead>
-<tr class="gt_heading header">
-<th colspan="3" class="gt_heading gt_title gt_font_normal" style="color: #000000"><strong>Lectures &amp; Practicals</strong></th>
-</tr>
-<tr class="gt_heading even">
-<th colspan="3" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="color: #000000"><em>2025 Semester 2</em></th>
-</tr>
-<tr class="gt_col_headings header">
-<th id="Week" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col"><strong>Week</strong></th>
-<th id="Topics_and_Activities" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col"><strong>Activities</strong></th>
-<th id="Resources" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col"><strong>Note</strong></th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="gt_group_heading_row odd">
-<td colspan="3" id="Module 1: fundamentals" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Module 1: fundamentals</td>
-</tr>
-<tr class="gt_row_group_first even">
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Week"><strong>Week 01</strong><br>4 aug - 8 aug</td>
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Topics_and_Activities"><a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829563"><strong>L01a Tue:</strong> Guest lecture</a><br><a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2831187"><strong>L01b Tue:</strong> The nature of data and numbers in biology experiments</a><br><a href="https://biol2022.github.io/L00-Welcome-to-BEDA"><strong>L01c Tue:</strong> Welcome to BEDA</a> <a href="https://canvas.sydney.edu.au/files/44779723/download?download_frd=1" target="_blank"><i class="bi bi-filetype-pdf"></i></a><br><a href="https://biol2022.github.io/L01-intro-exp-design-analysis"><strong>L01d Wed:</strong> (Re-) indroduction to experimental design and analysis</a> <a href="https://canvas.sydney.edu.au/files/44804817/download?download_frd=1&amp;verifier=L1RiOY0gvC1to9ZA2yr1JkfmO2vLjVJjwsgR44YR" target="_blank"><i class="bi bi-filetype-pdf"></i></a><br><br><a href="https://biol2022.github.io/BEDA-handbook/module01/102-week01.html"><strong>Practical Week 01:</strong> Getting started</a></td>
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Resources"><a><i class="bi bi-bookmark-star-fill"></i></a> <a href="./prerequisites.html">Am I ready for BEDA?</a><br><a><i class="bi bi-calendar2"></i></a> <a href="https://canvas.sydney.edu.au/courses/67437/assignments/626420"><strong>Quiz 1</strong> [0%] – opens Friday</a></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Week"><strong>Week 02</strong><br>11 aug - 15 aug</td>
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Topics_and_Activities"><a href="https://biol2022.github.io/L02a-represenative-sampling/"><strong>L02a:</strong> What is a representative sample?</a> <a href="https://biol2022.github.io/L02a-represenative-sampling/L02a-representative-sampling.pdf" target="_blank"><i class="bi bi-filetype-pdf"></i></a><br><a href="https://biol2022.github.io/L02b-linear-model/"><strong>L02b:</strong> Modelling fundamentals – a linear model with a single, continuous <em>X</em></a> <a href="https://biol2022.github.io/L02b-linear-model/L02b-linear-model.pdf" target="_blank"><i class="bi bi-filetype-pdf"></i></a><br><a href="https://biol2022.github.io/L02c-all-linear-model/"><strong>L02c:</strong> (Almost) every statistical technique is a linear model (or, identifying response and predictors)</a> <a href="https://biol2022.github.io/L02c-all-linear-model/L02c-general-linear-model.pdf" target="_blank"><i class="bi bi-filetype-pdf"></i></a><br><br><a href="https://biol2022.github.io/BEDA-handbook/module01/103-week02.html"><strong>Practical Week 02:</strong> Study design</a></td>
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Resources"><a><i class="bi bi-bookmark-star-fill"></i></a> <a href="https://lindeloev.github.io/tests-as-linear/">Common statistical tests are linear models</a><br><a><i class="bi bi-calendar2"></i></a> <a href="https://canvas.sydney.edu.au/courses/67437/assignments/626421"><strong>Quiz 2</strong> [0%] – opens Friday</a></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Week"><strong>Week 03</strong><br>18 aug - 22 aug</td>
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Topics_and_Activities"><a href="https://biol2022.github.io/L03a-model-appropriate/"><strong>L03a:</strong> All models are wrong, but some more than others (testing assumptions)</a> <a href="https://biol2022.github.io/L03a-model-appropriate/L03a-model-appropriate.pdf" target="_blank"><i class="bi bi-filetype-pdf"></i></a><br><a href="https://biol2022.github.io/L03b-ttests/"><strong>L03b:</strong> Modelling differences between two things: A linear model with a single, categorical (and binary) <em>X</em></a> <a href="https://biol2022.github.io/L03b-ttests/L03b-ttests.pdf" target="_blank"><i class="bi bi-filetype-pdf"></i></a><br><br><a href="https://biol2022.github.io/BEDA-handbook/module01/104-week03.html"><strong>Practical Week 03:</strong> Data analysis</a></td>
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Resources">Quiz 3 [ 0%] – opens Friday<br>Early Feedback Task [5%] – opens Sunday</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Week"><strong>Week 04</strong><br>25 aug - 29 aug</td>
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Topics_and_Activities"><a href="https://biol2022.github.io/L04a-mlr/"><strong>L04a:</strong> Modelling multiple relationships: a linear model with multiple, continuous <em>X</em> variables</a><br><a href="https://biol2022.github.io/L04b-anova/"><strong>L04b:</strong> Modelling multiple differences: a linear model with two or more categorical <em>X</em> variables</a><br><a href="https://biol2022.github.io/L04c-model-transformations/"><strong>L04c:</strong> Model transformations – why, and how?</a><br><br><strong>Practical Week 04:</strong> Check timeline</td>
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Resources">Evaluation Quiz (10%)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Week"><strong>Week 05</strong><br>1 sep - 5 sep</td>
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Topics_and_Activities"><a href="https://biol2022.github.io/L05a-blocking-fixed-random/"><strong>L05a:</strong> Control, fixed and random variables – adding sense to models (ANCOVA and mixed models)</a><br><a href="https://biol2022.github.io/L05b-revision/"><strong>L05b:</strong> You’ve got this – Module 1 revision</a><br><br><strong>Practical Week 05:</strong> Check timeline</td>
-<td class="gt_row gt_left" headers="Module 1: fundamentals  Resources">Work on your experiments</td>
-</tr>
-<tr class="gt_group_heading_row odd">
-<td colspan="3" id="Module 2: univariate experiments" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Module 2: univariate experiments</td>
-</tr>
-<tr class="gt_row_group_first even">
-<td class="gt_row gt_left" headers="Module 2: univariate experiments  Week"><strong>Week 06</strong><br>8 sep - 12 sep</td>
-<td class="gt_row gt_left" headers="Module 2: univariate experiments  Topics_and_Activities"><a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829564"><strong>L06a:</strong> General refresher</a><br><a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829565"><strong>L06b:</strong> Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables</a><br><strong>No practicals</strong></td>
-<td class="gt_row gt_left" headers="Module 2: univariate experiments  Resources">–</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Module 2: univariate experiments  Week"><strong>Week 07</strong><br>15 sep - 19 sep</td>
-<td class="gt_row gt_left" headers="Module 2: univariate experiments  Topics_and_Activities"><a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829568"><strong>L07a:</strong> Does wind reduce tree growth? Detecting differences versus describing relationships</a><br><a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829566"><strong>L07b:</strong> What are the chances of finding a bandicoot? Dealing with binary response data</a><br><br><strong>Practical Week 07:</strong> Check timeline</td>
-<td class="gt_row gt_left" headers="Module 2: univariate experiments  Resources">–</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Module 2: univariate experiments  Week"><strong>Week 08</strong><br>22 sep - 26 sep</td>
-<td class="gt_row gt_left" headers="Module 2: univariate experiments  Topics_and_Activities"><a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829569"><strong>L08a:</strong> Information-theoretic methods vs.&nbsp;null hypothesis testing</a><br><strong>L08b:</strong> Revision: answering your queries<br><br><strong>Practical Week 08:</strong> Check timeline</td>
-<td class="gt_row gt_left" headers="Module 2: univariate experiments  Resources">–</td>
-</tr>
-<tr class="gt_group_heading_row odd">
-<td colspan="3" id="Module 3: multivariate experiments" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Module 3: multivariate experiments</td>
-</tr>
-<tr class="gt_row_group_first even">
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Week"><strong>Week 09</strong><br>6 oct - 10 oct</td>
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Topics_and_Activities"><a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829678"><strong>L09a:</strong> Introduction to multivariate analysis</a><br><a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829679"><strong>L09b:</strong> Principal Component Analysis (PCA) and Factor Analysis (FA)</a><br><br><strong>Practical Week 09:</strong></td>
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Resources">Report 1 (25%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Week"><strong>Week 10</strong><br>13 oct - 17 oct</td>
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Topics_and_Activities"><a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829680"><strong>L10a:</strong> Clustering</a><br><a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829681"><strong>L10b:</strong> Non-metric multi-dimensional scaling (nMDS) and hypothesis testing</a><br><br><strong>Practical Week 10:</strong></td>
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Resources">Informal presentations</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Week"><strong>Week 11</strong><br>20 oct - 24 oct</td>
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Topics_and_Activities"><a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829682"><strong>L11a:</strong> Multivariate analysis of variance (MANOVA)</a><br><strong>L11b:</strong> Multivariate Revision 1 (no slides)<br><br><strong>Practical Week 11:</strong></td>
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Resources">Group dataset submission (5%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Week"><strong>Week 12</strong><br>27 oct - 31 oct</td>
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Topics_and_Activities"><a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829684"><strong>L12a:</strong> Rarefaction and Bayesian analysis</a><br><strong>L12b:</strong> Multivariate Revision 2 (no slides)<br><br><strong>Practical Week 12:</strong></td>
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Resources">–</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Week"><strong>Week 13</strong><br>3 Nov - 7 nov</td>
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Topics_and_Activities"><strong>Revision and Q&amp;A</strong><br><br><strong>Practical Week 13:</strong>Feedback. Exam and Discussions</td>
-<td class="gt_row gt_left" headers="Module 3: multivariate experiments  Resources">Report 2 (15%)</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
+<div class="column-page">
+<section id="schedule" class="level2 text-center">
+<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
+<section id="module-1-fundamentals" class="level3">
+<h3 class="anchored" data-anchor-id="module-1-fundamentals">Module 1: Fundamentals</h3>
 </section>
+</section>
+<div class="grid">
+<section id="week-01-4-aug---8-aug" class="level4 g-col-12 g-col-sm-12 g-col-md-8">
+<h4 class="anchored" data-anchor-id="week-01-4-aug---8-aug"><span style="color: firebrick;"><strong>Week 01</strong> – 4 Aug - 8 Aug</span></h4>
+<p><strong><i class="bi bi-book-fill"></i> Lectures and Practicals</strong></p>
+<p><span style="color: #00598dff;"><strong>L01a Tue:</strong></span> <a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829563">Guest lecture</a> <br> <span style="color: #00598dff;"><strong>L01b Tue:</strong></span> <a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2831187">The nature of data and numbers in biology experiments</a> <br> <span style="color: #00598dff;"><strong>L01c Tue:</strong></span> <a href="https://biol2022.github.io/L00-Welcome-to-BEDA">Welcome to BEDA</a> | <a href="https://biol2022.github.io/L00-Welcome-to-BEDA/L00-welcome.pdf"><i class="bi bi-book-fill"></i> PDF</a> <br> <span style="color: #00598dff;"><strong>L01d Wed:</strong></span> <a href="https://biol2022.github.io/L01-intro-exp-design-analysis">(Re-) introduction to experimental design and analysis</a> | <a href="https://biol2022.github.io/L01-intro-exp-design-analysis/L01c-Introduction.pdf"><i class="bi bi-book-fill"></i> PDF</a> <br> <span style="color: #006e51ff;"><strong>Practical Week 01:</strong></span> <a href="./module01/102-week01.html">Getting started</a></p>
+</section>
+<section id="section" class="level4 g-col-12 g-col-sm-12 g-col-md-4">
+<h4 class="anchored" data-anchor-id="section"></h4>
+<p><strong><i class="bi bi-megaphone-fill"></i> Announcements and resources</strong></p>
+<p><a href="./prerequisites.html"><i class="bi bi-question-circle-fill"></i> Am I ready for BEDA?</a> <br> <a href="https://canvas.sydney.edu.au/courses/67437/assignments/626420"><i class="bi bi-clipboard-check-fill"></i> Quiz 1 [0%] – opens Friday</a></p>
+</section>
+</div>
+<hr>
+<div class="grid">
+<section id="week-02-11-aug---15-aug" class="level4 g-col-12 g-col-sm-12 g-col-md-8">
+<h4 class="anchored" data-anchor-id="week-02-11-aug---15-aug"><span style="color: firebrick;"><strong>Week 02</strong> – 11 Aug - 15 Aug</span></h4>
+<p><strong><i class="bi bi-book-fill"></i> Lectures and Practicals</strong></p>
+<p><span style="color: #00598dff;"><strong>L02a Tue:</strong></span> <a href="https://biol2022.github.io/L02a-represenative-sampling/">What is a representative sample?</a> | <a href="https://biol2022.github.io/L02a-represenative-sampling/L02a-representative-sampling.pdf"><i class="bi bi-book-fill"></i> PDF</a> <br> <span style="color: #00598dff;"><strong>L02b Wed:</strong></span> <a href="https://biol2022.github.io/L02b-linear-model/">Modelling fundamentals – a linear model with a single, continuous <span class="math inline">\(X\)</span></a> | <a href="https://biol2022.github.io/L02b-linear-model/L02b-linear-model.pdf"><i class="bi bi-book-fill"></i> PDF</a> <br> <span style="color: #00598dff;"><strong>L02c Wed:</strong></span> <a href="https://biol2022.github.io/L02c-all-linear-model/">(Almost) every statistical technique is a linear model (or, identifying response and predictors)</a> | <a href="https://biol2022.github.io/L02c-all-linear-model/L02c-general-linear-model.pdf"><i class="bi bi-book-fill"></i> PDF</a> <br> <span style="color: #006e51ff;"><strong>Practical Week 02:</strong></span> <a href="./module01/103-week02.html">Study design</a></p>
+</section>
+<section id="section-1" class="level4 g-col-12 g-col-sm-12 g-col-md-4">
+<h4 class="anchored" data-anchor-id="section-1"></h4>
+<p><strong><i class="bi bi-megaphone-fill"></i> Announcements and resources</strong></p>
+<p><a href="https://lindeloev.github.io/tests-as-linear/"><i class="bi bi-bookmark-star-fill"></i> Common statistical tests are linear models</a> <br> <a href="https://canvas.sydney.edu.au/courses/67437/assignments/626421"><i class="bi bi-calendar2"></i> <strong>Quiz 2</strong> [0%] – opens Friday</a></p>
+</section>
+</div>
+<hr>
+<div class="grid">
+<section id="week-03-18-aug---22-aug" class="level4 g-col-12 g-col-sm-12 g-col-md-8">
+<h4 class="anchored" data-anchor-id="week-03-18-aug---22-aug"><span style="color: firebrick;"><strong>Week 03</strong> – 18 Aug - 22 Aug</span></h4>
+<p><strong><i class="bi bi-book-fill"></i> Lectures and Practicals</strong></p>
+<p><span style="color: #00598dff;"><strong>L03a Tue:</strong></span> <a href="https://biol2022.github.io/L03a-model-appropriate/">Is my model appropriate? (testing assumptions)</a> | <a href="https://biol2022.github.io/L03a-model-appropriate/L03a-glm-assumptions.pdf"><i class="bi bi-book-fill"></i> PDF</a> <br> <span style="color: #00598dff;"><strong>L03b Wed:</strong></span> <a href="https://biol2022.github.io/L03b-ttests/">Modelling differences between two things: A linear model with a single, categorical (and binary) <span class="math inline">\(X\)</span></a> | <a href="https://biol2022.github.io/L03b-ttests/L03b-ttests.pdf"><i class="bi bi-book-fill"></i> PDF</a> <br> <span style="color: #006e51ff;"><strong>Practical Week 03:</strong></span> <a href="https://biol2022.github.io/BEDA-handbook/module01/104-week03.html">Data analysis</a></p>
+</section>
+<section id="section-2" class="level4 g-col-12 g-col-sm-12 g-col-md-4">
+<h4 class="anchored" data-anchor-id="section-2"></h4>
+<p><strong><i class="bi bi-megaphone-fill"></i> Announcements and resources</strong></p>
+<p><a href="https://canvas.sydney.edu.au/courses/67437/assignments/626422"><i class="bi bi-calendar2"></i> Quiz 3 [0%] – opens Friday</a> <br> <a href="https://canvas.sydney.edu.au/courses/67437/assignments/638396"><i class="bi bi-calendar2"></i> Early Feedback Task [5%] – opens Friday 10am</a></p>
+</section>
+</div>
+<hr>
+<div class="grid">
+<section id="week-04-25-aug---29-aug" class="level4 g-col-12 g-col-sm-12 g-col-md-8">
+<h4 class="anchored" data-anchor-id="week-04-25-aug---29-aug"><span style="color: firebrick;"><strong>Week 04</strong> – 25 Aug - 29 Aug</span></h4>
+<p><strong><i class="bi bi-book-fill"></i> Lectures and Practicals</strong></p>
+<p><span style="color: #00598dff;"><strong>L04a Tue:</strong></span> <a href="https://biol2022.github.io/L04a-mlr/">Modelling multiple relationships: a linear model with multiple, continuous <span class="math inline">\(X\)</span> variables</a> | <a href="https://biol2022.github.io/L04a-mlr/L04a-mlr.pdf"><i class="bi bi-book-fill"></i> PDF</a> <br> <span style="color: #00598dff;"><strong>L04b Wed:</strong></span> <a href="https://biol2022.github.io/L04b-anova/">Modelling multiple differences: a linear model with two or more categorical <span class="math inline">\(X\)</span> variables</a> | <a href="https://biol2022.github.io/L04b-anova/L04b-anova.pdf"><i class="bi bi-book-fill"></i> PDF</a> <br> <span style="color: #00598dff;"><strong>L04c Wed:</strong></span> <a href="https://biol2022.github.io/L04c-model-transformations/">Model transformations – why, and how?</a> | <a href="https://biol2022.github.io/L04c-model-transformations/L04c-model-transformations.pdf"><i class="bi bi-book-fill"></i> PDF</a> <br> <span style="color: #006e51ff;"><strong>Practical Week 04:</strong></span> <a href="./module02/202-timeline.html">Check timeline</a></p>
+</section>
+<section id="section-3" class="level4 g-col-12 g-col-sm-12 g-col-md-4">
+<h4 class="anchored" data-anchor-id="section-3"></h4>
+<p><strong><i class="bi bi-megaphone-fill"></i> Announcements and resources</strong></p>
+<p><a href="#">Evaluation Quiz (10%)</a></p>
+</section>
+</div>
+<hr>
+<div class="grid">
+<section id="week-05-1-sep---5-sep" class="level4 g-col-12 g-col-sm-12 g-col-md-8">
+<h4 class="anchored" data-anchor-id="week-05-1-sep---5-sep"><span style="color: firebrick;"><strong>Week 05</strong> – 1 Sep - 5 Sep</span></h4>
+<p><strong><i class="bi bi-book-fill"></i> Lectures and Practicals</strong></p>
+<p><span style="color: #00598dff;"><strong>L05a Tue:</strong></span> <a href="https://biol2022.github.io/L05a-blocking-fixed-random/">Control, fixed and random variables – adding sense to models (ANCOVA and mixed models)</a> <br> <span style="color: #00598dff;"><strong>L05b Wed:</strong></span> <a href="https://biol2022.github.io/L05b-revision/">You’ve got this – Module 1 revision</a> <br> <span style="color: #006e51ff;"><strong>Practical Week 05:</strong></span> <a href="#">Check timeline</a></p>
+</section>
+<section id="section-4" class="level4 g-col-12 g-col-sm-12 g-col-md-4">
+<h4 class="anchored" data-anchor-id="section-4"></h4>
+<p><strong><i class="bi bi-megaphone-fill"></i> Announcements and resources</strong></p>
+<p>Work on your experiments</p>
+</section>
+</div>
+<hr>
+<section id="module-2-univariate-experiments" class="level3 text-center">
+<h3 class="anchored" data-anchor-id="module-2-univariate-experiments">Module 2: Univariate experiments</h3>
+</section>
+<div class="grid">
+<section id="week-06-8-sep---12-sep-no-practicals-this-week" class="level4 g-col-12 g-col-sm-12 g-col-md-8">
+<h4 class="anchored" data-anchor-id="week-06-8-sep---12-sep-no-practicals-this-week"><span style="color: firebrick;"><strong>Week 06</strong> – 8 Sep - 12 Sep <i class="bi bi-exclamation-triangle-fill"></i> <strong>No practicals this week</strong> <i class="bi bi-exclamation-triangle-fill"></i></span></h4>
+<p><strong><i class="bi bi-book-fill"></i> Lectures and Practicals</strong></p>
+<p><span style="color: #00598dff;"><strong>L06a Tue:</strong></span> <a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829564">General refresher</a> <br> <span style="color: #00598dff;"><strong>L06b Wed:</strong></span> <a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829565">Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables</a> <br> <strong>No practicals</strong></p>
+</section>
+<section id="section-5" class="level4 g-col-12 g-col-sm-12 g-col-md-4">
+<h4 class="anchored" data-anchor-id="section-5"></h4>
+<p><strong><i class="bi bi-megaphone-fill"></i> Announcements and resources</strong></p>
+<p>–</p>
+</section>
+</div>
+<hr>
+<div class="grid">
+<section id="week-07-15-sep---19-sep" class="level4 g-col-12 g-col-sm-12 g-col-md-8">
+<h4 class="anchored" data-anchor-id="week-07-15-sep---19-sep"><span style="color: firebrick;"><strong>Week 07</strong> – 15 Sep - 19 Sep</span></h4>
+<p><strong><i class="bi bi-book-fill"></i> Lectures and Practicals</strong></p>
+<p><span style="color: #00598dff;"><strong>L07a Tue:</strong></span> <a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829568">Does wind reduce tree growth? Detecting differences versus describing relationships</a> <br> <span style="color: #00598dff;"><strong>L07b Wed:</strong></span> <a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829566">What are the chances of finding a bandicoot? Dealing with binary response data</a> <br> <span style="color: #006e51ff;"><strong>Practical Week 07:</strong></span> <a href="#">Check timeline</a></p>
+</section>
+<section id="section-6" class="level4 g-col-12 g-col-sm-12 g-col-md-4">
+<h4 class="anchored" data-anchor-id="section-6"></h4>
+<p><strong><i class="bi bi-megaphone-fill"></i> Announcements and resources</strong></p>
+<p>–</p>
+</section>
+</div>
+<hr>
+<div class="grid">
+<section id="week-08-22-sep---26-sep" class="level4 g-col-12 g-col-sm-12 g-col-md-8">
+<h4 class="anchored" data-anchor-id="week-08-22-sep---26-sep"><span style="color: firebrick;"><strong>Week 08</strong> – 22 Sep - 26 Sep</span></h4>
+<p><strong><i class="bi bi-book-fill"></i> Lectures and Practicals</strong></p>
+<p><span style="color: #00598dff;"><strong>L08a Tue:</strong></span> <a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829569">Information-theoretic methods vs.&nbsp;null hypothesis testing</a> <br> <span style="color: #00598dff;"><strong>L08b Wed:</strong></span> <a href="#">Revision: answering your queries</a> <br> <span style="color: #006e51ff;"><strong>Practical Week 08:</strong></span> <a href="#">Check timeline</a></p>
+</section>
+<section id="section-7" class="level4 g-col-12 g-col-sm-12 g-col-md-4">
+<h4 class="anchored" data-anchor-id="section-7"></h4>
+<p><strong><i class="bi bi-megaphone-fill"></i> Announcements and resources</strong></p>
+<p>–</p>
+</section>
+</div>
+<hr>
+<div class="text-center">
+<section id="mid-semester-break" class="level3">
+<h3 class="anchored" data-anchor-id="mid-semester-break">Mid-semester break</h3>
+<hr>
+</section>
+<section id="module-3-multivariate-experiments" class="level3">
+<h3 class="anchored" data-anchor-id="module-3-multivariate-experiments">Module 3: Multivariate experiments</h3>
+</section>
+</div>
+<div class="grid">
+<section id="week-09-6-oct---10-oct" class="level4 g-col-12 g-col-sm-12 g-col-md-8">
+<h4 class="anchored" data-anchor-id="week-09-6-oct---10-oct"><span style="color: firebrick;"><strong>Week 09</strong> – 6 Oct - 10 Oct</span></h4>
+<p><strong><i class="bi bi-book-fill"></i> Lectures and Practicals</strong></p>
+<p><span style="color: #00598dff;"><strong>L09a Tue:</strong></span> <a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829678">Introduction to multivariate analysis</a> <br> <span style="color: #00598dff;"><strong>L09b Wed:</strong></span> <a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829679">Principal Component Analysis (PCA) and Factor Analysis (FA)</a> <br> <span style="color: #006e51ff;"><strong>Practical Week 09:</strong></span> <a href="#">Check timeline</a></p>
+</section>
+<section id="section-8" class="level4 g-col-12 g-col-sm-12 g-col-md-4">
+<h4 class="anchored" data-anchor-id="section-8"></h4>
+<p><strong><i class="bi bi-megaphone-fill"></i> Announcements and resources</strong></p>
+<p>Report 1 (25%)</p>
+</section>
+</div>
+<hr>
+<div class="grid">
+<section id="week-10-13-oct---17-oct" class="level4 g-col-12 g-col-sm-12 g-col-md-8">
+<h4 class="anchored" data-anchor-id="week-10-13-oct---17-oct"><span style="color: firebrick;"><strong>Week 10</strong> – 13 Oct - 17 Oct</span></h4>
+<p><strong><i class="bi bi-book-fill"></i> Lectures and Practicals</strong></p>
+<p><span style="color: #00598dff;"><strong>L10a Tue:</strong></span> <a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829680">Clustering</a> <br> <span style="color: #00598dff;"><strong>L10b Wed:</strong></span> <a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829681">Non-metric multi-dimensional scaling (nMDS) and hypothesis testing</a> <br> <span style="color: #006e51ff;"><strong>Practical Week 10:</strong></span> <a href="#">Check timeline</a></p>
+</section>
+<section id="section-9" class="level4 g-col-12 g-col-sm-12 g-col-md-4">
+<h4 class="anchored" data-anchor-id="section-9"></h4>
+<p><strong><i class="bi bi-megaphone-fill"></i> Announcements and resources</strong></p>
+<p>Informal presentations</p>
+</section>
+</div>
+<hr>
+<div class="grid">
+<section id="week-11-20-oct---24-oct" class="level4 g-col-12 g-col-sm-12 g-col-md-8">
+<h4 class="anchored" data-anchor-id="week-11-20-oct---24-oct"><span style="color: firebrick;"><strong>Week 11</strong> – 20 Oct - 24 Oct</span></h4>
+<p><strong><i class="bi bi-book-fill"></i> Lectures and Practicals</strong></p>
+<p><span style="color: #00598dff;"><strong>L11a Tue:</strong></span> <a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829682">Multivariate analysis of variance (MANOVA)</a> <br> <span style="color: #00598dff;"><strong>L11b Wed:</strong></span> <a href="#">Multivariate Revision 1 (no slides)</a> <br> <span style="color: #006e51ff;"><strong>Practical Week 11:</strong></span> <a href="#">Check timeline</a></p>
+</section>
+<section id="section-10" class="level4 g-col-12 g-col-sm-12 g-col-md-4">
+<h4 class="anchored" data-anchor-id="section-10"></h4>
+<p><strong><i class="bi bi-megaphone-fill"></i> Announcements and resources</strong></p>
+<p>Group dataset submission (5%)</p>
+</section>
+</div>
+<hr>
+<div class="grid">
+<section id="week-12-27-oct---31-oct" class="level4 g-col-12 g-col-sm-12 g-col-md-8">
+<h4 class="anchored" data-anchor-id="week-12-27-oct---31-oct"><span style="color: firebrick;"><strong>Week 12</strong> – 27 Oct - 31 Oct</span></h4>
+<p><strong><i class="bi bi-book-fill"></i> Lectures and Practicals</strong></p>
+<p><span style="color: #00598dff;"><strong>L12a Tue:</strong></span> <a href="https://canvas.sydney.edu.au/courses/67437/modules/items/2829684">Rarefaction and Bayesian analysis</a> <br> <span style="color: #00598dff;"><strong>L12b Wed:</strong></span> <a href="#">Multivariate Revision 2 (no slides)</a> <br> <span style="color: #006e51ff;"><strong>Practical Week 12:</strong></span> <a href="#">Check timeline</a></p>
+</section>
+<section id="section-11" class="level4 g-col-12 g-col-sm-12 g-col-md-4">
+<h4 class="anchored" data-anchor-id="section-11"></h4>
+<p><strong><i class="bi bi-megaphone-fill"></i> Announcements and resources</strong></p>
+<p>–</p>
+</section>
+</div>
+<hr>
+<div class="grid">
+<section id="week-13-3-nov---7-nov" class="level4 g-col-12 g-col-sm-12 g-col-md-8">
+<h4 class="anchored" data-anchor-id="week-13-3-nov---7-nov"><span style="color: firebrick;"><strong>Week 13</strong> – 3 Nov - 7 Nov</span></h4>
+<p><strong><i class="bi bi-book-fill"></i> Lectures and Practicals</strong></p>
+<p><a href="#"><strong>Revision and Q&amp;A</strong></a> <br> <span style="color: #006e51ff;"><strong>Practical Week 13:</strong></span> <a href="#">Feedback, Exam and Discussions</a></p>
+</section>
+<section id="section-12" class="level4 g-col-12 g-col-sm-12 g-col-md-4">
+<h4 class="anchored" data-anchor-id="section-12"></h4>
+<p><strong><i class="bi bi-megaphone-fill"></i> Announcements and resources</strong></p>
+<p>Report 2 (15%)</p>
+</section>
+</div>
+</div>
 
 
 
