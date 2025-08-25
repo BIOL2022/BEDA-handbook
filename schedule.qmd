@@ -6,13 +6,16 @@ toc-depth: 5
 :::{.column-page}
 :::{.text-center}
 ## Schedule
+**Jump to:** [Week 1](#wk01) | [Week 2](#wk02) | [Week 3](#wk03) | [Week 4](#wk04) | [Week 5](#wk05) | [Week 6](#wk06) | [Week 7](#wk07) | [Week 8](#wk08) | [Week 9](#wk09) | [Week 10](#wk10) | [Week 11](#wk11) | [Week 12](#wk12) | [Week 13](#wk13)
 :::
+
+-----
 
 ### Module 1: Fundamentals
 
 :::{.grid}
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 01** -- 4 Aug - 8 Aug]{style="color: firebrick;"}
+#### [**Week 01** -- 4 Aug - 8 Aug]{#wk01 style="color: firebrick;"}
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
@@ -37,7 +40,7 @@ toc-depth: 5
 
 :::{.grid}
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 02** -- 11 Aug - 15 Aug]{style="color: firebrick;"}
+#### [**Week 02** -- 11 Aug - 15 Aug]{#wk02 style="color: firebrick;"}
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
@@ -62,7 +65,7 @@ toc-depth: 5
 
 :::{.grid}
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 03** -- 18 Aug - 22 Aug]{style="color: firebrick;"}
+#### [**Week 03** -- 18 Aug - 22 Aug]{#wk03 style="color: firebrick;"}
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
@@ -88,7 +91,7 @@ toc-depth: 5
 
 :::{.grid}
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 04** -- 25 Aug - 29 Aug]{style="color: firebrick;"}
+#### [**Week 04** -- 25 Aug - 29 Aug]{#wk04 style="color: firebrick;"}
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
@@ -113,7 +116,7 @@ toc-depth: 5
 
 :::{.grid}
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 05** -- 1 Sep - 5 Sep]{style="color: firebrick;"}
+#### [**Week 05** -- 1 Sep - 5 Sep]{#wk05 style="color: firebrick;"}
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
@@ -135,7 +138,7 @@ Work on your experiments
 
 :::{.grid}
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 06** -- 8 Sep - 12 Sep]{style="color: firebrick;"}
+#### [**Week 06** -- 8 Sep - 12 Sep]{#wk06 style="color: firebrick;"}
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
@@ -157,7 +160,7 @@ Work on your experiments
 
 :::{.grid}
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 07** -- 15 Sep - 19 Sep]{style="color: firebrick;"}
+#### [**Week 07** -- 15 Sep - 19 Sep]{#wk07 style="color: firebrick;"}
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
@@ -179,7 +182,7 @@ Work on your experiments
 
 :::{.grid}
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 08** -- 22 Sep - 26 Sep]{style="color: firebrick;"}
+#### [**Week 08** -- 22 Sep - 26 Sep]{#wk08 style="color: firebrick;"}
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
@@ -201,7 +204,7 @@ Work on your experiments
 
 :::{.grid}
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 09** -- 29 Sep - 3 Oct]{style="color: firebrick;"}
+#### [**Week 09** -- 29 Sep - 3 Oct]{#wk09 style="color: firebrick;"}
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
@@ -223,7 +226,7 @@ Report 1 (25%)
 
 :::{.grid}
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 10** -- 6 Oct - 10 Oct]{style="color: firebrick;"}
+#### [**Week 10** -- 6 Oct - 10 Oct]{#wk10 style="color: firebrick;"}
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
@@ -245,7 +248,7 @@ Informal presentations
 
 :::{.grid}
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 11** -- 13 Oct - 17 Oct]{style="color: firebrick;"}
+#### [**Week 11** -- 13 Oct - 17 Oct]{#wk11 style="color: firebrick;"}
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
@@ -267,7 +270,7 @@ Group dataset submission (5%)
 
 :::{.grid}
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 12** -- 20 Oct - 24 Oct]{style="color: firebrick;"}
+#### [**Week 12** -- 20 Oct - 24 Oct]{#wk12 style="color: firebrick;"}
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
@@ -289,7 +292,7 @@ Group dataset submission (5%)
 
 :::{.grid}
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 13** -- 27 Oct - 31 Oct]{style="color: firebrick;"}
+#### [**Week 13** -- 27 Oct - 31 Oct]{#wk13 style="color: firebrick;"}
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
