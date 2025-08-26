@@ -23,7 +23,7 @@ date: today
 
 ::: {.assessment-section}
 ### <i class="bi bi-lightbulb"></i> Early Feedback Task (EFT) - 5%
-##### Due: 24 August 2025
+##### Due: 29 August 2025
 This is a short **quiz**, designed to give you early feedback on your prior understanding of statistics. 
 It will help you identify areas where you may need to focus your study efforts. 
 
