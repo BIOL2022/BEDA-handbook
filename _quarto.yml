@@ -8,8 +8,8 @@ website:
     # - module01/104-week03.qmd
     # - module02/202-timeline.qmd
     # - module02/203-projects.qmd
-    - module02/204-report1.qmd
-    - module02/205-resources.qmd
+    # - module02/204-report1.qmd
+    # - module02/205-resources.qmd
     - module03/302-week09.qmd
     - module03/303-week10.qmd
     - module03/304-week11.qmd
@@ -88,6 +88,8 @@ website:
             text: "**Introduction to Module 2**"
           - href: module02/202-timeline.qmd
             text: "Week **4 -- 8** pracs: timeline"
+          - href: module02/205-resources.qmd
+            text: "**⚠ Resources for Practicals**"
           - "---"
           - href: module03/302-week09.qmd
             text: "Week **9** prac: PCA and Report 2"
@@ -102,7 +104,6 @@ website:
         contents:
           - module02/203-projects.qmd
           - module02/204-report1.qmd
-          - module02/205-resources.qmd
 
 
 format:
