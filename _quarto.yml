@@ -20,6 +20,9 @@ website:
       - icon: house-fill
         href: index.qmd
         text: "Home"
+      - icon: mortarboard-fill
+        href: https://canvas.sydney.edu.au/courses/67437
+        text: "Canvas"
       - icon: info-circle-fill
         text: "Unit Information"
         href: unit-information.qmd
@@ -42,6 +45,9 @@ website:
       - icon: house-fill
         text: Home
         href: index.qmd
+      - icon: mortarboard-fill
+        href: https://canvas.sydney.edu.au/courses/67437
+        text: "Canvas"
       - icon: question-circle-fill
         text: "<b>Am I ready for BEDA?</b>"
         href: prerequisites.qmd

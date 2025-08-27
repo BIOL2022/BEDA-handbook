@@ -8,7 +8,7 @@ date-format: "[Semester 2, ]YYYY" # see https://momentjs.com/docs/#/displaying/f
 
 ## Introduction {.unlisted}
 
-Thank you for joining BIOL202 Biology Experimental Design and Analysis, known to many as **BEDA (🐝-da)**. The ability to critically evaluate evidence is a fundamental life skill, and our aim is to help you build a strong foundation in it by helping you develop essential, hands-on skills in experimental design and analysis. We will move beyond theory and focus on the 'how' and 'why' of research:
+Thank you for joining [BIOL202 Biology Experimental Design and Analysis](https://canvas.sydney.edu.au/courses/67437), known to many as **BEDA (🐝-da)**. The ability to critically evaluate evidence is a fundamental life skill, and our aim is to help you build a strong foundation in it by helping you develop essential, hands-on skills in experimental design and analysis. We will move beyond theory and focus on the 'how' and 'why' of research:
 
 - *How* do you design a robust study from the ground up?
 - *Why* does your study's design fundamentally shape its results?
