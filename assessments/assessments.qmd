@@ -33,7 +33,7 @@ It will help you identify areas where you may need to focus your study efforts.
 
 ::: {.assessment-section}
 ### <i class="bi bi-question-circle"></i> Evaluation Quiz (Module 1) - 10%
-##### Due: 31 August 2025
+##### Due: 5 September 2025
 This is a **quiz** that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.
 
 <p><strong>Due in:</strong> <span id="countdown-mod1-quiz"></span></p>
