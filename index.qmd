@@ -143,8 +143,8 @@ To get started, head over to [Unit Information](unit-information.qmd) to learn a
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**L05a Tue:**]{style="color: #00598dff;"} [Control, fixed and random variables -- adding sense to models (ANCOVA and mixed models)](https://biol2022.github.io/L05a-blocking-fixed-random/) <br>
-[**L05b Wed:**]{style="color: #00598dff;"} [You've got this -- Module 1 revision](https://biol2022.github.io/L05b-revision/) <br>
+[**L05a Tue:**]{style="color: #00598dff;"} [Control, fixed and random variables -- adding sense to models (ANCOVA and mixed models)](https://biol2022.github.io/L05a-blocking-fixed-random/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L05a-blocking-fixed-random/L05a-blocking-fixed-random.pdf) <br>
+[**L05b Wed:**]{style="color: #00598dff;"} [You've got this -- Module 1 revision](https://biol2022.github.io/L05b-revision/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L05b-revision/L05b-revision.pdf) <br>
 [**Practical Week 05:**]{style="color: #006e51ff;"} [Check timeline](#)
 :::
 
