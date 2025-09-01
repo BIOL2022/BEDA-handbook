@@ -145,7 +145,7 @@ To get started, head over to [Unit Information](unit-information.qmd) to learn a
 
 [**L05a Tue:**]{style="color: #00598dff;"} [Control, fixed and random variables -- adding sense to models (ANCOVA and mixed models)](https://biol2022.github.io/L05a-blocking-fixed-random/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L05a-blocking-fixed-random/L05a-blocking-fixed-random.pdf) <br>
 [**L05b Wed:**]{style="color: #00598dff;"} [You've got this -- Module 1 revision](https://biol2022.github.io/L05b-revision/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L05b-revision/L05b-revision.pdf) <br>
-[**Practical Week 05:**]{style="color: #006e51ff;"} [Check timeline](#)
+[**Practical Week 05:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -193,7 +193,7 @@ Work on your experiments
 
 [**L07a Tue:**]{style="color: #00598dff;"} [Does wind reduce tree growth? Detecting differences versus describing relationships](https://canvas.sydney.edu.au/courses/67437/modules/items/2829568) <br>
 [**L07b Wed:**]{style="color: #00598dff;"} [What are the chances of finding a bandicoot? Dealing with binary response data](https://canvas.sydney.edu.au/courses/67437/modules/items/2829566) <br>
-[**Practical Week 07:**]{style="color: #006e51ff;"} [Check timeline](#)
+[**Practical Week 07:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -215,7 +215,7 @@ Work on your experiments
 
 [**L08a Tue:**]{style="color: #00598dff;"} [Information-theoretic methods vs. null hypothesis testing](https://canvas.sydney.edu.au/courses/67437/modules/items/2829569) <br>
 [**L08b Wed:**]{style="color: #00598dff;"} [Revision: answering your queries](#) <br>
-[**Practical Week 08:**]{style="color: #006e51ff;"} [Check timeline](#)
+[**Practical Week 08:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -245,7 +245,7 @@ Work on your experiments
 
 [**L09a Tue:**]{style="color: #00598dff;"} [Introduction to multivariate analysis](https://canvas.sydney.edu.au/courses/67437/modules/items/2829678) <br>
 [**L09b Wed:**]{style="color: #00598dff;"} [Principal Component Analysis (PCA) and Factor Analysis (FA)](https://canvas.sydney.edu.au/courses/67437/modules/items/2829679) <br>
-[**Practical Week 09:**]{style="color: #006e51ff;"} [Check timeline](#)
+[**Practical Week 09:**]{style="color: #006e51ff;"} [Week 9](#)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -267,7 +267,7 @@ Report 1 (25%)
 
 [**L10a Tue:**]{style="color: #00598dff;"} [Clustering](https://canvas.sydney.edu.au/courses/67437/modules/items/2829680) <br>
 [**L10b Wed:**]{style="color: #00598dff;"} [Non-metric multi-dimensional scaling (nMDS) and hypothesis testing](https://canvas.sydney.edu.au/courses/67437/modules/items/2829681) <br>
-[**Practical Week 10:**]{style="color: #006e51ff;"} [Check timeline](#)
+[**Practical Week 10:**]{style="color: #006e51ff;"} [Week 10](#)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -289,7 +289,7 @@ Informal presentations
 
 [**L11a Tue:**]{style="color: #00598dff;"} [Multivariate analysis of variance (MANOVA)](https://canvas.sydney.edu.au/courses/67437/modules/items/2829682) <br>
 [**L11b Wed:**]{style="color: #00598dff;"} [Multivariate Revision 1 (no slides)](#) <br>
-[**Practical Week 11:**]{style="color: #006e51ff;"} [Check timeline](#)
+[**Practical Week 11:**]{style="color: #006e51ff;"} [Week 11](#)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -311,7 +311,7 @@ Group dataset submission (5%)
 
 [**L12a Tue:**]{style="color: #00598dff;"} [Rarefaction and Bayesian analysis](https://canvas.sydney.edu.au/courses/67437/modules/items/2829684) <br>
 [**L12b Wed:**]{style="color: #00598dff;"} [Multivariate Revision 2 (no slides)](#) <br>
-[**Practical Week 12:**]{style="color: #006e51ff;"} [Check timeline](#)
+[**Practical Week 12:**]{style="color: #006e51ff;"} [Week 12](#)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
