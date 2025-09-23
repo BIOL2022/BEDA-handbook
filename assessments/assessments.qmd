@@ -49,7 +49,7 @@ You will use what you have learned so far to design and analyse an experiment ba
 Practicals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans. Demonstrators act as advisors, similar to how support works in a research group, and you are welcome to interact with them and your peers for advice, just as you would with postdocs or supervisors. If you are organised, you can also request feedback on your report drafts during practicals to help improve your work.
 
 <p><strong>Report due:</strong> <span id="countdown-report1"></span></p>
-[Details](assessment-report-1.qmd){.btn .btn-primary} [Submission link](https://canvas.sydney.edu.au/courses/67437/assignments/626426){.btn .btn-success}
+[Details](assessment-report-1.qmd){.btn .btn-primary} [**Data** submission](https://canvas.sydney.edu.au/courses/67437/assignments/626425){.btn .btn-success} [**Report** submission](https://canvas.sydney.edu.au/courses/67437/assignments/626426){.btn .btn-success}
 :::
 
 ::: {.assessment-section}
