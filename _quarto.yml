@@ -110,6 +110,7 @@ website:
         contents:
           - module02/203-projects.qmd
           - module02/204-report1.qmd
+          - module02/206-rubric.qmd
 
 
 format:
