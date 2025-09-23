@@ -1,62 +1,18 @@
 ---
-title: "Report 1: Manipulative Experiment"
+title: "Report 01"
 ---
 
-## 1. Overview
-*   **Brief Description:** You will conduct a manipulative experiment and write a scientific report for it.
-*   **Weighting:** 25%
-*   **Due Date & Time:** [Insert Specific Due Date and Time, e.g., Friday, Week 8, 11:59 PM AEST - Refer to assessments_data.csv for exact date]
-*   **Learning Outcomes Addressed:**
-    *   [Insert Learning Outcome 1 related to experimental design/execution]
-    *   [Insert Learning Outcome 2 related to scientific report writing]
-    *   [Insert Learning Outcome 3 related to data analysis/interpretation]
-    *   [Add more as needed]
+Most of the instructions for this assessment are presented in [Report 1 - Instructions](../module02/204-report1.qmd). Please read those instructions carefully before starting this report. There are also some helpful resources linked in the [Resources for Practicals](../module02/205-resources.qmd) page.
 
-## 2. Task Details & Instructions
-*   **Detailed Description:** The detailed instructions for the manipulative experiment, including background, objectives, procedure, and data collection methods, will be provided here or linked from here. Please read them carefully, as the original instructions were noted as comprehensive.
-*   **Key Deliverables:**
-    *   [e.g., A scientific report formatted according to the specified guidelines.]
-    *   [e.g., Any raw data files or analysis scripts if required.]
+Below is just a brief summary of the requirements. **You must still read the instructions above in full.**
 
-## 3. Submission Guidelines
-*   **Method:** [Specify submission method, e.g., Submit as a PDF via the Turnitin link on Canvas under 'Report 1 Submission'.]
-*   **Format Requirements:**
-    *   [Specify format, e.g., PDF document.]
-    *   [Specify word/page limit, e.g., Maximum 2000 words (excluding references and appendices).]
-    *   [Specify referencing style, e.g., APA 7th Edition.]
-    *   [Specify font, spacing, etc., e.g., Times New Roman 12pt, double-spaced.]
-*   **File Naming Convention (if any):** [Specify, e.g., StudentID_Report1.pdf]
-*   **Group/Individual:** [Specify, e.g., Individual task.]
-
-## 4. Marking Criteria & Rubric
-*   **Marking Summary:** This assessment is worth 25% of your final grade.
-*   **Detailed Rubric:** A detailed marking rubric outlining the criteria for each section of the report (e.g., Introduction, Methods, Results, Discussion, Presentation) and the marks allocated will be provided here or linked directly. Please review it carefully to understand how your work will be assessed, as the original marking criteria were noted as comprehensive.
-    *   [Example placeholder structure for rubric items:]
-    *   **Introduction ([X] marks):** [Criteria for a good introduction]
-    *   **Methods ([Y] marks):** [Criteria for methods section]
-    *   **Results ([Z] marks):** [Criteria for results section]
-    *   **Discussion ([A] marks):** [Criteria for discussion section]
-    *   **Clarity, Referencing, and Presentation ([B] marks):** [Criteria for overall quality]
-
-## 5. Resources & Support
-*   **Relevant Materials:**
-    *   [Link to experimental protocol/instructions if separate]
-    *   [Link to relevant lecture notes on experimental design, report writing, statistical analysis]
-    *   [Link to example reports if available and appropriate]
-    *   [Link to any datasets or software guides needed]
-*   **Support Channels:**
-    *   [Specify support, e.g., Attend specific Q&A sessions for Report 1.]
-    *   [e.g., Post questions on the 'Report 1' discussion forum on Canvas.]
-    *   [e.g., Consult with your tutor during practical sessions.]
-
-## 6. Policies
-*   **Late Submissions:** [State the policy clearly, e.g., "Late submissions will be penalised by a deduction of 5% of the maximum possible mark for each calendar day or part thereof that the assessment is overdue, up to a maximum of 5 days. Submissions more than 5 days late will receive a mark of zero."]
-*   **Extensions:** [Explain the process, e.g., "Requests for extensions must be made via the formal Special Consideration process. Refer to the Unit of Study Outline for details."]
-*   **Academic Integrity:** [Include a standard reminder, e.g., "This report must be your own individual work. All sources must be appropriately cited. Please familiarize yourself with the University's Academic Integrity Policy: [Link to University Policy]."]
-*   **Resubmission Policy (if any):** [State if applicable, e.g., "Resubmissions are not permitted for this assessment."]
-
-## 7. Estimated Time Commitment
-*   [Provide a guideline, e.g., "It is estimated that this assessment will require approximately [e.g., 15-20] hours of work, including conducting the experiment, analysing data, and writing the report."]
-
-## 8. Feedback
-*   **How and When:** [Explain, e.g., "Feedback, including a marked rubric and comments, will be provided via Canvas within [e.g., three] weeks of the submission deadline."]
+1. You are collecting your own data for this report. The topic is of your choosing based on the list provided in the [Projects](../module02/203-projects.qmd) page.
+2. The report must follow the structure of a scientific paper, including sections such as Title, Abstract, Introduction, Materials and Methods, Results, Discussion, and References.
+3. Submit your report anonymously via Canvas by **7 October 2025,** using the filename format "Day-Time-Project-Your SID" (e.g., "WED2-4pmProj4A-123456789").
+4. **Page limit: maximum 10 pages** double-spaced, including abstract, references, figures/tables, and any AI usage statement.
+5. Include a **minimum of 10 relevant references** from primary scientific literature (peer-reviewed journals).
+6. Use minimum 12 pt font and no less than 2 cm margins all around.
+7. **Write the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).**
+8. **Follow academic integrity guidelines:** avoid plagiarism, complete the AHEM module, and be prepared for plagiarism checking.
+9. **Use the marking rubric as a checklist** to ensure all criteria are met before submission.
+10. **Late penalty:** 5% per 24 hours or part thereof after the deadline; length penalty: 5% per page or part thereof over the limit.
