@@ -74,6 +74,18 @@ A great reference on how to write well:
 - Summary presentation of data (no raw data) as tables, figures or in text as appropriate. Use tables for large amounts of data where detail is important, use figures to illustrate patterns. Indicate sample size and errors, and note whether the latter are standard errors or standard deviations... Format consistently. Make sure decimal places reflect your real capability to measure (e.g. can you really measure a 1 kg plant to 6 decimal places?)
 - Results of statistical analyses presented either in text, on figures, or in tables.
 
+**Important tips:**
+
+1. Know what stats matter from the output – there are lots of them!
+   - Only **some/key stats** need to be included in your report
+   - **Do not copy and paste stats output from your stats package**
+   - DO type the key stats results up yourself and only include what matters -- that way we know you know what matters
+2. Check assumptions if any are associated with your stats analysis:
+   - In your Methods section of your report: say what/whether you have checked, whether they were met, if not, what did you do?
+   - in your report DO NOT present normality plots or plots of residuals
+3. Prepare your formal plot(s) for your report
+   - You may present the plot produced by your stats package
+
 ### Discussion 
 - Main conclusions or findings
 - Interpret results – what do they mean? How do they relate to original aims?
