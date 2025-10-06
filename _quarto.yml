@@ -97,6 +97,8 @@ website:
           - href: module02/205-resources.qmd
             text: "**⚠ Resources for Practicals**"
           - "---"
+          - href: module03/301-intro.qmd
+            text: "**Introduction to Module 3 **"
           - href: module03/302-week09.qmd
             text: "Week **9** prac: PCA and Report 2"
           - href: module03/303-week10.qmd

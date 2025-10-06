@@ -1,38 +1,90 @@
 ---
 title: "Introduction"
 author: Mathew Crowther
+number-depth: 2
 ---
 
-## Preamble
-The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:
 
-- Be familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling.
-- Be familiar with the principles underpinning multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA.
-- Planning and conducting experiments to test multivariate hypotheses.
-- Know how to perform these analyses using relevant software.
-- Be able to interpret, present and report on these analyses. 
+## Objectives {.unnumbered}
+The aim of this component of the practical series is to introduce you to several commonly used techniques for analysing multivariate data. By the end of the series, you will:
+
+- [ ] Understand the principles underlying **Principal Components Analysis (PCA)** and **Non-metric Multidimensional Scaling (nMDS)**
+- [ ] Be familiar with the concepts behind **multivariate hypothesis testing** using permutational techniques such as **ANOSIM** and **PERMANOVA**
+- [ ] Be able to **plan and conduct experiments** that test multivariate hypotheses
+- [ ] Know how to **carry out these analyses using relevant statistical software**
+- [ ] Be able to **interpret, present, and report** your findings clearly and effectively
+
+
 
 ## Background 
 
-Multivariate analyses are becoming more prevalent in biology as tools performing the necessary complex computations become more accessible. As the lectures outline, this accessibility has given rise to the uncritical use of methods leading to inappropriate analyses being used to deal with multivariate data sets. At the very least, biologists need to have a working understanding of how to choose appropriate tests and how to identify when someone has chosen poorly.
+Multivariate analyses are becoming increasingly common in biology, largely due to the growing accessibility of software tools capable of handling complex data. However, as discussed in lectures, this accessibility has also led to the uncritical and sometimes inappropriate use of multivariate methods. It is therefore essential that biologists develop a working understanding of when and how to apply these techniques, as well as how to recognise when others have used them incorrectly.
 
-Some of the more common uses of multivariate approaches permit us to describe complex patterns simply, identify patterns of groupings in complex data sets and test statistical hypotheses using multivariate datasets. 
+Multivariate approaches are widely used for:
 
-In this section of the unit, you will be able to practice performing these multivariate techniques using sample data sets. Then you need to demonstrate your ability to use these multivariate methods to analyse data that you will collect in groups to highlight the nuances of different techniques. Whilst best practice normally dictates that we would normally decide on appropriate tests before we collect our data, this task will enable us to explore options for analysis more effectively. 
+- **Summarising complex patterns** in biological data,
+- **Identifying groupings or patterns** among samples or species,
+- **Testing statistical hypotheses** involving multivariate datasets.
+
+## What you’ll be doing
+In this part of the course, you will:
+
+1. **Practice performing key multivariate techniques** using sample datasets provided during practical sessions.
+2. **Apply those techniques to your own data**, which you will collect and collate in groups.
+3. **Explore and compare the outcomes** of different multivariate methods, observing how each highlights different features of the same dataset.
+
+Although best scientific practice recommends selecting appropriate analyses before data collection, this exercise is designed to give you the opportunity to trial multiple analytical approaches and better understand their application and interpretation.
 
 ## Analyses and programs we’ll use
-The main programs we will use are **SPSS** and **PRIMER**. However, R instructions for all methods, in the form of R scripts, will be supplied on Canvas for those who prefer to use R.
 
-- **PCA** -- Principal components analysis lets us extract a reduced dataset from a larger dataset, accounting for as much variance as possible in the original more complex dataset. This will be useful for your habitat data as we can determine a reduced number of newly derived variables to describe them. We will do this in SPSS (or R). 
-- **nMDS and multivariate hypothesis testing (using ANOSIM, PERMANOVA and SIMPER)** -- Mainly used to produce an ordination in order to visualize patterns in the multivariate cloud of data (by reducing dimensions in some way) and also to rigorously test explicit hypotheses concerning those patterns by reference to a priori groups or relationships with predictors, such as environmental variables. We will use PRIMER for this (or R).
-- **ANOSIM** -- testing hypotheses comparing different groups based on their similarity (Among c.f. within) using distance measures. Most effective with simple designs. We will use PRIMER for this (or R).
-- **PERMANOVA** -- more powerful approach to multivariate hypothesis testing using permutational methods, capable of analysing more complex designs. We will use PRIMER for this (or R).
-- **SIMPER** --  used when a significant difference is found to identify which components of the data set are driving the differences (e.g. the contribution each species makes to differences among communities. We will use PRIMER for this (or R).
+The main programs we will use in this course are **Jamovi** and **PRIMER**. However, if you prefer working in **R**, complete **R scripts (RStudio files)** for all the methods covered will be made available on **Canvas**.
+
+### Principal Components Analysis
+
+**Principal Components Analysis (PCA)** is a method used to reduce the complexity of large datasets by transforming them into a smaller set of uncorrelated variables (called principal components) that capture the **maximum variance** in the original data.
+
+This technique is especially useful for analysing **habitat data**, where multiple environmental variables can be summarised into a few key components that describe the main gradients in the data.
+
+We will perform PCA using **Jamovi** (or **R**, if preferred).
+
+## nMDS and multivariate hypothesis testing
+
+### (ANOSIM, PERMANOVA, and SIMPER)
+
+In this section of the course, we will explore techniques for **visualising** and **testing patterns** in complex multivariate datasets. These methods reduce the dimensionality of the data (e.g., species abundances across sites) to reveal meaningful patterns and relationships, and then allow us to test **explicit hypotheses** about these patterns—often in relation to predefined groups (e.g., treatment types) or environmental variables.
+
+We will primarily use **PRIMER 7** for these analyses, although equivalent **R** code will also be provided.
+
+### nMDS – Non-metric multidimensional scaling
+
+nMDS is an **ordination technique** used to visualise patterns in multivariate data by representing samples in a low-dimensional space based on their similarity (usually Bray-Curtis). It helps us see groupings or gradients in community composition or other multivariate datasets.
+
+### ANOSIM – Analysis of similarities
+
+ANOSIM tests whether groups of samples differ in composition based on a comparison of **within-group vs among-group similarity**. It uses rank-based distance measures and is best suited to **simple experimental designs**.
+
+- Software: **PRIMER 7** (or **R**)
+- Output includes: **Global R statistic** and **p-value**
+
+## PERMANOVA – Permutational multivariate analysis of variance
+
+PERMANOVA is a more flexible and powerful method for testing hypotheses in multivariate data. It uses **permutation-based ANOVA** on a resemblance matrix and can accommodate **complex experimental designs**, including multiple fixed and random factors.
+
+- Software: **PRIMER 7** (or **R**)
+- Capable of testing main effects, interactions, and nested designs
+
+## SIMPER – Similarity percentages
+
+When a significant difference is detected (e.g., by ANOSIM or PERMANOVA), SIMPER helps identify **which variables (e.g., species)** are contributing most to the observed differences between groups.
+
+- It calculates the **percentage contribution** of each variable to the overall dissimilarity.
+- Useful for interpreting biological meaning behind multivariate differences.
+- Software: **PRIMER 7** (or **R**)
 
 ## Timeline
 
-- **Week 9**: introduction, PCA of lecture data and designing model systems to test multivariate hypotheses (in groups) for your reports. 
-- **Week 10**: group presentations of model systems and experimental design, and how to perform nMDS, PERMANOVA (and ANOSIM) and SIMPER using sample data.
-- **Week 11**: submitting your complete datafiles onto Canvas, analysing your report data.
-- **Week 12**: additional analyses and summary of findings and guidelines for describing multivariate methods and results for your report.
-- **Week 13**: final report due.
+- **Week 9:** introduction, PCA of lecture data and designing model systems to test multivariate hypotheses (in groups) for your reports. 
+- **Week 10:** group presentations of model systems and experimental design, and how to perform nMDS, PERMANOVA (and ANOSIM) and SIMPER using sample data
+- **Week 11:** submitting your complete datafiles onto Canvas, analysing your report data
+- **Week 12:** additional analyses and summary of findings and guidelines for describing multivariate methods and results for your report
+
