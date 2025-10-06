@@ -1387,9 +1387,9 @@
   {
     "objectID": "module03/302-week09.html",
     "href": "module03/302-week09.html",
-    "title": "Week 9: PCA and Report 2",
+    "title": "Week 9: PCA and report 2",
     "section": "",
-    "text": "The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:\n\nBe familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling (nMDS)\nBe familiar with the principles underpinning multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA\nBe able to plan and conduct experiments that test multivariate hypotheses\nKnow how to carry out these analyses using relevant statistical software (Jamovi, PRIMER or R)\nBe able to interpret, present, and report your findings clearly and effectively\n\nIn this specific practical you will:\n\nUse PCA to analyse “lecturer perceptions” data gathered in previous years\nIn groups, design an investigation using a model system to test a multivariate hypothesis for your upcoming report",
+    "text": "The aim of this component of the practical series is to introduce you to several commonly used techniques for analysing multivariate data. By the end of the series, you will:\n\nUnderstand the principles underlying Principal Components Analysis (PCA) and Non-metric Multidimensional Scaling (nMDS)\nBe familiar with the concepts behind multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA\nBe able to plan and conduct experiments that test multivariate hypotheses\nKnow how to carry out these analyses using relevant statistical software\nBe able to interpret, present, and report your findings clearly and effectively\n\n\n\n\nIn this specific practical you will:\n\nUse PCA to analyse “lecturer perceptions” data gathered in previous years\nIn groups, design an investigation using a model system to test a multivariate hypothesis for your upcoming report",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -1399,9 +1399,9 @@
   {
     "objectID": "module03/302-week09.html#objectives",
     "href": "module03/302-week09.html#objectives",
-    "title": "Week 9: PCA and Report 2",
+    "title": "Week 9: PCA and report 2",
     "section": "",
-    "text": "The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:\n\nBe familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling (nMDS)\nBe familiar with the principles underpinning multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA\nBe able to plan and conduct experiments that test multivariate hypotheses\nKnow how to carry out these analyses using relevant statistical software (Jamovi, PRIMER or R)\nBe able to interpret, present, and report your findings clearly and effectively\n\nIn this specific practical you will:\n\nUse PCA to analyse “lecturer perceptions” data gathered in previous years\nIn groups, design an investigation using a model system to test a multivariate hypothesis for your upcoming report",
+    "text": "The aim of this component of the practical series is to introduce you to several commonly used techniques for analysing multivariate data. By the end of the series, you will:\n\nUnderstand the principles underlying Principal Components Analysis (PCA) and Non-metric Multidimensional Scaling (nMDS)\nBe familiar with the concepts behind multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA\nBe able to plan and conduct experiments that test multivariate hypotheses\nKnow how to carry out these analyses using relevant statistical software\nBe able to interpret, present, and report your findings clearly and effectively\n\n\n\n\nIn this specific practical you will:\n\nUse PCA to analyse “lecturer perceptions” data gathered in previous years\nIn groups, design an investigation using a model system to test a multivariate hypothesis for your upcoming report",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -1409,11 +1409,11 @@
     ]
   },
   {
-    "objectID": "module03/302-week09.html#module-3-submission-requirements",
-    "href": "module03/302-week09.html#module-3-submission-requirements",
-    "title": "Week 9: PCA and Report 2",
-    "section": "2 Module 3 Submission Requirements",
-    "text": "2 Module 3 Submission Requirements\nThis assessment has two components, each with a separate submission on Canvas.\n\n2.1 1. Group Data File\n\nWhat to submit: A single Excel file (.xlsx) containing your group’s raw data. This file must contain two clearly labelled worksheets:\n\nWorksheet 1: Species Data: Your species assemblage data.\nWorksheet 2: Habitat Data: Your habitat data.\n\nWho submits: Only one member of your group should upload the file.\nDeadline: 8:00am on the day of your practical session in Week 11.\nValue: This component is worth 5% of your final mark for the unit.\n\n\n\n2.2 2. Individual Report\n\nWhat to submit: A scientific report based on the analysis of your group’s data.\nWho submits: This is an individual submission. Every student must submit their own report.\nFormat: The report must be formatted as a short scientific article. For detailed formatting requirements, refer to the assessment guidelines available on Canvas.\nDeadline: The due date is listed in the “Assessments” section on Canvas.\nValue: This component is worth 15% of your final mark for the unit.",
+    "objectID": "module03/302-week09.html#what-you-need-to-submit-for-this-component-report-2",
+    "href": "module03/302-week09.html#what-you-need-to-submit-for-this-component-report-2",
+    "title": "Week 9: PCA and report 2",
+    "section": "1 What you need to submit for this component (Report 2)",
+    "text": "1 What you need to submit for this component (Report 2)\nThis assessment involves two separate submissions via Canvas:\n\nGroup Data Submission (Excel File)\n\nSubmit one Excel file containing your group’s:\n\nSpecies (assemblage) data\nHabitat data\n\nOnly one group member needs to upload the file on behalf of the group.\nDue: By 8:00am on the day of your Week 11 practical session\nWorth: 5% of your total unit mark\n\nMake sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi.\nIndividual Report\n\nSubmit your individual report based on your group’s study.\nFormat: A short scientific article (see assessment guidelines on Canvas for details).\nWorth: 15% of your total unit mark.\nDue date: Refer to the Assessment on Canvas and the Unit Outline.\n\n\n\n1.1 Analyses covered in practical 1\nPrincipal Components Analysis (PCA) is a technique used to reduce the dimensionality of a dataset by extracting a smaller set of new variables (principal components) that capture as much of the variance in the original data as possible. These components summarise complex patterns across multiple variables, making the data easier to visualise and interpret.\n\nPart 1: Principal components analysis – “perceptions of biology lecturers”\nYou will use PCA to reduce your set of measured variables into a coherent smaller dataset. In addition, you will be comparing your lecturer perceptions between preferred systems (marine, freshwater or terrestrial), preferred taxon (animals or plants) and gender (male or female) using conventional univariate approaches (t-tests/ANOVAs). To perform these univariate approaches, make sure that you not only create the principal components (PCs) but also save the scores (see below) for each component.\nThe process in JAMOVI is listed below. R instructions are given on Canvas in an R Studio file.\n\nImport your data\n\nOpen Jamovi.\nGo to the top-left menu (☰) → click Open → Browse and select your Excel/csv file (e.g. your lecturer dataset).\nOnce imported, check that all the columns (variables) are correctly recognised as numeric (look for a ruler icon in the column headers).\n\n\nVideo\n\nRun Principal Components Analysis\n\nClick on the “Factor” tab in the top toolbar.\nSelect Principal Component Analysis.\n\nSelect your variables\n\nIn the Variables panel on the left, select the variables of interest and move them into the “Variables” box.\n\n\nVideo\n\nDescriptive statistics and suitability tests\n\nUnder “Assumption Checks”, tick:\n\nBartlett’s Test of Sphericity\n\n\nExtraction settings\n\nIn the “Model” section:\n\nUnder Number of components, select “Eigenvalues &gt; 1”\nTick Scree Plot\nTick Unrotated solution\n\n\nRotation\n\nScroll to the “Rotation” section:\n\nChoose Varimax rotation.\nTick Display Rotated Solution.\n\n\n\nVideo\n\nSave component scores\n\nTick “Save component scores to data set” (usually found under the Scores section at the bottom).\nThis will add new variables to your dataset representing each component.\n\nMissing data handling\n\nAt the bottom of the PCA panel, set “Missing values” to Exclude cases listwise.\n\nRun the analysis\n\nClick anywhere outside the setup panel, and Jamovi will display your PCA results.\n\n\n\n\nAfter PCA: Review Your Output\n\nCorrelation Matrix: Check for variables that are not correlated with the others. These may not be suitable for PCA. You can remove them and rerun the analysis if needed.\nBartlett’s Test: These tell you if your data is suitable for PCA. Bartlett’s Test should be significant (p &lt; .05).\nScree Plot: Helps determine how many components to retain.\nRotated Solution: Makes it easier to interpret your components.\nSaved Scores: You can now use these component scores in further analyses (e.g., regression or cluster analysis).\n\nBartlett’s Test of Sphericity tests whether your correlation matrix is significantly different from an identity matrix—a matrix where all off-diagonal values are zero (no correlation between variables), and all diagonal values are one (each variable only correlates with itself).\nIf your data came from a population with no correlations between variables, the correlation matrix would be an identity matrix. In that case, Principal Components Analysis (PCA) would not be appropriate.\nA significant result (p &lt; .05) means that your correlation matrix is not an identity matrix, and PCA can be used.\nThat said, this test is most useful when used alongside visual inspection of your correlation matrix. If many variables aren’t correlated with others, they may not contribute much to PCA and could be removed.\nInterpreting the PCA\nYou need to:\n\nLook at the correlation matrix.\nExamine the scree plot and determine how many PCs you can identify (eigenvalues &gt;1, Kaiser’s Criterion).\nEstablish a meaningful name for each component based on the loadings for individual variables in the rotated solutions.\n\n\n\nAfter the PCA\nExamine whether gender, system biases (marine v. terrestrial) and taxon (animal v. plant) biases may affect the perceptions of biology lecturers. You will need to code the columns for each factor (i.e. males = 0, females = 1) for Jamovi to perform its standard one-way ANOVAs or t-tests.\nQuestions to consider:\nDo males and females perceive lecturer qualities the same way?\nDo botanists and zoologists perceive lecturer qualities the same way?\nDo marine and terrestrial folk perceive lecturer qualities the same way?\n\n\nPart 2: Designing your multivariate experiment\n\nThe data and your model system\nBiologists are increasingly turning to multivariate approaches because the questions we ask—and the data we collect—are often inherently multivariate. This is especially true when studying both biotic assemblages and abiotic habitat variables.\nTo explore these analytical techniques, you will work in groups to generate your own multivariate datasets using non-biological model systems. Examples include:\n\nCars and the car parks they inhabit\nGargoyles and the buildings they reside on\nBeer types and the drinking establishments in which they appear\n\nThese creative analogues allow you to test and visualise multivariate patterns in a controlled and accessible way.\n\n\nGroup work\nAs a group, you will:\n\nDesign your own non-biological multivariate model system.\nDevelop 2–3 testable hypotheses relating to:\n\nThe assemblages of “species” across different treatments (e.g., locations, types of environments),\nThe role of measured “habitat variables” in shaping those assemblages.\n\nUse a two-factor design where possible (e.g., site × time, or suburb × establishment type).\nEnsure adequate replication—you will need at least 3 replicates per treatment.\nDesign a sampling strategy that allows you to collect the required data.\nAssign a data coordinator within your group to manage dataset preparation.",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -1421,11 +1421,11 @@
     ]
   },
   {
-    "objectID": "module03/302-week09.html#analyses-covered-in-this-practical",
-    "href": "module03/302-week09.html#analyses-covered-in-this-practical",
-    "title": "Week 9: PCA and Report 2",
-    "section": "3 Analyses covered in this practical",
-    "text": "3 Analyses covered in this practical\nPrincipal Components Analysis (PCA) is a technique used to reduce the dimensionality of a dataset by extracting a smaller set of new variables (principal components) that capture as much of the variance in the original data as possible. These components summarise complex patterns across multiple variables, making the data easier to visualise and interpret.",
+    "objectID": "module03/302-week09.html#week-11-group-presentation-compulsory",
+    "href": "module03/302-week09.html#week-11-group-presentation-compulsory",
+    "title": "Week 9: PCA and report 2",
+    "section": "2 Week 11 group presentation (compulsory)",
+    "text": "2 Week 11 group presentation (compulsory)\nDuring the Week 11 practical session (Week 2 of the prac series), your group will deliver a brief presentation (&lt;5 minutes) using a PowerPoint to introduce your project.\nThis session is compulsory and designed to provide constructive feedback before you begin data collection. Don’t worry—feedback is friendly and intended to improve your design, not critique your creativity!\nYour presentation should include:\n\nAn introduction to your system (model species and treatments)\nYour 2–3 hypotheses\nA description of your taxonomy (how you’re classifying your “species”)\nYour sampling design, including sample size and sampling effort\nA list of habitat variables you will measure at each site (and how you will measure them)\nA simple map of your sites",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -1433,11 +1433,11 @@
     ]
   },
   {
-    "objectID": "module03/302-week09.html#part-1-principal-components-analysis-perceptions-of-biology-lecturers",
-    "href": "module03/302-week09.html#part-1-principal-components-analysis-perceptions-of-biology-lecturers",
-    "title": "Week 9: PCA and Report 2",
-    "section": "4 Part 1: Principal components analysis – “perceptions of biology lecturers”",
-    "text": "4 Part 1: Principal components analysis – “perceptions of biology lecturers”\nYou will use PCA to reduce your set of measured variables into a coherent smaller dataset. In addition, you will be comparing your lecturer perceptions between preferred systems (marine, freshwater or terrestrial), preferred taxon (animals or plants) and gender (male or female) using conventional univariate approaches (t-tests/ANOVAs). To perform these univariate approaches, make sure that you not only create the principal components (PCs) but also save the scores (see below) for each component.\nThe process in JAMOVI is listed below. R instructions are given on Canvas in an R Studio file\n\n4.1 1. Import your data\n\nOpen Jamovi.\nGo to the top-left menu (☰) → click Open → Browse and select your Excel file (e.g. your lecturer dataset).\nOnce imported, check that all the columns (variables) are correctly recognised as numeric (look for a ruler icon in the column headers).\n\n\n\n4.2 2. Run Principal Components Analysis\n\nClick on the “Factor” tab in the top toolbar.\nSelect Principal Component Analysis.\n\n\n\n4.3 3. Select your variables\n\nIn the Variables panel on the left, select the variables of interest and move them into the “Variables” box.\n\n\n\n4.4 4. Descriptive statistics and suitability tests\n\nUnder “Assumption Checks”, tick “Bartlett’s Test of Sphericity”\n\n\n\n4.5 5. Extraction settings\n\nIn the “Model” section:\n\nUnder Number of components, select “Eigenvalues &gt; 1”\nTick Scree Plot\nTick Unrotated solution\n\n\n\n\n4.6 6. Rotation\n\nScroll to the “Rotation” section:\n\nChoose Varimax rotation.\nTick Display Rotated Solution.\n\n\n\n\n4.7 7. Save component scores\n\nTick “Save component scores to data set” (usually found under the Scores section at the bottom).\nThis will add new variables to your dataset representing each component.\n\n\n\n4.8 8. Missing data handling\n\nAt the bottom of the PCA panel, set “Missing values” to Exclude cases listwise.\n\n\n\n4.9 9. Run the analysis\n\nClick anywhere outside the setup panel, and Jamovi will display your PCA results.",
+    "objectID": "module03/302-week09.html#assessment-overview",
+    "href": "module03/302-week09.html#assessment-overview",
+    "title": "Week 9: PCA and report 2",
+    "section": "3 Assessment overview",
+    "text": "3 Assessment overview\nTo give you the maximum opportunity to analyse your data and understand your results, your group’s dataset will be checked during Week 11 by demonstrators.\n\n3.1 Group data submission (5%)\n\nThis is a group assessment: only one group member needs to upload the data file (Excel format) to Canvas on behalf of the group.\nThe dataset must be submitted before your Week 11 practical session.\nIt is worth 5% of your total unit mark.\nNear-perfect datasets that are well-organised, correctly formatted, and ready for analysis will receive the full 5%.\nAs this is a group submission, Special Consideration, Simple Extensions, and Academic Plans do not apply.\n\n\n\n3.2 Individual report (15%)\nEach student will submit an individual short report, focusing primarily on the Methods and Results sections, as outlined in the attached marking rubric.\n\nThe report must include:\n\nA brief Introduction with clearly stated hypotheses\nA detailed Methods section, describing your data collection and analyses\nA well-presented Results section with appropriate tables, figures, and descriptions\n\nYou are not required to invent a detailed rationale or references for your study, although you are welcome to include them if you wish.\nYour report must be written in the format of a manuscript suitable for submission to Austral Ecology.\nLength limit: Maximum of four single-spaced pages (not including the cover sheet, title/abstract page, references, tables, or figures)\nEmphasis will be placed on:\n\nClear explanation of analytical methods\nAccurate description of the data collected\nClear and concise presentation of results",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -1445,11 +1445,11 @@
     ]
   },
   {
-    "objectID": "module03/302-week09.html#after-pca-review-your-output",
-    "href": "module03/302-week09.html#after-pca-review-your-output",
-    "title": "Week 9: PCA and Report 2",
-    "section": "5 After PCA: Review Your Output",
-    "text": "5 After PCA: Review Your Output\n\nCorrelation Matrix: Check for variables that are not correlated with the others. These may not be suitable for PCA. You can remove them and rerun the analysis if needed.\nBartlett’s Test: These tell you if your data is suitable for PCA. Bartlett’s Test should be significant (p &lt; .05).\nScree Plot: Helps determine how many components to retain.\nRotated Solution: Makes it easier to interpret your components.\nSaved Scores: You can now use these component scores in further analyses (e.g., regression or cluster analysis).\n\nBartlett’s Test of Sphericity tests whether your correlation matrix is significantly different from an identity matrix—a matrix where all off-diagonal values are zero (no correlation between variables), and all diagonal values are one (each variable only correlates with itself).\nIf your data came from a population with no correlations between variables, the correlation matrix would be an identity matrix. In that case, Principal Components Analysis (PCA) would not be appropriate.\nA significant result (p &lt; .05) means that your correlation matrix is not an identity matrix, and PCA can be used.\nThat said, this test is most useful when used alongside visual inspection of your correlation matrix. If many variables aren’t correlated with others, they may not contribute much to PCA and could be removed.\n\n5.1 Interpreting the PCA\nYou need to:\n\nLook at the correlation matrix.\nExamine the scree plot and determine how many PCs you can identify (eigenvalues &gt;1, Kaiser’s Criterion).\nEstablish a meaningful name for each component based on the loadings for individual variables in the rotated solutions.\n\n\n\n5.2 After the PCA\nExamine whether gender, system biases (marine v. terrestrial) and taxon (animal v. plant) biases may affect the perceptions of biology lecturers. You will need to code the columns for each factor (i.e. males = 0, females = 1) for Jamovi to perform its standard one-way ANOVAs or t-tests.\n\n\n5.3 Questions to consider:\n\nDo males and females perceive lecturer qualities the same way?\nDo botanists and zoologists perceive lecturer qualities the same way?\nDo marine and terrestrial folk perceive lecturer qualities the same way?",
+    "objectID": "module03/302-week09.html#report-submission-details",
+    "href": "module03/302-week09.html#report-submission-details",
+    "title": "Week 9: PCA and report 2",
+    "section": "4 Report submission details",
+    "text": "4 Report submission details\nYour individual report is due by 12:59 pm on the Sunday before STUVAC. Please ensure it is submitted electronically and anonymously via Canvas .\nWe aim to return reports with summative feedback approximately one week after submission.",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -1457,11 +1457,11 @@
     ]
   },
   {
-    "objectID": "module03/302-week09.html#template",
-    "href": "module03/302-week09.html#template",
-    "title": "Week 9: PCA and Report 2",
-    "section": "6 Template",
-    "text": "6 Template\nA template for your study design is provided. You can download it here.",
+    "objectID": "module03/302-week09.html#academic-integrity",
+    "href": "module03/302-week09.html#academic-integrity",
+    "title": "Week 9: PCA and report 2",
+    "section": "5 Academic integrity",
+    "text": "5 Academic integrity\nYou are expected to complete your report independently and uphold the principles of academic honesty.\n\nPlagiarism or copying from others will result in loss of marks and may lead to further disciplinary action.\nRefer to the University’s policies on academic integrity: Academic Integrity at the University of Sydney",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -1469,11 +1469,35 @@
     ]
   },
   {
-    "objectID": "module03/302-week09.html#references",
-    "href": "module03/302-week09.html#references",
-    "title": "Week 9: PCA and Report 2",
-    "section": "7 References",
-    "text": "7 References\nSee annotated reading list with lectures posted on unit web site.\n\nGaston, K. J., T. M. Blackburn, Lawton. J. (1993). Comparing Animals and Automobiles – a Vehicle for Understanding Body Size and Abundance Relationships in Species Assemblages. Oikos 66: 172-179.\nQuinn G.P. and M.J. Keough. (2002). Experimental design and data analysis for biologists. Cambridge: Cambridge University Press. (appropriate chapters)\nQuinn G.P. and M.J. Keough. (2023). Experimental design and data analysis for biologists. 2nd edn Cambridge: Cambridge University Press. (appropriate chapters)",
+    "objectID": "module03/302-week09.html#use-of-chatgpt-or-similar-tools",
+    "href": "module03/302-week09.html#use-of-chatgpt-or-similar-tools",
+    "title": "Week 9: PCA and report 2",
+    "section": "6 Use of ChatGPT or similar tools",
+    "text": "6 Use of ChatGPT or similar tools\n\nYou may use tools like ChatGPT to check grammar or assist with R coding.\nHowever, extensive use of AI to write your report will be detectable and penalised. We are looking for your own scientific reasoning and interpretation.",
+    "crumbs": [
+      "Home",
+      "**Practicals**",
+      "Week **9** prac: PCA and Report 2"
+    ]
+  },
+  {
+    "objectID": "module03/302-week09.html#report-format",
+    "href": "module03/302-week09.html#report-format",
+    "title": "Week 9: PCA and report 2",
+    "section": "7 Report Format",
+    "text": "7 Report Format\nYour report should follow the format of a short scientific article suitable for submission to Austral Ecology. The “Notice to Contributors” is available at: Austral Ecology – Author Guidelines",
+    "crumbs": [
+      "Home",
+      "**Practicals**",
+      "Week **9** prac: PCA and Report 2"
+    ]
+  },
+  {
+    "objectID": "module03/302-week09.html#references-resources",
+    "href": "module03/302-week09.html#references-resources",
+    "title": "Week 9: PCA and report 2",
+    "section": "8 References & resources",
+    "text": "8 References & resources\nYou are encouraged to consult the references from the annotated reading list provided with the lectures on the unit website. Key references include:\n\nGaston, K. J., Blackburn, T. M., & Lawton, J. H. (1993). Comparing animals and automobiles – a vehicle for understanding body size and abundance relationships in species assemblages. Oikos, 66, 172–179.\nQuinn, G. P., & Keough, M. J. (2002). Experimental Design and Data Analysis for Biologists. Cambridge: Cambridge University Press. (Relevant chapters)\nQuinn, G. P., & Keough, M. J. (2023). Experimental Design and Data Analysis for Biologists (2nd ed.). Cambridge: Cambridge University Press. (Relevant chapters)",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -1485,35 +1509,96 @@
     "href": "module03/301-intro.html",
     "title": "Introduction",
     "section": "",
-    "text": "The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:\n\nBe familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling.\nBe familiar with the principles underpinning multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA.\nPlanning and conducting experiments to test multivariate hypotheses.\nKnow how to perform these analyses using relevant software.\nBe able to interpret, present and report on these analyses."
-  },
-  {
-    "objectID": "module03/301-intro.html#preamble",
-    "href": "module03/301-intro.html#preamble",
-    "title": "Introduction",
-    "section": "",
-    "text": "The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:\n\nBe familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling.\nBe familiar with the principles underpinning multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA.\nPlanning and conducting experiments to test multivariate hypotheses.\nKnow how to perform these analyses using relevant software.\nBe able to interpret, present and report on these analyses."
+    "text": "TipObjectives\n\n\n\nThe aim of this component of the practical series is to introduce you to several commonly used techniques for analysing multivariate data. By the end of the series, you will:\n\nUnderstand the principles underlying Principal Components Analysis (PCA) and Non-metric Multidimensional Scaling (nMDS)\nBe familiar with the concepts behind multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA\nBe able to plan and conduct experiments that test multivariate hypotheses\nKnow how to carry out these analyses using relevant statistical software\nBe able to interpret, present, and report your findings clearly and effectively",
+    "crumbs": [
+      "Home",
+      "**Practicals**",
+      "**Introduction to Module 3 **"
+    ]
   },
   {
     "objectID": "module03/301-intro.html#background",
     "href": "module03/301-intro.html#background",
     "title": "Introduction",
-    "section": "2 Background",
-    "text": "2 Background\nMultivariate analyses are becoming more prevalent in biology as tools performing the necessary complex computations become more accessible. As the lectures outline, this accessibility has given rise to the uncritical use of methods leading to inappropriate analyses being used to deal with multivariate data sets. At the very least, biologists need to have a working understanding of how to choose appropriate tests and how to identify when someone has chosen poorly.\nSome of the more common uses of multivariate approaches permit us to describe complex patterns simply, identify patterns of groupings in complex data sets and test statistical hypotheses using multivariate datasets.\nIn this section of the unit, you will be able to practice performing these multivariate techniques using sample data sets. Then you need to demonstrate your ability to use these multivariate methods to analyse data that you will collect in groups to highlight the nuances of different techniques. Whilst best practice normally dictates that we would normally decide on appropriate tests before we collect our data, this task will enable us to explore options for analysis more effectively."
+    "section": "1 Background",
+    "text": "1 Background\nMultivariate analyses are becoming increasingly common in biology, largely due to the growing accessibility of software tools capable of handling complex data. However, as discussed in lectures, this accessibility has also led to the uncritical and sometimes inappropriate use of multivariate methods. It is therefore essential that biologists develop a working understanding of when and how to apply these techniques, as well as how to recognise when others have used them incorrectly.\nMultivariate approaches are widely used for:\n\nSummarising complex patterns in biological data,\nIdentifying groupings or patterns among samples or species,\nTesting statistical hypotheses involving multivariate datasets.",
+    "crumbs": [
+      "Home",
+      "**Practicals**",
+      "**Introduction to Module 3 **"
+    ]
+  },
+  {
+    "objectID": "module03/301-intro.html#what-youll-be-doing",
+    "href": "module03/301-intro.html#what-youll-be-doing",
+    "title": "Introduction",
+    "section": "2 What you’ll be doing",
+    "text": "2 What you’ll be doing\nIn this part of the course, you will:\n\nPractice performing key multivariate techniques using sample datasets provided during practical sessions.\nApply those techniques to your own data, which you will collect and collate in groups.\nExplore and compare the outcomes of different multivariate methods, observing how each highlights different features of the same dataset.\n\nAlthough best scientific practice recommends selecting appropriate analyses before data collection, this exercise is designed to give you the opportunity to trial multiple analytical approaches and better understand their application and interpretation.",
+    "crumbs": [
+      "Home",
+      "**Practicals**",
+      "**Introduction to Module 3 **"
+    ]
   },
   {
     "objectID": "module03/301-intro.html#analyses-and-programs-well-use",
     "href": "module03/301-intro.html#analyses-and-programs-well-use",
     "title": "Introduction",
     "section": "3 Analyses and programs we’ll use",
-    "text": "3 Analyses and programs we’ll use\nThe main programs we will use are SPSS and PRIMER. However, R instructions for all methods, in the form of R scripts, will be supplied on Canvas for those who prefer to use R.\n\nPCA – Principal components analysis lets us extract a reduced dataset from a larger dataset, accounting for as much variance as possible in the original more complex dataset. This will be useful for your habitat data as we can determine a reduced number of newly derived variables to describe them. We will do this in SPSS (or R). \nnMDS and multivariate hypothesis testing (using ANOSIM, PERMANOVA and SIMPER) – Mainly used to produce an ordination in order to visualize patterns in the multivariate cloud of data (by reducing dimensions in some way) and also to rigorously test explicit hypotheses concerning those patterns by reference to a priori groups or relationships with predictors, such as environmental variables. We will use PRIMER for this (or R).\nANOSIM – testing hypotheses comparing different groups based on their similarity (Among c.f. within) using distance measures. Most effective with simple designs. We will use PRIMER for this (or R).\nPERMANOVA – more powerful approach to multivariate hypothesis testing using permutational methods, capable of analysing more complex designs. We will use PRIMER for this (or R).\nSIMPER – used when a significant difference is found to identify which components of the data set are driving the differences (e.g. the contribution each species makes to differences among communities. We will use PRIMER for this (or R)."
+    "text": "3 Analyses and programs we’ll use\nThe main programs we will use in this course are Jamovi and PRIMER. However, if you prefer working in R, complete R scripts (RStudio files) for all the methods covered will be made available on Canvas.\n\nPrincipal Components Analysis\nPrincipal Components Analysis (PCA) is a method used to reduce the complexity of large datasets by transforming them into a smaller set of uncorrelated variables (called principal components) that capture the maximum variance in the original data.\nThis technique is especially useful for analysing habitat data, where multiple environmental variables can be summarised into a few key components that describe the main gradients in the data.\nWe will perform PCA using Jamovi (or R, if preferred).",
+    "crumbs": [
+      "Home",
+      "**Practicals**",
+      "**Introduction to Module 3 **"
+    ]
+  },
+  {
+    "objectID": "module03/301-intro.html#nmds-and-multivariate-hypothesis-testing",
+    "href": "module03/301-intro.html#nmds-and-multivariate-hypothesis-testing",
+    "title": "Introduction",
+    "section": "4 nMDS and multivariate hypothesis testing",
+    "text": "4 nMDS and multivariate hypothesis testing\n\n(ANOSIM, PERMANOVA, and SIMPER)\nIn this section of the course, we will explore techniques for visualising and testing patterns in complex multivariate datasets. These methods reduce the dimensionality of the data (e.g., species abundances across sites) to reveal meaningful patterns and relationships, and then allow us to test explicit hypotheses about these patterns—often in relation to predefined groups (e.g., treatment types) or environmental variables.\nWe will primarily use PRIMER 7 for these analyses, although equivalent R code will also be provided.\n\n\nnMDS – Non-metric multidimensional scaling\nnMDS is an ordination technique used to visualise patterns in multivariate data by representing samples in a low-dimensional space based on their similarity (usually Bray-Curtis). It helps us see groupings or gradients in community composition or other multivariate datasets.\n\n\nANOSIM – Analysis of similarities\nANOSIM tests whether groups of samples differ in composition based on a comparison of within-group vs among-group similarity. It uses rank-based distance measures and is best suited to simple experimental designs.\n\nSoftware: PRIMER 7 (or R)\nOutput includes: Global R statistic and p-value",
+    "crumbs": [
+      "Home",
+      "**Practicals**",
+      "**Introduction to Module 3 **"
+    ]
+  },
+  {
+    "objectID": "module03/301-intro.html#permanova-permutational-multivariate-analysis-of-variance",
+    "href": "module03/301-intro.html#permanova-permutational-multivariate-analysis-of-variance",
+    "title": "Introduction",
+    "section": "5 PERMANOVA – Permutational multivariate analysis of variance",
+    "text": "5 PERMANOVA – Permutational multivariate analysis of variance\nPERMANOVA is a more flexible and powerful method for testing hypotheses in multivariate data. It uses permutation-based ANOVA on a resemblance matrix and can accommodate complex experimental designs, including multiple fixed and random factors.\n\nSoftware: PRIMER 7 (or R)\nCapable of testing main effects, interactions, and nested designs",
+    "crumbs": [
+      "Home",
+      "**Practicals**",
+      "**Introduction to Module 3 **"
+    ]
+  },
+  {
+    "objectID": "module03/301-intro.html#simper-similarity-percentages",
+    "href": "module03/301-intro.html#simper-similarity-percentages",
+    "title": "Introduction",
+    "section": "6 SIMPER – Similarity percentages",
+    "text": "6 SIMPER – Similarity percentages\nWhen a significant difference is detected (e.g., by ANOSIM or PERMANOVA), SIMPER helps identify which variables (e.g., species) are contributing most to the observed differences between groups.\n\nIt calculates the percentage contribution of each variable to the overall dissimilarity.\nUseful for interpreting biological meaning behind multivariate differences.\nSoftware: PRIMER 7 (or R)",
+    "crumbs": [
+      "Home",
+      "**Practicals**",
+      "**Introduction to Module 3 **"
+    ]
   },
   {
     "objectID": "module03/301-intro.html#timeline",
     "href": "module03/301-intro.html#timeline",
     "title": "Introduction",
-    "section": "4 Timeline",
-    "text": "4 Timeline\n\nWeek 9: introduction, PCA of lecture data and designing model systems to test multivariate hypotheses (in groups) for your reports.\nWeek 10: group presentations of model systems and experimental design, and how to perform nMDS, PERMANOVA (and ANOSIM) and SIMPER using sample data.\nWeek 11: submitting your complete datafiles onto Canvas, analysing your report data.\nWeek 12: additional analyses and summary of findings and guidelines for describing multivariate methods and results for your report.\nWeek 13: final report due."
+    "section": "7 Timeline",
+    "text": "7 Timeline\n\nWeek 9: introduction, PCA of lecture data and designing model systems to test multivariate hypotheses (in groups) for your reports.\nWeek 10: group presentations of model systems and experimental design, and how to perform nMDS, PERMANOVA (and ANOSIM) and SIMPER using sample data\nWeek 11: submitting your complete datafiles onto Canvas, analysing your report data\nWeek 12: additional analyses and summary of findings and guidelines for describing multivariate methods and results for your report",
+    "crumbs": [
+      "Home",
+      "**Practicals**",
+      "**Introduction to Module 3 **"
+    ]
   },
   {
     "objectID": "assessments/assessment-final-exam.html",
