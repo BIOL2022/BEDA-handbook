@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 9: PCA and Report 2 – BIOL2022</title>
+<title>Week 9: PCA and report 2 – BIOL2022</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-a373a0dbbae5aabeef075f76ef7d9680.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -68,7 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<meta name="quarto:status" content="draft">
 
 
 <link rel="stylesheet" href="../assets/timeline.css">
@@ -77,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
+  <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -236,6 +235,12 @@ ul.task-list li input[type="checkbox"] {
           <li class="px-0"><hr class="sidebar-divider hi "></li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../module03/301-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Introduction to Module 3 </strong></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../module03/302-week09.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Week <strong>9</strong> prac: PCA and Report 2</span></a>
   </div>
@@ -300,33 +305,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives"><span class="header-section-number">1</span> Objectives</a></li>
-  <li><a href="#module-3-submission-requirements" id="toc-module-3-submission-requirements" class="nav-link" data-scroll-target="#module-3-submission-requirements"><span class="header-section-number">2</span> Module 3 Submission Requirements</a>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#what-you-need-to-submit-for-this-component-report-2" id="toc-what-you-need-to-submit-for-this-component-report-2" class="nav-link" data-scroll-target="#what-you-need-to-submit-for-this-component-report-2"><span class="header-section-number">1</span> What you need to submit for this component (Report 2)</a>
   <ul class="collapse">
-  <li><a href="#group-data-file" id="toc-group-data-file" class="nav-link" data-scroll-target="#group-data-file"><span class="header-section-number">2.1</span> 1. Group Data File</a></li>
-  <li><a href="#individual-report" id="toc-individual-report" class="nav-link" data-scroll-target="#individual-report"><span class="header-section-number">2.2</span> 2. Individual Report</a></li>
+  <li><a href="#analyses-covered-in-practical-1" id="toc-analyses-covered-in-practical-1" class="nav-link" data-scroll-target="#analyses-covered-in-practical-1"><span class="header-section-number">1.1</span> Analyses covered in practical 1</a></li>
   </ul></li>
-  <li><a href="#analyses-covered-in-this-practical" id="toc-analyses-covered-in-this-practical" class="nav-link" data-scroll-target="#analyses-covered-in-this-practical"><span class="header-section-number">3</span> Analyses covered in this practical</a></li>
-  <li><a href="#part-1-principal-components-analysis-perceptions-of-biology-lecturers" id="toc-part-1-principal-components-analysis-perceptions-of-biology-lecturers" class="nav-link" data-scroll-target="#part-1-principal-components-analysis-perceptions-of-biology-lecturers"><span class="header-section-number">4</span> Part 1: Principal components analysis – “perceptions of biology lecturers”</a>
+  <li><a href="#week-11-group-presentation-compulsory" id="toc-week-11-group-presentation-compulsory" class="nav-link" data-scroll-target="#week-11-group-presentation-compulsory"><span class="header-section-number">2</span> Week 11 group presentation (compulsory)</a></li>
+  <li><a href="#assessment-overview" id="toc-assessment-overview" class="nav-link" data-scroll-target="#assessment-overview"><span class="header-section-number">3</span> Assessment overview</a>
   <ul class="collapse">
-  <li><a href="#import-your-data" id="toc-import-your-data" class="nav-link" data-scroll-target="#import-your-data"><span class="header-section-number">4.1</span> 1. Import your data</a></li>
-  <li><a href="#run-principal-components-analysis" id="toc-run-principal-components-analysis" class="nav-link" data-scroll-target="#run-principal-components-analysis"><span class="header-section-number">4.2</span> 2. Run Principal Components Analysis</a></li>
-  <li><a href="#select-your-variables" id="toc-select-your-variables" class="nav-link" data-scroll-target="#select-your-variables"><span class="header-section-number">4.3</span> 3. Select your variables</a></li>
-  <li><a href="#descriptive-statistics-and-suitability-tests" id="toc-descriptive-statistics-and-suitability-tests" class="nav-link" data-scroll-target="#descriptive-statistics-and-suitability-tests"><span class="header-section-number">4.4</span> 4. Descriptive statistics and suitability tests</a></li>
-  <li><a href="#extraction-settings" id="toc-extraction-settings" class="nav-link" data-scroll-target="#extraction-settings"><span class="header-section-number">4.5</span> 5. Extraction settings</a></li>
-  <li><a href="#rotation" id="toc-rotation" class="nav-link" data-scroll-target="#rotation"><span class="header-section-number">4.6</span> 6. Rotation</a></li>
-  <li><a href="#save-component-scores" id="toc-save-component-scores" class="nav-link" data-scroll-target="#save-component-scores"><span class="header-section-number">4.7</span> 7. Save component scores</a></li>
-  <li><a href="#missing-data-handling" id="toc-missing-data-handling" class="nav-link" data-scroll-target="#missing-data-handling"><span class="header-section-number">4.8</span> 8. Missing data handling</a></li>
-  <li><a href="#run-the-analysis" id="toc-run-the-analysis" class="nav-link" data-scroll-target="#run-the-analysis"><span class="header-section-number">4.9</span> 9. Run the analysis</a></li>
+  <li><a href="#group-data-submission-5" id="toc-group-data-submission-5" class="nav-link" data-scroll-target="#group-data-submission-5"><span class="header-section-number">3.1</span> Group data submission (5%)</a></li>
+  <li><a href="#individual-report-15" id="toc-individual-report-15" class="nav-link" data-scroll-target="#individual-report-15"><span class="header-section-number">3.2</span> Individual report (15%)</a></li>
   </ul></li>
-  <li><a href="#after-pca-review-your-output" id="toc-after-pca-review-your-output" class="nav-link" data-scroll-target="#after-pca-review-your-output"><span class="header-section-number">5</span> After PCA: Review Your Output</a>
-  <ul class="collapse">
-  <li><a href="#interpreting-the-pca" id="toc-interpreting-the-pca" class="nav-link" data-scroll-target="#interpreting-the-pca"><span class="header-section-number">5.1</span> Interpreting the PCA</a></li>
-  <li><a href="#after-the-pca" id="toc-after-the-pca" class="nav-link" data-scroll-target="#after-the-pca"><span class="header-section-number">5.2</span> After the PCA</a></li>
-  <li><a href="#questions-to-consider" id="toc-questions-to-consider" class="nav-link" data-scroll-target="#questions-to-consider"><span class="header-section-number">5.3</span> Questions to consider:</a></li>
-  </ul></li>
-  <li><a href="#template" id="toc-template" class="nav-link" data-scroll-target="#template"><span class="header-section-number">6</span> Template</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7</span> References</a></li>
+  <li><a href="#report-submission-details" id="toc-report-submission-details" class="nav-link" data-scroll-target="#report-submission-details"><span class="header-section-number">4</span> Report submission details</a></li>
+  <li><a href="#academic-integrity" id="toc-academic-integrity" class="nav-link" data-scroll-target="#academic-integrity"><span class="header-section-number">5</span> Academic integrity</a></li>
+  <li><a href="#use-of-chatgpt-or-similar-tools" id="toc-use-of-chatgpt-or-similar-tools" class="nav-link" data-scroll-target="#use-of-chatgpt-or-similar-tools"><span class="header-section-number">6</span> Use of ChatGPT or similar tools</a></li>
+  <li><a href="#report-format" id="toc-report-format" class="nav-link" data-scroll-target="#report-format"><span class="header-section-number">7</span> Report Format</a></li>
+  <li><a href="#references-resources" id="toc-references-resources" class="nav-link" data-scroll-target="#references-resources"><span class="header-section-number">8</span> References &amp; resources</a></li>
   </ul>
 </nav>
     </div>
@@ -335,7 +329,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../module01/102-week01.html"><strong>Practicals</strong></a></li><li class="breadcrumb-item"><a href="../module03/302-week09.html">Week <strong>9</strong> prac: PCA and Report 2</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><strong>Week 9</strong>: PCA and Report 2</h1>
+<h1 class="title"><strong>Week 9</strong>: PCA and report 2</h1>
 </div>
 
 
@@ -352,86 +346,92 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="objectives" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="objectives"><span class="header-section-number">1</span> Objectives</h2>
-<p>The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:</p>
+<section id="objectives" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="objectives">Objectives</h2>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The aim of this component of the practical series is to introduce you to several commonly used techniques for analysing multivariate data. By the end of the series, you will:</p>
 <ul>
-<li>Be familiar with the principles underpinning <strong>principal components analysis (PCA)</strong>, and <strong>non-metric multidimensional scaling (nMDS)</strong></li>
-<li>Be familiar with the principles underpinning multivariate hypothesis testing using <strong>permutational techniques</strong> such as <strong>ANOSIM</strong> and <strong>PERMANOVA</strong></li>
+<li>Understand the principles underlying <strong>Principal Components Analysis (PCA)</strong> and <strong>Non-metric Multidimensional Scaling (nMDS)</strong></li>
+<li>Be familiar with the concepts behind <strong>multivariate hypothesis testing</strong> using permutational techniques such as <strong>ANOSIM</strong> and <strong>PERMANOVA</strong></li>
 <li>Be able to <strong>plan and conduct experiments</strong> that test multivariate hypotheses</li>
-<li>Know how to carry out these analyses using relevant statistical software (Jamovi, PRIMER or R)</li>
+<li>Know how to <strong>carry out these analyses using relevant statistical software</strong></li>
 <li>Be able to <strong>interpret, present, and report</strong> your findings clearly and effectively</li>
 </ul>
+</div>
+</div>
+</div>
 <p>In this specific practical you will:</p>
 <ul class="task-list">
 <li><label><input type="checkbox">Use <strong>PCA</strong> to analyse “lecturer perceptions” data gathered in previous years</label></li>
 <li><label><input type="checkbox">In groups, design an investigation using a model system to test a multivariate hypothesis for your upcoming report</label></li>
 </ul>
 </section>
-<section id="module-3-submission-requirements" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="module-3-submission-requirements"><span class="header-section-number">2</span> Module 3 Submission Requirements</h2>
-<p>This assessment has two components, each with a separate submission on Canvas.</p>
-<section id="group-data-file" class="level3" data-number="2.1">
-<h3 data-number="2.1" class="anchored" data-anchor-id="group-data-file"><span class="header-section-number">2.1</span> 1. Group Data File</h3>
+<section id="what-you-need-to-submit-for-this-component-report-2" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="what-you-need-to-submit-for-this-component-report-2"><span class="header-section-number">1</span> What you need to submit for this component (Report 2)</h2>
+<p>This assessment involves two separate submissions via Canvas:</p>
+<ol type="1">
+<li><p><strong>Group Data Submission (Excel File)</strong></p>
 <ul>
-<li><strong>What to submit:</strong> A single Excel file (<code>.xlsx</code>) containing your group’s raw data. This file must contain two clearly labelled worksheets:
+<li>Submit <strong>one Excel file</strong> containing your group’s:
 <ul>
-<li><strong>Worksheet 1: Species Data:</strong> Your species assemblage data.</li>
-<li><strong>Worksheet 2: Habitat Data:</strong> Your habitat data.</li>
+<li><strong>Species (assemblage) data</strong></li>
+<li><strong>Habitat data</strong></li>
 </ul></li>
-<li><strong>Who submits:</strong> Only <strong>one</strong> member of your group should upload the file.</li>
-<li><strong>Deadline:</strong> 8:00am on the day of your practical session in Week 11.</li>
-<li><strong>Value:</strong> This component is worth 5% of your final mark for the unit.</li>
+<li>Only <strong>one group member</strong> needs to upload the file on behalf of the group.</li>
+<li>Due: By <strong>8:00am</strong> on the day of your <strong>Week 11 practical session</strong></li>
+<li>Worth: <strong>5%</strong> of your total unit mark</li>
 </ul>
-</section>
-<section id="individual-report" class="level3" data-number="2.2">
-<h3 data-number="2.2" class="anchored" data-anchor-id="individual-report"><span class="header-section-number">2.2</span> 2. Individual Report</h3>
+<p>Make sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi.</p></li>
+<li><p><strong>Individual Report</strong></p>
 <ul>
-<li><strong>What to submit:</strong> A scientific report based on the analysis of your group’s data.</li>
-<li><strong>Who submits:</strong> This is an <strong>individual</strong> submission. Every student must submit their own report.</li>
-<li><strong>Format:</strong> The report must be formatted as a short scientific article. For detailed formatting requirements, refer to the assessment guidelines available on Canvas.</li>
-<li><strong>Deadline:</strong> The due date is listed in the “Assessments” section on Canvas.</li>
-<li><strong>Value:</strong> This component is worth 15% of your final mark for the unit.</li>
-</ul>
-</section>
-</section>
-<section id="analyses-covered-in-this-practical" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="analyses-covered-in-this-practical"><span class="header-section-number">3</span> Analyses covered in this practical</h2>
-<p>Principal Components Analysis (PCA) is a technique used to reduce the dimensionality of a dataset by extracting a smaller set of new variables (principal components) that capture as much of the variance in the original data as possible. These components summarise complex patterns across multiple variables, making the data easier to visualise and interpret.</p>
-</section>
-<section id="part-1-principal-components-analysis-perceptions-of-biology-lecturers" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="part-1-principal-components-analysis-perceptions-of-biology-lecturers"><span class="header-section-number">4</span> Part 1: Principal components analysis – “perceptions of biology lecturers”</h2>
+<li>Submit your <strong>individual report</strong> based on your group’s study.</li>
+<li>Format: A <strong>short scientific article</strong> (see assessment guidelines on Canvas for details).</li>
+<li>Worth: 15% of your total unit mark.</li>
+<li>Due date: Refer to the <strong>Assessment</strong> on Canvas and the <strong>Unit Outline</strong>.</li>
+</ul></li>
+</ol>
+<section id="analyses-covered-in-practical-1" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="analyses-covered-in-practical-1"><span class="header-section-number">1.1</span> Analyses covered in practical 1</h3>
+<p><strong>Principal Components Analysis (PCA)</strong> is a technique used to <strong>reduce the dimensionality</strong> of a dataset by extracting a smaller set of <strong>new variables (principal components)</strong> that capture as much of the <strong>variance</strong> in the original data as possible. These components summarise complex patterns across multiple variables, making the data easier to visualise and interpret.</p>
+<section id="part-1-principal-components-analysis-perceptions-of-biology-lecturers" class="level4">
+<h4 class="anchored" data-anchor-id="part-1-principal-components-analysis-perceptions-of-biology-lecturers">Part 1: Principal components analysis – “perceptions of biology lecturers”</h4>
 <p>You will use PCA to reduce your set of measured variables into a coherent smaller dataset. In addition, you will be comparing your lecturer perceptions between preferred systems (marine, freshwater or terrestrial), preferred taxon (animals or plants) and gender (male or female) using conventional univariate approaches (t-tests/ANOVAs). To perform these univariate approaches, make sure that you not only create the principal components (PCs) but also save the scores (see below) for each component.</p>
-<p>The process in JAMOVI is listed below. R instructions are given on Canvas in an R Studio file</p>
-<section id="import-your-data" class="level3" data-number="4.1">
-<h3 data-number="4.1" class="anchored" data-anchor-id="import-your-data"><span class="header-section-number">4.1</span> 1. Import your data</h3>
+<p><strong>The process in JAMOVI is listed below. R instructions are given on Canvas in an R Studio file.</strong></p>
+<ol type="1">
+<li>Import your data
 <ul>
-<li>Open Jamovi.</li>
-<li>Go to the top-left menu (☰) → click Open → Browse and select your Excel file (e.g.&nbsp;your lecturer dataset).</li>
+<li>Open <strong>Jamovi</strong>.</li>
+<li>Go to the top-left menu (☰) → click <strong>Open</strong> → <strong>Browse</strong> and select your Excel/csv file (e.g.&nbsp;your lecturer dataset).</li>
 <li>Once imported, check that all the columns (variables) are correctly recognised as numeric (look for a ruler icon in the column headers).</li>
-</ul>
-</section>
-<section id="run-principal-components-analysis" class="level3" data-number="4.2">
-<h3 data-number="4.2" class="anchored" data-anchor-id="run-principal-components-analysis"><span class="header-section-number">4.2</span> 2. Run Principal Components Analysis</h3>
+</ul></li>
+</ol>
+<p><video src="assets/w09-jamovi-load-data.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-load-data.mp4">Video</a></video></p>
+<ol start="2" type="1">
+<li>Run Principal Components Analysis
 <ul>
 <li>Click on the “Factor” tab in the top toolbar.</li>
 <li>Select Principal Component Analysis.</li>
-</ul>
-</section>
-<section id="select-your-variables" class="level3" data-number="4.3">
-<h3 data-number="4.3" class="anchored" data-anchor-id="select-your-variables"><span class="header-section-number">4.3</span> 3. Select your variables</h3>
+</ul></li>
+<li>Select your variables
 <ul>
 <li>In the Variables panel on the left, select the variables of interest and move them into the “Variables” box.</li>
-</ul>
-</section>
-<section id="descriptive-statistics-and-suitability-tests" class="level3" data-number="4.4">
-<h3 data-number="4.4" class="anchored" data-anchor-id="descriptive-statistics-and-suitability-tests"><span class="header-section-number">4.4</span> 4. Descriptive statistics and suitability tests</h3>
+</ul></li>
+</ol>
+<p><video src="assets/w09-jamovi-run-pca.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-run-pca.mp4">Video</a></video></p>
+<ol start="4" type="1">
+<li>Descriptive statistics and suitability tests
 <ul>
-<li>Under “Assumption Checks”, tick “Bartlett’s Test of Sphericity”</li>
-</ul>
-</section>
-<section id="extraction-settings" class="level3" data-number="4.5">
-<h3 data-number="4.5" class="anchored" data-anchor-id="extraction-settings"><span class="header-section-number">4.5</span> 5. Extraction settings</h3>
+<li>Under “Assumption Checks”, tick:
+<ul>
+<li>Bartlett’s Test of Sphericity</li>
+</ul></li>
+</ul></li>
+<li>Extraction settings
 <ul>
 <li>In the “Model” section:
 <ul>
@@ -439,40 +439,35 @@ ul.task-list li input[type="checkbox"] {
 <li>Tick Scree Plot</li>
 <li>Tick Unrotated solution</li>
 </ul></li>
-</ul>
-</section>
-<section id="rotation" class="level3" data-number="4.6">
-<h3 data-number="4.6" class="anchored" data-anchor-id="rotation"><span class="header-section-number">4.6</span> 6. Rotation</h3>
+</ul></li>
+<li>Rotation
 <ul>
 <li>Scroll to the “Rotation” section:
 <ul>
 <li>Choose Varimax rotation.</li>
 <li>Tick Display Rotated Solution.</li>
 </ul></li>
-</ul>
-</section>
-<section id="save-component-scores" class="level3" data-number="4.7">
-<h3 data-number="4.7" class="anchored" data-anchor-id="save-component-scores"><span class="header-section-number">4.7</span> 7. Save component scores</h3>
+</ul></li>
+</ol>
+<p><video src="assets/w09-jamovi-pca-options.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-pca-options.mp4">Video</a></video></p>
+<ol start="7" type="1">
+<li>Save component scores
 <ul>
 <li>Tick “Save component scores to data set” (usually found under the Scores section at the bottom).</li>
 <li>This will add new variables to your dataset representing each component.</li>
-</ul>
-</section>
-<section id="missing-data-handling" class="level3" data-number="4.8">
-<h3 data-number="4.8" class="anchored" data-anchor-id="missing-data-handling"><span class="header-section-number">4.8</span> 8. Missing data handling</h3>
+</ul></li>
+<li>Missing data handling
 <ul>
 <li>At the bottom of the PCA panel, set “Missing values” to Exclude cases listwise.</li>
-</ul>
-</section>
-<section id="run-the-analysis" class="level3" data-number="4.9">
-<h3 data-number="4.9" class="anchored" data-anchor-id="run-the-analysis"><span class="header-section-number">4.9</span> 9. Run the analysis</h3>
+</ul></li>
+<li>Run the analysis
 <ul>
 <li>Click anywhere outside the setup panel, and Jamovi will display your PCA results.</li>
-</ul>
+</ul></li>
+</ol>
 </section>
-</section>
-<section id="after-pca-review-your-output" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="after-pca-review-your-output"><span class="header-section-number">5</span> After PCA: Review Your Output</h2>
+<section id="after-pca-review-your-output" class="level4">
+<h4 class="anchored" data-anchor-id="after-pca-review-your-output">After PCA: Review Your Output</h4>
 <ul>
 <li>Correlation Matrix: Check for variables that are not correlated with the others. These may not be suitable for PCA. You can remove them and rerun the analysis if needed.</li>
 <li>Bartlett’s Test: These tell you if your data is suitable for PCA. Bartlett’s Test should be significant (p &lt; .05).</li>
@@ -484,8 +479,7 @@ ul.task-list li input[type="checkbox"] {
 <p>If your data came from a population with no correlations between variables, the correlation matrix would be an identity matrix. In that case, Principal Components Analysis (PCA) would not be appropriate.</p>
 <p>A significant result (p &lt; .05) means that your correlation matrix is not an identity matrix, and PCA can be used.</p>
 <p>That said, this test is most useful when used alongside visual inspection of your correlation matrix. If many variables aren’t correlated with others, they may not contribute much to PCA and could be removed.</p>
-<section id="interpreting-the-pca" class="level3" data-number="5.1">
-<h3 data-number="5.1" class="anchored" data-anchor-id="interpreting-the-pca"><span class="header-section-number">5.1</span> Interpreting the PCA</h3>
+<p>Interpreting the PCA</p>
 <p>You need to:</p>
 <ul>
 <li>Look at the correlation matrix.</li>
@@ -493,30 +487,126 @@ ul.task-list li input[type="checkbox"] {
 <li>Establish a meaningful name for each component based on the loadings for individual variables in the rotated solutions.</li>
 </ul>
 </section>
-<section id="after-the-pca" class="level3" data-number="5.2">
-<h3 data-number="5.2" class="anchored" data-anchor-id="after-the-pca"><span class="header-section-number">5.2</span> After the PCA</h3>
+<section id="after-the-pca" class="level4">
+<h4 class="anchored" data-anchor-id="after-the-pca">After the PCA</h4>
 <p>Examine whether gender, system biases (marine v. terrestrial) and taxon (animal v. plant) biases may affect the perceptions of biology lecturers. You will need to code the columns for each factor (i.e.&nbsp;males = 0, females = 1) for Jamovi to perform its standard one-way ANOVAs or t-tests.</p>
+<p>Questions to consider:</p>
+<p>Do males and females perceive lecturer qualities the same way?</p>
+<p>Do botanists and zoologists perceive lecturer qualities the same way?</p>
+<p>Do marine and terrestrial folk perceive lecturer qualities the same way?</p>
 </section>
-<section id="questions-to-consider" class="level3" data-number="5.3">
-<h3 data-number="5.3" class="anchored" data-anchor-id="questions-to-consider"><span class="header-section-number">5.3</span> Questions to consider:</h3>
+<section id="part-2-designing-your-multivariate-experiment" class="level4">
+<h4 class="anchored" data-anchor-id="part-2-designing-your-multivariate-experiment">Part 2: Designing your multivariate experiment</h4>
+<section id="the-data-and-your-model-system" class="level5">
+<h5 class="anchored" data-anchor-id="the-data-and-your-model-system">The data and your model system</h5>
+<p>Biologists are increasingly turning to multivariate approaches because the questions we ask—and the data we collect—are often inherently multivariate. This is especially true when studying both biotic assemblages and abiotic habitat variables.</p>
+<p>To explore these analytical techniques, you will work in groups to generate your own multivariate datasets using non-biological model systems. Examples include:</p>
 <ul>
-<li>Do males and females perceive lecturer qualities the same way?</li>
-<li>Do botanists and zoologists perceive lecturer qualities the same way?</li>
-<li>Do marine and terrestrial folk perceive lecturer qualities the same way?</li>
+<li>Cars and the car parks they inhabit</li>
+<li>Gargoyles and the buildings they reside on</li>
+<li>Beer types and the drinking establishments in which they appear</li>
+</ul>
+<p>These creative analogues allow you to test and visualise multivariate patterns in a controlled and accessible way.</p>
+</section>
+<section id="group-work" class="level5">
+<h5 class="anchored" data-anchor-id="group-work">Group work</h5>
+<p>As a group, you will:</p>
+<ul>
+<li>Design your own non-biological multivariate model system.</li>
+<li>Develop 2–3 testable hypotheses relating to:
+<ul>
+<li>The assemblages of “species” across different treatments (e.g., locations, types of environments),</li>
+<li>The role of measured “habitat variables” in shaping those assemblages.</li>
+</ul></li>
+<li>Use a two-factor design where possible (e.g., site × time, or suburb × establishment type).</li>
+<li>Ensure adequate replication—you will need at least 3 replicates per treatment.</li>
+<li>Design a sampling strategy that allows you to collect the required data.</li>
+<li>Assign a data coordinator within your group to manage dataset preparation.</li>
 </ul>
 </section>
 </section>
-<section id="template" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="template"><span class="header-section-number">6</span> Template</h2>
-<p>A template for your study design is provided. You can download it <a href="../assets/m3template.docx">here</a>.</p>
 </section>
-<section id="references" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="references"><span class="header-section-number">7</span> References</h2>
-<p>See annotated reading list with lectures posted on unit web site.</p>
+</section>
+<section id="week-11-group-presentation-compulsory" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="week-11-group-presentation-compulsory"><span class="header-section-number">2</span> Week 11 group presentation (compulsory)</h2>
+<p>During the Week 11 practical session (Week 2 of the prac series), your group will deliver a brief presentation (&lt;5 minutes) using a PowerPoint to introduce your project.</p>
+<p>This session is compulsory and designed to provide constructive feedback before you begin data collection. Don’t worry—feedback is friendly and intended to improve your design, not critique your creativity!</p>
+<p>Your presentation should include:</p>
 <ul>
-<li>Gaston, K. J., T. M. Blackburn, Lawton. J. (1993). Comparing Animals and Automobiles – a Vehicle for Understanding Body Size and Abundance Relationships in Species Assemblages. Oikos 66: 172-179.</li>
-<li>Quinn G.P. and M.J. Keough. (2002). Experimental design and data analysis for biologists. Cambridge: Cambridge University Press. (appropriate chapters)</li>
-<li>Quinn G.P. and M.J. Keough. (2023). Experimental design and data analysis for biologists. 2nd edn Cambridge: Cambridge University Press. (appropriate chapters)</li>
+<li>An introduction to your system (model species and treatments)</li>
+<li>Your 2–3 hypotheses</li>
+<li>A description of your taxonomy (how you’re classifying your “species”)</li>
+<li>Your sampling design, including sample size and sampling effort</li>
+<li>A list of habitat variables you will measure at each site (and how you will measure them)</li>
+<li>A simple map of your sites</li>
+</ul>
+</section>
+<section id="assessment-overview" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="assessment-overview"><span class="header-section-number">3</span> Assessment overview</h2>
+<p>To give you the maximum opportunity to analyse your data and understand your results, your group’s dataset will be checked during Week 11 by demonstrators.</p>
+<section id="group-data-submission-5" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="group-data-submission-5"><span class="header-section-number">3.1</span> Group data submission (5%)</h3>
+<ul>
+<li>This is a group assessment: only one group member needs to upload the data file (Excel format) to Canvas on behalf of the group.</li>
+<li>The dataset must be submitted before your Week 11 practical session.</li>
+<li>It is worth 5% of your total unit mark.</li>
+<li>Near-perfect datasets that are well-organised, correctly formatted, and ready for analysis will receive the full 5%.</li>
+<li>As this is a group submission, Special Consideration, Simple Extensions, and Academic Plans do not apply.</li>
+</ul>
+</section>
+<section id="individual-report-15" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="individual-report-15"><span class="header-section-number">3.2</span> Individual report (15%)</h3>
+<p>Each student will submit an individual short report, focusing primarily on the Methods and Results sections, as outlined in the attached marking rubric.</p>
+<ul>
+<li>The report must include:
+<ul>
+<li>A brief Introduction with clearly stated hypotheses</li>
+<li>A detailed Methods section, describing your data collection and analyses</li>
+<li>A well-presented Results section with appropriate tables, figures, and descriptions</li>
+</ul></li>
+<li>You are not required to invent a detailed rationale or references for your study, although you are welcome to include them if you wish.</li>
+<li>Your report must be written in the format of a manuscript suitable for submission to Austral Ecology.</li>
+<li>Length limit: Maximum of four single-spaced pages (not including the cover sheet, title/abstract page, references, tables, or figures)</li>
+<li>Emphasis will be placed on:
+<ul>
+<li>Clear explanation of analytical methods</li>
+<li>Accurate description of the data collected</li>
+<li>Clear and concise presentation of results</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="report-submission-details" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="report-submission-details"><span class="header-section-number">4</span> Report submission details</h2>
+<p>Your individual report is due by 12:59 pm on the Sunday before STUVAC. Please ensure it is submitted electronically and anonymously via Canvas .</p>
+<p>We aim to return reports with summative feedback approximately one week after submission.</p>
+</section>
+<section id="academic-integrity" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="academic-integrity"><span class="header-section-number">5</span> Academic integrity</h2>
+<p>You are expected to complete your report independently and uphold the principles of academic honesty.</p>
+<ul>
+<li>Plagiarism or copying from others will result in loss of marks and may lead to further disciplinary action.</li>
+<li>Refer to the University’s policies on academic integrity: <a href="https://www.sydney.edu.au/students/academic-integrity.html">Academic Integrity at the University of Sydney</a></li>
+</ul>
+</section>
+<section id="use-of-chatgpt-or-similar-tools" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="use-of-chatgpt-or-similar-tools"><span class="header-section-number">6</span> Use of ChatGPT or similar tools</h2>
+<ul>
+<li>You may use tools like ChatGPT to check grammar or assist with R coding.</li>
+<li>However, extensive use of AI to write your report will be detectable and penalised. We are looking for your own scientific reasoning and interpretation.</li>
+</ul>
+</section>
+<section id="report-format" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="report-format"><span class="header-section-number">7</span> Report Format</h2>
+<p>Your report should follow the format of a short scientific article suitable for submission to Austral Ecology. The “Notice to Contributors” is available at: <a href="https://onlinelibrary.wiley.com/page/journal/14429993/homepage/ForAuthors.html">Austral Ecology – Author Guidelines</a></p>
+</section>
+<section id="references-resources" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="references-resources"><span class="header-section-number">8</span> References &amp; resources</h2>
+<p>You are encouraged to consult the references from the annotated reading list provided with the lectures on the unit website. Key references include:</p>
+<ul>
+<li>Gaston, K. J., Blackburn, T. M., &amp; Lawton, J. H. (1993). Comparing animals and automobiles – a vehicle for understanding body size and abundance relationships in species assemblages. Oikos, 66, 172–179.</li>
+<li>Quinn, G. P., &amp; Keough, M. J. (2002). Experimental Design and Data Analysis for Biologists. Cambridge: Cambridge University Press. (Relevant chapters)</li>
+<li>Quinn, G. P., &amp; Keough, M. J. (2023). Experimental Design and Data Analysis for Biologists (2nd ed.). Cambridge: Cambridge University Press. (Relevant chapters)</li>
 </ul>
 
 

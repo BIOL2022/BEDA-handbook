@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-a373a0dbbae5aabeef075f76ef7d9680.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Introduction</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../module01/102-week01.html"><strong>Practicals</strong></a></li><li class="breadcrumb-item"><a href="../module03/301-intro.html"><strong>Introduction to Module 3 </strong></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -236,6 +236,12 @@ ul.task-list li input[type="checkbox"] {
           <li class="px-0"><hr class="sidebar-divider hi "></li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../module03/301-intro.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><strong>Introduction to Module 3 </strong></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../module03/302-week09.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week <strong>9</strong> prac: PCA and Report 2</span></a>
   </div>
@@ -300,17 +306,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#preamble" id="toc-preamble" class="nav-link active" data-scroll-target="#preamble"><span class="header-section-number">1</span> Preamble</a></li>
-  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background"><span class="header-section-number">2</span> Background</a></li>
-  <li><a href="#analyses-and-programs-well-use" id="toc-analyses-and-programs-well-use" class="nav-link" data-scroll-target="#analyses-and-programs-well-use"><span class="header-section-number">3</span> Analyses and programs we’ll use</a></li>
-  <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline"><span class="header-section-number">4</span> Timeline</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background"><span class="header-section-number">1</span> Background</a></li>
+  <li><a href="#what-youll-be-doing" id="toc-what-youll-be-doing" class="nav-link" data-scroll-target="#what-youll-be-doing"><span class="header-section-number">2</span> What you’ll be doing</a></li>
+  <li><a href="#analyses-and-programs-well-use" id="toc-analyses-and-programs-well-use" class="nav-link" data-scroll-target="#analyses-and-programs-well-use"><span class="header-section-number">3</span> Analyses and programs we’ll use</a>
+  <ul class="collapse">
+  <li><a href="#principal-components-analysis" id="toc-principal-components-analysis" class="nav-link" data-scroll-target="#principal-components-analysis">Principal Components Analysis</a></li>
+  </ul></li>
+  <li><a href="#nmds-and-multivariate-hypothesis-testing" id="toc-nmds-and-multivariate-hypothesis-testing" class="nav-link" data-scroll-target="#nmds-and-multivariate-hypothesis-testing"><span class="header-section-number">4</span> nMDS and multivariate hypothesis testing</a>
+  <ul class="collapse">
+  <li><a href="#anosim-permanova-and-simper" id="toc-anosim-permanova-and-simper" class="nav-link" data-scroll-target="#anosim-permanova-and-simper">(ANOSIM, PERMANOVA, and SIMPER)</a></li>
+  <li><a href="#nmds-non-metric-multidimensional-scaling" id="toc-nmds-non-metric-multidimensional-scaling" class="nav-link" data-scroll-target="#nmds-non-metric-multidimensional-scaling">nMDS – Non-metric multidimensional scaling</a></li>
+  <li><a href="#anosim-analysis-of-similarities" id="toc-anosim-analysis-of-similarities" class="nav-link" data-scroll-target="#anosim-analysis-of-similarities">ANOSIM – Analysis of similarities</a></li>
+  </ul></li>
+  <li><a href="#permanova-permutational-multivariate-analysis-of-variance" id="toc-permanova-permutational-multivariate-analysis-of-variance" class="nav-link" data-scroll-target="#permanova-permutational-multivariate-analysis-of-variance"><span class="header-section-number">5</span> PERMANOVA – Permutational multivariate analysis of variance</a></li>
+  <li><a href="#simper-similarity-percentages" id="toc-simper-similarity-percentages" class="nav-link" data-scroll-target="#simper-similarity-percentages"><span class="header-section-number">6</span> SIMPER – Similarity percentages</a></li>
+  <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline"><span class="header-section-number">7</span> Timeline</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../module01/102-week01.html"><strong>Practicals</strong></a></li><li class="breadcrumb-item"><a href="../module03/301-intro.html"><strong>Introduction to Module 3 </strong></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Introduction</h1>
 </div>
@@ -335,42 +352,100 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="preamble" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="preamble"><span class="header-section-number">1</span> Preamble</h2>
-<p>The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Objectives
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The aim of this component of the practical series is to introduce you to several commonly used techniques for analysing multivariate data. By the end of the series, you will:</p>
 <ul>
-<li>Be familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling.</li>
-<li>Be familiar with the principles underpinning multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA.</li>
-<li>Planning and conducting experiments to test multivariate hypotheses.</li>
-<li>Know how to perform these analyses using relevant software.</li>
-<li>Be able to interpret, present and report on these analyses.</li>
+<li>Understand the principles underlying <strong>Principal Components Analysis (PCA)</strong> and <strong>Non-metric Multidimensional Scaling (nMDS)</strong></li>
+<li>Be familiar with the concepts behind <strong>multivariate hypothesis testing</strong> using permutational techniques such as <strong>ANOSIM</strong> and <strong>PERMANOVA</strong></li>
+<li>Be able to <strong>plan and conduct experiments</strong> that test multivariate hypotheses</li>
+<li>Know how to <strong>carry out these analyses using relevant statistical software</strong></li>
+<li>Be able to <strong>interpret, present, and report</strong> your findings clearly and effectively</li>
+</ul>
+</div>
+</div>
+<section id="background" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="background"><span class="header-section-number">1</span> Background</h2>
+<p>Multivariate analyses are becoming increasingly common in biology, largely due to the growing accessibility of software tools capable of handling complex data. However, as discussed in lectures, this accessibility has also led to the uncritical and sometimes inappropriate use of multivariate methods. It is therefore essential that biologists develop a working understanding of when and how to apply these techniques, as well as how to recognise when others have used them incorrectly.</p>
+<p>Multivariate approaches are widely used for:</p>
+<ul>
+<li><strong>Summarising complex patterns</strong> in biological data,</li>
+<li><strong>Identifying groupings or patterns</strong> among samples or species,</li>
+<li><strong>Testing statistical hypotheses</strong> involving multivariate datasets.</li>
 </ul>
 </section>
-<section id="background" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="background"><span class="header-section-number">2</span> Background</h2>
-<p>Multivariate analyses are becoming more prevalent in biology as tools performing the necessary complex computations become more accessible. As the lectures outline, this accessibility has given rise to the uncritical use of methods leading to inappropriate analyses being used to deal with multivariate data sets. At the very least, biologists need to have a working understanding of how to choose appropriate tests and how to identify when someone has chosen poorly.</p>
-<p>Some of the more common uses of multivariate approaches permit us to describe complex patterns simply, identify patterns of groupings in complex data sets and test statistical hypotheses using multivariate datasets.</p>
-<p>In this section of the unit, you will be able to practice performing these multivariate techniques using sample data sets. Then you need to demonstrate your ability to use these multivariate methods to analyse data that you will collect in groups to highlight the nuances of different techniques. Whilst best practice normally dictates that we would normally decide on appropriate tests before we collect our data, this task will enable us to explore options for analysis more effectively.</p>
+<section id="what-youll-be-doing" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="what-youll-be-doing"><span class="header-section-number">2</span> What you’ll be doing</h2>
+<p>In this part of the course, you will:</p>
+<ol type="1">
+<li><strong>Practice performing key multivariate techniques</strong> using sample datasets provided during practical sessions.</li>
+<li><strong>Apply those techniques to your own data</strong>, which you will collect and collate in groups.</li>
+<li><strong>Explore and compare the outcomes</strong> of different multivariate methods, observing how each highlights different features of the same dataset.</li>
+</ol>
+<p>Although best scientific practice recommends selecting appropriate analyses before data collection, this exercise is designed to give you the opportunity to trial multiple analytical approaches and better understand their application and interpretation.</p>
 </section>
 <section id="analyses-and-programs-well-use" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="analyses-and-programs-well-use"><span class="header-section-number">3</span> Analyses and programs we’ll use</h2>
-<p>The main programs we will use are <strong>SPSS</strong> and <strong>PRIMER</strong>. However, R instructions for all methods, in the form of R scripts, will be supplied on Canvas for those who prefer to use R.</p>
+<p>The main programs we will use in this course are <strong>Jamovi</strong> and <strong>PRIMER</strong>. However, if you prefer working in <strong>R</strong>, complete <strong>R scripts (RStudio files)</strong> for all the methods covered will be made available on <strong>Canvas</strong>.</p>
+<section id="principal-components-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="principal-components-analysis">Principal Components Analysis</h3>
+<p><strong>Principal Components Analysis (PCA)</strong> is a method used to reduce the complexity of large datasets by transforming them into a smaller set of uncorrelated variables (called principal components) that capture the <strong>maximum variance</strong> in the original data.</p>
+<p>This technique is especially useful for analysing <strong>habitat data</strong>, where multiple environmental variables can be summarised into a few key components that describe the main gradients in the data.</p>
+<p>We will perform PCA using <strong>Jamovi</strong> (or <strong>R</strong>, if preferred).</p>
+</section>
+</section>
+<section id="nmds-and-multivariate-hypothesis-testing" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="nmds-and-multivariate-hypothesis-testing"><span class="header-section-number">4</span> nMDS and multivariate hypothesis testing</h2>
+<section id="anosim-permanova-and-simper" class="level3">
+<h3 class="anchored" data-anchor-id="anosim-permanova-and-simper">(ANOSIM, PERMANOVA, and SIMPER)</h3>
+<p>In this section of the course, we will explore techniques for <strong>visualising</strong> and <strong>testing patterns</strong> in complex multivariate datasets. These methods reduce the dimensionality of the data (e.g., species abundances across sites) to reveal meaningful patterns and relationships, and then allow us to test <strong>explicit hypotheses</strong> about these patterns—often in relation to predefined groups (e.g., treatment types) or environmental variables.</p>
+<p>We will primarily use <strong>PRIMER 7</strong> for these analyses, although equivalent <strong>R</strong> code will also be provided.</p>
+</section>
+<section id="nmds-non-metric-multidimensional-scaling" class="level3">
+<h3 class="anchored" data-anchor-id="nmds-non-metric-multidimensional-scaling">nMDS – Non-metric multidimensional scaling</h3>
+<p>nMDS is an <strong>ordination technique</strong> used to visualise patterns in multivariate data by representing samples in a low-dimensional space based on their similarity (usually Bray-Curtis). It helps us see groupings or gradients in community composition or other multivariate datasets.</p>
+</section>
+<section id="anosim-analysis-of-similarities" class="level3">
+<h3 class="anchored" data-anchor-id="anosim-analysis-of-similarities">ANOSIM – Analysis of similarities</h3>
+<p>ANOSIM tests whether groups of samples differ in composition based on a comparison of <strong>within-group vs among-group similarity</strong>. It uses rank-based distance measures and is best suited to <strong>simple experimental designs</strong>.</p>
 <ul>
-<li><strong>PCA</strong> – Principal components analysis lets us extract a reduced dataset from a larger dataset, accounting for as much variance as possible in the original more complex dataset. This will be useful for your habitat data as we can determine a reduced number of newly derived variables to describe them. We will do this in SPSS (or R). </li>
-<li><strong>nMDS and multivariate hypothesis testing (using ANOSIM, PERMANOVA and SIMPER)</strong> – Mainly used to produce an ordination in order to visualize patterns in the multivariate cloud of data (by reducing dimensions in some way) and also to rigorously test explicit hypotheses concerning those patterns by reference to a priori groups or relationships with predictors, such as environmental variables. We will use PRIMER for this (or R).</li>
-<li><strong>ANOSIM</strong> – testing hypotheses comparing different groups based on their similarity (Among c.f. within) using distance measures. Most effective with simple designs. We will use PRIMER for this (or R).</li>
-<li><strong>PERMANOVA</strong> – more powerful approach to multivariate hypothesis testing using permutational methods, capable of analysing more complex designs. We will use PRIMER for this (or R).</li>
-<li><strong>SIMPER</strong> – used when a significant difference is found to identify which components of the data set are driving the differences (e.g.&nbsp;the contribution each species makes to differences among communities. We will use PRIMER for this (or R).</li>
+<li>Software: <strong>PRIMER 7</strong> (or <strong>R</strong>)</li>
+<li>Output includes: <strong>Global R statistic</strong> and <strong>p-value</strong></li>
 </ul>
 </section>
-<section id="timeline" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="timeline"><span class="header-section-number">4</span> Timeline</h2>
+</section>
+<section id="permanova-permutational-multivariate-analysis-of-variance" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="permanova-permutational-multivariate-analysis-of-variance"><span class="header-section-number">5</span> PERMANOVA – Permutational multivariate analysis of variance</h2>
+<p>PERMANOVA is a more flexible and powerful method for testing hypotheses in multivariate data. It uses <strong>permutation-based ANOVA</strong> on a resemblance matrix and can accommodate <strong>complex experimental designs</strong>, including multiple fixed and random factors.</p>
 <ul>
-<li><strong>Week 9</strong>: introduction, PCA of lecture data and designing model systems to test multivariate hypotheses (in groups) for your reports.</li>
-<li><strong>Week 10</strong>: group presentations of model systems and experimental design, and how to perform nMDS, PERMANOVA (and ANOSIM) and SIMPER using sample data.</li>
-<li><strong>Week 11</strong>: submitting your complete datafiles onto Canvas, analysing your report data.</li>
-<li><strong>Week 12</strong>: additional analyses and summary of findings and guidelines for describing multivariate methods and results for your report.</li>
-<li><strong>Week 13</strong>: final report due.</li>
+<li>Software: <strong>PRIMER 7</strong> (or <strong>R</strong>)</li>
+<li>Capable of testing main effects, interactions, and nested designs</li>
+</ul>
+</section>
+<section id="simper-similarity-percentages" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="simper-similarity-percentages"><span class="header-section-number">6</span> SIMPER – Similarity percentages</h2>
+<p>When a significant difference is detected (e.g., by ANOSIM or PERMANOVA), SIMPER helps identify <strong>which variables (e.g., species)</strong> are contributing most to the observed differences between groups.</p>
+<ul>
+<li>It calculates the <strong>percentage contribution</strong> of each variable to the overall dissimilarity.</li>
+<li>Useful for interpreting biological meaning behind multivariate differences.</li>
+<li>Software: <strong>PRIMER 7</strong> (or <strong>R</strong>)</li>
+</ul>
+</section>
+<section id="timeline" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="timeline"><span class="header-section-number">7</span> Timeline</h2>
+<ul>
+<li><strong>Week 9:</strong> introduction, PCA of lecture data and designing model systems to test multivariate hypotheses (in groups) for your reports.</li>
+<li><strong>Week 10:</strong> group presentations of model systems and experimental design, and how to perform nMDS, PERMANOVA (and ANOSIM) and SIMPER using sample data</li>
+<li><strong>Week 11:</strong> submitting your complete datafiles onto Canvas, analysing your report data</li>
+<li><strong>Week 12:</strong> additional analyses and summary of findings and guidelines for describing multivariate methods and results for your report</li>
 </ul>
 
 
