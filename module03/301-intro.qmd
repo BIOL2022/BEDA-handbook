@@ -4,17 +4,18 @@ author: Mathew Crowther
 number-depth: 2
 ---
 
+:::{.callout-tip appearance="simple"}
 
-## Objectives {.unnumbered}
+## Objectives 
 The aim of this component of the practical series is to introduce you to several commonly used techniques for analysing multivariate data. By the end of the series, you will:
 
-- [ ] Understand the principles underlying **Principal Components Analysis (PCA)** and **Non-metric Multidimensional Scaling (nMDS)**
-- [ ] Be familiar with the concepts behind **multivariate hypothesis testing** using permutational techniques such as **ANOSIM** and **PERMANOVA**
-- [ ] Be able to **plan and conduct experiments** that test multivariate hypotheses
-- [ ] Know how to **carry out these analyses using relevant statistical software**
-- [ ] Be able to **interpret, present, and report** your findings clearly and effectively
+- Understand the principles underlying **Principal Components Analysis (PCA)** and **Non-metric Multidimensional Scaling (nMDS)**
+- Be familiar with the concepts behind **multivariate hypothesis testing** using permutational techniques such as **ANOSIM** and **PERMANOVA**
+- Be able to **plan and conduct experiments** that test multivariate hypotheses
+- Know how to **carry out these analyses using relevant statistical software**
+- Be able to **interpret, present, and report** your findings clearly and effectively
 
-
+:::
 
 ## Background 
 
