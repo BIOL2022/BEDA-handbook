@@ -1,5 +1,5 @@
 ---
-title: "**Week 9**: PCA and report 2"
+title: "**Week 9**: PCA and Report 2"
 number-depth: 3
 ---
 
@@ -21,7 +21,7 @@ In this specific practical you will:
 - [ ] Use **PCA** to analyse “lecturer perceptions” data gathered in previous years
 - [ ] In groups, design an investigation using a model system to test a multivariate hypothesis for your upcoming report
 
-## What you need to submit for this component (Report 2)
+## What you need to submit for this module
 
 This assessment involves two separate submissions via Canvas:
 
@@ -45,72 +45,58 @@ This assessment involves two separate submissions via Canvas:
 
 **Principal Components Analysis (PCA)** is a technique used to **reduce the dimensionality** of a dataset by extracting a smaller set of **new variables (principal components)** that capture as much of the **variance** in the original data as possible. These components summarise complex patterns across multiple variables, making the data easier to visualise and interpret.
 
-#### Part 1: Principal components analysis – “perceptions of biology lecturers”
+## Part 1: Principal components analysis – “perceptions of biology lecturers”
 
 You will use PCA to reduce your set of measured variables into a coherent smaller dataset. In addition, you will be comparing your lecturer perceptions between preferred systems (marine, freshwater or terrestrial), preferred taxon (animals or plants) and gender (male or female) using conventional univariate approaches (t-tests/ANOVAs). To perform these univariate approaches, make sure that you not only create the principal components (PCs) but also save the scores (see below) for each component. 
 
-**The process in JAMOVI is listed below. R instructions are given on Canvas in an R Studio file.**
+**The process in JAMOVI is listed below. R instructions are given on Canvas in an R script file.**
 
-1. Import your data
+1. Import your data. [**Download it here.**](https://canvas.sydney.edu.au/courses/67437/pages/module-3-resources). If the link does not work, please go on to [Canvas](). A new **Module 3 Resurces** link has been added to the front page.
    - Open **Jamovi**.
    - Go to the top-left menu (☰) → click **Open** → **Browse** and select your Excel/csv file (e.g. your lecturer dataset).
    - Once imported, check that all the columns (variables) are correctly recognised as numeric (look for a ruler icon in the column headers).
+   - You may convert columns of interest to numeric in several ways. One way is to use the **Variables** tab to select all the variables of interest (use Shift+click or Ctrl+click), then click on Edit and change "**Measure Type**" to "**Continuous**".
 
 ![](assets/w09-jamovi-load-data.mp4)
 
 2. Run Principal Components Analysis
-   - Click on the “Factor” tab in the top toolbar.
-   - Select Principal Component Analysis.
+   - Click on the **“Factor”** tab in the top toolbar.
+   - Select **Principal Component Analysis**.
 
 3. Select your variables
-   - In the Variables panel on the left, select the variables of interest and move them into the “Variables” box.
+   - In the *new section, from the panel on the left, select the variables of interest and move them into the **“Variables”** box. 
+   - You can do this by either clicking on the arrow button or by dragging and dropping them.
 
 ![](assets/w09-jamovi-run-pca.mp4)
 
-4. Descriptive statistics and suitability tests
-   - Under “Assumption Checks”, tick:
-     - Bartlett’s Test of Sphericity
+4. Method and assumption checks
+   - Under the **“Methods”** section, set Rotation to "Varimax" (this is the most common rotation method).
+   - Tick the box for **Bartlett’s test of sphericity** (to check if your data is suitable for PCA) in **Assumption checks**.
 
-5. Extraction settings
-   - In the “Model” section:
-     - Under Number of components, select “Eigenvalues > 1”
-     - Tick Scree Plot
-     - Tick Unrotated solution
+5. Number of components
+   - Select "**Based on eigenvalue**".
+   - The default is to retain components with eigenvalues **> 1** (Kaiser’s criterion). Change that if you have a specific reason to do so.
 
-6. Rotation
-   - Scroll to the “Rotation” section:
-     - Choose Varimax rotation.
-     - Tick Display Rotated Solution.
+6. Additional Output
+   - **Select all of the options in this section.** These will provide you with useful information to interpret your PCA results.
 
 ![](assets/w09-jamovi-pca-options.mp4)
 
 7. Save component scores
    - Tick “Save component scores to data set” (usually found under the Scores section at the bottom).
    - This will add new variables to your dataset representing each component.
+   - You can view the new variables by clicking on the **Data** tab at the top of the screen and scrolling to the right.
 
-8. Missing data handling
-   - At the bottom of the PCA panel, set “Missing values” to Exclude cases listwise.
-
-9. Run the analysis
-   - Click anywhere outside the setup panel, and Jamovi will display your PCA results.
 
 #### After PCA: Review Your Output
 
-- Correlation Matrix: Check for variables that are not correlated with the others. These may not be suitable for PCA. You can remove them and rerun the analysis if needed.
-- Bartlett's Test: These tell you if your data is suitable for PCA. Bartlett’s Test should be significant (p < .05).
-- Scree Plot: Helps determine how many components to retain.
-- Rotated Solution: Makes it easier to interpret your components.
-- Saved Scores: You can now use these component scores in further analyses (e.g., regression or cluster analysis).
+- **Scree Plot**: Helps determine how many components to retain.
+- **Saved Scores**: You can now use these component scores in further analyses (e.g., regression or cluster analysis).
+- **Bartlett’s Test of Sphericity** tests whether your correlation matrix is significantly different from an identity matrix—a matrix where all off-diagonal values are zero (no correlation between variables), and all diagonal values are one (each variable only correlates with itself). Bartlett’s Test should be significant (p < .05): a **significant result** means that your correlation matrix is not an identity matrix, and PCA ***can*** be used.
 
-Bartlett’s Test of Sphericity tests whether your correlation matrix is significantly different from an identity matrix—a matrix where all off-diagonal values are zero (no correlation between variables), and all diagonal values are one (each variable only correlates with itself).
+That said, this test is most useful when used **alongside visual inspection** of your correlation matrix. If many variables aren’t correlated with others, they may not contribute much to PCA and could be removed.
 
-If your data came from a population with no correlations between variables, the correlation matrix would be an identity matrix. In that case, Principal Components Analysis (PCA) would not be appropriate.
-
-A significant result (p < .05) means that your correlation matrix is not an identity matrix, and PCA can be used.
-
-That said, this test is most useful when used alongside visual inspection of your correlation matrix. If many variables aren’t correlated with others, they may not contribute much to PCA and could be removed.
-
-Interpreting the PCA
+#### Interpreting the PCA
 
 You need to:
 
@@ -124,25 +110,33 @@ Examine whether gender, system biases (marine v. terrestrial) and taxon (animal 
 
 Questions to consider:
 
-Do males and females perceive lecturer qualities the same way?
+- Do males and females perceive lecturer qualities the same way?
+- Do botanists and zoologists perceive lecturer qualities the same way?
+- Do marine and terrestrial folk perceive lecturer qualities the same way?
 
-Do botanists and zoologists perceive lecturer qualities the same way?
-
-Do marine and terrestrial folk perceive lecturer qualities the same way?
-
-#### Part 2: Designing your multivariate experiment
+## Part 2: Designing your multivariate experiment
 
 ##### The data and your model system
 
-Biologists are increasingly turning to multivariate approaches because the questions we ask—and the data we collect—are often inherently multivariate. This is especially true when studying both biotic assemblages and abiotic habitat variables.
+Biologists are increasingly turning to **multivariate approaches** because the questions we ask—and the data we collect—are often inherently multivariate. This is especially true when studying both biotic **assemblages** and **abiotic habitat variables**.
 
-To explore these analytical techniques, you will work in groups to generate your own multivariate datasets using non-biological model systems. Examples include:
+To explore these analytical techniques, you will work in groups to generate your own multivariate datasets using **non-biological model systems**. Examples include:
 
-- Cars and the car parks they inhabit
-- Gargoyles and the buildings they reside on
-- Beer types and the drinking establishments in which they appear
+- **Cars** and the **car parks** they inhabit
+- **Gargoyles** and the **buildings** they reside on
+- **Beer types** and the **drinking establishments** in which they appear
 
 These creative analogues allow you to test and visualise multivariate patterns in a controlled and accessible way.
+
+Example: Cars as a Model System
+
+- Cars have been successfully used as a teaching model for ecological analysis (e.g., Gaston et al. 1993). In this context:
+- Different car types can be treated as "species".
+- Different suburbs or locations represent "sites".
+- The car park characteristics (e.g., size, surface, signage) act as "habitat variables".
+
+A sample proforma will be provided to illustrate how such a system can be structured to generate a multivariate dataset with testable hypotheses.
+
 
 ##### Group work
 
@@ -207,23 +201,23 @@ Your individual report is due by 12:59 pm on the Sunday before STUVAC. Please en
 
 We aim to return reports with summative feedback approximately one week after submission.
 
-## Academic integrity
+### Academic integrity
 
 You are expected to complete your report independently and uphold the principles of academic honesty.
 
 - Plagiarism or copying from others will result in loss of marks and may lead to further disciplinary action.
 - Refer to the University’s policies on academic integrity: [Academic Integrity at the University of Sydney](https://www.sydney.edu.au/students/academic-integrity.html)
 
-## Use of ChatGPT or similar tools
+### Use of ChatGPT or similar tools
 
 - You may use tools like ChatGPT to check grammar or assist with R coding.
 - However, extensive use of AI to write your report will be detectable and penalised. We are looking for your own scientific reasoning and interpretation.
 
-## Report Format
+### Report Format
 
 Your report should follow the format of a short scientific article suitable for submission to Austral Ecology. The “Notice to Contributors” is available at: [Austral Ecology – Author Guidelines](https://onlinelibrary.wiley.com/page/journal/14429993/homepage/ForAuthors.html)
 
-## References & resources
+### References & resources
 
 You are encouraged to consult the references from the annotated reading list provided with the lectures on the unit website. Key references include:
 
