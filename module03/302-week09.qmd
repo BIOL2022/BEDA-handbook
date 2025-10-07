@@ -51,7 +51,7 @@ You will use PCA to reduce your set of measured variables into a coherent smalle
 
 **The process in JAMOVI is listed below. R instructions are given on Canvas in an R script file.**
 
-1. Import your data. [**Download it here.**](https://canvas.sydney.edu.au/courses/67437/pages/module-3-resources). If the link does not work, please go on to [Canvas](). A new **Module 3 Resurces** link has been added to the front page.
+1. Import your data. [**Download it here**](https://canvas.sydney.edu.au/courses/67437/pages/module-3-resources). If the link does not work, please go on to [Canvas](). A new **Module 3 Resurces** link has been added to the front page.
    - Open **Jamovi**.
    - Go to the top-left menu (☰) → click **Open** → **Browse** and select your Excel/csv file (e.g. your lecturer dataset).
    - Once imported, check that all the columns (variables) are correctly recognised as numeric (look for a ruler icon in the column headers).
@@ -135,7 +135,7 @@ Example: Cars as a Model System
 - Different suburbs or locations represent "sites".
 - The car park characteristics (e.g., size, surface, signage) act as "habitat variables".
 
-A sample proforma will be provided to illustrate how such a system can be structured to generate a multivariate dataset with testable hypotheses.
+A sample proforma will be provided to illustrate how such a system can be structured to generate a multivariate dataset with testable hypotheses. See the [Module 3 Resources](https://canvas.sydney.edu.au/courses/67437/pages/module-3-resources) section on Canvas to download the template.
 
 
 ##### Group work
