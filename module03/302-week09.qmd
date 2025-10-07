@@ -131,40 +131,40 @@ These creative analogues allow you to test and visualise multivariate patterns i
 Example: Cars as a Model System
 
 - Cars have been successfully used as a teaching model for ecological analysis (e.g., Gaston et al. 1993). In this context:
-- Different car types can be treated as "species".
-- Different suburbs or locations represent "sites".
-- The car park characteristics (e.g., size, surface, signage) act as "habitat variables".
+- Different car **types** can be treated as "**species**".
+- Different **suburbs** or **locations** represent "**sites**".
+- The car park **characteristics** (e.g., size, surface, signage) act as "**habitat variables**".
 
-A sample proforma will be provided to illustrate how such a system can be structured to generate a multivariate dataset with testable hypotheses. See the [Module 3 Resources](https://canvas.sydney.edu.au/courses/67437/pages/module-3-resources) section on Canvas to download the template.
+A sample proforma will be provided to illustrate how such a system can be structured to generate a multivariate dataset with **testable hypotheses**. See the [Module 3 Resources](https://canvas.sydney.edu.au/courses/67437/pages/module-3-resources) section on Canvas to download the template.
 
 
 ##### Group work
 
 As a group, you will:
 
-- Design your own non-biological multivariate model system.
+- **Design your own non-biological multivariate model system.**
 - Develop 2–3 testable hypotheses relating to:
-  - The assemblages of "species" across different treatments (e.g., locations, types of environments),
-  - The role of measured "habitat variables" in shaping those assemblages.
-- Use a two-factor design where possible (e.g., site × time, or suburb × establishment type).
+  - The **assemblages** of "species" across different **treatments** (e.g., locations, types of environments),
+  - The role of measured "**habitat variables**" in shaping those assemblages.
+- Use a **two-factor design** where possible (e.g., site × time, or suburb × establishment type).
 - Ensure adequate replication—you will need at least 3 replicates per treatment.
-- Design a sampling strategy that allows you to collect the required data.
-- Assign a data coordinator within your group to manage dataset preparation.
+- Design a **sampling strategy** that allows you to collect the required data.
+- **Assign a data coordinator within your group to manage dataset preparation.**
 
 ## Week 11 group presentation (compulsory)
 
-During the Week 11 practical session (Week 2 of the prac series), your group will deliver a brief presentation (<5 minutes) using a PowerPoint to introduce your project.
+During the **Week 11** practical session (Week 2 of the prac series), your group will deliver a brief presentation (<5 minutes) using a PowerPoint to introduce your project.
 
 This session is compulsory and designed to provide constructive feedback before you begin data collection. Don’t worry—feedback is friendly and intended to improve your design, not critique your creativity!
 
 Your presentation should include:
 
-- An introduction to your system (model species and treatments)
+- An **introduction** to your system (model species and treatments)
 - Your 2–3 hypotheses
-- A description of your taxonomy (how you're classifying your “species”)
-- Your sampling design, including sample size and sampling effort
-- A list of habitat variables you will measure at each site (and how you will measure them)
-- A simple map of your sites
+- A description of your **taxonomy** (how you're classifying your “species”)
+- Your **sampling design**, including sample size and sampling effort
+- A list of **habitat variables** you will measure at each site (and how you will measure them)
+- A simple **map of your sites**
 
 ## Assessment overview
 
@@ -182,13 +182,13 @@ To give you the maximum opportunity to analyse your data and understand your res
 
 Each student will submit an individual short report, focusing primarily on the Methods and Results sections, as outlined in the attached marking rubric.
 
-- The report must include:
+- **The report must include:**
   - A brief Introduction with clearly stated hypotheses
   - A detailed Methods section, describing your data collection and analyses
   - A well-presented Results section with appropriate tables, figures, and descriptions
 - You are not required to invent a detailed rationale or references for your study, although you are welcome to include them if you wish.
 - Your report must be written in the format of a manuscript suitable for submission to Austral Ecology.
-- Length limit: Maximum of four single-spaced pages
+- Length limit: Maximum of **four single-spaced pages**
   (not including the cover sheet, title/abstract page, references, tables, or figures)
 - Emphasis will be placed on:
   - Clear explanation of analytical methods
@@ -197,9 +197,9 @@ Each student will submit an individual short report, focusing primarily on the M
 
 ## Report submission details
 
-Your individual report is due by 12:59 pm on the Sunday before STUVAC. Please ensure it is submitted electronically and anonymously via Canvas .
+Your individual report is due by **11:59pm at the end of Week 13**. Please ensure it is submitted electronically and anonymously via Canvas.
 
-We aim to return reports with summative feedback approximately one week after submission.
+We aim to return reports with summative feedback approximately one to two weeks after submission.
 
 ### Academic integrity
 
