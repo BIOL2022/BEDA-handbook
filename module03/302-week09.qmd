@@ -151,9 +151,9 @@ As a group, you will:
 - Design a **sampling strategy** that allows you to collect the required data.
 - **Assign a data coordinator within your group to manage dataset preparation.**
 
-## Week 11 group presentation (compulsory)
+## Week 10 group presentation (compulsory)
 
-During the **Week 11** practical session (Week 2 of the prac series), your group will deliver a brief presentation (<5 minutes) using a PowerPoint to introduce your project.
+During the **Week 10** practical session (Week 2 of the prac series), your group will deliver a brief presentation (<5 minutes) using a PowerPoint to introduce your project.
 
 This session is compulsory and designed to provide constructive feedback before you begin data collection. Don’t worry—feedback is friendly and intended to improve your design, not critique your creativity!
 
