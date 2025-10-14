@@ -1,106 +1,281 @@
 ---
 title: "**Week 10**: Permutational techniques"
+number-sections: false
 ---
 
 :::{.callout-tip appearance="simple"}
 ## Objectives
-The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:
+The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will;
 
-- Be familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling.
-- Be familiar with the principles underpinning multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA.
-- Planning and conducting experiments to test multivariate hypotheses.
-- Know how to perform these analyses using relevant software.
-- Be able to interpret, present and report on these analyses. 
+* Be familiar with the principles underpinning principal components analysis (PCA), cluster analysis and non-metric multidimensional scaling
+* Be familiar with the principles underpinning multivariate hypothesis testing using permutational techniques
+* Planning and conducting experiments to test multivariate hypotheses
+* Know how to perform these analyses using relevant software
+* Be able to interpret, present and report on these analyses. 
 :::
-
-## Outline 
 
 For this specific practical you will:
 
-- Present group presentations of model systems and experimental design.
-- Analyse sample data in the software package PRIMER or R to:
-  - visualize data using cluster analysis and nMDS.
-  - test one and two factor multivariate hypotheses using ANOSIM and PERMANOVA with a focus on permutational techniques (PERMANOVA). 
-  - determine variables contributing to the differences between groups using SIMPER.
+* Present group presentations of model systems and experimental design.
+* Analyse sample data in the software package PRIMER or R to:
+* visualize data using cluster analysis and nMDS.
+* test one and two factor multivariate hypotheses using ANOSIM and PERMANOVA with a focus on permutational techniques (PERMANOVA). 
+* determine variables contributing to the differences between groups using SIMPER.
 
-## Analyses covered in practical 2
-- **nMDS and multivariate hypothesis testing (ANOSIM, PERMANOVA and SIMPER)** -- Mainly used to produce an ordination in order to visualize patterns in the multivariate cloud of data (by reducing dimensions in some way) and also to rigorously test explicit hypotheses concerning those patterns by reference to a priori groups or relationships with predictors, such as environmental variables.
-- **ANOSIM** –- testing hypotheses comparing different groups based on their similarity (Among c.f. within) using distance measures. Most effective with simple designs.
-- **PERMANOVA** –- more powerful approach to multivariate hypothesis testing using permutational methods, capable of analysing more complex designs.
-- **SIMPER** –- used when a significant difference is found to identify which components of the data set are driving the differences (e.g. the contribution each species makes to differences among communities.
+## **Analyses covered in practical 2**
 
-## Community structure/Assemblage structure
+### **nMDS and Multivariate Hypothesis Testing**
+
+**(ANOSIM, PERMANOVA, and SIMPER)**
+
+These techniques are primarily used to:
+
+* **Produce ordinations** (e.g. via nMDS) that visualise patterns in complex multivariate datasets by reducing their dimensionality  
+* **Test explicit hypotheses** about those patterns, based on **a priori groupings** (e.g., treatment types) or **relationships with predictor variables** (e.g., habitat characteristics)
+
+These methods are particularly useful in ecological studies for comparing species assemblages and identifying patterns in community composition.
+
+### **ANOSIM – Analysis of Similarities**
+
+* ANOSIM tests for **differences in community composition** among predefined groups by comparing **within-group** and **between-group** similarities.  
+* It uses **distance-based rank comparisons** (e.g., Bray-Curtis).  
+* Best suited to **simple, one-factor experimental designs**.  
+* Output includes an **R statistic** and **p-value**, indicating the degree of group separation.
+
+### **PERMANOVA – Permutational Multivariate Analysis of Variance**
+
+* PERMANOVA is a more flexible and **powerful method** for testing multivariate hypotheses using **permutation-based ANOVA** on a resemblance matrix.  
+* Capable of analysing **complex designs**, including:  
+  * Multiple fixed or random factors  
+  * Interactions and nested structures  
+* Appropriate for both **balanced** and **unbalanced** designs.
+
+### **SIMPER – Similarity Percentages**
+
+* SIMPER is used **after a significant difference** is found (e.g., via ANOSIM or PERMANOVA) to determine which **variables (e.g., species)** contribute most to differences between groups.  
+* It calculates the **average contribution** of each species to overall dissimilarity between groups.  
+* Useful for interpreting **ecological drivers** behind observed multivariate patterns.
+
+### **Community structure/Assemblage structure**
+
 The process for looking at community structure is straight forward. We will use both cluster analysis and nMDS/ANOSIM/SIMPER to do this. This involves;
 
-- Transforming/standardising your data as appropriate.
-- Calculating Bray Curtis dissimilarities (you could use something else from BC if the data are suitable) and generating dissimilarity matrix.
-- Performing MDS (and follow on below).
-- PERMANOVA (or ANOSIM) to test for difference between treatments.
-- SIMPER for identifying which variables contribute to the differences.
+* Transforming/standardising your data as appropriate.
+* Calculating Bray Curtis dissimilarities (you could use something else from BC if the data are suitable) and generating dissimilarity matrix.
+* Performing MDS (and follow on below).
+* PERMANOVA (or ANOSIM) to test for difference between treatments.
+* SIMPER for identifying which variables contribute to the differences.
 
-## Using PRIMER (R instructions are given on Canvas within an R Studio files)
-### PERMANOVA, SIMPER and MDS analysis with PRIMER
+#### **Using PRIMER 7 (R instructions are given on Canvas within an R Studio files)**
 
-1. Open the Excel document you wish to analyse.
-2. Open PRIMER
-3. In PRIMER go to Open and select Excel file you wish to analyse.
-4. Select worksheet to be analysed. Keep “Data Type” as Sample Data. Clear button “Title”.
-5. Check to ensure you have the correct number of rows and columns and all looks well.
-6. Go to Edit, go to Factors, go to Add and name your new factor(s) appropriately, code each site for that factor and press OK.
-7. Go to Pre-treatment and then to Transform (overall), and select an appropriate transformation for your data. (4th root or presence/absence, etc[^1].)
-8. To make an nMDS plot: Go to Analyse then Resemblance and click ‘analyse between samples’ and ‘Bray-Curtis similarity’. Go to Analyse then to Non-metric MDS, change number of restarts to 20 and select configuration plot. You can modify how the nMDS plot is displayed by right clicking on the figure.
-9. To perform a PERMANOVA you need to firstly create a PERMANOVA design, and then run the PERMANOVA you have designed
-   a.	To create a PERMANOVA design: Return to the resemblance matrix. Go to PERMANOVA+ then Create PERMANOVA design. Create a title for the design and select appropriate number of factors. Enter in each factor you want to incorporate into the design, and code as either fixed or random factor. Complex designs can be created at this point. 
-   b.	To run the PERMANOVA: Return to the resemblance matrix. Go to PERMANOVA+ then PERMANOVA. Select the correct design (usually the highest number). Select Mains test and your permutational method (reduced model is usually fine), the sum of squares type (type III) and the number of permutations (999 recommended) then OK.
-10. Interpret the PERMANOVA output. If one or more of your factors are significant, then you run the PERMANOVA design again, selecting Pair-wise test and select the factor/interaction of interest. Press OK.
-11. If appropriate, return to transformed data set and go to Analyse and then SIMPER. Select appropriate factor and click OK.
-12. Save result(s) to a file.
+#### **PERMANOVA, SIMPER and MDS analysis with PRIMER**
 
-[^1]: When you are analyzing your group data (week 11), you will be able to apply multiple transformations to your data. I’d encourage you to use a range of them to see how it affects your data. Note that PRIMER will be reluctant to undertake any analyses when data are not transformed!
+**1\.**	**Open your data**
 
-### ANOSIM
-As an alternative to PERMANOVA, many studies will test differences between treatments using Analysis of Similarities (ANOSIM). Unlike PERMANOVA which can be used for multi-factorial designs, ANOSIM is best used for simple one-factor analyses. PERMANOVA and ANOSIM will generate the same (or very similar results) for one-factor analyses. 
+a. Open the **Excel file** containing your data.
+b. Launch **PRIMER 7**.
+c. In PRIMER, go to **File → Open**, then choose your Excel file.
+d. Select the correct **worksheet** to analyse.
+e. Ensure **“Data Type”** is set to **Sample data**.
+f. **Clear the “Title” button** (unless you want a header included).
+g. Check that your data has the expected **number of rows (samples)** and **columns (species/variables)** and looks correct.
 
-#### To perform an ANOSIM
-Return to resemblance matrix, go to Analyse then to ANOSIM, select appropriate factor which you added before.
+**2\.**	 **Add factors**
 
-Significance level in % in ANOSIM becomes probability if divided by 100. e.g. 0.2 ÷ 100 = 0.002 = P (in this case P < 0.05). If ‘Significance level of sample statistic’ in ‘Global Test’ section of the output is more than 5 (which is > 0.05), than there is no significant difference among any of the treatments even if ‘Pairwise Tests’ section has significant differences between pairs of particular treatments. ANOSIM results are presented as: (P = 0.076, Global R = 0.148, 999 permutations) where P is a global significance level.
+a. Go to **Edit → Factors → Add**.
+b. Give each factor a clear, meaningful name (e.g., "Habitat", "Season").
+c. Code each sample/site with its appropriate level for the factor (e.g., “Forest” or “Grassland”).
+d. Press **OK** to save the factor.
 
-## For next week
-Our first steps involve organizing the data so that we can get it into our analytical software (SPSS, PRIMER, R etc,) and generating summary statistics and figures. Different analytical software requires slightly different formats but there are usually some generalities that apply across programs.
+**3\. Transform the data (if needed)**
 
-For the start of next week’s practical each group will need to have collated their group data into three spreadsheets; These spreadsheets will be marked out of 5 by demonstrators.
+a. Go to **Pre-treatment → Transform (overall)**.
+b. Choose a transformation appropriate for your data:
+c. Use **4th root** for abundance/biomass data with large values.
+d. Use **Presence/absence** if you’re only interested in species occurrence.
+e. Press **OK** to apply the transformation.
 
-1.	Habitat data: an SPSS or R ready excel file with sites as rows and habitat variables as columns (see below) 
-2.	Assemblage/Community data: a PRIMER or R ready excel file with species ID as rows and sites as columns (see below) 
-3.	Summary statistics: additional excel files as above (1 and 2) but with summary statistics (numbers of spp., individuals, habitat variables etc.) calculated for your data. This may be done on a site specific or treatment specific basis depending on your question.
+**Create an nMDS Plot**
 
-### 1. Your habitat data for PCA
-**Habitat data** – You will need to enter your data on habitat characteristics into SPSS or R for analysis next week. Make sure you are familiar with how to organise it for SPSS. Every site needs its own row where every habitat variable measured is listed, i.e. every site assessment has an independent row. If you have treatments you need to include a column labeling those treatments too (in addition to “site name”).
+a. Go to **Analyse → Resemblance**.
+b. Select **“Analyse between samples”** and choose **Bray-Curtis similarity**.
+c. Click **OK** to generate the resemblance matrix.
+d. Then go to **Analyse → Non-metric MDS**.
+e. Change the **number of restarts to 20**.
+f. Tick **Configuration Plot**, then click **OK**.
+g. You can adjust the appearance of the nMDS by **right-clicking on the plot**.
 
-### 2. Organising and entering assemblage data for PRIMER
-**Assemblage/Community data** – You will need to generate your spp*site matrix into a PRIMER ready file so that we are ready to analyse your data at the labs next week. These will take the form of a spreadsheet with a single column identifying species (unique species identifiers are fine) with the abundances for each site in rows (page 22). This sheet must start in the top left cell of that worksheet with only a single row of column labels. Make sure that you keep a reference file where you have recorded the specific identity of the unique species identifiers (e.g. A= Toyota Corolla, B= Leyland P76 etc.).
+**Run a PERMANOVA**
 
-### 3. Generating summary statistics for additional (univariate) analyses
-On an additional spreadsheet/workspace, you should calculate summary statistics to perform additional univariate analyses. Create a copy of your completed excel file and or worksheet. You should generate a column in the far right of your spreadsheet summing the number of things in each row. You can then sort the data (REMEMBER TO SELECT IT ALL!) by that column and delete all the zero rows (i.e. no evidence of that species in your system).
+**A. Create the PERMANOVA Design**
 
-Owing to the high degree of variation and the number of singletons you will encounter it is possible (and likely) that some groups will pool species into more coarse groupings (i.e. “genera” or “family”). 
+a. Return to the **Resemblance Matrix**.
+b. Go to **PERMANOVA+ → Create PERMANOVA Design**.
+c. Enter a **name** for your design.
+d. Add the **number of factors** you want to test (e.g., "Habitat", "Season").
+e. For each factor:
+f. Enter its name,
+g. Choose **Fixed** or **Random** as appropriate.
+h. Press **OK** to create the design.
 
-The easiest way to calculate some of these summary statistics will be to use the pivot table command in Excel to sort your data for you. To do this:
+**B. Run the PERMANOVA**
 
-1. Highlight the dataset you want to use
-2. Choose Pivot Table from the Data menu
-3. Work through the wizard creating a pivot table in a new worksheet
-4. Then change the drop down menu in the box to “to data area” and click on the different sites to add them. 
+a. Go to **PERMANOVA+ → PERMANOVA**.
+b. Select your newly created design (choose the one with the **highest number** if unsure).
+c. In the test options:
+d. Choose **Main test**,
+e. Use **Reduced model** for permutation type,
 
-You should have a functional summary pivot table of your data. You can change the pivot tables to look at “counts” (equivalent of presence absence data) or “sums” (abundance data) for your spreadsheet. 
- 
+52. Use **Type III sum of squares**,
 
-![Example of data sheet for importing data into SPSS for PCA ](../assets/spss.png){#fig-spss}
+53. Set **Number of permutations** to **999**.
 
-![Example of data sheet for importing data into PRIMER](../assets/primer.png){#fig-primer}
+54. Click **OK** to run the test.
+
+55. **Interpret the output**: If a factor is significant (p \< 0.05), it suggests group differences.
+
+**Pairwise Comparisons (if needed)**
+
+a. If your PERMANOVA shows significant effects, re-run it:
+b. Select **Pair-wise test**,
+c. Choose the **factor or interaction** you want to explore in detail.
+d. Click **OK**.
+
+**Run a SIMPER Analysis**
+
+a. Return to the **Transformed dataset**.
+b. Go to **Analyse → SIMPER**.
+c. Select the **factor** you’re interested in (e.g., "Habitat").
+d. Click **OK**.
+e. SIMPER identifies which species contribute most to the differences between groups.
+
+**Save Your Work**
+
+Save your results and graphs by going to **File → Save As**, or by exporting figures and tables as needed.
+
+When analysing your group data in **Week 11**, you will have the option to apply **different transformations** to your dataset. It’s a good idea to **try several transformations** (e.g., 4th root, log(x+1), presence/absence) to explore how they influence your results and interpretations.
+
+**Important**: PRIMER may **not allow you to proceed** with certain analyses—such as resemblance or ordination—if the data are **not transformed**. This is because untransformed ecological data often contain extreme values that can distort multivariate analyses.
+
+So, always consider applying an appropriate transformation **before moving on** to steps like Bray-Curtis similarity, nMDS, PERMANOVA, or SIMPER.
+
+### **ANOSIM – Analysis of Similarities**
+
+**ANOSIM** is a non-parametric test used to assess whether there are significant differences between **groups** of samples. It is an alternative to PERMANOVA, but with some key differences:
+
+* **ANOSIM is best suited for simple, one-factor analyses** (e.g., comparing habitats or treatments with one grouping variable).  
+* **PERMANOVA** is more flexible and appropriate for **multi-factorial designs** (e.g., habitat × season).  
+* For **one-factor designs**, ANOSIM and PERMANOVA typically produce **similar results**.
+
+### **Running ANOSIM in PRIMER**
+
+1. **Return to the Resemblance Matrix** (you must have already created this using Bray-Curtis or another similarity measure).  
+2. Go to **Analyse → ANOSIM**.  
+3. Select the **factor** you added earlier (e.g., “Treatment” or “Habitat”).  
+4. Click **OK** to run the analysis.
+
+### **Interpreting the ANOSIM Output**
+
+* The key result is the **Global Test** section, which gives you:  
+  * **Global R** value (effect size)  
+  * **Significance level (in %)**, which is your p-value × 100
+
+**To get the p-value**, divide the significance level by 100:  
+ For example, if the significance level is **0.2%**, then:  
+ 0.2 ÷ 100 \= 0.002 → **P \= 0.002**, which is **statistically significant (P \< 0.05)**.
+
+* If the **Significance level** is **greater than 5%** (i.e., **P \> 0.05**), then there is **no significant difference between groups**, even if pairwise comparisons appear significant.  
+* ANOSIM results are typically reported like this:  
+   **(Global R \= 0.148, P \= 0.076, 999 permutations)**
+
+### **Important Notes**
+
+* A **high Global R** (close to 1\) indicates strong separation between groups; values near 0 suggest little or no separation.  
+* Only interpret **Pairwise Tests** if the **Global Test is significant**.  
+* Always report the number of **permutations used** (usually 999 by default).
+
+**What You Need to Prepare**
+
+* By the **start of next week’s practical**, each group must have **three Excel spreadsheets** prepared. These will be checked and **marked out of 5** by your demonstrators.
+* **1\. Habitat Data File**
+  * Format for **Jamovi or R**  
+  * **Rows \= sites**, **Columns \= habitat variables** (e.g., canopy cover, soil moisture, temperature)  
+  * Ensure variable names are clear and units are consistent
+* **2\. Assemblage / Community Data File**
+  * Format for **PRIMER or R**  
+  * **Rows \= species IDs**, **Columns \= sites**  
+  * Each cell should contain abundance or presence/absence data for each species at each site
+* **3\. Summary Statistics File**
+  * Additional spreadsheets based on **Files 1 and 2**, but with calculated summaries  
+  * Include statistics such as:  
+    * Number of species per site or treatment  
+    * Total individuals  
+    * Mean or median values of habitat variables  
+  * These can be summarised **by site** or **by treatment**, depending on your research question
 
 
+### **Preparing Data for PCA, Community Analysis, and Summary Statistics**
 
-  
+Next week’s practical sessions will involve working with your collected data in **Jamovi**, **PRIMER**, and **Excel**. Below are step-by-step instructions to help you get your data in the right format.
 
+### **1\. Habitat Data for PCA (Jamovi or R)**
+
+You will need to enter your habitat data into **Jamovi** or **R** for **Principal Components Analysis (PCA)**.
+
+* Each **site** must have its **own row**.  
+* Each **habitat variable** (e.g., temperature, soil moisture, canopy cover) should have its **own column**.  
+* Include a **“Site Name”** column.  
+* If your project includes treatments (e.g., burned vs unburned), include a **“Treatment”** column.  
+* Ensure all measurements are in consistent units, and check for any missing data.
+
+*Jamovi Tip*: Once imported, make sure your variables are recognised as **numeric** (ruler icon), not text.
+
+### **2\. Assemblage / Community Data for PRIMER**
+
+You will also need to prepare your species data for multivariate analysis in **PRIMER**.
+
+* Create a **species × site matrix**:  
+  * **Rows \= species**  
+  * **Columns \= sites**  
+  * **Cell values \= abundance** (or presence/absence)  
+* The **top-left cell** of the spreadsheet must be blank (PRIMER requires this).  
+* Use a **single header row** with column labels (site names), and no extra rows or merged cells.  
+* Species names can be replaced with unique codes (e.g., A, B, C), but you must keep a **separate reference file** that maps these codes to their full species names (e.g., A \= Toyota Corolla, B \= Leyland P76).
+
+### **3. Summary Statistics for Additional (Univariate) Analyses**
+
+To support univariate analyses (e.g., total species per site, total abundance), prepare a separate summary spreadsheet:
+
+#### **🔧 Steps:**
+
+1. Make a **copy** of your completed species × site matrix.  
+2. In a **new column** at the far right, use Excel formulas (e.g., \=SUM(...)) to calculate the **total abundance per species** (i.e., row totals).  
+3. Select the entire dataset (very important\!) and **sort by this new column**.  
+4. Delete rows with a total of **zero** (species not present in any site).  
+5. You may consider **grouping rare species** or singletons into coarser taxonomic levels (e.g., genus or family), if appropriate for your analysis.
+
+### **Using Pivot Tables to Calculate Summary Statistics**
+
+**Pivot tables** in Excel can help you quickly calculate total counts or presence/absence summaries across sites.
+
+#### **To create a Pivot Table:**
+
+1. Highlight the dataset you want to use.  
+2. Go to the **Data** tab → select **Pivot Table**.  
+3. Choose to place the table in a **new worksheet**.  
+4. Drag the **species** into the **Rows** field, and **sites** into the **Columns** field.  
+5. Choose between:  
+   1. **Sum** → for **abundance data**  
+   2. **Count** → for **presence/absence data**
+
+If you're unsure about your file format or need a template, ask your demonstrator for help or examples.
+
+Let me know if you'd like template Excel sheets or sample Jamovi/PRIMER files to distribute.
+
+#### **Example of data sheet for importing data into Jamovi for PCA** 
+
+![](assets/image1.png)
+
+#### **Example of data sheet for importing data into PRIMER**
+
+ ![](assets/image2.png)
