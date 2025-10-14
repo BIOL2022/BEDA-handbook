@@ -125,14 +125,10 @@ b. Select your newly created design (choose the one with the **highest number** 
 c. In the test options:
 d. Choose **Main test**,
 e. Use **Reduced model** for permutation type,
-
-52. Use **Type III sum of squares**,
-
-53. Set **Number of permutations** to **999**.
-
-54. Click **OK** to run the test.
-
-55. **Interpret the output**: If a factor is significant (p \< 0.05), it suggests group differences.
+f. Use **Type III sum of squares**,
+g. Set **Number of permutations** to **999**.
+h. Click **OK** to run the test.
+i. **Interpret the output**: If a factor is significant (p \< 0.05), it suggests group differences.
 
 **Pairwise Comparisons (if needed)**
 
