@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 10: Permutational techniques – BIOL2022</title>
+<title>Week 10: Analysing Community Patterns – BIOL2022</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,6 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-550f6ddad4633c476fce9b4463567cc9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../module01/102-week01.html"><strong>Practicals</strong></a></li><li class="breadcrumb-item"><a href="../module03/303-week10.html">Week <strong>10</strong> prac: permutation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><strong>Week 10</strong>: Analysing Community Patterns</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -247,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module03/303-week10.html" class="sidebar-item-text sidebar-link active">
+  <a href="../module03/303-week10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week <strong>10</strong> prac: permutation</span></a>
   </div>
 </li>
@@ -305,14 +307,41 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#analyses-covered-in-practical-2" id="toc-analyses-covered-in-practical-2" class="nav-link active" data-scroll-target="#analyses-covered-in-practical-2"><strong>Analyses covered in practical 2</strong></a>
+  <li><a href="#todays-tasks" id="toc-todays-tasks" class="nav-link active" data-scroll-target="#todays-tasks">📋 Today’s Tasks</a></li>
+  <li><a href="#the-big-picture-what-are-we-doing" id="toc-the-big-picture-what-are-we-doing" class="nav-link" data-scroll-target="#the-big-picture-what-are-we-doing">🗺️ The Big Picture: What Are We Doing?</a></li>
+  <li><a href="#understanding-the-methods-read-this-first" id="toc-understanding-the-methods-read-this-first" class="nav-link" data-scroll-target="#understanding-the-methods-read-this-first">📚 Understanding the Methods (Read This First!)</a>
   <ul class="collapse">
-  <li><a href="#nmds-and-multivariate-hypothesis-testing" id="toc-nmds-and-multivariate-hypothesis-testing" class="nav-link" data-scroll-target="#nmds-and-multivariate-hypothesis-testing"><strong>nMDS and Multivariate Hypothesis Testing</strong></a></li>
-  <li><a href="#anosim-analysis-of-similarities" id="toc-anosim-analysis-of-similarities" class="nav-link" data-scroll-target="#anosim-analysis-of-similarities"><strong>ANOSIM – Analysis of Similarities</strong></a></li>
-  <li><a href="#permanova-permutational-multivariate-analysis-of-variance" id="toc-permanova-permutational-multivariate-analysis-of-variance" class="nav-link" data-scroll-target="#permanova-permutational-multivariate-analysis-of-variance"><strong>PERMANOVA – Permutational Multivariate Analysis of Variance</strong></a></li>
-  <li><a href="#simper-similarity-percentages" id="toc-simper-similarity-percentages" class="nav-link" data-scroll-target="#simper-similarity-percentages"><strong>SIMPER – Similarity Percentages</strong></a></li>
+  <li><a href="#the-three-tools-in-your-toolkit" id="toc-the-three-tools-in-your-toolkit" class="nav-link" data-scroll-target="#the-three-tools-in-your-toolkit">The Three Tools in Your Toolkit</a></li>
+  <li><a href="#nmds-making-sense-of-messy-data" id="toc-nmds-making-sense-of-messy-data" class="nav-link" data-scroll-target="#nmds-making-sense-of-messy-data">🔵 nMDS: Making Sense of Messy Data</a></li>
+  <li><a href="#permanova-vs-anosim-testing-for-differences" id="toc-permanova-vs-anosim-testing-for-differences" class="nav-link" data-scroll-target="#permanova-vs-anosim-testing-for-differences">🟢 PERMANOVA vs ANOSIM: Testing for Differences</a></li>
+  <li><a href="#simper-finding-the-culprits" id="toc-simper-finding-the-culprits" class="nav-link" data-scroll-target="#simper-finding-the-culprits">🟠 SIMPER: Finding the Culprits</a></li>
+  </ul></li>
+  <li><a href="#the-analysis-workflow" id="toc-the-analysis-workflow" class="nav-link" data-scroll-target="#the-analysis-workflow">🔨 The Analysis Workflow</a></li>
+  <li><a href="#step-by-step-using-primer-7" id="toc-step-by-step-using-primer-7" class="nav-link" data-scroll-target="#step-by-step-using-primer-7">💻 Step-by-Step: Using PRIMER 7</a>
+  <ul class="collapse">
+  <li><a href="#before-you-start-understanding-data-transformation" id="toc-before-you-start-understanding-data-transformation" class="nav-link" data-scroll-target="#before-you-start-understanding-data-transformation">Before You Start: Understanding Data Transformation</a></li>
+  <li><a href="#step-1-open-your-data" id="toc-step-1-open-your-data" class="nav-link" data-scroll-target="#step-1-open-your-data">📊 Step 1: Open Your Data</a></li>
+  <li><a href="#step-2-add-factors-labels-for-your-groups" id="toc-step-2-add-factors-labels-for-your-groups" class="nav-link" data-scroll-target="#step-2-add-factors-labels-for-your-groups">🏷️ Step 2: Add Factors (Labels for Your Groups)</a></li>
+  <li><a href="#step-3-transform-the-data" id="toc-step-3-transform-the-data" class="nav-link" data-scroll-target="#step-3-transform-the-data">🔄 Step 3: Transform the Data</a></li>
+  <li><a href="#step-4-create-an-nmds-plot" id="toc-step-4-create-an-nmds-plot" class="nav-link" data-scroll-target="#step-4-create-an-nmds-plot">🗺️ Step 4: Create an nMDS Plot</a></li>
+  <li><a href="#step-5-run-permanova-test-for-differences" id="toc-step-5-run-permanova-test-for-differences" class="nav-link" data-scroll-target="#step-5-run-permanova-test-for-differences">🧪 Step 5: Run PERMANOVA (Test for Differences)</a></li>
+  <li><a href="#step-6-run-simper-find-key-species" id="toc-step-6-run-simper-find-key-species" class="nav-link" data-scroll-target="#step-6-run-simper-find-key-species">🔍 Step 6: Run SIMPER (Find Key Species)</a></li>
+  <li><a href="#step-7-save-your-work" id="toc-step-7-save-your-work" class="nav-link" data-scroll-target="#step-7-save-your-work">💾 Step 7: Save Your Work!</a></li>
+  </ul></li>
+  <li><a href="#alternative-anosim-simpler-test" id="toc-alternative-anosim-simpler-test" class="nav-link" data-scroll-target="#alternative-anosim-simpler-test">🔄 Alternative: ANOSIM (Simpler Test)</a></li>
+  <li><a href="#homework-prepare-your-data-files-5-marks" id="toc-homework-prepare-your-data-files-5-marks" class="nav-link" data-scroll-target="#homework-prepare-your-data-files-5-marks">📁 Homework: Prepare Your Data Files (5 Marks)</a>
+  <ul class="collapse">
+  <li><a href="#file-1-habitat-data-for-pca-jamovir" id="toc-file-1-habitat-data-for-pca-jamovir" class="nav-link" data-scroll-target="#file-1-habitat-data-for-pca-jamovir">File 1: Habitat Data for PCA (Jamovi/R)</a></li>
+  <li><a href="#file-2-community-data-for-primer" id="toc-file-2-community-data-for-primer" class="nav-link" data-scroll-target="#file-2-community-data-for-primer">File 2: Community Data for PRIMER</a></li>
+  <li><a href="#file-3-summary-statistics" id="toc-file-3-summary-statistics" class="nav-link" data-scroll-target="#file-3-summary-statistics">File 3: Summary Statistics</a></li>
+  <li><a href="#example-images-for-reference" id="toc-example-images-for-reference" class="nav-link" data-scroll-target="#example-images-for-reference">Example Images (For Reference)</a></li>
+  </ul></li>
+  <li><a href="#common-questions" id="toc-common-questions" class="nav-link" data-scroll-target="#common-questions">❓ Common Questions</a></li>
+  <li><a href="#quick-reference-analysis-checklist" id="toc-quick-reference-analysis-checklist" class="nav-link" data-scroll-target="#quick-reference-analysis-checklist">📋 Quick Reference: Analysis Checklist</a></li>
+  <li><a href="#need-help" id="toc-need-help" class="nav-link" data-scroll-target="#need-help">🆘 Need Help?</a>
+  <ul class="collapse">
   <li><a href="#community-structureassemblage-structure" id="toc-community-structureassemblage-structure" class="nav-link" data-scroll-target="#community-structureassemblage-structure"><strong>Community structure/Assemblage structure</strong></a></li>
-  <li><a href="#anosim-analysis-of-similarities-1" id="toc-anosim-analysis-of-similarities-1" class="nav-link" data-scroll-target="#anosim-analysis-of-similarities-1"><strong>ANOSIM – Analysis of Similarities</strong></a></li>
+  <li><a href="#anosim-analysis-of-similarities" id="toc-anosim-analysis-of-similarities" class="nav-link" data-scroll-target="#anosim-analysis-of-similarities"><strong>ANOSIM – Analysis of Similarities</strong></a></li>
   <li><a href="#running-anosim-in-primer" id="toc-running-anosim-in-primer" class="nav-link" data-scroll-target="#running-anosim-in-primer"><strong>Running ANOSIM in PRIMER</strong></a></li>
   <li><a href="#interpreting-the-anosim-output" id="toc-interpreting-the-anosim-output" class="nav-link" data-scroll-target="#interpreting-the-anosim-output"><strong>Interpreting the ANOSIM Output</strong></a></li>
   <li><a href="#important-notes" id="toc-important-notes" class="nav-link" data-scroll-target="#important-notes"><strong>Important Notes</strong></a></li>
@@ -328,9 +357,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../module01/102-week01.html"><strong>Practicals</strong></a></li><li class="breadcrumb-item"><a href="../module03/303-week10.html">Week <strong>10</strong> prac: permutation</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><strong>Week 10</strong>: Permutational techniques</h1>
+<h1 class="title"><strong>Week 10</strong>: Analysing Community Patterns</h1>
 </div>
 
 
@@ -347,84 +376,798 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Objectives
+<span class="screen-reader-only">Tip</span>What You’ll Learn This Week
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will;</p>
+<p>By the end of this practical, you’ll be able to:</p>
 <ul>
-<li>Be familiar with the principles underpinning principal components analysis (PCA), cluster analysis and non-metric multidimensional scaling</li>
-<li>Be familiar with the principles underpinning multivariate hypothesis testing using permutational techniques</li>
-<li>Planning and conducting experiments to test multivariate hypotheses</li>
-<li>Know how to perform these analyses using relevant software</li>
-<li>Be able to interpret, present and report on these analyses.</li>
+<li><strong>Visualise</strong> complex ecological data in ways that reveal hidden patterns</li>
+<li><strong>Test hypotheses</strong> about differences between communities (like comparing forest vs grassland)</li>
+<li><strong>Identify</strong> which species are driving the differences you find</li>
+<li><strong>Use professional software</strong> (PRIMER or R) that ecologists use in real research</li>
 </ul>
 </div>
 </div>
-<p>For this specific practical you will:</p>
-<ul>
-<li>Present group presentations of model systems and experimental design.</li>
-<li>Analyse sample data in the software package PRIMER or R to:</li>
-<li>visualize data using cluster analysis and nMDS.</li>
-<li>test one and two factor multivariate hypotheses using ANOSIM and PERMANOVA with a focus on permutational techniques (PERMANOVA).</li>
-<li>determine variables contributing to the differences between groups using SIMPER.</li>
-</ul>
-<section id="analyses-covered-in-practical-2" class="level2">
-<h2 class="anchored" data-anchor-id="analyses-covered-in-practical-2"><strong>Analyses covered in practical 2</strong></h2>
-<section id="nmds-and-multivariate-hypothesis-testing" class="level3">
-<h3 class="anchored" data-anchor-id="nmds-and-multivariate-hypothesis-testing"><strong>nMDS and Multivariate Hypothesis Testing</strong></h3>
-<p><strong>(ANOSIM, PERMANOVA, and SIMPER)</strong></p>
-<p>These techniques are primarily used to:</p>
-<ul>
-<li><strong>Produce ordinations</strong> (e.g.&nbsp;via nMDS) that visualise patterns in complex multivariate datasets by reducing their dimensionality<br>
-</li>
-<li><strong>Test explicit hypotheses</strong> about those patterns, based on <strong>a priori groupings</strong> (e.g., treatment types) or <strong>relationships with predictor variables</strong> (e.g., habitat characteristics)</li>
-</ul>
-<p>These methods are particularly useful in ecological studies for comparing species assemblages and identifying patterns in community composition.</p>
+<section id="todays-tasks" class="level2">
+<h2 class="anchored" data-anchor-id="todays-tasks">📋 Today’s Tasks</h2>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Your Group Will:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Present</strong> your experimental design (10 minutes)</li>
+<li><strong>Practise</strong> multivariate analyses using sample data</li>
+<li><strong>Learn</strong> three powerful statistical tools: PERMANOVA, SIMPER, and nMDS</li>
+</ol>
+<section id="by-next-week-you-need" class="level3">
+<h3 class="anchored" data-anchor-id="by-next-week-you-need">By Next Week You Need:</h3>
+<p>Three properly formatted spreadsheets (worth 5 marks) - details at the bottom of this page ⬇️</p>
 </section>
-<section id="anosim-analysis-of-similarities" class="level3">
-<h3 class="anchored" data-anchor-id="anosim-analysis-of-similarities"><strong>ANOSIM – Analysis of Similarities</strong></h3>
-<ul>
-<li>ANOSIM tests for <strong>differences in community composition</strong> among predefined groups by comparing <strong>within-group</strong> and <strong>between-group</strong> similarities.<br>
-</li>
-<li>It uses <strong>distance-based rank comparisons</strong> (e.g., Bray-Curtis).<br>
-</li>
-<li>Best suited to <strong>simple, one-factor experimental designs</strong>.<br>
-</li>
-<li>Output includes an <strong>R statistic</strong> and <strong>p-value</strong>, indicating the degree of group separation.</li>
-</ul>
+</div>
+</div>
+<hr>
 </section>
-<section id="permanova-permutational-multivariate-analysis-of-variance" class="level3">
-<h3 class="anchored" data-anchor-id="permanova-permutational-multivariate-analysis-of-variance"><strong>PERMANOVA – Permutational Multivariate Analysis of Variance</strong></h3>
+<section id="the-big-picture-what-are-we-doing" class="level2">
+<h2 class="anchored" data-anchor-id="the-big-picture-what-are-we-doing">🗺️ The Big Picture: What Are We Doing?</h2>
+<p>Think of your ecological data as a puzzle. You’ve counted species at different sites, but how do you make sense of it all?</p>
+<p><strong>Today you’ll learn to:</strong></p>
+<ol type="1">
+<li><strong>See patterns</strong> → Using ordination plots (nMDS) to visualise which sites are similar</li>
+<li><strong>Test differences</strong> → Using statistics (PERMANOVA/ANOSIM) to prove groups are different<br>
+</li>
+<li><strong>Find causes</strong> → Using SIMPER to identify which species make sites different</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Don’t Panic!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This looks like a lot, but you’ll work through it step by step. The software does the heavy lifting—you just need to understand what to click and what the results mean.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="understanding-the-methods-read-this-first" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-the-methods-read-this-first">📚 Understanding the Methods (Read This First!)</h2>
+<p>Before diving into button-clicking, let’s understand what these tools actually do. <strong>Don’t memorise everything</strong>—just get the gist, then refer back when needed.</p>
+<section id="the-three-tools-in-your-toolkit" class="level3">
+<h3 class="anchored" data-anchor-id="the-three-tools-in-your-toolkit">The Three Tools in Your Toolkit</h3>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><strong>🔵 nMDS</strong><br>
+<em>“The Mapper”</em></p>
+<p>Creates a visual map showing which sites have similar communities</p>
+</div><div class="column" style="width:30%;">
+<p><strong>🟢 PERMANOVA</strong><br>
+<em>“The Tester”</em></p>
+<p>Tests if groups are genuinely different (not just by chance)</p>
+</div><div class="column" style="width:30%;">
+<p><strong>🟠 SIMPER</strong><br>
+<em>“The Detective”</em></p>
+<p>Reveals which species are responsible for the differences</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="nmds-making-sense-of-messy-data" class="level3">
+<h3 class="anchored" data-anchor-id="nmds-making-sense-of-messy-data">🔵 nMDS: Making Sense of Messy Data</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What is nMDS? (Click to expand)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>nMDS = Non-metric Multi-Dimensional Scaling</strong></p>
+<p><strong>In plain English:</strong> Imagine you have 50 species at 20 sites. That’s too much information to visualise! nMDS squashes all that complexity into a simple 2D plot where:</p>
 <ul>
-<li>PERMANOVA is a more flexible and <strong>powerful method</strong> for testing multivariate hypotheses using <strong>permutation-based ANOVA</strong> on a resemblance matrix.<br>
+<li><strong>Close together</strong> = sites have similar species<br>
 </li>
-<li>Capable of analysing <strong>complex designs</strong>, including:
+<li><strong>Far apart</strong> = sites have very different species</li>
+</ul>
+<p>Think of it like a map: sites in the same forest will cluster together, while grassland sites form their own cluster.</p>
+<p><strong>You don’t need to understand the maths</strong>—just know how to read the plot!</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="permanova-vs-anosim-testing-for-differences" class="level3">
+<h3 class="anchored" data-anchor-id="permanova-vs-anosim-testing-for-differences">🟢 PERMANOVA vs ANOSIM: Testing for Differences</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Which Test Should I Use?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Use PERMANOVA</strong> if: - You have <strong>multiple factors</strong> (e.g., habitat × season) - Your design is complex (interactions, nested factors) - You want the most flexible, powerful option ✅</p>
+<p><strong>Use ANOSIM</strong> if: - You have <strong>one simple factor</strong> (e.g., just comparing habitats) - You prefer a simpler alternative - Your demonstrator recommends it</p>
+<p>💡 <strong>In most cases, use PERMANOVA</strong>—it’s the modern standard.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What does PERMANOVA actually test? (Click to expand)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>PERMANOVA = Permutational Multivariate Analysis of Variance</strong></p>
+<p><strong>In plain English:</strong> It’s like an ANOVA, but for community data. It asks:</p>
+<blockquote class="blockquote">
+<p>“Are the communities in Group A genuinely different from Group B, or could this pattern have happened by random chance?”</p>
+</blockquote>
+<p>It works by: 1. Calculating how different sites are (using distance measures like Bray-Curtis) 2. Shuffling group labels thousands of times (999 permutations) 3. Seeing if your real groups are more different than the random shuffles</p>
+<p><strong>If P &lt; 0.05</strong> → Groups ARE significantly different<br>
+<strong>If P &gt; 0.05</strong> → No convincing evidence of difference</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="simper-finding-the-culprits" class="level3">
+<h3 class="anchored" data-anchor-id="simper-finding-the-culprits">🟠 SIMPER: Finding the Culprits</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What is SIMPER? (Click to expand)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>SIMPER = Similarity Percentages</strong></p>
+<p><strong>In plain English:</strong> After PERMANOVA tells you “yes, these groups are different”, SIMPER tells you <strong>WHY</strong>.</p>
+<p>It identifies which species contribute most to the differences. For example:</p>
 <ul>
-<li>Multiple fixed or random factors<br>
+<li>Forest sites have lots of <strong>Species A</strong> (75% contribution to difference)</li>
+<li>Grassland sites have lots of <strong>Species B</strong> (15% contribution)<br>
 </li>
-<li>Interactions and nested structures<br>
-</li>
+<li>Species C is everywhere (5% contribution—not very useful!)</li>
+</ul>
+<p><strong>Use SIMPER ONLY after</strong> you’ve found a significant difference with PERMANOVA/ANOSIM.</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="the-analysis-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="the-analysis-workflow">🔨 The Analysis Workflow</h2>
+<p>Here’s the roadmap for analysing community data:</p>
+<pre><code>1. Transform your data (reduce dominance of common species)
+         ↓
+2. Calculate similarity matrix (Bray-Curtis)
+         ↓
+3. Create nMDS plot (visualise patterns)
+         ↓
+4. Run PERMANOVA (test for differences)
+         ↓
+5. If significant → Run SIMPER (identify key species)
+         ↓
+6. Interpret &amp; report!</code></pre>
+<hr>
+</section>
+<section id="step-by-step-using-primer-7" class="level2">
+<h2 class="anchored" data-anchor-id="step-by-step-using-primer-7">💻 Step-by-Step: Using PRIMER 7</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>R Users: Instructions on Canvas
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you prefer R over PRIMER, detailed R Studio files are available on Canvas. The concepts are the same—just different buttons!</p>
+</div>
+</div>
+<section id="before-you-start-understanding-data-transformation" class="level3">
+<h3 class="anchored" data-anchor-id="before-you-start-understanding-data-transformation">Before You Start: Understanding Data Transformation</h3>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Why Transform Data?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ecological data is messy. You might have: - <strong>1 super common species</strong> (e.g., 500 individuals) - <strong>20 rare species</strong> (1-2 individuals each)</p>
+<p>Without transformation, the common species dominates everything and drowns out patterns from rarer species.</p>
+<p><strong>Common transformations:</strong> - <strong>4th root</strong> → Good for abundance data with big numbers - <strong>Log(x+1)</strong> → Good for moderate ranges<br>
+- <strong>Presence/absence</strong> → Ignore abundance, just note if species is there</p>
+<p>💡 <strong>PRIMER won’t let you proceed without transforming</strong>—it’s protecting you from bad analyses!</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="step-1-open-your-data" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-open-your-data">📊 Step 1: Open Your Data</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-folder-open" aria-label="folder-open"></i> Opening Files in PRIMER
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Open your <strong>Excel file</strong> first (to check it looks right)</li>
+<li>Launch <strong>PRIMER 7</strong></li>
+<li>Go to <strong>File → Open</strong> → Select your Excel file</li>
+<li>Choose the correct <strong>worksheet</strong></li>
+<li>Set <strong>“Data Type”</strong> to <strong>Sample data</strong></li>
+<li><strong>Clear the “Title” button</strong> (unless you want headers included)</li>
+<li>Check: Does it show the right number of rows and columns? ✅</li>
+</ol>
+</div>
+</div>
+<hr>
+</section>
+<section id="step-2-add-factors-labels-for-your-groups" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-add-factors-labels-for-your-groups">🏷️ Step 2: Add Factors (Labels for Your Groups)</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-tag" aria-label="tag"></i> Adding Factors
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Factors</strong> are the groups you want to compare (e.g., “Forest” vs “Grassland”, or “Burned” vs “Unburned”)</p>
+<ol type="1">
+<li>Go to <strong>Edit → Factors → Add</strong></li>
+<li>Give your factor a clear name (e.g., “Habitat”)</li>
+<li>For each sample/site, assign its group (e.g., type “Forest” or “Grassland”)</li>
+<li>Press <strong>OK</strong></li>
+</ol>
+<p>💡 <strong>Tip:</strong> Use short, consistent labels—no spaces or special characters!</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="step-3-transform-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-transform-the-data">🔄 Step 3: Transform the Data</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-shuffle" aria-label="shuffle"></i> Transforming Data
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Go to <strong>Pre-treatment → Transform (overall)</strong></li>
+<li>Choose your transformation:
+<ul>
+<li><strong>4th root</strong> → For count data with large values</li>
+<li><strong>Presence/absence</strong> → If you only care whether species exist, not how many</li>
 </ul></li>
-<li>Appropriate for both <strong>balanced</strong> and <strong>unbalanced</strong> designs.</li>
-</ul>
+<li>Press <strong>OK</strong></li>
+</ol>
+<p><strong>The data now lives in a new worksheet</strong>—keep the original safe!</p>
+</div>
+</div>
+<hr>
 </section>
-<section id="simper-similarity-percentages" class="level3">
-<h3 class="anchored" data-anchor-id="simper-similarity-percentages"><strong>SIMPER – Similarity Percentages</strong></h3>
+<section id="step-4-create-an-nmds-plot" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-create-an-nmds-plot">🗺️ Step 4: Create an nMDS Plot</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-chart-scatter" aria-label="chart-scatter"></i> Making Your Ordination
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>First, calculate similarities:</strong> 1. Go to <strong>Analyse → Resemblance</strong> 2. Select <strong>“Analyse between samples”</strong> 3. Choose <strong>Bray-Curtis similarity</strong> (the standard for ecological data) 4. Click <strong>OK</strong> → This creates a similarity matrix</p>
+<p><strong>Then, create the plot:</strong> 5. Go to <strong>Analyse → Non-metric MDS</strong> 6. Change <strong>number of restarts to 20</strong> (makes it more reliable) 7. Tick <strong>Configuration Plot</strong> 8. Click <strong>OK</strong></p>
+<p><strong>Customise your plot:</strong> - <strong>Right-click</strong> on the plot to change colours, add labels, etc. - Try colour-coding by your factor to see if groups separate!</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Reading Your nMDS Plot
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li>SIMPER is used <strong>after a significant difference</strong> is found (e.g., via ANOSIM or PERMANOVA) to determine which <strong>variables (e.g., species)</strong> contribute most to differences between groups.<br>
+<li><strong>Closer points</strong> = more similar communities</li>
+<li><strong>Look for clusters</strong>—do your treatment groups separate?</li>
+<li><strong>Stress value</strong> (shown on plot):
+<ul>
+<li><strong>&lt; 0.1</strong> = Excellent representation<br>
 </li>
-<li>It calculates the <strong>average contribution</strong> of each species to overall dissimilarity between groups.<br>
+<li><strong>0.1–0.2</strong> = Good<br>
 </li>
-<li>Useful for interpreting <strong>ecological drivers</strong> behind observed multivariate patterns.</li>
+<li><strong>&gt; 0.2</strong> = Treat with caution</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+<section id="step-5-run-permanova-test-for-differences" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-run-permanova-test-for-differences">🧪 Step 5: Run PERMANOVA (Test for Differences)</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-flask" aria-label="flask"></i> Running the Statistical Test
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>A. Create the Design:</strong> 1. Return to the <strong>Resemblance Matrix</strong> (the similarity matrix you made) 2. Go to <strong>PERMANOVA+ → Create PERMANOVA Design</strong> 3. Give it a name (e.g., “Habitat_test”) 4. Enter the <strong>number of factors</strong> (usually 1 or 2) 5. For each factor: - Type its name - Choose <strong>Fixed</strong> (almost always) or <strong>Random</strong> (rare—ask if unsure) 6. Press <strong>OK</strong></p>
+<p><strong>B. Run the Test:</strong> 7. Go to <strong>PERMANOVA+ → PERMANOVA</strong> 8. Select your design (if multiple, pick the one with the highest number) 9. Choose these settings: - <strong>Main test</strong> ✅ - <strong>Reduced model</strong> (permutation type) - <strong>Type III sum of squares</strong> - <strong>999 permutations</strong> 10. Click <strong>OK</strong></p>
+<p><strong>C. Read the Results:</strong> - Look for the <strong>P-value</strong> - <strong>P &lt; 0.05</strong> → Groups are significantly different! 🎉 - <strong>P &gt; 0.05</strong> → No evidence of difference</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>What If You Have Multiple Groups?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If your PERMANOVA shows <strong>P &lt; 0.05</strong> but you have 3+ groups (e.g., Forest, Grassland, Desert), you need <strong>pairwise comparisons</strong> to see which pairs differ:</p>
+<ol type="1">
+<li>Re-run PERMANOVA</li>
+<li>Select <strong>Pair-wise test</strong></li>
+<li>Choose your factor</li>
+<li>Click <strong>OK</strong></li>
+</ol>
+<p>This shows you: Forest vs Grassland (P = 0.003), Forest vs Desert (P = 0.021), etc.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="step-6-run-simper-find-key-species" class="level3">
+<h3 class="anchored" data-anchor-id="step-6-run-simper-find-key-species">🔍 Step 6: Run SIMPER (Find Key Species)</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Only Do This If PERMANOVA Was Significant!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There’s no point identifying “key species” if groups aren’t actually different.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-magnifying-glass" aria-label="magnifying-glass"></i> Identifying Driver Species
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Return to your <strong>transformed dataset</strong> (not the resemblance matrix)</li>
+<li>Go to <strong>Analyse → SIMPER</strong></li>
+<li>Select your factor (e.g., “Habitat”)</li>
+<li>Click <strong>OK</strong></li>
+</ol>
+<p><strong>Read the output:</strong> - Species are ranked by <strong>contribution to dissimilarity</strong> - Top species = biggest drivers of difference - <strong>Cumulative %</strong> shows when you’ve explained most of the pattern (often aim for ~70%)</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="step-7-save-your-work" class="level3">
+<h3 class="anchored" data-anchor-id="step-7-save-your-work">💾 Step 7: Save Your Work!</h3>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Don’t forget to save!</strong> PRIMER can crash, and you’ll lose everything.</p>
+<ul>
+<li>Go to <strong>File → Save As</strong></li>
+<li>Export plots as images (right-click → Export)</li>
+<li>Copy-paste tables into Word/Excel</li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="alternative-anosim-simpler-test" class="level2">
+<h2 class="anchored" data-anchor-id="alternative-anosim-simpler-test">🔄 Alternative: ANOSIM (Simpler Test)</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>When and How to Use ANOSIM
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>ANOSIM</strong> is a simpler alternative to PERMANOVA for <strong>one-factor designs only</strong>.</p>
+<section id="running-anosim" class="level3">
+<h3 class="anchored" data-anchor-id="running-anosim">Running ANOSIM:</h3>
+<ol type="1">
+<li>Return to your <strong>Resemblance Matrix</strong></li>
+<li>Go to <strong>Analyse → ANOSIM</strong></li>
+<li>Select your factor</li>
+<li>Click <strong>OK</strong></li>
+</ol>
+</section>
+<section id="reading-results" class="level3">
+<h3 class="anchored" data-anchor-id="reading-results">Reading Results:</h3>
+<ul>
+<li>Look for the <strong>Global R</strong> value and <strong>Significance level</strong></li>
+<li><strong>Convert significance to P-value:</strong> Divide by 100<br>
+(e.g., 0.2% → 0.2 ÷ 100 = P = 0.002)</li>
+<li><strong>Global R interpretation:</strong>
+<ul>
+<li><strong>R close to 1</strong> → Strong separation between groups</li>
+<li><strong>R close to 0</strong> → Little/no separation</li>
+</ul></li>
 </ul>
 </section>
+<section id="reporting-anosim" class="level3">
+<h3 class="anchored" data-anchor-id="reporting-anosim">Reporting ANOSIM:</h3>
+<p>Write: “Global R = 0.148, P = 0.076, 999 permutations”</p>
+<p>⚠️ <strong>Only interpret pairwise tests if the Global Test is significant!</strong></p>
+</section>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="homework-prepare-your-data-files-5-marks" class="level2">
+<h2 class="anchored" data-anchor-id="homework-prepare-your-data-files-5-marks">📁 Homework: Prepare Your Data Files (5 Marks)</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Due: Start of Next Week’s Practical
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Your demonstrator will check and mark these three spreadsheets. <strong>Get them right!</strong></p>
+</div>
+</div>
+<section id="file-1-habitat-data-for-pca-jamovir" class="level3">
+<h3 class="anchored" data-anchor-id="file-1-habitat-data-for-pca-jamovir">File 1: Habitat Data for PCA (Jamovi/R)</h3>
+<pre><code>Format: Sites in ROWS, variables in COLUMNS</code></pre>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-table" aria-label="table"></i> Example Structure:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Site_Name</th>
+<th>Treatment</th>
+<th>Canopy_Cover</th>
+<th>Soil_Moisture</th>
+<th>Temperature</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Site_A</td>
+<td>Forest</td>
+<td>85</td>
+<td>45</td>
+<td>18.5</td>
+</tr>
+<tr class="even">
+<td>Site_B</td>
+<td>Forest</td>
+<td>90</td>
+<td>50</td>
+<td>17.8</td>
+</tr>
+<tr class="odd">
+<td>Site_C</td>
+<td>Grassland</td>
+<td>10</td>
+<td>20</td>
+<td>22.3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Checklist:</strong> - ✅ Each site = one row - ✅ Each variable = one column<br>
+- ✅ Column for site names - ✅ Column for treatment (if applicable) - ✅ All measurements in consistent units - ✅ No missing data (or marked clearly as “NA”)</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="file-2-community-data-for-primer" class="level3">
+<h3 class="anchored" data-anchor-id="file-2-community-data-for-primer">File 2: Community Data for PRIMER</h3>
+<pre><code>Format: Species in ROWS, sites in COLUMNS</code></pre>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-table" aria-label="table"></i> Example Structure:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Site_A</th>
+<th>Site_B</th>
+<th>Site_C</th>
+<th>Site_D</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Species_1</strong></td>
+<td>12</td>
+<td>8</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td><strong>Species_2</strong></td>
+<td>5</td>
+<td>7</td>
+<td>15</td>
+<td>20</td>
+</tr>
+<tr class="odd">
+<td><strong>Species_3</strong></td>
+<td>0</td>
+<td>2</td>
+<td>45</td>
+<td>38</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Critical PRIMER requirements:</strong> - ✅ <strong>Top-left cell MUST be blank</strong> (PRIMER needs this!) - ✅ Single header row with site names - ✅ Species as rows, sites as columns - ✅ Cell values = abundance (or 1/0 for presence/absence) - ✅ No merged cells, no extra rows - ✅ Keep a separate reference file if using codes (A, B, C) instead of full species names</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="file-3-summary-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="file-3-summary-statistics">File 3: Summary Statistics</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-calculator" aria-label="calculator"></i> Creating Summaries
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Based on Files 1 &amp; 2, calculate useful summaries:</p>
+<p><strong>From Community Data:</strong> - Number of species per site (species richness) - Total individuals per site<br>
+- Total individuals per species (across all sites)</p>
+<p><strong>From Habitat Data:</strong> - Mean/median habitat variables per treatment - Range of values</p>
+<section id="how-to-do-this-in-excel" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-do-this-in-excel">How to Do This in Excel:</h3>
+<p><strong>Option 1: Simple Formulas</strong> 1. Make a copy of your community data 2. Add a column for row totals: <code>=SUM(B2:Z2)</code> (adjust range) 3. Sort by this total (select ALL data first!) 4. Delete species with zero total</p>
+<p><strong>Option 2: Pivot Tables</strong> (faster for summaries) 1. Select your dataset 2. <strong>Data → Pivot Table</strong> → New worksheet 3. Drag <strong>Species</strong> → Rows, <strong>Sites</strong> → Columns 4. Choose <strong>Sum</strong> for abundance or <strong>Count</strong> for presence/absence</p>
+</section>
+</div>
+</div>
+<hr>
+</section>
+<section id="example-images-for-reference" class="level3">
+<h3 class="anchored" data-anchor-id="example-images-for-reference">Example Images (For Reference)</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>See What Good Data Files Look Like
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="habitat-data-jamovi-format" class="level4">
+<h4 class="anchored" data-anchor-id="habitat-data-jamovi-format">Habitat Data (Jamovi format):</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/image1.png" class="img-fluid figure-img"></p>
+<figcaption>Example of properly formatted habitat data for PCA analysis</figcaption>
+</figure>
+</div>
+</section>
+<section id="community-data-primer-format" class="level4">
+<h4 class="anchored" data-anchor-id="community-data-primer-format">Community Data (PRIMER format):</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/image2.png" class="img-fluid figure-img"></p>
+<figcaption>Example of properly formatted species data for PRIMER</figcaption>
+</figure>
+</div>
+<p><strong>Notice:</strong> Top-left cell is blank in the PRIMER example!</p>
+</section>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="common-questions" class="level2">
+<h2 class="anchored" data-anchor-id="common-questions">❓ Common Questions</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>“Do I need to use all the transformations?”
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-26" class="callout-26-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>No! For next week’s analysis, try <strong>2-3 different transformations</strong> and see how they affect your results. Common choices: - 4th root (most common) - Log(x+1)<br>
+- Presence/absence (if you suspect rare species are important)</p>
+<p>Document which you used and why.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>“What if my demonstrator wants me to use ANOSIM instead of PERMANOVA?”
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-27" class="callout-27-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>That’s fine! Both test similar hypotheses. ANOSIM is simpler but less flexible. Follow your demonstrator’s preference.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>“Can I delete rare species from my data?”
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-28" class="callout-28-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Yes, but document it! You can: - Delete species found at only 1 site (singletons) - Group rare species by genus or family - Keep everything (but transformation will help)</p>
+<p><strong>Explain your choice in your report.</strong></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>“What’s a ‘good’ stress value for nMDS?”
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-29" class="callout-29-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>&lt; 0.1</strong> = Excellent—trust the plot!</li>
+<li><strong>0.1–0.2</strong> = Good—patterns are reliable</li>
+<li><strong>&gt; 0.2</strong> = Poor—treat with caution, patterns might be misleading</li>
+</ul>
+<p>If stress &gt; 0.2, try more restarts or consider if your data is suitable for nMDS.</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="quick-reference-analysis-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="quick-reference-analysis-checklist">📋 Quick Reference: Analysis Checklist</h2>
+<p>Before leaving the practical, make sure you’ve completed:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Opened and inspected your data in PRIMER</label></li>
+<li><label><input type="checkbox">Added factors (group labels)</label></li>
+<li><label><input type="checkbox">Transformed the data</label></li>
+<li><label><input type="checkbox">Created a resemblance matrix (Bray-Curtis)</label></li>
+<li><label><input type="checkbox">Generated an nMDS plot</label></li>
+<li><label><input type="checkbox">Run PERMANOVA (or ANOSIM)</label></li>
+<li><label><input type="checkbox">Run SIMPER (if PERMANOVA was significant)</label></li>
+<li><label><input type="checkbox">Saved all outputs and plots</label></li>
+<li><label><input type="checkbox">Started preparing your three data files for next week</label></li>
+</ul>
+<hr>
+</section>
+<section id="need-help" class="level2">
+<h2 class="anchored" data-anchor-id="need-help">🆘 Need Help?</h2>
+<ul>
+<li><strong>During practical:</strong> Ask your demonstrator!</li>
+<li><strong>Software issues:</strong> Check Canvas for R alternatives or PRIMER tutorials<br>
+</li>
+<li><strong>Conceptual confusion:</strong> Re-read the collapsed “What is…” sections above</li>
+<li><strong>Data formatting:</strong> Look at the example images or ask for template files</li>
+</ul>
+<p><strong>Remember:</strong> Everyone finds this challenging at first. The software does the complicated maths—you just need to understand what the results mean! 🎓</p>
 <section id="community-structureassemblage-structure" class="level3">
 <h3 class="anchored" data-anchor-id="community-structureassemblage-structure"><strong>Community structure/Assemblage structure</strong></h3>
 <p>The process for looking at community structure is straight forward. We will use both cluster analysis and nMDS/ANOSIM/SIMPER to do this. This involves;</p>
@@ -521,8 +1264,8 @@ ul.task-list li input[type="checkbox"] {
 <p>So, always consider applying an appropriate transformation <strong>before moving on</strong> to steps like Bray-Curtis similarity, nMDS, PERMANOVA, or SIMPER.</p>
 </section>
 </section>
-<section id="anosim-analysis-of-similarities-1" class="level3">
-<h3 class="anchored" data-anchor-id="anosim-analysis-of-similarities-1"><strong>ANOSIM – Analysis of Similarities</strong></h3>
+<section id="anosim-analysis-of-similarities" class="level3">
+<h3 class="anchored" data-anchor-id="anosim-analysis-of-similarities"><strong>ANOSIM – Analysis of Similarities</strong></h3>
 <p><strong>ANOSIM</strong> is a non-parametric test used to assess whether there are significant differences between <strong>groups</strong> of samples. It is an alternative to PERMANOVA, but with some key differences:</p>
 <ul>
 <li><strong>ANOSIM is best suited for simple, one-factor analyses</strong> (e.g., comparing habitats or treatments with one grouping variable).<br>
