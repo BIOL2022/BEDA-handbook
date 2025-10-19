@@ -1,5 +1,5 @@
 ---
-title: "**Week 11**: Analysing your data"
+title: "**Week 11**: Multivariate methods in biology (continued)"
 ---
 
 :::{.callout-tip appearance="simple"}
@@ -20,15 +20,14 @@ For this specific practical you will:
 
 At the end of the practical you should have:
 
-1. Appropriate outputs for your community structure analyses:
-   - Cluster analysis details and dendrogram (if appropriate)
+67. Appropriate outputs for your community structure analyses
    - nMDS (saved as suitable image file)
    - PERMANOVA results (in rtf/doc file)
    - SIMPER if justified
-2. Appropriate outputs for your PCA:
-   - RTF file with SPSS or R output
-3. Univariate tests using your PCA results
-   - RTF file with SPSS or R output with Regression and/or ANOVA results (testing hypotheses using your newly derived PCs)
+68. Appropriate outputs for your PCA
+   - File with Jamovi or R output
+69. Univariate tests using your PCA results
+   - File with Jamovi or R output with Regression and/or ANOVA results (testing hypotheses using your newly derived PCs)
 
 ## Your own data
 At this stage it’s very easy to fiddle with your data – is there any reason you might want to standardise or transform your data in any way? Some things to consider at this stage:
@@ -37,9 +36,8 @@ At this stage it’s very easy to fiddle with your data – is there any reason 
 - Are you intending to make every sample equal?
 - Would it be worth analysing using your data at a higher “taxonomic” level?
 
-
 ## Tips for PRIMER
 The graphics are not fantastic – for some outputs you may need to save the coordinates and make a new graph. You can save the images as a windows metafile or bitmap if you wish, they are good enough for your report. Resolution is too low for most journals. You should save appropriate output files using standard formats you can incorporate into your report. 
 
-If you don’t complete your analyses, I will make the program available to you outside of prac times. There will also be time in Week 12 to do any extras.
+If you don’t complete your analyses, I will make the program available to you outside of prac times. There will also be time in week 13 to do any extras.
 
