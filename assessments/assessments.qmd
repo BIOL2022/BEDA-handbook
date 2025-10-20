@@ -54,15 +54,19 @@ Practicals are designed to be flexible and student-driven. Rather than following
 
 ::: {.assessment-section}
 ### <i class="bi bi-file-earmark-bar-graph"></i> Report 2 (Module 3) - 20%
-##### Due: 20 October 2025 (dataset submission) | 7 November 2025 (report)
+##### Due: 21-24 October 2025 (dataset submission) | 7 November 2025 (report)
 Report 2 is similar to Report 1, but you will need to focus on a project with a multivariate context. Note that there is a 5% group work component to this report that will be assessed via dataset submission, and the report is individually written and assessed (15%). You will have 5 weeks to complete the report.
 
 **Role of Practicals:**  
 Practicals are a mix of structured and unstructured sessions. Each practical begins with a brief workshop to practice a specific analysis technique, followed by time for you to work on your project. Some practicals are dedicated feedback sessions, for example we will prioritise giving feedback on your experimental design and analysis plans in Week 10. As usual, you are welcome to interact with demonstrators and your peers for advice and feedback.
 
-<p><strong>Dataset submission:</strong> <span id="countdown-report2-dataset"></span><br>
+<p><strong>Dataset submission</strong><br>
+*Due at 10am on the day of your laboratory*:<br>
+**Tue groups**: <span id="countdown-report2-dataset-tue"></span><br>
+**Wed groups**: <span id="countdown-report2-dataset-wed"></span><br>
+**Fri groups**: <span id="countdown-report2-dataset-fri"></span><br>
 <strong>Report due:</strong> <span id="countdown-report2"></span></p>
-[Details](#){.btn .btn-primary .disabled} [Submission link](#){.btn .btn-success .disabled}
+[Details](assessment-report-2.qmd){.btn .btn-primary} [**Data** submission](https://canvas.sydney.edu.au/courses/67437/assignments/626427){.btn .btn-success} [**Report** submission](https://canvas.sydney.edu.au/courses/67437/assignments/626428){.btn .btn-success}
 <!-- [Details](#){.btn .btn-primary .disabled} [Submission link](#){.btn .btn-success .disabled} -->
 :::
 
@@ -72,7 +76,9 @@ Practicals are a mix of structured and unstructured sessions. Each practical beg
     startCountdown('2025-08-29T23:59:59', 'countdown-eft');
     startCountdown('2025-09-05T23:59:59', 'countdown-mod1-quiz');
     startCountdown('2025-10-07T23:59:59', 'countdown-report1');
-    startCountdown('2025-10-20T23:59:59', 'countdown-report2-dataset');
+    startCountdown('2025-10-21T10:00:00', 'countdown-report2-dataset-tue');
+    startCountdown('2025-10-22T10:00:00', 'countdown-report2-dataset-wed');
+    startCountdown('2025-10-24T10:00:00', 'countdown-report2-dataset-fri');
     startCountdown('2025-11-07T23:59:59', 'countdown-report2');
   });
 </script>

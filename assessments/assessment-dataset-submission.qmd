@@ -2,55 +2,10 @@
 title: "Dataset Submission for Report 2"
 ---
 
-## 1. Overview
-*   **Brief Description:** As part of Report 2, you will submit the dataset collected during your observational study.
-*   **Weighting:** 5%
-*   **Due Date & Time:** [Insert Specific Due Date and Time, e.g., Friday, Week 11, 11:59 PM AEST - Refer to assessments_data.csv for exact date]
-*   **Learning Outcomes Addressed:**
-    *   [Insert Learning Outcome 1 related to data collection/management]
-    *   [Insert Learning Outcome 2 related to collaborative work (as it's a group assignment)]
-    *   [Add more as needed]
+- This is a group assessment: only one group member needs to upload the data file (Excel format) to Canvas on behalf of the group.
+- The dataset must be submitted before your Week 11 practical session.
+- It is worth 5% of your total unit mark.
+- Near-perfect datasets that are well-organised, correctly formatted, and ready for analysis will receive the full 5%.
+- As this is a group submission, Special Consideration, Simple Extensions, and Academic Plans do not apply.
 
-## 2. Task Details & Instructions
-*   **Detailed Description:** As part of Report 2, you will need to submit the dataset you collected during your observational study. This task requires your group to submit the complete dataset collected during the observational study for Report 2. [Elaborate on what constitutes the dataset, what format, any specific variables or structure required. The original text mentioned 'Information about the assessment is found here' - this information should be detailed here or clearly linked, e.g., in the Report 2 guidelines.]
-*   **Key Deliverables:**
-    *   [e.g., A single data file (e.g., .csv, .xlsx) containing all collected observational data.]
-    *   [e.g., A brief data dictionary or codebook explaining variables, if required.]
-
-## 3. Submission Guidelines
-*   **Method:** [Specify submission method, e.g., Submit as a single file via the Canvas group assignment link under 'Dataset Submission'.]
-*   **Format Requirements:**
-    *   [Specify file format, e.g., .csv (comma-separated values) or .xlsx (Excel spreadsheet).]
-    *   [Specify any data structure requirements.]
-*   **File Naming Convention (if any):** [Specify, e.g., GroupName_Dataset.csv]
-*   **Group/Individual:** Group assignment. This dataset will be submitted as a group assignment. [Specify details on how group submission works, e.g., "One submission per group required."]
-
-## 4. Marking Criteria & Rubric
-*   **Marking Summary:** This assessment is worth 5% of your final grade.
-*   **Detailed Rubric:** [Detail how the dataset submission will be marked. Placeholder: e.g., Marking will be based on:
-        *   **Completeness of data ([X] marks):** [Criteria]
-        *   **Accuracy and consistency of data ([Y] marks):** [Criteria]
-        *   **Adherence to formatting guidelines ([Z] marks):** [Criteria]
-        *   **Clarity of data dictionary/codebook (if required) ([A] marks):** [Criteria]
-    A detailed rubric will be provided [here/linked].]
-
-## 5. Resources & Support
-*   **Relevant Materials:**
-    *   [Link to Report 2 guidelines, which should contain details about the observational study and data collection]
-    *   [Link to any templates for the dataset or data dictionary]
-    *   [Link to relevant lecture notes on data management or observational studies]
-*   **Support Channels:**
-    *   [Specify support, e.g., Discuss data collection and formatting with your tutor during practicals.]
-    *   [e.g., Post questions on the 'Report 2 & Dataset' discussion forum on Canvas.]
-
-## 6. Policies
-*   **Late Submissions:** [State the policy clearly, e.g., "Late submissions will be penalised by a deduction of 5% of the maximum possible mark for each calendar day or part thereof that the assessment is overdue. This applies to the group submission."]
-*   **Extensions:** [Explain the process for group extensions, e.g., "Requests for extensions for the group must be made by one group member via the formal Special Consideration process, outlining the impact on all group members. Refer to the Unit of Study Outline for details."]
-*   **Academic Integrity:** [Include a standard reminder, e.g., "The submitted dataset must be the genuine result of your group's observational study. Please familiarize yourself with the University's Academic Integrity Policy: [Link to University Policy]."]
-*   **Resubmission Policy (if any):** [State if applicable, e.g., "Resubmissions are not permitted for this assessment."]
-
-## 7. Estimated Time Commitment
-*   [Provide a guideline, e.g., "The time for preparing and submitting the dataset is integrated with the work for Report 2. Allow approximately [e.g., 1-2] additional hours for final data compilation and formatting for submission."]
-
-## 8. Feedback
-*   **How and When:** [Explain, e.g., "Feedback on the dataset submission will be provided as part of the overall feedback for Report 2, within [e.g., three] weeks of the Report 2 submission deadline."]
+Submit your dataset

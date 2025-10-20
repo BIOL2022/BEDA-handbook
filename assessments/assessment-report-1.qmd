@@ -16,3 +16,5 @@ Below is just a brief summary of the requirements. **You must still read the ins
 8. **Follow academic integrity guidelines:** avoid plagiarism, complete the AHEM module, and be prepared for plagiarism checking.
 9. **Use the marking rubric as a checklist** to ensure all criteria are met before submission.
 10. **Late penalty:** 5% per 24 hours or part thereof after the deadline; length penalty: 5% per page or part thereof over the limit.
+
+[Back to assessments](assessments.qmd)

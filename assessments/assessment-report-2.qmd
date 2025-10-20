@@ -1,63 +1,34 @@
 ---
-title: "Report 2: Observational Study Analysis"
+title: "Report 2"
 ---
 
-## 1. Overview
-*   **Brief Description:** A scientific report based on the group dataset you collected and submitted in the previous assessment. This report requires analysis of that data and interpretation of the results.
-*   **Weighting:** 15%
-*   **Due Date & Time:** [Insert Specific Due Date and Time, e.g., Friday, Week 12, 11:59 PM AEST - Refer to assessments_data.csv for exact date]
-*   **Learning Outcomes Addressed:**
-    *   [Insert Learning Outcome 1 related to data analysis]
-    *   [Insert Learning Outcome 2 related to interpretation of results]
-    *   [Insert Learning Outcome 3 related to scientific report writing based on observational data]
-    *   [Add more as needed]
+### Group Data Submission
 
-## 2. Task Details & Instructions
-*   **Detailed Description:** This report requires you to individually analyse the group dataset your team collected and submitted in the previous assessment (for the 'Dataset Submission' task). You will need to formulate research questions/hypotheses relevant to the dataset, perform appropriate statistical analyses, present your findings, and discuss their implications in the context of existing literature. This report will require you to analyse the data and interpret the results. Specific instructions on the scope of analysis, expected sections, and depth of interpretation will be provided [here/in a separate document linked here].
-*   **Key Deliverables:**
-    *   [e.g., An individual scientific report formatted according to the specified guidelines.]
-    *   [e.g., Any analysis scripts (e.g., R code) as an appendix or separate submission if required.]
-*   **Use of Group Dataset:** While the dataset was a group collection, this report (analysis and write-up) is an **individual task**.
+This assessment involves a group data submission in addition to the individual report.
 
-## 3. Submission Guidelines
-*   **Method:** [Specify submission method, e.g., Submit as a PDF via the Turnitin link on Canvas under 'Report 2 Submission'.]
-*   **Format Requirements:**
-    *   [Specify format, e.g., PDF document.]
-    *   [Specify word/page limit, e.g., Maximum 2500 words (excluding references and appendices).]
-    *   [Specify referencing style, e.g., APA 7th Edition.]
-    *   [Specify font, spacing, etc., e.g., Times New Roman 12pt, double-spaced.]
-*   **File Naming Convention (if any):** [Specify, e.g., StudentID_Report2.pdf]
-*   **Group/Individual:** Individual submission (based on group-collected data).
+- Submit **one Excel file** containing your group’s:
+  - **Species (assemblage) data**
+  - **Habitat data**
+- Only **one group member** needs to upload the file on behalf of the group.
+- Due: By **10:00am** on the day of your **Week 11 practical session**
+- Worth: **5%** of your total unit mark
 
-## 4. Marking Criteria & Rubric
-*   **Marking Summary:** This assessment is worth 15% of your final grade.
-*   **Detailed Rubric:** [Provide details or placeholder. Placeholder: e.g., A detailed marking rubric outlining the criteria for each section of the report (e.g., Introduction, Methods (briefly referencing group data collection), Results, Discussion, Presentation) and the marks allocated will be provided [here/linked directly]. Emphasis will be on your individual analysis, interpretation, and scientific writing.]
-    *   [Example placeholder structure for rubric items:]
-    *   **Introduction & Research Questions/Hypotheses ([X] marks):** [Criteria]
-    *   **Data Analysis & Presentation of Results ([Y] marks):** [Criteria]
-    *   **Interpretation & Discussion of Results ([Z] marks):** [Criteria]
-    *   **Conclusion ([A] marks):** [Criteria]
-    *   **Clarity, Referencing, and Scientific Writing ([B] marks):** [Criteria]
+Make sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi.
 
-## 5. Resources & Support
-*   **Relevant Materials:**
-    *   The group dataset submitted previously.
-    *   [Link to guidelines for Report 2 (if separate from this document)]
-    *   [Link to relevant lecture notes on statistical analysis, data interpretation, and report writing for observational studies]
-    *   [Link to software guides (e.g., R, SPSS) if specific analyses are expected]
-*   **Support Channels:**
-    *   [Specify support, e.g., Attend specific Q&A sessions for Report 2.]
-    *   [e.g., Post questions on the 'Report 2' discussion forum on Canvas.]
-    *   [e.g., Consult with your tutor regarding data analysis approaches.]
+### Individual Report
+Instructions for this assessment are in [Week 9 Practical](../module03/302-week09.qmd#assessment-overview). Please read the instructions carefully. 
 
-## 6. Policies
-*   **Late Submissions:** [State the policy clearly, e.g., "Late submissions will be penalised by a deduction of 5% of the maximum possible mark for each calendar day or part thereof that the assessment is overdue, up to a maximum of 5 days. Submissions more than 5 days late will receive a mark of zero."]
-*   **Extensions:** [Explain the process, e.g., "Requests for extensions must be made via the formal Special Consideration process. Refer to the Unit of Study Outline for details."]
-*   **Academic Integrity:** [Include a standard reminder, e.g., "This report must be your own individual work, particularly the analysis and written components. All sources must be appropriately cited. Please familiarize yourself with the University's Academic Integrity Policy: [Link to University Policy]."]
-*   **Resubmission Policy (if any):** [State if applicable, e.g., "Resubmissions are not permitted for this assessment."]
+Below is a brief summary of the requirements. **You must still read the full instructions above in full.**
 
-## 7. Estimated Time Commitment
-*   [Provide a guideline, e.g., "It is estimated that this assessment will require approximately [e.g., 10-15] hours of work, focusing on data analysis and report writing."]
+1. This is an individual report based on your group's multivariate study, focusing primarily on the Methods and Results sections.
+2. The report must follow the format of a short scientific article suitable for submission to Austral Ecology, including sections such as Title, Abstract (if applicable), Introduction, Materials and Methods, Results, Discussion (brief), and References.
+3. Submit your report anonymously via Canvas by **11:59pm at the end of Week 13**, using an appropriate filename.
+4. **Page limit: maximum 4 single-spaced pages** (not including cover sheet, title/abstract page, references, tables, or figures).
+5. Include a brief Introduction with clearly stated hypotheses, a detailed Methods section describing data collection and analyses, and a well-presented Results section with tables, figures, and descriptions.
+6. Emphasis is on clear explanation of analytical methods, accurate description of data, and concise presentation of results.
+7. **Write the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).**
+8. **Follow academic integrity guidelines:** avoid plagiarism, and be prepared for plagiarism checking.
+9. **Use the marking rubric as a checklist** to ensure all criteria are met before submission.
+10. Consult the provided references and resources for guidance on analyses and reporting.
 
-## 8. Feedback
-*   **How and When:** [Explain, e.g., "Feedback, including a marked rubric and comments, will be provided via Canvas within [e.g., three] weeks of the submission deadline."]
+[Back to assessments](assessments.qmd)

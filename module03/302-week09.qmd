@@ -30,7 +30,7 @@ This assessment involves two separate submissions via Canvas:
      - **Species (assemblage) data**
      - **Habitat data**
    - Only **one group member** needs to upload the file on behalf of the group.
-   - Due: By **8:00am** on the day of your **Week 11 practical session**
+   - Due: By **10:00am** on the day of your **Week 11 practical session**
    - Worth: **5%** of your total unit mark
 
    Make sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi.
@@ -166,7 +166,7 @@ Your presentation should include:
 - A list of **habitat variables** you will measure at each site (and how you will measure them)
 - A simple **map of your sites**
 
-## Assessment overview
+## Assessment overview {#assessment-overview}
 
 To give you the maximum opportunity to analyse your data and understand your results, your group’s dataset will be checked during Week 11 by demonstrators.
 
