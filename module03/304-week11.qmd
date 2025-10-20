@@ -20,13 +20,13 @@ For this specific practical you will:
 
 At the end of the practical you should have:
 
-67. Appropriate outputs for your community structure analyses
+1. Appropriate outputs for your community structure analyses
    - nMDS (saved as suitable image file)
    - PERMANOVA results (in rtf/doc file)
    - SIMPER if justified
-68. Appropriate outputs for your PCA
+2. Appropriate outputs for your PCA
    - File with Jamovi or R output
-69. Univariate tests using your PCA results
+3. Univariate tests using your PCA results
    - File with Jamovi or R output with Regression and/or ANOVA results (testing hypotheses using your newly derived PCs)
 
 ## Your own data
