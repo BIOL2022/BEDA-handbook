@@ -540,7 +540,7 @@
     "href": "assessments/assessments.html",
     "title": "Assessments",
     "section": "",
-    "text": "Early Feedback Task (EFT) - 5%\n\nDue: 29 August 2025\nThis is a short quiz, designed to give you early feedback on your prior understanding of statistics. It will help you identify areas where you may need to focus your study efforts.\n\nDue in: \n\nDetails Submission link\n\n\n\n Evaluation Quiz (Module 1) - 10%\n\nDue: 5 September 2025\nThis is a quiz that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.\n\nDue in: \n\nDetails Submission link\n\n\n\n Report 1 (Module 2) - 25%\n\nDue: 7 October 2025\nYou will use what you have learned so far to design and analyse an experiment based on a project of your choice. The experiments will be completed in groups, but the reports are individually written and assessed. You will have 6 weeks to complete it.\nRole of Practicals:\nPracticals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans. Demonstrators act as advisors, similar to how support works in a research group, and you are welcome to interact with them and your peers for advice, just as you would with postdocs or supervisors. If you are organised, you can also request feedback on your report drafts during practicals to help improve your work.\n\nReport due: \n\nDetails Data submission Report submission\n\n\n\n Report 2 (Module 3) - 20%\n\nDue: 20 October 2025 (dataset submission) | 7 November 2025 (report)\nReport 2 is similar to Report 1, but you will need to focus on a project with a multivariate context. Note that there is a 5% group work component to this report that will be assessed via dataset submission, and the report is individually written and assessed (15%). You will have 5 weeks to complete the report.\nRole of Practicals:\nPracticals are a mix of structured and unstructured sessions. Each practical begins with a brief workshop to practice a specific analysis technique, followed by time for you to work on your project. Some practicals are dedicated feedback sessions, for example we will prioritise giving feedback on your experimental design and analysis plans in Week 10. As usual, you are welcome to interact with demonstrators and your peers for advice and feedback.\n\nDataset submission:  Report due: \n\nDetails Submission link",
+    "text": "Early Feedback Task (EFT) - 5%\n\nDue: 29 August 2025\nThis is a short quiz, designed to give you early feedback on your prior understanding of statistics. It will help you identify areas where you may need to focus your study efforts.\n\nDue in: \n\nDetails Submission link\n\n\n\n Evaluation Quiz (Module 1) - 10%\n\nDue: 5 September 2025\nThis is a quiz that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.\n\nDue in: \n\nDetails Submission link\n\n\n\n Report 1 (Module 2) - 25%\n\nDue: 7 October 2025\nYou will use what you have learned so far to design and analyse an experiment based on a project of your choice. The experiments will be completed in groups, but the reports are individually written and assessed. You will have 6 weeks to complete it.\nRole of Practicals:\nPracticals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans. Demonstrators act as advisors, similar to how support works in a research group, and you are welcome to interact with them and your peers for advice, just as you would with postdocs or supervisors. If you are organised, you can also request feedback on your report drafts during practicals to help improve your work.\n\nReport due: \n\nDetails Data submission Report submission\n\n\n\n Report 2 (Module 3) - 20%\n\nDue: 21-24 October 2025 (dataset submission) | 7 November 2025 (report)\nReport 2 is similar to Report 1, but you will need to focus on a project with a multivariate context. Note that there is a 5% group work component to this report that will be assessed via dataset submission, and the report is individually written and assessed (15%). You will have 5 weeks to complete the report.\nRole of Practicals:\nPracticals are a mix of structured and unstructured sessions. Each practical begins with a brief workshop to practice a specific analysis technique, followed by time for you to work on your project. Some practicals are dedicated feedback sessions, for example we will prioritise giving feedback on your experimental design and analysis plans in Week 10. As usual, you are welcome to interact with demonstrators and your peers for advice and feedback.\n\nDataset submission Due at 10am on the day of your laboratory: Tue groups:  Wed groups:  Fri groups:  Report due: \n\nDetails Data submission Report submission",
     "crumbs": [
       "Home",
       "**Assessments**"
@@ -733,7 +733,7 @@
     "href": "module03/302-week09.html#what-you-need-to-submit-for-this-module",
     "title": "Week 9: PCA and Report 2",
     "section": "1 What you need to submit for this module",
-    "text": "1 What you need to submit for this module\nThis assessment involves two separate submissions via Canvas:\n\nGroup Data Submission (Excel File)\n\nSubmit one Excel file containing your group’s:\n\nSpecies (assemblage) data\nHabitat data\n\nOnly one group member needs to upload the file on behalf of the group.\nDue: By 8:00am on the day of your Week 11 practical session\nWorth: 5% of your total unit mark\n\nMake sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi.\nIndividual Report\n\nSubmit your individual report based on your group’s study.\nFormat: A short scientific article (see assessment guidelines on Canvas for details).\nWorth: 15% of your total unit mark.\nDue date: Refer to the Assessment on Canvas and the Unit Outline.\n\n\n\n1.1 Analyses covered in practical 1\nPrincipal Components Analysis (PCA) is a technique used to reduce the dimensionality of a dataset by extracting a smaller set of new variables (principal components) that capture as much of the variance in the original data as possible. These components summarise complex patterns across multiple variables, making the data easier to visualise and interpret.",
+    "text": "1 What you need to submit for this module\nThis assessment involves two separate submissions via Canvas:\n\nGroup Data Submission (Excel File)\n\nSubmit one Excel file containing your group’s:\n\nSpecies (assemblage) data\nHabitat data\n\nOnly one group member needs to upload the file on behalf of the group.\nDue: By 10:00am on the day of your Week 11 practical session\nWorth: 5% of your total unit mark\n\nMake sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi.\nIndividual Report\n\nSubmit your individual report based on your group’s study.\nFormat: A short scientific article (see assessment guidelines on Canvas for details).\nWorth: 15% of your total unit mark.\nDue date: Refer to the Assessment on Canvas and the Unit Outline.\n\n\n\n1.1 Analyses covered in practical 1\nPrincipal Components Analysis (PCA) is a technique used to reduce the dimensionality of a dataset by extracting a smaller set of new variables (principal components) that capture as much of the variance in the original data as possible. These components summarise complex patterns across multiple variables, making the data easier to visualise and interpret.",
     "crumbs": [
       "Home",
       "**Practicals**",
@@ -949,63 +949,7 @@
     "href": "assessments/assessment-dataset-submission.html",
     "title": "Dataset Submission for Report 2",
     "section": "",
-    "text": "Brief Description: As part of Report 2, you will submit the dataset collected during your observational study.\nWeighting: 5%\nDue Date & Time: [Insert Specific Due Date and Time, e.g., Friday, Week 11, 11:59 PM AEST - Refer to assessments_data.csv for exact date]\nLearning Outcomes Addressed:\n\n[Insert Learning Outcome 1 related to data collection/management]\n[Insert Learning Outcome 2 related to collaborative work (as it’s a group assignment)]\n[Add more as needed]"
-  },
-  {
-    "objectID": "assessments/assessment-dataset-submission.html#overview",
-    "href": "assessments/assessment-dataset-submission.html#overview",
-    "title": "Dataset Submission for Report 2",
-    "section": "",
-    "text": "Brief Description: As part of Report 2, you will submit the dataset collected during your observational study.\nWeighting: 5%\nDue Date & Time: [Insert Specific Due Date and Time, e.g., Friday, Week 11, 11:59 PM AEST - Refer to assessments_data.csv for exact date]\nLearning Outcomes Addressed:\n\n[Insert Learning Outcome 1 related to data collection/management]\n[Insert Learning Outcome 2 related to collaborative work (as it’s a group assignment)]\n[Add more as needed]"
-  },
-  {
-    "objectID": "assessments/assessment-dataset-submission.html#task-details-instructions",
-    "href": "assessments/assessment-dataset-submission.html#task-details-instructions",
-    "title": "Dataset Submission for Report 2",
-    "section": "2. Task Details & Instructions",
-    "text": "2. Task Details & Instructions\n\nDetailed Description: As part of Report 2, you will need to submit the dataset you collected during your observational study. This task requires your group to submit the complete dataset collected during the observational study for Report 2. [Elaborate on what constitutes the dataset, what format, any specific variables or structure required. The original text mentioned ‘Information about the assessment is found here’ - this information should be detailed here or clearly linked, e.g., in the Report 2 guidelines.]\nKey Deliverables:\n\n[e.g., A single data file (e.g., .csv, .xlsx) containing all collected observational data.]\n[e.g., A brief data dictionary or codebook explaining variables, if required.]"
-  },
-  {
-    "objectID": "assessments/assessment-dataset-submission.html#submission-guidelines",
-    "href": "assessments/assessment-dataset-submission.html#submission-guidelines",
-    "title": "Dataset Submission for Report 2",
-    "section": "3. Submission Guidelines",
-    "text": "3. Submission Guidelines\n\nMethod: [Specify submission method, e.g., Submit as a single file via the Canvas group assignment link under ‘Dataset Submission’.]\nFormat Requirements:\n\n[Specify file format, e.g., .csv (comma-separated values) or .xlsx (Excel spreadsheet).]\n[Specify any data structure requirements.]\n\nFile Naming Convention (if any): [Specify, e.g., GroupName_Dataset.csv]\nGroup/Individual: Group assignment. This dataset will be submitted as a group assignment. [Specify details on how group submission works, e.g., “One submission per group required.”]"
-  },
-  {
-    "objectID": "assessments/assessment-dataset-submission.html#marking-criteria-rubric",
-    "href": "assessments/assessment-dataset-submission.html#marking-criteria-rubric",
-    "title": "Dataset Submission for Report 2",
-    "section": "4. Marking Criteria & Rubric",
-    "text": "4. Marking Criteria & Rubric\n\nMarking Summary: This assessment is worth 5% of your final grade.\nDetailed Rubric: [Detail how the dataset submission will be marked. Placeholder: e.g., Marking will be based on: * Completeness of data ([X] marks): [Criteria] * Accuracy and consistency of data ([Y] marks): [Criteria] * Adherence to formatting guidelines ([Z] marks): [Criteria] * Clarity of data dictionary/codebook (if required) ([A] marks): [Criteria] A detailed rubric will be provided [here/linked].]"
-  },
-  {
-    "objectID": "assessments/assessment-dataset-submission.html#resources-support",
-    "href": "assessments/assessment-dataset-submission.html#resources-support",
-    "title": "Dataset Submission for Report 2",
-    "section": "5. Resources & Support",
-    "text": "5. Resources & Support\n\nRelevant Materials:\n\n[Link to Report 2 guidelines, which should contain details about the observational study and data collection]\n[Link to any templates for the dataset or data dictionary]\n[Link to relevant lecture notes on data management or observational studies]\n\nSupport Channels:\n\n[Specify support, e.g., Discuss data collection and formatting with your tutor during practicals.]\n[e.g., Post questions on the ‘Report 2 & Dataset’ discussion forum on Canvas.]"
-  },
-  {
-    "objectID": "assessments/assessment-dataset-submission.html#policies",
-    "href": "assessments/assessment-dataset-submission.html#policies",
-    "title": "Dataset Submission for Report 2",
-    "section": "6. Policies",
-    "text": "6. Policies\n\nLate Submissions: [State the policy clearly, e.g., “Late submissions will be penalised by a deduction of 5% of the maximum possible mark for each calendar day or part thereof that the assessment is overdue. This applies to the group submission.”]\nExtensions: [Explain the process for group extensions, e.g., “Requests for extensions for the group must be made by one group member via the formal Special Consideration process, outlining the impact on all group members. Refer to the Unit of Study Outline for details.”]\nAcademic Integrity: [Include a standard reminder, e.g., “The submitted dataset must be the genuine result of your group’s observational study. Please familiarize yourself with the University’s Academic Integrity Policy: [Link to University Policy].”]\nResubmission Policy (if any): [State if applicable, e.g., “Resubmissions are not permitted for this assessment.”]"
-  },
-  {
-    "objectID": "assessments/assessment-dataset-submission.html#estimated-time-commitment",
-    "href": "assessments/assessment-dataset-submission.html#estimated-time-commitment",
-    "title": "Dataset Submission for Report 2",
-    "section": "7. Estimated Time Commitment",
-    "text": "7. Estimated Time Commitment\n\n[Provide a guideline, e.g., “The time for preparing and submitting the dataset is integrated with the work for Report 2. Allow approximately [e.g., 1-2] additional hours for final data compilation and formatting for submission.”]"
-  },
-  {
-    "objectID": "assessments/assessment-dataset-submission.html#feedback",
-    "href": "assessments/assessment-dataset-submission.html#feedback",
-    "title": "Dataset Submission for Report 2",
-    "section": "8. Feedback",
-    "text": "8. Feedback\n\nHow and When: [Explain, e.g., “Feedback on the dataset submission will be provided as part of the overall feedback for Report 2, within [e.g., three] weeks of the Report 2 submission deadline.”]"
+    "text": "This is a group assessment: only one group member needs to upload the data file (Excel format) to Canvas on behalf of the group.\nThe dataset must be submitted before your Week 11 practical session.\nIt is worth 5% of your total unit mark.\nNear-perfect datasets that are well-organised, correctly formatted, and ready for analysis will receive the full 5%.\nAs this is a group submission, Special Consideration, Simple Extensions, and Academic Plans do not apply.\n\nSubmit your dataset"
   },
   {
     "objectID": "assessments/assessment-evaluation-quiz.html",
@@ -1017,72 +961,16 @@
   {
     "objectID": "assessments/assessment-report-2.html",
     "href": "assessments/assessment-report-2.html",
-    "title": "Report 2: Observational Study Analysis",
+    "title": "Report 2",
     "section": "",
-    "text": "Brief Description: A scientific report based on the group dataset you collected and submitted in the previous assessment. This report requires analysis of that data and interpretation of the results.\nWeighting: 15%\nDue Date & Time: [Insert Specific Due Date and Time, e.g., Friday, Week 12, 11:59 PM AEST - Refer to assessments_data.csv for exact date]\nLearning Outcomes Addressed:\n\n[Insert Learning Outcome 1 related to data analysis]\n[Insert Learning Outcome 2 related to interpretation of results]\n[Insert Learning Outcome 3 related to scientific report writing based on observational data]\n[Add more as needed]"
-  },
-  {
-    "objectID": "assessments/assessment-report-2.html#overview",
-    "href": "assessments/assessment-report-2.html#overview",
-    "title": "Report 2: Observational Study Analysis",
-    "section": "",
-    "text": "Brief Description: A scientific report based on the group dataset you collected and submitted in the previous assessment. This report requires analysis of that data and interpretation of the results.\nWeighting: 15%\nDue Date & Time: [Insert Specific Due Date and Time, e.g., Friday, Week 12, 11:59 PM AEST - Refer to assessments_data.csv for exact date]\nLearning Outcomes Addressed:\n\n[Insert Learning Outcome 1 related to data analysis]\n[Insert Learning Outcome 2 related to interpretation of results]\n[Insert Learning Outcome 3 related to scientific report writing based on observational data]\n[Add more as needed]"
-  },
-  {
-    "objectID": "assessments/assessment-report-2.html#task-details-instructions",
-    "href": "assessments/assessment-report-2.html#task-details-instructions",
-    "title": "Report 2: Observational Study Analysis",
-    "section": "2. Task Details & Instructions",
-    "text": "2. Task Details & Instructions\n\nDetailed Description: This report requires you to individually analyse the group dataset your team collected and submitted in the previous assessment (for the ‘Dataset Submission’ task). You will need to formulate research questions/hypotheses relevant to the dataset, perform appropriate statistical analyses, present your findings, and discuss their implications in the context of existing literature. This report will require you to analyse the data and interpret the results. Specific instructions on the scope of analysis, expected sections, and depth of interpretation will be provided [here/in a separate document linked here].\nKey Deliverables:\n\n[e.g., An individual scientific report formatted according to the specified guidelines.]\n[e.g., Any analysis scripts (e.g., R code) as an appendix or separate submission if required.]\n\nUse of Group Dataset: While the dataset was a group collection, this report (analysis and write-up) is an individual task."
-  },
-  {
-    "objectID": "assessments/assessment-report-2.html#submission-guidelines",
-    "href": "assessments/assessment-report-2.html#submission-guidelines",
-    "title": "Report 2: Observational Study Analysis",
-    "section": "3. Submission Guidelines",
-    "text": "3. Submission Guidelines\n\nMethod: [Specify submission method, e.g., Submit as a PDF via the Turnitin link on Canvas under ‘Report 2 Submission’.]\nFormat Requirements:\n\n[Specify format, e.g., PDF document.]\n[Specify word/page limit, e.g., Maximum 2500 words (excluding references and appendices).]\n[Specify referencing style, e.g., APA 7th Edition.]\n[Specify font, spacing, etc., e.g., Times New Roman 12pt, double-spaced.]\n\nFile Naming Convention (if any): [Specify, e.g., StudentID_Report2.pdf]\nGroup/Individual: Individual submission (based on group-collected data)."
-  },
-  {
-    "objectID": "assessments/assessment-report-2.html#marking-criteria-rubric",
-    "href": "assessments/assessment-report-2.html#marking-criteria-rubric",
-    "title": "Report 2: Observational Study Analysis",
-    "section": "4. Marking Criteria & Rubric",
-    "text": "4. Marking Criteria & Rubric\n\nMarking Summary: This assessment is worth 15% of your final grade.\nDetailed Rubric: [Provide details or placeholder. Placeholder: e.g., A detailed marking rubric outlining the criteria for each section of the report (e.g., Introduction, Methods (briefly referencing group data collection), Results, Discussion, Presentation) and the marks allocated will be provided [here/linked directly]. Emphasis will be on your individual analysis, interpretation, and scientific writing.]\n\n[Example placeholder structure for rubric items:]\nIntroduction & Research Questions/Hypotheses ([X] marks): [Criteria]\nData Analysis & Presentation of Results ([Y] marks): [Criteria]\nInterpretation & Discussion of Results ([Z] marks): [Criteria]\nConclusion ([A] marks): [Criteria]\nClarity, Referencing, and Scientific Writing ([B] marks): [Criteria]"
-  },
-  {
-    "objectID": "assessments/assessment-report-2.html#resources-support",
-    "href": "assessments/assessment-report-2.html#resources-support",
-    "title": "Report 2: Observational Study Analysis",
-    "section": "5. Resources & Support",
-    "text": "5. Resources & Support\n\nRelevant Materials:\n\nThe group dataset submitted previously.\n[Link to guidelines for Report 2 (if separate from this document)]\n[Link to relevant lecture notes on statistical analysis, data interpretation, and report writing for observational studies]\n[Link to software guides (e.g., R, SPSS) if specific analyses are expected]\n\nSupport Channels:\n\n[Specify support, e.g., Attend specific Q&A sessions for Report 2.]\n[e.g., Post questions on the ‘Report 2’ discussion forum on Canvas.]\n[e.g., Consult with your tutor regarding data analysis approaches.]"
-  },
-  {
-    "objectID": "assessments/assessment-report-2.html#policies",
-    "href": "assessments/assessment-report-2.html#policies",
-    "title": "Report 2: Observational Study Analysis",
-    "section": "6. Policies",
-    "text": "6. Policies\n\nLate Submissions: [State the policy clearly, e.g., “Late submissions will be penalised by a deduction of 5% of the maximum possible mark for each calendar day or part thereof that the assessment is overdue, up to a maximum of 5 days. Submissions more than 5 days late will receive a mark of zero.”]\nExtensions: [Explain the process, e.g., “Requests for extensions must be made via the formal Special Consideration process. Refer to the Unit of Study Outline for details.”]\nAcademic Integrity: [Include a standard reminder, e.g., “This report must be your own individual work, particularly the analysis and written components. All sources must be appropriately cited. Please familiarize yourself with the University’s Academic Integrity Policy: [Link to University Policy].”]\nResubmission Policy (if any): [State if applicable, e.g., “Resubmissions are not permitted for this assessment.”]"
-  },
-  {
-    "objectID": "assessments/assessment-report-2.html#estimated-time-commitment",
-    "href": "assessments/assessment-report-2.html#estimated-time-commitment",
-    "title": "Report 2: Observational Study Analysis",
-    "section": "7. Estimated Time Commitment",
-    "text": "7. Estimated Time Commitment\n\n[Provide a guideline, e.g., “It is estimated that this assessment will require approximately [e.g., 10-15] hours of work, focusing on data analysis and report writing.”]"
-  },
-  {
-    "objectID": "assessments/assessment-report-2.html#feedback",
-    "href": "assessments/assessment-report-2.html#feedback",
-    "title": "Report 2: Observational Study Analysis",
-    "section": "8. Feedback",
-    "text": "8. Feedback\n\nHow and When: [Explain, e.g., “Feedback, including a marked rubric and comments, will be provided via Canvas within [e.g., three] weeks of the submission deadline.”]"
+    "text": "Group Data Submission\nThis assessment involves a group data submission in addition to the individual report.\n\nSubmit one Excel file containing your group’s:\n\nSpecies (assemblage) data\nHabitat data\n\nOnly one group member needs to upload the file on behalf of the group.\nDue: By 10:00am on the day of your Week 11 practical session\nWorth: 5% of your total unit mark\n\nMake sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi.\n\n\nIndividual Report\nInstructions for this assessment are in Week 9 Practical. Please read the instructions carefully.\nBelow is a brief summary of the requirements. You must still read the full instructions above in full.\n\nThis is an individual report based on your group’s multivariate study, focusing primarily on the Methods and Results sections.\nThe report must follow the format of a short scientific article suitable for submission to Austral Ecology, including sections such as Title, Abstract (if applicable), Introduction, Materials and Methods, Results, Discussion (brief), and References.\nSubmit your report anonymously via Canvas by 11:59pm at the end of Week 13, using an appropriate filename.\nPage limit: maximum 4 single-spaced pages (not including cover sheet, title/abstract page, references, tables, or figures).\nInclude a brief Introduction with clearly stated hypotheses, a detailed Methods section describing data collection and analyses, and a well-presented Results section with tables, figures, and descriptions.\nEmphasis is on clear explanation of analytical methods, accurate description of data, and concise presentation of results.\nWrite the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).\nFollow academic integrity guidelines: avoid plagiarism, and be prepared for plagiarism checking.\nUse the marking rubric as a checklist to ensure all criteria are met before submission.\nConsult the provided references and resources for guidance on analyses and reporting.\n\nBack to assessments"
   },
   {
     "objectID": "assessments/assessment-report-1.html",
     "href": "assessments/assessment-report-1.html",
     "title": "Report 01",
     "section": "",
-    "text": "Most of the instructions for this assessment are presented in Report 1 - Instructions. Please read those instructions carefully before starting this report. There are also some helpful resources linked in the Resources for Practicals page.\nBelow is just a brief summary of the requirements. You must still read the instructions above in full.\n\nYou are collecting your own data for this report. The topic is of your choosing based on the list provided in the Projects page.\nThe report must follow the structure of a scientific paper, including sections such as Title, Abstract, Introduction, Materials and Methods, Results, Discussion, and References.\nSubmit your report anonymously via Canvas by 7 October 2025, using the filename format “Day-Time-Project-Your SID” (e.g., “WED2-4pmProj4A-123456789”).\nPage limit: maximum 10 pages double-spaced, including abstract, references, figures/tables, and any AI usage statement.\nInclude a minimum of 10 relevant references from primary scientific literature (peer-reviewed journals).\nUse minimum 12 pt font and no less than 2 cm margins all around.\nWrite the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).\nFollow academic integrity guidelines: avoid plagiarism, complete the AHEM module, and be prepared for plagiarism checking.\nUse the marking rubric as a checklist to ensure all criteria are met before submission.\nLate penalty: 5% per 24 hours or part thereof after the deadline; length penalty: 5% per page or part thereof over the limit."
+    "text": "Most of the instructions for this assessment are presented in Report 1 - Instructions. Please read those instructions carefully before starting this report. There are also some helpful resources linked in the Resources for Practicals page.\nBelow is just a brief summary of the requirements. You must still read the instructions above in full.\n\nYou are collecting your own data for this report. The topic is of your choosing based on the list provided in the Projects page.\nThe report must follow the structure of a scientific paper, including sections such as Title, Abstract, Introduction, Materials and Methods, Results, Discussion, and References.\nSubmit your report anonymously via Canvas by 7 October 2025, using the filename format “Day-Time-Project-Your SID” (e.g., “WED2-4pmProj4A-123456789”).\nPage limit: maximum 10 pages double-spaced, including abstract, references, figures/tables, and any AI usage statement.\nInclude a minimum of 10 relevant references from primary scientific literature (peer-reviewed journals).\nUse minimum 12 pt font and no less than 2 cm margins all around.\nWrite the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).\nFollow academic integrity guidelines: avoid plagiarism, complete the AHEM module, and be prepared for plagiarism checking.\nUse the marking rubric as a checklist to ensure all criteria are met before submission.\nLate penalty: 5% per 24 hours or part thereof after the deadline; length penalty: 5% per page or part thereof over the limit.\n\nBack to assessments"
   },
   {
     "objectID": "module01/106-species-id.html",
