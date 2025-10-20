@@ -41,11 +41,11 @@ To get started, head over to [Unit Information](unit-information.qmd) to learn a
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**L01a Tue:**]{style="color: #00598dff;"} [Guest lecture](https://canvas.sydney.edu.au/courses/67437/modules/items/2829563) <br>
-[**L01b Tue:**]{style="color: #00598dff;"} [The nature of data and numbers in biology experiments](https://canvas.sydney.edu.au/courses/67437/modules/items/2831187) <br>
-[**L01c Tue:**]{style="color: #00598dff;"} [Welcome to BEDA](https://biol2022.github.io/L00-Welcome-to-BEDA) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L00-Welcome-to-BEDA/L00-welcome.pdf) <br>
-[**L01d Wed:**]{style="color: #00598dff;"} [(Re-) introduction to experimental design and analysis](https://biol2022.github.io/L01-intro-exp-design-analysis) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L01-intro-exp-design-analysis/L01c-Introduction.pdf) <br>
-[**Practical Week 01:**]{style="color: #006e51ff;"} [Getting started](module01/102-week01.qmd)
+- [**L01a Tue:**]{style="color: #00598dff;"} [Guest lecture](https://canvas.sydney.edu.au/courses/67437/modules/items/2829563)
+- [**L01b Tue:**]{style="color: #00598dff;"} [The nature of data and numbers in biology experiments](https://canvas.sydney.edu.au/courses/67437/modules/items/2831187)
+- [**L01c Tue:**]{style="color: #00598dff;"} [Welcome to BEDA](https://biol2022.github.io/L00-Welcome-to-BEDA) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L00-Welcome-to-BEDA/L00-welcome.pdf)
+- [**L01d Wed:**]{style="color: #00598dff;"} [(Re-) introduction to experimental design and analysis](https://biol2022.github.io/L01-intro-exp-design-analysis) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L01-intro-exp-design-analysis/L01c-Introduction.pdf)
+- [**Practical Week 01:**]{style="color: #006e51ff;"} [Getting started](module01/102-week01.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -66,10 +66,10 @@ To get started, head over to [Unit Information](unit-information.qmd) to learn a
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**L02a Tue:**]{style="color: #00598dff;"} [What is a representative sample?](https://biol2022.github.io/L02a-represenative-sampling/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L02a-represenative-sampling/L02a-representative-sampling.pdf) <br>
-[**L02b Wed:**]{style="color: #00598dff;"} [Modelling fundamentals – a linear model with a single, continuous $X$](https://biol2022.github.io/L02b-linear-model/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L02b-linear-model/L02b-linear-model.pdf) <br>
-[**L02c Wed:**]{style="color: #00598dff;"} [(Almost) every statistical technique is a linear model (or, identifying response and predictors)](https://biol2022.github.io/L02c-all-linear-model/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L02c-all-linear-model/L02c-general-linear-model.pdf) <br>
-[**Practical Week 02:**]{style="color: #006e51ff;"} [Study design](module01/103-week02.qmd)
+- [**L02a Tue:**]{style="color: #00598dff;"} [What is a representative sample?](https://biol2022.github.io/L02a-represenative-sampling/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L02a-represenative-sampling/L02a-representative-sampling.pdf)
+- [**L02b Wed:**]{style="color: #00598dff;"} [Modelling fundamentals – a linear model with a single, continuous $X$](https://biol2022.github.io/L02b-linear-model/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L02b-linear-model/L02b-linear-model.pdf)
+- [**L02c Wed:**]{style="color: #00598dff;"} [(Almost) every statistical technique is a linear model (or, identifying response and predictors)](https://biol2022.github.io/L02c-all-linear-model/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L02c-all-linear-model/L02c-general-linear-model.pdf)
+- [**Practical Week 02:**]{style="color: #006e51ff;"} [Study design](module01/103-week02.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -91,9 +91,9 @@ To get started, head over to [Unit Information](unit-information.qmd) to learn a
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**L03a Tue:**]{style="color: #00598dff;"} [Is my model appropriate? (testing assumptions)](https://biol2022.github.io/L03a-model-appropriate/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L03a-model-appropriate/L03a-glm-assumptions.pdf) <br>
-[**L03b Wed:**]{style="color: #00598dff;"} [Modelling differences between two things: A linear model with a single, categorical (and binary) $X$](https://biol2022.github.io/L03b-ttests/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L03b-ttests/L03b-ttests.pdf) <br>
-[**Practical Week 03:**]{style="color: #006e51ff;"} [Data analysis](https://biol2022.github.io/BEDA-handbook/module01/104-week03.html)
+- [**L03a Tue:**]{style="color: #00598dff;"} [Is my model appropriate? (testing assumptions)](https://biol2022.github.io/L03a-model-appropriate/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L03a-model-appropriate/L03a-glm-assumptions.pdf) 
+- [**L03b Wed:**]{style="color: #00598dff;"} [Modelling differences between two things: A linear model with a single, categorical (and binary) $X$](https://biol2022.github.io/L03b-ttests/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L03b-ttests/L03b-ttests.pdf)
+- [**Practical Week 03:**]{style="color: #006e51ff;"} [Data analysis](https://biol2022.github.io/BEDA-handbook/module01/104-week03.html)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -117,10 +117,10 @@ To get started, head over to [Unit Information](unit-information.qmd) to learn a
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**L04a Tue:**]{style="color: #00598dff;"} [Modelling multiple relationships: a linear model with multiple, continuous $X$ variables](https://biol2022.github.io/L04a-mlr/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L04a-mlr/L04a-mlr.pdf) <br>
-[**L04b Wed:**]{style="color: #00598dff;"} [Modelling multiple differences: a linear model with two or more categorical $X$ variables](https://biol2022.github.io/L04b-anova/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L04b-anova/L04b-anova.pdf) <br>
-[**L04c Wed:**]{style="color: #00598dff;"} [Model transformations -- why, and how?](https://biol2022.github.io/L04c-model-transformations/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L04c-model-transformations/L04c-model-transformations.pdf) <br>
-[**Practical Week 04:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
+- [**L04a Tue:**]{style="color: #00598dff;"} [Modelling multiple relationships: a linear model with multiple, continuous $X$ variables](https://biol2022.github.io/L04a-mlr/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L04a-mlr/L04a-mlr.pdf)
+- [**L04b Wed:**]{style="color: #00598dff;"} [Modelling multiple differences: a linear model with two or more categorical $X$ variables](https://biol2022.github.io/L04b-anova/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L04b-anova/L04b-anova.pdf)
+- [**L04c Wed:**]{style="color: #00598dff;"} [Model transformations -- why, and how?](https://biol2022.github.io/L04c-model-transformations/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L04c-model-transformations/L04c-model-transformations.pdf)
+- [**Practical Week 04:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -143,9 +143,9 @@ To get started, head over to [Unit Information](unit-information.qmd) to learn a
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**L05a Tue:**]{style="color: #00598dff;"} [Control, fixed and random variables -- adding sense to models (ANCOVA and mixed models)](https://biol2022.github.io/L05a-blocking-fixed-random/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L05a-blocking-fixed-random/L05a-blocking-fixed-random.pdf) <br>
-[**L05b Wed:**]{style="color: #00598dff;"} [You've got this -- Module 1 revision](https://biol2022.github.io/L05b-revision/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L05b-revision/L05b-revision.pdf) <br>
-[**Practical Week 05:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
+- [**L05a Tue:**]{style="color: #00598dff;"} [Control, fixed and random variables -- adding sense to models (ANCOVA and mixed models)](https://biol2022.github.io/L05a-blocking-fixed-random/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L05a-blocking-fixed-random/L05a-blocking-fixed-random.pdf)
+- [**L05b Wed:**]{style="color: #00598dff;"} [You've got this -- Module 1 revision](https://biol2022.github.io/L05b-revision/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L05b-revision/L05b-revision.pdf)
+- [**Practical Week 05:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -169,8 +169,8 @@ Work on your experiments
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**L06a Tue:**]{style="color: #00598dff;"} [General refresher](https://canvas.sydney.edu.au/courses/67437/modules/items/2829564) <br>
-[**L06b Wed:**]{style="color: #00598dff;"} [Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables](https://canvas.sydney.edu.au/courses/67437/modules/items/2829565) <br>
+- [**L06a Tue:**]{style="color: #00598dff;"} [General refresher](https://canvas.sydney.edu.au/courses/67437/modules/items/2829564)
+- [**L06b Wed:**]{style="color: #00598dff;"} [Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables](https://canvas.sydney.edu.au/courses/67437/modules/items/2829565)
 **No practicals**
 :::
 
@@ -191,9 +191,9 @@ Work on your experiments
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**L07a Tue:**]{style="color: #00598dff;"} [Does wind reduce tree growth? Detecting differences versus describing relationships](https://canvas.sydney.edu.au/courses/67437/modules/items/2829568) <br>
-[**L07b Wed:**]{style="color: #00598dff;"} [What are the chances of finding a bandicoot? Dealing with binary response data](https://canvas.sydney.edu.au/courses/67437/modules/items/2829566) <br>
-[**Practical Week 07:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
+- [**L07a Tue:**]{style="color: #00598dff;"} [Does wind reduce tree growth? Detecting differences versus describing relationships](https://canvas.sydney.edu.au/courses/67437/modules/items/2829568) 
+- [**L07b Wed:**]{style="color: #00598dff;"} [What are the chances of finding a bandicoot? Dealing with binary response data](https://canvas.sydney.edu.au/courses/67437/modules/items/2829566)
+- [**Practical Week 07:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -213,9 +213,9 @@ Work on your experiments
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**L08a Tue:**]{style="color: #00598dff;"} [Information-theoretic methods vs. null hypothesis testing](https://canvas.sydney.edu.au/courses/67437/modules/items/2829569) <br>
-[**L08b Wed:**]{style="color: #00598dff;"} [Revision: answering your queries](#) <br>
-[**Practical Week 08:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
+- [**L08a Tue:**]{style="color: #00598dff;"} [Information-theoretic methods vs. null hypothesis testing](https://canvas.sydney.edu.au/courses/67437/modules/items/2829569)
+- [**L08b Wed:**]{style="color: #00598dff;"} [Revision: answering your queries](#)
+- [**Practical Week 08:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -243,8 +243,8 @@ Work on your experiments
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**L09a Tue:**]{style="color: #00598dff;"} [Introduction to multivariate analysis](https://canvas.sydney.edu.au/courses/67437/modules/items/2829678) <br>
-[**L09b Wed:**]{style="color: #00598dff;"} [Principal Component Analysis (PCA) and Factor Analysis (FA)](https://canvas.sydney.edu.au/courses/67437/modules/items/2829679) <br>
+- [**L09a Tue:**]{style="color: #00598dff;"} [Introduction to multivariate analysis](https://canvas.sydney.edu.au/courses/67437/modules/items/2829678)
+- [**L09b Wed:**]{style="color: #00598dff;"} [Principal Component Analysis (PCA) and Factor Analysis (FA)](https://canvas.sydney.edu.au/courses/67437/modules/items/2829679)
 [**Practical Week 09:**]{style="color: #006e51ff;"} [Week 9](#)
 :::
 
@@ -265,9 +265,9 @@ Report 1 (25%)
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**L10a Tue:**]{style="color: #00598dff;"} [Clustering](https://canvas.sydney.edu.au/courses/67437/modules/items/2829680) <br>
-[**L10b Wed:**]{style="color: #00598dff;"} [Non-metric multi-dimensional scaling (nMDS) and hypothesis testing](https://canvas.sydney.edu.au/courses/67437/modules/items/2829681) <br>
-[**Practical Week 10:**]{style="color: #006e51ff;"} [Week 10](module03/303-week10.qmd)
+- [**L10a Tue:**]{style="color: #00598dff;"} [Clustering](https://canvas.sydney.edu.au/courses/67437/modules/items/2829680)
+- [**L10b Wed:**]{style="color: #00598dff;"} [Non-metric multi-dimensional scaling (nMDS) and hypothesis testing](https://canvas.sydney.edu.au/courses/67437/modules/items/2829681)
+- [**Practical Week 10:**]{style="color: #006e51ff;"} [Week 10](module03/303-week10.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -287,9 +287,9 @@ Informal presentations
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**L11a Tue:**]{style="color: #00598dff;"} [Multivariate analysis of variance (MANOVA)](https://canvas.sydney.edu.au/courses/67437/modules/items/2829682) <br>
-[**L11b Wed:**]{style="color: #00598dff;"} [Multivariate Revision 1 (no slides)](#) <br>
-[**Practical Week 11:**]{style="color: #006e51ff;"} [Week 11](module03/304-week11.qmd)
+- [**L11a Tue:**]{style="color: #00598dff;"} [Multivariate analysis of variance (MANOVA)](https://canvas.sydney.edu.au/courses/67437/modules/items/2829682)
+- [**L11b Wed:**]{style="color: #00598dff;"} Multivariate Revision 1 (no slides)
+- [**Practical Week 11:**]{style="color: #006e51ff;"} [Week 11](module03/304-week11.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -309,9 +309,9 @@ Informal presentations
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**L12a Tue:**]{style="color: #00598dff;"} [Rarefaction and Bayesian analysis](https://canvas.sydney.edu.au/courses/67437/modules/items/2829684) <br>
-[**L12b Wed:**]{style="color: #00598dff;"} [Multivariate Revision 2 (no slides)](#) <br>
-[**Practical Week 12:**]{style="color: #006e51ff;"} [Week 12](module03/305-week12.qmd)
+- [**L12a Tue:**]{style="color: #00598dff;"} [Rarefaction and Bayesian analysis](https://canvas.sydney.edu.au/courses/67437/modules/items/2829684)
+- [**L12b Wed:**]{style="color: #00598dff;"} Multivariate Revision 2 (no slides)
+- [**Practical Week 12:**]{style="color: #006e51ff;"} [Week 12](module03/305-week12.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -331,8 +331,8 @@ Informal presentations
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**Revision and Q&amp;A**](#) <br>
-[**Practical Week 13:**]{style="color: #006e51ff;"} [Feedback, Exam and Discussions](#)
+- [**Revision and Q&amp;A**](#) - no links yet
+- [**Practical Week 13:**]{style="color: #006e51ff;"} [Feedback, Exam and Discussions](#) - no links yet
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -340,7 +340,7 @@ Informal presentations
 
 **<i class="bi bi-megaphone-fill"></i> Announcements and resources**
 
-Report 2 (15%)
+[Report 2 submission (15%)](https://biol2022.github.io/BEDA-handbook/assessments/assessments.html#report-2-module-3---20)
 :::
 :::
 :::
