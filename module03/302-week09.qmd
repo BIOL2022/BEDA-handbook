@@ -217,6 +217,46 @@ You are expected to complete your report independently and uphold the principles
 
 Your report should follow the format of a short scientific article suitable for submission to Austral Ecology. The “Notice to Contributors” is available at: [Austral Ecology – Author Guidelines](https://onlinelibrary.wiley.com/page/journal/14429993/homepage/ForAuthors.html)
 
+
+### Marking scheme
+
+#### Introduction (use your imagination) -- **10 marks**
+- Aims of the experiment and hypotheses being tested
+- Why is the study important and/or interesting
+- Study system – species, location of experiment (brief)
+- Welcome to use imagination with references and background, but will not be penalised if you are unable to provide real examples.
+
+
+#### Materials and Methods -- **30 marks**
+- Set-up of experiment/survey
+- Data / variables recorded and how
+- Sampling design and justifications for analyses
+- Statistical analyses used, including which are dependent/independent variable(s) (if applicable), unit of replication, actual test(s) and statistical package(s)  
+
+
+#### Results -- **40 marks**
+- Statement of results (data and stats). Refer to tables and figures as needed.
+- Summary presentation of data (no raw data) as tables, figures or in text as appropriate. Use tables for large amounts of data where detail is important, use figures to illustrate patterns. Indicate sample size and errors, and note whether the latter are standard errors or standard deviations. Format consistently.
+- Evidence of thought in choices of analyses.
+- Results of statistical analyses presented either in text, on figures, or in tables.
+- Do not screenshot figures of tables  
+
+
+#### Discussion -- **10 marks**
+- Main conclusions or findings
+- Interpretation of results – what do they mean? How do they relate to original aims?
+- Limitations of approach or methods
+- Future studies – what would you do next to improve what you did and/or extend the understanding of the subject?  
+
+
+#### General
+- Brief Abstract at start of report
+- Written in plain English
+- Presentation (format/length)
+- No screenshotting of figures and tables
+- References if used and cited correctly  
+
+
 ### References & resources
 
 You are encouraged to consult the references from the annotated reading list provided with the lectures on the unit website. Key references include:
