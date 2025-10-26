@@ -23,17 +23,19 @@ Please provide feedback on the cheatsheets here: [**Give Feedback**](https://for
 
 ## Jamovi
 
-- <span class="badge rounded-pill bg-danger ms-2">⭐ New</span> [Using flexplot to create *common* plots in Jamovi](https://usyd-soles-edu.github.io/cheatsheet-jamovi-flexplot/flexplot.html){target="_blank"} - `vis` 
+- [Using flexplot to create *common* plots in Jamovi](https://usyd-soles-edu.github.io/cheatsheet-jamovi-flexplot/flexplot.html){target="_blank"} - `vis` 
 - [boxplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-boxplot/){target="_blank"} - `vis`
 - [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-scatterplot/){target="_blank"} - `vis`
 - [histograms](https://usyd-soles-edu.github.io/cheatsheet-jamovi-histogram/){target="_blank"} - `vis`
 - modelling a numerical response against:
   - [one or more categorical predictors (t-tests & ANOVA)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-anova/){target="_blank"} - `stats`
-  - <span class="badge rounded-pill bg-danger ms-2">⭐ New</span>[one or more numerical predictors (linear regression)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-linearmodels/linearmodel.html){target="_blank"} - `stats`
+  - [one or more numerical predictors (linear regression)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-linearmodels/linearmodel.html){target="_blank"} - `stats`
 - [Principal Component Analysis (PCA)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-pca/){target="_blank"} - `stats`
 
 ## General
 
+- <span class="badge rounded-pill bg-danger ms-2">⭐ New</span> [Univariate analysis flowchart (by Gabby Jarvis)](assets/univariate-summary-gabby.pdf){target="_blank"}
+- <span class="badge rounded-pill bg-danger ms-2">⭐ New</span> [Multivariate analysis cheatsheets (6 pages, 7 topics, by Gabby Jarvis)](assets/multivariate-summaries-gabby.pdf){target="_blank"}
 - [publication-ready ANOVA tables](https://biol2022.github.io/BIOL2022-unit-manual/assets/cheatsheet_manual_anova_table.pdf) - `vis`
 - [publication-ready regression tables](https://biol2022.github.io/BIOL2022-unit-manual/assets/cheatsheet_manual_lm_table.pdf) - `vis`
 - how to report statistics in text (planned) - `stats`
@@ -44,3 +46,7 @@ Please provide feedback on the cheatsheets here: [**Give Feedback**](https://for
 - [boxplots](https://envx-resources.github.io/cheatsheet-spss-boxplot/){target="_blank"} - `vis`
 - [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-spss-scatterplot/){target="_blank"} - `vis`
 - [using the chart builder](https://usyd-soles-edu.github.io/cheatsheet-spss-chart-builder/){target="_blank"} - `vis`
+
+## PRIMER
+
+- [Multivariate Analysis Cheatsheet (nMDS, PERMANOVA, SIMPER, ANOSIM)] 
