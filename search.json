@@ -843,7 +843,7 @@
     "href": "cheatsheets.html#jamovi",
     "title": "Cheatsheets",
     "section": "Jamovi",
-    "text": "Jamovi\n\n⭐ New Using flexplot to create common plots in Jamovi - vis\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nmodelling a numerical response against:\n\none or more categorical predictors (t-tests & ANOVA) - stats\n⭐ Newone or more numerical predictors (linear regression) - stats\n\nPrincipal Component Analysis (PCA) - stats",
+    "text": "Jamovi\n\nUsing flexplot to create common plots in Jamovi - vis\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nmodelling a numerical response against:\n\none or more categorical predictors (t-tests & ANOVA) - stats\none or more numerical predictors (linear regression) - stats\n\nPrincipal Component Analysis (PCA) - stats",
     "crumbs": [
       "Home",
       "Cheatsheets"
@@ -854,7 +854,7 @@
     "href": "cheatsheets.html#general",
     "title": "Cheatsheets",
     "section": "General",
-    "text": "General\n\npublication-ready ANOVA tables - vis\npublication-ready regression tables - vis\nhow to report statistics in text (planned) - stats\nR and GitHub Copilot (planned) - gen_ai",
+    "text": "General\n\n⭐ New Univariate analysis flowchart (by Gabby Jarvis)\n⭐ New Multivariate analysis cheatsheets (6 pages, 7 topics, by Gabby Jarvis)\npublication-ready ANOVA tables - vis\npublication-ready regression tables - vis\nhow to report statistics in text (planned) - stats\nR and GitHub Copilot (planned) - gen_ai",
     "crumbs": [
       "Home",
       "Cheatsheets"
@@ -866,6 +866,17 @@
     "title": "Cheatsheets",
     "section": "SPSS",
     "text": "SPSS\n\nboxplots - vis\nscatterplots - vis\nusing the chart builder - vis",
+    "crumbs": [
+      "Home",
+      "Cheatsheets"
+    ]
+  },
+  {
+    "objectID": "cheatsheets.html#primer",
+    "href": "cheatsheets.html#primer",
+    "title": "Cheatsheets",
+    "section": "PRIMER",
+    "text": "PRIMER\n\n[Multivariate Analysis Cheatsheet (nMDS, PERMANOVA, SIMPER, ANOSIM)]",
     "crumbs": [
       "Home",
       "Cheatsheets"
