@@ -14,20 +14,6 @@
 # Environment variables
 .Renviron
 
-# OAuth2 token
-.httr-oauth
-
-# R Package Development
-# -------------------
-# Output files from R CMD build
-/*.tar.gz
-
-# Output files from R CMD check
-/*.Rcheck/
-
-# Example code in package build process
-*-Ex.R
-
 # R Markdown and knitr
 # -------------------
 *_cache/
@@ -52,17 +38,11 @@ _site/
 
 # Project specific files
 # ---------------------
-_solution/
 assets/raw/
-ENVX1002-handbook/
 
-# Memory bank files
-# ----------------
-.roomodes
-.roo/
-memory_bank/
-.cline*
-.clinerules*
+# Release artefacts
+# -----------------
+/BEDA-*-offline.zip
 
 # System files
 # -----------
