@@ -4,349 +4,45 @@ date: last-modified # today | last-modified
 date-format: "[Semester 2, ]YYYY" # see https://momentjs.com/docs/#/displaying/format/
 ---
 
-![](assets/images/banner02.png)
-
 ## Introduction {.unlisted}
 
-Thank you for joining [BIOL202 Biology Experimental Design and Analysis](https://canvas.sydney.edu.au/courses/67437), known to many as **BEDA (🐝-da)**. The ability to critically evaluate evidence is a fundamental life skill, and our aim is to help you build a strong foundation in it by helping you develop essential, hands-on skills in experimental design and analysis. We will move beyond theory and focus on the 'how' and 'why' of research:
+Welcome to [BIOL2022 Biology Experimental Design and Analysis](https://canvas.sydney.edu.au/courses/67437), known as BEDA. This unit is about designing biological studies, analysing data, and evaluating evidence.
 
-- *How* do you design a robust study from the ground up?
-- *Why* does your study's design fundamentally shape its results?
-- *How* do you select the right statistical tools for your specific research question?
+The handbook contains the unit information, practical materials, assessment guidance, and weekly resources used throughout the semester. Canvas remains the official location for announcements and submission links.
 
-The skills you learn will be invaluable not just in biology, but in any future career path you choose. 
-
-**Importante note: We build upon foundational statistical concepts, so a basic understanding is assumed.** If you need a refresher, please see: [Am I ready for BEDA?](prerequisites.qmd)
-
-
-### Using this handbook {.unlisted}
-
-
-This online handbook is your primary resource for BEDA. Use the sidebar to navigate through the content. We will walk you through its structure during our first week. 
-<!-- A simplified [<i class=" bi bi-file-text"></i> PDF version](assets/BEDA-handbook.pdf) is also available for offline use, and printed copies will be provided during practicals for quick reference. -->
-To get started, head over to [Unit Information](unit-information.qmd) to learn about the course structure, assessments, and what to expect. 
-
-**Below is a quick schedule of the unit, where you can find links to the lectures and practicals.**
-
-:::{.column-page}
-:::{.text-center}
-## Schedule
-
-
-### Module 1: Fundamentals
-:::
-:::{.grid}
-::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 01** -- 4 Aug - 8 Aug]{style="color: firebrick;"}
-
-**<i class="bi bi-book-fill"></i> Lectures and Practicals**
-
-- [**L01a Tue:**]{style="color: #00598dff;"} [Guest lecture](https://canvas.sydney.edu.au/courses/67437/modules/items/2829563)
-- [**L01b Tue:**]{style="color: #00598dff;"} [The nature of data and numbers in biology experiments](https://canvas.sydney.edu.au/courses/67437/modules/items/2831187)
-- [**L01c Tue:**]{style="color: #00598dff;"} [Welcome to BEDA](https://biol2022.github.io/L00-Welcome-to-BEDA) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L00-Welcome-to-BEDA/L00-welcome.pdf)
-- [**L01d Wed:**]{style="color: #00598dff;"} [(Re-) introduction to experimental design and analysis](https://biol2022.github.io/L01-intro-exp-design-analysis) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L01-intro-exp-design-analysis/L01c-Introduction.pdf)
-- [**Practical Week 01:**]{style="color: #006e51ff;"} [Getting started](module01/102-week01.qmd)
+::: {.callout-note}
+A basic understanding of introductory statistics is assumed. If you need a refresher, see [Am I ready for BEDA?](prerequisites.qmd).
 :::
 
-::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
-####
+## Using this handbook {.unlisted}
 
-**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
+Use this handbook alongside Canvas. In the HTML version, use the sidebar to move between practicals, assessments, and supporting resources. In the PDF version, use the table of contents and internal links.
 
-[<i class="bi bi-question-circle-fill"></i> Am I ready for BEDA?](prerequisites.qmd) <br>
-[<i class="bi bi-clipboard-check-fill"></i> Quiz 1 [0%] -- opens Friday](https://canvas.sydney.edu.au/courses/67437/assignments/626420)
-:::
-:::
+For general expectations and course structure, see [Unit Information](unit-information.qmd). For assessment instructions, marking guidance, and submission details, see [Assessments](assessments/assessments.qmd).
 
------
+## Unit structure {.unlisted}
 
-:::{.grid}
-::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 02** -- 11 Aug - 15 Aug]{style="color: firebrick;"}
+BEDA is organised into three modules.
 
-**<i class="bi bi-book-fill"></i> Lectures and Practicals**
+| Module | Weeks | Focus |
+|---|---:|---|
+| Fundamentals | 1-5 | Design, data, linear models, and assumptions |
+| Univariate experiments | 6-8 | Models for experiments with one response variable |
+| Multivariate experiments | 9-13 | Multivariate biological data analysis |
 
-- [**L02a Tue:**]{style="color: #00598dff;"} [What is a representative sample?](https://biol2022.github.io/L02a-represenative-sampling/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L02a-represenative-sampling/L02a-representative-sampling.pdf)
-- [**L02b Wed:**]{style="color: #00598dff;"} [Modelling fundamentals – a linear model with a single, continuous $X$](https://biol2022.github.io/L02b-linear-model/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L02b-linear-model/L02b-linear-model.pdf)
-- [**L02c Wed:**]{style="color: #00598dff;"} [(Almost) every statistical technique is a linear model (or, identifying response and predictors)](https://biol2022.github.io/L02c-all-linear-model/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L02c-all-linear-model/L02c-general-linear-model.pdf)
-- [**Practical Week 02:**]{style="color: #006e51ff;"} [Study design](module01/103-week02.qmd)
-:::
+## Assessment overview {.unlisted}
 
-::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
-####
+The assessment pages provide the full instructions and marking criteria. The table below is only a summary of the major assessment tasks.
 
-**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
+| Assessment | Module | Weight |
+|---|---:|---:|
+| Early Feedback Task | Module 1 | 5% |
+| Evaluation Quiz | Module 1 | 10% |
+| Report 1 | Module 2 | 25% |
+| Report 2 | Module 3 | 20% |
 
-[<i class="bi bi-bookmark-star-fill"></i> Common statistical tests are linear models](https://lindeloev.github.io/tests-as-linear/) <br>
-[<i class="bi bi-calendar2"></i> **Quiz 2** [0%] -- opens Friday](https://canvas.sydney.edu.au/courses/67437/assignments/626421)
+See [Assessments](assessments/assessments.qmd) for complete details.
 
-:::
-:::
+## Weekly schedule {.unlisted}
 
------
-
-:::{.grid}
-::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 03** -- 18 Aug - 22 Aug]{style="color: firebrick;"}
-
-**<i class="bi bi-book-fill"></i> Lectures and Practicals**
-
-- [**L03a Tue:**]{style="color: #00598dff;"} [Is my model appropriate? (testing assumptions)](https://biol2022.github.io/L03a-model-appropriate/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L03a-model-appropriate/L03a-glm-assumptions.pdf) 
-- [**L03b Wed:**]{style="color: #00598dff;"} [Modelling differences between two things: A linear model with a single, categorical (and binary) $X$](https://biol2022.github.io/L03b-ttests/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L03b-ttests/L03b-ttests.pdf)
-- [**Practical Week 03:**]{style="color: #006e51ff;"} [Data analysis](https://biol2022.github.io/BEDA-handbook/module01/104-week03.html)
-:::
-
-::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
-####
-
-**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
-
-[<i class="bi bi-calendar2"></i> Quiz 3 [0%] -- opens Friday](https://canvas.sydney.edu.au/courses/67437/assignments/626422) <br>
-[<i class="bi bi-calendar2"></i> Early Feedback Task [5%] -- opens Friday 10am](https://canvas.sydney.edu.au/courses/67437/assignments/638396)
-:::
-:::
-
-
-
-
------
-
-:::{.grid}
-::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 04** -- 25 Aug - 29 Aug]{style="color: firebrick;"}
-
-**<i class="bi bi-book-fill"></i> Lectures and Practicals**
-
-- [**L04a Tue:**]{style="color: #00598dff;"} [Modelling multiple relationships: a linear model with multiple, continuous $X$ variables](https://biol2022.github.io/L04a-mlr/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L04a-mlr/L04a-mlr.pdf)
-- [**L04b Wed:**]{style="color: #00598dff;"} [Modelling multiple differences: a linear model with two or more categorical $X$ variables](https://biol2022.github.io/L04b-anova/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L04b-anova/L04b-anova.pdf)
-- [**L04c Wed:**]{style="color: #00598dff;"} [Model transformations -- why, and how?](https://biol2022.github.io/L04c-model-transformations/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L04c-model-transformations/L04c-model-transformations.pdf)
-- [**Practical Week 04:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
-:::
-
-::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
-####
-
-**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
-
-[<i class="bi bi-calendar2"></i> Evaluation Quiz (10%)](https://canvas.sydney.edu.au/courses/67437/assignments/626423) <br>
-[More information on the Evaluation Quiz](assessments/assessment-evaluation-quiz.qmd)
-
-:::
-:::
-
-
------
-
-:::{.grid}
-::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 05** -- 1 Sep - 5 Sep]{style="color: firebrick;"}
-
-**<i class="bi bi-book-fill"></i> Lectures and Practicals**
-
-- [**L05a Tue:**]{style="color: #00598dff;"} [Control, fixed and random variables -- adding sense to models (ANCOVA and mixed models)](https://biol2022.github.io/L05a-blocking-fixed-random/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L05a-blocking-fixed-random/L05a-blocking-fixed-random.pdf)
-- [**L05b Wed:**]{style="color: #00598dff;"} [You've got this -- Module 1 revision](https://biol2022.github.io/L05b-revision/) | [<i class="bi bi-book-fill"></i> PDF](https://biol2022.github.io/L05b-revision/L05b-revision.pdf)
-- [**Practical Week 05:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
-:::
-
-::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
-####
-
-**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
-
-Work on your experiments
-:::
-:::
-
------
-
-:::{.text-center}
-### Module 2: Univariate experiments
-:::
-
-:::{.grid}
-::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 06** -- 8 Sep - 12 Sep <i class="bi bi-exclamation-triangle-fill"></i> **No practicals this week** <i class="bi bi-exclamation-triangle-fill"></i>]{style="color: firebrick;"}
-
-**<i class="bi bi-book-fill"></i> Lectures and Practicals**
-
-- [**L06a Tue:**]{style="color: #00598dff;"} [General refresher](https://canvas.sydney.edu.au/courses/67437/modules/items/2829564)
-- [**L06b Wed:**]{style="color: #00598dff;"} [Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables](https://canvas.sydney.edu.au/courses/67437/modules/items/2829565)
-**No practicals**
-:::
-
-::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
-####
-
-**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
-
---
-:::
-:::
-
------
-
-:::{.grid}
-::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 07** -- 15 Sep - 19 Sep]{style="color: firebrick;"}
-
-**<i class="bi bi-book-fill"></i> Lectures and Practicals**
-
-- [**L07a Tue:**]{style="color: #00598dff;"} [Does wind reduce tree growth? Detecting differences versus describing relationships](https://canvas.sydney.edu.au/courses/67437/modules/items/2829568) 
-- [**L07b Wed:**]{style="color: #00598dff;"} [What are the chances of finding a bandicoot? Dealing with binary response data](https://canvas.sydney.edu.au/courses/67437/modules/items/2829566)
-- [**Practical Week 07:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
-:::
-
-::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
-####
-
-**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
-
---
-:::
-:::
-
------
-
-:::{.grid}
-::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 08** -- 22 Sep - 26 Sep]{style="color: firebrick;"}
-
-**<i class="bi bi-book-fill"></i> Lectures and Practicals**
-
-- [**L08a Tue:**]{style="color: #00598dff;"} [Information-theoretic methods vs. null hypothesis testing](https://canvas.sydney.edu.au/courses/67437/modules/items/2829569)
-- [**L08b Wed:**]{style="color: #00598dff;"} [Revision: answering your queries](#)
-- [**Practical Week 08:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
-:::
-
-::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
-####
-
-**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
-
---
-:::
-:::
-
------
-
-:::{.text-center}
-### Mid-semester break
-
------
-
-### Module 3: Multivariate experiments
-:::
-
-:::{.grid}
-::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 09** -- 6 Oct - 10 Oct]{style="color: firebrick;"}
-
-**<i class="bi bi-book-fill"></i> Lectures and Practicals**
-
-- [**L09a Tue:**]{style="color: #00598dff;"} [Introduction to multivariate analysis](https://canvas.sydney.edu.au/courses/67437/modules/items/2829678)
-- [**L09b Wed:**]{style="color: #00598dff;"} [Principal Component Analysis (PCA) and Factor Analysis (FA)](https://canvas.sydney.edu.au/courses/67437/modules/items/2829679)
-[**Practical Week 09:**]{style="color: #006e51ff;"} [Week 9](#)
-:::
-
-::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
-####
-
-**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
-
-Report 1 (25%)
-:::
-:::
-
------
-
-:::{.grid}
-::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 10** -- 13 Oct - 17 Oct]{style="color: firebrick;"}
-
-**<i class="bi bi-book-fill"></i> Lectures and Practicals**
-
-- [**L10a Tue:**]{style="color: #00598dff;"} [Clustering](https://canvas.sydney.edu.au/courses/67437/modules/items/2829680)
-- [**L10b Wed:**]{style="color: #00598dff;"} [Non-metric multi-dimensional scaling (nMDS) and hypothesis testing](https://canvas.sydney.edu.au/courses/67437/modules/items/2829681)
-- [**Practical Week 10:**]{style="color: #006e51ff;"} [Week 10](module03/303-week10.qmd)
-:::
-
-::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
-####
-
-**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
-
-Informal presentations
-:::
-:::
-
------
-
-:::{.grid}
-::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 11** -- 20 Oct - 24 Oct]{style="color: firebrick;"}
-
-**<i class="bi bi-book-fill"></i> Lectures and Practicals**
-
-- [**L11a Tue:**]{style="color: #00598dff;"} [Multivariate analysis of variance (MANOVA)](https://canvas.sydney.edu.au/courses/67437/modules/items/2829682)
-- [**L11b Wed:**]{style="color: #00598dff;"} Multivariate Revision 1 (no slides)
-- [**Practical Week 11:**]{style="color: #006e51ff;"} [Week 11](module03/304-week11.qmd)
-:::
-
-::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
-####
-
-**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
-
-[Group dataset submission (5%)](assessments/assessment-dataset-submission.qmd)
-:::
-:::
-
------
-
-:::{.grid}
-::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 12** -- 27 Oct - 31 Oct]{style="color: firebrick;"}
-
-**<i class="bi bi-book-fill"></i> Lectures and Practicals**
-
-- [**L12a Tue:**]{style="color: #00598dff;"} [Rarefaction and Bayesian analysis](https://canvas.sydney.edu.au/courses/67437/modules/items/2829684)
-- [**L12b Wed:**]{style="color: #00598dff;"} Exam prep lecture (see [Canvas](https://canvas.sydney.edu.au/courses/67437))
-- [**Practical Week 12:**]{style="color: #006e51ff;"} [Week 12](module03/305-week12.qmd)
-:::
-
-::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
-####
-
-**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
-
---
-:::
-:::
-
------
-
-:::{.grid}
-::: {.g-col-12 .g-col-sm-12 .g-col-md-8}
-#### [**Week 13** -- 3 Nov - 7 Nov]{style="color: firebrick;"}
-
-**<i class="bi bi-book-fill"></i> Lectures and Practicals**
-
-- **No Lectures this week**
-- [**Practical Week 13:**]{style="color: #006e51ff;"} Feedback, Exam and Discussions -- **OPTIONAL** (attendance not recorded). 
-
-
-:::
-
-::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
-####
-
-**<i class="bi bi-megaphone-fill"></i> Announcements and resources**
-
-**Please attend this weeks' practical if you need support with Report 2.** Demonstrators are not expected to answer questions on the exam during this session, although they may be able to help with general revision questions.
-
-[Report 2 submission (15%)](https://biol2022.github.io/BEDA-handbook/assessments/assessments.html#report-2-module-3---20) 
-
-(Due Friday midnight this week)
-:::
-:::
-:::
+The detailed week-by-week schedule is maintained on the [Schedule](schedule.qmd) page. Use it to find lecture materials, practical pages, assessment timing, and week-specific resources.

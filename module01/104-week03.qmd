@@ -44,7 +44,9 @@ By the end of this practical, you should be able to:
 
 ## Lab activity
 
-### [Google Drive](https://drive.google.com/drive/folders/1rDyHyzgTVWUmPEzNte0F1CgVb3_Eitlk?usp=drive_link)
+### Google Drive
+
+[Open the shared Google Drive folder](https://drive.google.com/drive/folders/1rDyHyzgTVWUmPEzNte0F1CgVb3_Eitlk?usp=drive_link).
 
 When ready, work with your group to analyse the data you collected in the previous lab using a **general linear model**. Click on the link above to access the data that you have collected.
 
@@ -67,7 +69,7 @@ Please install the **GAMLj3** module in Jamovi. This will allow you to run gener
 3. In the Available tab, search for **GAMLj3** and click on the **INSTALL** button.
 
 ::: {.content-visible unless-format="pdf"}
-![How to install the GAMLj3 module in Jamovi. Note that version numbers may differ. Click on the image to enlarge it. Image last updated in Aug 2024.](assets/jamovi_install_GAMLj3.gif){#fig-install-gamj3.lightbox}
+![How to install the GAMLj3 module in Jamovi. Note that version numbers may differ. Click on the image to enlarge it. Image last updated in Aug 2024.](assets/jamovi_install_GAMLj3.gif){#fig-install-gamj3.lightbox fig-alt="Animated screenshot showing how to install the GAMLj3 module from the Jamovi library."}
 
 :::
 
@@ -157,7 +159,9 @@ On top of the simple models you have been taught so far (e.g., using a single co
 
 
 
-#### Weight data for domestic cats: [cats.xlsx](assets/cats.xlsx)
+### Weight data for domestic cats
+
+[Download cats.xlsx](assets/cats.xlsx)
 
 Handy hints:
 
@@ -165,7 +169,9 @@ Handy hints:
 - You can look at the relationships between the continuous variables for each gender of cat. Is there a way to combine these relationships into one model?
 - Can Sex be used as a response variable in this model? *You don't have to do this, but it is an interesting question to consider.*
 
-#### Cherry trees: [cherry.xlsx](assets/cherry.xlsx)
+### Cherry trees
+
+[Download cherry.xlsx](assets/cherry.xlsx)
 
 Handy hints:
 
@@ -173,7 +179,9 @@ Handy hints:
 - Use what you have learnt about simple linear regression and add more predictors to your model!
 - Think about the assumptions of the model and whether they are met. Do you need to alter your interpretation of these diagnostic plots in any way?
 
-#### (**Extra challenge**) effects of dietary protein on pigs: [pigs.xlsx](assets/pigs.xlsx)
+### (**Extra challenge**) effects of dietary protein on pigs
+
+[Download pigs.xlsx](assets/pigs.xlsx)
 
 Handy hints:
 
@@ -181,7 +189,9 @@ Handy hints:
  - Think of how a model with a two-level categorical predictor (which compares two groups) can be extended to a predictor with multiple levels to compare multiple groups. Does this change the way you need to set up your model?
  - Are you brave enough to look for interactions between variables?
 
-#### (**Extra challenge**) Sugar cane disease data: [cane.xlsx](assets/cane.xlsx)
+### (**Extra challenge**) Sugar cane disease data
+
+[Download cane.xlsx](assets/cane.xlsx)
 
 Handy hints:
 
@@ -191,7 +201,7 @@ Handy hints:
 
 ## Submit your results
 
-Once complete, please upload your results to [Google Drive](#)) for archival. If there's time, we will discuss the results together.
+Once complete, please upload your results to the Google Drive folder provided in class for archival. If there's time, we will discuss the results together.
 
 ## End
 

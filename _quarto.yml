@@ -36,7 +36,7 @@ website:
         href: cheatsheets.qmd
         text: "Cheatsheets"
     right:
-      - href: 04-help/index.qmd
+      - href: help.qmd
         text: Contact
   sidebar: 
     style: floating
@@ -69,7 +69,7 @@ website:
         href: assessments/assessments.qmd
       - icon: easel3-fill
         text: "**Lectures** (schedule)"
-        href: index.qmd#schedule
+        href: schedule.qmd
       - icon: book
         section: "**Practicals**"
         contents:

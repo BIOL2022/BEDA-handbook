@@ -26,9 +26,9 @@ Please complete a survey before you start the workshop. This will help us unders
 
 ### R and RStudio
 
-- Download R [here](https://cran.rstudio.com/){target="_blank"}.
-- Download RStudio Desktop from [here](https://posit.co/download/rstudio-desktop/){target="_blank"}.
-- If necessary, you may sign up to RStudio Cloud [here](https://posit.cloud/){target="_blank"}. This applies to those who have trouble installing R and RStudio on their computer, and still prefer this to the other software options.
+- Download R [here](https://cran.rstudio.com/){target="_blank" rel="noopener noreferrer"}.
+- Download RStudio Desktop from [here](https://posit.co/download/rstudio-desktop/){target="_blank" rel="noopener noreferrer"}.
+- If necessary, you may sign up to RStudio Cloud [here](https://posit.cloud/){target="_blank" rel="noopener noreferrer"}. This applies to those who have trouble installing R and RStudio on their computer, and still prefer this to the other software options.
 
 You must have both installed on your computer. If you already have them installed, please ensure they are up-to-date. Once installed, **ensure that you run R via RStudio Desktop**, and *not* the base R GUI.
 
@@ -44,9 +44,9 @@ For Jamovi, the **current** branch is recommended. Remember — if you are on a 
 ### SPSS
 
 - SPSS is only available on University computers. Check your lab computers for availability.
-- Alternatively, you can use the University's [Citrix Workspace](https://uniconnect.cloud.com/Citrix/StoreWeb/#/login){target="_blank"} to access SPSS. Note that using Citrix is not a common solution for statistical software. Your demonstrators are *not* trained in Citrix, so they will probably need to troubleshoot with you to get it working.
+- Alternatively, you can use the University's [Citrix Workspace](https://uniconnect.cloud.com/Citrix/StoreWeb/#/login){target="_blank" rel="noopener noreferrer"} to access SPSS. Note that using Citrix is not a common solution for statistical software. Your demonstrators are *not* trained in Citrix, so they will probably need to troubleshoot with you to get it working.
 
-While I do not use SPSS myself, we do provide support for it in BEDA. It is somewhat of a mixed bag at present, as it has R integration, is point-and-click, and also has a syntax editor for scripting analyses. If you would prefer not to use Citrix, [PSPP](https://www.gnu.org/software/pspp/){target="_blank"} is an excellent free alternative to SPSS. It has a very similar interface and syntax, and because it is free software, it will not expire or require separate licences for advanced features.
+While I do not use SPSS myself, we do provide support for it in BEDA. It is somewhat of a mixed bag at present, as it has R integration, is point-and-click, and also has a syntax editor for scripting analyses. If you would prefer not to use Citrix, [PSPP](https://www.gnu.org/software/pspp/){target="_blank" rel="noopener noreferrer"} is an excellent free alternative to SPSS. It has a very similar interface and syntax, and because it is free software, it will not expire or require separate licences for advanced features.
 
 ### PRIMER v7
 

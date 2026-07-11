@@ -122,7 +122,7 @@ toc-depth: 5
 
 [**L05a Tue:**]{style="color: #00598dff;"} [Control, fixed and random variables -- adding sense to models (ANCOVA and mixed models)](https://biol2022.github.io/L05a-blocking-fixed-random/) <br>
 [**L05b Wed:**]{style="color: #00598dff;"} [You've got this -- Module 1 revision](https://biol2022.github.io/L05b-revision/) <br>
-[**Practical Week 05:**]{style="color: #006e51ff;"} [Check timeline](#)
+[**Practical Week 05:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -144,7 +144,7 @@ Work on your experiments
 
 [**L06a Tue:**]{style="color: #00598dff;"} [General refresher](https://canvas.sydney.edu.au/courses/67437/modules/items/2829564) <br>
 [**L06b Wed:**]{style="color: #00598dff;"} [Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables](https://canvas.sydney.edu.au/courses/67437/modules/items/2829565) <br>
-[**No practicals**](#)
+**No practicals**
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -166,7 +166,7 @@ Work on your experiments
 
 [**L07a Tue:**]{style="color: #00598dff;"} [Does wind reduce tree growth? Detecting differences versus describing relationships](https://canvas.sydney.edu.au/courses/67437/modules/items/2829568) <br>
 [**L07b Wed:**]{style="color: #00598dff;"} [What are the chances of finding a bandicoot? Dealing with binary response data](https://canvas.sydney.edu.au/courses/67437/modules/items/2829566) <br>
-[**Practical Week 07:**]{style="color: #006e51ff;"} [Check timeline](#)
+[**Practical Week 07:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -187,8 +187,8 @@ Work on your experiments
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
 [**L08a Tue:**]{style="color: #00598dff;"} [Information-theoretic methods vs. null hypothesis testing](https://canvas.sydney.edu.au/courses/67437/modules/items/2829569) <br>
-[**L08b Wed:**]{style="color: #00598dff;"} [Revision: answering your queries](#) <br>
-[**Practical Week 08:**]{style="color: #006e51ff;"} [Check timeline](#)
+[**L08b Wed:**]{style="color: #00598dff;"} Revision: answering your queries <br>
+[**Practical Week 08:**]{style="color: #006e51ff;"} [Check timeline](module02/202-timeline.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -210,7 +210,7 @@ Work on your experiments
 
 [**L09a Tue:**]{style="color: #00598dff;"} [Introduction to multivariate analysis](https://canvas.sydney.edu.au/courses/67437/modules/items/2829678) <br>
 [**L09b Wed:**]{style="color: #00598dff;"} [Principal Component Analysis (PCA) and Factor Analysis (FA)](https://canvas.sydney.edu.au/courses/67437/modules/items/2829679) <br>
-[**Practical Week 09:**]{style="color: #006e51ff;"} [Check timeline](#)
+[**Practical Week 09:**]{style="color: #006e51ff;"} [PCA and Report 2](module03/302-week09.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -232,7 +232,7 @@ Report 1 (25%)
 
 [**L10a Tue:**]{style="color: #00598dff;"} [Clustering](https://canvas.sydney.edu.au/courses/67437/modules/items/2829680) <br>
 [**L10b Wed:**]{style="color: #00598dff;"} [Non-metric multi-dimensional scaling (nMDS) and hypothesis testing](https://canvas.sydney.edu.au/courses/67437/modules/items/2829681) <br>
-[**Practical Week 10:**]{style="color: #006e51ff;"} [Check timeline](#)
+[**Practical Week 10:**]{style="color: #006e51ff;"} [Permutation](module03/303-week10.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -253,8 +253,8 @@ Informal presentations
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
 [**L11a Tue:**]{style="color: #00598dff;"} [Multivariate analysis of variance (MANOVA)](https://canvas.sydney.edu.au/courses/67437/modules/items/2829682) <br>
-[**L11b Wed:**]{style="color: #00598dff;"} [Multivariate Revision 1 (no slides)](#) <br>
-[**Practical Week 11:**]{style="color: #006e51ff;"} [Check timeline](#)
+[**L11b Wed:**]{style="color: #00598dff;"} Multivariate Revision 1 (no slides) <br>
+[**Practical Week 11:**]{style="color: #006e51ff;"} [Report 2 data analysis](module03/304-week11.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -275,8 +275,8 @@ Group dataset submission (5%)
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
 [**L12a Tue:**]{style="color: #00598dff;"} [Rarefaction and Bayesian analysis](https://canvas.sydney.edu.au/courses/67437/modules/items/2829684) <br>
-[**L12b Wed:**]{style="color: #00598dff;"} [Multivariate Revision 2 (no slides)](#) <br>
-[**Practical Week 12:**]{style="color: #006e51ff;"} [Check timeline](#)
+[**L12b Wed:**]{style="color: #00598dff;"} Multivariate Revision 2 (no slides) <br>
+[**Practical Week 12:**]{style="color: #006e51ff;"} [Report 2 support](module03/305-week12.qmd)
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}
@@ -296,8 +296,8 @@ Group dataset submission (5%)
 
 **<i class="bi bi-book-fill"></i> Lectures and Practicals**
 
-[**Revision and Q&amp;A**](#) <br>
-[**Practical Week 13:**]{style="color: #006e51ff;"} [Feedback, Exam and Discussions](#)
+**Revision and Q&amp;A** <br>
+[**Practical Week 13:**]{style="color: #006e51ff;"} Feedback, Exam and Discussions
 :::
 
 ::: {.g-col-12 .g-col-sm-12 .g-col-md-4}

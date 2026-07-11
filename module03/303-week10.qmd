@@ -270,8 +270,8 @@ Let me know if you'd like template Excel sheets or sample Jamovi/PRIMER files to
 
 #### **Example of data sheet for importing data into Jamovi for PCA** 
 
-![](assets/image1.png)
+![Example Jamovi-ready data sheet layout for PCA.](assets/image1.png){fig-alt="Spreadsheet layout showing a Jamovi-ready data sheet for PCA."}
 
 #### **Example of data sheet for importing data into PRIMER**
 
- ![](assets/image2.png)
+ ![Example PRIMER-ready data sheet layout.](assets/image2.png){fig-alt="Spreadsheet layout showing a PRIMER-ready data sheet."}

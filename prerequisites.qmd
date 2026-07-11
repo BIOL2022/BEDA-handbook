@@ -2,13 +2,13 @@
 title: "Am I ready for BEDA?"
 ---
 
-BEDA is designed with the assumption that you have some prior experience with statistics from your first year of study. **Most of you will have completed a unit like [ENVX1002]() or [DATA1001](), which provide a solid foundation in statistics.** However, the only formal prerequisite for BEDA is the completion of at least one first-year science unit (see [Enrolment Rules](https://www.sydney.edu.au/units/BIOL2022) for details). We strongly encourage those of you who have not completed a first-year statistics unit to consider doing so before enrolling in BEDA.
+BEDA is designed with the assumption that you have some prior experience with statistics from your first year of study. **Most of you will have completed a unit like [ENVX1002](https://www.sydney.edu.au/units/ENVX1002) or [DATA1001](https://www.sydney.edu.au/units/DATA1001), which provide a solid foundation in statistics.** However, the only formal prerequisite for BEDA is the completion of at least one first-year science unit (see [Enrolment Rules](https://www.sydney.edu.au/units/BIOL2022) for details). We strongly encourage those of you who have not completed a first-year statistics unit to consider doing so before enrolling in BEDA.
 
 ::: {.callout-important}
 If you still choose to enrol in BEDA without prior statistics experience, please be aware that you will need to invest extra time and effort to catch up. BEDA is not designed to teach statistics from the ground up as this has already been covered in your first-year units!
 :::
 
-### How to gauge your readiness
+## How to gauge your readiness
 
 To help you figure out if you're ready for BEDA, we have put together a few questions on the key ideas you should already be familiar with so that you may self-assess yourself. Before you start this unit, you should be able to answer the following:
 
@@ -25,4 +25,3 @@ The first few weeks of BEDA will briefly cover these concepts but we won't be te
 
 - [Experimental Design and Data Analysis for Biologists](https://sydney.primo.exlibrisgroup.com/permalink/61USYD_INST/12rahnq/alma991032734241605106) by Quinn and Keough
 - [Biometry: the principles and practice of statistics in biological research](https://sydney.primo.exlibrisgroup.com/permalink/61USYD_INST/12rahnq/alma991002054149705106) by Sokal and Rohlf
-

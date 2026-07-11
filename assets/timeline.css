@@ -1,4 +1,11 @@
-/* CSS for Vertical Timeline */
+/* Minimal serif heading treatment for the handbook. */
+.title,
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
 .timeline-container {
   position: relative;
   padding: 2rem 0;
@@ -12,7 +19,7 @@
   left: 15px;
   height: 100%;
   width: 4px;
-  background: #000; /* A light grey color */
+  background: #000;
 }
 
 .timeline-event {
@@ -21,9 +28,7 @@
   margin-left: 40px;
   padding: 1rem;
   border: 1px solid #e9ecef;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border-radius: 0.25rem;
 }
 
 .timeline-event::before {
@@ -44,14 +49,39 @@
 
 .timeline-event h3 {
   margin-top: 0;
-  color: firebrick; /* A blue color */
   position: relative;
 }
 
+.timeline-heading {
+  margin-top: 0;
+}
+
+.timeline-toggle {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: #8b1a1a;
+  cursor: pointer;
+  display: block;
+  font: inherit;
+  padding: 0.25rem 0;
+  text-align: left;
+  width: 100%;
+}
+
+.timeline-toggle:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 4px;
+}
+
 .timeline-content {
-  display: none;
   padding-top: 10px;
 }
+
+.timeline-content[hidden] {
+  display: none;
+}
+
 .timeline-controls {
   margin-bottom: 1rem;
 }

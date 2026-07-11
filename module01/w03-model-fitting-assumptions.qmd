@@ -58,7 +58,7 @@ Since we are fitting a continuous outcome variable (`body_mass_g`) with a contin
 
 
 
-#### Checking assumptions with diagnostic plots
+### Checking assumptions with diagnostic plots
 
 ```{r lm-run}
 #| cache: true
@@ -77,6 +77,7 @@ We can generate a set of standard diagnostic plots in R, Jamovi and most other s
 #| cache: true
 #| echo: false
 #| fig-cap: "Diagnostic plots for the linear model of penguin flipper length predicted by body mass. The plots are produced in R."
+#| fig-alt: "Four diagnostic plots for a linear model of penguin body mass by flipper length."
 
 par(mfrow = c(2, 2))
 plot(lm_fit)
@@ -85,7 +86,7 @@ par(mfrow = c(1, 1))
 ```
 
 ::: {.column-margin}
-#### Interpreting the plots
+### Interpreting the plots
 
 1. **Residuals vs Fitted:** Checks for linearity. Points should be randomly scattered around zero. A curved pattern means the relationship may not be linear. Here, the scatter looks random, so linearity is fine.
 2. **Normal Q-Q:** Checks if residuals are normally distributed. Points should follow the dashed line. Ours do, so normality is met.
@@ -99,9 +100,9 @@ In Jamovi, no specific module is necessary to perform a simple linear regression
 
 ::: {#fig-penguins layout-ncol=2}
 
-![QQ-plot](assets/wt_penguin_qqplot.svg){width=230}
+![QQ-plot](assets/wt_penguin_qqplot.svg){width=230 fig-alt="Q-Q plot for Jamovi residual diagnostics."}
 
-![Residuals vs Fitted](assets/wt_penguin_residuals_fitted.svg){width=300}
+![Residuals vs Fitted](assets/wt_penguin_residuals_fitted.svg){width=300 fig-alt="Residuals versus fitted values plot for Jamovi diagnostics."}
 
 Diagnostic plots for the linear model of penguin flipper length predicted by body mass. The plots are produced in Jamovi.
 :::
@@ -125,7 +126,7 @@ This scenario is often handled with a two-sample t-test, which is a specific app
 ttest_lm_fit <- lm(bill_length_mm ~ sex, data = penguins_clean)
 ```
 
-#### Checking assumptions
+### Checking assumptions
 
 ```{r fig-ttest-plots}
 #| fig-width: 10
@@ -133,6 +134,7 @@ ttest_lm_fit <- lm(bill_length_mm ~ sex, data = penguins_clean)
 #| cache: true
 #| echo: false
 #| fig-cap: "Diagnostic plots for the general linear model with a categorical predictor (sex) and continuous outcome (bill length) to assess the assumptions of a two-sample t-test. The plots are produced in R."
+#| fig-alt: "Four diagnostic plots for a linear model of penguin bill length by sex."
 par(mfrow = c(2, 2))
 plot(ttest_lm_fit)
 par(mfrow = c(1, 1))

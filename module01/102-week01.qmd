@@ -68,7 +68,7 @@ This is a good opportunity to compare different software for the same task. For 
 
 Your feedback helps improve these resources. Once you have tried a cheatsheet, please use the quick feedback form on the cheatsheets page. It only takes a minute. You can also request new cheatsheets, which Januar will create as the unit progresses.
 
-::: {.callout-note collapse="true"}
+::: {.callout-note}
 ## Want to help improve the cheatsheets? (Optional)
 
 If you would like to contribute directly, we welcome your suggestions. You can:
@@ -119,6 +119,7 @@ For now, let us focus on *graphical models* – in other words, plots! Plots are
 ```{r}
 #| label: fig-weight-age
 #| fig-cap: "Weight vs Age of an animal species. Simulated data. Here, age is a categorical variable."
+#| fig-alt: "Boxplot comparing simulated animal weight for young and old age groups."
 #| code-fold: true
 #| warning: false
 
@@ -145,6 +146,7 @@ Interestingly, how we consider your variables can drastically change the type of
 ```{r}
 #| label: fig-weight-age-scatter
 #| fig-cap: "Weight vs Age of an animal species. Simulated data. Here, age is a continuous variable."
+#| fig-alt: "Scatterplot of simulated animal weight by age with an upward fitted trend line."
 #| code-fold: true
 
 V_max <- 70 # Assume the maximum weight is 70 kg
@@ -172,14 +174,14 @@ ggplot(data, aes(x = Age, y = Weight)) +
 Notice how both plots show the same kind of relationship, but the way we interpret them – and the type of model we use – is different. This is what study design and data analysis are all about: the model you choose can totally change your results, so planning ahead is key!
 
 
-### Get ready
+## Get ready
 
 - MS Excel (or similar) to look at the data files
 - Word, Google Docs, or just pen and paper to sketch your models
 - R, Jamovi, SPSS, or any software you fancy for plotting
 - Data: [penguins.csv](https://canvas.sydney.edu.au/files/44247073/download?download_frd=1&verifier=Dlxf3Nix6XHMgS07tA93Z7KpcilKMwDkVQNvuxgR) and [possums.xlsx](https://canvas.sydney.edu.au/files/44806116/download?download_frd=1&verifier=dUZ2oiezFxTiXooBZEiQh1HC3dzmMCm1csLU2gxf) (grab them from Canvas)
 
-### Your task
+## Your task
 
 Your goal is to practise thinking like a research biologist. For this, you will choose a dataset, use that variables to formulate a research question, and sketch a graphical model to help answer your question. **Remember, you do not need to analyse or process any data for this task. Simply knowing the type of variables you are working with (e.g., categorical, continuous) is enough to decide on and sketch an appropriate plot.**
 
@@ -197,7 +199,7 @@ Your goal is to practise thinking like a research biologist. For this, you will 
 
 
 
-::: {.callout-note collapse="true"}
+::: {.callout-note}
 ## Example
 1. Open the **possum data** in Excel. *Let’s think about how the **weight** of a possum changes with **age**.*
 2. What kind of variables are these? Are they continuous, categorical, or something else? With that in mind, sketch the plot(s) you think will help you understand the data. *Weight is continuous and age is categorical, so a boxplot is a good start.*
@@ -208,6 +210,7 @@ A model comparing the weights of juvenile and adult possums could be shown as a 
 
 ```{r}
 #| code-fold: true
+#| fig-alt: "Boxplot comparing possum body weight between juvenile and adult age classes."
 library(readxl)
 possums <- read_excel("assets/possums.xlsx", sheet = 2)
 

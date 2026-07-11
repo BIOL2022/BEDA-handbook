@@ -2,7 +2,7 @@
 title: Cheatsheets
 ---
 
-All cheatsheets are open source and available on the [SOLES GitHub repository](https://github.com/usyd-soles-edu). 
+All cheatsheets are open source and available on the [SOLES GitHub repository](https://github.com/usyd-soles-edu).
 
 ::: {.callout-note}
 Please provide feedback on the cheatsheets here: [**Give Feedback**](https://forms.cloud.microsoft/r/Pr6Ek91xCu)
@@ -10,32 +10,32 @@ Please provide feedback on the cheatsheets here: [**Give Feedback**](https://for
 
 ## RStudio/R
 
-- [importing data into R](https://usyd-soles-edu.github.io/cheatsheet-r-data-import/){target="_blank"} - `data`
-- [boxplots](https://usyd-soles-edu.github.io/cheatsheet-R-boxplot/){target="_blank"} - `vis`
-- [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-r-scatterplot/){target="_blank"} - `vis`
-- [histograms](https://usyd-soles-edu.github.io/cheatsheet-r-histogram/){target="_blank"} - `vis`
-- [Publication-ready(-ish) ANOVA/regression tables in R](https://usyd-soles-edu.github.io/cheatsheet-r-html-tables/){target="_blank"} - `vis`
+- [importing data into R](https://usyd-soles-edu.github.io/cheatsheet-r-data-import/){target="_blank" rel="noopener noreferrer"} - `data`
+- [boxplots](https://usyd-soles-edu.github.io/cheatsheet-R-boxplot/){target="_blank" rel="noopener noreferrer"} - `vis`
+- [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-r-scatterplot/){target="_blank" rel="noopener noreferrer"} - `vis`
+- [histograms](https://usyd-soles-edu.github.io/cheatsheet-r-histogram/){target="_blank" rel="noopener noreferrer"} - `vis`
+- [Publication-ready(-ish) ANOVA/regression tables in R](https://usyd-soles-edu.github.io/cheatsheet-r-html-tables/){target="_blank" rel="noopener noreferrer"} - `vis`
 - modelling a numerical response against:
-  - [the **intercept** only (one-sample or paired t-test)](https://usyd-soles-edu.github.io/cheatsheet-r-ttest/){target="_blank"} - `stats`
-  - [a **categorical** predictor with two groups (two-sample t-test)](https://usyd-soles-edu.github.io/cheatsheet-r-two-sample-ttest/){target="_blank"} - `stats`
-  - [one or more **categorical** predictors (ANOVA)](https://usyd-soles-edu.github.io/cheatsheet-r-anova/){target="_blank"} - `stats`
-  - [one or more **numerical** predictors (linear regression)](https://usyd-soles-edu.github.io/cheatsheet-r-regression/){target="_blank"} - `stats`
+  - [the **intercept** only (one-sample or paired t-test)](https://usyd-soles-edu.github.io/cheatsheet-r-ttest/){target="_blank" rel="noopener noreferrer"} - `stats`
+  - [a **categorical** predictor with two groups (two-sample t-test)](https://usyd-soles-edu.github.io/cheatsheet-r-two-sample-ttest/){target="_blank" rel="noopener noreferrer"} - `stats`
+  - [one or more **categorical** predictors (ANOVA)](https://usyd-soles-edu.github.io/cheatsheet-r-anova/){target="_blank" rel="noopener noreferrer"} - `stats`
+  - [one or more **numerical** predictors (linear regression)](https://usyd-soles-edu.github.io/cheatsheet-r-regression/){target="_blank" rel="noopener noreferrer"} - `stats`
 
 ## Jamovi
 
-- [Using flexplot to create *common* plots in Jamovi](https://usyd-soles-edu.github.io/cheatsheet-jamovi-flexplot/flexplot.html){target="_blank"} - `vis` 
-- [boxplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-boxplot/){target="_blank"} - `vis`
-- [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-scatterplot/){target="_blank"} - `vis`
-- [histograms](https://usyd-soles-edu.github.io/cheatsheet-jamovi-histogram/){target="_blank"} - `vis`
+- [Using flexplot to create *common* plots in Jamovi](https://usyd-soles-edu.github.io/cheatsheet-jamovi-flexplot/flexplot.html){target="_blank" rel="noopener noreferrer"} - `vis`
+- [boxplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-boxplot/){target="_blank" rel="noopener noreferrer"} - `vis`
+- [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-scatterplot/){target="_blank" rel="noopener noreferrer"} - `vis`
+- [histograms](https://usyd-soles-edu.github.io/cheatsheet-jamovi-histogram/){target="_blank" rel="noopener noreferrer"} - `vis`
 - modelling a numerical response against:
-  - [one or more categorical predictors (t-tests & ANOVA)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-anova/){target="_blank"} - `stats`
-  - [one or more numerical predictors (linear regression)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-linearmodels/linearmodel.html){target="_blank"} - `stats`
-- [Principal Component Analysis (PCA)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-pca/){target="_blank"} - `stats`
+  - [one or more categorical predictors (t-tests & ANOVA)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-anova/){target="_blank" rel="noopener noreferrer"} - `stats`
+  - [one or more numerical predictors (linear regression)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-linearmodels/linearmodel.html){target="_blank" rel="noopener noreferrer"} - `stats`
+- [Principal Component Analysis (PCA)](https://usyd-soles-edu.github.io/cheatsheet-jamovi-pca/){target="_blank" rel="noopener noreferrer"} - `stats`
 
 ## General
 
-- <span class="badge rounded-pill bg-danger ms-2">⭐ New</span> [Univariate analysis flowchart (by Gabby Jarvis)](assets/univariate-summary-gabby.pdf){target="_blank"}
-- <span class="badge rounded-pill bg-danger ms-2">⭐ New</span> [Multivariate analysis cheatsheets (6 pages, 7 topics, by Gabby Jarvis)](assets/multivariate-summaries-gabby.pdf){target="_blank"}
+- <span class="badge rounded-pill bg-danger ms-2">⭐ New</span> [Univariate analysis flowchart (by Gabby Jarvis)](assets/univariate-summary-gabby.pdf){target="_blank" rel="noopener noreferrer"}
+- <span class="badge rounded-pill bg-danger ms-2">⭐ New</span> [Multivariate analysis cheatsheets (6 pages, 7 topics, by Gabby Jarvis)](assets/multivariate-summaries-gabby.pdf){target="_blank" rel="noopener noreferrer"}
 - [publication-ready ANOVA tables](https://biol2022.github.io/BIOL2022-unit-manual/assets/cheatsheet_manual_anova_table.pdf) - `vis`
 - [publication-ready regression tables](https://biol2022.github.io/BIOL2022-unit-manual/assets/cheatsheet_manual_lm_table.pdf) - `vis`
 - how to report statistics in text (planned) - `stats`
@@ -43,10 +43,10 @@ Please provide feedback on the cheatsheets here: [**Give Feedback**](https://for
 
 ## SPSS
 
-- [boxplots](https://envx-resources.github.io/cheatsheet-spss-boxplot/){target="_blank"} - `vis`
-- [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-spss-scatterplot/){target="_blank"} - `vis`
-- [using the chart builder](https://usyd-soles-edu.github.io/cheatsheet-spss-chart-builder/){target="_blank"} - `vis`
+- [boxplots](https://envx-resources.github.io/cheatsheet-spss-boxplot/){target="_blank" rel="noopener noreferrer"} - `vis`
+- [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-spss-scatterplot/){target="_blank" rel="noopener noreferrer"} - `vis`
+- [using the chart builder](https://usyd-soles-edu.github.io/cheatsheet-spss-chart-builder/){target="_blank" rel="noopener noreferrer"} - `vis`
 
 ## PRIMER
 
-- [Multivariate Analysis Cheatsheet (nMDS, PERMANOVA, SIMPER, ANOSIM)] 
+- [Multivariate Analysis Cheatsheet (nMDS, PERMANOVA, SIMPER, ANOSIM)]
