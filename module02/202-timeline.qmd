@@ -264,18 +264,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  function handleHashChange() {
+  function revealHashTarget({ moveFocus = false } = {}) {
     const hash = window.location.hash;
-    if (hash) {
-      const anchor = document.querySelector(hash);
-      const targetEvent = anchor ? anchor.closest('.timeline-event') : null;
-      if (targetEvent) {
-        openItem(targetEvent);
+    if (!/^#wk[4-8]$/.test(hash)) return;
+
+    const anchor = document.querySelector(hash);
+    const targetEvent = anchor?.closest('.timeline-event');
+    if (!targetEvent) return;
+
+    openItem(targetEvent);
+    requestAnimationFrame(() => {
+      anchor.scrollIntoView({ block: 'start' });
+      if (moveFocus) {
+        targetEvent.querySelector('.timeline-toggle')?.focus({ preventScroll: true });
       }
-    }
+    });
   }
 
-  window.addEventListener('hashchange', handleHashChange);
-  handleHashChange(); // Check hash on initial load
+  window.addEventListener('hashchange', () => revealHashTarget({ moveFocus: true }));
+  revealHashTarget();
 });
 </script>
