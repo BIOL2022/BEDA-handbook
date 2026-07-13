@@ -85,3 +85,48 @@ h3 {
 .timeline-controls {
   margin-bottom: 1rem;
 }
+
+.week-index ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 1rem 0 2rem;
+  padding: 0;
+}
+
+.week-index a {
+  align-items: center;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+}
+
+.week-index a:hover {
+  text-decoration: underline;
+}
+
+.week-index a:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
+#wk01,
+#wk02,
+#wk03,
+#wk04,
+#wk05,
+#wk06,
+#wk07,
+#wk08,
+#wk09,
+#wk10,
+#wk11,
+#wk12,
+#wk13,
+.timeline-heading {
+  scroll-margin-top: 1rem;
+}
