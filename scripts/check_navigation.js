@@ -89,7 +89,7 @@ function resolveInternal(fromFile, href) {
   if (
     !trimmedHref ||
     trimmedHref.startsWith("//") ||
-    /^(?:https?:|mailto:|tel:|javascript:|data:)/i.test(trimmedHref)
+    /^[a-z][a-z\d+.-]*:/i.test(trimmedHref)
   ) {
     return null;
   }
@@ -133,6 +133,14 @@ function relativeName(file) {
   return path.relative(siteRoot, file).split(path.sep).join("/");
 }
 
+function isWithinSite(file) {
+  const relative = path.relative(siteRoot, file);
+  return (
+    relative === "" ||
+    (!path.isAbsolute(relative) && relative !== ".." && !relative.startsWith(`..${path.sep}`))
+  );
+}
+
 function sidebarHtml(html) {
   const opening = html.match(/<(nav|aside|div)\b[^>]*\bid\s*=\s*["']quarto-sidebar["'][^>]*>/i);
   if (!opening || opening.index === undefined) {
@@ -172,10 +180,18 @@ for (const [file, page] of pages) {
     if (!target) {
       continue;
     }
+    if (!isWithinSite(target.file)) {
+      failures.push(`${relativeName(file)} links outside rendered site "${link.href}"`);
+      continue;
+    }
     const targetPage = pages.get(target.file);
     if (!fs.existsSync(target.file)) {
       failures.push(`${relativeName(file)} links to missing file "${link.href}"`);
-    } else if (target.fragment && (!targetPage || !targetPage.ids.has(target.fragment))) {
+    } else if (
+      target.fragment &&
+      path.extname(target.file).toLowerCase() === ".html" &&
+      (!targetPage || !targetPage.ids.has(target.fragment))
+    ) {
       failures.push(`${relativeName(file)} links to missing fragment "${link.href}"`);
     }
   }
@@ -283,7 +299,7 @@ for (const [childName, parentNames] of contextualRoutes) {
     }
     const hasRoute = parentPage.links.some((link) => {
       const target = resolveInternal(parentFile, link.href);
-      return target && path.basename(target.file) === path.basename(childFile);
+      return target && target.file === childFile;
     });
     if (!hasRoute) {
       failures.push(`${parentName} is missing a contextual link to ${childName}`);
