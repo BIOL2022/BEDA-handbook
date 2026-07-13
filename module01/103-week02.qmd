@@ -2,6 +2,14 @@
 title: "**Week 2**: Study design"
 ---
 
+[Return to Schedule and weekly content](../schedule.qmd)
+
+## What you need this week
+
+- [Workshop 2: Tidy data](w02-tidy-data.qmd)
+- [Intertidal site images](105-images.qmd)
+- [Species identification guide](106-species-id.qmd)
+
 ## Introduction
 
 Today we will be focusing on data collection and how to prepare your data for analysis.
@@ -26,7 +34,7 @@ By the end of this practical, you should be able to:
 2. **Data in the form of a tidy spreadsheet** -- your collected data will need to be submitted to Google Drive. This submission is not a formal assessment (it is not graded), but it is essential for the next practical, so please make sure you submit it.
 
 ## Workshop
-The Week 2 workshop will go through **Tidy data principles**. Tidy data is a way of structuring your data so that it is easy to work with and analyse. It is a key principle in data analysis and will help you avoid common pitfalls when working with data. [Go to workshop 02](w02-tidy-data.qmd).
+The Week 2 workshop linked above will go through **Tidy data principles**. Tidy data is a way of structuring your data so that it is easy to work with and analyse. It is a key principle in data analysis and will help you avoid common pitfalls when working with data.
 
 
 ## Exercise 1 -- Modelling from observations
@@ -51,7 +59,7 @@ Do not proceed to Exercise 2 until you have completed this exercise, and a Demon
 You are provided with random, representative, replicate photographs of a common marine habitat that spans > 8,000 km of the Great Southern Reef, i.e. the coastline along the bottom half of Australia -- intertidal rocky shores (Fig 1). 
 
 ::: {.content-visible when-format="html"}
-Access the images, including background information, [here](/module01/105-images.qmd){target="_blank" rel="noopener noreferrer"} (note: link will open in a new window/tab).
+Use the intertidal site images linked in **What you need this week**, which include background information.
 :::
 
 ::: {.content-visible when-format="pdf"}

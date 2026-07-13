@@ -5,6 +5,13 @@ number-sections: true
 number-depth: 2
 ---
 
+[Return to Schedule and weekly content](../schedule.qmd)
+
+## What you need this week
+
+- [Introduction to Module 1](101-intro.qmd)
+- [Workshop 1: Software](w01-intro.qmd)
+
 ## Introduction
 
 Welcome to your very first BEDA practical.
@@ -42,7 +49,7 @@ We will explain to you how BEDA practicals work, what you will be doing, and how
 
 Each practical in Module 1 begins with a quick **workshop**. We will cover a key idea, then you will get stuck into some quick hands-on exercises in the lab. These are your chance to practise what you have heard in lectures and try out study design and data analysis for yourself.
 
-[Today’s workshop](w01-intro.qmd)  covers:
+The Workshop 1 resource linked above covers:
 
 1. An informal survey to assess statistical literacy
 2. A quick introduction to R, SPSS, and Jamovi

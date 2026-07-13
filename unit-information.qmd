@@ -4,6 +4,8 @@ title: "Unit information"
 
 This is a quick overview of the unit covering how it is structured, how we commumnicate and what is expected of you.
 
+If you would like to check or refresh the assumed background knowledge, see [Am I ready for BEDA?](prerequisites.qmd).
+
 ## Modules
 BEDA is divided into **three modules**, each taught by a different lecturer. The modules vary in length on purpose. 
 

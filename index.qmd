@@ -45,4 +45,4 @@ See [Assessments](assessments/assessments.qmd) for complete details.
 
 ## Weekly schedule {.unlisted}
 
-The detailed week-by-week schedule is maintained on the [Schedule](schedule.qmd) page. Use it to find lecture materials, practical pages, assessment timing, and week-specific resources.
+The detailed week-by-week schedule is maintained on the [Schedule and weekly content](schedule.qmd) page. Use it to find lecture materials, practical pages, assessment timing, and week-specific resources.

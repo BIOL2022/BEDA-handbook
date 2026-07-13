@@ -3,6 +3,8 @@ title: "**Week 10**: Permutational techniques"
 number-sections: false
 ---
 
+[Return to Schedule and weekly content](../schedule.qmd)
+
 :::{.callout-tip appearance="simple"}
 ## Objectives
 The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will;

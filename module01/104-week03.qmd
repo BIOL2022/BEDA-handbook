@@ -6,6 +6,13 @@ resources:
   - assets/pigs.xlsx
   - assets/cane.xlsx
 ---
+
+[Return to Schedule and weekly content](../schedule.qmd)
+
+## What you need this week
+
+- [Workshop 3: Model fitting and assumptions](w03-model-fitting-assumptions.qmd)
+
 ## Introduction
 
 In today's practical, we will focus on data analysis. You will work with your group to analyse the data you collected in the previous lab. Cheatsheets are available for you to use, and your demonstrators are ready to help. 
@@ -40,7 +47,7 @@ By the end of this practical, you should be able to:
 
 ## Workshop
 
-[Today's workshop](w03-model-fitting-assumptions.qmd) is a hands-on preview of running models in both R and Jamovi.
+The Workshop 3 resource linked above is a hands-on preview of running models in both R and Jamovi.
 
 ## Lab activity
 

@@ -3,6 +3,12 @@ title: "**Week 9**: PCA and Report 2"
 number-depth: 3
 ---
 
+[Return to Schedule and weekly content](../schedule.qmd)
+
+## What you need this week
+
+- [Introduction to Module 3](301-intro.qmd)
+
 ## Objectives {-}
 
 :::{.callout-tip appearance="simple"}

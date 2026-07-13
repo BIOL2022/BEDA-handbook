@@ -4,6 +4,7 @@ format:
   typst:
     toc: false
     number-sections: false
+format-links: false
 ---
 
 ## Weeks 2--3 (before Module 2){#wk2}
@@ -136,4 +137,3 @@ There are two Canvas assignments for this assessment:
 **Report 1 Group Data:** one person from your group needs to submit the group’s data for this Canvas assignment
 
 **Report 1: individual practical written report:** each person in your group needs to submit their own report for this Canvas assignment.
-
