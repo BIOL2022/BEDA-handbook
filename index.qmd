@@ -4,45 +4,16 @@ date: last-modified # today | last-modified
 date-format: "[Semester 2, ]YYYY" # see https://momentjs.com/docs/#/displaying/format/
 ---
 
-## Introduction {.unlisted}
+## Statistics is a practical skill {.unlisted}
 
-Welcome to [BIOL2022 Biology Experimental Design and Analysis](https://canvas.sydney.edu.au/courses/67437), known as BEDA. This unit is about designing biological studies, analysing data, and evaluating evidence.
+Statistics helps biologists turn observations into evidence. It allows us to design better studies, find meaningful patterns, and recognise when the data do not support our conclusions.
 
-The handbook contains the unit information, practical materials, assessment guidance, and weekly resources used throughout the semester. Canvas remains the official location for announcements and submission links.
+That may sound technical, but the underlying process is straightforward: begin with a biological question, think carefully about how the data were collected, and choose an analysis that matches both.
 
-::: {.callout-note}
-A basic understanding of introductory statistics is assumed. If you need a refresher, see [Am I ready for BEDA?](prerequisites.qmd).
-:::
+BEDA is designed to teach that process gradually. The goal is not to memorise every test or formula. It is to become more confident in reasoning with data—and to know where to look when you need help.
 
-## Using this handbook {.unlisted}
+If the ideas feel rusty, start with [Am I ready for BEDA?](prerequisites.qmd).
 
-Use this handbook alongside Canvas. In the HTML version, use the sidebar to move between practicals, assessments, and supporting resources. In the PDF version, use the table of contents and internal links.
+## Begin with {.unlisted}
 
-For general expectations and course structure, see [Unit Information](unit-information.qmd). For assessment instructions, marking guidance, and submission details, see [Assessments](assessments/assessments.qmd).
-
-## Unit structure {.unlisted}
-
-BEDA is organised into three modules.
-
-| Module | Weeks | Focus |
-|---|---:|---|
-| Fundamentals | 1-5 | Design, data, linear models, and assumptions |
-| Univariate experiments | 6-8 | Models for experiments with one response variable |
-| Multivariate experiments | 9-13 | Multivariate biological data analysis |
-
-## Assessment overview {.unlisted}
-
-The assessment pages provide the full instructions and marking criteria. The table below is only a summary of the major assessment tasks.
-
-| Assessment | Module | Weight |
-|---|---:|---:|
-| Early Feedback Task | Module 1 | 5% |
-| Evaluation Quiz | Module 1 | 10% |
-| Report 1 | Module 2 | 25% |
-| Report 2 | Module 3 | 20% |
-
-See [Assessments](assessments/assessments.qmd) for complete details.
-
-## Weekly schedule {.unlisted}
-
-The detailed week-by-week schedule is maintained on the [Schedule and weekly content](schedule.qmd) page. Use it to find lecture materials, practical pages, assessment timing, and week-specific resources.
+[Schedule and weekly content](schedule.qmd) · [Unit information](unit-information.qmd) · [Assessments](assessments/assessments.qmd)
