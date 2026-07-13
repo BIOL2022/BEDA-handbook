@@ -3,10 +3,10 @@
 const fs = require("node:fs");
 const path = require("node:path");
 
-const siteArgument = process.argv[2];
-const siteRoot = path.resolve(siteArgument || "_site");
+const siteArgument = process.argv[2] || "_site";
+const siteRoot = path.resolve(siteArgument);
 
-if (!siteArgument || !fs.existsSync(siteRoot) || !fs.statSync(siteRoot).isDirectory()) {
+if (!fs.existsSync(siteRoot) || !fs.statSync(siteRoot).isDirectory()) {
   console.error("Missing rendered site");
   process.exit(1);
 }
