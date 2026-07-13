@@ -7,7 +7,7 @@ const siteArgument = process.argv[2] || "_site";
 const siteRoot = path.resolve(siteArgument);
 
 if (!fs.existsSync(siteRoot) || !fs.statSync(siteRoot).isDirectory()) {
-  console.error("Missing rendered site");
+  console.error(`Missing rendered site: ${siteRoot}`);
   process.exit(1);
 }
 
