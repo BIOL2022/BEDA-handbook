@@ -4,7 +4,7 @@ date: last-modified # today | last-modified
 date-format: "[Semester 2, ]YYYY" # see https://momentjs.com/docs/#/displaying/format/
 ---
 
-Welcome to the BEDA handbook. This book contains lecture, tutorial and practical content for BIOL2022. We have moved the content to GitHub so that you can access most of it under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
+Welcome to the BEDA handbook. This book contains (most) lectures, tutorials and practical content for BIOL2022. We have moved the content to GitHub so that you can access most of it under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 
 ::: {.column-margin}
 We permit the use of AI for reading, searching, and analysing material on this platform. Users must credit The BIOL2022 teaching team, link to the license, and indicate any modifications if the content is shared. **You must not use this content for AI training or model development.**
