@@ -2,7 +2,7 @@
 title: "**Week 11**: Multivariate methods in biology (continued)"
 ---
 
-[Return to Schedule and weekly content](../schedule.qmd)
+[Return to weekly content](../index.qmd#weekly-content)
 
 :::{.callout-tip appearance="simple"}
 ## Objectives 

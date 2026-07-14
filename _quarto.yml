@@ -3,6 +3,7 @@ project:
   render:
     - "**/*.qmd"
     - "!_book/**"
+    - "!schedule.qmd"
 
 website:
   title: "BIOL2022"
@@ -20,9 +21,6 @@ website:
       - icon: chat-dots-fill
         text: Ed
         href: https://edstem.org/au/courses/36475/
-      - icon: calendar-week
-        text: Schedule and weekly content
-        href: schedule.qmd
       - icon: clipboard-check
         text: Assessments
         href: assessments/assessments.qmd

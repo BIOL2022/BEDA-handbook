@@ -2,6 +2,7 @@
 title: "Schedule and weekly content"
 toc: false
 ---
+<!-- Archived source: the canonical student-facing weekly index is index.qmd#weekly-content. -->
 
 Use this page to find each week's main activity, lectures, and important assessment information.
 

@@ -3,7 +3,7 @@ title: "**Week 10**: Permutational techniques"
 number-sections: false
 ---
 
-[Return to Schedule and weekly content](../schedule.qmd)
+[Return to weekly content](../index.qmd#weekly-content)
 
 :::{.callout-tip appearance="simple"}
 ## Objectives

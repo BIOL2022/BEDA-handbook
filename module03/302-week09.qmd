@@ -3,7 +3,7 @@ title: "**Week 9**: PCA and Report 2"
 number-depth: 3
 ---
 
-[Return to Schedule and weekly content](../schedule.qmd)
+[Return to weekly content](../index.qmd#weekly-content)
 
 ## What you need this week
 

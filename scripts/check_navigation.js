@@ -231,6 +231,9 @@ if (!sidebar) {
   failures.push("rendered site is missing #quarto-sidebar");
 } else {
   const sidebarLinks = extract(sidebar).links;
+  if (sidebarLinks.some((link) => link.text === "Schedule and weekly content")) {
+    failures.push('#quarto-sidebar must not include "Schedule and weekly content"');
+  }
   for (const label of sidebarLabels) {
     if (!sidebarLinks.some((link) => link.text === label)) {
       failures.push(`#quarto-sidebar is missing visible label "${label}"`);
@@ -386,6 +389,10 @@ if (!indexPage) {
       }
     }
   }
+}
+
+if (pages.has(path.join(siteRoot, "schedule.html"))) {
+  failures.push("rendered site must not contain schedule.html");
 }
 
 const contextualRoutes = new Map([
