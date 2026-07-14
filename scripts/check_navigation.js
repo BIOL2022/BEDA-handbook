@@ -274,6 +274,9 @@ if (!indexPage) {
   if (!indexPage.ids.has("weekly-content")) {
     failures.push('index.html is missing id "weekly-content"');
   }
+  if (!indexPage.ids.has("tbl-weekly-content")) {
+    failures.push('index.html is missing id "tbl-weekly-content"');
+  }
 
   const weeklySection = indexPage.html.match(
     /<section\b[^>]*\bid=["']weekly-content["'][^>]*>[\s\S]*?<\/section>/i,
@@ -283,11 +286,17 @@ if (!indexPage) {
   if (!weeklyTable) {
     failures.push("index.html#weekly-content is missing its weekly table");
   } else {
+    const captionText = normaliseText(
+      weeklySection.match(/<figcaption\b[^>]*>([\s\S]*?)<\/figcaption>/i)?.[1] ?? "",
+    ).replace(/^Table\s+\d+:\s*/i, "");
     const rows = tableRows(weeklyTable);
     const header = rows.find((row) => row.cells.every((cell) => cell.tag === "th"));
     const bodyRows = rows.filter((row) => row.cells.some((cell) => cell.tag === "td"));
     const headers = header?.cells.map((cell) => cell.text) ?? [];
 
+    if (captionText !== "BEDA weekly content") {
+      failures.push(`homepage weekly table has unexpected caption: "${captionText}"`);
+    }
     if (JSON.stringify(headers) !== JSON.stringify(["Week", "Lectures", "Practical", "Extras"])) {
       failures.push(`homepage weekly table has unexpected headers: ${headers.join(", ")}`);
     }
@@ -309,15 +318,34 @@ if (!indexPage) {
       ["module03/304-week11.html", null],
       ["module03/305-week12.html", null],
     ];
+    const expectedDates = [
+      "3–7 August",
+      "10–14 August",
+      "17–21 August",
+      "24–28 August",
+      "31 August–4 September",
+      "7–11 September",
+      "14–18 September",
+      "21–25 September",
+      "5–9 October",
+      "12–16 October",
+      "19–23 October",
+      "26–30 October",
+      "2–6 November",
+    ];
 
     for (let index = 0; index < bodyRows.length; index += 1) {
       const row = bodyRows[index];
       const week = index + 1;
+      const weekText = row.cells[0]?.text ?? "";
       if (row.cells.length !== 4) {
         failures.push(`homepage weekly table row ${week} needs 4 cells, found ${row.cells.length}`);
       }
-      if (!new RegExp(`^${week}\\b`).test(row.cells[0]?.text ?? "")) {
+      if (!new RegExp(`^${week}\\b`).test(weekText)) {
         failures.push(`homepage weekly table row ${week} is out of order`);
+      }
+      if (expectedDates[index] && !weekText.includes(expectedDates[index])) {
+        failures.push(`homepage Week ${week} is missing date "${expectedDates[index]}"`);
       }
     }
 
