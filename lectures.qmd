@@ -4,4 +4,4 @@ title: Lectures
 
 Lecture information is listed in [Weekly content](index.qmd#weekly-content).
 
-Use the schedule for week-by-week lecture titles, practical links, and assessment timing.
+Use the Weekly content index for week-by-week lecture titles, practical links, and assessment timing.
