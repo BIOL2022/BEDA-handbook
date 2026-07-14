@@ -1,19 +1,37 @@
 ---
-title: "Welcome to the BEDA Handbook"
+title: "BEDA Handbook"
 date: last-modified # today | last-modified
 date-format: "[Semester 2, ]YYYY" # see https://momentjs.com/docs/#/displaying/format/
 ---
 
-## Statistics is a practical skill {.unlisted}
+Welcome to the BEDA handbook. This book contains lecture, tutorial and practical content for BIOL2022. We have moved the content to GitHub so that you can access most of it under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 
-Statistics helps biologists turn observations into evidence. It allows us to design better studies, find meaningful patterns, and recognise when the data do not support our conclusions.
+::: {.column-margin}
+We permit the use of AI for reading, searching, and analysing material on this platform. Users must credit The BIOL2022 teaching team, link to the license, and indicate any modifications if the content is shared. **You must not use this content for AI training or model development.**
+:::
 
-That may sound technical, but the underlying process is straightforward: begin with a biological question, think carefully about how the data were collected, and choose an analysis that matches both.
+Additional materials are available on [Canvas](https://canvas.sydney.edu.au/courses/74353), which are not covered by the open license. Please do not share Canvas materials outside of the course.
 
-BEDA is designed to teach that process gradually. The goal is not to memorise every test or formula. It is to become more confident in reasoning with data—and to know where to look when you need help.
+## Weekly content {#weekly-content}
 
-If the ideas feel rusty, start with [Am I ready for BEDA?](prerequisites.qmd).
+::: {tbl-colwidths="[12,43,22,23]"}
 
-## Begin with {.unlisted}
+| Week | Lectures | Practical | Extras |
+|---|---|---|---|
+| 1<br>3–7 Aug | [Guest lecture](https://canvas.sydney.edu.au/courses/74353/modules/items/3135740)<br>[The nature of data and numbers in biology experiments](https://canvas.sydney.edu.au/courses/74353/modules/items/3135741)<br>[Welcome to BEDA](https://biol2022.github.io/L00-Welcome-to-BEDA) [(slides PDF)](https://biol2022.github.io/L00-Welcome-to-BEDA/L00-welcome.pdf)<br>[(Re-) introduction to experimental design and analysis](https://biol2022.github.io/L01-intro-exp-design-analysis) [(slides PDF)](https://biol2022.github.io/L01-intro-exp-design-analysis/L01c-Introduction.pdf) | [Getting started](module01/102-week01.qmd) | [Am I ready for BEDA?](prerequisites.qmd)<br>[Quiz 1 (0%) — opens Friday](https://canvas.sydney.edu.au/courses/74353/assignments/696323) |
+| 2<br>10–14 Aug | [What is a representative sample?](https://biol2022.github.io/L02a-represenative-sampling/) [(slides PDF)](https://biol2022.github.io/L02a-represenative-sampling/L02a-representative-sampling.pdf)<br>[Modelling fundamentals — a linear model with a single, continuous $X$](https://biol2022.github.io/L02b-linear-model/) [(slides PDF)](https://biol2022.github.io/L02b-linear-model/L02b-linear-model.pdf)<br>[(Almost) every statistical technique is a linear model](https://biol2022.github.io/L02c-all-linear-model/) [(slides PDF)](https://biol2022.github.io/L02c-all-linear-model/L02c-general-linear-model.pdf) | [Study design](module01/103-week02.qmd) | [Common statistical tests are linear models](https://lindeloev.github.io/tests-as-linear/)<br>[Quiz 2 (0%) — opens Friday](https://canvas.sydney.edu.au/courses/74353/assignments/696324) |
+| 3<br>17–21 Aug | [Is my model appropriate? (testing assumptions)](https://biol2022.github.io/L03a-model-appropriate/) [(slides PDF)](https://biol2022.github.io/L03a-model-appropriate/L03a-glm-assumptions.pdf)<br>[Modelling differences between two things: a linear model with a single, categorical (and binary) $X$](https://biol2022.github.io/L03b-ttests/) [(slides PDF)](https://biol2022.github.io/L03b-ttests/L03b-ttests.pdf) | [Data analysis](module01/104-week03.qmd) | [Quiz 3 (0%) — opens Friday](https://canvas.sydney.edu.au/courses/74353/assignments/696325)<br>[Early Feedback Task (5%) — opens Friday at 10 am](https://canvas.sydney.edu.au/courses/74353/assignments/696326) |
+| 4<br>24–28 Aug | [Modelling multiple relationships: a linear model with multiple, continuous $X$ variables](https://biol2022.github.io/L04a-mlr/) [(slides PDF)](https://biol2022.github.io/L04a-mlr/L04a-mlr.pdf)<br>[Modelling multiple differences: a linear model with two or more categorical $X$ variables](https://biol2022.github.io/L04b-anova/) [(slides PDF)](https://biol2022.github.io/L04b-anova/L04b-anova.pdf)<br>[Model transformations — why, and how?](https://biol2022.github.io/L04c-model-transformations/) [(slides PDF)](https://biol2022.github.io/L04c-model-transformations/L04c-model-transformations.pdf) | [Project launch and pilot study timeline](module02/202-timeline.qmd#wk4) | [Evaluation Quiz (10%)](https://canvas.sydney.edu.au/courses/74353/assignments/696327) |
+| 5<br>31 Aug–4 Sep | [Control, fixed and random variables — adding sense to models (ANCOVA and mixed models)](https://biol2022.github.io/L05a-blocking-fixed-random/)<br>[You've got this — Module 1 revision](https://biol2022.github.io/L05b-revision/) | [Main experiment timeline](module02/202-timeline.qmd#wk5) | Work on your experiments; check the [assessment overview](assessments/assessments.qmd) for requirements. |
+| 6<br>7–11 Sep | [General refresher](https://canvas.sydney.edu.au/courses/74353/modules/items/3135742)<br>[Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables](https://canvas.sydney.edu.au/courses/74353/modules/items/3135743) | **No practical this week**<br>[Project and revision timeline](module02/202-timeline.qmd#wk6) | Project and revision week |
+| 7<br>14–18 Sep | [Does wind reduce tree growth? Detecting differences versus describing relationships](https://canvas.sydney.edu.au/courses/74353/modules/items/3135744)<br>[What are the chances of finding a bandicoot? Dealing with binary response data](https://canvas.sydney.edu.au/courses/74353/modules/items/3135745) | [Project data analysis timeline](module02/202-timeline.qmd#wk7) | — |
+| 8<br>21–25 Sep | [Information-theoretic methods vs. null hypothesis testing](https://canvas.sydney.edu.au/courses/74353/modules/items/3135746)<br>Revision: answering your queries (no slides) | [Project report and feedback timeline](module02/202-timeline.qmd#wk8) | — |
+| 9<br>5–9 Oct | [Introduction to multivariate analysis](https://canvas.sydney.edu.au/courses/74353/modules/items/3135750)<br>[Principal Component Analysis (PCA) and Factor Analysis (FA)](https://canvas.sydney.edu.au/courses/74353/modules/items/3135751) | [PCA and Report 2](module03/302-week09.qmd) | Mid-semester break: 28 Sep–2 Oct<br>Labour Day: 5 Oct<br>Report 1 (25%): check the [assessment overview](assessments/assessments.qmd) for requirements and due information. |
+| 10<br>12–16 Oct | [Clustering](https://canvas.sydney.edu.au/courses/74353/modules/items/3135752)<br>[Non-metric multi-dimensional scaling (nMDS) and hypothesis testing](https://canvas.sydney.edu.au/courses/74353/modules/items/3135753) | [Permutational techniques](module03/303-week10.qmd) | Informal presentations; check the [assessment overview](assessments/assessments.qmd) for requirements. |
+| 11<br>19–23 Oct | [Multivariate analysis of variance (MANOVA)](https://canvas.sydney.edu.au/courses/74353/modules/items/3135754)<br>[Multivariate Revision 1](https://canvas.sydney.edu.au/courses/74353/modules/items/3135755) | [Report 2 data analysis](module03/304-week11.qmd) | Group dataset submission (5%): check the [assessment overview](assessments/assessments.qmd) for requirements and due information. |
+| 12<br>26–30 Oct | [Rarefaction and Bayesian analysis](https://canvas.sydney.edu.au/courses/74353/modules/items/3135756)<br>[Multivariate Revision 2](https://canvas.sydney.edu.au/courses/74353/modules/items/3135757) | [Report 2 support](module03/305-week12.qmd) | — |
+| 13<br>2–6 Nov | Exam revision and questions | Feedback and discussion practical | [Report 2 reminder and requirements](assessments/assessment-report-2.qmd) |
 
-[Schedule and weekly content](schedule.qmd) · [Unit information](unit-information.qmd) · [Assessments](assessments/assessments.qmd)
+: BEDA weekly content {#tbl-weekly-content}
+
+:::

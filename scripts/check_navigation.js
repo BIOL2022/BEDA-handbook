@@ -154,6 +154,25 @@ function sidebarHtml(html) {
     : html.slice(opening.index, closingIndex + closingTag.length);
 }
 
+function firstTable(html) {
+  return html.match(/<table\b[^>]*>[\s\S]*?<\/table>/i)?.[0] ?? null;
+}
+
+function tableRows(table) {
+  return Array.from(table.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi), (rowMatch) => {
+    const html = rowMatch[1];
+    const cells = Array.from(
+      html.matchAll(/<(th|td)\b[^>]*>([\s\S]*?)<\/\1>/gi),
+      (cellMatch) => ({
+        tag: cellMatch[1].toLowerCase(),
+        html: cellMatch[2],
+        text: normaliseText(cellMatch[2]),
+      }),
+    );
+    return { html, cells };
+  });
+}
+
 const failures = [];
 const htmlFiles = collectHtmlFiles(siteRoot);
 const pages = new Map();
@@ -200,7 +219,6 @@ for (const [file, page] of pages) {
 const sidebarLabels = [
   "Canvas",
   "Ed",
-  "Schedule and weekly content",
   "Assessments",
   "Unit information",
   "Contact",
@@ -245,24 +263,99 @@ function requireIds(relativeFile, requiredIds) {
   }
 }
 
-requireIds("schedule.html", [
-  "week-index",
-  ...Array.from({ length: 13 }, (_, index) => `wk${String(index + 1).padStart(2, "0")}`),
-]);
 requireIds("module02/202-timeline.html", ["wk4", "wk5", "wk6", "wk7", "wk8"]);
 
-const schedulePage = pages.get(path.join(siteRoot, "schedule.html"));
-if (schedulePage) {
-  const hasJumpLabel = Array.from(schedulePage.html.matchAll(/<[^>]+\baria-label\s*=\s*(?:"([^"]*)"|'([^']*)')[^>]*>/gi)).some(
-    (match) => normaliseText(match[1] ?? match[2] ?? "").toLowerCase() === "jump to week",
-  );
-  if (!hasJumpLabel) {
-    failures.push('schedule.html is missing aria-label "Jump to week"');
+const indexFile = path.join(siteRoot, "index.html");
+const indexPage = pages.get(indexFile);
+
+if (!indexPage) {
+  failures.push("missing rendered homepage index.html");
+} else {
+  if (!indexPage.ids.has("weekly-content")) {
+    failures.push('index.html is missing id "weekly-content"');
   }
 
-  for (const link of schedulePage.links) {
-    if (/^(?:here|pdf|check timeline)$/i.test(link.text)) {
-      failures.push(`schedule.html uses generic anchor text "${link.text}" for "${link.href}"`);
+  const weeklySection = indexPage.html.match(
+    /<section\b[^>]*\bid=["']weekly-content["'][^>]*>[\s\S]*?<\/section>/i,
+  )?.[0];
+  const weeklyTable = weeklySection ? firstTable(weeklySection) : null;
+
+  if (!weeklyTable) {
+    failures.push("index.html#weekly-content is missing its weekly table");
+  } else {
+    const rows = tableRows(weeklyTable);
+    const header = rows.find((row) => row.cells.every((cell) => cell.tag === "th"));
+    const bodyRows = rows.filter((row) => row.cells.some((cell) => cell.tag === "td"));
+    const headers = header?.cells.map((cell) => cell.text) ?? [];
+
+    if (JSON.stringify(headers) !== JSON.stringify(["Week", "Lectures", "Practical", "Extras"])) {
+      failures.push(`homepage weekly table has unexpected headers: ${headers.join(", ")}`);
+    }
+    if (bodyRows.length !== 13) {
+      failures.push(`homepage weekly table needs 13 rows, found ${bodyRows.length}`);
+    }
+
+    const expectedPracticals = [
+      ["module01/102-week01.html", null],
+      ["module01/103-week02.html", null],
+      ["module01/104-week03.html", null],
+      ["module02/202-timeline.html", "wk4"],
+      ["module02/202-timeline.html", "wk5"],
+      ["module02/202-timeline.html", "wk6"],
+      ["module02/202-timeline.html", "wk7"],
+      ["module02/202-timeline.html", "wk8"],
+      ["module03/302-week09.html", null],
+      ["module03/303-week10.html", null],
+      ["module03/304-week11.html", null],
+      ["module03/305-week12.html", null],
+    ];
+
+    for (let index = 0; index < bodyRows.length; index += 1) {
+      const row = bodyRows[index];
+      const week = index + 1;
+      if (row.cells.length !== 4) {
+        failures.push(`homepage weekly table row ${week} needs 4 cells, found ${row.cells.length}`);
+      }
+      if (!new RegExp(`^${week}\\b`).test(row.cells[0]?.text ?? "")) {
+        failures.push(`homepage weekly table row ${week} is out of order`);
+      }
+    }
+
+    for (let index = 0; index < expectedPracticals.length; index += 1) {
+      const row = bodyRows[index];
+      if (!row || !row.cells[2]) continue;
+      const [expectedFile, expectedFragment] = expectedPracticals[index];
+      const practicalLinks = extract(row.cells[2].html).links;
+      const found = practicalLinks.some((link) => {
+        const target = resolveInternal(indexFile, link.href);
+        return target &&
+          relativeName(target.file) === expectedFile &&
+          (target.fragment ?? null) === expectedFragment;
+      });
+      if (!found) {
+        failures.push(`homepage Week ${index + 1} is missing practical destination ${expectedFile}`);
+      }
+    }
+
+    const week6 = bodyRows[5];
+    if (week6 && !/no practical this week/i.test(week6.cells[2]?.text ?? "")) {
+      failures.push('homepage Week 6 must state "No practical this week"');
+    }
+
+    const week13 = bodyRows[12];
+    if (week13) {
+      if (!/exam revision and questions/i.test(week13.cells[1]?.text ?? "")) {
+        failures.push("homepage Week 13 is missing exam revision and questions");
+      }
+      if (!/feedback and discussion practical/i.test(week13.cells[2]?.text ?? "")) {
+        failures.push("homepage Week 13 is missing the feedback and discussion practical");
+      }
+      if (extract(week13.cells[2]?.html ?? "").links.length > 0) {
+        failures.push("homepage Week 13 practical must remain plain text");
+      }
+      if (!/report 2/i.test(week13.cells[3]?.text ?? "")) {
+        failures.push("homepage Week 13 Extras must include the Report 2 reminder");
+      }
     }
   }
 }
