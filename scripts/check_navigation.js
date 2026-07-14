@@ -284,8 +284,24 @@ if (!indexPage) {
   const weeklySection = indexPage.html.match(
     /<section\b[^>]*\bid=["']weekly-content["'][^>]*>[\s\S]*?<\/section>/i,
   )?.[0];
+  const responsiveWrapper = weeklySection
+    ? Array.from(weeklySection.matchAll(/<div\b([^>]*)>/gi)).find((match) => {
+        const classes = normaliseText(attributeValue(match[1], "class") ?? "").split(" ");
+        return (
+          classes.includes("table-responsive") &&
+          normaliseText(attributeValue(match[1], "tabindex") ?? "") === "0" &&
+          normaliseText(attributeValue(match[1], "role") ?? "") === "region" &&
+          normaliseText(attributeValue(match[1], "aria-label") ?? "") === "Weekly content table"
+        );
+      })
+    : null;
   const weeklyTable = weeklySection ? firstTable(weeklySection) : null;
 
+  if (!responsiveWrapper) {
+    failures.push(
+      'index.html#weekly-content is missing its accessible "table-responsive" wrapper',
+    );
+  }
   if (!weeklyTable) {
     failures.push("index.html#weekly-content is missing its weekly table");
   } else {
