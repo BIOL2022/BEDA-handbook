@@ -8,19 +8,11 @@ project:
 website:
   title: "BIOL2022"
   search: true
-  sidebar:
-    title: "BIOL2022"
-    style: floating
-    contents:
+  navbar:
+    left:
       - icon: house-fill
         text: Home
         href: index.qmd
-      - icon: mortarboard-fill
-        text: Canvas
-        href: https://canvas.sydney.edu.au/courses/74353/
-      - icon: chat-dots-fill
-        text: Ed
-        href: https://edstem.org/au/courses/36475/
       - icon: clipboard-check
         text: Assessments
         href: assessments/assessments.qmd
@@ -33,14 +25,19 @@ website:
       - icon: file-earmark-text
         text: Cheatsheets
         href: cheatsheets.qmd
+    right:
+      - icon: mortarboard-fill
+        text: Canvas
+        href: https://canvas.sydney.edu.au/courses/74353/
+      - icon: chat-dots-fill
+        text: Ed
+        href: https://edstem.org/au/courses/36475/
 
 
 format:
   html:
     theme: simplex
     fontsize: 15px
-    grid:
-      sidebar-width: 300px
     css: assets/timeline.css
     toc: true
 
