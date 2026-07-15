@@ -130,3 +130,55 @@ h3 {
 .timeline-heading {
   scroll-margin-top: 1rem;
 }
+
+#tbl-weekly-content table {
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+#tbl-weekly-content th,
+#tbl-weekly-content td {
+  vertical-align: top;
+}
+
+#tbl-weekly-content th:first-child,
+#tbl-weekly-content td:first-child,
+#tbl-weekly-content th:nth-child(3),
+#tbl-weekly-content td:nth-child(3) {
+  text-align: center;
+}
+
+#tbl-weekly-content td ul,
+#tbl-weekly-content td ol {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+#tbl-weekly-content td li + li {
+  margin-top: 0.35rem;
+}
+
+.weekly-practical-link {
+  align-items: center;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  font-size: 1.25rem;
+  justify-content: center;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  text-decoration: none;
+}
+
+.weekly-practical-link:hover {
+  background: rgb(0 0 0 / 5%);
+  text-decoration: none;
+}
+
+.weekly-practical-link:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 2px;
+}
+
+.weekly-practical-link-static:hover {
+  background: transparent;
+}

@@ -1,0 +1,278 @@
+escape_markdown_label <- function(value) {
+  value <- gsub("\\", "\\\\", value, fixed = TRUE)
+  value <- gsub("[", "\\[", value, fixed = TRUE)
+  gsub("]", "\\]", value, fixed = TRUE)
+}
+
+escape_html_attribute <- function(value) {
+  value <- gsub("&", "&amp;", value, fixed = TRUE)
+  value <- gsub('"', "&quot;", value, fixed = TRUE)
+  value <- gsub("<", "&lt;", value, fixed = TRUE)
+  gsub(">", "&gt;", value, fixed = TRUE)
+}
+
+validate_weekly_content <- function(data) {
+  required_columns <- c("week", "section", "position", "title", "url")
+  missing_columns <- setdiff(required_columns, names(data))
+
+  if (length(missing_columns) > 0) {
+    stop(
+      "weekly_content.csv is missing columns: ",
+      paste(missing_columns, collapse = ", "),
+      call. = FALSE
+    )
+  }
+
+  if (nrow(data) == 0) {
+    stop("weekly_content.csv has no resources.", call. = FALSE)
+  }
+
+  weeks <- suppressWarnings(as.numeric(data$week))
+  if (
+    anyNA(weeks) ||
+    any(weeks != as.integer(weeks)) ||
+    !identical(sort(unique(as.integer(weeks))), 1:13)
+  ) {
+    stop("week must contain whole numbers from 1 to 13.", call. = FALSE)
+  }
+
+  valid_sections <- c("lecture", "practical", "extra")
+  if (anyNA(data$section) || any(!data$section %in% valid_sections)) {
+    stop(
+      "section must be lecture, practical, or extra.",
+      call. = FALSE
+    )
+  }
+
+  positions <- suppressWarnings(as.numeric(data$position))
+  if (
+    anyNA(positions) ||
+    any(positions != as.integer(positions)) ||
+    any(positions < 1)
+  ) {
+    stop("position must contain positive whole numbers.", call. = FALSE)
+  }
+
+  if (anyNA(data$title) || any(!nzchar(trimws(data$title)))) {
+    stop("Every resource must have a title.", call. = FALSE)
+  }
+
+  resource_key <- paste(data$week, data$section, data$position, sep = ":")
+  if (anyDuplicated(resource_key)) {
+    stop(
+      "Each week, section, and position combination must be unique.",
+      call. = FALSE
+    )
+  }
+
+  practical_counts <- table(data$week[data$section == "practical"])
+  if (length(practical_counts) > 0 && any(practical_counts > 1)) {
+    stop("Each week can have at most one practical.", call. = FALSE)
+  }
+
+  invisible(TRUE)
+}
+
+weekly_content_entries <- function(data) {
+  validate_weekly_content(data)
+
+  data$week <- as.integer(data$week)
+  data$position <- as.integer(data$position)
+  data <- data[
+    order(
+      data$week,
+      match(data$section, c("lecture", "practical", "extra")),
+      data$position
+    ),
+  ]
+
+  resources_for <- function(rows, section) {
+    rows <- rows[rows$section == section, , drop = FALSE]
+
+    lapply(seq_len(nrow(rows)), function(index) {
+      url <- rows$url[[index]]
+
+      list(
+        title = rows$title[[index]],
+        url = if (is.na(url) || !nzchar(url)) NULL else url
+      )
+    })
+  }
+
+  lapply(1:13, function(week) {
+    rows <- data[data$week == week, , drop = FALSE]
+    practical <- resources_for(rows, "practical")
+
+    list(
+      week = week,
+      lectures = resources_for(rows, "lecture"),
+      practical = if (length(practical) == 0) NULL else practical[[1]],
+      extras = resources_for(rows, "extra")
+    )
+  })
+}
+
+resource_markdown <- function(resource) {
+  label <- escape_markdown_label(resource$title)
+
+  if (is.null(resource$url) || !nzchar(resource$url)) {
+    return(label)
+  }
+
+  sprintf("[%s](%s)", label, resource$url)
+}
+
+resource_cell_lines <- function(resources, ordered = FALSE) {
+  if (length(resources) == 0) {
+    return("  - —")
+  }
+
+  marker <- if (ordered) "1." else "-"
+
+  c(
+    "  -",
+    "",
+    vapply(
+      resources,
+      function(resource) paste("   ", marker, resource_markdown(resource)),
+      character(1)
+    )
+  )
+}
+
+practical_cell_line <- function(practical, html_output) {
+  if (is.null(practical)) {
+    return("  - —")
+  }
+
+  if (!html_output) {
+    if (is.null(practical$url) || !nzchar(practical$url)) {
+      return("  - Practical")
+    }
+
+    return(sprintf("  - [Practical](%s)", practical$url))
+  }
+
+  label <- escape_html_attribute(practical$title)
+  icon <- paste0(
+    '<i class="bi bi-flask" aria-hidden="true"></i>',
+    '<span class="visually-hidden">', label, "</span>"
+  )
+
+  if (is.null(practical$url) || !nzchar(practical$url)) {
+    return(paste0(
+      '  - <span class="weekly-practical-link weekly-practical-link-static" ',
+      'role="img" aria-label="', label, '" title="', label, '">',
+      icon,
+      "</span>"
+    ))
+  }
+
+  paste0(
+    '  - <a class="weekly-practical-link" href="',
+    escape_html_attribute(practical$url),
+    '" aria-label="', label, '" title="', label, '">',
+    icon,
+    "</a>"
+  )
+}
+
+weekly_table_lines <- function(weekly_content, id, caption, html_output) {
+  lines <- c(
+    sprintf(
+      '::: {#%s .list-table tbl-colwidths="[8,52,12,28]"}',
+      id
+    ),
+    caption,
+    "",
+    "- - Week",
+    "  - Lectures",
+    "  - Practical",
+    "  - Extras",
+    ""
+  )
+
+  for (entry in weekly_content) {
+    lines <- c(
+      lines,
+      sprintf("- - %s", entry$week),
+      resource_cell_lines(entry$lectures, ordered = TRUE),
+      practical_cell_line(entry$practical, html_output),
+      resource_cell_lines(entry$extras),
+      ""
+    )
+  }
+
+  lines <- c(lines, ":::")
+  lines
+}
+
+schedule_resource_lines <- function(resources, ordered = FALSE) {
+  if (length(resources) == 0) {
+    return("—")
+  }
+
+  marker <- if (ordered) "1." else "-"
+
+  vapply(
+    resources,
+    function(resource) paste(marker, resource_markdown(resource)),
+    character(1)
+  )
+}
+
+schedule_practical_line <- function(practical) {
+  if (is.null(practical)) {
+    return("—")
+  }
+
+  resource_markdown(practical)
+}
+
+weekly_typst_schedule_lines <- function(weekly_content) {
+  lines <- c("## Weekly schedule", "")
+
+  for (entry in weekly_content) {
+    lines <- c(
+      lines,
+      sprintf("### Week %s", entry$week),
+      "",
+      "**Lectures**",
+      "",
+      schedule_resource_lines(entry$lectures, ordered = TRUE),
+      "",
+      "**Practical**",
+      "",
+      schedule_practical_line(entry$practical),
+      "",
+      "**Extras**",
+      "",
+      schedule_resource_lines(entry$extras),
+      ""
+    )
+  }
+
+  lines
+}
+
+render_weekly_content_table <- function(weekly_content) {
+  weekly_content <- weekly_content_entries(weekly_content)
+  pandoc_to <- knitr::opts_knit$get("rmarkdown.pandoc.to")
+  if (is.null(pandoc_to)) {
+    pandoc_to <- ""
+  }
+  html_output <- grepl("^html", pandoc_to)
+
+  if (identical(pandoc_to, "typst")) {
+    lines <- weekly_typst_schedule_lines(weekly_content)
+  } else {
+    lines <- weekly_table_lines(
+      weekly_content,
+      "tbl-weekly-content",
+      "BEDA weekly content",
+      html_output
+    )
+  }
+
+  cat(paste(lines, collapse = "\n"), "\n")
+}
