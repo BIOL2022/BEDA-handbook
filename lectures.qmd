@@ -2,6 +2,26 @@
 title: Lectures
 ---
 
-Lecture information is listed in [Weekly content](index.qmd#weekly-content).
+Browse the lecture hubs by week, or return to [Weekly content](index.qmd#weekly-content) for practicals and other resources.
 
-Use the Weekly content index for week-by-week lecture titles, practical links, and assessment timing.
+## Module 1: Fundamentals
+
+- [Week 1 — Introduction and fundamentals](lectures/L01/index.qmd)
+- [Week 2 — Sampling and modelling](lectures/L02/index.qmd)
+- [Week 3 — Assumptions and comparisons](lectures/L03/index.qmd)
+- [Week 4 — Multiple predictors and transformations](lectures/L04/index.qmd)
+- [Week 5 — Fixed and random effects](lectures/L05/index.qmd)
+
+## Module 2: Univariate experiments
+
+- [Week 6 — Refresher and categorical variables](lectures/L06/index.qmd)
+- [Week 7 — Relationships and binary responses](lectures/L07/index.qmd)
+- [Week 8 — Model selection and revision](lectures/L08/index.qmd)
+
+## Module 3: Multivariate data
+
+- [Week 9 — Multivariate analysis and PCA](lectures/L09/index.qmd)
+- [Week 10 — Clustering and multidimensional scaling](lectures/L10/index.qmd)
+- [Week 11 — MANOVA and multivariate revision](lectures/L11/index.qmd)
+- [Week 12 — Rarefaction and Bayesian analysis](lectures/L12/index.qmd)
+- [Week 13 — Exam revision](lectures/L13/index.qmd)

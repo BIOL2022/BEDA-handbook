@@ -1,0 +1,37 @@
+---
+title: "Week 4 — Expanding your models"
+---
+
+
+
+
+::: {.lecture-actions}
+**Monday: Modelling multiple continuous relationships** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L04a-mlr/){.lecture-action aria-label="Open Modelling multiple relationships full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L04a-mlr/L04a-mlr.pdf){.lecture-action aria-label="Open Modelling multiple relationships PDF"}
+:::
+
+```{=html}
+<iframe class="lecture-preview" src="https://biol2022.github.io/L04a-mlr/" title="Preview of Modelling multiple relationships lecture slides" loading="lazy" allowfullscreen></iframe>
+```
+
+
+::: {.lecture-actions}
+**Tuesday: Modelling multiple categorical differences** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L04b-anova/){.lecture-action aria-label="Open Modelling multiple differences full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L04b-anova/L04b-anova.pdf){.lecture-action aria-label="Open Modelling multiple differences PDF"}
+:::
+
+```{=html}
+<iframe class="lecture-preview" src="https://biol2022.github.io/L04b-anova/" title="Preview of Modelling multiple differences lecture slides" loading="lazy" allowfullscreen></iframe>
+```
+
+::: {.lecture-actions}
+**Tuesday: Why do we transform data?** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L04c-model-transformations/){.lecture-action aria-label="Open Model transformations full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L04c-model-transformations/L04c-model-transformations.pdf){.lecture-action aria-label="Open Model transformations PDF"}
+:::
+
+```{=html}
+<iframe class="lecture-preview" src="https://biol2022.github.io/L04c-model-transformations/" title="Preview of Model transformations lecture slides" loading="lazy" allowfullscreen></iframe>
+```
+
+::: {.lecture-week-nav}
+[← Week 3: Assumptions and comparisons](../L03/index.qmd){.lecture-previous}
+
+[Week 5: Fixed and random effects →](../L05/index.qmd){.lecture-next}
+:::

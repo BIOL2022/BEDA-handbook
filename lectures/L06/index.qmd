@@ -1,0 +1,19 @@
+---
+title: "Week 6 — Refresher and categorical variables"
+---
+
+## General refresher
+
+[Open “General refresher” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135742)
+
+## Is aerobic enzyme activity greater in male or female birds?
+
+Dealing with categorical explanatory variables.
+
+[Open “Aerobic enzyme activity” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135743)
+
+::: {.lecture-week-nav}
+[← Week 5: Fixed and random effects](../L05/index.qmd){.lecture-previous}
+
+[Week 7: Relationships and binary responses →](../L07/index.qmd){.lecture-next}
+:::

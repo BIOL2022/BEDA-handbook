@@ -10,7 +10,7 @@ execute:
 Welcome to the BEDA handbook. This book contains (most) lectures, tutorials and practical content for BIOL2022. Any resource that is published here is available under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). **If resources link back to [Canvas](https://canvas.sydney.edu.au/courses/74353), they are not covered by this license. Please do not share Canvas materials outside of the course.**
 
 
-::: {.table-responsive tabindex="0" role="region" aria-label="Weekly content table"}
+::: {#weekly-content .table-responsive tabindex="0" role="region" aria-label="Weekly content table"}
 
 ```{r}
 #| echo: false

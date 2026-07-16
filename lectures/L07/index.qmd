@@ -1,0 +1,21 @@
+---
+title: "Week 7 — Relationships and binary responses"
+---
+
+## Does wind reduce tree growth?
+
+Detecting differences versus describing relationships.
+
+[Open “Does wind reduce tree growth?” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135744)
+
+## What are the chances of finding a bandicoot?
+
+Dealing with binary response data.
+
+[Open “What are the chances of finding a bandicoot?” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135745)
+
+::: {.lecture-week-nav}
+[← Week 6: Refresher and categorical variables](../L06/index.qmd){.lecture-previous}
+
+[Week 8: Model selection and revision →](../L08/index.qmd){.lecture-next}
+:::

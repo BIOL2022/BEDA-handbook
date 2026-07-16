@@ -1,0 +1,17 @@
+---
+title: "Week 8 — Model selection and revision"
+---
+
+## Information-theoretic methods vs. null hypothesis testing
+
+[Open “Information-theoretic methods” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135746)
+
+## Revision: answering your queries
+
+Coming soon.
+
+::: {.lecture-week-nav}
+[← Week 7: Relationships and binary responses](../L07/index.qmd){.lecture-previous}
+
+[Week 9: Multivariate analysis and PCA →](../L09/index.qmd){.lecture-next}
+:::

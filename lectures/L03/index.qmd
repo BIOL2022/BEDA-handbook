@@ -1,0 +1,26 @@
+---
+title: "Week 3 — Choosing the right model based on assumptions"
+---
+
+
+::: {.lecture-actions}
+**Monday: Is my model appropriate? (testing assumptions)** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L03a-model-appropriate/){.lecture-action aria-label="Open Is my model appropriate? full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L03a-model-appropriate/L03a-glm-assumptions.pdf){.lecture-action aria-label="Open Is my model appropriate? PDF"}
+:::
+
+```{=html}
+<iframe class="lecture-preview" src="https://biol2022.github.io/L03a-model-appropriate/" title="Preview of Is my model appropriate? lecture slides" loading="lazy" allowfullscreen></iframe>
+```
+
+::: {.lecture-actions}
+**Tuesday: Modelling differences between two groups** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L03b-ttests/){.lecture-action aria-label="Open Modelling differences between two things full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L03b-ttests/L03b-ttests.pdf){.lecture-action aria-label="Open Modelling differences between two things PDF"}
+:::
+
+```{=html}
+<iframe class="lecture-preview" src="https://biol2022.github.io/L03b-ttests/" title="Preview of Modelling differences between two things lecture slides" loading="lazy" allowfullscreen></iframe>
+```
+
+::: {.lecture-week-nav}
+[← Week 2: Sampling and modelling](../L02/index.qmd){.lecture-previous}
+
+[Week 4: Multiple predictors and transformations →](../L04/index.qmd){.lecture-next}
+:::

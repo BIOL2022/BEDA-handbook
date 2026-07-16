@@ -70,6 +70,13 @@ validate_weekly_content <- function(data) {
     stop("Each week can have at most one practical.", call. = FALSE)
   }
 
+  lecture_counts <- table(
+    factor(data$week[data$section == "lecture"], levels = 1:13)
+  )
+  if (any(lecture_counts != 1)) {
+    stop("Each week must have exactly one lecture theme.", call. = FALSE)
+  }
+
   invisible(TRUE)
 }
 
@@ -140,6 +147,10 @@ resource_cell_lines <- function(resources, ordered = FALSE) {
   )
 }
 
+lecture_theme_cell_line <- function(resources) {
+  paste("  -", resource_markdown(resources[[1]]))
+}
+
 practical_cell_line <- function(practical, html_output) {
   if (is.null(practical)) {
     return("  - —")
@@ -196,7 +207,7 @@ weekly_table_lines <- function(weekly_content, id, caption, html_output) {
     lines <- c(
       lines,
       sprintf("- - %s", entry$week),
-      resource_cell_lines(entry$lectures, ordered = TRUE),
+      lecture_theme_cell_line(entry$lectures),
       practical_cell_line(entry$practical, html_output),
       resource_cell_lines(entry$extras),
       ""
@@ -239,7 +250,7 @@ weekly_typst_schedule_lines <- function(weekly_content) {
       "",
       "**Lectures**",
       "",
-      schedule_resource_lines(entry$lectures, ordered = TRUE),
+      schedule_resource_lines(entry$lectures),
       "",
       "**Practical**",
       "",
