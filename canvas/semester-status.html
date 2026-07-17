@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BIOL2022 semester status</title>
+  <style>
+    :root {
+      color-scheme: light;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      background: transparent;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.25rem;
+      overflow: hidden;
+      font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    #semester-status {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 0 0.25rem;
+      color: #440154;
+      font-size: clamp(1.125rem, 2.4vw, 1.4375rem);
+      font-weight: 400;
+      line-height: 1.4;
+      overflow-wrap: anywhere;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <p id="semester-status" role="status" aria-live="polite">Loading semester status</p>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const schedules = {
+        "2026-s2": {
+          label: "Semester 2",
+          start: "2026-08-03",
+          teachingWeeks: [
+            { week: 1, start: "2026-08-03", end: "2026-08-09" },
+            { week: 2, start: "2026-08-10", end: "2026-08-16" },
+            { week: 3, start: "2026-08-17", end: "2026-08-23" },
+            { week: 4, start: "2026-08-24", end: "2026-08-30" },
+            { week: 5, start: "2026-08-31", end: "2026-09-06" },
+            { week: 6, start: "2026-09-07", end: "2026-09-13" },
+            { week: 7, start: "2026-09-14", end: "2026-09-20" },
+            { week: 8, start: "2026-09-21", end: "2026-09-27" },
+            { week: 9, start: "2026-10-06", end: "2026-10-11" },
+            { week: 10, start: "2026-10-12", end: "2026-10-18" },
+            { week: 11, start: "2026-10-19", end: "2026-10-25" },
+            { week: 12, start: "2026-10-26", end: "2026-11-01" },
+            { week: 13, start: "2026-11-02", end: "2026-11-08" }
+          ],
+          midSemesterBreak: {
+            start: "2026-09-28",
+            end: "2026-10-05"
+          },
+          studyVacation: {
+            start: "2026-11-09",
+            end: "2026-11-15"
+          },
+          examinations: {
+            start: "2026-11-16",
+            end: "2026-11-28"
+          }
+        }
+      };
+
+      const datePattern = /^\d{4}-\d{2}-\d{2}$/;
+      const query = new URLSearchParams(window.location.search);
+      const year = query.get("year") || "2026";
+      const semester = query.get("semester") || "2";
+      const schedule = schedules[`${year}-s${semester}`];
+      const status = document.getElementById("semester-status");
+
+      function sydneyDate() {
+        const parts = new Intl.DateTimeFormat("en-AU", {
+          timeZone: "Australia/Sydney",
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit"
+        }).formatToParts(new Date());
+
+        const values = Object.fromEntries(
+          parts
+            .filter((part) => part.type !== "literal")
+            .map((part) => [part.type, part.value])
+        );
+
+        return `${values.year}-${values.month}-${values.day}`;
+      }
+
+      function utcDay(date) {
+        const [yearValue, monthValue, dayValue] = date
+          .split("-")
+          .map(Number);
+        return Date.UTC(yearValue, monthValue - 1, dayValue);
+      }
+
+      function includesDate(range, date) {
+        return date >= range.start && date <= range.end;
+      }
+
+      function plural(value, word) {
+        return `${value} ${word}${value === 1 ? "" : "s"}`;
+      }
+
+      function countdown(label, start, date) {
+        const days = Math.round((utcDay(start) - utcDay(date)) / 86400000);
+
+        if (days === 1) {
+          return `${label} begins tomorrow`;
+        }
+
+        const weeks = Math.floor(days / 7);
+        const remainingDays = days % 7;
+        const parts = [];
+
+        if (weeks > 0) {
+          parts.push(plural(weeks, "week"));
+        }
+
+        if (remainingDays > 0) {
+          parts.push(plural(remainingDays, "day"));
+        }
+
+        return `${label} begins in ${parts.join(" and ")}`;
+      }
+
+      function messageFor(scheduleValue, date) {
+        if (date < scheduleValue.start) {
+          return countdown(scheduleValue.label, scheduleValue.start, date);
+        }
+
+        const teachingWeek = scheduleValue.teachingWeeks.find((week) =>
+          includesDate(week, date)
+        );
+
+        if (teachingWeek) {
+          return `This is Week ${String(teachingWeek.week).padStart(2, "0")}`;
+        }
+
+        if (includesDate(scheduleValue.midSemesterBreak, date)) {
+          return "This is the mid-semester break";
+        }
+
+        if (includesDate(scheduleValue.studyVacation, date)) {
+          return "This is the study vacation";
+        }
+
+        if (includesDate(scheduleValue.examinations, date)) {
+          return "This is the examination period";
+        }
+
+        return `${scheduleValue.label} has finished`;
+      }
+
+      if (!schedule) {
+        status.textContent = "Semester schedule unavailable";
+        document.documentElement.dataset.state = "unavailable";
+        return;
+      }
+
+      const previewDate = query.get("date");
+      const date = previewDate && datePattern.test(previewDate)
+        ? previewDate
+        : sydneyDate();
+
+      status.textContent = messageFor(schedule, date);
+      document.documentElement.dataset.date = date;
+    })();
+  </script>
+</body>
+</html>
