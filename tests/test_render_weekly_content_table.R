@@ -19,6 +19,7 @@ weekly_content <- read.csv(
 week_one_description <- weekly_content$description[
   weekly_content$week == 1 & weekly_content$section == "lecture"
 ][[1]]
+week_one_escaped_description <- escape_markdown_text(week_one_description)
 
 checks <- 0L
 
@@ -60,6 +61,45 @@ render_output <- function(pandoc_to, caption, include_caption = TRUE) {
 
   capture.output(do.call(render_weekly_content_table, arguments))
 }
+
+run_pandoc <- function(to, input) {
+  output <- system2(
+    "quarto",
+    c("pandoc", "--from=markdown", paste0("--to=", to), "--wrap=none"),
+    input = input,
+    stdout = TRUE,
+    stderr = TRUE
+  )
+  status <- attr(output, "status")
+  if (is.null(status)) {
+    status <- 0L
+  }
+
+  expect_true(status == 0L, paste("Pandoc should convert the snippet to", to))
+  output
+}
+
+adversarial_description <- paste0(
+  "<em>HTML</em> &copy; $math$ ~~strikeout~~ [brackets] {braces} ",
+  "backslash \\ backticks `code` underscores _text_ asterisks *text*"
+)
+adversarial_snippet <- paste0(
+  "[",
+  escape_markdown_text(adversarial_description),
+  "]{.weekly-lecture-description}"
+)
+adversarial_ast <- run_pandoc("json", adversarial_snippet)
+for (node_type in c("RawInline", "Math", "Strikeout", "Code")) {
+  expect_true(
+    !any(grepl(paste0('"t":"', node_type, '"'), adversarial_ast, fixed = TRUE)),
+    paste("Escaped descriptions should not produce", node_type, "nodes.")
+  )
+}
+adversarial_plain <- run_pandoc("plain", adversarial_snippet)
+expect_true(
+  identical(paste(adversarial_plain, collapse = "\n"), adversarial_description),
+  "Pandoc plain output should preserve the adversarial description exactly."
+)
 
 expect_true(
   isTRUE(validate_weekly_content(weekly_content)),
@@ -243,7 +283,7 @@ expect_true(
   "The table output should contain 13 weekly rows."
 )
 expect_true(
-  any(grepl(week_one_description, hidden_caption, fixed = TRUE)),
+  any(grepl(week_one_escaped_description, hidden_caption, fixed = TRUE)),
   "HTML table output should include lecture descriptions."
 )
 expect_true(
@@ -257,7 +297,7 @@ expect_true(
 
 latex_output <- render_output("latex", caption = FALSE)
 expect_true(
-  any(grepl(week_one_description, latex_output, fixed = TRUE)),
+  any(grepl(week_one_escaped_description, latex_output, fixed = TRUE)),
   "LaTeX output should include lecture descriptions."
 )
 expect_true(
@@ -275,7 +315,7 @@ expect_true(
 
 typst_output <- render_output("typst", caption = FALSE)
 expect_true(
-  any(grepl(week_one_description, typst_output, fixed = TRUE)),
+  any(grepl(week_one_escaped_description, typst_output, fixed = TRUE)),
   "Typst output should include lecture descriptions."
 )
 expect_true(

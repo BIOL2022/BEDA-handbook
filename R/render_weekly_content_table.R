@@ -8,10 +8,23 @@ escape_markdown_label <- function(value) {
 }
 
 escape_markdown_text <- function(value) {
-  value <- escape_markdown_label(value)
-  value <- gsub("*", "\\*", value, fixed = TRUE)
-  value <- gsub("_", "\\_", value, fixed = TRUE)
-  gsub("`", "\\`", value, fixed = TRUE)
+  value <- gsub("\\", "\\\\", value, fixed = TRUE)
+  punctuation <- strsplit(
+    "!\"#$%&'()*+,-./:;<=>?@[]^_`{|}~",
+    "",
+    fixed = TRUE
+  )[[1]]
+
+  for (character in punctuation) {
+    value <- gsub(
+      character,
+      paste0("\\", character),
+      value,
+      fixed = TRUE
+    )
+  }
+
+  value
 }
 
 escape_html_attribute <- function(value) {
