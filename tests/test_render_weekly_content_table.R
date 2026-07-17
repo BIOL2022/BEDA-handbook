@@ -78,6 +78,32 @@ expect_error(
   "Missing columns should be rejected."
 )
 
+missing_description <- weekly_content
+missing_description$description <- NULL
+expect_error(
+  validate_weekly_content(missing_description),
+  "missing columns: description",
+  "A missing description column should be rejected."
+)
+
+blank_lecture_description <- weekly_content
+lecture_row <- which(blank_lecture_description$section == "lecture")[[1]]
+blank_lecture_description$description[[lecture_row]] <- " "
+expect_error(
+  validate_weekly_content(blank_lecture_description),
+  "Every lecture theme must have a description",
+  "Blank lecture descriptions should be rejected."
+)
+
+blank_nonlecture_descriptions <- weekly_content
+blank_nonlecture_descriptions$description[
+  blank_nonlecture_descriptions$section != "lecture"
+] <- ""
+expect_true(
+  isTRUE(validate_weekly_content(blank_nonlecture_descriptions)),
+  "Practicals and extras may have blank descriptions."
+)
+
 expect_error(
   validate_weekly_content(weekly_content[0, , drop = FALSE]),
   "has no resources",

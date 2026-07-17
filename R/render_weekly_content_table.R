@@ -15,7 +15,9 @@ escape_html_attribute <- function(value) {
 }
 
 validate_weekly_content <- function(data) {
-  required_columns <- c("week", "section", "position", "title", "url")
+  required_columns <- c(
+    "week", "section", "position", "title", "url", "description"
+  )
   missing_columns <- setdiff(required_columns, names(data))
 
   if (length(missing_columns) > 0) {
@@ -62,6 +64,14 @@ validate_weekly_content <- function(data) {
     stop("Every resource must have a title.", call. = FALSE)
   }
 
+  lecture_descriptions <- data$description[data$section == "lecture"]
+  if (
+    anyNA(lecture_descriptions) ||
+      any(!nzchar(trimws(lecture_descriptions)))
+  ) {
+    stop("Every lecture theme must have a description.", call. = FALSE)
+  }
+
   resource_key <- paste(data$week, data$section, data$position, sep = ":")
   if (anyDuplicated(resource_key)) {
     stop(
@@ -106,10 +116,14 @@ weekly_content_entries <- function(data) {
 
     lapply(seq_len(nrow(rows)), function(index) {
       url <- rows$url[[index]]
+      description <- rows$description[[index]]
 
       list(
         title = rows$title[[index]],
-        url = if (is.na(url) || !nzchar(url)) NULL else url
+        url = if (is.na(url) || !nzchar(url)) NULL else url,
+        description = if (
+          is.na(description) || !nzchar(trimws(description))
+        ) NULL else trimws(description)
       )
     })
   }
