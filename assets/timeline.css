@@ -158,6 +158,14 @@ h3 {
   margin-top: 0.35rem;
 }
 
+.weekly-lecture-description {
+  color: var(--bs-secondary-color, #5c636a);
+  display: block;
+  font-size: 0.9em;
+  line-height: 1.35;
+  margin-top: 0.25rem;
+}
+
 .weekly-practical-link {
   align-items: center;
   border-radius: 0.25rem;

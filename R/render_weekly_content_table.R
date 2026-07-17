@@ -7,6 +7,13 @@ escape_markdown_label <- function(value) {
   gsub("]", "\\]", value, fixed = TRUE)
 }
 
+escape_markdown_text <- function(value) {
+  value <- escape_markdown_label(value)
+  value <- gsub("*", "\\*", value, fixed = TRUE)
+  value <- gsub("_", "\\_", value, fixed = TRUE)
+  gsub("`", "\\`", value, fixed = TRUE)
+}
+
 escape_html_attribute <- function(value) {
   value <- gsub("&", "&amp;", value, fixed = TRUE)
   value <- gsub('"', "&quot;", value, fixed = TRUE)
@@ -167,8 +174,16 @@ resource_cell_lines <- function(resources) {
   )
 }
 
-lecture_theme_cell_line <- function(resources) {
-  paste("  -", resource_markdown(resources[[1]]))
+lecture_theme_cell_lines <- function(resources) {
+  resource <- resources[[1]]
+  c(
+    paste("  -", resource_markdown(resource)),
+    paste0(
+      "    [",
+      escape_markdown_text(resource$description),
+      "]{.weekly-lecture-description}"
+    )
+  )
 }
 
 practical_cell_line <- function(practical, html_output) {
@@ -224,7 +239,7 @@ weekly_table_lines <- function(weekly_content, caption, html_output) {
     lines <- c(
       lines,
       sprintf("- - %s", entry$week),
-      lecture_theme_cell_line(entry$lectures),
+      lecture_theme_cell_lines(entry$lectures),
       practical_cell_line(entry$practical, html_output),
       resource_cell_lines(entry$extras),
       ""
@@ -247,6 +262,14 @@ schedule_resource_lines <- function(resources) {
   )
 }
 
+schedule_lecture_lines <- function(resources) {
+  resource <- resources[[1]]
+  c(
+    paste("-", resource_markdown(resource)),
+    paste("  ", escape_markdown_text(resource$description))
+  )
+}
+
 schedule_practical_line <- function(practical) {
   if (is.null(practical)) {
     return("—")
@@ -265,7 +288,7 @@ weekly_typst_schedule_lines <- function(weekly_content) {
       "",
       "**Lectures**",
       "",
-      schedule_resource_lines(entry$lectures),
+      schedule_lecture_lines(entry$lectures),
       "",
       "**Practical**",
       "",

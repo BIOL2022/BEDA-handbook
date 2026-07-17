@@ -16,6 +16,9 @@ weekly_content <- read.csv(
   stringsAsFactors = FALSE,
   check.names = FALSE
 )
+week_one_description <- weekly_content$description[
+  weekly_content$week == 1 & weekly_content$section == "lecture"
+][[1]]
 
 checks <- 0L
 
@@ -240,11 +243,27 @@ expect_true(
   "The table output should contain 13 weekly rows."
 )
 expect_true(
+  any(grepl(week_one_description, hidden_caption, fixed = TRUE)),
+  "HTML table output should include lecture descriptions."
+)
+expect_true(
+  sum(grepl("weekly-lecture-description", hidden_caption, fixed = TRUE)) == 13,
+  "HTML table output should contain 13 lecture description lines."
+)
+expect_true(
   any(grepl("bi-flask", hidden_caption, fixed = TRUE)),
   "HTML output should contain practical icons."
 )
 
 latex_output <- render_output("latex", caption = FALSE)
+expect_true(
+  any(grepl(week_one_description, latex_output, fixed = TRUE)),
+  "LaTeX output should include lecture descriptions."
+)
+expect_true(
+  !any(grepl("<span", latex_output, fixed = TRUE)),
+  "LaTeX output should not contain raw span elements."
+)
 expect_true(
   !any(grepl("bi-flask", latex_output, fixed = TRUE)),
   "Non-HTML output should not contain HTML practical icons."
@@ -255,6 +274,14 @@ expect_true(
 )
 
 typst_output <- render_output("typst", caption = FALSE)
+expect_true(
+  any(grepl(week_one_description, typst_output, fixed = TRUE)),
+  "Typst output should include lecture descriptions."
+)
+expect_true(
+  !any(grepl("<span", typst_output, fixed = TRUE)),
+  "Typst output should not contain raw span elements."
+)
 expect_true(
   any(typst_output == "## Weekly schedule"),
   "Typst output should use the compact weekly schedule."
