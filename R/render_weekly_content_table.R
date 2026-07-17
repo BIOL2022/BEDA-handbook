@@ -196,7 +196,7 @@ practical_cell_line <- function(practical, html_output) {
 
 weekly_table_lines <- function(weekly_content, caption, html_output) {
   lines <- c(
-    '::: {#tbl-weekly-content .list-table tbl-colwidths="[8,52,12,28]"}',
+    '::: {#tbl-weekly-content .list-table}',
     caption,
     "",
     "- - Week",
