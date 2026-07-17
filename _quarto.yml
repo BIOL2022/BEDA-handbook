@@ -2,6 +2,8 @@ project:
   type: website
   resources:
     - canvas/semester-status.html
+    - canvas/semester-status.svg
+    - canvas/semester-status-narrow.svg
 
 website:
   title: "BIOL2022"
