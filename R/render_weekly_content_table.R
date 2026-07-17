@@ -1,3 +1,6 @@
+weekly_content_weeks <- 1:13
+weekly_content_sections <- c("lecture", "practical", "extra")
+
 escape_markdown_label <- function(value) {
   value <- gsub("\\", "\\\\", value, fixed = TRUE)
   value <- gsub("[", "\\[", value, fixed = TRUE)
@@ -31,13 +34,15 @@ validate_weekly_content <- function(data) {
   if (
     anyNA(weeks) ||
     any(weeks != as.integer(weeks)) ||
-    !identical(sort(unique(as.integer(weeks))), 1:13)
+    !identical(sort(unique(as.integer(weeks))), weekly_content_weeks)
   ) {
     stop("week must contain whole numbers from 1 to 13.", call. = FALSE)
   }
 
-  valid_sections <- c("lecture", "practical", "extra")
-  if (anyNA(data$section) || any(!data$section %in% valid_sections)) {
+  if (
+    anyNA(data$section) ||
+      any(!data$section %in% weekly_content_sections)
+  ) {
     stop(
       "section must be lecture, practical, or extra.",
       call. = FALSE
@@ -71,7 +76,10 @@ validate_weekly_content <- function(data) {
   }
 
   lecture_counts <- table(
-    factor(data$week[data$section == "lecture"], levels = 1:13)
+    factor(
+      data$week[data$section == "lecture"],
+      levels = weekly_content_weeks
+    )
   )
   if (any(lecture_counts != 1)) {
     stop("Each week must have exactly one lecture theme.", call. = FALSE)
@@ -88,7 +96,7 @@ weekly_content_entries <- function(data) {
   data <- data[
     order(
       data$week,
-      match(data$section, c("lecture", "practical", "extra")),
+      match(data$section, weekly_content_sections),
       data$position
     ),
   ]
@@ -106,7 +114,7 @@ weekly_content_entries <- function(data) {
     })
   }
 
-  lapply(1:13, function(week) {
+  lapply(weekly_content_weeks, function(week) {
     rows <- data[data$week == week, , drop = FALSE]
     practical <- resources_for(rows, "practical")
 
@@ -129,19 +137,17 @@ resource_markdown <- function(resource) {
   sprintf("[%s](%s)", label, resource$url)
 }
 
-resource_cell_lines <- function(resources, ordered = FALSE) {
+resource_cell_lines <- function(resources) {
   if (length(resources) == 0) {
     return("  - —")
   }
-
-  marker <- if (ordered) "1." else "-"
 
   c(
     "  -",
     "",
     vapply(
       resources,
-      function(resource) paste("   ", marker, resource_markdown(resource)),
+      function(resource) paste("    -", resource_markdown(resource)),
       character(1)
     )
   )
@@ -188,12 +194,9 @@ practical_cell_line <- function(practical, html_output) {
   )
 }
 
-weekly_table_lines <- function(weekly_content, id, caption, html_output) {
+weekly_table_lines <- function(weekly_content, caption, html_output) {
   lines <- c(
-    sprintf(
-      '::: {#%s .list-table tbl-colwidths="[8,52,12,28]"}',
-      id
-    ),
+    '::: {#tbl-weekly-content .list-table tbl-colwidths="[8,52,12,28]"}',
     caption,
     "",
     "- - Week",
@@ -218,16 +221,14 @@ weekly_table_lines <- function(weekly_content, id, caption, html_output) {
   lines
 }
 
-schedule_resource_lines <- function(resources, ordered = FALSE) {
+schedule_resource_lines <- function(resources) {
   if (length(resources) == 0) {
     return("—")
   }
 
-  marker <- if (ordered) "1." else "-"
-
   vapply(
     resources,
-    function(resource) paste(marker, resource_markdown(resource)),
+    function(resource) paste("-", resource_markdown(resource)),
     character(1)
   )
 }
@@ -266,7 +267,12 @@ weekly_typst_schedule_lines <- function(weekly_content) {
   lines
 }
 
-render_weekly_content_table <- function(weekly_content) {
+render_weekly_content_table <- function(
+  weekly_content,
+  caption = "BEDA weekly content"
+) {
+  caption <- if (identical(caption, FALSE)) character() else caption
+
   weekly_content <- weekly_content_entries(weekly_content)
   pandoc_to <- knitr::opts_knit$get("rmarkdown.pandoc.to")
   if (is.null(pandoc_to)) {
@@ -279,8 +285,7 @@ render_weekly_content_table <- function(weekly_content) {
   } else {
     lines <- weekly_table_lines(
       weekly_content,
-      "tbl-weekly-content",
-      "BEDA weekly content",
+      caption,
       html_output
     )
   }

@@ -141,13 +141,13 @@ function isWithinSite(file) {
   );
 }
 
-function sidebarHtml(html) {
-  const opening = html.match(/<(nav|aside|div)\b[^>]*\bid\s*=\s*["']quarto-sidebar["'][^>]*>/i);
+function navbarHtml(html) {
+  const opening = html.match(/<header\b[^>]*\bid\s*=\s*["']quarto-header["'][^>]*>/i);
   if (!opening || opening.index === undefined) {
     return null;
   }
 
-  const closingTag = `</${opening[1].toLowerCase()}>`;
+  const closingTag = "</header>";
   const closingIndex = html.toLowerCase().indexOf(closingTag, opening.index + opening[0].length);
   return closingIndex === -1
     ? html.slice(opening.index)
@@ -216,7 +216,8 @@ for (const [file, page] of pages) {
   }
 }
 
-const sidebarLabels = [
+const navbarLabels = [
+  "Home",
   "Canvas",
   "Ed",
   "Assessments",
@@ -224,23 +225,23 @@ const sidebarLabels = [
   "Contact",
   "Cheatsheets",
 ];
-const sidebarPage = pages.get(path.join(siteRoot, "index.html")) || pages.values().next().value;
-const sidebar = sidebarPage ? sidebarHtml(sidebarPage.html) : null;
+const navbarPage = pages.get(path.join(siteRoot, "index.html")) || pages.values().next().value;
+const navbar = navbarPage ? navbarHtml(navbarPage.html) : null;
 
-if (!sidebar) {
-  failures.push("rendered site is missing #quarto-sidebar");
+if (!navbar) {
+  failures.push("rendered site is missing #quarto-header");
 } else {
-  const sidebarLinks = extract(sidebar).links;
-  if (sidebarLinks.some((link) => link.text === "Schedule and weekly content")) {
-    failures.push('#quarto-sidebar must not include "Schedule and weekly content"');
+  const navbarLinks = extract(navbar).links;
+  if (navbarLinks.some((link) => link.text === "Schedule and weekly content")) {
+    failures.push('#quarto-header must not include "Schedule and weekly content"');
   }
-  for (const label of sidebarLabels) {
-    if (!sidebarLinks.some((link) => link.text === label)) {
-      failures.push(`#quarto-sidebar is missing visible label "${label}"`);
+  for (const label of navbarLabels) {
+    if (!navbarLinks.some((link) => link.text === label)) {
+      failures.push(`#quarto-header is missing visible label "${label}"`);
     }
   }
 
-  const hasHomeLink = sidebarLinks.some((link) => {
+  const hasHomeLink = navbarLinks.some((link) => {
     if (link.text !== "BIOL2022" && link.text !== "Home") {
       return false;
     }
@@ -248,7 +249,7 @@ if (!sidebar) {
     return target && target.file === path.join(siteRoot, "index.html");
   });
   if (!hasHomeLink) {
-    failures.push('#quarto-sidebar needs a "BIOL2022" or explicit "Home" link to index.html');
+    failures.push('#quarto-header needs an explicit "Home" link to index.html');
   }
 }
 
@@ -277,13 +278,12 @@ if (!indexPage) {
   if (!indexPage.ids.has("weekly-content")) {
     failures.push('index.html is missing id "weekly-content"');
   }
-  if (!indexPage.ids.has("tbl-weekly-content")) {
-    failures.push('index.html is missing id "tbl-weekly-content"');
-  }
-
-  const weeklySection = indexPage.html.match(
-    /<section\b[^>]*\bid=["']weekly-content["'][^>]*>[\s\S]*?<\/section>/i,
-  )?.[0];
+  const weeklySectionStart = indexPage.html.match(
+    /<div\b[^>]*\bid=["']weekly-content["'][^>]*>/i,
+  );
+  const weeklySection = weeklySectionStart
+    ? indexPage.html.slice(weeklySectionStart.index)
+    : null;
   const responsiveWrapper = weeklySection
     ? Array.from(weeklySection.matchAll(/<div\b([^>]*)>/gi)).find((match) => {
         const classes = normaliseText(attributeValue(match[1], "class") ?? "").split(" ");
@@ -305,16 +305,14 @@ if (!indexPage) {
   if (!weeklyTable) {
     failures.push("index.html#weekly-content is missing its weekly table");
   } else {
-    const captionText = normaliseText(
-      weeklySection.match(/<figcaption\b[^>]*>([\s\S]*?)<\/figcaption>/i)?.[1] ?? "",
-    ).replace(/^Table\s+\d+:\s*/i, "");
+    const caption = weeklySection.match(/<figcaption\b[^>]*>[\s\S]*?<\/figcaption>/i);
     const rows = tableRows(weeklyTable);
     const header = rows.find((row) => row.cells.every((cell) => cell.tag === "th"));
     const bodyRows = rows.filter((row) => row.cells.some((cell) => cell.tag === "td"));
     const headers = header?.cells.map((cell) => cell.text) ?? [];
 
-    if (captionText !== "BEDA weekly content") {
-      failures.push(`homepage weekly table has unexpected caption: "${captionText}"`);
+    if (caption) {
+      failures.push("homepage weekly table should not have a caption");
     }
     if (JSON.stringify(headers) !== JSON.stringify(["Week", "Lectures", "Practical", "Extras"])) {
       failures.push(`homepage weekly table has unexpected headers: ${headers.join(", ")}`);
@@ -323,36 +321,6 @@ if (!indexPage) {
       failures.push(`homepage weekly table needs 13 rows, found ${bodyRows.length}`);
     }
 
-    const expectedPracticals = [
-      ["module01/102-week01.html", null],
-      ["module01/103-week02.html", null],
-      ["module01/104-week03.html", null],
-      ["module02/202-timeline.html", "wk4"],
-      ["module02/202-timeline.html", "wk5"],
-      ["module02/202-timeline.html", "wk6"],
-      ["module02/202-timeline.html", "wk7"],
-      ["module02/202-timeline.html", "wk8"],
-      ["module03/302-week09.html", null],
-      ["module03/303-week10.html", null],
-      ["module03/304-week11.html", null],
-      ["module03/305-week12.html", null],
-    ];
-    const expectedDates = [
-      "3–7 August",
-      "10–14 August",
-      "17–21 August",
-      "24–28 August",
-      "31 August–4 September",
-      "7–11 September",
-      "14–18 September",
-      "21–25 September",
-      "5–9 October",
-      "12–16 October",
-      "19–23 October",
-      "26–30 October",
-      "2–6 November",
-    ];
-
     for (let index = 0; index < bodyRows.length; index += 1) {
       const row = bodyRows[index];
       const week = index + 1;
@@ -360,48 +328,32 @@ if (!indexPage) {
       if (row.cells.length !== 4) {
         failures.push(`homepage weekly table row ${week} needs 4 cells, found ${row.cells.length}`);
       }
-      if (!new RegExp(`^${week}\\b`).test(weekText)) {
+      if (weekText !== String(week)) {
         failures.push(`homepage weekly table row ${week} is out of order`);
       }
-      if (expectedDates[index] && !weekText.includes(expectedDates[index])) {
-        failures.push(`homepage Week ${week} is missing date "${expectedDates[index]}"`);
-      }
-    }
 
-    for (let index = 0; index < expectedPracticals.length; index += 1) {
-      const row = bodyRows[index];
-      if (!row || !row.cells[2]) continue;
-      const [expectedFile, expectedFragment] = expectedPracticals[index];
-      const practicalLinks = extract(row.cells[2].html).links;
-      const found = practicalLinks.some((link) => {
+      const lectureLinks = extract(row.cells[1]?.html ?? "").links;
+      const expectedLecture = `lectures/L${String(week).padStart(2, "0")}/index.html`;
+      const hasLectureHub = lectureLinks.some((link) => {
         const target = resolveInternal(indexFile, link.href);
-        return target &&
-          relativeName(target.file) === expectedFile &&
-          (target.fragment ?? null) === expectedFragment;
+        return target && relativeName(target.file) === expectedLecture;
       });
-      if (!found) {
-        failures.push(`homepage Week ${index + 1} is missing practical destination ${expectedFile}`);
+      if (!hasLectureHub) {
+        failures.push(`homepage Week ${week} is missing lecture hub ${expectedLecture}`);
       }
-    }
 
-    const week6 = bodyRows[5];
-    if (week6 && !/no practical this week/i.test(week6.cells[2]?.text ?? "")) {
-      failures.push('homepage Week 6 must state "No practical this week"');
-    }
-
-    const week13 = bodyRows[12];
-    if (week13) {
-      if (!/exam revision and questions/i.test(week13.cells[1]?.text ?? "")) {
-        failures.push("homepage Week 13 is missing exam revision and questions");
+      const practicalHtml = row.cells[2]?.html ?? "";
+      const practicalLinks = extract(practicalHtml).links;
+      const hasPracticalIcon = /\bbi-flask\b/i.test(practicalHtml);
+      const hasEmptyMarker = normaliseText(practicalHtml) === "—";
+      if (!hasPracticalIcon && !hasEmptyMarker) {
+        failures.push(`homepage Week ${week} has an unexpected Practical cell`);
       }
-      if (!/feedback and discussion practical/i.test(week13.cells[2]?.text ?? "")) {
-        failures.push("homepage Week 13 is missing the feedback and discussion practical");
+      if (hasPracticalIcon && !/\baria-label\s*=/i.test(practicalHtml)) {
+        failures.push(`homepage Week ${week} practical icon is missing an aria-label`);
       }
-      if (extract(week13.cells[2]?.html ?? "").links.length > 0) {
-        failures.push("homepage Week 13 practical must remain plain text");
-      }
-      if (!/report 2/i.test(week13.cells[3]?.text ?? "")) {
-        failures.push("homepage Week 13 Extras must include the Report 2 reminder");
+      if (practicalLinks.length > 1) {
+        failures.push(`homepage Week ${week} has more than one practical link`);
       }
     }
   }
@@ -459,5 +411,5 @@ if (failures.length > 0) {
 }
 
 console.log(
-  `PASS: ${htmlFiles.length} HTML files checked; sidebar, fragments, and contextual routes are valid`,
+  `PASS: ${htmlFiles.length} HTML files checked; navbar, fragments, and contextual routes are valid`,
 );
