@@ -1,0 +1,45 @@
+name: Refresh Canvas semester status
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 14 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+        with:
+          path: source
+
+      - name: Check semester status logic
+        run: node source/scripts/test-semester-status-svg.mjs
+
+      - name: Check out published site
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: site
+
+      - name: Refresh published status image
+        run: >-
+          node source/scripts/generate-semester-status-svg.mjs
+          --output site/canvas/semester-status.svg
+          --narrow-output site/canvas/semester-status-narrow.svg
+
+      - name: Publish when the status changes
+        working-directory: site
+        run: |
+          if git diff --quiet -- canvas/semester-status.svg canvas/semester-status-narrow.svg; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add canvas/semester-status.svg canvas/semester-status-narrow.svg
+          git commit -m "chore(canvas): refresh semester status"
+          git push
