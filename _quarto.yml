@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - canvas/semester-status.html
 
 website:
   title: "BIOL2022"
