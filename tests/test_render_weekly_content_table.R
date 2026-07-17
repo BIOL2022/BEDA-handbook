@@ -95,6 +95,38 @@ expect_error(
   "Blank lecture descriptions should be rejected."
 )
 
+empty_lecture_description <- weekly_content
+empty_lecture_description$description[[lecture_row]] <- ""
+expect_error(
+  validate_weekly_content(empty_lecture_description),
+  "Every lecture theme must have a description",
+  "Empty lecture descriptions should be rejected."
+)
+
+missing_lecture_description <- weekly_content
+missing_lecture_description$description[[lecture_row]] <- NA_character_
+expect_error(
+  validate_weekly_content(missing_lecture_description),
+  "Every lecture theme must have a description",
+  "Missing lecture descriptions should be rejected."
+)
+
+padded_lecture_description <- weekly_content
+padded_lecture_description$description[[lecture_row]] <-
+  "  Trimmed lecture description.  "
+expect_true(
+  isTRUE(validate_weekly_content(padded_lecture_description)),
+  "Padded lecture descriptions should validate."
+)
+padded_entries <- weekly_content_entries(padded_lecture_description)
+expect_true(
+  identical(
+    padded_entries[[1]]$lectures[[1]]$description,
+    "Trimmed lecture description."
+  ),
+  "Lecture descriptions should be trimmed in resource objects."
+)
+
 blank_nonlecture_descriptions <- weekly_content
 blank_nonlecture_descriptions$description[
   blank_nonlecture_descriptions$section != "lecture"
@@ -103,6 +135,24 @@ expect_true(
   isTRUE(validate_weekly_content(blank_nonlecture_descriptions)),
   "Practicals and extras may have blank descriptions."
 )
+
+nonlecture_description_cases <- weekly_content
+practical_row <- which(nonlecture_description_cases$section == "practical")[[1]]
+extra_rows <- which(nonlecture_description_cases$section == "extra")[1:2]
+nonlecture_description_cases$description[[practical_row]] <- ""
+nonlecture_description_cases$description[[extra_rows[[1]]]] <- " "
+nonlecture_description_cases$description[[extra_rows[[2]]]] <- NA_character_
+nonlecture_entries <- weekly_content_entries(nonlecture_description_cases)
+nonlecture_resources <- c(
+  list(nonlecture_entries[[1]]$practical),
+  nonlecture_entries[[1]]$extras[1:2]
+)
+for (resource in nonlecture_resources) {
+  expect_true(
+    "description" %in% names(resource) && is.null(resource$description),
+    "Blank nonlecture descriptions should be named NULL values."
+  )
+}
 
 expect_error(
   validate_weekly_content(weekly_content[0, , drop = FALSE]),
