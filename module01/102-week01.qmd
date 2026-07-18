@@ -5,215 +5,114 @@ number-sections: true
 number-depth: 2
 ---
 
-[Return to weekly content](../index.qmd#weekly-content)
+::: {.week-learning-path week="1"}
+:::
 
 ## What you need this week
 
 - [Introduction to Module 1](101-intro.qmd)
-- [Workshop 1: Software](w01-intro.qmd)
+- [Week 1 lectures: Introduction and fundamentals](../lectures/L01/index.qmd)
+- [Workshop 1: Software and graphical models](w01-intro.qmd)
 
 ## Introduction
 
-Welcome to your very first BEDA practical.
-Today we will help you get started by giving you a free, physical lab notebook and making sure you have all the software you need for this unit.
+Welcome to your first BEDA practical. We will give you a physical lab notebook, introduce the practical format, and help you apply the ideas from the Week 1 lectures and workshop to a biological question.
 
+### Before class
 
-### Things to prepare
-
-1. Attend the first lecture (or watch the recording **before the lab**).
-2. **Bring a laptop**. If you need to borrow one, let us know, there are loaners available in the lab.
-3. Be ready to install software in the lab (R, SPSS, and/or Jamovi). **Make sure your laptop has admin rights, internet access and enough space.** 
-
+1. Attend the Week 1 lectures or watch the recordings before the practical.
+2. Bring a laptop. Loan laptops are available from the demonstrator bench if you need one.
 
 ### Learning outcomes
 
-By the end of this session, you should be able to:
+By the end of this practical, you should be able to:
 
-- [ ] Trial the software you will be using in this unit. 
-- [ ] Use cheatsheets to help with your data analysis.
-- [ ] Understand what a model is and how it fits into study design.
-- [ ] Come up with a model, thinking about how you would design a study.
-- [ ] Model data using plots such as boxplots, scatterplots and barplots.
+- [ ] formulate a measurable biological question;
+- [ ] identify its response and predictor variables;
+- [ ] classify the variables and express their relationship as `y ~ x`;
+- [ ] sketch a graphical model suited to the variables; and
+- [ ] explain one limitation of the proposed model or dataset.
 
-### What we will cover today
+### How the practical will work
 
-We will explain to you how BEDA practicals work, what you will be doing, and how to get the most out of them. Your lecturer (probably Januar) will cover:
+We will briefly cover:
 
-1. Code of conduct and lab rules
-2. Lab and Handbook structure
-3. Demonstrators and how they can help you
-4. Attendance and feedback
+1. laboratory conduct and safety;
+2. how the practicals and handbook are organised;
+3. how demonstrators can help; and
+4. attendance and feedback.
 
+You will then work independently or with a peer on the task below. Ask a demonstrator when you need help, but keep a note of the decision you were trying to make so that the explanation remains useful later.
 
-## Workshop 01
+## From Workshop 1 to Practical 1
 
-Each practical in Module 1 begins with a quick **workshop**. We will cover a key idea, then you will get stuck into some quick hands-on exercises in the lab. These are your chance to practise what you have heard in lectures and try out study design and data analysis for yourself.
+Bring the Model Card you started in [Workshop 1](w01-intro.qmd). You may refine that question or develop a new one using the penguin or possum data.
 
-The Workshop 1 resource linked above covers:
+Your conceptual readiness is required: you should be able to identify `y` and `x`, choose a plot that suits their variable types, and explain what the plot would show. If you are not there yet, revisit Workshop 1 Steps 4–6 before continuing.
 
-1. An informal survey to assess statistical literacy
-2. A quick introduction to R, SPSS, and Jamovi
+Software readiness is separate. If you recorded a follow-up, use your sketch and the supplied workshop plot today, contact the teaching team through [Ed](https://edstem.org/au/courses/36475/), and resolve software access before Practical 3.
 
-The workshop should take about 45 minutes unless Januar gets carried away. Hopefully one of you will keep him on track, but if not, a demonstrator will be there to remind him to wrap it up.
+## Quick recap: questions, variables and plots
 
+In the model notation `y ~ x`, `y` is the response and `x` is the predictor. In words, we are proposing that the response is related to, or explained by, the predictor.
 
-## Exercise 1 – Cheatsheets
+- Use a **scatterplot** when the response and predictor are both continuous.
+- Use a **boxplot** when the response is continuous and the predictor defines categories or groups.
 
-This exercise introduces [<i class="bi bi-file-earmark-text"></i> **Cheatsheets**](../cheatsheets.qmd): handy guides with common functions and commands to help you get started with new software.
-
-### Your Task
-
-1.  Open [<i class="bi bi-file-earmark-text"></i> **Cheatsheets**](../cheatsheets.qmd), also available in the sidebar.
-2.  **Choose a cheatsheet.** You could try one for a program you have never used, or pick a familiar one to see if you learn something new.
-3.  **Follow the tasks** on the cheatsheet. If you get stuck, please ask a friend or a demonstrator for help.
-
-
-This is a good opportunity to compare different software for the same task. For example, try using both R and Jamovi to plot the same data. You might discover a new preference.
-
-
-### Feedback and Suggestions
-
-Your feedback helps improve these resources. Once you have tried a cheatsheet, please use the quick feedback form on the cheatsheets page. It only takes a minute. You can also request new cheatsheets, which Januar will create as the unit progresses.
-
-::: {.callout-note}
-## Want to help improve the cheatsheets? (Optional)
-
-If you would like to contribute directly, we welcome your suggestions. You can:
-
--   **Email Januar** with your ideas.
--   **Post on Ed** to discuss your thoughts with the teaching team.
--   **Submit a pull request on GitHub.** This is more technical, but the repository link is on the cheatsheet page if you are familiar with Git.
-
-If your contribution is accepted, you will be credited as a co-author. This is a great way to contribute to the unit's resources and something you can mention on your CV. You can contribute at any time during the semester.
-:::
-
-
-
-## Exercise 2 – Introduction to models in statistics
-
-### What is the point?
-
-One of the most important parts of study design is being able to model data. One way to do this is with plots – they are not just pretty pictures, but actually capture the heart of your study design. In this exercise, you will get to grips with what a model is and how it helps you plan and analyse experiments.
-
-#### What is a model?
-
-A model is just a simple way to represent something complicated. In data analysis, a model helps us make sense of a dataset, test ideas (hypotheses), or make predictions. Models can be as simple or as fancy as you like, depending on your data and your research question.
-
-Soon, you will be using what is called an **empirical model**. It might look like a scary equation, but you do not need to be a maths genius to get the idea.
-
-Here is an example:
-
-$$y = \beta_0 + \beta_1 x_1 + \epsilon$$
-
-This just means: “the value of $y$ is equal to a constant, plus $x_1$ times another constant, plus a bit of random error.”
-
-But we can make it even simpler by thinking of it as a relationship:
-
-$$y \sim x_1$$
-
-This means: “$y$ is influenced by $x_1$.”
-
-So if $y$ is weight and $x_1$ is age, it is:
-
-$$\text{weight} \sim \text{age}$$
-
-In other words, “weight depends on age.”
-
-#### If you can **plot** it, you are already **modelling** it!
-
-For now, let us focus on *graphical models* – in other words, plots! Plots are models because they show relationships between variables. For example, you could plot the weight of an animal species against its age or height to see if there is a pattern:
-
-```{r}
-#| label: fig-weight-age
-#| fig-cap: "Weight vs Age of an animal species. Simulated data. Here, age is a categorical variable."
-#| fig-alt: "Boxplot comparing simulated animal weight for young and old age groups."
-#| code-fold: true
-#| warning: false
-
-set.seed(328)
-
-Weight <- c(rnorm(50, mean = 50, sd = 3), rnorm(50, mean = 60, sd = 3))
-Age <- c(rep("Young", 50), rep("Old", 50))
-
-
-# create data frame
-data <- data.frame(Weight, Age)
-
-# ggplot
-library(ggplot2)
-ggplot(data, aes(x = Age, y = Weight)) +
-  geom_boxplot() +
-  theme_classic() +
-  scale_fill_brewer(palette = "Set1") +
-  scale_x_discrete(limits = c("Young", "Old"))
-```
-
-Interestingly, how we consider your variables can drastically change the type of plot and model used for data analysis. For example, consider the same relationship as above, but plotted differently:
-
-```{r}
-#| label: fig-weight-age-scatter
-#| fig-cap: "Weight vs Age of an animal species. Simulated data. Here, age is a continuous variable."
-#| fig-alt: "Scatterplot of simulated animal weight by age with an upward fitted trend line."
-#| code-fold: true
-
-V_max <- 70 # Assume the maximum weight is 70 kg
-K_M <- 10 # Assume the Michaelis constant is 10 years
-
-# Generate age data
-age <- seq(1, 20, by = 0.5) # From 1 to 20 years, in 0.5 year increments
-
-# Apply the Michaelis-Menten equation to simulate weight data
-weight <- V_max * age / (K_M + age) + rnorm(length(age), mean = 0, sd = 5)
-
-# Create a data frame
-data <- data.frame(Age = age, Weight = weight)
-
-# Plot using ggplot2
-library(ggplot2)
-ggplot(data, aes(x = Age, y = Weight)) +
-  geom_point() + # Use geom_line for continuous data
-  geom_smooth(formula = y ~ x, method = "lm", se = FALSE) +
-  theme_classic()
-```
-
-
-
-Notice how both plots show the same kind of relationship, but the way we interpret them – and the type of model we use – is different. This is what study design and data analysis are all about: the model you choose can totally change your results, so planning ahead is key!
-
+The [Week 1 lectures](../lectures/L01/index.qmd) explain the empirical modelling approach. [Workshop 1](w01-intro.qmd) provides the guided penguin example and the variable-pair checklist. Return to those pages if you need the full explanation rather than trying to reconstruct it here.
 
 ## Get ready
 
-- MS Excel (or similar) to look at the data files
-- Word, Google Docs, or just pen and paper to sketch your models
-- R, Jamovi, SPSS, or any software you fancy for plotting
-- Data: [penguins.csv](https://canvas.sydney.edu.au/files/44247073/download?download_frd=1&verifier=Dlxf3Nix6XHMgS07tA93Z7KpcilKMwDkVQNvuxgR) and [possums.xlsx](https://canvas.sydney.edu.au/files/44806116/download?download_frd=1&verifier=dUZ2oiezFxTiXooBZEiQh1HC3dzmMCm1csLU2gxf) (grab them from Canvas)
+- Your lab notebook, or an accessible digital document, for the Model Card and plot sketch
+- [penguins.csv](assets/penguins.csv)
+- [possums.xlsx](assets/possums.xlsx)
+- Jamovi, experienced R, or SPSS if your software is ready; software is optional for today's sketching task
 
 ## Your task
 
-Your goal is to practise thinking like a research biologist. For this, you will choose a dataset, use that variables to formulate a research question, and sketch a graphical model to help answer your question. **Remember, you do not need to analyse or process any data for this task. Simply knowing the type of variables you are working with (e.g., categorical, continuous) is enough to decide on and sketch an appropriate plot.**
+Your goal is to think like a research biologist: use the available variables to formulate a question, represent it as a simple model, and decide what a suitable plot would show. You do not need to fit or test a statistical model today.
 
-1.  **Explore the data.** Download `penguins.csv` and `possums.xlsx`. Open them and familiarise yourself with the variables available in each dataset.
+### 1. Explore one dataset
 
-2.  **Formulate a research question and choose a model.** Pick one of the datasets and think of a simple research question you could ask. Then, decide which type of plot would be the best way to visualise the answer. Here are some common plots and what they show:
-    -   **Histogram:** Shows the distribution of a single continuous variable. Useful for seeing the shape of your data (e.g., is it symmetrical or skewed?).
-    -   **Scatterplot:** Shows the relationship between two continuous variables. Ideal for spotting trends, patterns, or correlations.
-    -   **Boxplot:** Compares the distribution of a continuous variable across different categories. Excellent for comparing groups.
-    -   **Barplot:** Compares a summary statistic (like a mean or count) across different categories. Use it when you want to show the size of different groups.
+Open `penguins.csv` or `possums.xlsx` and read the variable names. Identify at least one continuous variable and one possible predictor.
 
-3.  **Sketch your model and write down your question.** In your new lab notebook, write down your research question clearly. Beneath it, sketch the plot that represents your model. For example, if your question is "How does possum weight differ between sexes?", a boxplot would be a suitable model.
+**What to produce:** A short list of two or three variables you might use, with their variable types.
 
-4.  **Think about your model.** Consider the variables you have chosen. Why is your chosen plot suitable? Could you use a different plot if you collected the data differently? Discuss your ideas with your peers or your demonstrator.
+**If you are stuck:** Start with `body_mass_g` and `species` in the penguin data, or `BW` and `Age` in the possum data.
 
+### 2. Refine or formulate a biological question
 
+Use your Workshop Model Card or begin a new one. State a measurable relationship or comparison and name the response and predictor.
+
+**What to produce:** A question plus the model written as `response ~ predictor` and explained in words.
+
+**If you are stuck:** Use the frame, “How does **response** differ with, or relate to, **predictor**?”
+
+### 3. Sketch the graphical model
+
+Choose a plot that matches the variable types, then sketch it in your notebook. Label both axes and show the pattern or group comparison you expect.
+
+**What to produce:** A labelled scatterplot or boxplot sketch. You may reproduce it in software, but the sketch is sufficient.
+
+**If you are stuck:** Recheck the two plot rules in the recap. A continuous response with a categorical predictor suggests a boxplot; two continuous variables suggest a scatterplot.
+
+### 4. Check the model and discuss it
+
+Explain why your plot suits the question and variable types. Then identify one limitation or unresolved question. Check your own Model Card or discuss it with a peer or demonstrator.
+
+**What to produce:** One reason for the plot choice and one careful limitation.
+
+**If you are stuck:** Begin with “This plot does not show…” or “I would need ___ before concluding…”.
 
 ::: {.callout-note}
 ## Example
-1. Open the **possum data** in Excel. *Let’s think about how the **weight** of a possum changes with **age**.*
-2. What kind of variables are these? Are they continuous, categorical, or something else? With that in mind, sketch the plot(s) you think will help you understand the data. *Weight is continuous and age is categorical, so a boxplot is a good start.*
-3. What if you collected age in years instead of categories? Then you could use a scatterplot. But maybe you can’t tell a possum’s exact age, so that might not be practical.
-4. *The first model would probably use a two-sample t-test, while the second could use linear regression.*
 
-A model comparing the weights of juvenile and adult possums could be shown as a boxplot or barplot. Here’s a boxplot of the possum data:
+1. Open the **possum data**. We will consider how possum **body weight** changes with **age**.
+2. Body weight (`BW`) is continuous, while `Age` records age classes. A boxplot is therefore a reasonable starting point.
+3. If exact age in years had been recorded as a continuous variable, a scatterplot could instead show how weight changes with age.
+4. The model is `BW ~ Age`: body weight is related to, or explained by, age class.
+
+The code below produces the boxplot, but you are only required to sketch it.
 
 ```{r}
 #| code-fold: true
@@ -227,24 +126,21 @@ ggplot(possums, aes(x = Age, y = BW)) +
   theme_classic()
 ```
 
+The plot helps us plan an analysis, but it also exposes a problem: there is only one juvenile possum in the dataset. We could draw the comparison, but we could not analyse it reliably without more juvenile observations.
 
-
-See how thinking about how to interpret the data is a big part of study design? It helps you decide what data to collect and how to analyse it. But notice – there is only one juvenile possum in the dataset, so you could not really analyse this properly! 
-
-**Food for thought:** Can age still be used to construct a model given that there is only one juvenile possum?
+**Food for thought:** Can age class still be useful in a model when one group contains only one animal? What additional data would you need?
 :::
-
-
-
 
 ## That is a wrap!
 
-That is all for today! If you have any questions, just ask your demonstrators – they are here to help. Do not forget to give feedback on the cheatsheets and have a go at the exercises in your own time. See you next week for more on study design and data analysis!
+Keep your completed Model Card in your lab notebook. It records how you moved from a biological question to variables and a graphical model, and you will use the same reasoning throughout BEDA.
+
+If part of the task remains unclear, record the specific decision you were unsure about and ask a demonstrator or post on Ed. Next week we will build on this foundation when we examine study design and data structure.
 
 ## Fancy a challenge?
 
-This section is for those who finish early or would like extra practice at home. Use the `penguins` and `possums` datasets from this practical. Don't forget that you are either drawing plots or writing
+This section is for students who finish early or want further practice. Use the penguin or possum data to draw plots and express models as `y ~ x`; you are not expected to fit the statistical models yet.
 
-1.  **Penguins dataset:** Create a plot to show the relationship between `bill_length_mm`, `bill_depth_mm`, and `flipper_length_mm`. Is it possible? What model are you constructing and can you put it into words?
+1. **Penguins dataset:** Explore the relationship among `bill_length_mm`, `bill_depth_mm`, and `flipper_length_mm`. Can one two-dimensional plot show all three clearly, or would you use more than one plot or another visual property? State the model or models in words.
 
-2.  **Possums dataset:** Investigate the relationship between body weight (`BW`) and the personality trait for boldness (`BoldBLUP`). How do `Sex` and `Age` influence this relationship? How would you model three variables together in a plot? Can you model all four of them (`BW`, `BoldBLUP`, `Sex`, and `Age`) together? 
+2. **Possums dataset:** Explore the relationship between body weight (`BW`) and boldness (`BoldBLUP`). How might `Sex` and `Age` change that relationship? Sketch a way to show three variables together, then consider what would be lost or become difficult to read if you tried to show all four.

@@ -1,5 +1,5 @@
 weekly_content_weeks <- 1:13
-weekly_content_sections <- c("lecture", "practical", "extra")
+weekly_content_sections <- c("lecture", "workshop", "practical", "extra")
 
 escape_markdown_label <- function(value) {
   value <- gsub("\\", "\\\\", value, fixed = TRUE)
@@ -36,7 +36,8 @@ escape_html_attribute <- function(value) {
 
 validate_weekly_content <- function(data) {
   required_columns <- c(
-    "week", "section", "position", "title", "url", "description"
+    "week", "section", "position", "title", "url", "description",
+    "show_on_schedule"
   )
   missing_columns <- setdiff(required_columns, names(data))
 
@@ -66,7 +67,24 @@ validate_weekly_content <- function(data) {
       any(!data$section %in% weekly_content_sections)
   ) {
     stop(
-      "section must be lecture, practical, or extra.",
+      "section must be lecture, workshop, practical, or extra.",
+      call. = FALSE
+    )
+  }
+
+  schedule_visibility <- trimws(as.character(data$show_on_schedule))
+  if (
+    anyNA(data$show_on_schedule) ||
+      any(!schedule_visibility %in% c("TRUE", "FALSE"))
+  ) {
+    stop(
+      "show_on_schedule must contain only TRUE or FALSE.",
+      call. = FALSE
+    )
+  }
+  if (any(data$section == "workshop" & schedule_visibility != "FALSE")) {
+    stop(
+      "Workshop rows must set show_on_schedule to FALSE.",
       call. = FALSE
     )
   }
@@ -123,6 +141,8 @@ weekly_content_entries <- function(data) {
 
   data$week <- as.integer(data$week)
   data$position <- as.integer(data$position)
+  data$show_on_schedule <-
+    trimws(as.character(data$show_on_schedule)) == "TRUE"
   data <- data[
     order(
       data$week,
@@ -130,6 +150,8 @@ weekly_content_entries <- function(data) {
       data$position
     ),
   ]
+  workshop_weeks <- unique(data$week[data$section == "workshop"])
+  data <- data[data$show_on_schedule, , drop = FALSE]
 
   resources_for <- function(rows, section) {
     rows <- rows[rows$section == section, , drop = FALSE]
@@ -156,7 +178,8 @@ weekly_content_entries <- function(data) {
       week = week,
       lectures = resources_for(rows, "lecture"),
       practical = if (length(practical) == 0) NULL else practical[[1]],
-      extras = resources_for(rows, "extra")
+      extras = resources_for(rows, "extra"),
+      includes_workshop = week %in% workshop_weeks
     )
   })
 }
@@ -188,6 +211,10 @@ resource_cell_lines <- function(resources) {
 }
 
 lecture_theme_cell_lines <- function(resources) {
+  if (length(resources) == 0) {
+    return("  - —")
+  }
+
   resource <- resources[[1]]
   c(
     paste("  -", resource_markdown(resource)),
@@ -199,20 +226,35 @@ lecture_theme_cell_lines <- function(resources) {
   )
 }
 
-practical_cell_line <- function(practical, html_output) {
+practical_cell_line <- function(
+  practical,
+  html_output,
+  week,
+  includes_workshop
+) {
   if (is.null(practical)) {
     return("  - —")
   }
 
   if (!html_output) {
     if (is.null(practical$url) || !nzchar(practical$url)) {
-      return("  - Practical")
+      return("  - Practical session")
     }
 
-    return(sprintf("  - [Practical](%s)", practical$url))
+    return(sprintf("  - [Practical session](%s)", practical$url))
   }
 
-  label <- escape_html_attribute(practical$title)
+  label <- if (includes_workshop) {
+    sprintf(
+      "Open Week %s practical session, including Workshop %s",
+      week,
+      week
+    )
+  } else {
+    sprintf("Open Week %s practical session", week)
+  }
+  label <- escape_html_attribute(label)
+  title <- escape_html_attribute(practical$title)
   icon <- paste0(
     '<i class="bi bi-flask" aria-hidden="true"></i>',
     '<span class="visually-hidden">', label, "</span>"
@@ -221,7 +263,7 @@ practical_cell_line <- function(practical, html_output) {
   if (is.null(practical$url) || !nzchar(practical$url)) {
     return(paste0(
       '  - <span class="weekly-practical-link weekly-practical-link-static" ',
-      'role="img" aria-label="', label, '" title="', label, '">',
+      'role="img" aria-label="', label, '" title="', title, '">',
       icon,
       "</span>"
     ))
@@ -230,7 +272,7 @@ practical_cell_line <- function(practical, html_output) {
   paste0(
     '  - <a class="weekly-practical-link" href="',
     escape_html_attribute(practical$url),
-    '" aria-label="', label, '" title="', label, '">',
+    '" aria-label="', label, '" title="', title, '">',
     icon,
     "</a>"
   )
@@ -243,7 +285,7 @@ weekly_table_lines <- function(weekly_content, caption, html_output) {
     "",
     "- - Week",
     "  - Lectures",
-    "  - Practical",
+    "  - Practical session",
     "  - Extras",
     ""
   )
@@ -253,7 +295,12 @@ weekly_table_lines <- function(weekly_content, caption, html_output) {
       lines,
       sprintf("- - %s", entry$week),
       lecture_theme_cell_lines(entry$lectures),
-      practical_cell_line(entry$practical, html_output),
+      practical_cell_line(
+        entry$practical,
+        html_output,
+        entry$week,
+        entry$includes_workshop
+      ),
       resource_cell_lines(entry$extras),
       ""
     )
@@ -276,6 +323,10 @@ schedule_resource_lines <- function(resources) {
 }
 
 schedule_lecture_lines <- function(resources) {
+  if (length(resources) == 0) {
+    return("—")
+  }
+
   resource <- resources[[1]]
   c(
     paste("-", resource_markdown(resource)),
@@ -303,7 +354,7 @@ weekly_typst_schedule_lines <- function(weekly_content) {
       "",
       schedule_lecture_lines(entry$lectures),
       "",
-      "**Practical**",
+      "**Practical session**",
       "",
       schedule_practical_line(entry$practical),
       "",

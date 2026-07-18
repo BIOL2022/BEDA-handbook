@@ -11,7 +11,7 @@ Please provide feedback on the cheatsheets here: [**Give Feedback**](https://for
 ## RStudio/R
 
 - [importing data into R](https://usyd-soles-edu.github.io/cheatsheet-r-data-import/){target="_blank" rel="noopener noreferrer"} - `data`
-- [boxplots](https://usyd-soles-edu.github.io/cheatsheet-R-boxplot/){target="_blank" rel="noopener noreferrer"} - `vis`
+- [boxplots](https://usyd-soles-edu.github.io/cheatsheet-R-boxplot/){#cheatsheet-r-boxplot target="_blank" rel="noopener noreferrer"} - `vis`
 - [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-r-scatterplot/){target="_blank" rel="noopener noreferrer"} - `vis`
 - [histograms](https://usyd-soles-edu.github.io/cheatsheet-r-histogram/){target="_blank" rel="noopener noreferrer"} - `vis`
 - [Publication-ready(-ish) ANOVA/regression tables in R](https://usyd-soles-edu.github.io/cheatsheet-r-html-tables/){target="_blank" rel="noopener noreferrer"} - `vis`
@@ -24,7 +24,7 @@ Please provide feedback on the cheatsheets here: [**Give Feedback**](https://for
 ## Jamovi
 
 - [Using flexplot to create *common* plots in Jamovi](https://usyd-soles-edu.github.io/cheatsheet-jamovi-flexplot/flexplot.html){target="_blank" rel="noopener noreferrer"} - `vis`
-- [boxplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-boxplot/){target="_blank" rel="noopener noreferrer"} - `vis`
+- [boxplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-boxplot/){#cheatsheet-jamovi-boxplot target="_blank" rel="noopener noreferrer"} - `vis`
 - [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-jamovi-scatterplot/){target="_blank" rel="noopener noreferrer"} - `vis`
 - [histograms](https://usyd-soles-edu.github.io/cheatsheet-jamovi-histogram/){target="_blank" rel="noopener noreferrer"} - `vis`
 - modelling a numerical response against:
@@ -43,7 +43,7 @@ Please provide feedback on the cheatsheets here: [**Give Feedback**](https://for
 
 ## SPSS
 
-- [boxplots](https://envx-resources.github.io/cheatsheet-spss-boxplot/){target="_blank" rel="noopener noreferrer"} - `vis`
+- [boxplots](https://envx-resources.github.io/cheatsheet-spss-boxplot/){#cheatsheet-spss-boxplot target="_blank" rel="noopener noreferrer"} - `vis`
 - [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-spss-scatterplot/){target="_blank" rel="noopener noreferrer"} - `vis`
 - [using the chart builder](https://usyd-soles-edu.github.io/cheatsheet-spss-chart-builder/){target="_blank" rel="noopener noreferrer"} - `vis`
 

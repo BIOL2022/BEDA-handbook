@@ -33,6 +33,8 @@ website:
         text: Ed
         href: https://edstem.org/au/courses/36475/
 
+filters:
+  - filters/learning-path.lua
 
 format:
   html:

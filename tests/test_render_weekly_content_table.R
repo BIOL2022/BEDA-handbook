@@ -46,7 +46,12 @@ expect_error <- function(expression, pattern, message) {
   )
 }
 
-render_output <- function(pandoc_to, caption, include_caption = TRUE) {
+render_output <- function(
+  pandoc_to,
+  caption,
+  include_caption = TRUE,
+  data = weekly_content
+) {
   previous_output <- knitr::opts_knit$get("rmarkdown.pandoc.to")
   on.exit(
     knitr::opts_knit$set(rmarkdown.pandoc.to = previous_output),
@@ -54,7 +59,7 @@ render_output <- function(pandoc_to, caption, include_caption = TRUE) {
   )
   knitr::opts_knit$set(rmarkdown.pandoc.to = pandoc_to)
 
-  arguments <- list(weekly_content = weekly_content)
+  arguments <- list(weekly_content = data)
   if (include_caption) {
     arguments$caption <- caption
   }
@@ -127,6 +132,67 @@ expect_error(
   validate_weekly_content(missing_description),
   "missing columns: description",
   "A missing description column should be rejected."
+)
+
+missing_visibility <- weekly_content
+missing_visibility$show_on_schedule <- NULL
+expect_error(
+  validate_weekly_content(missing_visibility),
+  "missing columns: show_on_schedule",
+  "A missing schedule-visibility column should be rejected."
+)
+
+for (invalid_visibility in list("", " ", NA_character_, "true", "yes")) {
+  invalid_visibility_data <- weekly_content
+  invalid_visibility_data$show_on_schedule <- as.character(
+    invalid_visibility_data$show_on_schedule
+  )
+  invalid_visibility_data$show_on_schedule[[1]] <- invalid_visibility
+  expect_error(
+    validate_weekly_content(invalid_visibility_data),
+    "show_on_schedule must contain only TRUE or FALSE",
+    "Blank, missing, lowercase, and invalid visibility values should be rejected."
+  )
+}
+
+expect_true(
+  any(weekly_content$section == "workshop"),
+  "The maintained content should include the Week 1 workshop row."
+)
+
+visible_workshop <- weekly_content
+workshop_row <- which(visible_workshop$section == "workshop")[[1]]
+visible_workshop$show_on_schedule[[workshop_row]] <- TRUE
+expect_error(
+  validate_weekly_content(visible_workshop),
+  "Workshop rows must set show_on_schedule to FALSE",
+  "Workshop rows should be explicitly hidden from the schedule."
+)
+
+hidden_lecture <- weekly_content
+hidden_lecture_row <- which(hidden_lecture$section == "lecture")[[1]]
+hidden_lecture$show_on_schedule[[hidden_lecture_row]] <- FALSE
+expect_true(
+  isTRUE(validate_weekly_content(hidden_lecture)),
+  "A lecture may be explicitly hidden from the schedule."
+)
+hidden_lecture_entries <- weekly_content_entries(hidden_lecture)
+expect_true(
+  length(hidden_lecture_entries[[1]]$lectures) == 0L,
+  "A hidden lecture should be absent from the Week 1 schedule entry."
+)
+hidden_lecture_output <- render_output(
+  "html",
+  caption = FALSE,
+  data = hidden_lecture
+)
+expect_true(
+  !any(grepl(
+    escape_markdown_label(weekly_content$title[[hidden_lecture_row]]),
+    hidden_lecture_output,
+    fixed = TRUE
+  )),
+  "A hidden lecture should be absent from the rendered schedule."
 )
 
 blank_lecture_description <- weekly_content
@@ -215,7 +281,7 @@ invalid_section <- weekly_content
 invalid_section$section[[1]] <- "other"
 expect_error(
   validate_weekly_content(invalid_section),
-  "section must be lecture, practical, or extra",
+  "section must be lecture, workshop, practical, or extra",
   "Invalid sections should be rejected."
 )
 
@@ -294,6 +360,31 @@ expect_true(
   any(grepl("bi-flask", hidden_caption, fixed = TRUE)),
   "HTML output should contain practical icons."
 )
+expect_true(
+  any(grepl("Practical session", hidden_caption, fixed = TRUE)),
+  "The schedule should use the visible Practical session heading."
+)
+expect_true(
+  !any(grepl("Software and graphical models", hidden_caption, fixed = TRUE)),
+  "Rows with show_on_schedule = FALSE should be absent from the schedule."
+)
+expected_visible_titles <- trimws(weekly_content$title[weekly_content$show_on_schedule])
+expect_true(
+  all(vapply(
+    expected_visible_titles,
+    function(title) any(grepl(escape_markdown_label(title), hidden_caption, fixed = TRUE)),
+    logical(1)
+  )),
+  "Every intended TRUE row should remain present in the schedule output."
+)
+expect_true(
+  any(grepl(
+    'aria-label="Open Week 1 practical session, including Workshop 1"',
+    hidden_caption,
+    fixed = TRUE
+  )),
+  "The Week 1 practical icon should announce that the session includes Workshop 1."
+)
 
 latex_output <- render_output("latex", caption = FALSE)
 expect_true(
@@ -309,7 +400,7 @@ expect_true(
   "Non-HTML output should not contain HTML practical icons."
 )
 expect_true(
-  any(grepl("[Practical](", latex_output, fixed = TRUE)),
+  any(grepl("[Practical session](", latex_output, fixed = TRUE)),
   "Non-HTML practicals should use Markdown links."
 )
 

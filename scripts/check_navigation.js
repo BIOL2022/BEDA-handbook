@@ -314,7 +314,10 @@ if (!indexPage) {
     if (caption) {
       failures.push("homepage weekly table should not have a caption");
     }
-    if (JSON.stringify(headers) !== JSON.stringify(["Week", "Lectures", "Practical", "Extras"])) {
+    if (
+      JSON.stringify(headers) !==
+      JSON.stringify(["Week", "Lectures", "Practical session", "Extras"])
+    ) {
       failures.push(`homepage weekly table has unexpected headers: ${headers.join(", ")}`);
     }
     if (bodyRows.length !== 13) {
@@ -352,9 +355,82 @@ if (!indexPage) {
       if (hasPracticalIcon && !/\baria-label\s*=/i.test(practicalHtml)) {
         failures.push(`homepage Week ${week} practical icon is missing an aria-label`);
       }
+      if (
+        week === 1 &&
+        !/\baria-label=["']Open Week 1 practical session, including Workshop 1["']/i.test(
+          practicalHtml,
+        )
+      ) {
+        failures.push(
+          "homepage Week 1 practical icon does not announce the included workshop",
+        );
+      }
       if (practicalLinks.length > 1) {
         failures.push(`homepage Week ${week} has more than one practical link`);
       }
+    }
+
+    if (normaliseText(weeklyTable).includes("Software and graphical models")) {
+      failures.push("homepage weekly table should hide the Week 1 workshop row");
+    }
+  }
+}
+
+const weekOnePath = [
+  {
+    file: "lectures/L01/index.html",
+    current: "Lectures — learn the ideas: Introduction and fundamentals",
+  },
+  {
+    file: "module01/w01-intro.html",
+    current: "Workshop — practise the fundamentals: Software and graphical models",
+  },
+  {
+    file: "module01/102-week01.html",
+    current: "Practical — apply them: Getting started",
+  },
+];
+const weekOneLabels = [
+  "Lectures — learn the ideas: Introduction and fundamentals",
+  "Workshop — practise the fundamentals: Software and graphical models",
+  "Practical — apply them: Getting started",
+];
+
+for (const route of weekOnePath) {
+  const file = path.join(siteRoot, ...route.file.split("/"));
+  const page = pages.get(file);
+  if (!page) {
+    failures.push(`missing rendered Week 1 pathway page ${route.file}`);
+    continue;
+  }
+  if (!page.ids.has("week-1-learning-path")) {
+    failures.push(`${route.file} is missing the Week 1 learning-path heading`);
+  }
+
+  const headingStart = page.html.search(
+    /<(?:section|h2)\b[^>]*\bid=["']week-1-learning-path["'][^>]*>/i,
+  );
+  const pathwayHtml = headingStart === -1 ? "" : page.html.slice(headingStart);
+  const orderedList = pathwayHtml.match(/<ol\b[^>]*>[\s\S]*?<\/ol>/i)?.[0] ?? "";
+  const pathwayLinks = extract(orderedList).links;
+  const listItems = Array.from(orderedList.matchAll(/<li\b/gi));
+
+  if (listItems.length !== 3) {
+    failures.push(`${route.file} Week 1 pathway needs exactly three ordered items`);
+  }
+  if (pathwayLinks.length !== 2) {
+    failures.push(`${route.file} Week 1 pathway needs exactly two links`);
+  }
+  if (!normaliseText(orderedList).includes(`${route.current} — you are here`)) {
+    failures.push(`${route.file} does not identify its current Week 1 pathway item`);
+  }
+  for (const label of weekOneLabels) {
+    const isLinked = pathwayLinks.some((link) => link.text === label);
+    if (label === route.current && isLinked) {
+      failures.push(`${route.file} links its current Week 1 pathway item`);
+    }
+    if (label !== route.current && !isLinked) {
+      failures.push(`${route.file} is missing Week 1 pathway link "${label}"`);
     }
   }
 }
