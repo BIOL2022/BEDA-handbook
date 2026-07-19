@@ -3,18 +3,18 @@ week,section,position,title,url,description,show_on_schedule
 1,workshop,1,Software and graphical models,module01/w01-intro.qmd,,FALSE
 1,practical,1,Getting started,module01/102-week01.qmd,,TRUE
 1,extra,1,Am I ready for BEDA?,prerequisites.qmd,,TRUE
-1,extra,2,Quiz 1,https://canvas.sydney.edu.au/courses/74353/assignments/696323,,TRUE
+1,extra,2,Quiz 1,,,TRUE
 2,lecture,1,Sampling and the empirical model,lectures/L02/index.qmd,Representative data and designing experiments with minimal statistical know-how.,TRUE
 2,practical,1,Study design,module01/103-week02.qmd,,TRUE
 2,extra,1,Common statistical tests are linear models,https://lindeloev.github.io/tests-as-linear/,,TRUE
-2,extra,2,Quiz 2,https://canvas.sydney.edu.au/courses/74353/assignments/696324,,TRUE
+2,extra,2,Quiz 2,,,TRUE
 3,lecture,1,Choosing the right model(s),lectures/L03/index.qmd,The easy way to validate model assumptions.,TRUE
 3,practical,1,Data analysis,module01/104-week03.qmd,,TRUE
-3,extra,1,Quiz 3,https://canvas.sydney.edu.au/courses/74353/assignments/696325,,TRUE
+3,extra,1,Quiz 3,,,TRUE
 3,extra,2,Early Feedback Task (5%) — opens Friday at 10 am,https://canvas.sydney.edu.au/courses/74353/assignments/696326,,TRUE
 4,lecture,1,Multiple predictors and transformations,lectures/L04/index.qmd,Expanding models and using transformations to increase model fit.,TRUE
 4,practical,1,Project launch and pilot study timeline,module02/202-timeline.qmd#wk4,,TRUE
-4,extra,1,EFT: Evaluation Quiz (10%),https://canvas.sydney.edu.au/courses/74353/assignments/696327,,TRUE
+4,extra,1,EFT: Evaluation Quiz (10%),,,TRUE
 5,lecture,1,Controls and revision,lectures/L05/index.qmd,How to control your experiments with data that you collect.,TRUE
 5,practical,1,Main experiment timeline,module02/202-timeline.qmd#wk5,,TRUE
 5,extra,1,Work on your experiments,,,TRUE
