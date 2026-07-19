@@ -170,7 +170,7 @@ reference_position <- regexpr(
   workshop,
   fixed = TRUE
 )[[1]]
-readiness_position <- regexpr("## Readiness checkpoints", workshop, fixed = TRUE)[[1]]
+readiness_position <- regexpr("#readiness-checkpoints}", workshop, fixed = TRUE)[[1]]
 expect_true(
   reference_position > readiness_position && readiness_position > 0L,
   "Broad software reference material should follow the timed workshop and readiness checks."
@@ -192,7 +192,7 @@ expect_true(
 )
 expect_true(
   grepl("## Example", practical, fixed = TRUE) &&
-    grepl("## Fancy a challenge?", practical, fixed = TRUE) &&
+    grepl("#fancy-a-challenge}", practical, fixed = TRUE) &&
     grepl("possums.xlsx", practical, fixed = TRUE),
   "Practical 1 should retain its worked possum example and challenge."
 )

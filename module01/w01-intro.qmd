@@ -1,6 +1,7 @@
 ---
 title: "Workshop 1: Software and graphical models"
 author: Januar Harianto
+body-classes: manual-page
 number-sections: false
 ---
 
@@ -11,7 +12,7 @@ This workshop gives you a short, guided introduction to the software and ideas y
 
 The class period is 45 minutes: a 40-minute core with 5 minutes of flex time for opening files, changing pages and getting support.
 
-## Before the timed workshop: optional survey
+## [Optional]{.manual-activity-label} Before the timed workshop: optional survey {.manual-activity .is-optional #before-the-timed-workshop-optional-survey}
 
 If your class survey is available, complete it while you are arriving. It helps us understand the class's statistical and software experience. It is not part of the timed workshop and should not delay your start if it is unavailable.
 
@@ -21,7 +22,7 @@ If your class survey is available, complete it while you are arriving. It helps 
 [Fri 2-4](https://docs.google.com/forms/d/e/1FAIpQLScn1h_2CSRDVsQFr-B6TgeVufH-kIdEBReY-xGYdjp2pAxTsA/viewform?usp=header) | 
 [Fri 4-6](https://docs.google.com/forms/d/e/1FAIpQLSer7g_DS3q6OXtxmh8iQAtD21ghD4U1stoQj5MevGv2ukN0lw/viewform?usp=header)
 
-## Workshop activities
+## [Activity]{.manual-activity-label} Workshop activities {.manual-activity #workshop-activities}
 
 ### 1. Choose and open one software route — 4 minutes
 
@@ -226,7 +227,7 @@ You can begin the final line with **“This plot does not show…”** or **“I
 
 The six activities take 40 minutes. The remaining 5 minutes are flex time. If the class is running behind, skip the optional plot variation; do not skip the Model Card or readiness checks.
 
-## Readiness checkpoints
+## [Activity]{.manual-activity-label} Readiness checkpoints {.manual-activity #readiness-checkpoints}
 
 Before continuing to Practical 1, record both checks.
 

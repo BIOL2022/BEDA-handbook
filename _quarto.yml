@@ -40,7 +40,9 @@ format:
   html:
     theme: simplex
     fontsize: 15px
-    css: assets/timeline.css
+    css:
+      - assets/timeline.css
+      - assets/manual-headings.css
     toc: true
 
 editor:

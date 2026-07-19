@@ -3,9 +3,10 @@ title: '<i class="bi bi-flask me-2" aria-hidden="true"></i> **Week 1**: Getting 
 subtitle: Biology Experimental Design and Analysis (BEDA)
 title-block-banner: "slateblue"
 title-block-banner-color: "white"
+body-classes: manual-page
 toc-depth: 2
-number-sections: true
-number-depth: 2
+number-sections: false
+# number-depth: 2
 ---
 
 
@@ -25,24 +26,10 @@ By the end of this practical, you should be able to:
 | Sketch a graphical model suited to the variables. | Choose a plot that matches the variable types, label its axes and sketch the expected pattern or comparison. See [Activity 3: Sketch the graphical model](#activity-3). |
 | Explain one limitation of the proposed model or dataset. | Review your proposed model and identify something the data or model may not adequately address. See [Activity 4: Check the model and discuss it](#activity-4). |
 
-### How the practical will work
 
-We will briefly cover:
+## [Workshop]{.manual-activity-label} Getting started (30 min) {.manual-activity #workshop-30-min}
 
-1. laboratory conduct and safety;
-2. how the practicals and handbook are organised;
-3. how demonstrators can help; and
-4. attendance and feedback.
-
-You will then work independently or with a peer on the task below. Ask a demonstrator when you need help, but keep a note of the decision you were trying to make so that the explanation remains useful later.
-
-## From Workshop 1 to Practical 1
-
-Bring the Model Card you started in [Workshop 1](w01-intro.qmd). You may refine that question or develop a new one using the penguin or possum data.
-
-Your conceptual readiness is required: you should be able to identify `y` and `x`, choose a plot that suits their variable types, and explain what the plot would show. If you are not there yet, revisit Workshop 1 Steps 4–6 before continuing.
-
-Software readiness is separate. If you recorded a follow-up, use your sketch and the supplied workshop plot today, contact the teaching team through [Ed](https://edstem.org/au/courses/36475/), and resolve software access before Practical 3.
+Workshop 1 is a guided activity that helps you get started with the software needed to analyse data in BEDA. It also introduces the empirical modelling approach which you can use to formulate a biological question, identify variables and sketch a graphical model. You will use the `penguin` and `possum` datasets to practise these skills.
 
 ## Quick recap: questions, variables and plots
 
@@ -60,7 +47,7 @@ The [Week 1 lectures](../lectures/L01/index.qmd) explain the empirical modelling
 - [possums.xlsx](assets/possums.xlsx)
 - Jamovi, experienced R, or SPSS if your software is ready; software is optional for today's sketching task
 
-## Your task
+## [Activity]{.manual-activity-label} Your task {.manual-activity #your-task}
 
 Your goal is to think like a research biologist: use the available variables to formulate a question, represent it as a simple model, and decide what a suitable plot would show. You do not need to fit or test a statistical model today.
 
@@ -129,7 +116,7 @@ Keep your completed Model Card in your lab notebook. It records how you moved fr
 
 If part of the task remains unclear, record the specific decision you were unsure about and ask a demonstrator or post on Ed. Next week we will build on this foundation when we examine study design and data structure.
 
-## Fancy a challenge?
+## [Optional]{.manual-activity-label} Fancy a challenge? {.manual-activity .is-optional #fancy-a-challenge}
 
 This section is for students who finish early or want further practice. Use the penguin or possum data to draw plots and express models as `y ~ x`; you are not expected to fit the statistical models yet.
 
