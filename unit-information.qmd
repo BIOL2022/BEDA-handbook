@@ -2,30 +2,36 @@
 title: "Unit information"
 ---
 
-This is a quick overview of the unit covering how it is structured, how we commumnicate and what is expected of you.
+::: {.panel-tabset}
 
-If you would like to check or refresh the assumed background knowledge, see [Am I ready for BEDA?](prerequisites.qmd).
+## Welcome
+
+### Welcome to BEDA
+
+**Statistics is not as hard as it seems.** It often looks intimidating because most units/courses teach it as a set of different methods, but these are just different ways to fit a model to data.
+
+In BEDA we focus on the practical aspects of statistics where the study design determines the statistical model. In most cases, you do not need to immediately know the "right" test to use right away (since that is easy to determine by asking the right expert or consulting the literature), but you do need to have a good understanding of how to build the model itself. **If you have a poor understanding of the model, it is very likely that the wrong test will be used or the results will be misinterpreted.**
+
+The philosophy of BEDA is based on three core principles:
+
+1. **Models are the foundation of statistics**. We focus on teaching you how to understand and build models. If you can imagine a picture of a graph, you will understand this abstraction quite easily!
+2. **The focus will be on the *concepts* driving statistics, not the *methods***. All the methods you will learn in this unit are just different ways to fit a model to data, so understanding *why* you are using a particular method is more important than learning how to use the method itself.
+3. **A well-designed experiment -- *not* software -- drives good models**. Experimental design is a life-long skill in research, whereas software may change every two years, so we are software *agnostic*. You do *not* need to know how to use any particular software (ahem, R) to understand the concepts of statistics, although we support R, and more (see software section).
+
+## Assumed knowledge
+
+BEDA's prerequisites are not strict, which leads to a diverse group of enrolled students. **However it is important to know that we have listed ENVX1002, DATA1001 or an equivalent unit as an assumed knowledge in the unit outline.**
+
+The section [Am I ready for BEDA?](prerequisites.qmd) provides a self-assessment to help you gauge your readiness for the unit. If you are unsure about your statistics background, we strongly recommend that you review the key concepts before the unit starts.
 
 ## Modules
-BEDA is divided into **three modules**, each taught by a different lecturer. The modules vary in length on purpose. 
 
-- **Module 1**, led by Januar Harianto, covers the essentials of statistics from a fresh angle. If you are "new" to stats, this module will set you up well, focusing less on the traditional approach of picking the “right” test and more on understanding why and how to build a solid statistical model to answer your research questions.
-- **Module 2**, led by Clare McArthur, critically assesses study designs that have already been done. Using real data examples, we will look at how variations in study design can influence the results. You will notice that the concepts from Module 1 are applicable to more complex models. You will also start working on Report 1 which requires you to design and analyse an experiment.
-- **Module 3**, led by Mathew Crowther, focuses on the application of statistical techniques to real-world data that is often complex and messy and how to deal with it using multivariate techniques. You will start working on Report 2 which requires you to collect and analyse data from your environment, rather than a controlled experiment.
+BEDA is divided into **three modules**, each taught by a different lecturer. The modules vary in length on purpose.
 
-## Announcements
-We will post all important updates and announcements on [Ed (also known as Edstem)](https://edstem.org/au/dashboard). Please get into the habit of checking it regularly (i.e. daily). **It is up to you to stay on top of these announcements. Any special consideration requests or emails that are due to a lack of awareness of announcements will not be considered.**
+- **Module 1**, led by **Januar Harianto**, covers the essentials of statistics from a fresh angle. If you are "new" to stats, this module will set you up well, focusing less on the traditional approach of picking the “right” test and more on understanding why and how to build a solid statistical model to answer your research questions.
+- **Module 2**, led by **Clare McArthur**, critically assesses study designs that have already been done. Using real data examples, we will look at how variations in study design can influence the results. You will notice that the concepts from Module 1 are applicable to more complex models. You will also start working on Report 1 which requires you to design and analyse an experiment.
+- **Module 3**, led by **Mathew Crowther**, focuses on the application of statistical techniques to real-world data that is often complex and multivariate in nature. You will start working on Report 2 which requires you to collect and analyse data from your environment, rather than a controlled experiment.
 
-## Lectures and practicals
+## Code of conduct
 
-**Attending lectures and practicals is mandatory.** We monitor attendance in practicals, and your participation is crucial since you'll be working on assessments in groups. Your presence is important for your own learning and for supporting your peers. Each week, there are two lectures and one practical.
-
-- **Tuesday Lecture**: 10:00am - 11:00am, [BHB Lecture Theatre 1110](https://maps.sydney.edu.au/?room=H70.01.1110)
-- **Wednesday Lecture**: 10:00am - 11:00am, [Carslaw Lecture Theatre 159-259](https://maps.sydney.edu.au/?room=F07.02.159-259)
-- **Practical Sessions**: Your practical will be on either Tuesday, Wednesday, or Friday from 2:00pm - 4:00pm or 4:00pm - 6:00pm in [Carlsaw Wet Lab 307](https://maps.sydney.edu.au/?room=F07.03.307).
-
-Make sure to check your personal timetable for your specific practical session time.
-
-## Assessments
-
-To pass this unit, you must complete and submit all assessment tasks. Importantly, Report 1 and 2 are compulsory assessments you will fail the unit if you do not submit them.  For more information on the assessments, please see the [Assessments](assessments/assessments.qmd) page.
+:::
