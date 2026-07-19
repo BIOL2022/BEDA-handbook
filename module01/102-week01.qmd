@@ -1,37 +1,29 @@
 ---
-title: "**Week 1**: Getting started"
+title: '<i class="bi bi-flask me-2" aria-hidden="true"></i> **Week 1**: Getting started'
+subtitle: Biology Experimental Design and Analysis (BEDA)
+title-block-banner: "slateblue"
+title-block-banner-color: "white"
 toc-depth: 2
 number-sections: true
 number-depth: 2
 ---
 
-::: {.week-learning-path week="1"}
-:::
-
-## What you need this week
-
-- [Introduction to Module 1](101-intro.qmd)
-- [Week 1 lectures: Introduction and fundamentals](../lectures/L01/index.qmd)
-- [Workshop 1: Software and graphical models](w01-intro.qmd)
 
 ## Introduction
 
-Welcome to your first BEDA practical. We will give you a physical lab notebook, introduce the practical format, and help you apply the ideas from the Week 1 lectures and workshop to a biological question.
-
-### Before class
-
-1. Attend the Week 1 lectures or watch the recordings before the practical.
-2. Bring a laptop. Loan laptops are available from the demonstrator bench if you need one.
+Welcome to your first BEDA practical. As this is the first week of the semester we will simply take a moment to get you familiar with the unit of study and the practicals.
 
 ### Learning outcomes
 
 By the end of this practical, you should be able to:
 
-- [ ] formulate a measurable biological question;
-- [ ] identify its response and predictor variables;
-- [ ] classify the variables and express their relationship as `y ~ x`;
-- [ ] sketch a graphical model suited to the variables; and
-- [ ] explain one limitation of the proposed model or dataset.
+| Learning outcome | How you will practise it |
+|---|---|
+| Formulate a measurable biological question. | Use variables from the penguin or possum dataset to develop a question that can be investigated with data. See [Activity 2: Refine or formulate a biological question](#activity-2). |
+| Identify response and predictor variables in a research question. | Decide what you want to explain or compare, then identify the variable that may explain it. See [Activity 2](#activity-2). |
+| Classify the variables and express their relationship as `y ~ x`. | Examine the available variables, classify their types and write the proposed relationship as a simple model. See [Activity 1](#activity-1) and [Activity 2](#activity-2). |
+| Sketch a graphical model suited to the variables. | Choose a plot that matches the variable types, label its axes and sketch the expected pattern or comparison. See [Activity 3: Sketch the graphical model](#activity-3). |
+| Explain one limitation of the proposed model or dataset. | Review your proposed model and identify something the data or model may not adequately address. See [Activity 4: Check the model and discuss it](#activity-4). |
 
 ### How the practical will work
 
@@ -72,7 +64,7 @@ The [Week 1 lectures](../lectures/L01/index.qmd) explain the empirical modelling
 
 Your goal is to think like a research biologist: use the available variables to formulate a question, represent it as a simple model, and decide what a suitable plot would show. You do not need to fit or test a statistical model today.
 
-### 1. Explore one dataset
+### 1. Explore one dataset {#activity-1}
 
 Open `penguins.csv` or `possums.xlsx` and read the variable names. Identify at least one continuous variable and one possible predictor.
 
@@ -80,7 +72,7 @@ Open `penguins.csv` or `possums.xlsx` and read the variable names. Identify at l
 
 **If you are stuck:** Start with `body_mass_g` and `species` in the penguin data, or `BW` and `Age` in the possum data.
 
-### 2. Refine or formulate a biological question
+### 2. Refine or formulate a biological question {#activity-2}
 
 Use your Workshop Model Card or begin a new one. State a measurable relationship or comparison and name the response and predictor.
 
@@ -88,7 +80,7 @@ Use your Workshop Model Card or begin a new one. State a measurable relationship
 
 **If you are stuck:** Use the frame, “How does **response** differ with, or relate to, **predictor**?”
 
-### 3. Sketch the graphical model
+### 3. Sketch the graphical model {#activity-3}
 
 Choose a plot that matches the variable types, then sketch it in your notebook. Label both axes and show the pattern or group comparison you expect.
 
@@ -96,7 +88,7 @@ Choose a plot that matches the variable types, then sketch it in your notebook. 
 
 **If you are stuck:** Recheck the two plot rules in the recap. A continuous response with a categorical predictor suggests a boxplot; two continuous variables suggest a scatterplot.
 
-### 4. Check the model and discuss it
+### 4. Check the model and discuss it {#activity-4}
 
 Explain why your plot suits the question and variable types. Then identify one limitation or unresolved question. Check your own Model Card or discuss it with a peer or demonstrator.
 

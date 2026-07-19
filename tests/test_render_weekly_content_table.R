@@ -117,6 +117,14 @@ expect_true(
   identical(vapply(entries, `[[`, integer(1), "week"), 1:13),
   "Weeks should be ordered from 1 to 13."
 )
+expect_true(
+  identical(entries[[1]]$workshop$url, "module01/w01-intro.qmd"),
+  "Week 1 should retain its hidden workshop as the session entry point."
+)
+expect_true(
+  is.null(entries[[2]]$workshop),
+  "A week without a workshop should not gain a workshop entry point."
+)
 
 missing_column <- weekly_content
 missing_column$url <- NULL
@@ -365,8 +373,12 @@ expect_true(
   "The schedule should use the visible Practical session heading."
 )
 expect_true(
-  !any(grepl("Software and graphical models", hidden_caption, fixed = TRUE)),
-  "Rows with show_on_schedule = FALSE should be absent from the schedule."
+  !any(grepl(
+    "[Software and graphical models](",
+    hidden_caption,
+    fixed = TRUE
+  )),
+  "A hidden workshop should not appear as a separate visible schedule link."
 )
 expected_visible_titles <- trimws(weekly_content$title[weekly_content$show_on_schedule])
 expect_true(
@@ -384,6 +396,28 @@ expect_true(
     fixed = TRUE
   )),
   "The Week 1 practical icon should announce that the session includes Workshop 1."
+)
+expect_true(
+  any(grepl(
+    paste0(
+      'href="module01/w01-intro.qmd" ',
+      'aria-label="Open Week 1 practical session, including Workshop 1"'
+    ),
+    hidden_caption,
+    fixed = TRUE
+  )),
+  "The Week 1 practical-session icon should open Workshop 1."
+)
+expect_true(
+  any(grepl(
+    paste0(
+      'href="module01/103-week02.qmd" ',
+      'aria-label="Open Week 2 practical session"'
+    ),
+    hidden_caption,
+    fixed = TRUE
+  )),
+  "A week without a workshop should continue to open its practical."
 )
 
 latex_output <- render_output("latex", caption = FALSE)

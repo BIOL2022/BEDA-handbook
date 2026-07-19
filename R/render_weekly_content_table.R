@@ -150,7 +150,7 @@ weekly_content_entries <- function(data) {
       data$position
     ),
   ]
-  workshop_weeks <- unique(data$week[data$section == "workshop"])
+  all_data <- data
   data <- data[data$show_on_schedule, , drop = FALSE]
 
   resources_for <- function(rows, section) {
@@ -171,15 +171,18 @@ weekly_content_entries <- function(data) {
   }
 
   lapply(weekly_content_weeks, function(week) {
+    all_rows <- all_data[all_data$week == week, , drop = FALSE]
     rows <- data[data$week == week, , drop = FALSE]
+    workshop <- resources_for(all_rows, "workshop")
     practical <- resources_for(rows, "practical")
 
     list(
       week = week,
       lectures = resources_for(rows, "lecture"),
+      workshop = if (length(workshop) == 0) NULL else workshop[[1]],
       practical = if (length(practical) == 0) NULL else practical[[1]],
       extras = resources_for(rows, "extra"),
-      includes_workshop = week %in% workshop_weeks
+      includes_workshop = length(workshop) > 0
     )
   })
 }
@@ -228,6 +231,7 @@ lecture_theme_cell_lines <- function(resources) {
 
 practical_cell_line <- function(
   practical,
+  workshop,
   html_output,
   week,
   includes_workshop
@@ -253,14 +257,20 @@ practical_cell_line <- function(
   } else {
     sprintf("Open Week %s practical session", week)
   }
+  session_entry <- if (is.null(workshop)) practical else workshop
+  title_text <- if (is.null(workshop)) {
+    practical$title
+  } else {
+    paste0(practical$title, " — starts with ", workshop$title)
+  }
   label <- escape_html_attribute(label)
-  title <- escape_html_attribute(practical$title)
+  title <- escape_html_attribute(title_text)
   icon <- paste0(
     '<i class="bi bi-flask" aria-hidden="true"></i>',
     '<span class="visually-hidden">', label, "</span>"
   )
 
-  if (is.null(practical$url) || !nzchar(practical$url)) {
+  if (is.null(session_entry$url) || !nzchar(session_entry$url)) {
     return(paste0(
       '  - <span class="weekly-practical-link weekly-practical-link-static" ',
       'role="img" aria-label="', label, '" title="', title, '">',
@@ -271,7 +281,7 @@ practical_cell_line <- function(
 
   paste0(
     '  - <a class="weekly-practical-link" href="',
-    escape_html_attribute(practical$url),
+    escape_html_attribute(session_entry$url),
     '" aria-label="', label, '" title="', title, '">',
     icon,
     "</a>"
@@ -297,6 +307,7 @@ weekly_table_lines <- function(weekly_content, caption, html_output) {
       lecture_theme_cell_lines(entry$lectures),
       practical_cell_line(
         entry$practical,
+        entry$workshop,
         html_output,
         entry$week,
         entry$includes_workshop
