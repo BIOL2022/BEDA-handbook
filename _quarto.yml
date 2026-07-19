@@ -8,6 +8,19 @@ project:
 website:
   title: "BIOL2022"
   search: true
+  draft-mode: gone
+  drafts:
+    - module01/w01-intro.qmd
+    - module01/w02-tidy-data.qmd
+    - module01/w03-model-fitting-assumptions.qmd
+    - module01/102-week01.qmd
+    - module01/103-week02.qmd
+    - module01/104-week03.qmd
+    - module02/202-timeline.qmd
+    - module03/302-week09.qmd
+    - module03/303-week10.qmd
+    - module03/304-week11.qmd
+    - module03/305-week12.qmd
   navbar:
     left:
       - icon: house-fill
