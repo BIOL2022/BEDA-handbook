@@ -6,6 +6,32 @@ h3 {
   font-family: Georgia, "Times New Roman", serif;
 }
 
+main.content section.level2.section-rail {
+  margin-top: 2.25rem;
+  padding-inline-start: 1rem;
+  border-inline-start: 4px solid #6B210F;
+  overflow: visible;
+}
+
+main.content section.level2.section-rail > h2 {
+  margin-top: 0;
+}
+
+@media (width <= 36rem) {
+  main.content section.level2.section-rail {
+    padding-inline-start: 0.75rem;
+    border-inline-start-width: 3px;
+  }
+}
+
+@media print {
+  main.content section.level2.section-rail {
+    padding-inline-start: 0.5rem;
+    border-inline-start-width: 1px;
+    border-inline-start-color: #000;
+  }
+}
+
 .timeline-container {
   position: relative;
   padding: 2rem 0;
