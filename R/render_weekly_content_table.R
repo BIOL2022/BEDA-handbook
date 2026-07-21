@@ -34,6 +34,117 @@ escape_html_attribute <- function(value) {
   gsub(">", "&gt;", value, fixed = TRUE)
 }
 
+validate_semester_breaks <- function(data) {
+  if (is.null(data)) {
+    return(invisible(TRUE))
+  }
+
+  required_columns <- c("after_week", "title", "start_date", "end_date")
+  missing_columns <- setdiff(required_columns, names(data))
+  if (length(missing_columns) > 0) {
+    stop(
+      "semester_breaks.csv is missing columns: ",
+      paste(missing_columns, collapse = ", "),
+      call. = FALSE
+    )
+  }
+
+  if (nrow(data) == 0) {
+    return(invisible(TRUE))
+  }
+
+  after_week <- suppressWarnings(as.numeric(data$after_week))
+  valid_positions <- weekly_content_weeks[-length(weekly_content_weeks)]
+  if (
+    anyNA(after_week) ||
+      any(after_week != as.integer(after_week)) ||
+      any(!after_week %in% valid_positions)
+  ) {
+    stop(
+      "after_week must be a whole-number teaching week before the final week.",
+      call. = FALSE
+    )
+  }
+
+  if (anyNA(data$title) || any(!nzchar(trimws(data$title)))) {
+    stop("Every semester break must have a title.", call. = FALSE)
+  }
+
+  start_dates <- suppressWarnings(as.Date(
+    trimws(data$start_date),
+    format = "%Y-%m-%d"
+  ))
+  end_dates <- suppressWarnings(as.Date(
+    trimws(data$end_date),
+    format = "%Y-%m-%d"
+  ))
+  if (anyNA(start_dates) || anyNA(end_dates)) {
+    stop(
+      "start_date and end_date must use YYYY-MM-DD dates.",
+      call. = FALSE
+    )
+  }
+  if (any(end_dates < start_dates)) {
+    stop("A semester break cannot end before it starts.", call. = FALSE)
+  }
+
+  invisible(TRUE)
+}
+
+format_schedule_date_range <- function(start_date, end_date) {
+  day <- function(value) as.integer(format(value, "%d"))
+  month <- function(value) format(value, "%B")
+  year <- function(value) format(value, "%Y")
+
+  if (identical(start_date, end_date)) {
+    return(sprintf("%s %s %s", day(start_date), month(start_date), year(start_date)))
+  }
+
+  if (year(start_date) == year(end_date)) {
+    if (month(start_date) == month(end_date)) {
+      return(sprintf(
+        "%s–%s %s %s",
+        day(start_date), day(end_date), month(start_date), year(start_date)
+      ))
+    }
+
+    return(sprintf(
+      "%s %s–%s %s %s",
+      day(start_date), month(start_date),
+      day(end_date), month(end_date), year(start_date)
+    ))
+  }
+
+  sprintf(
+    "%s %s %s–%s %s %s",
+    day(start_date), month(start_date), year(start_date),
+    day(end_date), month(end_date), year(end_date)
+  )
+}
+
+semester_break_entries <- function(data = NULL) {
+  validate_semester_breaks(data)
+  if (is.null(data) || nrow(data) == 0) {
+    return(list())
+  }
+
+  data$after_week <- as.integer(data$after_week)
+  data$start_date <- as.Date(trimws(data$start_date), format = "%Y-%m-%d")
+  data$end_date <- as.Date(trimws(data$end_date), format = "%Y-%m-%d")
+  data <- data[order(data$after_week, data$start_date, data$title), ]
+
+  lapply(seq_len(nrow(data)), function(index) {
+    list(
+      after_week = data$after_week[[index]],
+      title = trimws(data$title[[index]]),
+      date_range = format_schedule_date_range(
+        data$start_date[[index]],
+        data$end_date[[index]]
+      )
+    )
+  })
+}
+
 validate_weekly_content <- function(data) {
   required_columns <- c(
     "week", "section", "position", "title", "url", "description",
@@ -250,12 +361,12 @@ practical_cell_line <- function(
 
   label <- if (includes_workshop) {
     sprintf(
-      "Open Week %s practical session, including Workshop %s",
+      "Week %s practical session, including Workshop %s",
       week,
       week
     )
   } else {
-    sprintf("Open Week %s practical session", week)
+    sprintf("Week %s practical session", week)
   }
   session_entry <- if (is.null(workshop)) practical else workshop
   title_text <- if (is.null(workshop)) {
@@ -263,40 +374,51 @@ practical_cell_line <- function(
   } else {
     paste0(practical$title, " — starts with ", workshop$title)
   }
-  label <- escape_html_attribute(label)
+  accessible_label <- label
+  label <- escape_html_attribute(accessible_label)
   title <- escape_html_attribute(title_text)
-  icon <- paste0(
-    '<i class="bi bi-flask" aria-hidden="true"></i>',
-    '<span class="visually-hidden">', label, "</span>"
-  )
 
   if (is.null(session_entry$url) || !nzchar(session_entry$url)) {
     return(paste0(
-      '  - <span class="weekly-practical-link weekly-practical-link-static" ',
-      'role="img" aria-label="', label, '" title="', title, '">',
-      icon,
-      "</span>"
+      "  - [Practical session]",
+      '{.weekly-practical-link .weekly-practical-link-static role="img" ',
+      'aria-label="', label, '" title="', title, '"}'
     ))
   }
 
   paste0(
-    '  - <a class="weekly-practical-link" href="',
-    escape_html_attribute(session_entry$url),
-    '" aria-label="', label, '" title="', title, '">',
-    icon,
-    "</a>"
+    "  - [", escape_markdown_label(accessible_label), "](",
+    session_entry$url, ' "', title, '")'
   )
 }
 
-weekly_table_lines <- function(weekly_content, caption, html_output) {
+semester_break_table_lines <- function(entry) {
+  c(
+    "- - [Break]{.semester-break-row}",
+    paste0(
+      "  - **", escape_markdown_text(entry$title), "** — ",
+      escape_markdown_text(entry$date_range)
+    ),
+    "  -",
+    "  -",
+    ""
+  )
+}
+
+weekly_table_lines <- function(
+  weekly_content,
+  semester_breaks,
+  caption,
+  html_output
+) {
   lines <- c(
     '::: {#tbl-weekly-content .list-table}',
     caption,
     "",
     "- - Week",
     "  - Lectures",
-    "  - Practical session",
-    "  - Extras",
+    "  - Practical",
+    "  - Notes",
     ""
   )
 
@@ -315,6 +437,17 @@ weekly_table_lines <- function(weekly_content, caption, html_output) {
       resource_cell_lines(entry$extras),
       ""
     )
+
+    breaks_after_week <- Filter(
+      function(break_entry) break_entry$after_week == entry$week,
+      semester_breaks
+    )
+    for (break_entry in breaks_after_week) {
+      lines <- c(
+        lines,
+        semester_break_table_lines(break_entry)
+      )
+    }
   }
 
   lines <- c(lines, ":::")
@@ -353,7 +486,16 @@ schedule_practical_line <- function(practical) {
   resource_markdown(practical)
 }
 
-weekly_typst_schedule_lines <- function(weekly_content) {
+semester_break_typst_lines <- function(entry) {
+  c(
+    paste0("### ", escape_markdown_text(entry$title)),
+    "",
+    escape_markdown_text(entry$date_range),
+    ""
+  )
+}
+
+weekly_typst_schedule_lines <- function(weekly_content, semester_breaks) {
   lines <- c("## Weekly schedule", "")
 
   for (entry in weekly_content) {
@@ -374,6 +516,14 @@ weekly_typst_schedule_lines <- function(weekly_content) {
       schedule_resource_lines(entry$extras),
       ""
     )
+
+    breaks_after_week <- Filter(
+      function(break_entry) break_entry$after_week == entry$week,
+      semester_breaks
+    )
+    for (break_entry in breaks_after_week) {
+      lines <- c(lines, semester_break_typst_lines(break_entry))
+    }
   }
 
   lines
@@ -381,11 +531,13 @@ weekly_typst_schedule_lines <- function(weekly_content) {
 
 render_weekly_content_table <- function(
   weekly_content,
+  semester_breaks = NULL,
   caption = "BEDA weekly content"
 ) {
   caption <- if (identical(caption, FALSE)) character() else caption
 
   weekly_content <- weekly_content_entries(weekly_content)
+  semester_breaks <- semester_break_entries(semester_breaks)
   pandoc_to <- knitr::opts_knit$get("rmarkdown.pandoc.to")
   if (is.null(pandoc_to)) {
     pandoc_to <- ""
@@ -393,10 +545,11 @@ render_weekly_content_table <- function(
   html_output <- grepl("^html", pandoc_to)
 
   if (identical(pandoc_to, "typst")) {
-    lines <- weekly_typst_schedule_lines(weekly_content)
+    lines <- weekly_typst_schedule_lines(weekly_content, semester_breaks)
   } else {
     lines <- weekly_table_lines(
       weekly_content,
+      semester_breaks,
       caption,
       html_output
     )

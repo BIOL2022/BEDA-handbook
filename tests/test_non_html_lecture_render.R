@@ -24,15 +24,11 @@ match_count <- function(pattern, text) {
 
 fixture_root <- tempfile("week1-latex-render-")
 dir.create(file.path(fixture_root, "lectures", "L01"), recursive = TRUE)
-dir.create(file.path(fixture_root, "filters"), recursive = TRUE)
-dir.create(file.path(fixture_root, "data"), recursive = TRUE)
 dir.create(file.path(fixture_root, "assets"), recursive = TRUE)
 on.exit(unlink(fixture_root, recursive = TRUE), add = TRUE)
 
 files_to_copy <- c(
   "lectures/L01/index.qmd",
-  "filters/learning-path.lua",
-  "data/weekly_content.csv",
   "_quarto.yml",
   "assets/timeline.css"
 )
@@ -95,19 +91,4 @@ expect_true(
   )) == 2L,
   "The LaTeX lecture should retain both descriptive PDF links."
 )
-expect_true(
-  all(vapply(
-    c(
-      "Lectures --- learn the ideas",
-      "Workshop --- practise the fundamentals",
-      "Practical --- apply them"
-    ),
-    grepl,
-    logical(1),
-    x = latex_flat,
-    fixed = TRUE
-  )),
-  "The LaTeX lecture should retain the three-part learning path."
-)
-
 cat(sprintf("PASS: non-HTML lecture render (%d checks)\n", checks))

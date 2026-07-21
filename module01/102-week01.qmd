@@ -1,10 +1,10 @@
 ---
 title: '<i class="bi bi-flask me-2" aria-hidden="true"></i> **Week 1**: Getting started'
 subtitle: Biology Experimental Design and Analysis (BEDA)
-title-block-banner: "slateblue"
-title-block-banner-color: "white"
 body-classes: manual-page
-toc-depth: 2
+toc: true
+toc-location: left
+toc-depth: 3
 number-sections: false
 # number-depth: 2
 ---

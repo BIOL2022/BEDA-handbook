@@ -30,7 +30,17 @@ weekly_content <- read.csv(
   check.names = FALSE
 )
 
-render_weekly_content_table(weekly_content, caption = FALSE)
+semester_breaks <- read.csv(
+  "data/semester_breaks.csv",
+  stringsAsFactors = FALSE,
+  check.names = FALSE
+)
+
+render_weekly_content_table(
+  weekly_content,
+  semester_breaks = semester_breaks,
+  caption = FALSE
+)
 ```
 
 :::

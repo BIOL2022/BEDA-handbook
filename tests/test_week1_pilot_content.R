@@ -84,13 +84,6 @@ lecture <- read_text("lectures/L01/index.qmd")
 workshop <- read_text("module01/w01-intro.qmd")
 practical <- read_text("module01/102-week01.qmd")
 
-for (page in list(lecture, workshop, practical)) {
-  expect_true(
-    match_count('::: {.week-learning-path week="1"}', page) == 1L,
-    "Each Week 1 page should contain exactly one shared learning-path marker."
-  )
-}
-
 timed_labels <- unlist(regmatches(
   workshop,
   gregexpr(

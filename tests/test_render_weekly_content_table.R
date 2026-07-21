@@ -16,10 +16,27 @@ weekly_content <- read.csv(
   stringsAsFactors = FALSE,
   check.names = FALSE
 )
+semester_breaks <- read.csv(
+  "data/semester_breaks.csv",
+  stringsAsFactors = FALSE,
+  check.names = FALSE
+)
 week_one_description <- weekly_content$description[
   weekly_content$week == 1 & weekly_content$section == "lecture"
 ][[1]]
 week_one_escaped_description <- escape_markdown_text(week_one_description)
+timeline_css <- paste(
+  readLines("assets/timeline.css", warn = FALSE, encoding = "UTF-8"),
+  collapse = "\n"
+)
+quarto_config <- paste(
+  readLines("_quarto.yml", warn = FALSE, encoding = "UTF-8"),
+  collapse = "\n"
+)
+semester_status_script <- paste(
+  readLines("scripts/semester-status.js", warn = FALSE, encoding = "UTF-8"),
+  collapse = "\n"
+)
 
 checks <- 0L
 
@@ -50,7 +67,8 @@ render_output <- function(
   pandoc_to,
   caption,
   include_caption = TRUE,
-  data = weekly_content
+  data = weekly_content,
+  breaks = semester_breaks
 ) {
   previous_output <- knitr::opts_knit$get("rmarkdown.pandoc.to")
   on.exit(
@@ -59,7 +77,10 @@ render_output <- function(
   )
   knitr::opts_knit$set(rmarkdown.pandoc.to = pandoc_to)
 
-  arguments <- list(weekly_content = data)
+  arguments <- list(
+    weekly_content = data,
+    semester_breaks = breaks
+  )
   if (include_caption) {
     arguments$caption <- caption
   }
@@ -109,6 +130,26 @@ expect_true(
 expect_true(
   isTRUE(validate_weekly_content(weekly_content)),
   "The maintained weekly content should validate."
+)
+expect_true(
+  isTRUE(validate_semester_breaks(semester_breaks)),
+  "The maintained semester breaks should validate."
+)
+
+invalid_break_position <- semester_breaks
+invalid_break_position$after_week[[1]] <- 13
+expect_error(
+  validate_semester_breaks(invalid_break_position),
+  "after_week must be a whole-number teaching week before the final week.",
+  "A semester break must be placed between teaching weeks."
+)
+
+invalid_break_date <- semester_breaks
+invalid_break_date$start_date[[1]] <- "28 September 2026"
+expect_error(
+  validate_semester_breaks(invalid_break_date),
+  "start_date and end_date must use YYYY-MM-DD dates.",
+  "Semester break dates should use an editable ISO format."
 )
 
 entries <- weekly_content_entries(weekly_content)
@@ -340,6 +381,61 @@ default_caption <- render_output("html", caption = NULL, include_caption = FALSE
 hidden_caption <- render_output("html", caption = FALSE)
 custom_caption <- render_output("html", caption = "Custom schedule")
 
+render_front_page <- function() {
+  render_result <- suppressWarnings(system2(
+    "quarto",
+    c("render", "index.qmd"),
+    stdout = TRUE,
+    stderr = TRUE
+  ))
+  render_status <- attr(render_result, "status")
+  if (is.null(render_status)) {
+    render_status <- 0L
+  }
+
+  expect_true(
+    render_status == 0L,
+    paste("Quarto should render the front page.", paste(render_result, collapse = "\n"))
+  )
+  paste(
+    readLines("_site/index.html", warn = FALSE, encoding = "UTF-8"),
+    collapse = "\n"
+  )
+}
+
+rendered_html_table <- render_front_page()
+expect_true(
+  !grepl('&lt;i class="bi bi-flask"', rendered_html_table, fixed = TRUE),
+  "Linked practical icons should not appear as escaped HTML in the rendered table."
+)
+expect_true(
+  grepl(
+    paste0(
+      '<a href="./module01/w01-intro.html"[^>]*>',
+      'Week 1 practical session, including Workshop 1</a>'
+    ),
+    rendered_html_table,
+    perl = TRUE
+  ) || grepl(
+    "<td>Week 1 practical session, including Workshop 1</td>",
+    rendered_html_table,
+    fixed = TRUE
+  ),
+  "Rendered practical cells should retain their accessible text when draft links are removed."
+)
+expect_true(
+  grepl(
+    paste0(
+      "#weekly-content tbody tr:not(:has(.semester-break-row)) ",
+      "td:nth-child(3):not(:has(> a))",
+      ":not(:has(> .weekly-practical-link))"
+    ),
+    timeline_css,
+    fixed = TRUE
+  ),
+  "Draft practical cells should retain the flask icon after Quarto removes their links."
+)
+
 expect_true(
   any(default_caption == "BEDA weekly content"),
   "The default caption should be retained."
@@ -356,6 +452,23 @@ expect_true(
   sum(grepl("^- - [0-9]+$", hidden_caption)) == 13,
   "The table output should contain 13 weekly rows."
 )
+break_row <- which(hidden_caption == "- - [Break]{.semester-break-row}")
+week_eight_row <- which(hidden_caption == "- - 8")
+week_nine_row <- which(hidden_caption == "- - 9")
+expect_true(
+  length(break_row) == 1 &&
+    week_eight_row < break_row &&
+    break_row < week_nine_row,
+  "The mid-semester break should appear between Weeks 8 and 9."
+)
+expect_true(
+  any(hidden_caption == paste0(
+    "  - **Mid\\-semester break** — ",
+    "28 September–2 October 2026"
+  )) &&
+    sum(hidden_caption[break_row:(week_nine_row - 1)] == "  -") == 2,
+  "The break row should show its dates beside the title and leave other cells blank."
+)
 expect_true(
   any(grepl(week_one_escaped_description, hidden_caption, fixed = TRUE)),
   "HTML table output should include lecture descriptions."
@@ -365,12 +478,92 @@ expect_true(
   "HTML table output should contain 13 lecture description lines."
 )
 expect_true(
-  any(grepl("bi-flask", hidden_caption, fixed = TRUE)),
-  "HTML output should contain practical icons."
+  grepl(".weekly-practical-link::before", timeline_css, fixed = TRUE) &&
+    grepl("mask: url(\"data:image/svg+xml", timeline_css, fixed = TRUE) &&
+    !grepl('content: "\\f90a";', timeline_css, fixed = TRUE),
+  "The practical link should use a decorative CSS flask mask."
 )
 expect_true(
-  any(grepl("Practical session", hidden_caption, fixed = TRUE)),
-  "The schedule should use the visible Practical session heading."
+  any(hidden_caption == "  - Practical"),
+  "The schedule should use the concise Practical heading."
+)
+expect_true(
+  any(hidden_caption == "  - Notes"),
+  "The schedule should label the final column Notes."
+)
+expect_true(
+  grepl("#weekly-content td:nth-child(4)", timeline_css, fixed = TRUE) &&
+    grepl("font-size: 0.9em;", timeline_css, fixed = TRUE) &&
+    grepl("line-height: 1.35;", timeline_css, fixed = TRUE),
+  "Notes should use the lecture-description type scale."
+)
+expect_true(
+  grepl("fontsize: 16px", quarto_config, fixed = TRUE),
+  "The site should retain a 16 px accessible base font size."
+)
+expect_true(
+  grepl("collapse-below: xl", quarto_config, fixed = TRUE),
+  "Navigation should collapse before its links or brand become cramped."
+)
+expect_true(
+  grepl(
+    "@media (min-width: 992px) and (max-width: 1199.98px)",
+    timeline_css,
+    fixed = TRUE
+  ) && grepl(
+    ".navbar.navbar-expand-xl #quarto-search",
+    timeline_css,
+    fixed = TRUE
+  ),
+  "Search ordering should stay in mobile mode until the XL navbar expands."
+)
+expect_true(
+  grepl(".navbar {", timeline_css, fixed = TRUE) &&
+    grepl("font-size: 1rem;", timeline_css, fixed = TRUE),
+  "Navigation should use the full base font size."
+)
+expect_true(
+  grepl("background-color: #0f6b5b !important;", timeline_css, fixed = TRUE) &&
+    grepl("--bs-navbar-color: #fff;", timeline_css, fixed = TRUE),
+  "Navigation should use the accessible dark-green palette."
+)
+expect_true(
+  grepl("outline: 3px solid #fde725;", timeline_css, fixed = TRUE),
+  "Navigation focus should remain visible against the dark-green background."
+)
+expect_true(
+  grepl("#semester-status {", timeline_css, fixed = TRUE) &&
+    grepl("text-align: center;", timeline_css, fixed = TRUE) &&
+    grepl("font-weight: 700;", timeline_css, fixed = TRUE) &&
+    grepl("color: #0f6b5b;", timeline_css, fixed = TRUE),
+  "The dynamic semester status should be centred, bold and navigation green."
+)
+expect_true(
+  grepl("tr.is-current-week > *", timeline_css, fixed = TRUE) &&
+    grepl(".current-week-label", timeline_css, fixed = TRUE),
+  "The current week should have both row styling and a visible text marker."
+)
+expect_true(
+  grepl(
+    'highlightScheduleWeek(1, "Coming up", false);',
+    semester_status_script,
+    fixed = TRUE
+  ) &&
+    grepl("DOMContentLoaded", semester_status_script, fixed = TRUE) &&
+    grepl('aria-current", "true', semester_status_script, fixed = TRUE),
+  paste(
+    "The semester script should mark Week 1 as coming up before semester",
+    "and wait for the table DOM."
+  )
+)
+expect_true(
+  grepl("#weekly-content table {\n  font-size: 1rem;", timeline_css, fixed = TRUE),
+  "The weekly table should use the full base font size."
+)
+expect_true(
+  grepl("color: #005ea8;", timeline_css, fixed = TRUE) &&
+    grepl("color: #003f73;", timeline_css, fixed = TRUE),
+  "Schedule links should use the accessible blue palette."
 )
 expect_true(
   !any(grepl(
@@ -391,7 +584,11 @@ expect_true(
 )
 expect_true(
   any(grepl(
-    'aria-label="Open Week 1 practical session, including Workshop 1"',
+    paste0(
+      "[Week 1 practical session, including Workshop 1]",
+      '(module01/w01-intro.qmd "Getting started — starts with ',
+      'Software and graphical models")'
+    ),
     hidden_caption,
     fixed = TRUE
   )),
@@ -399,10 +596,7 @@ expect_true(
 )
 expect_true(
   any(grepl(
-    paste0(
-      'href="module01/w01-intro.qmd" ',
-      'aria-label="Open Week 1 practical session, including Workshop 1"'
-    ),
+    "[Week 1 practical session, including Workshop 1](module01/w01-intro.qmd",
     hidden_caption,
     fixed = TRUE
   )),
@@ -410,10 +604,7 @@ expect_true(
 )
 expect_true(
   any(grepl(
-    paste0(
-      'href="module01/103-week02.qmd" ',
-      'aria-label="Open Week 2 practical session"'
-    ),
+    "[Week 2 practical session](module01/103-week02.qmd",
     hidden_caption,
     fixed = TRUE
   )),
@@ -434,6 +625,10 @@ expect_true(
   "Non-HTML output should not contain HTML practical icons."
 )
 expect_true(
+  any(latex_output == "- - [Break]{.semester-break-row}"),
+  "LaTeX table output should include the semester break row."
+)
+expect_true(
   any(grepl("[Practical session](", latex_output, fixed = TRUE)),
   "Non-HTML practicals should use Markdown links."
 )
@@ -450,6 +645,12 @@ expect_true(
 expect_true(
   any(typst_output == "## Weekly schedule"),
   "Typst output should use the compact weekly schedule."
+)
+expect_true(
+  any(typst_output == "### Mid\\-semester break") &&
+    any(typst_output == "28 September–2 October 2026") &&
+    !any(typst_output == "No classes"),
+  "Typst output should include the semester break and its dates."
 )
 expect_true(
   !any(grepl("list-table", typst_output, fixed = TRUE)),

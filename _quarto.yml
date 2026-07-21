@@ -8,7 +8,7 @@ project:
 website:
   title: "BIOL2022"
   search: true
-  draft-mode: gone
+  # draft-mode: gone
   drafts:
     - module01/w01-intro.qmd
     - module01/w02-tidy-data.qmd
@@ -22,16 +22,17 @@ website:
     - module03/304-week11.qmd
     - module03/305-week12.qmd
   navbar:
+    collapse-below: xl
     left:
       - icon: house-fill
         text: Home
         href: index.qmd
-      - icon: clipboard-check
-        text: Assessments
-        href: assessments/assessments.qmd
       - icon: info-circle-fill
         text: Unit information
         href: unit-information.qmd
+      # - icon: clipboard-check
+      #   text: Assessments
+      #   href: assessments/assessments.qmd
       - icon: envelope-fill
         text: Contact
         href: help.qmd
@@ -46,13 +47,10 @@ website:
         text: Ed
         href: https://edstem.org/au/courses/36475/
 
-filters:
-  - filters/learning-path.lua
-
 format:
   html:
-    theme: simplex
-    fontsize: 15px
+    theme: zephyr
+    fontsize: 16px
     css:
       - assets/timeline.css
       - assets/manual-headings.css

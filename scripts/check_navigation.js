@@ -309,6 +309,8 @@ if (!indexPage) {
     const rows = tableRows(weeklyTable);
     const header = rows.find((row) => row.cells.every((cell) => cell.tag === "th"));
     const bodyRows = rows.filter((row) => row.cells.some((cell) => cell.tag === "td"));
+    const weeklyRows = bodyRows.filter((row) => /^\d+$/.test(row.cells[0]?.text ?? ""));
+    const breakRows = bodyRows.filter((row) => (row.cells[0]?.text ?? "") === "Break");
     const headers = header?.cells.map((cell) => cell.text) ?? [];
 
     if (caption) {
@@ -316,16 +318,19 @@ if (!indexPage) {
     }
     if (
       JSON.stringify(headers) !==
-      JSON.stringify(["Week", "Lectures", "Practical session", "Extras"])
+      JSON.stringify(["Week", "Lectures", "Practical", "Notes"])
     ) {
       failures.push(`homepage weekly table has unexpected headers: ${headers.join(", ")}`);
     }
-    if (bodyRows.length !== 13) {
-      failures.push(`homepage weekly table needs 13 rows, found ${bodyRows.length}`);
+    if (weeklyRows.length !== 13) {
+      failures.push(`homepage weekly table needs 13 teaching-week rows, found ${weeklyRows.length}`);
+    }
+    if (breakRows.length !== 1) {
+      failures.push(`homepage weekly table needs 1 semester-break row, found ${breakRows.length}`);
     }
 
-    for (let index = 0; index < bodyRows.length; index += 1) {
-      const row = bodyRows[index];
+    for (let index = 0; index < weeklyRows.length; index += 1) {
+      const row = weeklyRows[index];
       const week = index + 1;
       const weekText = row.cells[0]?.text ?? "";
       if (row.cells.length !== 4) {
@@ -347,19 +352,17 @@ if (!indexPage) {
 
       const practicalHtml = row.cells[2]?.html ?? "";
       const practicalLinks = extract(practicalHtml).links;
-      const hasPracticalIcon = /\bbi-flask\b/i.test(practicalHtml);
-      const hasEmptyMarker = normaliseText(practicalHtml) === "—";
-      if (!hasPracticalIcon && !hasEmptyMarker) {
+      const practicalText = normaliseText(practicalHtml);
+      const hasPracticalLabel = /^(?:Week \d+ )?Practical session(?:, including Workshop \d+)?$/i.test(
+        practicalText,
+      );
+      const hasEmptyMarker = practicalText === "—";
+      if (!hasPracticalLabel && !hasEmptyMarker) {
         failures.push(`homepage Week ${week} has an unexpected Practical cell`);
-      }
-      if (hasPracticalIcon && !/\baria-label\s*=/i.test(practicalHtml)) {
-        failures.push(`homepage Week ${week} practical icon is missing an aria-label`);
       }
       if (
         week === 1 &&
-        !/\baria-label=["']Open Week 1 practical session, including Workshop 1["']/i.test(
-          practicalHtml,
-        )
+        practicalText !== "Week 1 practical session, including Workshop 1"
       ) {
         failures.push(
           "homepage Week 1 practical icon does not announce the included workshop",
@@ -370,67 +373,20 @@ if (!indexPage) {
       }
     }
 
+    for (const row of breakRows) {
+      if (row.cells.length !== 4) {
+        failures.push(`homepage semester-break row needs 4 cells, found ${row.cells.length}`);
+      }
+      if (!normaliseText(row.cells[1]?.html ?? "").startsWith("Mid-semester break")) {
+        failures.push("homepage semester-break row is missing its title and dates");
+      }
+      if (normaliseText(row.cells[2]?.html ?? "") || normaliseText(row.cells[3]?.html ?? "")) {
+        failures.push("homepage semester-break row should leave Practical and Notes blank");
+      }
+    }
+
     if (normaliseText(weeklyTable).includes("Software and graphical models")) {
       failures.push("homepage weekly table should hide the Week 1 workshop row");
-    }
-  }
-}
-
-const weekOnePath = [
-  {
-    file: "lectures/L01/index.html",
-    current: "Lectures — learn the ideas: Introduction and fundamentals",
-  },
-  {
-    file: "module01/w01-intro.html",
-    current: "Workshop — practise the fundamentals: Software and graphical models",
-  },
-  {
-    file: "module01/102-week01.html",
-    current: "Practical — apply them: Getting started",
-  },
-];
-const weekOneLabels = [
-  "Lectures — learn the ideas: Introduction and fundamentals",
-  "Workshop — practise the fundamentals: Software and graphical models",
-  "Practical — apply them: Getting started",
-];
-
-for (const route of weekOnePath) {
-  const file = path.join(siteRoot, ...route.file.split("/"));
-  const page = pages.get(file);
-  if (!page) {
-    failures.push(`missing rendered Week 1 pathway page ${route.file}`);
-    continue;
-  }
-  if (!page.ids.has("week-1-learning-path")) {
-    failures.push(`${route.file} is missing the Week 1 learning-path heading`);
-  }
-
-  const headingStart = page.html.search(
-    /<(?:section|h2)\b[^>]*\bid=["']week-1-learning-path["'][^>]*>/i,
-  );
-  const pathwayHtml = headingStart === -1 ? "" : page.html.slice(headingStart);
-  const orderedList = pathwayHtml.match(/<ol\b[^>]*>[\s\S]*?<\/ol>/i)?.[0] ?? "";
-  const pathwayLinks = extract(orderedList).links;
-  const listItems = Array.from(orderedList.matchAll(/<li\b/gi));
-
-  if (listItems.length !== 3) {
-    failures.push(`${route.file} Week 1 pathway needs exactly three ordered items`);
-  }
-  if (pathwayLinks.length !== 2) {
-    failures.push(`${route.file} Week 1 pathway needs exactly two links`);
-  }
-  if (!normaliseText(orderedList).includes(`${route.current} — you are here`)) {
-    failures.push(`${route.file} does not identify its current Week 1 pathway item`);
-  }
-  for (const label of weekOneLabels) {
-    const isLinked = pathwayLinks.some((link) => link.text === label);
-    if (label === route.current && isLinked) {
-      failures.push(`${route.file} links its current Week 1 pathway item`);
-    }
-    if (label !== route.current && !isLinked) {
-      failures.push(`${route.file} is missing Week 1 pathway link "${label}"`);
     }
   }
 }

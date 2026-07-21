@@ -5,9 +5,6 @@ body-classes: manual-page
 number-sections: false
 ---
 
-::: {.week-learning-path week="1"}
-:::
-
 This workshop gives you a short, guided introduction to the software and ideas you will use in Practical 1. You will reproduce one plot with a cheatsheet, connect it to the Week 1 lectures, and prepare a Model Card for the practical.
 
 The class period is 45 minutes: a 40-minute core with 5 minutes of flex time for opening files, changing pages and getting support.

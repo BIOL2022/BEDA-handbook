@@ -7,14 +7,13 @@ title: "Unit information"
 
 ## Welcome {.section-rail}
 
-Welcome to **BEDA**. Wherever biology takes you, you will need to judge evidence to make decisions.
-**Experimental design** and **statistical thinking** give you the tools to do that across any field that requires people collect data to understand the world around them.
+Thank you for joining **BIOL2022: Biology Experimental Design and Analysis**, also known as BEDA (🐝-da). The ability to critically evaluate evidence is a fundamental life skill. In BEDA, we build this skill through hands-on work in experimental design and data analysis. How do we design a robust study? How does a study’s design shape its results? How do we choose statistical tools that fit the research question? The reasoning skills you develop will be invaluable not just in biology, but in *any* future career path you choose.
 
 Our approach in BEDA is based on three principles:
 
-1. **Models connect questions to data.** A statistical model expresses the pattern you expect to observe and gives you a way to evaluate the evidence for your biological ideas.
-2. **Concepts guide methods.** Rather than memorising a list of statistical tests, you will learn why different methods are appropriate, what assumptions they make, and what their results mean.
-3. **Study design comes before software.** Software can fit a model, but it cannot repair a study that was not designed to answer the question. We therefore place as much emphasis on how data are produced as on how they are analysed.
+1. **The MODEL determines the method.** Building a model makes the structure of your question and data explicit. This guides you towards the appropriate test, even when you do not know its name (although most likely it is a general linear model). We will therefore focus on the model and its assumptions, which is easier than trying to remember all the different tests.
+2. **The workflow is consistent.** We show you a process for analysing data that can be applied to (almost) any dataset. You will learn to check assumptions, visualise data, fit a model and interpret results using a single technique that works across most software.
+3. **The focus is on statistical thinking** The same model can be fitted in Jamovi, R, SPSS or another program. A strong understanding of the model matters more than familiarity with a particular interface.
 
 We recommend **Jamovi** if you are new to statistical software. If you already have experience with **R**, you are welcome to use it. **SPSS** remains a supported alternative although you need to weigh its limitations outside of academia where it may not be free, or as flexible as open-sourced options. The aim is not to master one program. It is to develop a way of thinking that you can carry into other subjects, research projects and future work.
 
@@ -59,7 +58,7 @@ All practicals are held in **Carslaw Building, Wet Lab 307**. Check your persona
 
 A code of conduct is a shared agreement about how we learn and work together.
 
-BEDA should be a respectful and inclusive place to learn. Treat classmates and staff with courtesy, including when you disagree. Use people's correct names and pronouns, respect different backgrounds and levels of experience, make space for others to contribute, and avoid disrupting lectures or practicals. Discrimination, intimidation and harassment are not acceptable. Follow staff instructions and all laboratory safety requirements.
+BEDA should be a respectful and inclusive place to learn. Treat classmates and staff with courtesy, including when you disagree. Use people's correct names and pronouns, respect different backgrounds and levels of experience, make space for others to contribute, and avoid disrupting lectures or practicals. Discrimination, intimidation and harassment are not acceptable. Follow staff instructions and all laboratory safety requirements when working in laboratory spaces.
 
 #### Working with your group and data
 

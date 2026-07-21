@@ -2,9 +2,6 @@
 title: "Week 1 — Introduction and fundamentals"
 ---
 
-::: {.week-learning-path week="1"}
-:::
-
 ::: {.lecture-actions}
 **Monday: L01a Welcome to BEDA** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L00-Welcome-to-BEDA/){.lecture-action aria-label="Open Welcome to BEDA full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L00-Welcome-to-BEDA/L00-welcome.pdf){.lecture-action aria-label="Open Welcome to BEDA PDF"}
 :::
