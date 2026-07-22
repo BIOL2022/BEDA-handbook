@@ -1,5 +1,6 @@
 ---
 title: "Week 12 — Rarefaction and Bayesian analysis"
+draft: true
 ---
 
 ## Rarefaction and Bayesian analysis

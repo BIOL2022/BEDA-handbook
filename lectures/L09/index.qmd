@@ -1,5 +1,6 @@
 ---
 title: "Week 9 — Multivariate analysis and PCA"
+draft: true
 ---
 
 ## Introduction to multivariate analysis

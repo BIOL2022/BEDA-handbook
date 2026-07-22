@@ -1,5 +1,6 @@
 ---
 title: "Week 10 — Clustering and multidimensional scaling"
+draft: true
 ---
 
 ## Clustering

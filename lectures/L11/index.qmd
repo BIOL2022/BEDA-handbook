@@ -1,5 +1,6 @@
 ---
 title: "Week 11 — MANOVA and multivariate revision"
+draft: true
 ---
 
 ## Multivariate analysis of variance (MANOVA)

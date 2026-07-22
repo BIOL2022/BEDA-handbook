@@ -1,5 +1,6 @@
 ---
 title: "Week 3 — Choosing the right model based on assumptions"
+draft: true
 ---
 
 

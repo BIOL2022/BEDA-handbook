@@ -1,5 +1,6 @@
 ---
 title: "Week 6 — Refresher and categorical variables"
+draft: true
 ---
 
 ## General refresher

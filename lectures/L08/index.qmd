@@ -1,5 +1,6 @@
 ---
 title: "Week 8 — Model selection and revision"
+draft: true
 ---
 
 ## Information-theoretic methods vs. null hypothesis testing
