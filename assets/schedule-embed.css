@@ -1,0 +1,19 @@
+#quarto-header,
+.quarto-title-block,
+footer.footer {
+  display: none !important;
+}
+
+body {
+  padding-top: 0;
+}
+
+#quarto-content {
+  padding-top: 1rem;
+}
+
+main.content {
+  margin-inline: auto;
+  max-width: 100%;
+  width: min(100%, 96rem);
+}

@@ -1,0 +1,17 @@
+---
+title: "Week 11 — MANOVA and multivariate revision"
+---
+
+## Multivariate analysis of variance (MANOVA)
+
+[Open “Multivariate analysis of variance” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135754)
+
+## Multivariate revision 1
+
+[Open “Multivariate revision 1” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135755)
+
+::: {.lecture-week-nav}
+[← Week 10: Clustering and multidimensional scaling](../L10/index.qmd){.lecture-previous}
+
+[Week 12: Rarefaction and Bayesian analysis →](../L12/index.qmd){.lecture-next}
+:::

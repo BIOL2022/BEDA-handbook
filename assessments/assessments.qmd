@@ -14,7 +14,7 @@ date: today
 [id^="countdown-"] {
   font-weight: bold;
   font-size: 1.1em;
-  color: forestgreen;
+  color: #176b28;
 }
 </style>
 
@@ -22,39 +22,43 @@ date: today
 
 
 ::: {.assessment-section}
-### <i class="bi bi-lightbulb"></i> Early Feedback Task (EFT) - 5%
-##### Due: 29 August 2025
+## <i class="bi bi-lightbulb"></i> Early Feedback Task (EFT) - 5%
+**Due:** 29 August 2025
 This is a short **quiz**, designed to give you early feedback on your prior understanding of statistics. 
 It will help you identify areas where you may need to focus your study efforts. 
 
 <p><strong>Due in:</strong> <span id="countdown-eft"></span></p>
-[Details](assessment-eft.qmd){.btn .btn-primary} [Submission link](https://canvas.sydney.edu.au/courses/67437/assignments/638396){.btn .btn-success}
+[Details](assessment-eft.qmd){.btn .btn-primary} [Submission link](https://canvas.sydney.edu.au/courses/74353/assignments/696326){.btn .btn-success}
 :::
 
 ::: {.assessment-section}
-### <i class="bi bi-question-circle"></i> Evaluation Quiz (Module 1) - 10%
-##### Due: 5 September 2025
+## <i class="bi bi-question-circle"></i> Evaluation Quiz (Module 1) - 10%
+**Due:** 5 September 2025
 This is a **quiz** that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.
 
 <p><strong>Due in:</strong> <span id="countdown-mod1-quiz"></span></p>
-[Details](assessment-evaluation-quiz.qmd){.btn .btn-primary} [Submission link](https://canvas.sydney.edu.au/courses/67437/assignments/626423){.btn .btn-success}
+[Details](assessment-evaluation-quiz.qmd){.btn .btn-primary} [Submission link](https://canvas.sydney.edu.au/courses/74353/assignments/696327){.btn .btn-success}
 :::
 
 ::: {.assessment-section}
-### <i class="bi bi-file-earmark-text"></i> Report 1 (Module 2) - 25%
-##### Due: 7 October 2025
+## <i class="bi bi-file-earmark-text"></i> Report 1 (Module 2) - 25%
+**Due:** 7 October 2025
 You will use what you have learned so far to design and analyse an experiment based on a project of your choice. The experiments will be completed in groups, but the reports are individually written and assessed. You will have 6 weeks to complete it.
 
 **Role of Practicals:**  
 Practicals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans. Demonstrators act as advisors, similar to how support works in a research group, and you are welcome to interact with them and your peers for advice, just as you would with postdocs or supervisors. If you are organised, you can also request feedback on your report drafts during practicals to help improve your work.
 
+- [Explore the Report 1 project options](../module02/203-projects.qmd)
+- [Read the Report 1 instructions](../module02/204-report1.qmd)
+- [Open the Report 1 marking rubric](../module02/206-rubric.qmd)
+
 <p><strong>Report due:</strong> <span id="countdown-report1"></span></p>
-[Details](assessment-report-1.qmd){.btn .btn-primary} [**Data** submission](https://canvas.sydney.edu.au/courses/67437/assignments/626425){.btn .btn-success} [**Report** submission](https://canvas.sydney.edu.au/courses/67437/assignments/626426){.btn .btn-success}
+[Details](assessment-report-1.qmd){.btn .btn-primary} [**Data** submission](https://canvas.sydney.edu.au/courses/74353/assignments/696330){.btn .btn-success} [**Report** submission](https://canvas.sydney.edu.au/courses/74353/assignments/696331){.btn .btn-success}
 :::
 
 ::: {.assessment-section}
-### <i class="bi bi-file-earmark-bar-graph"></i> Report 2 (Module 3) - 20%
-##### Due: 21-24 October 2025 (dataset submission) | 7 November 2025 (report)
+## <i class="bi bi-file-earmark-bar-graph"></i> Report 2 (Module 3) - 20%
+**Due:** 21-24 October 2025 (dataset submission) | 7 November 2025 (report)
 Report 2 is similar to Report 1, but you will need to focus on a project with a multivariate context. Note that there is a 5% group work component to this report that will be assessed via dataset submission, and the report is individually written and assessed (15%). You will have 5 weeks to complete the report.
 
 **Role of Practicals:**  
@@ -66,8 +70,7 @@ Practicals are a mix of structured and unstructured sessions. Each practical beg
 **Wed groups**: <span id="countdown-report2-dataset-wed"></span><br>
 **Fri groups**: <span id="countdown-report2-dataset-fri"></span><br>
 <strong>Report due:</strong> <span id="countdown-report2"></span></p>
-[Details](assessment-report-2.qmd){.btn .btn-primary} [**Data** submission](https://canvas.sydney.edu.au/courses/67437/assignments/626427){.btn .btn-success} [**Report** submission](https://canvas.sydney.edu.au/courses/67437/assignments/626428){.btn .btn-success}
-<!-- [Details](#){.btn .btn-primary .disabled} [Submission link](#){.btn .btn-success .disabled} -->
+[Details](assessment-report-2.qmd){.btn .btn-primary} [**Data** submission](https://canvas.sydney.edu.au/courses/74353/assignments/696332){.btn .btn-success} [**Report** submission](https://canvas.sydney.edu.au/courses/74353/assignments/696333){.btn .btn-success}
 :::
 
 <script src="../scripts/countdown.js"></script>

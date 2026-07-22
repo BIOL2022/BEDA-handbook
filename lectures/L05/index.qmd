@@ -1,0 +1,27 @@
+---
+title: "Week 5 — Controls and revision"
+---
+
+
+
+::: {.lecture-actions}
+**Monday: Controlling your experiments with data** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L05a-blocking-fixed-random/){.lecture-action aria-label="Open Control, fixed and random variables full screen"}
+:::
+
+```{=html}
+<iframe class="lecture-preview" src="https://biol2022.github.io/L05a-blocking-fixed-random/" title="Preview of Control, fixed and random variables lecture slides" loading="lazy" allowfullscreen></iframe>
+```
+
+::: {.lecture-actions}
+**Tuesday: You've got this — Module 1 revision** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L05b-revision/){.lecture-action aria-label="Open Module 1 revision full screen"}
+:::
+
+```{=html}
+<iframe class="lecture-preview" src="https://biol2022.github.io/L05b-revision/" title="Preview of Module 1 revision lecture slides" loading="lazy" allowfullscreen></iframe>
+```
+
+::: {.lecture-week-nav}
+[← Week 4: Multiple predictors and transformations](../L04/index.qmd){.lecture-previous}
+
+[Week 6: Refresher and categorical variables →](../L06/index.qmd){.lecture-next}
+:::

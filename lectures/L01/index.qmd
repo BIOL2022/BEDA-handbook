@@ -1,0 +1,29 @@
+---
+title: "Week 1 — Introduction and fundamentals"
+---
+
+::: {.lecture-actions}
+**Monday: L01a Welcome to BEDA** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L00-Welcome-to-BEDA/){.lecture-action aria-label="Open Welcome to BEDA full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L00-Welcome-to-BEDA/L00-welcome.pdf){.lecture-action aria-label="Open Welcome to BEDA PDF"}
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<iframe class="lecture-preview" src="https://biol2022.github.io/L00-Welcome-to-BEDA/" title="Preview of Welcome to BEDA lecture slides" loading="lazy" allowfullscreen></iframe>
+```
+:::
+
+
+
+::: {.lecture-actions}
+**Tuesday: L01b The fundamentals** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L01-intro-exp-design-analysis/){.lecture-action aria-label="Open Introduction to experimental design and analysis full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L01-intro-exp-design-analysis/L01c-Introduction.pdf){.lecture-action aria-label="Open Introduction to experimental design and analysis PDF"}
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<iframe class="lecture-preview" src="https://biol2022.github.io/L01-intro-exp-design-analysis/" title="Preview of Introduction to experimental design and analysis lecture slides" loading="lazy" allowfullscreen></iframe>
+```
+:::
+
+::: {.lecture-week-nav}
+[Week 2: Sampling and modelling →](../L02/index.qmd){.lecture-next}
+:::

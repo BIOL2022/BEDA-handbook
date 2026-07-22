@@ -4,9 +4,10 @@ resources:
   - assets/2025-r1-rubric.pdf
 ---
 
-Download the rubric for Report 1 [here](assets/2025-r1-rubric.pdf){target="_blank"}.
+Download the rubric for Report 1 [here](assets/2025-r1-rubric.pdf){target="_blank" rel="noopener noreferrer"}.
 
 :::{.column-page}
-{{< pdf assets/2025-r1-rubric.pdf width=100% height=1000 >}}
+<object data="assets/2025-r1-rubric.pdf" type="application/pdf" width="100%" height="1000" title="Report 1 marking rubric PDF">
+  <p><a href="assets/2025-r1-rubric.pdf">Download the Report 1 marking rubric PDF.</a></p>
+</object>
 :::
-

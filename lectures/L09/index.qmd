@@ -1,0 +1,17 @@
+---
+title: "Week 9 — Multivariate analysis and PCA"
+---
+
+## Introduction to multivariate analysis
+
+[Open “Introduction to multivariate analysis” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135750)
+
+## Principal Component Analysis (PCA) and Factor Analysis (FA)
+
+[Open “PCA and Factor Analysis” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135751)
+
+::: {.lecture-week-nav}
+[← Week 8: Model selection and revision](../L08/index.qmd){.lecture-previous}
+
+[Week 10: Clustering and multidimensional scaling →](../L10/index.qmd){.lecture-next}
+:::

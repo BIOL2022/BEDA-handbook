@@ -1,0 +1,17 @@
+---
+title: "Week 10 — Clustering and multidimensional scaling"
+---
+
+## Clustering
+
+[Open “Clustering” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135752)
+
+## Non-metric multi-dimensional scaling (nMDS) and hypothesis testing
+
+[Open “Non-metric multidimensional scaling” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135753)
+
+::: {.lecture-week-nav}
+[← Week 9: Multivariate analysis and PCA](../L09/index.qmd){.lecture-previous}
+
+[Week 11: MANOVA and multivariate revision →](../L11/index.qmd){.lecture-next}
+:::

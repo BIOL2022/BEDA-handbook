@@ -2,6 +2,8 @@
 title: "**Week 12**: Support session"
 ---
 
+[Return to weekly content](../index.qmd#weekly-content)
+
 :::{.callout-tip appearance="simple"}
 ## Objectives (you should know these by now!)
 The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will;

@@ -1,0 +1,11 @@
+---
+title: "Week 13 — Exam revision"
+---
+
+## Exam revision and questions
+
+Coming soon.
+
+::: {.lecture-week-nav}
+[← Week 12: Rarefaction and Bayesian analysis](../L12/index.qmd){.lecture-previous}
+:::

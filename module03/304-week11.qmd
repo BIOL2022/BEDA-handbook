@@ -2,6 +2,8 @@
 title: "**Week 11**: Multivariate methods in biology (continued)"
 ---
 
+[Return to weekly content](../index.qmd#weekly-content)
+
 :::{.callout-tip appearance="simple"}
 ## Objectives 
 The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:
@@ -40,4 +42,3 @@ At this stage it’s very easy to fiddle with your data – is there any reason 
 The graphics are not fantastic – for some outputs you may need to save the coordinates and make a new graph. You can save the images as a windows metafile or bitmap if you wish, they are good enough for your report. Resolution is too low for most journals. You should save appropriate output files using standard formats you can incorporate into your report. 
 
 If you don’t complete your analyses, I will make the program available to you outside of prac times. There will also be time in week 13 to do any extras.
-

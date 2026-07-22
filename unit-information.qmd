@@ -2,28 +2,76 @@
 title: "Unit information"
 ---
 
-This is a quick overview of the unit covering how it is structured, how we commumnicate and what is expected of you.
 
-## Modules
-BEDA is divided into **three modules**, each taught by a different lecturer. The modules vary in length on purpose. 
+::: {.panel-tabset}
 
-- **Module 1**, led by Januar Harianto, covers the essentials of statistics from a fresh angle. If you are "new" to stats, this module will set you up well, focusing less on the traditional approach of picking the “right” test and more on understanding why and how to build a solid statistical model to answer your research questions.
-- **Module 2**, led by Clare McArthur, critically assesses study designs that have already been done. Using real data examples, we will look at how variations in study design can influence the results. You will notice that the concepts from Module 1 are applicable to more complex models. You will also start working on Report 1 which requires you to design and analyse an experiment.
-- **Module 3**, led by Mathew Crowther, focuses on the application of statistical techniques to real-world data that is often complex and messy and how to deal with it using multivariate techniques. You will start working on Report 2 which requires you to collect and analyse data from your environment, rather than a controlled experiment.
+## Welcome {.section-rail}
 
-## Announcements
-We will post all important updates and announcements on [Ed (also known as Edstem)](https://edstem.org/au/dashboard). Please get into the habit of checking it regularly (i.e. daily). **It is up to you to stay on top of these announcements. Any special consideration requests or emails that are due to a lack of awareness of announcements will not be considered.**
+Thank you for joining **BIOL2022: Biology Experimental Design and Analysis**, also known as BEDA (🐝-da). The ability to critically evaluate evidence is a fundamental life skill. In BEDA, we build this skill through hands-on work in experimental design and data analysis. How do we design a robust study? How does a study’s design shape its results? How do we choose statistical tools that fit the research question? The reasoning skills you develop will be invaluable not just in biology, but in *any* future career path you choose.
 
-## Lectures and practicals
+Our approach in BEDA is based on three principles:
 
-**Attending lectures and practicals is mandatory.** We monitor attendance in practicals, and your participation is crucial since you'll be working on assessments in groups. Your presence is important for your own learning and for supporting your peers. Each week, there are two lectures and one practical.
+1. **The MODEL determines the method.** Building a model makes the structure of your question and data explicit. This guides you towards the appropriate test, even when you do not know its name (although most likely it is a general linear model). We will therefore focus on the model and its assumptions, which is easier than trying to remember all the different tests.
+2. **The workflow is consistent.** We show you a process for analysing data that can be applied to (almost) any dataset. You will learn to check assumptions, visualise data, fit a model and interpret results using a single technique that works across most software.
+3. **The focus is on statistical thinking** The same model can be fitted in Jamovi, R, SPSS or another program. A strong understanding of the model matters more than familiarity with a particular interface.
 
-- **Tuesday Lecture**: 10:00am - 11:00am, [BHB Lecture Theatre 1110](https://maps.sydney.edu.au/?room=H70.01.1110)
-- **Wednesday Lecture**: 10:00am - 11:00am, [Carslaw Lecture Theatre 159-259](https://maps.sydney.edu.au/?room=F07.02.159-259)
-- **Practical Sessions**: Your practical will be on either Tuesday, Wednesday, or Friday from 2:00pm - 4:00pm or 4:00pm - 6:00pm in [Carlsaw Wet Lab 307](https://maps.sydney.edu.au/?room=F07.03.307).
+We recommend **Jamovi** if you are new to statistical software. If you already have experience with **R**, you are welcome to use it. **SPSS** remains a supported alternative although you need to weigh its limitations outside of academia where it may not be free, or as flexible as open-sourced options. The aim is not to master one program. It is to develop a way of thinking that you can carry into other subjects, research projects and future work.
 
-Make sure to check your personal timetable for your specific practical session time.
+## Assumed knowledge {.section-rail}
 
-## Assessments
+BEDA is designed to build on introductory statistics rather than teach it from the beginning. We use ideas such as data types, sampling variation, hypothesis testing, p-values, confidence intervals and simple statistical models from the opening weeks. This allows us to spend more time on designing biological studies, building appropriate models and interpreting evidence.
 
-To pass this unit, you must complete and submit all assessment tasks. Importantly, Report 1 and 2 are compulsory assessments you will fail the unit if you do not submit them.  For more information on the assessments, please see the [Assessments](assessments/assessments.qmd) page.
+Because BEDA has broad prerequisites, completing a prerequisite does not always mean that you have studied statistics. It is therefore important to check the [assumed knowledge listed for BIOL2022](https://www.sydney.edu.au/units/BIOL2022#:~:text=Assumed%20knowledge), which includes previous study in biology and completion of a first-year statistics unit.
+
+You do not need to remember everything perfectly. However, the main ideas should be familiar enough that a short recap brings them back. Use [Am I ready for BEDA?](prerequisites.qmd) to check your starting point. If several topics are completely new, review them before semester or ask the teaching team where to begin.
+
+## Modules {.section-rail}
+
+BEDA is organised into three modules, each taught by a different lecturer. Ideas introduced early in the unit continue through the semester as they are applied to different kinds of biological research.
+
+In **Module 1 (Weeks 1–5)**, Januar introduces the foundations of study design and statistical modelling. You will look at how a research question, the way a study is designed and the data you collect come together in a model.
+
+In **Module 2 (Weeks 6–8)**, Clare develops these ideas through univariate experiments. You will work with real examples and examine how decisions made during study design affect the results and the conclusions. This leads into Report 1, where you will design and analyse an experiment of your own.
+
+In **Module 3 (Weeks 9–12)**, Mat extends the unit into multivariate analysis, where several variables may change together. For Report 2, you will collect data from your environment and learn how to describe and interpret the patterns within it.
+
+## Lectures and practicals {.section-rail}
+
+Classes run during Weeks 1–8 and Weeks 9–12, with no classes during the mid-semester break.
+
+There are two lectures each week:
+
+- **Tuesday, 10–11 am** — Belinda Hutchinson Building, Lecture Theatre 1110
+- **Wednesday, 10–11 am** — Sydney Nanoscience Hub, Lecture Theatre 4002 (Messel)
+
+You will also attend one two-hour practical each week in your allocated class:
+
+- **Tuesday, 2–4 pm or 4–6 pm**
+- **Wednesday, 2–4 pm or 4–6 pm**
+- **Friday, 2–4 pm or 4–6 pm**
+
+All practicals are held in **Carslaw Building, Wet Lab 307**. Check your personal timetable for your allocated class and any timetable changes.
+
+**Attendance:** You are expected to participate in at least 80% of timetabled activities and must attend at least 10 of the 12 practicals. See [Attendance](#attendance) under the Code of Conduct for further details.
+
+## Code of conduct {.section-rail}
+
+A code of conduct is a shared agreement about how we learn and work together.
+
+BEDA should be a respectful and inclusive place to learn. Treat classmates and staff with courtesy, including when you disagree. Use people's correct names and pronouns, respect different backgrounds and levels of experience, make space for others to contribute, and avoid disrupting lectures or practicals. Discrimination, intimidation and harassment are not acceptable. Follow staff instructions and all laboratory safety requirements when working in laboratory spaces.
+
+#### Working with your group and data
+
+Contribute fairly to your group's work and raise participation problems early. Share group data and the information needed to interpret it promptly. Never fabricate data, or omit or alter observations without documenting and justifying the decision. You may discuss your analysis with your group, but any individual report must be written and submitted independently.
+
+#### Attendance
+
+Attend lectures live where possible. If you miss a lecture, watch the recording promptly. You are expected to have attended or watched the Tuesday lecture before your practical. Because practicals run on Tuesday, Wednesday and Friday, the Wednesday lecture is not assumed knowledge for that week's practical, but you should attend or watch it during the same week.
+
+You must attend at least 10 of the 12 practicals to meet the 80% attendance requirement. Practical attendance is not managed through special consideration. Record your own attendance during each practical using the QR code or website link, then check that it has been recorded correctly. You have one week to request a correction.
+
+#### Raising a concern
+
+For routine group-work, data-sharing or class concerns, speak with your practical demonstrator or the unit coordinator as early as possible. You do not need to approach the teaching team first if the matter is serious or you would be uncomfortable doing so. The University provides separate pathways for [complaints, bullying, harassment and discrimination](https://www.sydney.edu.au/students/complaints.html) and confidential support through [Safer Communities](https://www.sydney.edu.au/students/health-wellbeing/sexual-harm-and-gender-based-violence-support.html) for sexual harm or gender-based violence. In an immediate emergency, call 000 and follow the University's [emergency and campus safety guidance](https://www.sydney.edu.au/students/emergencies-safety-on-campus.html).
+
+:::

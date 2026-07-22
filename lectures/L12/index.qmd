@@ -1,0 +1,17 @@
+---
+title: "Week 12 — Rarefaction and Bayesian analysis"
+---
+
+## Rarefaction and Bayesian analysis
+
+[Open “Rarefaction and Bayesian analysis” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135756)
+
+## Multivariate revision 2
+
+[Open “Multivariate revision 2” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135757)
+
+::: {.lecture-week-nav}
+[← Week 11: MANOVA and multivariate revision](../L11/index.qmd){.lecture-previous}
+
+[Week 13: Exam revision →](../L13/index.qmd){.lecture-next}
+:::

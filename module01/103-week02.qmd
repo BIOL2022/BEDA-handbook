@@ -2,6 +2,14 @@
 title: "**Week 2**: Study design"
 ---
 
+[Return to weekly content](../index.qmd#weekly-content)
+
+## What you need this week
+
+- [Workshop 2: Tidy data](w02-tidy-data.qmd)
+- [Intertidal site images](105-images.qmd)
+- [Species identification guide](106-species-id.qmd)
+
 ## Introduction
 
 Today we will be focusing on data collection and how to prepare your data for analysis.
@@ -26,7 +34,7 @@ By the end of this practical, you should be able to:
 2. **Data in the form of a tidy spreadsheet** -- your collected data will need to be submitted to Google Drive. This submission is not a formal assessment (it is not graded), but it is essential for the next practical, so please make sure you submit it.
 
 ## Workshop
-The Week 2 workshop will go through **Tidy data principles**. Tidy data is a way of structuring your data so that it is easy to work with and analyse. It is a key principle in data analysis and will help you avoid common pitfalls when working with data. [Go to workshop 02](w02-tidy-data.qmd).
+The Week 2 workshop linked above will go through **Tidy data principles**. Tidy data is a way of structuring your data so that it is easy to work with and analyse. It is a key principle in data analysis and will help you avoid common pitfalls when working with data.
 
 
 ## Exercise 1 -- Modelling from observations
@@ -51,7 +59,7 @@ Do not proceed to Exercise 2 until you have completed this exercise, and a Demon
 You are provided with random, representative, replicate photographs of a common marine habitat that spans > 8,000 km of the Great Southern Reef, i.e. the coastline along the bottom half of Australia -- intertidal rocky shores (Fig 1). 
 
 ::: {.content-visible when-format="html"}
-Access the images, including background information, [here](/module01/105-images.qmd){target="_blank"} (note: link will open in a new window/tab).
+Use the intertidal site images linked in **What you need this week**, which include background information.
 :::
 
 ::: {.content-visible when-format="pdf"}
@@ -82,7 +90,7 @@ Have a clear model in mind before collecting data. The model determines your sam
 
 While you may not have all the answers right away, it's important to have a rough idea of what you want to do, such as comparing groups, measuring correlation, or creating a linear model.
 
-![The Great Southern Reef. © 2021 California Academy of Sciences.](../assets/southern-reef-map.png){width=70%}
+![The Great Southern Reef coastline around southern Australia. © 2021 California Academy of Sciences.](../assets/southern-reef-map.png){width=70% fig-alt="Map showing the Great Southern Reef coastline around southern Australia."}
 
 ### Task
 
@@ -94,7 +102,7 @@ Then, address your study design by answering the following questions:
 2. **Variables**: What are the variables you need to measure? What types of variables are they (e.g. continuous, categorical)?
 3. **Data collection**: How would you collect data to test your model? What are the potential issues you need to consider? 
 
-::: {.callout-note collapse="true"}
+::: {.callout-note}
 ## Example
 Note that this example will probably not work for the images, but it should give you an idea of what is expected. Also note that you do not need to follow the template exactly!
 
@@ -140,7 +148,7 @@ If more than one person is entering data, will it influence the results? Why or 
 :::
 
 
-::: {.callout-note collapse="true"}
+::: {.callout-note}
 
 ## Optional: tidy your data
 To make your life easier, *recall* the [tidy data principles](https://r4ds.had.co.nz/tidy-data.html) outlined in the workshop:
@@ -151,35 +159,26 @@ To make your life easier, *recall* the [tidy data principles](https://r4ds.had.c
 
 The table below is tidy:
 
-```{r}
-#| echo: false
-#| message: false
-library(gt)
-library(tidyverse)
-library(gtExtras)
-person <- c("John", "Mary", "Jane", "John", "Mary", "Jane")
-treatment <- c("A", "A", "A", "B", "B", "B")
-count <- c(5, 3, 2, 6, 4, 5)
-tidy_data <- tibble(person, treatment, count)
-gt(tidy_data) |>
-  gt_theme_espn() |>
-  tab_caption(caption = md("Table 1. Tidy data."))
-```
+| Person | Treatment | Count |
+|---|---|---:|
+| John | A | 5 |
+| Mary | A | 3 |
+| Jane | A | 2 |
+| John | B | 6 |
+| Mary | B | 4 |
+| Jane | B | 5 |
+
+: Table 1. Tidy data.
 
 The table below is not (although it may look "better” to you). Why?
 
-```{r}
-#| echo: false
+| Person | Treatment A | Treatment B |
+|---|---:|---:|
+| John | 5 | 6 |
+| Mary | 3 | 4 |
+| Jane | 2 | 5 |
 
-messy_data <- tibble(
-  person = c("John", "Mary", "Jane"),
-  "treatment A" = c(5, 3, 2),
-  "treatment B" = c(6, 4, 5)
-)
-gt(messy_data) |>
-  gt_theme_espn() |>
-  tab_caption(caption = md("Table 2. Non-tidy data. Treatment A and B represent the same variable (count)."))
-```
+: Table 2. Non-tidy data. Treatment A and B represent the same variable (count).
 
 
 Note: tidy data will reduce the amount of time you spend cleaning your data during data analysis, but you can also choose not to follow these principles if you prefer.
@@ -230,4 +229,3 @@ When collecting snails, please handle them gently by picking them up carefully b
 
 #### Bringing them in
 Please bring your snails to the lab next week. Your contribution will be a huge help. Thank you!
-

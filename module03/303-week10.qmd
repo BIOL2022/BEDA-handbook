@@ -3,6 +3,8 @@ title: "**Week 10**: Permutational techniques"
 number-sections: false
 ---
 
+[Return to weekly content](../index.qmd#weekly-content)
+
 :::{.callout-tip appearance="simple"}
 ## Objectives
 The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will;
@@ -270,8 +272,8 @@ Let me know if you'd like template Excel sheets or sample Jamovi/PRIMER files to
 
 #### **Example of data sheet for importing data into Jamovi for PCA** 
 
-![](assets/image1.png)
+![Example Jamovi-ready data sheet layout for PCA.](assets/image1.png){fig-alt="Spreadsheet layout showing a Jamovi-ready data sheet for PCA."}
 
 #### **Example of data sheet for importing data into PRIMER**
 
- ![](assets/image2.png)
+ ![Example PRIMER-ready data sheet layout.](assets/image2.png){fig-alt="Spreadsheet layout showing a PRIMER-ready data sheet."}

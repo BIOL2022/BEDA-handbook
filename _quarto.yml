@@ -4,133 +4,61 @@ project:
     - canvas/semester-status.html
     - canvas/semester-status.svg
     - canvas/semester-status-narrow.svg
+  render:
+    - "**/*.qmd"
+    - "!_book/**"
+    - "!_partials/**"
 
 website:
   title: "BIOL2022"
+  search: true
+  # draft-mode: gone
   drafts:
-    # - module01/103-week02.qmd
-    # - module01/104-week03.qmd
-    # - module02/202-timeline.qmd
-    # - module02/203-projects.qmd
-    # - module02/204-report1.qmd
-    # - module02/205-resources.qmd
-    # - module03/302-week09.qmd
-    # - module03/303-week10.qmd
-    #- module03/304-week11.qmd
+    - module01/w01-intro.qmd
+    - module01/w02-tidy-data.qmd
+    - module01/w03-model-fitting-assumptions.qmd
+    - module01/102-week01.qmd
+    - module01/103-week02.qmd
+    - module01/104-week03.qmd
+    - module02/202-timeline.qmd
+    - module03/302-week09.qmd
+    - module03/303-week10.qmd
+    - module03/304-week11.qmd
     - module03/305-week12.qmd
-  draft-mode: visible # unlinked
   navbar:
+    collapse-below: xl
     left:
-      - icon: house-fill
-        href: index.qmd
-        text: "Home"
-      - icon: mortarboard-fill
-        href: https://canvas.sydney.edu.au/courses/67437
-        text: "Canvas"
-      - icon: info-circle-fill
-        text: "Unit Information"
-        href: unit-information.qmd
-      - icon: clipboard-check
-        text: "Assessments"
-        href: assessments/assessments.qmd
-      # - icon: calendar-event
-      #   href: schedule.qmd
-      #   text: "Schedule"
-      - icon: file-earmark-text
-        href: cheatsheets.qmd
-        text: "Cheatsheets"
-    right:
-      - href: 04-help/index.qmd
-        text: Contact
-  sidebar: 
-    style: floating
-    collapse-level: 2
-    contents:
       - icon: house-fill
         text: Home
         href: index.qmd
-      - icon: mortarboard-fill
-        href: https://canvas.sydney.edu.au/courses/67437
-        text: "Canvas"
-      - icon: question-circle-fill
-        text: "<b>Am I ready for BEDA?</b>"
-        href: prerequisites.qmd
       - icon: info-circle-fill
-        text: "Unit Information"
+        text: Unit information
         href: unit-information.qmd
-      # - icon: calendar-event
-      #   text: Schedule
-      #   href: schedule.qmd
+      # - icon: clipboard-check
+      #   text: Assessments
+      #   href: assessments/assessments.qmd
+      - icon: envelope-fill
+        text: Contact
+        href: help.qmd
       - icon: file-earmark-text
         text: Cheatsheets
         href: cheatsheets.qmd
-      - icon: envelope-fill
-        text: Contact us
-        href: help.qmd
-      - text: ---
-      - icon: clipboard-check
-        text: "**Assessments**"
-        href: assessments/assessments.qmd
-      - icon: easel3-fill
-        text: "**Lectures** (schedule)"
-        href: index.qmd#schedule
-      - icon: book
-        section: "**Practicals**"
-        contents:
-          - href: module01/102-week01.qmd
-            text: "Week **1** prac: getting started"
-          - href: module01/w01-intro.qmd
-            text: "&nbsp; &nbsp; &nbsp; &nbsp; Workshop 01"
-          - href: module01/103-week02.qmd
-            text: "Week **2** prac: study design"
-          - href: module01/w02-tidy-data.qmd
-            text: "&nbsp; &nbsp; &nbsp; &nbsp; Workshop 02"
-          - href: module01/105-images.qmd
-            text: "&nbsp; &nbsp; &nbsp; &nbsp; Intertidal site images"
-          - href: module01/106-species-id.qmd
-            text: "&nbsp; &nbsp; &nbsp; &nbsp; Species ID guide"
-          - href: module01/104-week03.qmd
-            text: "Week **3** prac: data analysis"
-          - href: module01/w03-model-fitting-assumptions.qmd
-            text: "&nbsp; &nbsp; &nbsp; &nbsp; Workshop 03"
-          - "---"
-          - href: module02/201-intro.qmd
-            text: "**Introduction to Module 2**"
-          - href: module02/202-timeline.qmd
-            text: "Week **4 -- 8** pracs: timeline"
-          - href: module02/205-resources.qmd
-            text: "**⚠ Resources for Practicals**"
-          - "---"
-          - href: module03/301-intro.qmd
-            text: "**Introduction to Module 3 **"
-          - href: module03/302-week09.qmd
-            text: "Week **9** prac: PCA and Report 2"
-          - href: module03/303-week10.qmd
-            text: "Week **10** prac: permutation"
-          - href: module03/304-week11.qmd
-            text: "Week **11** prac: Report 2 data analysis"
-          - href: module03/305-week12.qmd
-            text: "Week **12** prac: Report 2 support"
-      - icon: book
-        section: "**Report 1**"
-        contents:
-          - module02/203-projects.qmd
-          - module02/204-report1.qmd
-          - module02/206-rubric.qmd
-
+    right:
+      - icon: mortarboard-fill
+        text: Canvas
+        href: https://canvas.sydney.edu.au/courses/74353/
+      - icon: chat-dots-fill
+        text: Ed
+        href: https://edstem.org/au/courses/36475/
 
 format:
   html:
-    theme: simplex # cerulean, cosmo, cyborg, darkly, flatly, journal, litera, lumen, lux, materia, minty, pulse, sandstone, simplex, sketchy, slate, solar, spacelab, superhero, united
-    fontsize: 15px
-    grid:
-      sidebar-width: 300px
-    css: assets/timeline.css
+    theme: zephyr
+    fontsize: 16px
+    css:
+      - assets/timeline.css
+      - assets/manual-headings.css
     toc: true
-    navbar: false
-    sidebar: true
-    # page-layout: full
-    
 
 editor:
   render-on-save: true

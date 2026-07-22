@@ -3,6 +3,12 @@ title: "**Week 9**: PCA and Report 2"
 number-depth: 3
 ---
 
+[Return to weekly content](../index.qmd#weekly-content)
+
+## What you need this week
+
+- [Introduction to Module 3](301-intro.qmd)
+
 ## Objectives {-}
 
 :::{.callout-tip appearance="simple"}
@@ -51,13 +57,13 @@ You will use PCA to reduce your set of measured variables into a coherent smalle
 
 **The process in JAMOVI is listed below. R instructions are given on Canvas in an R script file.**
 
-1. Import your data. [**Download it here**](https://canvas.sydney.edu.au/courses/67437/pages/module-3-resources). If the link does not work, please go on to [Canvas](). A new **Module 3 Resurces** link has been added to the front page.
+1. Import your data. [**Download it here**](https://canvas.sydney.edu.au/courses/67437/pages/module-3-resources). If the link does not work, please go on to [Canvas](https://canvas.sydney.edu.au/courses/67437). A new **Module 3 Resources** link has been added to the front page.
    - Open **Jamovi**.
    - Go to the top-left menu (☰) → click **Open** → **Browse** and select your Excel/csv file (e.g. your lecturer dataset).
    - Once imported, check that all the columns (variables) are correctly recognised as numeric (look for a ruler icon in the column headers).
    - You may convert columns of interest to numeric in several ways. One way is to use the **Variables** tab to select all the variables of interest (use Shift+click or Ctrl+click), then click on Edit and change "**Measure Type**" to "**Continuous**".
 
-![](assets/w09-jamovi-load-data.mp4)
+![Video showing how to load the Week 9 data file in Jamovi.](assets/w09-jamovi-load-data.mp4)
 
 2. Run Principal Components Analysis
    - Click on the **“Factor”** tab in the top toolbar.
@@ -67,7 +73,7 @@ You will use PCA to reduce your set of measured variables into a coherent smalle
    - In the *new section, from the panel on the left, select the variables of interest and move them into the **“Variables”** box. 
    - You can do this by either clicking on the arrow button or by dragging and dropping them.
 
-![](assets/w09-jamovi-run-pca.mp4)
+![Video showing how to open the PCA analysis in Jamovi.](assets/w09-jamovi-run-pca.mp4)
 
 4. Method and assumption checks
    - Under the **“Methods”** section, set Rotation to "Varimax" (this is the most common rotation method).
@@ -80,7 +86,7 @@ You will use PCA to reduce your set of measured variables into a coherent smalle
 6. Additional Output
    - **Select all of the options in this section.** These will provide you with useful information to interpret your PCA results.
 
-![](assets/w09-jamovi-pca-options.mp4)
+![Video showing the Jamovi PCA options to select.](assets/w09-jamovi-pca-options.mp4)
 
 7. Save component scores
    - Tick “Save component scores to data set” (usually found under the Scores section at the bottom).
@@ -88,7 +94,7 @@ You will use PCA to reduce your set of measured variables into a coherent smalle
    - You can view the new variables by clicking on the **Data** tab at the top of the screen and scrolling to the right.
 
 
-#### After PCA: Review Your Output
+### After PCA: Review Your Output
 
 - **Scree Plot**: Helps determine how many components to retain.
 - **Saved Scores**: You can now use these component scores in further analyses (e.g., regression or cluster analysis).
@@ -96,7 +102,7 @@ You will use PCA to reduce your set of measured variables into a coherent smalle
 
 That said, this test is most useful when used **alongside visual inspection** of your correlation matrix. If many variables aren’t correlated with others, they may not contribute much to PCA and could be removed.
 
-#### Interpreting the PCA
+### Interpreting the PCA
 
 You need to:
 
@@ -104,7 +110,7 @@ You need to:
 - Examine the scree plot and determine how many PCs you can identify (eigenvalues >1, Kaiser’s Criterion).
 - Establish a meaningful name for each component based on the loadings for individual variables in the rotated solutions.
 
-#### After the PCA
+### After the PCA
 
 Examine whether gender, system biases (marine v. terrestrial) and taxon (animal v. plant) biases may affect the perceptions of biology lecturers. You will need to code the columns for each factor (i.e. males = 0, females = 1) for Jamovi to perform its standard one-way ANOVAs or t-tests.
 
@@ -116,7 +122,7 @@ Questions to consider:
 
 ## Part 2: Designing your multivariate experiment
 
-##### The data and your model system
+### The data and your model system
 
 Biologists are increasingly turning to **multivariate approaches** because the questions we ask—and the data we collect—are often inherently multivariate. This is especially true when studying both biotic **assemblages** and **abiotic habitat variables**.
 
@@ -138,7 +144,7 @@ Example: Cars as a Model System
 A sample proforma will be provided to illustrate how such a system can be structured to generate a multivariate dataset with **testable hypotheses**. See the [Module 3 Resources](https://canvas.sydney.edu.au/courses/67437/pages/module-3-resources) section on Canvas to download the template.
 
 
-##### Group work
+### Group work
 
 As a group, you will:
 
