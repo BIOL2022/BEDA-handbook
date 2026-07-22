@@ -1,5 +1,6 @@
 ---
 title: "Week 1 — Introduction and fundamentals"
+draft: true
 ---
 
 ::: {.lecture-actions}
