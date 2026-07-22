@@ -391,8 +391,9 @@ if (!indexPage) {
   }
 }
 
-if (pages.has(path.join(siteRoot, "schedule.html"))) {
-  failures.push("rendered site must not contain schedule.html");
+const scheduleFile = path.join(siteRoot, "schedule.html");
+if (!pages.has(scheduleFile)) {
+  failures.push("rendered site is missing the direct-link schedule.html page");
 }
 
 const contextualRoutes = new Map([

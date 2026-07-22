@@ -1,0 +1,33 @@
+<p id="semester-status" role="status" aria-live="polite">Loading semester status…</p>
+
+<script src="scripts/semester-status.js"></script>
+
+::: {#weekly-content .table-responsive tabindex="0" role="region" aria-label="Weekly content table"}
+
+```{r}
+#| echo: false
+#| results: asis
+#| fig-format: png
+
+source("R/render_weekly_content_table.R")
+
+weekly_content <- read.csv(
+  "data/weekly_content.csv",
+  stringsAsFactors = FALSE,
+  check.names = FALSE
+)
+
+semester_breaks <- read.csv(
+  "data/semester_breaks.csv",
+  stringsAsFactors = FALSE,
+  check.names = FALSE
+)
+
+render_weekly_content_table(
+  weekly_content,
+  semester_breaks = semester_breaks,
+  caption = FALSE
+)
+```
+
+:::
