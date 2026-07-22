@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="64" viewBox="0 0 320 64" role="img" aria-labelledby="semester-status-title semester-status-description">
   <title id="semester-status-title">Current BIOL2022 teaching period</title>
-  <desc id="semester-status-description">Semester 2 begins in 2 weeks and 3 days</desc>
+  <desc id="semester-status-description">Semester 2 begins in 1 week and 4 days</desc>
   <style>text { fill: #440154; font-family: Lato, "Helvetica Neue", Arial, sans-serif; font-size: 18px; font-weight: 400; }</style>
-  <text x="160" y="21" text-anchor="middle" dominant-baseline="middle">Semester 2 begins in</text>
-  <text x="160" y="45" text-anchor="middle" dominant-baseline="middle">2 weeks and 3 days</text>
+  <text x="160" y="21" text-anchor="middle" dominant-baseline="middle">Semester 2 begins</text>
+  <text x="160" y="45" text-anchor="middle" dominant-baseline="middle">in 1 week and 4 days</text>
 </svg>
