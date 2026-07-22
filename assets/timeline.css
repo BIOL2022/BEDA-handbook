@@ -1,4 +1,72 @@
-/* CSS for Vertical Timeline */
+/* Minimal serif heading treatment for the handbook. */
+.title,
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+main.content section.level2.section-rail {
+  margin-top: 2.25rem;
+  padding-inline-start: 1rem;
+  border-inline-start: 4px solid #6B210F;
+  overflow: visible;
+}
+
+main.content section.level2.section-rail > h2 {
+  margin-top: 0;
+}
+
+@media (width <= 36rem) {
+  main.content section.level2.section-rail {
+    padding-inline-start: 0.75rem;
+    border-inline-start-width: 3px;
+  }
+}
+
+@media print {
+  main.content section.level2.section-rail {
+    padding-inline-start: 0.5rem;
+    border-inline-start-width: 1px;
+    border-inline-start-color: #000;
+  }
+}
+
+.navbar {
+  --bs-navbar-active-color: #fff;
+  --bs-navbar-brand-color: #fff;
+  --bs-navbar-brand-hover-color: #fff;
+  --bs-navbar-color: #fff;
+  --bs-navbar-hover-color: #fff;
+
+  background-color: #0f6b5b !important;
+  font-size: 1rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.navbar .nav-link:focus-visible,
+.navbar .navbar-brand:focus-visible,
+.navbar .navbar-toggler:focus-visible {
+  outline: 3px solid #fde725;
+  outline-offset: 2px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar.navbar-expand-xl #quarto-search {
+    margin-left: auto;
+    order: 4;
+  }
+
+  .navbar.navbar-expand-xl .quarto-navbar-tools {
+    order: 3;
+  }
+}
+
 .timeline-container {
   position: relative;
   padding: 2rem 0;
@@ -12,7 +80,7 @@
   left: 15px;
   height: 100%;
   width: 4px;
-  background: #000; /* A light grey color */
+  background: #000;
 }
 
 .timeline-event {
@@ -21,9 +89,7 @@
   margin-left: 40px;
   padding: 1rem;
   border: 1px solid #e9ecef;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border-radius: 0.25rem;
 }
 
 .timeline-event::before {
@@ -44,14 +110,293 @@
 
 .timeline-event h3 {
   margin-top: 0;
-  color: firebrick; /* A blue color */
   position: relative;
 }
 
+.timeline-heading {
+  margin-top: 0;
+}
+
+.timeline-toggle {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: #8b1a1a;
+  cursor: pointer;
+  display: block;
+  font: inherit;
+  padding: 0.25rem 0;
+  text-align: left;
+  width: 100%;
+}
+
+.timeline-toggle:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 4px;
+}
+
 .timeline-content {
-  display: none;
   padding-top: 10px;
 }
+
+.timeline-content[hidden] {
+  display: none;
+}
+
 .timeline-controls {
   margin-bottom: 1rem;
+}
+
+.week-index ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 1rem 0 2rem;
+  padding: 0;
+}
+
+.week-index a {
+  align-items: center;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+}
+
+.week-index a:hover {
+  text-decoration: underline;
+}
+
+.week-index a:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
+#wk01,
+#wk02,
+#wk03,
+#wk04,
+#wk05,
+#wk06,
+#wk07,
+#wk08,
+#wk09,
+#wk10,
+#wk11,
+#wk12,
+#wk13,
+.timeline-heading {
+  scroll-margin-top: 1rem;
+}
+
+#semester-status {
+  color: #0f6b5b;
+  font-weight: 700;
+  text-align: center;
+}
+
+#weekly-content tbody tr.is-current-week > * {
+  background-color: #f4f8e8;
+}
+
+#weekly-content tbody tr.is-current-week > :first-child {
+  box-shadow: inset 5px 0 #0f6b5b;
+}
+
+.current-week-label {
+  display: block;
+  width: max-content;
+  margin: 0.3rem auto 0;
+  padding: 0.15rem 0.4rem;
+  border-radius: 999px;
+  color: #fff;
+  background: #0f6b5b;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+#weekly-content table {
+  font-size: 1rem;
+  text-align: left;
+}
+
+#weekly-content th,
+#weekly-content td {
+  vertical-align: top;
+}
+
+#weekly-content th:first-child,
+#weekly-content td:first-child,
+#weekly-content th:nth-child(3),
+#weekly-content td:nth-child(3) {
+  text-align: center;
+}
+
+#weekly-content td ul,
+#weekly-content td ol {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+#weekly-content td li + li {
+  margin-top: 0.35rem;
+}
+
+#weekly-content td:nth-child(4) {
+  font-size: 0.9em;
+  line-height: 1.35;
+}
+
+#weekly-content td:not(:nth-child(3)) a {
+  color: #005ea8;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+#weekly-content td:not(:nth-child(3)) a:hover {
+  color: #003f73;
+}
+
+.weekly-lecture-description {
+  color: var(--bs-secondary-color, #5c636a);
+  display: block;
+  font-size: 0.9em;
+  line-height: 1.35;
+  margin-top: 0.25rem;
+}
+
+.weekly-practical-link,
+#weekly-content td:nth-child(3) > a {
+  align-items: center;
+  border-radius: 0.25rem;
+  color: #005ea8;
+  display: inline-flex;
+  font-size: 0;
+  justify-content: center;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  text-decoration: none;
+}
+
+.weekly-practical-link::before,
+#weekly-content td:nth-child(3) > a::before {
+  background-color: currentColor;
+  content: "";
+  display: inline-block;
+  height: 1.25rem;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M5 1.5h6M6 1.5v4L2.8 12a1.8 1.8 0 0 0 1.6 2.5h7.2a1.8 1.8 0 0 0 1.6-2.5L10 5.5v-4M4.5 9.5h7'/%3E%3C/svg%3E") center / contain no-repeat;
+  width: 1.25rem;
+}
+
+#weekly-content tbody tr:not(:has(.semester-break-row)) td:nth-child(3):not(:has(> a)):not(:has(> .weekly-practical-link)) {
+  color: #005ea8;
+  font-size: 0;
+}
+
+#weekly-content tbody tr:not(:has(.semester-break-row)) td:nth-child(3):not(:has(> a)):not(:has(> .weekly-practical-link))::before {
+  background-color: currentColor;
+  content: "";
+  display: inline-block;
+  height: 1.25rem;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M5 1.5h6M6 1.5v4L2.8 12a1.8 1.8 0 0 0 1.6 2.5h7.2a1.8 1.8 0 0 0 1.6-2.5L10 5.5v-4M4.5 9.5h7'/%3E%3C/svg%3E") center / contain no-repeat;
+  width: 1.25rem;
+}
+
+.weekly-practical-link:hover,
+#weekly-content td:nth-child(3) > a:hover {
+  background: rgb(0 0 0 / 5%);
+  color: #003f73;
+  text-decoration: none;
+}
+
+.weekly-practical-link:focus-visible,
+#weekly-content td:nth-child(3) > a:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 2px;
+}
+
+.weekly-practical-link-static:hover {
+  background: transparent;
+}
+
+#weekly-content {
+  scroll-margin-top: 5rem;
+}
+
+.lecture-actions {
+  margin: 0.5rem 0 0.75rem;
+}
+
+.lecture-actions p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin: 0;
+}
+
+.lecture-action {
+  align-items: center;
+  display: inline-flex;
+  font-weight: 600;
+  gap: 0.35rem;
+  text-decoration: none;
+}
+
+.lecture-action:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.lecture-action:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
+.lecture-preview {
+  aspect-ratio: 16 / 9;
+  background: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.25rem;
+  display: block;
+  height: auto;
+  margin: 0.75rem 0 2.5rem;
+  width: 100%;
+}
+
+.lecture-preview:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
+.lecture-week-nav {
+  border-top: 1px solid var(--bs-border-color);
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
+
+.lecture-week-nav p {
+  margin: 0;
+}
+
+.lecture-week-nav p:last-child {
+  text-align: right;
+}
+
+@media (width <= 36rem) {
+  .lecture-week-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .lecture-week-nav p:last-child {
+    text-align: left;
+  }
 }
