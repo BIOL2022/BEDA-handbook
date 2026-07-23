@@ -1,6 +1,112 @@
 weekly_content_weeks <- 1:13
 weekly_content_sections <- c("lecture", "workshop", "practical", "extra")
 
+weekly_note_registry <- list(
+  resource = list(label = "Resource", icon = "bi-book"),
+  assessment = list(label = "Assessment", icon = "bi-clipboard-check"),
+  notice = list(label = "Notice", icon = "bi-info-circle")
+)
+
+weekly_note_types <- names(weekly_note_registry)
+
+weekly_row_context <- function(data, index) {
+  paste0(
+    "week ", data$week[[index]],
+    ", position ", data$position[[index]]
+  )
+}
+
+weekly_url_text_is_valid <- function(value) {
+  grepl(
+    "^(?:[A-Za-z0-9._~:/?#\\[\\]@!$&'()*+,;=-]|%[0-9A-Fa-f]{2})+$",
+    value,
+    perl = TRUE
+  )
+}
+
+weekly_url_authority_is_valid <- function(authority) {
+  if (!nzchar(authority)) {
+    return(FALSE)
+  }
+
+  at_positions <- gregexpr("@", authority, fixed = TRUE)[[1]]
+  at_count <- if (at_positions[[1]] == -1L) 0L else length(at_positions)
+  if (at_count > 1L) {
+    return(FALSE)
+  }
+
+  if (at_count == 1L) {
+    user_info <- substr(authority, 1L, at_positions[[1]] - 1L)
+    if (!nzchar(user_info)) {
+      return(FALSE)
+    }
+    authority <- substr(authority, at_positions[[1]] + 1L, nchar(authority))
+  }
+
+  if (grepl("^\\[", authority)) {
+    return(grepl(
+      "^\\[[0-9A-Fa-f:.]+\\](?::[0-9]{1,5})?$",
+      authority,
+      perl = TRUE
+    ))
+  }
+
+  grepl(
+    paste0(
+      "^[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?",
+      "(?:\\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)*",
+      "(?::[0-9]{1,5})?$"
+    ),
+    authority,
+    perl = TRUE
+  )
+}
+
+classify_weekly_url <- function(value) {
+  if (is.na(value) || identical(value, "")) {
+    return("none")
+  }
+  if (grepl("[[:space:][:cntrl:]]", value) ||
+      grepl("\\", value, fixed = TRUE) ||
+      grepl("^//", value) ||
+      grepl("^/", value) ||
+      !weekly_url_text_is_valid(value)) {
+    return(NA_character_)
+  }
+  if (grepl("^https?://", value)) {
+    authority <- sub(
+      "^https?://([^/?#]*).*$",
+      "\\1",
+      value,
+      perl = TRUE
+    )
+    return(if (weekly_url_authority_is_valid(authority)) {
+      "external"
+    } else {
+      NA_character_
+    })
+  }
+  if (grepl(
+    paste0(
+      "^[A-Za-z0-9._~-]+(?:/[A-Za-z0-9._~-]+)*",
+      "(?:\\?(?:[A-Za-z0-9._~:/?@!$&'()*+,;=-]|%[0-9A-Fa-f]{2})*)?",
+      "(?:#(?:[A-Za-z0-9._~:/?@!$&'()*+,;=-]|%[0-9A-Fa-f]{2})*)?$"
+    ),
+    value,
+    perl = TRUE
+  )) {
+    return("internal")
+  }
+  NA_character_
+}
+
+title_has_presentation_markup <- function(value) {
+  grepl("<[^>]+>", value) ||
+    grepl("\\bbi\\s+bi-", value, perl = TRUE) ||
+    grepl("[→↗]", value) ||
+    grepl("^(Resource|Assessment|Notice):", value)
+}
+
 escape_markdown_label <- function(value) {
   value <- gsub("\\", "\\\\", value, fixed = TRUE)
   value <- gsub("[", "\\[", value, fixed = TRUE)
@@ -148,7 +254,7 @@ semester_break_entries <- function(data = NULL) {
 validate_weekly_content <- function(data) {
   required_columns <- c(
     "week", "section", "position", "title", "url", "description",
-    "show_on_schedule"
+    "show_on_schedule", "note_type"
   )
   missing_columns <- setdiff(required_columns, names(data))
 
@@ -213,6 +319,50 @@ validate_weekly_content <- function(data) {
     stop("Every resource must have a title.", call. = FALSE)
   }
 
+  for (index in seq_len(nrow(data))) {
+    context <- weekly_row_context(data, index)
+    section <- data$section[[index]]
+    note_type <- data$note_type[[index]]
+    title <- data$title[[index]]
+    url <- data$url[[index]]
+
+    if (section == "extra") {
+      if (is.na(note_type) || !note_type %in% weekly_note_types) {
+        stop(
+          context,
+          ": note_type must be resource, assessment, or notice.",
+          call. = FALSE
+        )
+      }
+    } else if (!is.na(note_type) && nzchar(note_type)) {
+      stop(
+        context,
+        ": note_type must be blank outside Notes rows.",
+        call. = FALSE
+      )
+    }
+
+    if (!identical(title, trimws(title)) ||
+        title_has_presentation_markup(title)) {
+      stop(
+        context,
+        paste0(
+          ": title must contain plain student-facing text without ",
+          "surrounding whitespace or presentation markup."
+        ),
+        call. = FALSE
+      )
+    }
+
+    if (is.na(classify_weekly_url(url))) {
+      stop(
+        context,
+        ": url must be blank, repository-relative, or a valid HTTP(S) URL.",
+        call. = FALSE
+      )
+    }
+  }
+
   lecture_descriptions <- data$description[data$section == "lecture"]
   if (
     anyNA(lecture_descriptions) ||
@@ -270,10 +420,16 @@ weekly_content_entries <- function(data) {
     lapply(seq_len(nrow(rows)), function(index) {
       url <- rows$url[[index]]
       description <- rows$description[[index]]
+      note_type <- rows$note_type[[index]]
+      url_kind <- classify_weekly_url(url)
 
       list(
         title = rows$title[[index]],
         url = if (is.na(url) || !nzchar(url)) NULL else url,
+        url_kind = url_kind,
+        note_type = if (
+          is.na(note_type) || !nzchar(note_type)
+        ) NULL else note_type,
         description = if (
           is.na(description) || !nzchar(trimws(description))
         ) NULL else trimws(description)

@@ -136,6 +136,191 @@ expect_true(
   "The maintained semester breaks should validate."
 )
 
+note_rows <- which(weekly_content$section == "extra")
+non_note_rows <- which(weekly_content$section != "extra")
+first_note_row <- note_rows[[1]]
+
+expect_true(
+  identical(
+    weekly_note_registry,
+    list(
+      resource = list(label = "Resource", icon = "bi-book"),
+      assessment = list(label = "Assessment", icon = "bi-clipboard-check"),
+      notice = list(label = "Notice", icon = "bi-info-circle")
+    )
+  ),
+  "The Notes registry should cover the three supported categories."
+)
+
+missing_note_type <- weekly_content
+missing_note_type$note_type <- NULL
+expect_error(
+  validate_weekly_content(missing_note_type),
+  "weekly_content.csv is missing columns: note_type",
+  "A missing note_type column should be rejected."
+)
+
+for (invalid_value in c("", " ", "Resource", " resource", "resource ", "other")) {
+  invalid_note_type <- weekly_content
+  invalid_note_type$note_type[[first_note_row]] <- invalid_value
+  expect_error(
+    validate_weekly_content(invalid_note_type),
+    paste0(
+      "week ", invalid_note_type$week[[first_note_row]],
+      ", position ", invalid_note_type$position[[first_note_row]]
+    ),
+    paste("Invalid note_type should identify its row:", shQuote(invalid_value))
+  )
+}
+
+misplaced_note_type <- weekly_content
+misplaced_note_type$note_type[[non_note_rows[[1]]]] <- "notice"
+expect_error(
+  validate_weekly_content(misplaced_note_type),
+  paste0(
+    "week ", misplaced_note_type$week[[non_note_rows[[1]]]],
+    ", position ", misplaced_note_type$position[[non_note_rows[[1]]]]
+  ),
+  "A note_type on a non-Notes row should be rejected."
+)
+
+valid_note_urls <- c(
+  "",
+  "prerequisites.qmd",
+  "module02/202-timeline.qmd#wk6",
+  "page.qmd?x=hello%20world",
+  "https://canvas.sydney.edu.au/courses/74353",
+  "https://example.com/a%20path?x=hello%20world#part"
+)
+for (value in valid_note_urls) {
+  valid_url_data <- weekly_content
+  valid_url_data$url[[first_note_row]] <- value
+  expect_true(
+    isTRUE(validate_weekly_content(valid_url_data)),
+    paste("Valid Notes URL should be accepted:", shQuote(value))
+  )
+}
+
+invalid_note_urls <- c(
+  " prerequisites.qmd",
+  "prerequisites.qmd ",
+  "javascript:alert(1)",
+  "//example.com/path",
+  "/absolute/path.qmd",
+  "C:\\temp\\page.qmd",
+  "https://example.com/path with space",
+  "https://example.com/a?x=hello world",
+  "page.qmd?x=hello world",
+  "page.qmd?x=<script>",
+  "https://:443/path",
+  "https://user@/path",
+  "https:///missing-host",
+  paste0("page.qmd", intToUtf8(1))
+)
+for (value in invalid_note_urls) {
+  invalid_url_data <- weekly_content
+  invalid_url_data$url[[first_note_row]] <- value
+  expect_error(
+    validate_weekly_content(invalid_url_data),
+    paste0(
+      "week ", invalid_url_data$week[[first_note_row]],
+      ", position ", invalid_url_data$position[[first_note_row]]
+    ),
+    paste("Invalid Notes URL should identify its row:", shQuote(value))
+  )
+}
+
+invalid_note_titles <- c(
+  " Leading whitespace",
+  "Trailing whitespace ",
+  "<i>Literal tag</i>",
+  "bi bi-book Bootstrap icon",
+  "Destination arrow →",
+  "Destination arrow ↗",
+  "Resource: Prefixed category"
+)
+for (value in invalid_note_titles) {
+  invalid_title_data <- weekly_content
+  invalid_title_data$title[[first_note_row]] <- value
+  expect_error(
+    validate_weekly_content(invalid_title_data),
+    paste0(
+      "week ", invalid_title_data$week[[first_note_row]],
+      ", position ", invalid_title_data$position[[first_note_row]]
+    ),
+    paste("Invalid Notes title should identify its row:", shQuote(value))
+  )
+}
+
+punctuated_note_title <- weekly_content
+punctuated_note_title$title[[first_note_row]] <-
+  "Students' guide: Report 1 (25%) — overview"
+expect_true(
+  isTRUE(validate_weekly_content(punctuated_note_title)),
+  "Ordinary punctuation in a Notes title should be accepted."
+)
+
+expected_note_types <- c(
+  "1:1" = "resource", "1:2" = "assessment",
+  "2:1" = "resource", "2:2" = "assessment",
+  "3:1" = "assessment", "3:2" = "assessment",
+  "4:1" = "assessment",
+  "5:1" = "assessment", "5:2" = "assessment",
+  "6:1" = "assessment", "6:2" = "notice",
+  "9:2" = "notice", "9:3" = "assessment",
+  "10:1" = "notice", "10:2" = "assessment",
+  "11:1" = "assessment", "11:2" = "assessment"
+)
+expected_note_titles <- c(
+  "1:1" = "Check whether you are ready for BEDA",
+  "1:2" = "Quiz 1",
+  "2:1" = "See how common statistical tests are linear models",
+  "2:2" = "Quiz 2",
+  "3:1" = "Quiz 3",
+  "3:2" = "Early Feedback Task (5%) — opens Friday at 10 am",
+  "4:1" = "Early Feedback Task: Evaluation Quiz (10%)",
+  "5:1" = "Work on your experiments for Report 1",
+  "5:2" = "Review the Report 1 overview and requirements",
+  "6:1" = "Review the Report 1 project and revision timeline",
+  "6:2" = "Project and revision week",
+  "9:2" = "Labour Day — Monday 5 October",
+  "9:3" = "Review Report 1 (25%) requirements and due information",
+  "10:1" = "Present your experimental design for feedback",
+  "10:2" = "Review the Report 2 overview and requirements",
+  "11:1" = "Submit the group dataset (5%)",
+  "11:2" = "Review the Report 2 overview and due information"
+)
+note_keys <- paste(
+  weekly_content$week[note_rows],
+  weekly_content$position[note_rows],
+  sep = ":"
+)
+expect_true(
+  length(note_rows) == 17L,
+  "The maintained schedule should contain exactly 17 Notes rows."
+)
+expect_true(
+  identical(
+    unname(weekly_content$note_type[note_rows]),
+    unname(expected_note_types[note_keys])
+  ),
+  "All 17 Notes rows should match the approved taxonomy."
+)
+expect_true(
+  identical(
+    unname(weekly_content$title[note_rows]),
+    unname(expected_note_titles[note_keys])
+  ),
+  "All 17 Notes rows should use the approved final titles."
+)
+expect_true(
+  all(
+    is.na(weekly_content$note_type[non_note_rows]) |
+      weekly_content$note_type[non_note_rows] == ""
+  ),
+  "Rows outside Notes should have a blank note_type."
+)
+
 invalid_break_position <- semester_breaks
 invalid_break_position$after_week[[1]] <- 13
 expect_error(
@@ -165,6 +350,22 @@ expect_true(
 expect_true(
   is.null(entries[[2]]$workshop),
   "A week without a workshop should not gain a workshop entry point."
+)
+expect_true(
+  identical(entries[[1]]$extras[[1]]$note_type, "resource"),
+  "Resource objects should retain their note_type."
+)
+expect_true(
+  identical(entries[[1]]$extras[[1]]$url_kind, "internal"),
+  "Repository-relative Notes links should be classified as internal."
+)
+expect_true(
+  identical(entries[[1]]$extras[[2]]$url_kind, "none"),
+  "Unlinked Notes should be classified as none."
+)
+expect_true(
+  identical(entries[[2]]$extras[[1]]$url_kind, "external"),
+  "HTTP(S) Notes links should be classified as external."
 )
 
 missing_column <- weekly_content

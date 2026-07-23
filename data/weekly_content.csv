@@ -1,44 +1,44 @@
-week,section,position,title,url,description,show_on_schedule
-1,lecture,1,Introduction and fundamentals,lectures/L01/index.qmd,BEDA and the empirical modelling approach.,TRUE
-1,workshop,1,Software and graphical models,module01/w01-intro.qmd,,FALSE
-1,practical,1,Getting started,module01/102-week01.qmd,,TRUE
-1,extra,1,Am I ready for BEDA?,prerequisites.qmd,,TRUE
-1,extra,2,Quiz 1,,,TRUE
-2,lecture,1,Sampling and the empirical model,lectures/L02/index.qmd,Representative data and designing experiments with minimal statistical know-how.,TRUE
-2,practical,1,Study design,module01/103-week02.qmd,,TRUE
-2,extra,1,Common statistical tests are linear models,https://lindeloev.github.io/tests-as-linear/,,TRUE
-2,extra,2,Quiz 2,,,TRUE
-3,lecture,1,Choosing the right model(s),lectures/L03/index.qmd,The easy way to validate model assumptions.,TRUE
-3,practical,1,Data analysis,module01/104-week03.qmd,,TRUE
-3,extra,1,Quiz 3,,,TRUE
-3,extra,2,Early Feedback Task (5%) — opens Friday at 10 am,,,TRUE
-4,lecture,1,Multiple predictors and transformations,lectures/L04/index.qmd,Expanding models and using transformations to increase model fit.,TRUE
-4,practical,1,Project launch and pilot study timeline,module02/202-timeline.qmd#wk4,,TRUE
-4,extra,1,EFT: Evaluation Quiz (10%),,,TRUE
-5,lecture,1,Controls and revision,lectures/L05/index.qmd,How to control your experiments with data that you collect.,TRUE
-5,practical,1,Main experiment timeline,module02/202-timeline.qmd#wk5,,TRUE
-5,extra,1,Work on your experiments,,,TRUE
-5,extra,2,Assessment overview and requirements,,,TRUE
-6,lecture,1,Refresher and categorical variables,lectures/L06/index.qmd,A refresher on designing experiments with categorical variables.,TRUE
-6,extra,1,Project and revision timeline,module02/202-timeline.qmd#wk6,,TRUE
-6,extra,2,Project and revision week,,,TRUE
-7,lecture,1,Relationships and binary responses,lectures/L07/index.qmd,How to design experiments with continuous or binary responses.,TRUE
-7,practical,1,Project data analysis timeline,module02/202-timeline.qmd#wk7,,TRUE
-8,lecture,1,Model selection and revision,lectures/L08/index.qmd,Which model should we use? Some ideas.,TRUE
-8,practical,1,Project report and feedback timeline,module02/202-timeline.qmd#wk8,,TRUE
-9,lecture,1,Multivariate analysis and PCA,lectures/L09/index.qmd,"Introducing multivariate analysis, principal component analysis and factor analysis.",TRUE
-9,practical,1,PCA and Report 2,module03/302-week09.qmd,,TRUE
-9,extra,2,Labour Day: 5 Oct,,,TRUE
-9,extra,3,Report 1 (25%): requirements and due information,,,TRUE
-10,lecture,1,Clustering and multidimensional scaling,lectures/L10/index.qmd,Using clustering and nMDS to identify and test multivariate patterns.,TRUE
-10,practical,1,Permutational techniques,module03/303-week10.qmd,,TRUE
-10,extra,1,Informal presentations,,,TRUE
-10,extra,2,Assessment overview and requirements,,,TRUE
-11,lecture,1,MANOVA and multivariate revision,lectures/L11/index.qmd,The MANOVA way of designing and interpreting experiments.,TRUE
-11,practical,1,Report 2 data analysis,module03/304-week11.qmd,,TRUE
-11,extra,1,Group dataset submission (5%),,,TRUE
-11,extra,2,Assessment overview and due information,,,TRUE
-12,lecture,1,Rarefaction and Bayesian analysis,lectures/L12/index.qmd,The lectures cover rarefaction for diversity comparisons and Bayesian statistical inference.,TRUE
-12,practical,1,Report 2 support,module03/305-week12.qmd,,TRUE
-13,lecture,1,Exam revision,lectures/L13/index.qmd,You will review the course's experimental-design and modelling concepts for the final exam.,TRUE
-13,practical,1,Feedback and discussion practical,,,TRUE
+week,section,position,title,url,description,show_on_schedule,note_type
+1,lecture,1,Introduction and fundamentals,lectures/L01/index.qmd,BEDA and the empirical modelling approach.,TRUE,
+1,workshop,1,Software and graphical models,module01/w01-intro.qmd,,FALSE,
+1,practical,1,Getting started,module01/102-week01.qmd,,TRUE,
+1,extra,1,Check whether you are ready for BEDA,prerequisites.qmd,,TRUE,resource
+1,extra,2,Quiz 1,,,TRUE,assessment
+2,lecture,1,Sampling and the empirical model,lectures/L02/index.qmd,Representative data and designing experiments with minimal statistical know-how.,TRUE,
+2,practical,1,Study design,module01/103-week02.qmd,,TRUE,
+2,extra,1,See how common statistical tests are linear models,https://lindeloev.github.io/tests-as-linear/,,TRUE,resource
+2,extra,2,Quiz 2,,,TRUE,assessment
+3,lecture,1,Choosing the right model(s),lectures/L03/index.qmd,The easy way to validate model assumptions.,TRUE,
+3,practical,1,Data analysis,module01/104-week03.qmd,,TRUE,
+3,extra,1,Quiz 3,,,TRUE,assessment
+3,extra,2,Early Feedback Task (5%) — opens Friday at 10 am,,,TRUE,assessment
+4,lecture,1,Multiple predictors and transformations,lectures/L04/index.qmd,Expanding models and using transformations to increase model fit.,TRUE,
+4,practical,1,Project launch and pilot study timeline,module02/202-timeline.qmd#wk4,,TRUE,
+4,extra,1,Early Feedback Task: Evaluation Quiz (10%),,,TRUE,assessment
+5,lecture,1,Controls and revision,lectures/L05/index.qmd,How to control your experiments with data that you collect.,TRUE,
+5,practical,1,Main experiment timeline,module02/202-timeline.qmd#wk5,,TRUE,
+5,extra,1,Work on your experiments for Report 1,,,TRUE,assessment
+5,extra,2,Review the Report 1 overview and requirements,,,TRUE,assessment
+6,lecture,1,Refresher and categorical variables,lectures/L06/index.qmd,A refresher on designing experiments with categorical variables.,TRUE,
+6,extra,1,Review the Report 1 project and revision timeline,module02/202-timeline.qmd#wk6,,TRUE,assessment
+6,extra,2,Project and revision week,,,TRUE,notice
+7,lecture,1,Relationships and binary responses,lectures/L07/index.qmd,How to design experiments with continuous or binary responses.,TRUE,
+7,practical,1,Project data analysis timeline,module02/202-timeline.qmd#wk7,,TRUE,
+8,lecture,1,Model selection and revision,lectures/L08/index.qmd,Which model should we use? Some ideas.,TRUE,
+8,practical,1,Project report and feedback timeline,module02/202-timeline.qmd#wk8,,TRUE,
+9,lecture,1,Multivariate analysis and PCA,lectures/L09/index.qmd,"Introducing multivariate analysis, principal component analysis and factor analysis.",TRUE,
+9,practical,1,PCA and Report 2,module03/302-week09.qmd,,TRUE,
+9,extra,2,Labour Day — Monday 5 October,,,TRUE,notice
+9,extra,3,Review Report 1 (25%) requirements and due information,,,TRUE,assessment
+10,lecture,1,Clustering and multidimensional scaling,lectures/L10/index.qmd,Using clustering and nMDS to identify and test multivariate patterns.,TRUE,
+10,practical,1,Permutational techniques,module03/303-week10.qmd,,TRUE,
+10,extra,1,Present your experimental design for feedback,,,TRUE,notice
+10,extra,2,Review the Report 2 overview and requirements,,,TRUE,assessment
+11,lecture,1,MANOVA and multivariate revision,lectures/L11/index.qmd,The MANOVA way of designing and interpreting experiments.,TRUE,
+11,practical,1,Report 2 data analysis,module03/304-week11.qmd,,TRUE,
+11,extra,1,Submit the group dataset (5%),,,TRUE,assessment
+11,extra,2,Review the Report 2 overview and due information,,,TRUE,assessment
+12,lecture,1,Rarefaction and Bayesian analysis,lectures/L12/index.qmd,The lectures cover rarefaction for diversity comparisons and Bayesian statistical inference.,TRUE,
+12,practical,1,Report 2 support,module03/305-week12.qmd,,TRUE,
+13,lecture,1,Exam revision,lectures/L13/index.qmd,You will review the course's experimental-design and modelling concepts for the final exam.,TRUE,
+13,practical,1,Feedback and discussion practical,,,TRUE,

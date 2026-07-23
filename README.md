@@ -5,3 +5,5 @@
 Use this handbook to navigate BIOL2022 — it contains weekly practicals, assessment briefs and rubrics, cheatsheets, and links to all the lectures.
 
 **Front page:** https://biol2022.github.io/BEDA-handbook
+
+**Schedule authors:** see [data/README.md](data/README.md) before editing the weekly schedule.
