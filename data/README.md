@@ -12,6 +12,22 @@ The `note_type` field is required for every `extra` row and must be exactly
 and practicals. Do not put labels, icons, arrows, or other presentation markup
 in the CSV.
 
+The `note_weight` field is required only when `note_type` is `assessment`.
+Enter the assessment weight as a whole number from `0` to `100`, without a
+percent sign. Use `0` for an unweighted required or formative assessment item.
+Do not use leading zeros, surrounding spaces, or scientific notation. Leave
+`note_weight` blank for Resource and Notice rows and for all rows outside Notes.
+
+For example:
+
+```csv
+title,note_type,note_weight
+Quiz 1,assessment,0
+Review the Report 1 overview and requirements,assessment,25
+Check whether you are ready for BEDA,resource,
+Labour Day — Monday 5 October,notice,
+```
+
 ## Notes categories
 
 ### Resource
@@ -25,7 +41,8 @@ posts, books, articles, revision material, and reusable self-check resources.
 Use `assessment` when the item is submitted or marked, is a hurdle, or sets an
 authoritative rule, deadline, criterion, required output, or submission step
 for a named assessment. Name the assessment when the connection may not be
-obvious.
+obvious. The schedule adds the weight to the category label, so do not repeat
+the percentage in the title.
 
 ### Notice
 

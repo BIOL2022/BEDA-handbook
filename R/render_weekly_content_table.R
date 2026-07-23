@@ -9,6 +9,15 @@ weekly_note_registry <- list(
 
 weekly_note_types <- names(weekly_note_registry)
 
+read_weekly_content_csv <- function(path) {
+  read.csv(
+    path,
+    stringsAsFactors = FALSE,
+    check.names = FALSE,
+    colClasses = c(note_weight = "character")
+  )
+}
+
 weekly_row_context <- function(data, index) {
   paste0(
     "week ", data$week[[index]],
@@ -254,7 +263,7 @@ semester_break_entries <- function(data = NULL) {
 validate_weekly_content <- function(data) {
   required_columns <- c(
     "week", "section", "position", "title", "url", "description",
-    "show_on_schedule", "note_type"
+    "show_on_schedule", "note_type", "note_weight"
   )
   missing_columns <- setdiff(required_columns, names(data))
 
@@ -323,8 +332,14 @@ validate_weekly_content <- function(data) {
     context <- weekly_row_context(data, index)
     section <- data$section[[index]]
     note_type <- data$note_type[[index]]
+    note_weight <- data$note_weight[[index]]
     title <- data$title[[index]]
     url <- data$url[[index]]
+    note_weight_text <- if (is.na(note_weight)) {
+      ""
+    } else {
+      as.character(note_weight)
+    }
 
     if (section == "extra") {
       if (is.na(note_type) || !note_type %in% weekly_note_types) {
@@ -334,10 +349,42 @@ validate_weekly_content <- function(data) {
           call. = FALSE
         )
       }
+
+      if (identical(note_type, "assessment")) {
+        valid_note_weight <- nzchar(note_weight_text) &&
+          identical(note_weight_text, trimws(note_weight_text)) &&
+          grepl(
+            "^(0|[1-9][0-9]?|100)$",
+            note_weight_text,
+            perl = TRUE
+          )
+        if (!valid_note_weight) {
+          stop(
+            context,
+            paste0(
+              ": note_weight must be a whole number from 0 to 100 ",
+              "for assessment Notes."
+            ),
+            call. = FALSE
+          )
+        }
+      } else if (nzchar(note_weight_text)) {
+        stop(
+          context,
+          ": note_weight must be blank unless note_type is assessment.",
+          call. = FALSE
+        )
+      }
     } else if (!is.na(note_type) && nzchar(note_type)) {
       stop(
         context,
         ": note_type must be blank outside Notes rows.",
+        call. = FALSE
+      )
+    } else if (nzchar(note_weight_text)) {
+      stop(
+        context,
+        ": note_weight must be blank unless note_type is assessment.",
         call. = FALSE
       )
     }
@@ -421,6 +468,7 @@ weekly_content_entries <- function(data) {
       url <- rows$url[[index]]
       description <- rows$description[[index]]
       note_type <- rows$note_type[[index]]
+      note_weight <- rows$note_weight[[index]]
       url_kind <- classify_weekly_url(url)
 
       list(
@@ -430,6 +478,9 @@ weekly_content_entries <- function(data) {
         note_type = if (
           is.na(note_type) || !nzchar(note_type)
         ) NULL else note_type,
+        note_weight = if (
+          is.na(note_weight) || !nzchar(as.character(note_weight))
+        ) NULL else as.integer(note_weight),
         description = if (
           is.na(description) || !nzchar(trimws(description))
         ) NULL else trimws(description)
@@ -462,6 +513,92 @@ resource_markdown <- function(resource) {
   }
 
   sprintf("[%s](%s)", label, resource$url)
+}
+
+weekly_note_definition <- function(resource) {
+  weekly_note_registry[[resource$note_type]]
+}
+
+weekly_note_link <- function(resource, html_output = FALSE, plain_output = FALSE) {
+  title <- escape_markdown_text(resource$title)
+  if (is.null(resource$url) || !nzchar(resource$url)) {
+    return(title)
+  }
+  if (plain_output) {
+    return(paste0(title, " (", resource$url, ")"))
+  }
+
+  classes <- if (html_output && identical(resource$url_kind, "external")) {
+    "{.weekly-note-link .is-external}"
+  } else if (html_output) {
+    "{.weekly-note-link}"
+  } else {
+    ""
+  }
+  paste0("[", title, "](<", resource$url, ">)", classes)
+}
+
+weekly_note_markdown <- function(
+  resource,
+  html_output = FALSE,
+  plain_output = FALSE
+) {
+  definition <- weekly_note_definition(resource)
+  destination <- weekly_note_link(resource, html_output, plain_output)
+  label <- if (identical(resource$note_type, "assessment")) {
+    paste0(definition$label, " (", resource$note_weight, "%)")
+  } else {
+    definition$label
+  }
+
+  if (!html_output) {
+    return(paste0("**", label, ":** ", destination))
+  }
+
+  icon <- paste0(
+    "[\u00a0]{.bi .", definition$icon,
+    ' .weekly-note-icon aria-hidden="true"}'
+  )
+  category <- paste0(
+    "[", label, ":]{.weekly-note-category}"
+  )
+  marker <- if (identical(resource$url_kind, "external")) {
+    ' [↗]{.weekly-note-external-marker aria-hidden="true"}'
+  } else {
+    ""
+  }
+
+  paste(icon, category, paste0(destination, marker))
+}
+
+weekly_note_cell_lines <- function(
+  resources,
+  html_output,
+  plain_output = FALSE
+) {
+  if (length(resources) == 0) {
+    return("  - —")
+  }
+
+  items <- vapply(
+    resources,
+    weekly_note_markdown,
+    character(1),
+    html_output = html_output,
+    plain_output = plain_output
+  )
+
+  if (!html_output) {
+    return(c("  -", "", paste("    -", items)))
+  }
+
+  c(
+    "  - ::: {.weekly-note-list}",
+    "",
+    paste("    -", items),
+    "",
+    "    :::"
+  )
 }
 
 resource_cell_lines <- function(resources) {
@@ -565,7 +702,8 @@ weekly_table_lines <- function(
   weekly_content,
   semester_breaks,
   caption,
-  html_output
+  html_output,
+  plain_output = FALSE
 ) {
   lines <- c(
     '::: {#tbl-weekly-content .list-table}',
@@ -590,7 +728,11 @@ weekly_table_lines <- function(
         entry$week,
         entry$includes_workshop
       ),
-      resource_cell_lines(entry$extras),
+      weekly_note_cell_lines(
+        entry$extras,
+        html_output,
+        plain_output
+      ),
       ""
     )
 
@@ -667,9 +809,18 @@ weekly_typst_schedule_lines <- function(weekly_content, semester_breaks) {
       "",
       schedule_practical_line(entry$practical),
       "",
-      "**Extras**",
+      "**Notes**",
       "",
-      schedule_resource_lines(entry$extras),
+      vapply(
+        entry$extras,
+        function(resource) {
+          paste(
+            "-",
+            weekly_note_markdown(resource, html_output = FALSE)
+          )
+        },
+        character(1)
+      ),
       ""
     )
 
@@ -699,6 +850,7 @@ render_weekly_content_table <- function(
     pandoc_to <- ""
   }
   html_output <- grepl("^html", pandoc_to)
+  plain_output <- identical(pandoc_to, "plain")
 
   if (identical(pandoc_to, "typst")) {
     lines <- weekly_typst_schedule_lines(weekly_content, semester_breaks)
@@ -707,7 +859,8 @@ render_weekly_content_table <- function(
       weekly_content,
       semester_breaks,
       caption,
-      html_output
+      html_output,
+      plain_output
     )
   }
 

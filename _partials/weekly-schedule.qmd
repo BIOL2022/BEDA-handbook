@@ -11,11 +11,7 @@
 
 source("R/render_weekly_content_table.R")
 
-weekly_content <- read.csv(
-  "data/weekly_content.csv",
-  stringsAsFactors = FALSE,
-  check.names = FALSE
-)
+weekly_content <- read_weekly_content_csv("data/weekly_content.csv")
 
 semester_breaks <- read.csv(
   "data/semester_breaks.csv",

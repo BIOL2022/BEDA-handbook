@@ -11,11 +11,7 @@ setwd(repo_root)
 
 source("R/render_weekly_content_table.R")
 
-weekly_content <- read.csv(
-  "data/weekly_content.csv",
-  stringsAsFactors = FALSE,
-  check.names = FALSE
-)
+weekly_content <- read_weekly_content_csv("data/weekly_content.csv")
 semester_breaks <- read.csv(
   "data/semester_breaks.csv",
   stringsAsFactors = FALSE,
@@ -105,6 +101,15 @@ run_pandoc <- function(to, input) {
   output
 }
 
+count_fixed_matches <- function(value, pattern) {
+  matches <- gregexpr(
+    pattern,
+    paste(value, collapse = "\n"),
+    fixed = TRUE
+  )[[1]]
+  if (identical(matches, -1L)) 0L else length(matches)
+}
+
 adversarial_description <- paste0(
   "<em>HTML</em> &copy; $math$ ~~strikeout~~ [brackets] {braces} ",
   "backslash \\ backticks `code` underscores _text_ asterisks *text*"
@@ -139,6 +144,77 @@ expect_true(
 note_rows <- which(weekly_content$section == "extra")
 non_note_rows <- which(weekly_content$section != "extra")
 first_note_row <- note_rows[[1]]
+assessment_rows <- note_rows[weekly_content$note_type[note_rows] == "assessment"]
+first_assessment_row <- assessment_rows[[1]]
+
+note_url_cases <- c(
+  "https://example.org/)[Injected](javascript:alert(1)",
+  "https://example.org/a_(b)",
+  "https://example.org/a_(b"
+)
+for (value in note_url_cases) {
+  url_data <- weekly_content
+  url_data$url[[first_note_row]] <- value
+  expect_true(
+    isTRUE(validate_weekly_content(url_data)),
+    paste("Notes URL punctuation should remain valid:", shQuote(value))
+  )
+
+  url_resource <- weekly_content_entries(url_data)[[1]]$extras[[1]]
+  url_ast <- run_pandoc(
+    "json",
+    weekly_note_markdown(url_resource, html_output = FALSE)
+  )
+  expected_destination <- gsub("[", "%5B", value, fixed = TRUE)
+  expected_destination <- gsub("]", "%5D", expected_destination, fixed = TRUE)
+  expect_true(
+    count_fixed_matches(url_ast, '"t":"Link"') == 1L &&
+      any(grepl(expected_destination, url_ast, fixed = TRUE)),
+    paste("Notes URL should produce one intact link:", shQuote(value))
+  )
+  expect_true(
+    !any(grepl('"javascript:', url_ast, fixed = TRUE)),
+    paste("Notes URL should not create a javascript destination:", shQuote(value))
+  )
+}
+
+note_title_cases <- c(
+  "*Important* update",
+  "`R` output",
+  "$p$ value",
+  "~~Old~~ new"
+)
+for (value in note_title_cases) {
+  title_data <- weekly_content
+  title_data$title[[first_note_row]] <- value
+  expect_true(
+    isTRUE(validate_weekly_content(title_data)),
+    paste("Literal Notes title should remain valid:", shQuote(value))
+  )
+
+  title_resource <- weekly_content_entries(title_data)[[1]]$extras[[1]]
+  title_markdown <- weekly_note_markdown(
+    title_resource,
+    html_output = FALSE
+  )
+  title_ast <- run_pandoc("json", title_markdown)
+  for (node_type in c("Emph", "Code", "Math", "Strikeout")) {
+    expect_true(
+      !any(grepl(
+        paste0('"t":"', node_type, '"'),
+        title_ast,
+        fixed = TRUE
+      )),
+      paste("Literal Notes title should not produce", node_type, "nodes.")
+    )
+  }
+
+  title_html <- run_pandoc("html", title_markdown)
+  expect_true(
+    any(grepl(value, title_html, fixed = TRUE)),
+    paste("Rendered HTML should preserve the literal Notes title:", shQuote(value))
+  )
+}
 
 expect_true(
   identical(
@@ -158,6 +234,14 @@ expect_error(
   validate_weekly_content(missing_note_type),
   "weekly_content.csv is missing columns: note_type",
   "A missing note_type column should be rejected."
+)
+
+missing_note_weight <- weekly_content
+missing_note_weight$note_weight <- NULL
+expect_error(
+  validate_weekly_content(missing_note_weight),
+  "weekly_content.csv is missing columns: note_weight",
+  "A missing note_weight column should be rejected."
 )
 
 for (invalid_value in c("", " ", "Resource", " resource", "resource ", "other")) {
@@ -183,6 +267,110 @@ expect_error(
   ),
   "A note_type on a non-Notes row should be rejected."
 )
+
+for (invalid_value in list(
+  NA,
+  "",
+  " ",
+  -1,
+  101,
+  5.5,
+  "five",
+  "05",
+  "5%"
+)) {
+  invalid_note_weight <- weekly_content
+  invalid_note_weight$note_weight[[first_assessment_row]] <- invalid_value
+  expect_error(
+    validate_weekly_content(invalid_note_weight),
+    paste0(
+      "week ", invalid_note_weight$week[[first_assessment_row]],
+      ", position ", invalid_note_weight$position[[first_assessment_row]]
+    ),
+    paste(
+      "Invalid assessment note_weight should identify its row:",
+      shQuote(invalid_value)
+    )
+  )
+}
+
+for (valid_value in c(0, 100)) {
+  valid_note_weight <- weekly_content
+  valid_note_weight$note_weight[[first_assessment_row]] <- valid_value
+  expect_true(
+    isTRUE(validate_weekly_content(valid_note_weight)),
+    paste("Whole assessment note_weight should be accepted:", valid_value)
+  )
+}
+
+read_authored_note_weight <- function(value) {
+  csv_lines <- readLines(
+    "data/weekly_content.csv",
+    warn = FALSE,
+    encoding = "UTF-8"
+  )
+  target_line <- grep("^1,extra,2,", csv_lines)
+  stopifnot(length(target_line) == 1L)
+  csv_lines[[target_line]] <- sub(
+    ",assessment,0$",
+    paste0(",assessment,", value),
+    csv_lines[[target_line]]
+  )
+
+  path <- tempfile(fileext = ".csv")
+  on.exit(unlink(path), add = TRUE)
+  writeLines(csv_lines, path, useBytes = TRUE)
+  read_weekly_content_csv(path)
+}
+
+for (authored_value in c("05", " 5", "5e1")) {
+  authored_weight <- read_authored_note_weight(authored_value)
+  expect_true(
+    identical(
+      authored_weight$note_weight[[first_assessment_row]],
+      authored_value
+    ),
+    paste("The CSV loader should preserve note_weight:", shQuote(authored_value))
+  )
+  expect_error(
+    validate_weekly_content(authored_weight),
+    "week 1, position 2",
+    paste(
+      "Authored note_weight should be rejected without normalisation:",
+      shQuote(authored_value)
+    )
+  )
+}
+
+for (authored_value in c("0", "100")) {
+  authored_weight <- read_authored_note_weight(authored_value)
+  expect_true(
+    identical(
+      authored_weight$note_weight[[first_assessment_row]],
+      authored_value
+    ) && isTRUE(validate_weekly_content(authored_weight)),
+    paste(
+      "The CSV loader should preserve and accept note_weight:",
+      shQuote(authored_value)
+    )
+  )
+}
+
+for (row in c(
+  note_rows[weekly_content$note_type[note_rows] != "assessment"][[1]],
+  non_note_rows[[1]]
+)) {
+  misplaced_note_weight <- weekly_content
+  misplaced_note_weight$note_weight[[row]] <- 5
+  expect_error(
+    validate_weekly_content(misplaced_note_weight),
+    paste0(
+      "week ", misplaced_note_weight$week[[row]],
+      ", position ", misplaced_note_weight$position[[row]]
+    ),
+    "note_weight outside an Assessment row should be rejected."
+  )
+}
 
 valid_note_urls <- c(
   "",
@@ -277,18 +465,32 @@ expected_note_titles <- c(
   "2:1" = "See how common statistical tests are linear models",
   "2:2" = "Quiz 2",
   "3:1" = "Quiz 3",
-  "3:2" = "Early Feedback Task (5%) — opens Friday at 10 am",
-  "4:1" = "Early Feedback Task: Evaluation Quiz (10%)",
+  "3:2" = "Early Feedback Task — opens Friday at 10 am",
+  "4:1" = "Early Feedback Task: Evaluation Quiz",
   "5:1" = "Work on your experiments for Report 1",
   "5:2" = "Review the Report 1 overview and requirements",
   "6:1" = "Review the Report 1 project and revision timeline",
   "6:2" = "Project and revision week",
   "9:2" = "Labour Day — Monday 5 October",
-  "9:3" = "Review Report 1 (25%) requirements and due information",
+  "9:3" = "Review Report 1 requirements and due information",
   "10:1" = "Present your experimental design for feedback",
   "10:2" = "Review the Report 2 overview and requirements",
-  "11:1" = "Submit the group dataset (5%)",
+  "11:1" = "Submit the group dataset",
   "11:2" = "Review the Report 2 overview and due information"
+)
+expected_note_weights <- c(
+  "1:2" = 0L,
+  "2:2" = 0L,
+  "3:1" = 0L,
+  "3:2" = 5L,
+  "4:1" = 10L,
+  "5:1" = 25L,
+  "5:2" = 25L,
+  "6:1" = 25L,
+  "9:3" = 25L,
+  "10:2" = 20L,
+  "11:1" = 5L,
+  "11:2" = 15L
 )
 note_keys <- paste(
   weekly_content$week[note_rows],
@@ -312,6 +514,22 @@ expect_true(
     unname(expected_note_titles[note_keys])
   ),
   "All 17 Notes rows should use the approved final titles."
+)
+expect_true(
+  identical(
+    as.integer(weekly_content$note_weight[assessment_rows]),
+    unname(expected_note_weights[note_keys[
+      weekly_content$note_type[note_rows] == "assessment"
+    ]])
+  ),
+  "Assessment Notes should use the approved weights."
+)
+expect_true(
+  all(
+    is.na(weekly_content$note_weight[-assessment_rows]) |
+      weekly_content$note_weight[-assessment_rows] == ""
+  ),
+  "note_weight should be blank outside Assessment Notes."
 )
 expect_true(
   all(
@@ -354,6 +572,11 @@ expect_true(
 expect_true(
   identical(entries[[1]]$extras[[1]]$note_type, "resource"),
   "Resource objects should retain their note_type."
+)
+expect_true(
+  is.null(entries[[1]]$extras[[1]]$note_weight) &&
+    identical(entries[[1]]$extras[[2]]$note_weight, 0L),
+  "Resource objects should retain Assessment weights and blank other weights."
 )
 expect_true(
   identical(entries[[1]]$extras[[1]]$url_kind, "internal"),
@@ -581,6 +804,74 @@ expect_error(
 default_caption <- render_output("html", caption = NULL, include_caption = FALSE)
 hidden_caption <- render_output("html", caption = FALSE)
 custom_caption <- render_output("html", caption = "Custom schedule")
+html_notes <- hidden_caption
+expect_true(
+  any(grepl("weekly-note-list", html_notes, fixed = TRUE)),
+  "HTML Notes should use the semantic list wrapper."
+)
+expect_true(
+  any(grepl(".bi-book", html_notes, fixed = TRUE)) &&
+    any(grepl("Resource:", html_notes, fixed = TRUE)),
+  "HTML Resources should include their decorative icon and visible label."
+)
+expect_true(
+  any(grepl("Assessment (0%):", html_notes, fixed = TRUE)) &&
+    any(grepl("Assessment (25%):", html_notes, fixed = TRUE)),
+  "HTML Assessment labels should include their configured weights."
+)
+early_feedback_note <- html_notes[grepl(
+  "Early Feedback Task",
+  html_notes,
+  fixed = TRUE
+)]
+expect_true(
+  length(early_feedback_note) == 2L &&
+    any(grepl("Assessment (5%):", early_feedback_note, fixed = TRUE)) &&
+    any(grepl("Assessment (10%):", early_feedback_note, fixed = TRUE)) &&
+    !any(grepl("Task \\(5\\%\\)", early_feedback_note, fixed = TRUE)) &&
+    !any(grepl("Quiz \\(10\\%\\)", early_feedback_note, fixed = TRUE)),
+  "Assessment weights should appear in labels without being repeated in titles."
+)
+expect_true(
+  any(grepl("[Notice:]{.weekly-note-category}", html_notes, fixed = TRUE)) &&
+    !any(grepl("[Notice (", html_notes, fixed = TRUE)),
+  "Notice labels should remain unweighted."
+)
+expect_true(
+  any(grepl("weekly-note-external-marker", html_notes, fixed = TRUE)) &&
+    any(grepl('aria-hidden="true"', html_notes, fixed = TRUE)),
+  "External Notes should include one decorative external marker."
+)
+
+internal_note <- html_notes[grepl(
+  "Check whether you are ready for BEDA",
+  html_notes,
+  fixed = TRUE
+)]
+expect_true(
+  length(internal_note) == 1 &&
+    any(grepl("{.weekly-note-link}", internal_note, fixed = TRUE)) &&
+    !any(grepl("↗", internal_note, fixed = TRUE)),
+  "Internal Notes should be linked without an external marker."
+)
+
+unlinked_note <- html_notes[grepl("Quiz 1", html_notes, fixed = TRUE)]
+expect_true(
+  length(unlinked_note) == 1 &&
+    !any(grepl("[Quiz 1](", unlinked_note, fixed = TRUE)) &&
+    !any(grepl("↗", unlinked_note, fixed = TRUE)),
+  "Unlinked Notes should contain neither a link nor an external marker."
+)
+
+plain_notes <- render_output("plain", caption = FALSE)
+expect_true(
+  any(grepl(
+    "(https://lindeloev.github.io/tests-as-linear/)",
+    plain_notes,
+    fixed = TRUE
+  )),
+  "Plain output should append an otherwise unavailable destination URL."
+)
 
 render_front_page <- function() {
   render_result <- suppressWarnings(system2(
@@ -774,11 +1065,23 @@ expect_true(
   )),
   "A hidden workshop should not appear as a separate visible schedule link."
 )
-expected_visible_titles <- trimws(weekly_content$title[weekly_content$show_on_schedule])
+expected_visible_rows <- weekly_content[
+  weekly_content$show_on_schedule,
+  c("section", "title"),
+  drop = FALSE
+]
 expect_true(
   all(vapply(
-    expected_visible_titles,
-    function(title) any(grepl(escape_markdown_label(title), hidden_caption, fixed = TRUE)),
+    seq_len(nrow(expected_visible_rows)),
+    function(index) {
+      title <- expected_visible_rows$title[[index]]
+      escaped_title <- if (expected_visible_rows$section[[index]] == "extra") {
+        escape_markdown_text(title)
+      } else {
+        escape_markdown_label(title)
+      }
+      any(grepl(escaped_title, hidden_caption, fixed = TRUE))
+    },
     logical(1)
   )),
   "Every intended TRUE row should remain present in the schedule output."
@@ -834,7 +1137,53 @@ expect_true(
   "Non-HTML practicals should use Markdown links."
 )
 
+typst_external_link <- run_pandoc(
+  "typst",
+  weekly_note_markdown(entries[[2]]$extras[[1]], html_output = FALSE)
+)
+expect_true(
+  any(grepl(
+    '#link("https://lindeloev.github.io/tests-as-linear/")[',
+    typst_external_link,
+    fixed = TRUE
+  )),
+  "Pandoc Typst output should retain a functional external Notes link."
+)
+
 typst_output <- render_output("typst", caption = FALSE)
+expect_true(
+  any(typst_output == "**Notes**"),
+  "Typst should call the section Notes."
+)
+expect_true(
+  any(grepl("**Resource:**", typst_output, fixed = TRUE)),
+  "Typst should preserve visible category labels."
+)
+expect_true(
+  any(grepl("**Assessment (0%):** Quiz 1", typst_output, fixed = TRUE)) &&
+    any(grepl(
+      "**Assessment (15%):** Review the Report 2 overview and due information",
+      typst_output,
+      fixed = TRUE
+    )),
+  "Typst should include configured weights in Assessment labels."
+)
+expect_true(
+  any(grepl("**Notice:**", typst_output, fixed = TRUE)) &&
+    !any(grepl("**Notice (", typst_output, fixed = TRUE)),
+  "Typst Notice labels should remain unweighted."
+)
+expect_true(
+  any(grepl(
+    paste0(
+      "[See how common statistical tests are linear models]",
+      "(<https://lindeloev.github.io/tests-as-linear/>)"
+    ),
+    typst_output,
+    fixed = TRUE
+  )),
+  "Typst should preserve the external hyperlink."
+)
 expect_true(
   any(grepl(week_one_escaped_description, typst_output, fixed = TRUE)),
   "Typst output should include lecture descriptions."
