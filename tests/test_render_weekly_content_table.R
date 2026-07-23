@@ -464,9 +464,9 @@ expected_note_types <- c(
   "11:1" = "assessment", "11:2" = "assessment"
 )
 expected_note_titles <- c(
-  "1:1" = "Check whether you are ready for BEDA",
+  "1:1" = "Am I ready for BEDA?",
   "1:2" = "Quiz 1",
-  "2:1" = "See how common statistical tests are linear models",
+  "2:1" = "(See how) common statistical tests are linear models",
   "2:2" = "Quiz 2",
   "3:1" = "Quiz 3",
   "3:2" = "Early Feedback Task — opens Friday at 10 am",
@@ -848,7 +848,7 @@ expect_true(
 )
 
 internal_note <- html_notes[grepl(
-  "Check whether you are ready for BEDA",
+  "Am I ready for BEDA",
   html_notes,
   fixed = TRUE
 )]
@@ -1338,7 +1338,7 @@ expect_true(
 expect_true(
   any(grepl(
     paste0(
-      "[See how common statistical tests are linear models]",
+      "[\\(See how\\) common statistical tests are linear models]",
       "(<https://lindeloev.github.io/tests-as-linear/>)"
     ),
     typst_output,

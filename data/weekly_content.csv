@@ -1,12 +1,12 @@
 week,section,position,title,url,description,show_on_schedule,note_type,note_weight
-1,lecture,1,Introduction and fundamentals,lectures/L01/index.qmd,BEDA and the empirical modelling approach.,TRUE,,
+1,lecture,1,Introduction and fundamentals,lectures/L01/index.qmd,Welcome to BEDA!,TRUE,,
 1,workshop,1,Software and graphical models,module01/w01-intro.qmd,,FALSE,,
 1,practical,1,Getting started,module01/102-week01.qmd,,TRUE,,
-1,extra,1,Check whether you are ready for BEDA,prerequisites.qmd,,TRUE,resource,
+1,extra,1,Am I ready for BEDA?,prerequisites.qmd,,TRUE,resource,
 1,extra,2,Quiz 1,,,TRUE,assessment,0
-2,lecture,1,Sampling and the empirical model,lectures/L02/index.qmd,Representative data and designing experiments with minimal statistical know-how.,TRUE,,
+2,lecture,1,Sampling and the linear model,lectures/L02/index.qmd,Randomisation and why we teach the linear model first,TRUE,,
 2,practical,1,Study design,module01/103-week02.qmd,,TRUE,,
-2,extra,1,See how common statistical tests are linear models,https://lindeloev.github.io/tests-as-linear/,,TRUE,resource,
+2,extra,1,(See how) common statistical tests are linear models,https://lindeloev.github.io/tests-as-linear/,,TRUE,resource,
 2,extra,2,Quiz 2,,,TRUE,assessment,0
 3,lecture,1,Choosing the right model(s),lectures/L03/index.qmd,The easy way to validate model assumptions.,TRUE,,
 3,practical,1,Data analysis,module01/104-week03.qmd,,TRUE,,
@@ -20,7 +20,7 @@ week,section,position,title,url,description,show_on_schedule,note_type,note_weig
 5,extra,1,Work on your experiments for Report 1,,,TRUE,assessment,25
 5,extra,2,Review the Report 1 overview and requirements,,,TRUE,assessment,25
 6,lecture,1,Refresher and categorical variables,lectures/L06/index.qmd,A refresher on designing experiments with categorical variables.,TRUE,,
-6,extra,1,Review the Report 1 project and revision timeline,module02/202-timeline.qmd#wk6,,TRUE,assessment,25
+6,extra,1,Review the Report 1 project and revision timeline,,,TRUE,assessment,25
 6,extra,2,Project and revision week,,,TRUE,notice,
 7,lecture,1,Relationships and binary responses,lectures/L07/index.qmd,How to design experiments with continuous or binary responses.,TRUE,,
 7,practical,1,Project data analysis timeline,module02/202-timeline.qmd#wk7,,TRUE,,
