@@ -252,6 +252,63 @@ main.content section.level2.section-rail > h2 {
   line-height: 1.35;
 }
 
+.weekly-note-list,
+.weekly-note-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.weekly-note-list ul {
+  list-style: none;
+}
+
+.weekly-note-list li {
+  line-height: 1.35;
+}
+
+.weekly-note-list li + li {
+  margin-top: 0.4rem;
+}
+
+.weekly-note-icon {
+  color: #0f6b5b;
+  display: inline-block;
+  font-size: 0.9em;
+  margin-right: 0.3rem;
+  width: 1em;
+}
+
+.weekly-note-category {
+  color: #5c636a;
+  font-weight: 600;
+}
+
+#weekly-content .weekly-note-list .weekly-note-link,
+#weekly-content .weekly-note-list .weekly-note-link:visited,
+#weekly-content .weekly-note-list .weekly-note-link:hover,
+#weekly-content .weekly-note-list .weekly-note-link:focus {
+  color: #005ea8;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.12em;
+}
+
+#weekly-content .weekly-note-list .weekly-note-link:hover {
+  color: #003f73;
+}
+
+#weekly-content .weekly-note-list .weekly-note-link:focus-visible {
+  border-radius: 0.1rem;
+  outline: 3px solid #0f6b5b;
+  outline-offset: 2px;
+}
+
+.weekly-note-external-marker {
+  color: currentColor;
+  font-size: 0.85em;
+  margin-left: 0.1rem;
+}
+
 #weekly-content td:not(:nth-child(3)) a {
   color: #005ea8;
   text-decoration: underline;
@@ -325,7 +382,14 @@ main.content section.level2.section-rail > h2 {
 }
 
 #weekly-content {
+  max-width: 100%;
+  overflow-x: auto;
   scroll-margin-top: 5rem;
+}
+
+#weekly-content:focus-visible {
+  outline: 3px solid #0f6b5b;
+  outline-offset: 2px;
 }
 
 .lecture-actions {

@@ -27,3 +27,12 @@ render_weekly_content_table(
 ```
 
 :::
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const scheduleTable = document.querySelector("#weekly-content table");
+  if (scheduleTable) {
+    scheduleTable.setAttribute("aria-label", "Weekly content schedule");
+  }
+});
+</script>

@@ -33,6 +33,10 @@ semester_status_script <- paste(
   readLines("scripts/semester-status.js", warn = FALSE, encoding = "UTF-8"),
   collapse = "\n"
 )
+weekly_schedule_partial <- paste(
+  readLines("_partials/weekly-schedule.qmd", warn = FALSE, encoding = "UTF-8"),
+  collapse = "\n"
+)
 
 checks <- 0L
 
@@ -897,6 +901,87 @@ render_front_page <- function() {
 
 rendered_html_table <- render_front_page()
 expect_true(
+  grepl(
+    '<div id="weekly-content"[^>]*role="region"[^>]*aria-label="Weekly content table"',
+    rendered_html_table,
+    perl = TRUE
+  ),
+  "The schedule should retain its labelled responsive region."
+)
+expect_true(
+  grepl(
+    'scheduleTable.setAttribute("aria-label", "Weekly content schedule")',
+    rendered_html_table,
+    fixed = TRUE
+  ) && grepl(
+    'document.querySelector("#weekly-content table")',
+    weekly_schedule_partial,
+    fixed = TRUE
+  ),
+  "The rendered schedule should give its table a stable accessible name."
+)
+expect_true(
+  !grepl("<caption", rendered_html_table, fixed = TRUE),
+  "The accessible table name should not restore the visible caption."
+)
+expect_true(
+  grepl(
+    '<thead>[\\s\\S]*<th[^>]*>Week</th>[\\s\\S]*<th[^>]*>Notes</th>',
+    rendered_html_table,
+    perl = TRUE
+  ),
+  "The rendered schedule should retain programmatic column headers."
+)
+expect_true(
+  grepl('class="[^"]*weekly-note-list', rendered_html_table, perl = TRUE) &&
+    grepl("<ul>", rendered_html_table, fixed = TRUE) &&
+    grepl("<li>", rendered_html_table, fixed = TRUE),
+  "Rendered Notes should remain a semantic list."
+)
+expect_true(
+  grepl(
+    'class="[^"]*weekly-note-category[^"]*"[^>]*>Resource:',
+    rendered_html_table,
+    perl = TRUE
+  ),
+  "The category should be visible text rather than CSS-generated content."
+)
+expect_true(
+  !grepl('target="_blank"', rendered_html_table, fixed = TRUE),
+  "Schedule links should remain in the same tab."
+)
+expect_true(
+  !grepl("&lt;i class=", rendered_html_table, fixed = TRUE),
+  "Decorative icons should not be escaped as visible code."
+)
+note_icon_tags <- regmatches(
+  rendered_html_table,
+  gregexpr(
+    '<[^>]+class="[^"]*weekly-note-icon[^"]*"[^>]*>',
+    rendered_html_table,
+    perl = TRUE
+  )
+)[[1]]
+external_marker_tags <- regmatches(
+  rendered_html_table,
+  gregexpr(
+    '<span class="[^"]*weekly-note-external-marker[^"]*"[^>]*>',
+    rendered_html_table,
+    perl = TRUE
+  )
+)[[1]]
+expect_true(
+  length(note_icon_tags) ==
+    sum(weekly_content$section == "extra" & weekly_content$show_on_schedule) &&
+    all(grepl('aria-hidden="true"', note_icon_tags, fixed = TRUE)),
+  "Every rendered Note icon should be decorative."
+)
+expect_true(
+  length(external_marker_tags) > 0L &&
+    all(grepl('aria-hidden="true"', external_marker_tags, fixed = TRUE)),
+  "Every rendered external marker should be decorative."
+)
+expect_true(
   !grepl('&lt;i class="bi bi-flask"', rendered_html_table, fixed = TRUE),
   "Linked practical icons should not appear as escaped HTML in the rendered table."
 )
@@ -988,6 +1073,59 @@ expect_true(
     grepl("font-size: 0.9em;", timeline_css, fixed = TRUE) &&
     grepl("line-height: 1.35;", timeline_css, fixed = TRUE),
   "Notes should use the lecture-description type scale."
+)
+required_note_css <- c(
+  ".weekly-note-list",
+  "list-style: none",
+  ".weekly-note-icon",
+  "color: #0f6b5b",
+  ".weekly-note-category",
+  ".weekly-note-link",
+  "text-decoration: underline",
+  ".weekly-note-link:focus-visible",
+  "outline: 3px solid",
+  "#weekly-content",
+  "overflow-x: auto"
+)
+for (rule in required_note_css) {
+  expect_true(
+    grepl(rule, timeline_css, fixed = TRUE),
+    paste("Schedule CSS should contain:", rule)
+  )
+}
+expect_true(
+  grepl(
+    ".weekly-note-category {\n  color: #5c636a;",
+    timeline_css,
+    fixed = TRUE
+  ),
+  "Notes categories should use an explicit accessible secondary colour."
+)
+hex_luminance <- function(value) {
+  channels <- strtoi(
+    substring(value, c(2, 4, 6), c(3, 5, 7)),
+    base = 16L
+  ) / 255
+  channels <- ifelse(
+    channels <= 0.04045,
+    channels / 12.92,
+    ((channels + 0.055) / 1.055)^2.4
+  )
+  sum(channels * c(0.2126, 0.7152, 0.0722))
+}
+category_contrast <- (hex_luminance("#ffffff") + 0.05) /
+  (hex_luminance("#5c636a") + 0.05)
+expect_true(
+  category_contrast >= 4.5,
+  "The explicit Notes category colour should meet 4.5:1 on white."
+)
+expect_true(
+  grepl(
+    "#weekly-content .weekly-note-list .weekly-note-link",
+    timeline_css,
+    fixed = TRUE
+  ),
+  "Semantic Notes link selectors should override generic table-link rules."
 )
 expect_true(
   grepl("fontsize: 16px", quarto_config, fixed = TRUE),
