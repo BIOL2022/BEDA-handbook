@@ -947,6 +947,14 @@ expect_true(
   "The category should be visible text rather than CSS-generated content."
 )
 expect_true(
+  grepl(
+    'class="[^"]*weekly-note-content[^"]*"',
+    rendered_html_table,
+    perl = TRUE
+  ),
+  "Each Note should group its category and destination beside the icon."
+)
+expect_true(
   !grepl('target="_blank"', rendered_html_table, fixed = TRUE),
   "Schedule links should remain in the same tab."
 )
@@ -958,6 +966,14 @@ note_icon_tags <- regmatches(
   rendered_html_table,
   gregexpr(
     '<[^>]+class="[^"]*weekly-note-icon[^"]*"[^>]*>',
+    rendered_html_table,
+    perl = TRUE
+  )
+)[[1]]
+note_icon_spans <- regmatches(
+  rendered_html_table,
+  gregexpr(
+    '<span[^>]+class="[^"]*weekly-note-icon[^"]*"[^>]*>[^<]*</span>',
     rendered_html_table,
     perl = TRUE
   )
@@ -975,6 +991,14 @@ expect_true(
     sum(weekly_content$section == "extra" & weekly_content$show_on_schedule) &&
     all(grepl('aria-hidden="true"', note_icon_tags, fixed = TRUE)),
   "Every rendered Note icon should be decorative."
+)
+expect_true(
+  length(note_icon_spans) == length(note_icon_tags) &&
+    all(grepl(">\\s*</span>$", note_icon_spans, perl = TRUE)),
+  paste0(
+    "Decorative Note icon spans should be empty so hidden text cannot ",
+    "distort their baseline."
+  )
 )
 expect_true(
   length(external_marker_tags) > 0L &&

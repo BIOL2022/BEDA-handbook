@@ -263,6 +263,10 @@ main.content section.level2.section-rail > h2 {
 }
 
 .weekly-note-list li {
+  align-items: baseline;
+  column-gap: 0.3rem;
+  display: grid;
+  grid-template-columns: 1em minmax(9rem, 1fr);
   line-height: 1.35;
 }
 
@@ -274,8 +278,12 @@ main.content section.level2.section-rail > h2 {
   color: #0f6b5b;
   display: inline-block;
   font-size: 0.9em;
-  margin-right: 0.3rem;
+  margin-right: 0;
   width: 1em;
+}
+
+.weekly-note-content {
+  min-width: 0;
 }
 
 .weekly-note-category {

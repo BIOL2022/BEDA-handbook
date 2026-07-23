@@ -556,7 +556,7 @@ weekly_note_markdown <- function(
   }
 
   icon <- paste0(
-    "[\u00a0]{.bi .", definition$icon,
+    "[]{.bi .", definition$icon,
     ' .weekly-note-icon aria-hidden="true"}'
   )
   category <- paste0(
@@ -567,8 +567,16 @@ weekly_note_markdown <- function(
   } else {
     ""
   }
+  content <- paste0(
+    "[",
+    category,
+    " ",
+    destination,
+    marker,
+    "]{.weekly-note-content}"
+  )
 
-  paste(icon, category, paste0(destination, marker))
+  paste(icon, content)
 }
 
 weekly_note_cell_lines <- function(
