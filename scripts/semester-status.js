@@ -79,27 +79,66 @@
 
   function highlightScheduleWeek(week, label = "Current", isCurrent = true) {
     const rows = Array.from(document.querySelectorAll("#weekly-content tbody tr"));
+    const mobileWeeks = Array.from(
+      document.querySelectorAll("#weekly-content .weekly-mobile-week")
+    );
+    const jumpLink = document.querySelector(
+      "#weekly-content .weekly-current-week-jump"
+    );
 
     for (const row of rows) {
       row.classList.remove("is-current-week");
       row.removeAttribute("aria-current");
       row.cells[0]?.querySelector(".current-week-label")?.remove();
     }
+    for (const mobileWeek of mobileWeeks) {
+      mobileWeek.classList.remove("is-current-week");
+      mobileWeek.removeAttribute("aria-current");
+      const marker = mobileWeek.querySelector(".weekly-mobile-current-label");
+      if (marker) {
+        marker.hidden = true;
+        marker.textContent = "";
+      }
+    }
 
-    if (!Number.isInteger(week)) return;
+    if (!Number.isInteger(week)) {
+      if (jumpLink) jumpLink.hidden = true;
+      return;
+    }
 
     const currentRow = rows.find(
       (row) => Number(row.cells[0]?.textContent.trim()) === week
     );
-    if (!currentRow) return;
+    if (currentRow) {
+      currentRow.classList.add("is-current-week");
+      if (isCurrent) currentRow.setAttribute("aria-current", "true");
 
-    currentRow.classList.add("is-current-week");
-    if (isCurrent) currentRow.setAttribute("aria-current", "true");
+      const marker = document.createElement("span");
+      marker.className = "current-week-label";
+      marker.textContent = label;
+      currentRow.cells[0].append(marker);
+    }
 
-    const marker = document.createElement("span");
-    marker.className = "current-week-label";
-    marker.textContent = label;
-    currentRow.cells[0].append(marker);
+    const currentMobileWeek = mobileWeeks.find(
+      (mobileWeek) => Number(mobileWeek.dataset.scheduleWeek) === week
+    );
+    if (currentMobileWeek) {
+      currentMobileWeek.classList.add("is-current-week");
+      if (isCurrent) currentMobileWeek.setAttribute("aria-current", "true");
+
+      const marker = currentMobileWeek.querySelector(
+        ".weekly-mobile-current-label"
+      );
+      if (marker) {
+        marker.textContent = label === "Current" ? "Current week" : label;
+        marker.hidden = false;
+      }
+    }
+
+    if (jumpLink) {
+      jumpLink.href = `#mobile-week-${week}`;
+      jumpLink.hidden = !currentMobileWeek;
+    }
   }
 
   function updatePage() {

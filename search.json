@@ -1,514 +1,45 @@
 [
   {
-    "objectID": "unit-information.html",
-    "href": "unit-information.html",
-    "title": "Unit information",
+    "objectID": "updates.html",
+    "href": "updates.html",
+    "title": "Updates",
     "section": "",
-    "text": "WelcomeAssumed knowledgeModulesLectures & pracsCode of conduct\n\n\nThank you for joining BIOL2022: Biology Experimental Design and Analysis, also known as BEDA (🐝-da). The ability to critically evaluate evidence is a fundamental life skill. In BEDA, we build this skill through hands-on work in experimental design and data analysis. How do we design a robust study? How does a study’s design shape its results? How do we choose statistical tools that fit the research question? The reasoning skills you develop will be invaluable not just in biology, but in any future career path you choose.\nOur approach in BEDA is based on three principles:\n\nThe MODEL determines the method. Building a model makes the structure of your question and data explicit. This guides you towards the appropriate test, even when you do not know its name (although most likely it is a general linear model). We will therefore focus on the model and its assumptions, which is easier than trying to remember all the different tests.\nThe workflow is consistent. We show you a process for analysing data that can be applied to (almost) any dataset. You will learn to check assumptions, visualise data, fit a model and interpret results using a single technique that works across most software.\nThe focus is on statistical thinking The same model can be fitted in Jamovi, R, SPSS or another program. A strong understanding of the model matters more than familiarity with a particular interface.\n\nWhile the focus of BEDA is on the reasoning behind data analysis and interpreting results, we also provide practical guidance on using software. We recommend Jamovi if you are new to statistical software. If you already have experience with R, you are welcome to use it. SPSS remains a supported alternative although you need to weigh its limitations outside of academia.\n\n\nBEDA is designed to build on introductory statistics rather than teach it from the beginning. We use ideas such as data types, sampling variation, hypothesis testing, p-values, confidence intervals and simple statistical models from the opening weeks. This allows us to spend more time on designing biological studies, building appropriate models and interpreting evidence.\nBecause BEDA has broad prerequisites, completing a prerequisite does not always mean that you have studied statistics. However, taking a first-year statistics unit is an assumed knowledge for BIOL2022. Not fully meeting the assumed knowledge may make BEDA extremely challenging as we have limited time to explain basic concepts that are assumed to be known from first-year statistics.\nYou do not need to remember everything perfectly. However, the main ideas should be familiar enough that a short recap brings them back. Use Am I ready for BEDA? to check your starting point. If several topics are completely new, review them before semester or ask the teaching team where to begin.\n\n\nBEDA is organised into three modules, each taught by a different lecturer. Ideas introduced early in the unit continue through the semester as they are applied to different kinds of biological research.\nIn Module 1 (Weeks 1–5), Januar introduces the foundations of study design and statistical modelling. You will look at how a research question, the way a study is designed and the data you collect come together in a model.\nIn Module 2 (Weeks 6–8), Clare develops these ideas through univariate experiments. You will work with real examples and examine how decisions made during study design affect the results and the conclusions. This leads into Report 1, where you will design and analyse an experiment of your own.\nIn Module 3 (Weeks 9–12), Mat extends the unit into multivariate analysis, where several variables may change together. For Report 2, you will collect data from your environment and learn how to describe and interpret the patterns within it.\n\n\nThere are two lectures each week. Unfortunately we do not get to pick the locations, so they are held in different buildings on different days. You are expected to attend 80% of lectures in one way or another. We record this attendance in-person and online when you watch the recordings.\n\nTuesday, 10–11 am — Belinda Hutchinson Building, Lecture Theatre 1110\nWednesday, 10–11 am — Sydney Nanoscience Hub, Lecture Theatre 4002 (Messel)\n\nYou will also attend one two-hour practical each week in your allocated class:\n\nTuesday, 2–4 pm or 4–6 pm\nWednesday, 2–4 pm or 4–6 pm\nFriday, 2–4 pm or 4–6 pm\n\nAll practicals are held in Carslaw Building, Wet Lab 307. Check your personal timetable for your allocated class and any timetable changes. Do note that because we are a large cohort, once you are allocated to a practical class, you cannot change it. To change your practical class, you must contact the unit coordinator and provide a valid reason, normally a time table clash with another unit or caring responsibilities.\nAttendance: You are expected to participate in at least 80% of timetabled activities and must attend at least 10 of the 12 practicals. See Attendance under the Code of Conduct for further details.\n\n\nA code of conduct is a shared agreement about how we learn and work together.\nBEDA should be a respectful and inclusive place to learn. Treat classmates and staff with courtesy, including when you disagree. Use people’s correct names and pronouns, respect different backgrounds and levels of experience, make space for others to contribute, and avoid disrupting lectures or practicals. Discrimination, intimidation and harassment are not acceptable. Follow staff instructions and all laboratory safety requirements when working in laboratory spaces.\n\nWorking with your group and data\nContribute fairly to your group’s work and raise participation problems early. As with any group work, the issues that arise are often best resolved by talking to your group members first. It is important to use a group charter to clarify expectations and responsibilities including how to share data and work together.\nShare group data and the information needed to interpret it promptly. Never fabricate data, or omit or alter observations without documenting and justifying the decision. You may discuss your analysis with your group, but any individual report must be written and submitted independently.\nMore information on how to work work with your group is provided with the Report 1 and Report 2 instructions. If you are unsure about what is acceptable, ask your practical demonstrator or the unit coordinator.\n\n\nAttendance\nAttend lectures live where possible. If you miss a lecture, watch the recording promptly. You are expected to have attended or watched the Tuesday lecture before your practical. Because practicals run on Tuesday, Wednesday and Friday, the Wednesday lecture is not assumed knowledge for that week’s practical, but you should attend or watch it during the same week.\nYou must attend at least 10 of the 12 practicals to meet the 80% attendance requirement. Practical attendance is not managed through special consideration. Record your own attendance during each practical using the QR code or website link, then check that it has been recorded correctly. You have one week to request a correction.\n\n\nRaising a concern\nFor routine group-work, data-sharing or class concerns, speak with your practical demonstrator or the unit coordinator as early as possible. You do not need to approach the teaching team first if the matter is serious or you would be uncomfortable doing so. The University provides separate pathways for complaints, bullying, harassment and discrimination and confidential support through Safer Communities for sexual harm or gender-based violence. In an immediate emergency, call 000 and follow the University’s emergency and campus safety guidance."
+    "text": "This page records changes to the handbook that may be useful to students. Small corrections to spelling or formatting are not listed."
   },
   {
-    "objectID": "prerequisites.html",
-    "href": "prerequisites.html",
-    "title": "Am I ready for BEDA?",
+    "objectID": "updates.html#july-2026",
+    "href": "updates.html#july-2026",
+    "title": "Updates",
+    "section": "24 July 2026",
+    "text": "24 July 2026\nWe clarified parts of the weekly schedule and added assessment weightings to the Notes column. The About page now provides clearer information about statistical software, assumed knowledge, lectures, practicals, attendance and working with your group. On phones, the schedule now uses a stacked weekly layout so lectures, practicals, Notes and the mid-semester break can be read without horizontal scrolling. The current or upcoming week remains highlighted, with a shortcut to it at the top of the mobile schedule."
+  },
+  {
+    "objectID": "practicals.html",
+    "href": "practicals.html",
+    "title": "BIOL2022",
     "section": "",
-    "text": "Do you have the necessary background for BEDA? We spent a lot of time designing BEDA with the assumption that you have met the assumed knowledge of having completed a first-year statistics unit (e.g., ENVX1002 or DATA1001 or an equivalent). Many students miss this as it is not a strict prerequisite, but it is important to know that we have listed a statistics (or equivalent) unit of study as an ASSUMED KNOWLEDGE in the unit outline.\nAre you currently still in the first year of your undergraduate degree? If you are currently a first-year student, please DO NOT enrol in BEDA. Report writing and group work are a major component of the unit, and we run essay-type exams. These are often difficult for first-year students to manage in addition to the workload and expectations of transitioning to University.\n## How to checkif you are ready\nWwe have put together a few questions on the key ideas you should already be familiar with so that you may self-assess yourself. You should be able to:\n\nExplain what a p-value is: What does a p-value actually mean? If you got a p-value of 0.03 from a biology experiment, what would you conclude?\nKnow your correlation: What’s the difference between positive and negative correlation? And why doesn’t correlation mean one thing causes another?\nTell data types apart: Can you explain the difference between continuous, discrete, and categorical data? Could you give an example of each?\nDescribe the ‘middle’ of your data i.e. central tendency: When would you use the mean instead of the median to talk about the centre of a dataset?\nUnderstand hypothesis testing: What are the main steps for testing a hypothesis? What do the null and alternative hypotheses do?\nUnderstand basic statistical tests: Can you remember what t-tests and simple linear regressions are for? Do you know what a ‘confidence interval’ or ‘standard error’ is telling you? It’s alright if you’re a bit rusty on these from first year, but could you get the gist with a quick recap?\n\nThe first couple of weeks of BEDA will briefly cover these concepts but we will be treating these as assumed knowledge/revision. If you are not familiar with these topics we strongly suggest you review them as soon as you can."
+    "text": "practicals.qmd"
   },
   {
-    "objectID": "module03/301-intro.html",
-    "href": "module03/301-intro.html",
-    "title": "Introduction",
+    "objectID": "module02/205-resources.html",
+    "href": "module02/205-resources.html",
+    "title": "Weeks 4–8 practicals: resources",
     "section": "",
-    "text": "TipObjectives\n\n\n\nThe aim of this component of the practical series is to introduce you to several commonly used techniques for analysing multivariate data. By the end of the series, you will:\n\nUnderstand the principles underlying Principal Components Analysis (PCA) and Non-metric Multidimensional Scaling (nMDS)\nBe familiar with the concepts behind multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA\nBe able to plan and conduct experiments that test multivariate hypotheses\nKnow how to carry out these analyses using relevant statistical software\nBe able to interpret, present, and report your findings clearly and effectively"
+    "text": "Here are two examples: template1 and template2 for Excel group data collection. Generate and complete your group’s own Excel file (could be from a GoogleSheets file) before Week 8 prac.\nHere is a guide to choosing appropriate stats and a guide to using the stats program SPSS\nPractice Excel file for ANOVA or Randomised Block design/GLM and associated paper.\nPractice Excel file for linear regression (or correlation) and associated paper.\nPractice Excel file for logistic regression and associated paper\nAnd an interesting article called “The importance of stupidity in scientific research”: directed at PhD students but also, I think, relevant to our Module projects where you take a step into the unknown. Hope you enjoy it."
   },
   {
-    "objectID": "module03/301-intro.html#background",
-    "href": "module03/301-intro.html#background",
-    "title": "Introduction",
-    "section": "1 Background",
-    "text": "1 Background\nMultivariate analyses are becoming increasingly common in biology, largely due to the growing accessibility of software tools capable of handling complex data. However, as discussed in lectures, this accessibility has also led to the uncritical and sometimes inappropriate use of multivariate methods. It is therefore essential that biologists develop a working understanding of when and how to apply these techniques, as well as how to recognise when others have used them incorrectly.\nMultivariate approaches are widely used for:\n\nSummarising complex patterns in biological data,\nIdentifying groupings or patterns among samples or species,\nTesting statistical hypotheses involving multivariate datasets."
-  },
-  {
-    "objectID": "module03/301-intro.html#what-youll-be-doing",
-    "href": "module03/301-intro.html#what-youll-be-doing",
-    "title": "Introduction",
-    "section": "2 What you’ll be doing",
-    "text": "2 What you’ll be doing\nIn this part of the course, you will:\n\nPractice performing key multivariate techniques using sample datasets provided during practical sessions.\nApply those techniques to your own data, which you will collect and collate in groups.\nExplore and compare the outcomes of different multivariate methods, observing how each highlights different features of the same dataset.\n\nAlthough best scientific practice recommends selecting appropriate analyses before data collection, this exercise is designed to give you the opportunity to trial multiple analytical approaches and better understand their application and interpretation."
-  },
-  {
-    "objectID": "module03/301-intro.html#analyses-and-programs-well-use",
-    "href": "module03/301-intro.html#analyses-and-programs-well-use",
-    "title": "Introduction",
-    "section": "3 Analyses and programs we’ll use",
-    "text": "3 Analyses and programs we’ll use\nThe main programs we will use in this course are Jamovi and PRIMER. However, if you prefer working in R, complete R scripts (RStudio files) for all the methods covered will be made available on Canvas.\n\nPrincipal Components Analysis\nPrincipal Components Analysis (PCA) is a method used to reduce the complexity of large datasets by transforming them into a smaller set of uncorrelated variables (called principal components) that capture the maximum variance in the original data.\nThis technique is especially useful for analysing habitat data, where multiple environmental variables can be summarised into a few key components that describe the main gradients in the data.\nWe will perform PCA using Jamovi (or R, if preferred)."
-  },
-  {
-    "objectID": "module03/301-intro.html#nmds-and-multivariate-hypothesis-testing",
-    "href": "module03/301-intro.html#nmds-and-multivariate-hypothesis-testing",
-    "title": "Introduction",
-    "section": "4 nMDS and multivariate hypothesis testing",
-    "text": "4 nMDS and multivariate hypothesis testing\n\n(ANOSIM, PERMANOVA, and SIMPER)\nIn this section of the course, we will explore techniques for visualising and testing patterns in complex multivariate datasets. These methods reduce the dimensionality of the data (e.g., species abundances across sites) to reveal meaningful patterns and relationships, and then allow us to test explicit hypotheses about these patterns—often in relation to predefined groups (e.g., treatment types) or environmental variables.\nWe will primarily use PRIMER 7 for these analyses, although equivalent R code will also be provided.\n\n\nnMDS – Non-metric multidimensional scaling\nnMDS is an ordination technique used to visualise patterns in multivariate data by representing samples in a low-dimensional space based on their similarity (usually Bray-Curtis). It helps us see groupings or gradients in community composition or other multivariate datasets.\n\n\nANOSIM – Analysis of similarities\nANOSIM tests whether groups of samples differ in composition based on a comparison of within-group vs among-group similarity. It uses rank-based distance measures and is best suited to simple experimental designs.\n\nSoftware: PRIMER 7 (or R)\nOutput includes: Global R statistic and p-value"
-  },
-  {
-    "objectID": "module03/301-intro.html#permanova-permutational-multivariate-analysis-of-variance",
-    "href": "module03/301-intro.html#permanova-permutational-multivariate-analysis-of-variance",
-    "title": "Introduction",
-    "section": "5 PERMANOVA – Permutational multivariate analysis of variance",
-    "text": "5 PERMANOVA – Permutational multivariate analysis of variance\nPERMANOVA is a more flexible and powerful method for testing hypotheses in multivariate data. It uses permutation-based ANOVA on a resemblance matrix and can accommodate complex experimental designs, including multiple fixed and random factors.\n\nSoftware: PRIMER 7 (or R)\nCapable of testing main effects, interactions, and nested designs"
-  },
-  {
-    "objectID": "module03/301-intro.html#simper-similarity-percentages",
-    "href": "module03/301-intro.html#simper-similarity-percentages",
-    "title": "Introduction",
-    "section": "6 SIMPER – Similarity percentages",
-    "text": "6 SIMPER – Similarity percentages\nWhen a significant difference is detected (e.g., by ANOSIM or PERMANOVA), SIMPER helps identify which variables (e.g., species) are contributing most to the observed differences between groups.\n\nIt calculates the percentage contribution of each variable to the overall dissimilarity.\nUseful for interpreting biological meaning behind multivariate differences.\nSoftware: PRIMER 7 (or R)"
-  },
-  {
-    "objectID": "module03/301-intro.html#timeline",
-    "href": "module03/301-intro.html#timeline",
-    "title": "Introduction",
-    "section": "7 Timeline",
-    "text": "7 Timeline\n\nWeek 9: introduction, PCA of lecture data and designing model systems to test multivariate hypotheses (in groups) for your reports.\nWeek 10: group presentations of model systems and experimental design, and how to perform nMDS, PERMANOVA (and ANOSIM) and SIMPER using sample data\nWeek 11: submitting your complete datafiles onto Canvas, analysing your report data\nWeek 12: additional analyses and summary of findings and guidelines for describing multivariate methods and results for your report"
-  },
-  {
-    "objectID": "module02/206-rubric.html",
-    "href": "module02/206-rubric.html",
-    "title": "Report 1 – Rubric",
+    "objectID": "module02/205-resources.html#useful-documents-for-report-1",
+    "href": "module02/205-resources.html#useful-documents-for-report-1",
+    "title": "Weeks 4–8 practicals: resources",
     "section": "",
-    "text": "Download the rubric for Report 1 here.\n\n\n\nDownload the Report 1 marking rubric PDF."
+    "text": "Here are two examples: template1 and template2 for Excel group data collection. Generate and complete your group’s own Excel file (could be from a GoogleSheets file) before Week 8 prac.\nHere is a guide to choosing appropriate stats and a guide to using the stats program SPSS\nPractice Excel file for ANOVA or Randomised Block design/GLM and associated paper.\nPractice Excel file for linear regression (or correlation) and associated paper.\nPractice Excel file for logistic regression and associated paper\nAnd an interesting article called “The importance of stupidity in scientific research”: directed at PhD students but also, I think, relevant to our Module projects where you take a step into the unknown. Hope you enjoy it."
   },
   {
-    "objectID": "module02/204-report1.html",
-    "href": "module02/204-report1.html",
-    "title": "Report 1 – Instructions",
-    "section": "",
-    "text": "The project written report is the individual component of this assessment It is submitted via the Canvas assignment called Report 1.\nThe other component of this assignment is the data file, which should be submitted by one group member via the Canvas assignment called Report 1: Group data submission.\nDate due: Week 9, check Canvas for exact date\nLate penalty: you will incur a penalty of 5% (5 points out of 100) for each 24 hours or part thereof after the deadline (weekends and public holidays included), unless you have Special Consideration.\nLength penalty: you will incur a penalty of 5% (5 points out of 100; up to 30 points) for each page or part thereof over the page limit."
-  },
-  {
-    "objectID": "module02/204-report1.html#about",
-    "href": "module02/204-report1.html#about",
-    "title": "Report 1 – Instructions",
-    "section": "",
-    "text": "The project written report is the individual component of this assessment It is submitted via the Canvas assignment called Report 1.\nThe other component of this assignment is the data file, which should be submitted by one group member via the Canvas assignment called Report 1: Group data submission.\nDate due: Week 9, check Canvas for exact date\nLate penalty: you will incur a penalty of 5% (5 points out of 100) for each 24 hours or part thereof after the deadline (weekends and public holidays included), unless you have Special Consideration.\nLength penalty: you will incur a penalty of 5% (5 points out of 100; up to 30 points) for each page or part thereof over the page limit."
-  },
-  {
-    "objectID": "module02/204-report1.html#a-note-about-plagiarism",
-    "href": "module02/204-report1.html#a-note-about-plagiarism",
-    "title": "Report 1 – Instructions",
-    "section": "2 A note about plagiarism",
-    "text": "2 A note about plagiarism\nDo not plagiarise or you will face penalties. Check the academic integrity website for access to:\n\nthe policies and codes covering academic honesty and conduct at the University.\na link to the AHEM (Academic Honesty Education Module); complete the module if you haven’t already done so. You cannot submit your report if you have not completed this module.\nIf you are still unsure about how to avoid plagiarism, check with Clare McArthur well before submitting your report.\nYour report will be checked for plagiarism using software."
-  },
-  {
-    "objectID": "module02/204-report1.html#submitting-your-individual-report",
-    "href": "module02/204-report1.html#submitting-your-individual-report",
-    "title": "Report 1 – Instructions",
-    "section": "3 Submitting your individual report",
-    "text": "3 Submitting your individual report\n\nSubmitting your anonymous report for marking:\n\nONE electronic document through Canvas. As this needs to be anonymous, do not include your name anywhere in the report.\nUse a filename of the form “Day-Time-Project-Your SID”, e.g. “WED2-4pmProj4A-Your SID”.\n\nUsing your report to help other students: so we can provide useful feedback using real examples, your report or parts of it may be used as (anonymous) examples for current and future students. If you wish to opt out of this, please make a statement to this effect on your report.\nPage limit: maximum 10 pages double-spaced, including everything (i.e. abstract, references, your statement about use of AI, and everything else).\nReferences: minimum of 10 key references from the primary scientific literature, probably a mix of key recent and older papers. They must be relevant, demonstrating that you have read about the topic comprehensively. You will use them to show how you understand what people have already done and how your work fits into and/or extends what is already known, and that you have used the references to help understand what you have found."
-  },
-  {
-    "objectID": "module02/204-report1.html#requirements-for-your-report",
-    "href": "module02/204-report1.html#requirements-for-your-report",
-    "title": "Report 1 – Instructions",
-    "section": "4 Requirements for your report",
-    "text": "4 Requirements for your report\n\nYou will be marked according to the criteria in the marking rubric for this module. Read and USE this rubric as a check-list before, during and after writing your report and before you submit it.\nUse minimum of 12 pt font and no less than 2 cm margins all around.\nYou must write all your report yourself, in your own words, on the experimental research project you have done. If you use AI, you must follow the university guidelines and you must provide a statement on its use (or if not, state that instead).\nYour report should follow the format and general content of a real scientific article. To get a feel for what we expect and how to present each part of your report, read the published literature in your subject area.\nChoose a relevant journal style and follow it (but don’t use “newsprint” columns); e.g. note that figure headings are below and table headings are above the figures/tables.\nWe expect information from the primary literature; i.e. academic peer-reviewed sources, particularly scientific journals. Avoid websites: they usually lack quality control, and they come and go. I recommend that you use:\n\nWeb of Science (and Google Scholar) as your main portal for accessing journal articles, searched using key words and\nEndNote or Mendeley for organising your references (but it is not essential). Consult the Library for short courses on how to use these if you don’t know already.\n\nIf you are uncertain about anything seek help early from the teaching staff in class."
-  },
-  {
-    "objectID": "module02/204-report1.html#clares-tips-on-writing-your-report",
-    "href": "module02/204-report1.html#clares-tips-on-writing-your-report",
-    "title": "Report 1 – Instructions",
-    "section": "5 Clare’s tips on writing your report",
-    "text": "5 Clare’s tips on writing your report\nA great reference on how to write well:\n\nMensh B, Kording K (2017) Ten simple rules for structuring papers. PLoS Comp. Biol. 13. doi: 10.1371/journal.pcbi.1005619\n\nSTART EARLY, START EARLY, START EARLY: you can start to draft your introduction as early as Week 5, once you have read the literature on the topic and have a feel for what your experiment will cover. Don’t try to make it perfect – just get some words down. You can also start to draft your Materials and Methods section once you have started your experiment and before Week 7. You should be able to draft your result section after Week 7 and then finalise your whole report, including your discussion, in Week 8 and before submitting in Week 9.\nTitle: keep it brief, relevant, informative and interesting.\n\n5.1 Abstract\n\nBrief abstract (max. 120 words), including (1) background. (providing the context for your problem/project), (2) hypotheses or aims, (3) what you did, (4) what you found, (5) what it means, hence could be five sentences.\nDo NOT include references or details of statistical results (e.g. no F or P values).\n\n\n\n5.2 Introduction\n\nWhat do we know already? Make sure it leads logically to your aim(s). Provide the context - previous studies on the subject, using published (mainly) primary scientific literature, NOT websites. Integrate information clearly and concisely without loss of original meaning, to provide a logical, well-interpreted review of existing research and other information.\nAim of the experiment and biological hypotheses (IF…) and predictions (THEN…).\nWhy is the study important and/or interesting.\nStudy system – species, location of experiment (brief).\nDefinitions of scientific terms (if needed).\n\n\n\n5.3 Materials and Methods\n\nPilot study (if needed, keep it brief).\nSet-up of experiment.\nSampling design.\nData / variables recorded and how.\nStatistical analyses used, including which are dependent/independent variable(s) (if applicable), unit of replication, actual test(s) & why they are appropriate, statistical package(s).\n\n\n\n5.4 Results\n\nWritten statements describing results (data and stats). Refer to tables and figures as needed. Do NOT simply provide the tables and figures without supporting text.\nSummary presentation of data (no raw data) as tables, figures or in text as appropriate. Use tables for large amounts of data where detail is important, use figures to illustrate patterns. Indicate sample size and errors, and note whether the latter are standard errors or standard deviations… Format consistently. Make sure decimal places reflect your real capability to measure (e.g. can you really measure a 1 kg plant to 6 decimal places?)\nResults of statistical analyses presented either in text, on figures, or in tables.\n\nImportant tips:\n\nKnow what stats matter from the output – there are lots of them!\n\nOnly some/key stats need to be included in your report\nDo not copy and paste stats output from your stats package\nDO type the key stats results up yourself and only include what matters – that way we know you know what matters\n\nCheck assumptions if any are associated with your stats analysis:\n\nIn your Methods section of your report: say what/whether you have checked, whether they were met, if not, what did you do?\nin your report DO NOT present normality plots or plots of residuals\n\nPrepare your formal plot(s) for your report\n\nYou may present the plot produced by your stats package\n\n\n\n\n5.5 Discussion\n\nMain conclusions or findings\nInterpret results – what do they mean? How do they relate to original aims?\nCompare with and discuss in context of previously published work.\nEvery single study has some limitations to its approach or methods. This does NOT mean it is necessarily flawed. Take a positive approach to your research, given the usual constraints of ANY study, and if you do want to mention/discuss these constraints, do not reduce your discussion to a lengthy apology.\nFuture studies – what would you do next to extend our understanding of the subject and/or improve what you did? Keep this brief.\n\n\n\n5.6 General\n\nWrite in PLAIN English:\n\nBe succinct and avoid trying to sound “scientific”.\nread it out aloud, if it sounds pompous it is, and it should NOT be.\n\nCorrect presentation (format/length).\nReferences used and cited correctly. You are expected to use at least 10 relevant references from the primary literature."
-  },
-  {
-    "objectID": "module02/204-report1.html#more-tips-on-writing-your-report",
-    "href": "module02/204-report1.html#more-tips-on-writing-your-report",
-    "title": "Report 1 – Instructions",
-    "section": "6 More tips on writing your report",
-    "text": "6 More tips on writing your report\nThe following is a summary written by Clare’s Lab Group of PhD and Honours students after critically discussing two papers — not for content — but for how they were written.\n\n6.1 Structuring Research Papers: by Clare’s Lab Group\n“Rules” based on Mensh B, Kording K (2017) Ten simple rules for structuring papers. PLoS Comput Biol 13(9): e1005619. https://doi.org/10.1371/journal.pcbi.1005619\n\n6.1.1 Papers discussed:\n\nCline, B. B. and Hunter, M. L. (2014), Different open‐canopy vegetation types affect matrix permeability for a dispersing forest amphibian. J Appl Ecol, 51: 319-329. doi:10.1111/1365-2664.12197\n\n\nPalmer, M. S., Fieberg, J. , Swanson, A. , Kosmala, M. and Packer, C. (2017), A ‘dynamic’ landscape of fear: prey responses to spatiotemporal variations in predation risk across the lunar cycle. Ecol Lett, 20: 1364-1373. doi:10.1111/ele.12832\n\n\n\n\n6.2 General notes\n\nDo write for your reader, do not write for yourself.\nIf you read the first sentence of every paragraph, it should tell a story.\nThe order of your ideas in each section should be the same; i.e. consistent order in intro, MM, R and probably D of your aims, methods for each aim (provided that works), results and discussion of your results associated with each aim.\nSubheadings can make sections easier to read and understand the flow of ideas.\nAvoid zigzagging ideas, i.e. you should never need to say “as mentioned above”.\nUse consistent wording – DO NOT use a variety of words to mean the same thing because it is confusing for readers. They will not know if you are referring to one thing or several. DO: pick one name for a variable and stick to it.\nTake the reader by the hand. DO NOT assume they know what you know. DO lead them through your work and explain things as you go along. Justify your decisions. Think like a reviewer: what will they want to know? Pre-empt it by being transparent, explaining what you decided to do and why.\n\n\n6.2.1 Introduction\n\nThere will generally be more references in the intro than the discussion. The focus of the intro is on: what do we know already?\nReferences are used to provide background of the research area – do not just list references on a topic. Instead, use them to summarise what we know and understand as a result of these studies. Make it clear what we know from (a) empirical evidence (with examples, i.e. do we know it for lots of individuals/species/contexts/ecosystems or whatever? which? Just one? which?) OR (b) what we think we know (conceptual hypotheses).\n\n\n\n6.2.2 Suggested Paragraph 1:\n\nIntroduce the broad topic.\nDescribe what research has been done on this topic.\n\n\n\n6.2.3 Suggested Paragraph 2:\n\nStart to narrow down what area in this topic your paper will be covering\n\nIntroduce gaps in knowledge.\nPossibly describe issues with previous studies (that your paper will address).\n\nThis information can show the importance of your paper.\n\n\n\n6.2.4 Suggested Paragraph 3 to 5:\n\nSpecifically describe what your paper will investigate.\nState your aims and hypotheses/predictions. These should follow and funnel down from your background. If you put your hand over your aims, you should be able to guess them from the background you provide above.\nBriefly describe how you investigated the topic.\nState any predictions with information to backup these predictions.\n\n\n\n6.2.5 Discussion\n\nThe focus is now on what you found, what it means and so how you have advanced our state of knowledge & understanding as a result of what you have done.\nTherefore: generally fewer references in the discussion than the introduction.\nReferences should be used to support your idea or relate your conclusions/results to previous studies.\nThe following paragraph order makes sense but you can obviously increase or decrease the number of paragraphs depending on the context and size of your study.\n\n\n\n6.2.6 Suggested Paragraph 1:\n\nState any broad results that you found.\nProvide evidence from your results that enabled you to come to that conclusion.\nCompare the result to any predictions you made or previous studies.\n\n\n\n6.2.7 Suggested Paragraph 2 to 4:\n\nState more detailed results (e.g. species specific results if dealing with multiple species).\nProvide evidence from your results that enabled you to come to that conclusion.\nCompare the result to any predictions made or previous studies.\n\n\n\n6.2.8 Suggested Paragraph 5:\n\nLimitations of your study\n\nNo study can answer everything and every study is limited in some way in what is achieves! Don’t worry! That’s life!\nDon’t dwell on this or go too much in depth – especially do not be apologetic.\nBe positive: just outline the boundaries of the conclusions that can be made with your results.\n\nSuggested direction of future studies i.e. what could be done next to move forward in our understanding and/or resolving any unanswered questions given what you have now discovered – again keep this brief.\n\n\n\n6.2.9 Suggested Paragraph 6:\n\nWhat are the implications of your study for your field of research\nDescribe what this information can affect or be used for (e.g. management decisions).\n\n\n\n6.2.10 Suggested Paragraph 7:\n\nYou do not need a concluding paragraph – but if you do, it is not just a summary.\nIt should be more big picture stuff but take care: it should not state something that could have been said whether or not you had done your study. It must rest on your study."
-  },
-  {
-    "objectID": "module01/105-images.html",
-    "href": "module01/105-images.html",
-    "title": "Intertidal sites",
-    "section": "",
-    "text": "This page contains images of intertidal rocky shore sites along the Great Southern Reef. These images are provided for the purpose of the lab activities in Weeks 2 (and maybe 3)."
-  },
-  {
-    "objectID": "module01/105-images.html#two-sites",
-    "href": "module01/105-images.html#two-sites",
-    "title": "Intertidal sites",
-    "section": "Two sites",
-    "text": "Two sites\nYou will be working with images from two sites: Site A and Site B. Each site has 20 images, which are randomly selected from a larger set of images.\nThe advantage of sampling two sites is that you can assess whether your observations from one site can be generalised to another. This is a common approach in ecology, where we often sample multiple sites to understand patterns at a larger scale, and addresses representative sampling and pseudoreplication.\n\n\n\n\n\n\nImportant\n\n\n\nYou now get to decide how the story goes:\n\nAre you sampling both sites as one?\nAre you sampling just one of the two sites?\nAre you sampling each site separately, but comparing them to each other?\n\nDepending on what you decide, your model may need to be tweaked, and your observations may need to be reinterpreted or improved."
-  },
-  {
-    "objectID": "module01/105-images.html#assumptions-and-prior-knowledge",
-    "href": "module01/105-images.html#assumptions-and-prior-knowledge",
-    "title": "Intertidal sites",
-    "section": "Assumptions and prior knowledge",
-    "text": "Assumptions and prior knowledge\n\nImages are randomly selected and assumed to be independent.\nImages are assumed to be representative of their respective site(s).\n\nThe next step is to define your sampling strategy, and decide how you will use the images to answer your question."
-  },
-  {
-    "objectID": "module01/105-images.html#sites",
-    "href": "module01/105-images.html#sites",
-    "title": "Intertidal sites",
-    "section": "Sites",
-    "text": "Sites\nNote: images are only available in the HTML version of this document. If you choose to (or if the images below do not load), you can also access the images by downloading them as a zipped archive here.\n\nSite 1Site 2"
-  },
-  {
-    "objectID": "module01/101-intro.html",
-    "href": "module01/101-intro.html",
-    "title": "Introduction",
-    "section": "",
-    "text": "Science is about asking the right questions in the right way so we can draw meaningful conclusions from the data we collect. This is not as simple as it seems, but it is a key skill in scientific enquiry. We need to be able to ask questions in a quantitative way to distinguish between different explanations for the things we observe. Before we start using t-tests, regression, or ANOVA; before we perform mixed modelling or moltivariate analyses; before we use the newest tools for data analysis, we must first learn to ask the right questions. So let’s go back to basics.\nIn this module:\n\nLectures (Weeks 1 –5) will cover the fundamental principles of scientific enquiry, including how to ask the right questions, how to design a study, and how to interpret results. We will also introduce to you the linear modelling framework, which is a powerful tool for understanding the relationships between variables in your data.\nPracticals (Weeks 1–3) aim to help you build the essential skills for scientific enquiry. We will cover experimental design, model formulation, and sampling design. Each week begins with a short 30-minute workshop to introduce the main ideas and techniques. You will then complete the practical work."
-  },
-  {
-    "objectID": "lectures.html",
-    "href": "lectures.html",
-    "title": "Lectures",
-    "section": "",
-    "text": "Browse the lecture hubs by week, or return to Weekly content for practicals and other resources."
-  },
-  {
-    "objectID": "lectures.html#module-1-fundamentals",
-    "href": "lectures.html#module-1-fundamentals",
-    "title": "Lectures",
-    "section": "Module 1: Fundamentals",
-    "text": "Module 1: Fundamentals\n\nWeek 1 — Introduction and fundamentals\nWeek 2 — Sampling and modelling\nWeek 3 — Assumptions and comparisons\nWeek 4 — Multiple predictors and transformations\nWeek 5 — Fixed and random effects"
-  },
-  {
-    "objectID": "lectures.html#module-2-univariate-experiments",
-    "href": "lectures.html#module-2-univariate-experiments",
-    "title": "Lectures",
-    "section": "Module 2: Univariate experiments",
-    "text": "Module 2: Univariate experiments\n\nWeek 6 — Refresher and categorical variables\nWeek 7 — Relationships and binary responses\nWeek 8 — Model selection and revision"
-  },
-  {
-    "objectID": "lectures.html#module-3-multivariate-data",
-    "href": "lectures.html#module-3-multivariate-data",
-    "title": "Lectures",
-    "section": "Module 3: Multivariate data",
-    "text": "Module 3: Multivariate data\n\nWeek 9 — Multivariate analysis and PCA\nWeek 10 — Clustering and multidimensional scaling\nWeek 11 — MANOVA and multivariate revision\nWeek 12 — Rarefaction and Bayesian analysis\nWeek 13 — Exam revision"
-  },
-  {
-    "objectID": "help.html",
-    "href": "help.html",
-    "title": "Contact, Help & Support",
-    "section": "",
-    "text": "You can, at any time, contact Januar via email. Check the Canvas site for his contact details."
-  },
-  {
-    "objectID": "help.html#consultation",
-    "href": "help.html#consultation",
-    "title": "Contact, Help & Support",
-    "section": "Consultation",
-    "text": "Consultation\nBEDA has a dedicated consultation hour at least once every week, where you can ask questions about the unit, your projects, or any other related topics. All drop-in sessions are run by Januar. This is conducted via Zoom and the link is available on Canvas. Please check Ed for the full schedule of drop-in sessions.\n\nWhat is a drop-in session?\nIt is an informal meeting, where nothing is recorded and the general atmosphere is relaxed. There are no expectations for you to prepare anything in advance. Januar can help you with any questions you have about BEDA. You can also use this time to discuss your progress, ask for feedback, or seek advice on specific challenges you are facing."
-  },
-  {
-    "objectID": "help.html#ways-to-get-more-help",
-    "href": "help.html#ways-to-get-more-help",
-    "title": "Contact, Help & Support",
-    "section": "Ways to get more help",
-    "text": "Ways to get more help\n\nPracticals\nThere is no better avenue for getting help than attending the practicals. Your demonstrators are more than happy to help you with any questions you have. Demonstrators can discuss your work with you, help you troubleshoot problems, and provide feedback on your projects. They are also academics and students themselves, so don’t hesitate to ask them about their own research or experiences in their disciplines!\n\n\nEd discussions\nIn many cases, Ed is the best place to ask for help. Posts on Ed are visible to all students, so you can benefit from the answers to questions that others have asked. Staff also monitor Ed regularly and you can expect responses within 24 hours on weekdays.\n\n\nEmail\nIf you have a specific question that you would like to ask via email, please do so. Make sure to include the unit code (BIOL2022) in the subject line, e.g. “BIOL2022: Question about Assignment 1”, so that Januar can easily identify your email (he teaches many units related to statistics)."
-  },
-  {
-    "objectID": "help.html#feedback",
-    "href": "help.html#feedback",
-    "title": "Contact, Help & Support",
-    "section": "Feedback",
-    "text": "Feedback\nIf you need more feedback on your work, you can ask for it during the drop-in sessions. Januar will happily discuss your work in more detail. Many students find it helpful to bring their work to the drop-in sessions, so they can get specific feedback on their projects or assignments. This can be done before the submission deadline or after you have received your marks and feedback."
-  },
-  {
-    "objectID": "assessments/assessments.html",
-    "href": "assessments/assessments.html",
-    "title": "Assessments",
-    "section": "",
-    "text": "Due: 29 August 2025 This is a short quiz, designed to give you early feedback on your prior understanding of statistics. It will help you identify areas where you may need to focus your study efforts.\n\nDue in: \n\nDetails Submission link"
-  },
-  {
-    "objectID": "assessments/assessments.html#early-feedback-task-eft---5",
-    "href": "assessments/assessments.html#early-feedback-task-eft---5",
-    "title": "Assessments",
-    "section": "",
-    "text": "Due: 29 August 2025 This is a short quiz, designed to give you early feedback on your prior understanding of statistics. It will help you identify areas where you may need to focus your study efforts.\n\nDue in: \n\nDetails Submission link"
-  },
-  {
-    "objectID": "assessments/assessments.html#evaluation-quiz-module-1---10",
-    "href": "assessments/assessments.html#evaluation-quiz-module-1---10",
-    "title": "Assessments",
-    "section": " Evaluation Quiz (Module 1) - 10%",
-    "text": "Evaluation Quiz (Module 1) - 10%\nDue: 5 September 2025 This is a quiz that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.\n\nDue in: \n\nDetails Submission link"
-  },
-  {
-    "objectID": "assessments/assessments.html#report-1-module-2---25",
-    "href": "assessments/assessments.html#report-1-module-2---25",
-    "title": "Assessments",
-    "section": " Report 1 (Module 2) - 25%",
-    "text": "Report 1 (Module 2) - 25%\nDue: 7 October 2025 You will use what you have learned so far to design and analyse an experiment based on a project of your choice. The experiments will be completed in groups, but the reports are individually written and assessed. You will have 6 weeks to complete it.\nRole of Practicals:\nPracticals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans. Demonstrators act as advisors, similar to how support works in a research group, and you are welcome to interact with them and your peers for advice, just as you would with postdocs or supervisors. If you are organised, you can also request feedback on your report drafts during practicals to help improve your work.\n\nExplore the Report 1 project options\nRead the Report 1 instructions\nOpen the Report 1 marking rubric\n\n\nReport due: \n\nDetails Data submission Report submission"
-  },
-  {
-    "objectID": "assessments/assessments.html#report-2-module-3---20",
-    "href": "assessments/assessments.html#report-2-module-3---20",
-    "title": "Assessments",
-    "section": " Report 2 (Module 3) - 20%",
-    "text": "Report 2 (Module 3) - 20%\nDue: 21-24 October 2025 (dataset submission) | 7 November 2025 (report) Report 2 is similar to Report 1, but you will need to focus on a project with a multivariate context. Note that there is a 5% group work component to this report that will be assessed via dataset submission, and the report is individually written and assessed (15%). You will have 5 weeks to complete the report.\nRole of Practicals:\nPracticals are a mix of structured and unstructured sessions. Each practical begins with a brief workshop to practice a specific analysis technique, followed by time for you to work on your project. Some practicals are dedicated feedback sessions, for example we will prioritise giving feedback on your experimental design and analysis plans in Week 10. As usual, you are welcome to interact with demonstrators and your peers for advice and feedback.\n\nDataset submission Due at 10am on the day of your laboratory: Tue groups:  Wed groups:  Fri groups:  Report due: \n\nDetails Data submission Report submission"
-  },
-  {
-    "objectID": "assessments/assessment-report-1.html",
-    "href": "assessments/assessment-report-1.html",
-    "title": "Report 01",
-    "section": "",
-    "text": "Most of the instructions for this assessment are presented in Report 1 - Instructions. Please read those instructions carefully before starting this report. There are also some helpful resources linked in the Resources for Practicals page.\nBelow is just a brief summary of the requirements. You must still read the instructions above in full.\n\nYou are collecting your own data for this report. The topic is of your choosing based on the list provided in the Projects page.\nThe report must follow the structure of a scientific paper, including sections such as Title, Abstract, Introduction, Materials and Methods, Results, Discussion, and References.\nSubmit your report anonymously via Canvas by 7 October 2025, using the filename format “Day-Time-Project-Your SID” (e.g., “WED2-4pmProj4A-123456789”).\nPage limit: maximum 10 pages double-spaced, including abstract, references, figures/tables, and any AI usage statement.\nInclude a minimum of 10 relevant references from primary scientific literature (peer-reviewed journals).\nUse minimum 12 pt font and no less than 2 cm margins all around.\nWrite the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).\nFollow academic integrity guidelines: avoid plagiarism, complete the AHEM module, and be prepared for plagiarism checking.\nUse the marking rubric as a checklist to ensure all criteria are met before submission.\nLate penalty: 5% per 24 hours or part thereof after the deadline; length penalty: 5% per page or part thereof over the limit.\n\nBack to assessments"
-  },
-  {
-    "objectID": "assessments/assessment-evaluation-quiz.html",
-    "href": "assessments/assessment-evaluation-quiz.html",
-    "title": "Evaluation Quiz (Module 1)",
-    "section": "",
-    "text": "This quiz is an individual task worth 10% of your final grade.\nLocation: You can do this quiz online. This means that you are responsible for picking a time and place that maximises your ability to complete the quiz without interruption, which includes having a stable internet connection.\nTime limit: The quiz has a time limit of 40 minutes. In reality it should take you much less time than that to complete the quiz. The additional time is for unforeseen circumstances.\nResources: The quiz is open book. This means you can use any resources you have available to you, including the internet, your notes, and the course materials. The reason for this is that as an evaluation tool, we hope that you use it as a learning opportunity. There is no point in cheating as you will only be cheating yourself out of evaluating your own understanding of the material. Most of you should do well if you have been keeping up with the content anyway.\nAttempts: you will have two attempts to complete the quiz. The highest score will be recorded. No extra chances will be given for any reason outside of technical issues. A technical issue is defined as a problem with the quiz itself. Internet connection issues will not be good reasons for extra attempts.\nDue: You have about 7 days to complete both attempts of the quiz once it is opened. Note that this is approximate.\nThe quiz consists of multiple choice (one correct answer) and multiple answer (more than one correct answer) questions.\n\nBack to assessments"
-  },
-  {
-    "objectID": "assessments/assessment-eft.html",
-    "href": "assessments/assessment-eft.html",
-    "title": "Early Feedback Task",
-    "section": "",
-    "text": "In this assessment you will complete a quiz and write a short reflection (about 100 words) on how things are going (so far). Tell us what you’ve learned, any challenges you’re facing, and what you’d like to improve. The goal is to help you reflect on whether you are actually prepared for BEDA. We can also use the information you provide to better support you moving forward.\nThink of it as a check-in, not a test. The questions are designed to help you identify areas where you may need to focus your study efforts.\n\nWeighting: 5%\nDue Date: Friday, Week 4, 11:59 PM\n\nWith EFTs, we may reach out to you to provide additional support or resources based on your responses.\nBack to assessments"
-  },
-  {
-    "objectID": "assessments/assessment-eft.html#overview",
-    "href": "assessments/assessment-eft.html#overview",
-    "title": "Early Feedback Task",
-    "section": "",
-    "text": "In this assessment you will complete a quiz and write a short reflection (about 100 words) on how things are going (so far). Tell us what you’ve learned, any challenges you’re facing, and what you’d like to improve. The goal is to help you reflect on whether you are actually prepared for BEDA. We can also use the information you provide to better support you moving forward.\nThink of it as a check-in, not a test. The questions are designed to help you identify areas where you may need to focus your study efforts.\n\nWeighting: 5%\nDue Date: Friday, Week 4, 11:59 PM\n\nWith EFTs, we may reach out to you to provide additional support or resources based on your responses.\nBack to assessments"
-  },
-  {
-    "objectID": "assessments/assessment-final-exam.html",
-    "href": "assessments/assessment-final-exam.html",
-    "title": "Final Exam",
-    "section": "",
-    "text": "Brief Description: The final exam is a hurdle assessment. Details on the exam format and content will be provided closer to the exam date.\nWeighting: 40%\nDate & Time: [Insert Specific Date and Time - This will be centrally timetabled by the University. Add placeholder: e.g., Refer to the official University exam timetable.]\nDuration: [Specify exam duration, e.g., 2 hours + 10 minutes reading time]\nHurdle Requirement: This is a hurdle assessment. You must achieve a minimum mark of [Specify minimum percentage, e.g., 45% or 50%] on the final exam to pass the unit, regardless of your overall unit mark.\nLearning Outcomes Addressed:\n\n[List all major Learning Outcomes covered by the exam, e.g., LO1, LO2, LO3, LO4, LO5]\n[Add more as needed]"
-  },
-  {
-    "objectID": "assessments/assessment-final-exam.html#overview",
-    "href": "assessments/assessment-final-exam.html#overview",
-    "title": "Final Exam",
-    "section": "",
-    "text": "Brief Description: The final exam is a hurdle assessment. Details on the exam format and content will be provided closer to the exam date.\nWeighting: 40%\nDate & Time: [Insert Specific Date and Time - This will be centrally timetabled by the University. Add placeholder: e.g., Refer to the official University exam timetable.]\nDuration: [Specify exam duration, e.g., 2 hours + 10 minutes reading time]\nHurdle Requirement: This is a hurdle assessment. You must achieve a minimum mark of [Specify minimum percentage, e.g., 45% or 50%] on the final exam to pass the unit, regardless of your overall unit mark.\nLearning Outcomes Addressed:\n\n[List all major Learning Outcomes covered by the exam, e.g., LO1, LO2, LO3, LO4, LO5]\n[Add more as needed]"
-  },
-  {
-    "objectID": "assessments/assessment-final-exam.html#task-details-instructions",
-    "href": "assessments/assessment-final-exam.html#task-details-instructions",
-    "title": "Final Exam",
-    "section": "2. Task Details & Instructions",
-    "text": "2. Task Details & Instructions\n\nExam Format: Details will be provided closer to the exam date. [Placeholder: e.g., The exam will consist of [e.g., multiple-choice questions, short answer questions, and problem-solving tasks]. Further details on the structure, number of questions in each section, and specific topics covered will be announced in [e.g., Week 12/via a Canvas announcement].]\nContent Covered: [Specify scope, e.g., The exam will cover all content from Modules 1, 2, and 3 (Lectures, Practicals, Readings).]\nPermitted Materials: [Specify, e.g., This is a closed-book exam. No materials are permitted other than those provided by the exam supervisors OR This is an open-book exam. Specify allowed materials OR Non-programmable calculators are permitted.]\nLocation/Mode: [Specify, e.g., On-campus, invigilated exam OR Online, proctored exam via [Platform].]"
-  },
-  {
-    "objectID": "assessments/assessment-final-exam.html#submission-guidelines",
-    "href": "assessments/assessment-final-exam.html#submission-guidelines",
-    "title": "Final Exam",
-    "section": "3. Submission Guidelines",
-    "text": "3. Submission Guidelines\n\nMethod: [e.g., Answers written in provided exam booklets OR Answers submitted via the online exam platform.]\n[Add any other relevant submission details based on exam mode.]"
-  },
-  {
-    "objectID": "assessments/assessment-final-exam.html#marking-criteria-rubric",
-    "href": "assessments/assessment-final-exam.html#marking-criteria-rubric",
-    "title": "Final Exam",
-    "section": "4. Marking Criteria & Rubric",
-    "text": "4. Marking Criteria & Rubric\n\nMarking Summary: This exam is worth 40% of your final grade.\nHurdle Condition: A minimum mark of [Specify minimum percentage again, e.g., 45% or 50%] on this exam is required to pass the unit.\nDetailed Rubric/Marking Scheme: Details will be provided closer to the exam date. [Placeholder: e.g., Marks for each section/question will be indicated on the exam paper. General marking criteria for different question types (e.g., short answer, problem-solving) will be discussed in the exam briefing session/document.]"
-  },
-  {
-    "objectID": "assessments/assessment-final-exam.html#resources-support",
-    "href": "assessments/assessment-final-exam.html#resources-support",
-    "title": "Final Exam",
-    "section": "5. Resources & Support",
-    "text": "5. Resources & Support\n\nRevision Materials:\n\nAll lecture notes, practical materials, and readings from the unit.\n[Link to any past papers or sample questions if provided]\n[Link to study guides or revision checklists if provided]\n\nSupport Channels:\n\n[Specify support, e.g., Attend pre-exam consultation sessions (details to be announced).]\n[e.g., Use the ‘Final Exam Q&A’ discussion forum on Canvas.]"
-  },
-  {
-    "objectID": "assessments/assessment-final-exam.html#policies",
-    "href": "assessments/assessment-final-exam.html#policies",
-    "title": "Final Exam",
-    "section": "6. Policies",
-    "text": "6. Policies\n\nExam Rules & Conduct: [Refer to University exam policies, e.g., “All students must adhere to the University’s examination rules and policies: [Link to University Exam Policy].”]\nSpecial Consideration: [Explain the process for exam-related special consideration, e.g., “If you are unable to attend the exam or your performance is significantly affected due to illness or misadventure, you must apply for Special Consideration through the official University channels.”]\nAcademic Integrity: [Include a standard reminder, e.g., “Academic integrity is expected in all examinations. Any form of cheating will be dealt with according to the University’s Academic Integrity Policy.”]"
-  },
-  {
-    "objectID": "assessments/assessment-final-exam.html#estimated-time-commitment",
-    "href": "assessments/assessment-final-exam.html#estimated-time-commitment",
-    "title": "Final Exam",
-    "section": "7. Estimated Time Commitment",
-    "text": "7. Estimated Time Commitment\n\n[Provide a guideline for revision, e.g., “Consistent revision throughout the semester is recommended. Intensive revision should begin at least [e.g., 2-3 weeks] before the exam period.”]"
-  },
-  {
-    "objectID": "assessments/assessment-final-exam.html#feedback",
-    "href": "assessments/assessment-final-exam.html#feedback",
-    "title": "Final Exam",
-    "section": "8. Feedback",
-    "text": "8. Feedback\n\nHow and When: [Explain, e.g., “Final exam marks will be released with your overall unit grade as per the University’s official results release schedule. Individual exam scripts are generally not returned, but opportunities for viewing scripts may be available under specific circumstances (refer to University policy).”]"
-  },
-  {
-    "objectID": "assessments/assessment-report-2.html",
-    "href": "assessments/assessment-report-2.html",
-    "title": "Report 2",
-    "section": "",
-    "text": "This assessment involves a group data submission in addition to the individual report.\n\nSubmit one Excel file containing your group’s:\n\nSpecies (assemblage) data\nHabitat data\n\nOnly one group member needs to upload the file on behalf of the group.\nDue: By 10:00am on the day of your Week 11 practical session\nWorth: 5% of your total unit mark\n\nMake sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi."
-  },
-  {
-    "objectID": "assessments/assessment-report-2.html#group-data-submission",
-    "href": "assessments/assessment-report-2.html#group-data-submission",
-    "title": "Report 2",
-    "section": "",
-    "text": "This assessment involves a group data submission in addition to the individual report.\n\nSubmit one Excel file containing your group’s:\n\nSpecies (assemblage) data\nHabitat data\n\nOnly one group member needs to upload the file on behalf of the group.\nDue: By 10:00am on the day of your Week 11 practical session\nWorth: 5% of your total unit mark\n\nMake sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi."
-  },
-  {
-    "objectID": "assessments/assessment-report-2.html#individual-report",
-    "href": "assessments/assessment-report-2.html#individual-report",
-    "title": "Report 2",
-    "section": "Individual Report",
-    "text": "Individual Report\nInstructions for this assessment are in Week 9 Practical. Please read the instructions carefully.\nBelow is a brief summary of the requirements. You must still read the full instructions above in full.\n\nThis is an individual report based on your group’s multivariate study, focusing primarily on the Methods and Results sections.\nThe report must follow the format of a short scientific article suitable for submission to Austral Ecology, including sections such as Title, Abstract (if applicable), Introduction, Materials and Methods, Results, Discussion (brief), and References.\nSubmit your report anonymously via Canvas by 11:59pm at the end of Week 13, using an appropriate filename.\nPage limit: maximum 4 single-spaced pages (not including cover sheet, title/abstract page, references, tables, or figures).\nInclude a brief Introduction with clearly stated hypotheses, a detailed Methods section describing data collection and analyses, and a well-presented Results section with tables, figures, and descriptions.\nEmphasis is on clear explanation of analytical methods, accurate description of data, and concise presentation of results.\nWrite the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).\nFollow academic integrity guidelines: avoid plagiarism, and be prepared for plagiarism checking.\nUse the marking rubric as a checklist to ensure all criteria are met before submission.\nConsult the provided references and resources for guidance on analyses and reporting."
-  },
-  {
-    "objectID": "assessments/assessment-report-2.html#marking-scheme",
-    "href": "assessments/assessment-report-2.html#marking-scheme",
-    "title": "Report 2",
-    "section": "Marking scheme",
-    "text": "Marking scheme\n\nIntroduction (use your imagination) – 10 marks\n\nAims of the experiment and hypotheses being tested\nWhy is the study important and/or interesting\nStudy system – species, location of experiment (brief)\nWelcome to use imagination with references and background, but will not be penalised if you are unable to provide real examples.\n\n\n\nMaterials and Methods – 30 marks\n\nSet-up of experiment/survey\nData / variables recorded and how\nSampling design and justifications for analyses\nStatistical analyses used, including which are dependent/independent variable(s) (if applicable), unit of replication, actual test(s) and statistical package(s)\n\n\n\nResults – 40 marks\n\nStatement of results (data and stats). Refer to tables and figures as needed.\nSummary presentation of data (no raw data) as tables, figures or in text as appropriate. Use tables for large amounts of data where detail is important, use figures to illustrate patterns. Indicate sample size and errors, and note whether the latter are standard errors or standard deviations. Format consistently.\nEvidence of thought in choices of analyses.\nResults of statistical analyses presented either in text, on figures, or in tables.\nDo not screenshot figures of tables\n\n\n\nDiscussion – 10 marks\n\nMain conclusions or findings\nInterpretation of results – what do they mean? How do they relate to original aims?\nLimitations of approach or methods\nFuture studies – what would you do next to improve what you did and/or extend the understanding of the subject?\n\n\n\nGeneral\n\nBrief Abstract at start of report\nWritten in plain English\nPresentation (format/length)\nNo screenshotting of figures and tables\nReferences if used and cited correctly\n\nBack to assessments"
-  },
-  {
-    "objectID": "cheatsheets.html",
-    "href": "cheatsheets.html",
-    "title": "Cheatsheets",
-    "section": "",
-    "text": "All cheatsheets are open source and available on the SOLES GitHub repository."
-  },
-  {
-    "objectID": "cheatsheets.html#rstudior",
-    "href": "cheatsheets.html#rstudior",
-    "title": "Cheatsheets",
-    "section": "RStudio/R",
-    "text": "RStudio/R\n\nimporting data into R - data\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nPublication-ready(-ish) ANOVA/regression tables in R - vis\nmodelling a numerical response against:\n\nthe intercept only (one-sample or paired t-test) - stats\na categorical predictor with two groups (two-sample t-test) - stats\none or more categorical predictors (ANOVA) - stats\none or more numerical predictors (linear regression) - stats"
-  },
-  {
-    "objectID": "cheatsheets.html#jamovi",
-    "href": "cheatsheets.html#jamovi",
-    "title": "Cheatsheets",
-    "section": "Jamovi",
-    "text": "Jamovi\n\nUsing flexplot to create common plots in Jamovi - vis\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nmodelling a numerical response against:\n\none or more categorical predictors (t-tests & ANOVA) - stats\none or more numerical predictors (linear regression) - stats\n\nPrincipal Component Analysis (PCA) - stats"
-  },
-  {
-    "objectID": "cheatsheets.html#general",
-    "href": "cheatsheets.html#general",
-    "title": "Cheatsheets",
-    "section": "General",
-    "text": "General\n\n⭐ New Univariate analysis flowchart (by Gabby Jarvis)\n⭐ New Multivariate analysis cheatsheets (6 pages, 7 topics, by Gabby Jarvis)\npublication-ready ANOVA tables - vis\npublication-ready regression tables - vis\nhow to report statistics in text (planned) - stats\nR and GitHub Copilot (planned) - gen_ai"
-  },
-  {
-    "objectID": "cheatsheets.html#spss",
-    "href": "cheatsheets.html#spss",
-    "title": "Cheatsheets",
-    "section": "SPSS",
-    "text": "SPSS\n\nboxplots - vis\nscatterplots - vis\nusing the chart builder - vis"
-  },
-  {
-    "objectID": "cheatsheets.html#primer",
-    "href": "cheatsheets.html#primer",
-    "title": "Cheatsheets",
-    "section": "PRIMER",
-    "text": "PRIMER\n\n[Multivariate Analysis Cheatsheet (nMDS, PERMANOVA, SIMPER, ANOSIM)]"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "BEDA Handbook",
-    "section": "",
-    "text": "Welcome to the BEDA handbook. This book contains (most) lectures, tutorials and practical content for BIOL2022. Any resource that is published here is available under the CC BY 4.0 license. If resources link back to Canvas, they are not covered by this license. Please do not share Canvas materials outside of the course.\n\nLoading semester status…\n\n\n\n\n\n\nWeek\nLectures\nPractical\nNotes\n\n\n\n\n1\nIntroduction and fundamentals Welcome to BEDA!\nWeek 1 practical session, including Workshop 1\n\n\n Resource: Am I ready for BEDA?\n Assessment (0%): Quiz 1\n\n\n\n\n2\nSampling and the linear model Randomisation and why we teach the linear model first\nWeek 2 practical session\n\n\n Resource: (See how) common statistical tests are linear models ↗\n Assessment (0%): Quiz 2\n\n\n\n\n3\nChoosing the right model(s) The easy way to validate model assumptions.\nWeek 3 practical session\n\n\n Assessment (0%): Quiz 3\n Assessment (5%): Early Feedback Task — opens Friday at 10 am\n\n\n\n\n4\nMultiple predictors and transformations Expanding models and using transformations to increase model fit.\nWeek 4 practical session\n\n\n Assessment (10%): Early Feedback Task: Evaluation Quiz\n\n\n\n\n5\nControls and revision How to control your experiments with data that you collect.\nWeek 5 practical session\n\n\n Assessment (25%): Work on your experiments for Report 1\n Assessment (25%): Review the Report 1 overview and requirements\n\n\n\n\n6\nRefresher and categorical variables A refresher on designing experiments with categorical variables.\n—\n\n\n Assessment (25%): Review the Report 1 project and revision timeline\n Notice: Project and revision week\n\n\n\n\n7\nRelationships and binary responses How to design experiments with continuous or binary responses.\nWeek 7 practical session\n—\n\n\n8\nModel selection and revision Which model should we use? Some ideas.\nWeek 8 practical session\n—\n\n\nBreak\nMid-semester break — 28 September–2 October 2026\n\n\n\n\n9\nMultivariate analysis and PCA Introducing multivariate analysis, principal component analysis and factor analysis.\nWeek 9 practical session\n\n\n Notice: Labour Day — Monday 5 October\n Assessment (25%): Review Report 1 requirements and due information\n\n\n\n\n10\nClustering and multidimensional scaling Using clustering and nMDS to identify and test multivariate patterns.\nWeek 10 practical session\n\n\n Notice: Present your experimental design for feedback\n Assessment (20%): Review the Report 2 overview and requirements\n\n\n\n\n11\nMANOVA and multivariate revision The MANOVA way of designing and interpreting experiments.\nWeek 11 practical session\n\n\n Assessment (5%): Submit the group dataset\n Assessment (15%): Review the Report 2 overview and due information\n\n\n\n\n12\nRarefaction and Bayesian analysis The lectures cover rarefaction for diversity comparisons and Bayesian statistical inference.\nWeek 12 practical session\n—\n\n\n13\nExam revision You will review the course's experimental-design and modelling concepts for the final exam.\nPractical session\n—"
-  },
-  {
-    "objectID": "module01/106-species-id.html",
-    "href": "module01/106-species-id.html",
-    "title": "Species ID guide",
-    "section": "",
-    "text": "Use this page to identify the species that you sample. Note that all images are copyrighted. We have provided the source of each image so that you can find more information about the species, and to give credit to the original authors.\nNote: images are only available in the HTML version of this document."
-  },
-  {
-    "objectID": "module01/106-species-id.html#id-guide",
-    "href": "module01/106-species-id.html#id-guide",
-    "title": "Species ID guide",
-    "section": "1 Identification guide",
-    "text": "1 Identification guide"
-  },
-  {
-    "objectID": "module01/106-species-id.html#common-snails",
-    "href": "module01/106-species-id.html#common-snails",
-    "title": "Species ID guide",
-    "section": "2 Common snails",
-    "text": "2 Common snails\n\nBembicium nanum\n     \nImages from Grove, S.J. (2018).\n\n\nAustrocochlea porcata\n     \nImages from Grove, S.J. (2018).\n\n\nAustrococchlea concamerata\n  \nImages from Iredale, T. & McMichael, D. F. (1962) and Australian Museum.\n\n\nNerita atramentosa\n  \nImages from Grove, S.J. (2018).\n\n\nAustrolittorina unifasciata\n   \nImages from Grove, S.J. (2018)."
-  },
-  {
-    "objectID": "module01/106-species-id.html#whelks",
-    "href": "module01/106-species-id.html#whelks",
-    "title": "Species ID guide",
-    "section": "3 Whelks",
-    "text": "3 Whelks\n\nTenguella marginalba\n  \nImages by Donald Hobern, Femorale.com, Joop Trausel and Frans Slieker."
-  },
-  {
-    "objectID": "module01/106-species-id.html#limpets",
-    "href": "module01/106-species-id.html#limpets",
-    "title": "Species ID guide",
-    "section": "4 Limpets",
-    "text": "4 Limpets\n\nCellana tramoserica\n     \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nMontfortula rugosa\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nPatelloida mimula\n  \nImages from Sea Shells of New South Wales and WoRMS Editorial Board (2023).\n\n\nPatelloida mufria\n \nImages from Sea Shells of New South Wales and WoRMS Editorial Board (2023).\n\n\nPatelloida latistrigata\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nPatelloida alticostata\n          \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nNotoacmea flammea\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nScutellastra chapmani\n     \nImages from Grove, S.J. (2018) and Sea Shells of New South Wales.\n\n\nScutellastra peronii\n              \nImages from Grove, S.J. (2018) and Sea Shells of New South Wales."
-  },
-  {
-    "objectID": "module01/106-species-id.html#chitons",
-    "href": "module01/106-species-id.html#chitons",
-    "title": "Species ID guide",
-    "section": "5 Chitons",
-    "text": "5 Chitons\n\nSypharochiton pelliserpentis\n   \nImages from WoRMS Editorial Board (2023) and Sea Shells of New South Wales.\n\n\nAcanthochiton sp.\n   \n\n\nIschnochiton sp.\n        \nImages from Grove, S.J. (2018)."
-  },
-  {
-    "objectID": "module01/106-species-id.html#sea-stars",
-    "href": "module01/106-species-id.html#sea-stars",
-    "title": "Species ID guide",
-    "section": "6 Sea stars",
-    "text": "6 Sea stars\n\nParvulastra exigua"
-  },
-  {
-    "objectID": "module01/106-species-id.html#barnacles",
-    "href": "module01/106-species-id.html#barnacles",
-    "title": "Species ID guide",
-    "section": "7 Barnacles",
-    "text": "7 Barnacles\n\nBalanus amphitrite\n  \nImages from Wikipedia and WoRMS Editorial Board (2023).\n\n\nBalanus trigonus\n  \nImages from Wikipedia, Western Australia Museum and WoRMS Editorial Board (2023).\n\n\nChthamalus antennatus\n   \nImages from Wikipedia, Museum Victoria Collections and SA Marine Life.\n\n\nCatomerus polymerus\n    \nImages from Wikipedia and Museum Victoria Collections.\n\n\nTesseropora rosea\n   \nimages from Wikipedia, Museum Victoria Collections, Atlas of Life and iNaturalist Australia.\n\n\nTetraclitella purpurascens\n  \nImage by Simon Grove via Flickr (2014), Atlas of Living Australia and Museum Victoria Collections.\n\n\nMegabalanus coccopoma\n   \nImages from Wikipedia, WoRMS Editorial Board (2023) and Invasive.org.\n\n\nAmphibalanus variegatus\n  \nImages from Port Phillip Bay Taxonomy, Wikipedia and Denis Riek (2021).\n\n\nAustrobalanus imperator\n  \nImages from Wikipedia and iNaturalist Australia."
-  },
-  {
-    "objectID": "module02/201-intro.html",
-    "href": "module02/201-intro.html",
-    "title": "Introduction to Module 2",
-    "section": "",
-    "text": "I think one of the most exciting things about being a biologist is discovering how the world works. One skill that helps me do so, is knowing how to set up an experiment to test my ideas about the world. You may need to overcome that initial learning hump, but if you persist, you will have a skill at your fingertips that will stand you in really good stead for the future. It doesn’t matter whether you intend to go on in research or not - knowing what makes good research and good evidence is important in so many walks of life.\nMy message is: whether you are doing this unit just because you have to, or because you are interested – take heart! I never did anything much more complicated than a t-test even during my PhD. But now I LOVE designing experiments and grappling with data. It can be frustrating at first, especially if you are time-poor and just want to get the job done. It can be infuriating. It can also be fun (yes – fun!). Most of all it’s incredibly satisfying and extraordinarily useful. So, persist, try your best, and ask for help if you need it.\nPlease remember we want you to learn this stuff.\nNo question you ask is EVER silly! So ask for help any time. We do expect you to have a go at telling us what you think the answer is. This helps us understand what you get and what you don’t get, and so helps us help you.\nWe don’t judge you by the questions you ask, but by what you end up learning."
-  },
-  {
-    "objectID": "module02/201-intro.html#preamble",
-    "href": "module02/201-intro.html#preamble",
-    "title": "Introduction to Module 2",
-    "section": "",
-    "text": "I think one of the most exciting things about being a biologist is discovering how the world works. One skill that helps me do so, is knowing how to set up an experiment to test my ideas about the world. You may need to overcome that initial learning hump, but if you persist, you will have a skill at your fingertips that will stand you in really good stead for the future. It doesn’t matter whether you intend to go on in research or not - knowing what makes good research and good evidence is important in so many walks of life.\nMy message is: whether you are doing this unit just because you have to, or because you are interested – take heart! I never did anything much more complicated than a t-test even during my PhD. But now I LOVE designing experiments and grappling with data. It can be frustrating at first, especially if you are time-poor and just want to get the job done. It can be infuriating. It can also be fun (yes – fun!). Most of all it’s incredibly satisfying and extraordinarily useful. So, persist, try your best, and ask for help if you need it.\nPlease remember we want you to learn this stuff.\nNo question you ask is EVER silly! So ask for help any time. We do expect you to have a go at telling us what you think the answer is. This helps us understand what you get and what you don’t get, and so helps us help you.\nWe don’t judge you by the questions you ask, but by what you end up learning."
-  },
-  {
-    "objectID": "module02/201-intro.html#what-this-module-is-about",
-    "href": "module02/201-intro.html#what-this-module-is-about",
-    "title": "Introduction to Module 2",
-    "section": "2 What this module is about",
-    "text": "2 What this module is about\nIn Module 1, you have learnt the principles for converting a biological observation or question of interest into practice. Here, you will build on this skill. You will sign up to a research project and go through the process of converting a biological idea into a research experiment, which you and your group will then do from start to finish, to answer it.\nTwo important things to note:\n\nRead the Lab Manual before each practical (check the timeline)\nCome/listen to each lecture on the day we give them, or before your practical\n\nYou will need to use the lecture information immediately in these pracs. You will use your knowledge and experience to design your project, collect the data, and analyse and interpret it appropriately."
-  },
-  {
-    "objectID": "module02/201-intro.html#what-you-need-to-submit-for-this-practical-component",
-    "href": "module02/201-intro.html#what-you-need-to-submit-for-this-practical-component",
-    "title": "Introduction to Module 2",
-    "section": "3 What you need to submit for this practical component",
-    "text": "3 What you need to submit for this practical component\nThis assessment requires two separate submissions in Canvas:\n\nReport 1 group data [0%]: The Excel file (spreadsheets) containing your Group’s data. This needs to be submitted by one group member on behalf of your group. We will not mark your submission if the data is not provided.\nReport 1 [25%]: Your Individual Report on your experiment, in the format of a short scientific article."
-  },
-  {
-    "objectID": "module02/201-intro.html#how-you-will-get-feedback",
-    "href": "module02/201-intro.html#how-you-will-get-feedback",
-    "title": "Introduction to Module 2",
-    "section": "4 How you will get feedback",
-    "text": "4 How you will get feedback\n\nYou will receive informative, but not exhaustive, feedback on your report in relation to the marking matrix. This will show what you achieved against each criterion, and why.\nTo help you understand how you could improve, it helps enormously if you make a conscious effort to compare your submitted work against others. To facilitate this, I will post the best report written for your particular project.\nShould you want feedback beyond this, please reflect on your report and write a summary of how your report compares to the best one, addressing each of the marking criteria. Once you’ve done that, please email me to request an appointment, attaching your summary to the email message. BUT please note that because of the large class size, I may not be able to meet with everyone who wants to. As I am sure you will appreciate, I will give priority to any students with low/fail marks."
+    "objectID": "module02/205-resources.html#bird-groups-only",
+    "href": "module02/205-resources.html#bird-groups-only",
+    "title": "Weeks 4–8 practicals: resources",
+    "section": "2 BIRD GROUPS ONLY",
+    "text": "2 BIRD GROUPS ONLY\n\n\n\n\n\n\nImportantImportant Animal Ethics information\n\n\n\nPlease use this monitoring sheet for your data collection.\nAs part of the Animal Ethics requirements each bird group must submit:\n\nat least one example of this completed monitoring sheet, along with\na pdf document summarising (a) the sites visited (names with suburb, and if possible GPS coords and site photos), and (b) the total number of (i) native birds and (ii) invasive birds you estimate you have counted across all your sites."
   },
   {
     "objectID": "module02/203-projects.html",
@@ -581,31 +112,514 @@
     "text": "Animal Ethics requirements for Projects on birds\nIf you sign up to these projects, you must follow the animal ethics requirements as approved by the University of Sydney Animal Ethics Committee:\nProject “Ecology teaching – bird surveys”. Project Number: 2022/2148.\nYou may collect data for up to 10 visits per site over a 2 to 4 week period. For the bird survey, you may observe birds, count them and identify each to species if you can, using binoculars where needed. You may observe birds at a site for up to ~ one hour per visit, but must not interfere with nor handle the birds.\nAt a given site, the surveyor (1 to 5 students per site) will find a suitable location to observe birds. They will stand or sit still for 15 to 30 minutes per location and count the birds they can see in their site. They may need to move to up to five other locations per site if they have difficulty identifying the birds from afar. The number of each species will be recorded with reference to bird guides, and a total of about one hour will be spent at each site per observation period.\nDepending on your project, you may quantify other data, such as vegetation assessments and size of any habitat types including water bodies, at each site, enabling a test of the factors affecting bird abundance and species diversity.\nObservers will remain far enough from birds that the birds are not visibly affected by them (i.e. do not alter their behaviour, either by moving away or by altering what they are doing). This avoids any potential impact of the observer on time or energy budgets of the birds (as described in Bateman et al. 2011).\nReference: Bateman, P. W., and P. A. Fleming. 2011. Who are you looking at? Hadeda ibises use direction of gaze, head orientation and approach speed in their risk assessment of a potential predator. Journal of Zoology 285:316-323.\n\nConditions of bird project approval:\n\nYou must use the approved monitoring sheet “Bird survey monitoring sheet.xls” which will be provided to you. You may add additional columns or have additional sheets, as you decide, appropriate to your study.\nYou must take photos of the fieldwork sites and the observers watching the birds (i.e. to see the relative locations of the observers to the birds).\nBy the end of Week 9, you must post on Canvas:\n\nA complete legible copy of the final monitoring sheets from (1)\nA summary of the total number of (i) native birds, (ii) invasive birds hence (iii) all birds you counted at each site and across all sites over the course of your project, and a list of the sites you monitored, with GPS coordinates.\nClearly and informatively labelled photos from (2).\n\nInjured birds: In the very unlikely event that birds are found injured on site: you must:\n\nseek advice from Clare McArthur (clare.mcarthur@sydney.edu.au, subject heading: “BIOL2022 URGENT - bird project”) or other academic in the unit of study,\nwhile ensuring your own safety first, if necessary arrange to appropriately transport seriously injured animals to the nearest veterinarian for treatment, AND\nyou must notify Clare McArthur by email within 24h, summarising what has occurred (this will be reported as an adverse event to the Animal Ethics Committee even if you played no part in the injury)."
   },
   {
-    "objectID": "module02/205-resources.html",
-    "href": "module02/205-resources.html",
-    "title": "Weeks 4–8 practicals: resources",
+    "objectID": "module02/201-intro.html",
+    "href": "module02/201-intro.html",
+    "title": "Introduction to Module 2",
     "section": "",
-    "text": "Here are two examples: template1 and template2 for Excel group data collection. Generate and complete your group’s own Excel file (could be from a GoogleSheets file) before Week 8 prac.\nHere is a guide to choosing appropriate stats and a guide to using the stats program SPSS\nPractice Excel file for ANOVA or Randomised Block design/GLM and associated paper.\nPractice Excel file for linear regression (or correlation) and associated paper.\nPractice Excel file for logistic regression and associated paper\nAnd an interesting article called “The importance of stupidity in scientific research”: directed at PhD students but also, I think, relevant to our Module projects where you take a step into the unknown. Hope you enjoy it."
+    "text": "I think one of the most exciting things about being a biologist is discovering how the world works. One skill that helps me do so, is knowing how to set up an experiment to test my ideas about the world. You may need to overcome that initial learning hump, but if you persist, you will have a skill at your fingertips that will stand you in really good stead for the future. It doesn’t matter whether you intend to go on in research or not - knowing what makes good research and good evidence is important in so many walks of life.\nMy message is: whether you are doing this unit just because you have to, or because you are interested – take heart! I never did anything much more complicated than a t-test even during my PhD. But now I LOVE designing experiments and grappling with data. It can be frustrating at first, especially if you are time-poor and just want to get the job done. It can be infuriating. It can also be fun (yes – fun!). Most of all it’s incredibly satisfying and extraordinarily useful. So, persist, try your best, and ask for help if you need it.\nPlease remember we want you to learn this stuff.\nNo question you ask is EVER silly! So ask for help any time. We do expect you to have a go at telling us what you think the answer is. This helps us understand what you get and what you don’t get, and so helps us help you.\nWe don’t judge you by the questions you ask, but by what you end up learning."
   },
   {
-    "objectID": "module02/205-resources.html#useful-documents-for-report-1",
-    "href": "module02/205-resources.html#useful-documents-for-report-1",
-    "title": "Weeks 4–8 practicals: resources",
+    "objectID": "module02/201-intro.html#preamble",
+    "href": "module02/201-intro.html#preamble",
+    "title": "Introduction to Module 2",
     "section": "",
-    "text": "Here are two examples: template1 and template2 for Excel group data collection. Generate and complete your group’s own Excel file (could be from a GoogleSheets file) before Week 8 prac.\nHere is a guide to choosing appropriate stats and a guide to using the stats program SPSS\nPractice Excel file for ANOVA or Randomised Block design/GLM and associated paper.\nPractice Excel file for linear regression (or correlation) and associated paper.\nPractice Excel file for logistic regression and associated paper\nAnd an interesting article called “The importance of stupidity in scientific research”: directed at PhD students but also, I think, relevant to our Module projects where you take a step into the unknown. Hope you enjoy it."
+    "text": "I think one of the most exciting things about being a biologist is discovering how the world works. One skill that helps me do so, is knowing how to set up an experiment to test my ideas about the world. You may need to overcome that initial learning hump, but if you persist, you will have a skill at your fingertips that will stand you in really good stead for the future. It doesn’t matter whether you intend to go on in research or not - knowing what makes good research and good evidence is important in so many walks of life.\nMy message is: whether you are doing this unit just because you have to, or because you are interested – take heart! I never did anything much more complicated than a t-test even during my PhD. But now I LOVE designing experiments and grappling with data. It can be frustrating at first, especially if you are time-poor and just want to get the job done. It can be infuriating. It can also be fun (yes – fun!). Most of all it’s incredibly satisfying and extraordinarily useful. So, persist, try your best, and ask for help if you need it.\nPlease remember we want you to learn this stuff.\nNo question you ask is EVER silly! So ask for help any time. We do expect you to have a go at telling us what you think the answer is. This helps us understand what you get and what you don’t get, and so helps us help you.\nWe don’t judge you by the questions you ask, but by what you end up learning."
   },
   {
-    "objectID": "module02/205-resources.html#bird-groups-only",
-    "href": "module02/205-resources.html#bird-groups-only",
-    "title": "Weeks 4–8 practicals: resources",
-    "section": "2 BIRD GROUPS ONLY",
-    "text": "2 BIRD GROUPS ONLY\n\n\n\n\n\n\nImportantImportant Animal Ethics information\n\n\n\nPlease use this monitoring sheet for your data collection.\nAs part of the Animal Ethics requirements each bird group must submit:\n\nat least one example of this completed monitoring sheet, along with\na pdf document summarising (a) the sites visited (names with suburb, and if possible GPS coords and site photos), and (b) the total number of (i) native birds and (ii) invasive birds you estimate you have counted across all your sites."
+    "objectID": "module02/201-intro.html#what-this-module-is-about",
+    "href": "module02/201-intro.html#what-this-module-is-about",
+    "title": "Introduction to Module 2",
+    "section": "2 What this module is about",
+    "text": "2 What this module is about\nIn Module 1, you have learnt the principles for converting a biological observation or question of interest into practice. Here, you will build on this skill. You will sign up to a research project and go through the process of converting a biological idea into a research experiment, which you and your group will then do from start to finish, to answer it.\nTwo important things to note:\n\nRead the Lab Manual before each practical (check the timeline)\nCome/listen to each lecture on the day we give them, or before your practical\n\nYou will need to use the lecture information immediately in these pracs. You will use your knowledge and experience to design your project, collect the data, and analyse and interpret it appropriately."
   },
   {
-    "objectID": "practicals.html",
-    "href": "practicals.html",
-    "title": "BIOL2022",
+    "objectID": "module02/201-intro.html#what-you-need-to-submit-for-this-practical-component",
+    "href": "module02/201-intro.html#what-you-need-to-submit-for-this-practical-component",
+    "title": "Introduction to Module 2",
+    "section": "3 What you need to submit for this practical component",
+    "text": "3 What you need to submit for this practical component\nThis assessment requires two separate submissions in Canvas:\n\nReport 1 group data [0%]: The Excel file (spreadsheets) containing your Group’s data. This needs to be submitted by one group member on behalf of your group. We will not mark your submission if the data is not provided.\nReport 1 [25%]: Your Individual Report on your experiment, in the format of a short scientific article."
+  },
+  {
+    "objectID": "module02/201-intro.html#how-you-will-get-feedback",
+    "href": "module02/201-intro.html#how-you-will-get-feedback",
+    "title": "Introduction to Module 2",
+    "section": "4 How you will get feedback",
+    "text": "4 How you will get feedback\n\nYou will receive informative, but not exhaustive, feedback on your report in relation to the marking matrix. This will show what you achieved against each criterion, and why.\nTo help you understand how you could improve, it helps enormously if you make a conscious effort to compare your submitted work against others. To facilitate this, I will post the best report written for your particular project.\nShould you want feedback beyond this, please reflect on your report and write a summary of how your report compares to the best one, addressing each of the marking criteria. Once you’ve done that, please email me to request an appointment, attaching your summary to the email message. BUT please note that because of the large class size, I may not be able to meet with everyone who wants to. As I am sure you will appreciate, I will give priority to any students with low/fail marks."
+  },
+  {
+    "objectID": "module01/106-species-id.html",
+    "href": "module01/106-species-id.html",
+    "title": "Species ID guide",
     "section": "",
-    "text": "practicals.qmd"
+    "text": "Use this page to identify the species that you sample. Note that all images are copyrighted. We have provided the source of each image so that you can find more information about the species, and to give credit to the original authors.\nNote: images are only available in the HTML version of this document."
+  },
+  {
+    "objectID": "module01/106-species-id.html#id-guide",
+    "href": "module01/106-species-id.html#id-guide",
+    "title": "Species ID guide",
+    "section": "1 Identification guide",
+    "text": "1 Identification guide"
+  },
+  {
+    "objectID": "module01/106-species-id.html#common-snails",
+    "href": "module01/106-species-id.html#common-snails",
+    "title": "Species ID guide",
+    "section": "2 Common snails",
+    "text": "2 Common snails\n\nBembicium nanum\n     \nImages from Grove, S.J. (2018).\n\n\nAustrocochlea porcata\n     \nImages from Grove, S.J. (2018).\n\n\nAustrococchlea concamerata\n  \nImages from Iredale, T. & McMichael, D. F. (1962) and Australian Museum.\n\n\nNerita atramentosa\n  \nImages from Grove, S.J. (2018).\n\n\nAustrolittorina unifasciata\n   \nImages from Grove, S.J. (2018)."
+  },
+  {
+    "objectID": "module01/106-species-id.html#whelks",
+    "href": "module01/106-species-id.html#whelks",
+    "title": "Species ID guide",
+    "section": "3 Whelks",
+    "text": "3 Whelks\n\nTenguella marginalba\n  \nImages by Donald Hobern, Femorale.com, Joop Trausel and Frans Slieker."
+  },
+  {
+    "objectID": "module01/106-species-id.html#limpets",
+    "href": "module01/106-species-id.html#limpets",
+    "title": "Species ID guide",
+    "section": "4 Limpets",
+    "text": "4 Limpets\n\nCellana tramoserica\n     \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nMontfortula rugosa\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nPatelloida mimula\n  \nImages from Sea Shells of New South Wales and WoRMS Editorial Board (2023).\n\n\nPatelloida mufria\n \nImages from Sea Shells of New South Wales and WoRMS Editorial Board (2023).\n\n\nPatelloida latistrigata\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nPatelloida alticostata\n          \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nNotoacmea flammea\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nScutellastra chapmani\n     \nImages from Grove, S.J. (2018) and Sea Shells of New South Wales.\n\n\nScutellastra peronii\n              \nImages from Grove, S.J. (2018) and Sea Shells of New South Wales."
+  },
+  {
+    "objectID": "module01/106-species-id.html#chitons",
+    "href": "module01/106-species-id.html#chitons",
+    "title": "Species ID guide",
+    "section": "5 Chitons",
+    "text": "5 Chitons\n\nSypharochiton pelliserpentis\n   \nImages from WoRMS Editorial Board (2023) and Sea Shells of New South Wales.\n\n\nAcanthochiton sp.\n   \n\n\nIschnochiton sp.\n        \nImages from Grove, S.J. (2018)."
+  },
+  {
+    "objectID": "module01/106-species-id.html#sea-stars",
+    "href": "module01/106-species-id.html#sea-stars",
+    "title": "Species ID guide",
+    "section": "6 Sea stars",
+    "text": "6 Sea stars\n\nParvulastra exigua"
+  },
+  {
+    "objectID": "module01/106-species-id.html#barnacles",
+    "href": "module01/106-species-id.html#barnacles",
+    "title": "Species ID guide",
+    "section": "7 Barnacles",
+    "text": "7 Barnacles\n\nBalanus amphitrite\n  \nImages from Wikipedia and WoRMS Editorial Board (2023).\n\n\nBalanus trigonus\n  \nImages from Wikipedia, Western Australia Museum and WoRMS Editorial Board (2023).\n\n\nChthamalus antennatus\n   \nImages from Wikipedia, Museum Victoria Collections and SA Marine Life.\n\n\nCatomerus polymerus\n    \nImages from Wikipedia and Museum Victoria Collections.\n\n\nTesseropora rosea\n   \nimages from Wikipedia, Museum Victoria Collections, Atlas of Life and iNaturalist Australia.\n\n\nTetraclitella purpurascens\n  \nImage by Simon Grove via Flickr (2014), Atlas of Living Australia and Museum Victoria Collections.\n\n\nMegabalanus coccopoma\n   \nImages from Wikipedia, WoRMS Editorial Board (2023) and Invasive.org.\n\n\nAmphibalanus variegatus\n  \nImages from Port Phillip Bay Taxonomy, Wikipedia and Denis Riek (2021).\n\n\nAustrobalanus imperator\n  \nImages from Wikipedia and iNaturalist Australia."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BEDA Handbook",
+    "section": "",
+    "text": "Welcome to the BEDA handbook. This book contains (most) lectures, tutorials and practical content for BIOL2022. Any resource that is published here is available under the CC BY 4.0 license. If resources link back to Canvas, they are not covered by this license. Please do not share Canvas materials outside of the course.\n\nLoading semester status…\n\n\n\n\n\n\n\nWeek\nLectures\nPractical\nNotes\n\n\n\n\n1\nIntroduction and fundamentals Welcome to BEDA!\nWeek 1 practical session, including Workshop 1\n\n\n Resource: Am I ready for BEDA?\n Assessment (0%): Quiz 1\n\n\n\n\n2\nSampling and the linear model Randomisation and why we teach the linear model first\nWeek 2 practical session\n\n\n Resource: (See how) common statistical tests are linear models ↗\n Assessment (0%): Quiz 2\n\n\n\n\n3\nChoosing the right model(s) The easy way to validate model assumptions.\nWeek 3 practical session\n\n\n Assessment (0%): Quiz 3\n Assessment (5%): Early Feedback Task — opens Friday at 10 am\n\n\n\n\n4\nMultiple predictors and transformations Expanding models and using transformations to increase model fit.\nWeek 4 practical session\n\n\n Assessment (10%): Early Feedback Task: Evaluation Quiz\n\n\n\n\n5\nControls and revision How to control your experiments with data that you collect.\nWeek 5 practical session\n\n\n Assessment (25%): Work on your experiments for Report 1\n Assessment (25%): Review the Report 1 overview and requirements\n\n\n\n\n6\nRefresher and categorical variables A refresher on designing experiments with categorical variables.\n—\n\n\n Assessment (25%): Review the Report 1 project and revision timeline\n Notice: Project and revision week\n\n\n\n\n7\nRelationships and binary responses How to design experiments with continuous or binary responses.\nWeek 7 practical session\n—\n\n\n8\nModel selection and revision Which model should we use? Some ideas.\nWeek 8 practical session\n—\n\n\nBreak\nMid-semester break — 28 September–2 October 2026\n\n\n\n\n9\nMultivariate analysis and PCA Introducing multivariate analysis, principal component analysis and factor analysis.\nWeek 9 practical session\n\n\n Notice: Labour Day — Monday 5 October\n Assessment (25%): Review Report 1 requirements and due information\n\n\n\n\n10\nClustering and multidimensional scaling Using clustering and nMDS to identify and test multivariate patterns.\nWeek 10 practical session\n\n\n Notice: Present your experimental design for feedback\n Assessment (20%): Review the Report 2 overview and requirements\n\n\n\n\n11\nMANOVA and multivariate revision The MANOVA way of designing and interpreting experiments.\nWeek 11 practical session\n\n\n Assessment (5%): Submit the group dataset\n Assessment (15%): Review the Report 2 overview and due information\n\n\n\n\n12\nRarefaction and Bayesian analysis The lectures cover rarefaction for diversity comparisons and Bayesian statistical inference.\nWeek 12 practical session\n—\n\n\n13\nExam revision You will review the course's experimental-design and modelling concepts for the final exam.\nPractical session\n—\n\n\n\n\n\n\n\nWeekly schedule\n\nJump to current week ↓\n\n\n\n1Week\n\n\n\n\nIntroduction and fundamentals\n\n\n\n\nLectures Welcome to BEDA!\n\n\nPractical Open Week 1 practical\n\n\nNotes\n\n\nResource: Am I ready for BEDA?\n\n\nAssessment (0%): Quiz 1\n\n\n\n\n\n\n\n2Week\n\n\n\n\nSampling and the linear model\n\n\n\n\nLectures Randomisation and why we teach the linear model first\n\n\nPractical Open Week 2 practical\n\n\nNotes\n\n\nResource: (See how) common statistical tests are linear models↗\n\n\nAssessment (0%): Quiz 2\n\n\n\n\n\n\n\n3Week\n\n\n\n\nChoosing the right model(s)\n\n\n\n\nLectures The easy way to validate model assumptions.\n\n\nPractical Open Week 3 practical\n\n\nNotes\n\n\nAssessment (0%): Quiz 3\n\n\nAssessment (5%): Early Feedback Task — opens Friday at 10 am\n\n\n\n\n\n\n\n4Week\n\n\n\n\nMultiple predictors and transformations\n\n\n\n\nLectures Expanding models and using transformations to increase model fit.\n\n\nPractical Open Week 4 practical\n\n\nNotes\n\n\nAssessment (10%): Early Feedback Task: Evaluation Quiz\n\n\n\n\n\n\n\n5Week\n\n\n\n\nControls and revision\n\n\n\n\nLectures How to control your experiments with data that you collect.\n\n\nPractical Open Week 5 practical\n\n\nNotes\n\n\nAssessment (25%): Work on your experiments for Report 1\n\n\nAssessment (25%): Review the Report 1 overview and requirements\n\n\n\n\n\n\n\n6Week\n\n\n\n\nRefresher and categorical variables\n\n\n\n\nLectures A refresher on designing experiments with categorical variables.\n\n\nPractical —\n\n\nNotes\n\n\nAssessment (25%): Review the Report 1 project and revision timeline\n\n\nNotice: Project and revision week\n\n\n\n\n\n\n\n7Week\n\n\n\n\nRelationships and binary responses\n\n\n\n\nLectures How to design experiments with continuous or binary responses.\n\n\nPractical Open Week 7 practical\n\n\nNotes —\n\n\n\n\n\n8Week\n\n\n\n\nModel selection and revision\n\n\n\n\nLectures Which model should we use? Some ideas.\n\n\nPractical Open Week 8 practical\n\n\nNotes —\n\n\n\n\n\nBreak\n\n\nMid-semester break — 28 September–2 October 2026\n\n\n\n\n9Week\n\n\n\n\nMultivariate analysis and PCA\n\n\n\n\nLectures Introducing multivariate analysis, principal component analysis and factor analysis.\n\n\nPractical Open Week 9 practical\n\n\nNotes\n\n\nNotice: Labour Day — Monday 5 October\n\n\nAssessment (25%): Review Report 1 requirements and due information\n\n\n\n\n\n\n\n10Week\n\n\n\n\nClustering and multidimensional scaling\n\n\n\n\nLectures Using clustering and nMDS to identify and test multivariate patterns.\n\n\nPractical Open Week 10 practical\n\n\nNotes\n\n\nNotice: Present your experimental design for feedback\n\n\nAssessment (20%): Review the Report 2 overview and requirements\n\n\n\n\n\n\n\n11Week\n\n\n\n\nMANOVA and multivariate revision\n\n\n\n\nLectures The MANOVA way of designing and interpreting experiments.\n\n\nPractical Open Week 11 practical\n\n\nNotes\n\n\nAssessment (5%): Submit the group dataset\n\n\nAssessment (15%): Review the Report 2 overview and due information\n\n\n\n\n\n\n\n12Week\n\n\n\n\nRarefaction and Bayesian analysis\n\n\n\n\nLectures The lectures cover rarefaction for diversity comparisons and Bayesian statistical inference.\n\n\nPractical Open Week 12 practical\n\n\nNotes —\n\n\n\n\n\n13Week\n\n\n\n\nExam revision\n\n\n\n\nLectures You will review the course’s experimental-design and modelling concepts for the final exam.\n\n\nPractical Open Week 13 practical\n\n\nNotes —"
+  },
+  {
+    "objectID": "cheatsheets.html",
+    "href": "cheatsheets.html",
+    "title": "Cheatsheets",
+    "section": "",
+    "text": "All cheatsheets are open source and available on the SOLES GitHub repository."
+  },
+  {
+    "objectID": "cheatsheets.html#rstudior",
+    "href": "cheatsheets.html#rstudior",
+    "title": "Cheatsheets",
+    "section": "RStudio/R",
+    "text": "RStudio/R\n\nimporting data into R - data\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nPublication-ready(-ish) ANOVA/regression tables in R - vis\nmodelling a numerical response against:\n\nthe intercept only (one-sample or paired t-test) - stats\na categorical predictor with two groups (two-sample t-test) - stats\none or more categorical predictors (ANOVA) - stats\none or more numerical predictors (linear regression) - stats"
+  },
+  {
+    "objectID": "cheatsheets.html#jamovi",
+    "href": "cheatsheets.html#jamovi",
+    "title": "Cheatsheets",
+    "section": "Jamovi",
+    "text": "Jamovi\n\nUsing flexplot to create common plots in Jamovi - vis\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nmodelling a numerical response against:\n\none or more categorical predictors (t-tests & ANOVA) - stats\none or more numerical predictors (linear regression) - stats\n\nPrincipal Component Analysis (PCA) - stats"
+  },
+  {
+    "objectID": "cheatsheets.html#general",
+    "href": "cheatsheets.html#general",
+    "title": "Cheatsheets",
+    "section": "General",
+    "text": "General\n\n⭐ New Univariate analysis flowchart (by Gabby Jarvis)\n⭐ New Multivariate analysis cheatsheets (6 pages, 7 topics, by Gabby Jarvis)\npublication-ready ANOVA tables - vis\npublication-ready regression tables - vis\nhow to report statistics in text (planned) - stats\nR and GitHub Copilot (planned) - gen_ai"
+  },
+  {
+    "objectID": "cheatsheets.html#spss",
+    "href": "cheatsheets.html#spss",
+    "title": "Cheatsheets",
+    "section": "SPSS",
+    "text": "SPSS\n\nboxplots - vis\nscatterplots - vis\nusing the chart builder - vis"
+  },
+  {
+    "objectID": "cheatsheets.html#primer",
+    "href": "cheatsheets.html#primer",
+    "title": "Cheatsheets",
+    "section": "PRIMER",
+    "text": "PRIMER\n\n[Multivariate Analysis Cheatsheet (nMDS, PERMANOVA, SIMPER, ANOSIM)]"
+  },
+  {
+    "objectID": "assessments/assessment-report-2.html",
+    "href": "assessments/assessment-report-2.html",
+    "title": "Report 2",
+    "section": "",
+    "text": "This assessment involves a group data submission in addition to the individual report.\n\nSubmit one Excel file containing your group’s:\n\nSpecies (assemblage) data\nHabitat data\n\nOnly one group member needs to upload the file on behalf of the group.\nDue: By 10:00am on the day of your Week 11 practical session\nWorth: 5% of your total unit mark\n\nMake sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi."
+  },
+  {
+    "objectID": "assessments/assessment-report-2.html#group-data-submission",
+    "href": "assessments/assessment-report-2.html#group-data-submission",
+    "title": "Report 2",
+    "section": "",
+    "text": "This assessment involves a group data submission in addition to the individual report.\n\nSubmit one Excel file containing your group’s:\n\nSpecies (assemblage) data\nHabitat data\n\nOnly one group member needs to upload the file on behalf of the group.\nDue: By 10:00am on the day of your Week 11 practical session\nWorth: 5% of your total unit mark\n\nMake sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi."
+  },
+  {
+    "objectID": "assessments/assessment-report-2.html#individual-report",
+    "href": "assessments/assessment-report-2.html#individual-report",
+    "title": "Report 2",
+    "section": "Individual Report",
+    "text": "Individual Report\nInstructions for this assessment are in Week 9 Practical. Please read the instructions carefully.\nBelow is a brief summary of the requirements. You must still read the full instructions above in full.\n\nThis is an individual report based on your group’s multivariate study, focusing primarily on the Methods and Results sections.\nThe report must follow the format of a short scientific article suitable for submission to Austral Ecology, including sections such as Title, Abstract (if applicable), Introduction, Materials and Methods, Results, Discussion (brief), and References.\nSubmit your report anonymously via Canvas by 11:59pm at the end of Week 13, using an appropriate filename.\nPage limit: maximum 4 single-spaced pages (not including cover sheet, title/abstract page, references, tables, or figures).\nInclude a brief Introduction with clearly stated hypotheses, a detailed Methods section describing data collection and analyses, and a well-presented Results section with tables, figures, and descriptions.\nEmphasis is on clear explanation of analytical methods, accurate description of data, and concise presentation of results.\nWrite the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).\nFollow academic integrity guidelines: avoid plagiarism, and be prepared for plagiarism checking.\nUse the marking rubric as a checklist to ensure all criteria are met before submission.\nConsult the provided references and resources for guidance on analyses and reporting."
+  },
+  {
+    "objectID": "assessments/assessment-report-2.html#marking-scheme",
+    "href": "assessments/assessment-report-2.html#marking-scheme",
+    "title": "Report 2",
+    "section": "Marking scheme",
+    "text": "Marking scheme\n\nIntroduction (use your imagination) – 10 marks\n\nAims of the experiment and hypotheses being tested\nWhy is the study important and/or interesting\nStudy system – species, location of experiment (brief)\nWelcome to use imagination with references and background, but will not be penalised if you are unable to provide real examples.\n\n\n\nMaterials and Methods – 30 marks\n\nSet-up of experiment/survey\nData / variables recorded and how\nSampling design and justifications for analyses\nStatistical analyses used, including which are dependent/independent variable(s) (if applicable), unit of replication, actual test(s) and statistical package(s)\n\n\n\nResults – 40 marks\n\nStatement of results (data and stats). Refer to tables and figures as needed.\nSummary presentation of data (no raw data) as tables, figures or in text as appropriate. Use tables for large amounts of data where detail is important, use figures to illustrate patterns. Indicate sample size and errors, and note whether the latter are standard errors or standard deviations. Format consistently.\nEvidence of thought in choices of analyses.\nResults of statistical analyses presented either in text, on figures, or in tables.\nDo not screenshot figures of tables\n\n\n\nDiscussion – 10 marks\n\nMain conclusions or findings\nInterpretation of results – what do they mean? How do they relate to original aims?\nLimitations of approach or methods\nFuture studies – what would you do next to improve what you did and/or extend the understanding of the subject?\n\n\n\nGeneral\n\nBrief Abstract at start of report\nWritten in plain English\nPresentation (format/length)\nNo screenshotting of figures and tables\nReferences if used and cited correctly\n\nBack to assessments"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html",
+    "href": "assessments/assessment-final-exam.html",
+    "title": "Final Exam",
+    "section": "",
+    "text": "Brief Description: The final exam is a hurdle assessment. Details on the exam format and content will be provided closer to the exam date.\nWeighting: 40%\nDate & Time: [Insert Specific Date and Time - This will be centrally timetabled by the University. Add placeholder: e.g., Refer to the official University exam timetable.]\nDuration: [Specify exam duration, e.g., 2 hours + 10 minutes reading time]\nHurdle Requirement: This is a hurdle assessment. You must achieve a minimum mark of [Specify minimum percentage, e.g., 45% or 50%] on the final exam to pass the unit, regardless of your overall unit mark.\nLearning Outcomes Addressed:\n\n[List all major Learning Outcomes covered by the exam, e.g., LO1, LO2, LO3, LO4, LO5]\n[Add more as needed]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#overview",
+    "href": "assessments/assessment-final-exam.html#overview",
+    "title": "Final Exam",
+    "section": "",
+    "text": "Brief Description: The final exam is a hurdle assessment. Details on the exam format and content will be provided closer to the exam date.\nWeighting: 40%\nDate & Time: [Insert Specific Date and Time - This will be centrally timetabled by the University. Add placeholder: e.g., Refer to the official University exam timetable.]\nDuration: [Specify exam duration, e.g., 2 hours + 10 minutes reading time]\nHurdle Requirement: This is a hurdle assessment. You must achieve a minimum mark of [Specify minimum percentage, e.g., 45% or 50%] on the final exam to pass the unit, regardless of your overall unit mark.\nLearning Outcomes Addressed:\n\n[List all major Learning Outcomes covered by the exam, e.g., LO1, LO2, LO3, LO4, LO5]\n[Add more as needed]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#task-details-instructions",
+    "href": "assessments/assessment-final-exam.html#task-details-instructions",
+    "title": "Final Exam",
+    "section": "2. Task Details & Instructions",
+    "text": "2. Task Details & Instructions\n\nExam Format: Details will be provided closer to the exam date. [Placeholder: e.g., The exam will consist of [e.g., multiple-choice questions, short answer questions, and problem-solving tasks]. Further details on the structure, number of questions in each section, and specific topics covered will be announced in [e.g., Week 12/via a Canvas announcement].]\nContent Covered: [Specify scope, e.g., The exam will cover all content from Modules 1, 2, and 3 (Lectures, Practicals, Readings).]\nPermitted Materials: [Specify, e.g., This is a closed-book exam. No materials are permitted other than those provided by the exam supervisors OR This is an open-book exam. Specify allowed materials OR Non-programmable calculators are permitted.]\nLocation/Mode: [Specify, e.g., On-campus, invigilated exam OR Online, proctored exam via [Platform].]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#submission-guidelines",
+    "href": "assessments/assessment-final-exam.html#submission-guidelines",
+    "title": "Final Exam",
+    "section": "3. Submission Guidelines",
+    "text": "3. Submission Guidelines\n\nMethod: [e.g., Answers written in provided exam booklets OR Answers submitted via the online exam platform.]\n[Add any other relevant submission details based on exam mode.]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#marking-criteria-rubric",
+    "href": "assessments/assessment-final-exam.html#marking-criteria-rubric",
+    "title": "Final Exam",
+    "section": "4. Marking Criteria & Rubric",
+    "text": "4. Marking Criteria & Rubric\n\nMarking Summary: This exam is worth 40% of your final grade.\nHurdle Condition: A minimum mark of [Specify minimum percentage again, e.g., 45% or 50%] on this exam is required to pass the unit.\nDetailed Rubric/Marking Scheme: Details will be provided closer to the exam date. [Placeholder: e.g., Marks for each section/question will be indicated on the exam paper. General marking criteria for different question types (e.g., short answer, problem-solving) will be discussed in the exam briefing session/document.]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#resources-support",
+    "href": "assessments/assessment-final-exam.html#resources-support",
+    "title": "Final Exam",
+    "section": "5. Resources & Support",
+    "text": "5. Resources & Support\n\nRevision Materials:\n\nAll lecture notes, practical materials, and readings from the unit.\n[Link to any past papers or sample questions if provided]\n[Link to study guides or revision checklists if provided]\n\nSupport Channels:\n\n[Specify support, e.g., Attend pre-exam consultation sessions (details to be announced).]\n[e.g., Use the ‘Final Exam Q&A’ discussion forum on Canvas.]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#policies",
+    "href": "assessments/assessment-final-exam.html#policies",
+    "title": "Final Exam",
+    "section": "6. Policies",
+    "text": "6. Policies\n\nExam Rules & Conduct: [Refer to University exam policies, e.g., “All students must adhere to the University’s examination rules and policies: [Link to University Exam Policy].”]\nSpecial Consideration: [Explain the process for exam-related special consideration, e.g., “If you are unable to attend the exam or your performance is significantly affected due to illness or misadventure, you must apply for Special Consideration through the official University channels.”]\nAcademic Integrity: [Include a standard reminder, e.g., “Academic integrity is expected in all examinations. Any form of cheating will be dealt with according to the University’s Academic Integrity Policy.”]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#estimated-time-commitment",
+    "href": "assessments/assessment-final-exam.html#estimated-time-commitment",
+    "title": "Final Exam",
+    "section": "7. Estimated Time Commitment",
+    "text": "7. Estimated Time Commitment\n\n[Provide a guideline for revision, e.g., “Consistent revision throughout the semester is recommended. Intensive revision should begin at least [e.g., 2-3 weeks] before the exam period.”]"
+  },
+  {
+    "objectID": "assessments/assessment-final-exam.html#feedback",
+    "href": "assessments/assessment-final-exam.html#feedback",
+    "title": "Final Exam",
+    "section": "8. Feedback",
+    "text": "8. Feedback\n\nHow and When: [Explain, e.g., “Final exam marks will be released with your overall unit grade as per the University’s official results release schedule. Individual exam scripts are generally not returned, but opportunities for viewing scripts may be available under specific circumstances (refer to University policy).”]"
+  },
+  {
+    "objectID": "assessments/assessment-eft.html",
+    "href": "assessments/assessment-eft.html",
+    "title": "Early Feedback Task",
+    "section": "",
+    "text": "In this assessment you will complete a quiz and write a short reflection (about 100 words) on how things are going (so far). Tell us what you’ve learned, any challenges you’re facing, and what you’d like to improve. The goal is to help you reflect on whether you are actually prepared for BEDA. We can also use the information you provide to better support you moving forward.\nThink of it as a check-in, not a test. The questions are designed to help you identify areas where you may need to focus your study efforts.\n\nWeighting: 5%\nDue Date: Friday, Week 4, 11:59 PM\n\nWith EFTs, we may reach out to you to provide additional support or resources based on your responses.\nBack to assessments"
+  },
+  {
+    "objectID": "assessments/assessment-eft.html#overview",
+    "href": "assessments/assessment-eft.html#overview",
+    "title": "Early Feedback Task",
+    "section": "",
+    "text": "In this assessment you will complete a quiz and write a short reflection (about 100 words) on how things are going (so far). Tell us what you’ve learned, any challenges you’re facing, and what you’d like to improve. The goal is to help you reflect on whether you are actually prepared for BEDA. We can also use the information you provide to better support you moving forward.\nThink of it as a check-in, not a test. The questions are designed to help you identify areas where you may need to focus your study efforts.\n\nWeighting: 5%\nDue Date: Friday, Week 4, 11:59 PM\n\nWith EFTs, we may reach out to you to provide additional support or resources based on your responses.\nBack to assessments"
+  },
+  {
+    "objectID": "assessments/assessment-evaluation-quiz.html",
+    "href": "assessments/assessment-evaluation-quiz.html",
+    "title": "Evaluation Quiz (Module 1)",
+    "section": "",
+    "text": "This quiz is an individual task worth 10% of your final grade.\nLocation: You can do this quiz online. This means that you are responsible for picking a time and place that maximises your ability to complete the quiz without interruption, which includes having a stable internet connection.\nTime limit: The quiz has a time limit of 40 minutes. In reality it should take you much less time than that to complete the quiz. The additional time is for unforeseen circumstances.\nResources: The quiz is open book. This means you can use any resources you have available to you, including the internet, your notes, and the course materials. The reason for this is that as an evaluation tool, we hope that you use it as a learning opportunity. There is no point in cheating as you will only be cheating yourself out of evaluating your own understanding of the material. Most of you should do well if you have been keeping up with the content anyway.\nAttempts: you will have two attempts to complete the quiz. The highest score will be recorded. No extra chances will be given for any reason outside of technical issues. A technical issue is defined as a problem with the quiz itself. Internet connection issues will not be good reasons for extra attempts.\nDue: You have about 7 days to complete both attempts of the quiz once it is opened. Note that this is approximate.\nThe quiz consists of multiple choice (one correct answer) and multiple answer (more than one correct answer) questions.\n\nBack to assessments"
+  },
+  {
+    "objectID": "assessments/assessment-report-1.html",
+    "href": "assessments/assessment-report-1.html",
+    "title": "Report 01",
+    "section": "",
+    "text": "Most of the instructions for this assessment are presented in Report 1 - Instructions. Please read those instructions carefully before starting this report. There are also some helpful resources linked in the Resources for Practicals page.\nBelow is just a brief summary of the requirements. You must still read the instructions above in full.\n\nYou are collecting your own data for this report. The topic is of your choosing based on the list provided in the Projects page.\nThe report must follow the structure of a scientific paper, including sections such as Title, Abstract, Introduction, Materials and Methods, Results, Discussion, and References.\nSubmit your report anonymously via Canvas by 7 October 2025, using the filename format “Day-Time-Project-Your SID” (e.g., “WED2-4pmProj4A-123456789”).\nPage limit: maximum 10 pages double-spaced, including abstract, references, figures/tables, and any AI usage statement.\nInclude a minimum of 10 relevant references from primary scientific literature (peer-reviewed journals).\nUse minimum 12 pt font and no less than 2 cm margins all around.\nWrite the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).\nFollow academic integrity guidelines: avoid plagiarism, complete the AHEM module, and be prepared for plagiarism checking.\nUse the marking rubric as a checklist to ensure all criteria are met before submission.\nLate penalty: 5% per 24 hours or part thereof after the deadline; length penalty: 5% per page or part thereof over the limit.\n\nBack to assessments"
+  },
+  {
+    "objectID": "assessments/assessments.html",
+    "href": "assessments/assessments.html",
+    "title": "Assessments",
+    "section": "",
+    "text": "Due: 29 August 2025 This is a short quiz, designed to give you early feedback on your prior understanding of statistics. It will help you identify areas where you may need to focus your study efforts.\n\nDue in: \n\nDetails Submission link"
+  },
+  {
+    "objectID": "assessments/assessments.html#early-feedback-task-eft---5",
+    "href": "assessments/assessments.html#early-feedback-task-eft---5",
+    "title": "Assessments",
+    "section": "",
+    "text": "Due: 29 August 2025 This is a short quiz, designed to give you early feedback on your prior understanding of statistics. It will help you identify areas where you may need to focus your study efforts.\n\nDue in: \n\nDetails Submission link"
+  },
+  {
+    "objectID": "assessments/assessments.html#evaluation-quiz-module-1---10",
+    "href": "assessments/assessments.html#evaluation-quiz-module-1---10",
+    "title": "Assessments",
+    "section": " Evaluation Quiz (Module 1) - 10%",
+    "text": "Evaluation Quiz (Module 1) - 10%\nDue: 5 September 2025 This is a quiz that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.\n\nDue in: \n\nDetails Submission link"
+  },
+  {
+    "objectID": "assessments/assessments.html#report-1-module-2---25",
+    "href": "assessments/assessments.html#report-1-module-2---25",
+    "title": "Assessments",
+    "section": " Report 1 (Module 2) - 25%",
+    "text": "Report 1 (Module 2) - 25%\nDue: 7 October 2025 You will use what you have learned so far to design and analyse an experiment based on a project of your choice. The experiments will be completed in groups, but the reports are individually written and assessed. You will have 6 weeks to complete it.\nRole of Practicals:\nPracticals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans. Demonstrators act as advisors, similar to how support works in a research group, and you are welcome to interact with them and your peers for advice, just as you would with postdocs or supervisors. If you are organised, you can also request feedback on your report drafts during practicals to help improve your work.\n\nExplore the Report 1 project options\nRead the Report 1 instructions\nOpen the Report 1 marking rubric\n\n\nReport due: \n\nDetails Data submission Report submission"
+  },
+  {
+    "objectID": "assessments/assessments.html#report-2-module-3---20",
+    "href": "assessments/assessments.html#report-2-module-3---20",
+    "title": "Assessments",
+    "section": " Report 2 (Module 3) - 20%",
+    "text": "Report 2 (Module 3) - 20%\nDue: 21-24 October 2025 (dataset submission) | 7 November 2025 (report) Report 2 is similar to Report 1, but you will need to focus on a project with a multivariate context. Note that there is a 5% group work component to this report that will be assessed via dataset submission, and the report is individually written and assessed (15%). You will have 5 weeks to complete the report.\nRole of Practicals:\nPracticals are a mix of structured and unstructured sessions. Each practical begins with a brief workshop to practice a specific analysis technique, followed by time for you to work on your project. Some practicals are dedicated feedback sessions, for example we will prioritise giving feedback on your experimental design and analysis plans in Week 10. As usual, you are welcome to interact with demonstrators and your peers for advice and feedback.\n\nDataset submission Due at 10am on the day of your laboratory: Tue groups:  Wed groups:  Fri groups:  Report due: \n\nDetails Data submission Report submission"
+  },
+  {
+    "objectID": "help.html",
+    "href": "help.html",
+    "title": "Contact, Help & Support",
+    "section": "",
+    "text": "You can, at any time, contact Januar via email. Check the Canvas site for his contact details."
+  },
+  {
+    "objectID": "help.html#consultation",
+    "href": "help.html#consultation",
+    "title": "Contact, Help & Support",
+    "section": "Consultation",
+    "text": "Consultation\nBEDA has a dedicated consultation hour at least once every week, where you can ask questions about the unit, your projects, or any other related topics. All drop-in sessions are run by Januar. This is conducted via Zoom and the link is available on Canvas. Please check Ed for the full schedule of drop-in sessions.\n\nWhat is a drop-in session?\nIt is an informal meeting, where nothing is recorded and the general atmosphere is relaxed. There are no expectations for you to prepare anything in advance. Januar can help you with any questions you have about BEDA. You can also use this time to discuss your progress, ask for feedback, or seek advice on specific challenges you are facing."
+  },
+  {
+    "objectID": "help.html#ways-to-get-more-help",
+    "href": "help.html#ways-to-get-more-help",
+    "title": "Contact, Help & Support",
+    "section": "Ways to get more help",
+    "text": "Ways to get more help\n\nPracticals\nThere is no better avenue for getting help than attending the practicals. Your demonstrators are more than happy to help you with any questions you have. Demonstrators can discuss your work with you, help you troubleshoot problems, and provide feedback on your projects. They are also academics and students themselves, so don’t hesitate to ask them about their own research or experiences in their disciplines!\n\n\nEd discussions\nIn many cases, Ed is the best place to ask for help. Posts on Ed are visible to all students, so you can benefit from the answers to questions that others have asked. Staff also monitor Ed regularly and you can expect responses within 24 hours on weekdays.\n\n\nEmail\nIf you have a specific question that you would like to ask via email, please do so. Make sure to include the unit code (BIOL2022) in the subject line, e.g. “BIOL2022: Question about Assignment 1”, so that Januar can easily identify your email (he teaches many units related to statistics)."
+  },
+  {
+    "objectID": "help.html#feedback",
+    "href": "help.html#feedback",
+    "title": "Contact, Help & Support",
+    "section": "Feedback",
+    "text": "Feedback\nIf you need more feedback on your work, you can ask for it during the drop-in sessions. Januar will happily discuss your work in more detail. Many students find it helpful to bring their work to the drop-in sessions, so they can get specific feedback on their projects or assignments. This can be done before the submission deadline or after you have received your marks and feedback."
+  },
+  {
+    "objectID": "lectures.html",
+    "href": "lectures.html",
+    "title": "Lectures",
+    "section": "",
+    "text": "Browse the lecture hubs by week, or return to Weekly content for practicals and other resources."
+  },
+  {
+    "objectID": "lectures.html#module-1-fundamentals",
+    "href": "lectures.html#module-1-fundamentals",
+    "title": "Lectures",
+    "section": "Module 1: Fundamentals",
+    "text": "Module 1: Fundamentals\n\nWeek 1 — Introduction and fundamentals\nWeek 2 — Sampling and modelling\nWeek 3 — Assumptions and comparisons\nWeek 4 — Multiple predictors and transformations\nWeek 5 — Fixed and random effects"
+  },
+  {
+    "objectID": "lectures.html#module-2-univariate-experiments",
+    "href": "lectures.html#module-2-univariate-experiments",
+    "title": "Lectures",
+    "section": "Module 2: Univariate experiments",
+    "text": "Module 2: Univariate experiments\n\nWeek 6 — Refresher and categorical variables\nWeek 7 — Relationships and binary responses\nWeek 8 — Model selection and revision"
+  },
+  {
+    "objectID": "lectures.html#module-3-multivariate-data",
+    "href": "lectures.html#module-3-multivariate-data",
+    "title": "Lectures",
+    "section": "Module 3: Multivariate data",
+    "text": "Module 3: Multivariate data\n\nWeek 9 — Multivariate analysis and PCA\nWeek 10 — Clustering and multidimensional scaling\nWeek 11 — MANOVA and multivariate revision\nWeek 12 — Rarefaction and Bayesian analysis\nWeek 13 — Exam revision"
+  },
+  {
+    "objectID": "module01/101-intro.html",
+    "href": "module01/101-intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Science is about asking the right questions in the right way so we can draw meaningful conclusions from the data we collect. This is not as simple as it seems, but it is a key skill in scientific enquiry. We need to be able to ask questions in a quantitative way to distinguish between different explanations for the things we observe. Before we start using t-tests, regression, or ANOVA; before we perform mixed modelling or moltivariate analyses; before we use the newest tools for data analysis, we must first learn to ask the right questions. So let’s go back to basics.\nIn this module:\n\nLectures (Weeks 1 –5) will cover the fundamental principles of scientific enquiry, including how to ask the right questions, how to design a study, and how to interpret results. We will also introduce to you the linear modelling framework, which is a powerful tool for understanding the relationships between variables in your data.\nPracticals (Weeks 1–3) aim to help you build the essential skills for scientific enquiry. We will cover experimental design, model formulation, and sampling design. Each week begins with a short 30-minute workshop to introduce the main ideas and techniques. You will then complete the practical work."
+  },
+  {
+    "objectID": "module01/105-images.html",
+    "href": "module01/105-images.html",
+    "title": "Intertidal sites",
+    "section": "",
+    "text": "This page contains images of intertidal rocky shore sites along the Great Southern Reef. These images are provided for the purpose of the lab activities in Weeks 2 (and maybe 3)."
+  },
+  {
+    "objectID": "module01/105-images.html#two-sites",
+    "href": "module01/105-images.html#two-sites",
+    "title": "Intertidal sites",
+    "section": "Two sites",
+    "text": "Two sites\nYou will be working with images from two sites: Site A and Site B. Each site has 20 images, which are randomly selected from a larger set of images.\nThe advantage of sampling two sites is that you can assess whether your observations from one site can be generalised to another. This is a common approach in ecology, where we often sample multiple sites to understand patterns at a larger scale, and addresses representative sampling and pseudoreplication.\n\n\n\n\n\n\nImportant\n\n\n\nYou now get to decide how the story goes:\n\nAre you sampling both sites as one?\nAre you sampling just one of the two sites?\nAre you sampling each site separately, but comparing them to each other?\n\nDepending on what you decide, your model may need to be tweaked, and your observations may need to be reinterpreted or improved."
+  },
+  {
+    "objectID": "module01/105-images.html#assumptions-and-prior-knowledge",
+    "href": "module01/105-images.html#assumptions-and-prior-knowledge",
+    "title": "Intertidal sites",
+    "section": "Assumptions and prior knowledge",
+    "text": "Assumptions and prior knowledge\n\nImages are randomly selected and assumed to be independent.\nImages are assumed to be representative of their respective site(s).\n\nThe next step is to define your sampling strategy, and decide how you will use the images to answer your question."
+  },
+  {
+    "objectID": "module01/105-images.html#sites",
+    "href": "module01/105-images.html#sites",
+    "title": "Intertidal sites",
+    "section": "Sites",
+    "text": "Sites\nNote: images are only available in the HTML version of this document. If you choose to (or if the images below do not load), you can also access the images by downloading them as a zipped archive here.\n\nSite 1Site 2"
+  },
+  {
+    "objectID": "module02/204-report1.html",
+    "href": "module02/204-report1.html",
+    "title": "Report 1 – Instructions",
+    "section": "",
+    "text": "The project written report is the individual component of this assessment It is submitted via the Canvas assignment called Report 1.\nThe other component of this assignment is the data file, which should be submitted by one group member via the Canvas assignment called Report 1: Group data submission.\nDate due: Week 9, check Canvas for exact date\nLate penalty: you will incur a penalty of 5% (5 points out of 100) for each 24 hours or part thereof after the deadline (weekends and public holidays included), unless you have Special Consideration.\nLength penalty: you will incur a penalty of 5% (5 points out of 100; up to 30 points) for each page or part thereof over the page limit."
+  },
+  {
+    "objectID": "module02/204-report1.html#about",
+    "href": "module02/204-report1.html#about",
+    "title": "Report 1 – Instructions",
+    "section": "",
+    "text": "The project written report is the individual component of this assessment It is submitted via the Canvas assignment called Report 1.\nThe other component of this assignment is the data file, which should be submitted by one group member via the Canvas assignment called Report 1: Group data submission.\nDate due: Week 9, check Canvas for exact date\nLate penalty: you will incur a penalty of 5% (5 points out of 100) for each 24 hours or part thereof after the deadline (weekends and public holidays included), unless you have Special Consideration.\nLength penalty: you will incur a penalty of 5% (5 points out of 100; up to 30 points) for each page or part thereof over the page limit."
+  },
+  {
+    "objectID": "module02/204-report1.html#a-note-about-plagiarism",
+    "href": "module02/204-report1.html#a-note-about-plagiarism",
+    "title": "Report 1 – Instructions",
+    "section": "2 A note about plagiarism",
+    "text": "2 A note about plagiarism\nDo not plagiarise or you will face penalties. Check the academic integrity website for access to:\n\nthe policies and codes covering academic honesty and conduct at the University.\na link to the AHEM (Academic Honesty Education Module); complete the module if you haven’t already done so. You cannot submit your report if you have not completed this module.\nIf you are still unsure about how to avoid plagiarism, check with Clare McArthur well before submitting your report.\nYour report will be checked for plagiarism using software."
+  },
+  {
+    "objectID": "module02/204-report1.html#submitting-your-individual-report",
+    "href": "module02/204-report1.html#submitting-your-individual-report",
+    "title": "Report 1 – Instructions",
+    "section": "3 Submitting your individual report",
+    "text": "3 Submitting your individual report\n\nSubmitting your anonymous report for marking:\n\nONE electronic document through Canvas. As this needs to be anonymous, do not include your name anywhere in the report.\nUse a filename of the form “Day-Time-Project-Your SID”, e.g. “WED2-4pmProj4A-Your SID”.\n\nUsing your report to help other students: so we can provide useful feedback using real examples, your report or parts of it may be used as (anonymous) examples for current and future students. If you wish to opt out of this, please make a statement to this effect on your report.\nPage limit: maximum 10 pages double-spaced, including everything (i.e. abstract, references, your statement about use of AI, and everything else).\nReferences: minimum of 10 key references from the primary scientific literature, probably a mix of key recent and older papers. They must be relevant, demonstrating that you have read about the topic comprehensively. You will use them to show how you understand what people have already done and how your work fits into and/or extends what is already known, and that you have used the references to help understand what you have found."
+  },
+  {
+    "objectID": "module02/204-report1.html#requirements-for-your-report",
+    "href": "module02/204-report1.html#requirements-for-your-report",
+    "title": "Report 1 – Instructions",
+    "section": "4 Requirements for your report",
+    "text": "4 Requirements for your report\n\nYou will be marked according to the criteria in the marking rubric for this module. Read and USE this rubric as a check-list before, during and after writing your report and before you submit it.\nUse minimum of 12 pt font and no less than 2 cm margins all around.\nYou must write all your report yourself, in your own words, on the experimental research project you have done. If you use AI, you must follow the university guidelines and you must provide a statement on its use (or if not, state that instead).\nYour report should follow the format and general content of a real scientific article. To get a feel for what we expect and how to present each part of your report, read the published literature in your subject area.\nChoose a relevant journal style and follow it (but don’t use “newsprint” columns); e.g. note that figure headings are below and table headings are above the figures/tables.\nWe expect information from the primary literature; i.e. academic peer-reviewed sources, particularly scientific journals. Avoid websites: they usually lack quality control, and they come and go. I recommend that you use:\n\nWeb of Science (and Google Scholar) as your main portal for accessing journal articles, searched using key words and\nEndNote or Mendeley for organising your references (but it is not essential). Consult the Library for short courses on how to use these if you don’t know already.\n\nIf you are uncertain about anything seek help early from the teaching staff in class."
+  },
+  {
+    "objectID": "module02/204-report1.html#clares-tips-on-writing-your-report",
+    "href": "module02/204-report1.html#clares-tips-on-writing-your-report",
+    "title": "Report 1 – Instructions",
+    "section": "5 Clare’s tips on writing your report",
+    "text": "5 Clare’s tips on writing your report\nA great reference on how to write well:\n\nMensh B, Kording K (2017) Ten simple rules for structuring papers. PLoS Comp. Biol. 13. doi: 10.1371/journal.pcbi.1005619\n\nSTART EARLY, START EARLY, START EARLY: you can start to draft your introduction as early as Week 5, once you have read the literature on the topic and have a feel for what your experiment will cover. Don’t try to make it perfect – just get some words down. You can also start to draft your Materials and Methods section once you have started your experiment and before Week 7. You should be able to draft your result section after Week 7 and then finalise your whole report, including your discussion, in Week 8 and before submitting in Week 9.\nTitle: keep it brief, relevant, informative and interesting.\n\n5.1 Abstract\n\nBrief abstract (max. 120 words), including (1) background. (providing the context for your problem/project), (2) hypotheses or aims, (3) what you did, (4) what you found, (5) what it means, hence could be five sentences.\nDo NOT include references or details of statistical results (e.g. no F or P values).\n\n\n\n5.2 Introduction\n\nWhat do we know already? Make sure it leads logically to your aim(s). Provide the context - previous studies on the subject, using published (mainly) primary scientific literature, NOT websites. Integrate information clearly and concisely without loss of original meaning, to provide a logical, well-interpreted review of existing research and other information.\nAim of the experiment and biological hypotheses (IF…) and predictions (THEN…).\nWhy is the study important and/or interesting.\nStudy system – species, location of experiment (brief).\nDefinitions of scientific terms (if needed).\n\n\n\n5.3 Materials and Methods\n\nPilot study (if needed, keep it brief).\nSet-up of experiment.\nSampling design.\nData / variables recorded and how.\nStatistical analyses used, including which are dependent/independent variable(s) (if applicable), unit of replication, actual test(s) & why they are appropriate, statistical package(s).\n\n\n\n5.4 Results\n\nWritten statements describing results (data and stats). Refer to tables and figures as needed. Do NOT simply provide the tables and figures without supporting text.\nSummary presentation of data (no raw data) as tables, figures or in text as appropriate. Use tables for large amounts of data where detail is important, use figures to illustrate patterns. Indicate sample size and errors, and note whether the latter are standard errors or standard deviations… Format consistently. Make sure decimal places reflect your real capability to measure (e.g. can you really measure a 1 kg plant to 6 decimal places?)\nResults of statistical analyses presented either in text, on figures, or in tables.\n\nImportant tips:\n\nKnow what stats matter from the output – there are lots of them!\n\nOnly some/key stats need to be included in your report\nDo not copy and paste stats output from your stats package\nDO type the key stats results up yourself and only include what matters – that way we know you know what matters\n\nCheck assumptions if any are associated with your stats analysis:\n\nIn your Methods section of your report: say what/whether you have checked, whether they were met, if not, what did you do?\nin your report DO NOT present normality plots or plots of residuals\n\nPrepare your formal plot(s) for your report\n\nYou may present the plot produced by your stats package\n\n\n\n\n5.5 Discussion\n\nMain conclusions or findings\nInterpret results – what do they mean? How do they relate to original aims?\nCompare with and discuss in context of previously published work.\nEvery single study has some limitations to its approach or methods. This does NOT mean it is necessarily flawed. Take a positive approach to your research, given the usual constraints of ANY study, and if you do want to mention/discuss these constraints, do not reduce your discussion to a lengthy apology.\nFuture studies – what would you do next to extend our understanding of the subject and/or improve what you did? Keep this brief.\n\n\n\n5.6 General\n\nWrite in PLAIN English:\n\nBe succinct and avoid trying to sound “scientific”.\nread it out aloud, if it sounds pompous it is, and it should NOT be.\n\nCorrect presentation (format/length).\nReferences used and cited correctly. You are expected to use at least 10 relevant references from the primary literature."
+  },
+  {
+    "objectID": "module02/204-report1.html#more-tips-on-writing-your-report",
+    "href": "module02/204-report1.html#more-tips-on-writing-your-report",
+    "title": "Report 1 – Instructions",
+    "section": "6 More tips on writing your report",
+    "text": "6 More tips on writing your report\nThe following is a summary written by Clare’s Lab Group of PhD and Honours students after critically discussing two papers — not for content — but for how they were written.\n\n6.1 Structuring Research Papers: by Clare’s Lab Group\n“Rules” based on Mensh B, Kording K (2017) Ten simple rules for structuring papers. PLoS Comput Biol 13(9): e1005619. https://doi.org/10.1371/journal.pcbi.1005619\n\n6.1.1 Papers discussed:\n\nCline, B. B. and Hunter, M. L. (2014), Different open‐canopy vegetation types affect matrix permeability for a dispersing forest amphibian. J Appl Ecol, 51: 319-329. doi:10.1111/1365-2664.12197\n\n\nPalmer, M. S., Fieberg, J. , Swanson, A. , Kosmala, M. and Packer, C. (2017), A ‘dynamic’ landscape of fear: prey responses to spatiotemporal variations in predation risk across the lunar cycle. Ecol Lett, 20: 1364-1373. doi:10.1111/ele.12832\n\n\n\n\n6.2 General notes\n\nDo write for your reader, do not write for yourself.\nIf you read the first sentence of every paragraph, it should tell a story.\nThe order of your ideas in each section should be the same; i.e. consistent order in intro, MM, R and probably D of your aims, methods for each aim (provided that works), results and discussion of your results associated with each aim.\nSubheadings can make sections easier to read and understand the flow of ideas.\nAvoid zigzagging ideas, i.e. you should never need to say “as mentioned above”.\nUse consistent wording – DO NOT use a variety of words to mean the same thing because it is confusing for readers. They will not know if you are referring to one thing or several. DO: pick one name for a variable and stick to it.\nTake the reader by the hand. DO NOT assume they know what you know. DO lead them through your work and explain things as you go along. Justify your decisions. Think like a reviewer: what will they want to know? Pre-empt it by being transparent, explaining what you decided to do and why.\n\n\n6.2.1 Introduction\n\nThere will generally be more references in the intro than the discussion. The focus of the intro is on: what do we know already?\nReferences are used to provide background of the research area – do not just list references on a topic. Instead, use them to summarise what we know and understand as a result of these studies. Make it clear what we know from (a) empirical evidence (with examples, i.e. do we know it for lots of individuals/species/contexts/ecosystems or whatever? which? Just one? which?) OR (b) what we think we know (conceptual hypotheses).\n\n\n\n6.2.2 Suggested Paragraph 1:\n\nIntroduce the broad topic.\nDescribe what research has been done on this topic.\n\n\n\n6.2.3 Suggested Paragraph 2:\n\nStart to narrow down what area in this topic your paper will be covering\n\nIntroduce gaps in knowledge.\nPossibly describe issues with previous studies (that your paper will address).\n\nThis information can show the importance of your paper.\n\n\n\n6.2.4 Suggested Paragraph 3 to 5:\n\nSpecifically describe what your paper will investigate.\nState your aims and hypotheses/predictions. These should follow and funnel down from your background. If you put your hand over your aims, you should be able to guess them from the background you provide above.\nBriefly describe how you investigated the topic.\nState any predictions with information to backup these predictions.\n\n\n\n6.2.5 Discussion\n\nThe focus is now on what you found, what it means and so how you have advanced our state of knowledge & understanding as a result of what you have done.\nTherefore: generally fewer references in the discussion than the introduction.\nReferences should be used to support your idea or relate your conclusions/results to previous studies.\nThe following paragraph order makes sense but you can obviously increase or decrease the number of paragraphs depending on the context and size of your study.\n\n\n\n6.2.6 Suggested Paragraph 1:\n\nState any broad results that you found.\nProvide evidence from your results that enabled you to come to that conclusion.\nCompare the result to any predictions you made or previous studies.\n\n\n\n6.2.7 Suggested Paragraph 2 to 4:\n\nState more detailed results (e.g. species specific results if dealing with multiple species).\nProvide evidence from your results that enabled you to come to that conclusion.\nCompare the result to any predictions made or previous studies.\n\n\n\n6.2.8 Suggested Paragraph 5:\n\nLimitations of your study\n\nNo study can answer everything and every study is limited in some way in what is achieves! Don’t worry! That’s life!\nDon’t dwell on this or go too much in depth – especially do not be apologetic.\nBe positive: just outline the boundaries of the conclusions that can be made with your results.\n\nSuggested direction of future studies i.e. what could be done next to move forward in our understanding and/or resolving any unanswered questions given what you have now discovered – again keep this brief.\n\n\n\n6.2.9 Suggested Paragraph 6:\n\nWhat are the implications of your study for your field of research\nDescribe what this information can affect or be used for (e.g. management decisions).\n\n\n\n6.2.10 Suggested Paragraph 7:\n\nYou do not need a concluding paragraph – but if you do, it is not just a summary.\nIt should be more big picture stuff but take care: it should not state something that could have been said whether or not you had done your study. It must rest on your study."
+  },
+  {
+    "objectID": "module02/206-rubric.html",
+    "href": "module02/206-rubric.html",
+    "title": "Report 1 – Rubric",
+    "section": "",
+    "text": "Download the rubric for Report 1 here.\n\n\n\nDownload the Report 1 marking rubric PDF."
+  },
+  {
+    "objectID": "module03/301-intro.html",
+    "href": "module03/301-intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "TipObjectives\n\n\n\nThe aim of this component of the practical series is to introduce you to several commonly used techniques for analysing multivariate data. By the end of the series, you will:\n\nUnderstand the principles underlying Principal Components Analysis (PCA) and Non-metric Multidimensional Scaling (nMDS)\nBe familiar with the concepts behind multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA\nBe able to plan and conduct experiments that test multivariate hypotheses\nKnow how to carry out these analyses using relevant statistical software\nBe able to interpret, present, and report your findings clearly and effectively"
+  },
+  {
+    "objectID": "module03/301-intro.html#background",
+    "href": "module03/301-intro.html#background",
+    "title": "Introduction",
+    "section": "1 Background",
+    "text": "1 Background\nMultivariate analyses are becoming increasingly common in biology, largely due to the growing accessibility of software tools capable of handling complex data. However, as discussed in lectures, this accessibility has also led to the uncritical and sometimes inappropriate use of multivariate methods. It is therefore essential that biologists develop a working understanding of when and how to apply these techniques, as well as how to recognise when others have used them incorrectly.\nMultivariate approaches are widely used for:\n\nSummarising complex patterns in biological data,\nIdentifying groupings or patterns among samples or species,\nTesting statistical hypotheses involving multivariate datasets."
+  },
+  {
+    "objectID": "module03/301-intro.html#what-youll-be-doing",
+    "href": "module03/301-intro.html#what-youll-be-doing",
+    "title": "Introduction",
+    "section": "2 What you’ll be doing",
+    "text": "2 What you’ll be doing\nIn this part of the course, you will:\n\nPractice performing key multivariate techniques using sample datasets provided during practical sessions.\nApply those techniques to your own data, which you will collect and collate in groups.\nExplore and compare the outcomes of different multivariate methods, observing how each highlights different features of the same dataset.\n\nAlthough best scientific practice recommends selecting appropriate analyses before data collection, this exercise is designed to give you the opportunity to trial multiple analytical approaches and better understand their application and interpretation."
+  },
+  {
+    "objectID": "module03/301-intro.html#analyses-and-programs-well-use",
+    "href": "module03/301-intro.html#analyses-and-programs-well-use",
+    "title": "Introduction",
+    "section": "3 Analyses and programs we’ll use",
+    "text": "3 Analyses and programs we’ll use\nThe main programs we will use in this course are Jamovi and PRIMER. However, if you prefer working in R, complete R scripts (RStudio files) for all the methods covered will be made available on Canvas.\n\nPrincipal Components Analysis\nPrincipal Components Analysis (PCA) is a method used to reduce the complexity of large datasets by transforming them into a smaller set of uncorrelated variables (called principal components) that capture the maximum variance in the original data.\nThis technique is especially useful for analysing habitat data, where multiple environmental variables can be summarised into a few key components that describe the main gradients in the data.\nWe will perform PCA using Jamovi (or R, if preferred)."
+  },
+  {
+    "objectID": "module03/301-intro.html#nmds-and-multivariate-hypothesis-testing",
+    "href": "module03/301-intro.html#nmds-and-multivariate-hypothesis-testing",
+    "title": "Introduction",
+    "section": "4 nMDS and multivariate hypothesis testing",
+    "text": "4 nMDS and multivariate hypothesis testing\n\n(ANOSIM, PERMANOVA, and SIMPER)\nIn this section of the course, we will explore techniques for visualising and testing patterns in complex multivariate datasets. These methods reduce the dimensionality of the data (e.g., species abundances across sites) to reveal meaningful patterns and relationships, and then allow us to test explicit hypotheses about these patterns—often in relation to predefined groups (e.g., treatment types) or environmental variables.\nWe will primarily use PRIMER 7 for these analyses, although equivalent R code will also be provided.\n\n\nnMDS – Non-metric multidimensional scaling\nnMDS is an ordination technique used to visualise patterns in multivariate data by representing samples in a low-dimensional space based on their similarity (usually Bray-Curtis). It helps us see groupings or gradients in community composition or other multivariate datasets.\n\n\nANOSIM – Analysis of similarities\nANOSIM tests whether groups of samples differ in composition based on a comparison of within-group vs among-group similarity. It uses rank-based distance measures and is best suited to simple experimental designs.\n\nSoftware: PRIMER 7 (or R)\nOutput includes: Global R statistic and p-value"
+  },
+  {
+    "objectID": "module03/301-intro.html#permanova-permutational-multivariate-analysis-of-variance",
+    "href": "module03/301-intro.html#permanova-permutational-multivariate-analysis-of-variance",
+    "title": "Introduction",
+    "section": "5 PERMANOVA – Permutational multivariate analysis of variance",
+    "text": "5 PERMANOVA – Permutational multivariate analysis of variance\nPERMANOVA is a more flexible and powerful method for testing hypotheses in multivariate data. It uses permutation-based ANOVA on a resemblance matrix and can accommodate complex experimental designs, including multiple fixed and random factors.\n\nSoftware: PRIMER 7 (or R)\nCapable of testing main effects, interactions, and nested designs"
+  },
+  {
+    "objectID": "module03/301-intro.html#simper-similarity-percentages",
+    "href": "module03/301-intro.html#simper-similarity-percentages",
+    "title": "Introduction",
+    "section": "6 SIMPER – Similarity percentages",
+    "text": "6 SIMPER – Similarity percentages\nWhen a significant difference is detected (e.g., by ANOSIM or PERMANOVA), SIMPER helps identify which variables (e.g., species) are contributing most to the observed differences between groups.\n\nIt calculates the percentage contribution of each variable to the overall dissimilarity.\nUseful for interpreting biological meaning behind multivariate differences.\nSoftware: PRIMER 7 (or R)"
+  },
+  {
+    "objectID": "module03/301-intro.html#timeline",
+    "href": "module03/301-intro.html#timeline",
+    "title": "Introduction",
+    "section": "7 Timeline",
+    "text": "7 Timeline\n\nWeek 9: introduction, PCA of lecture data and designing model systems to test multivariate hypotheses (in groups) for your reports.\nWeek 10: group presentations of model systems and experimental design, and how to perform nMDS, PERMANOVA (and ANOSIM) and SIMPER using sample data\nWeek 11: submitting your complete datafiles onto Canvas, analysing your report data\nWeek 12: additional analyses and summary of findings and guidelines for describing multivariate methods and results for your report"
+  },
+  {
+    "objectID": "prerequisites.html",
+    "href": "prerequisites.html",
+    "title": "Am I ready for BEDA?",
+    "section": "",
+    "text": "Do you have the necessary background for BEDA? We spent a lot of time designing BEDA with the assumption that you have met the assumed knowledge of having completed a first-year statistics unit (e.g., ENVX1002 or DATA1001 or an equivalent). Many students miss this as it is not a strict prerequisite, but it is important to know that we have listed a statistics (or equivalent) unit of study as an ASSUMED KNOWLEDGE in the unit outline.\nAre you currently still in the first year of your undergraduate degree? If you are currently a first-year student, please DO NOT enrol in BEDA. Report writing and group work are a major component of the unit, and we run essay-type exams. These are often difficult for first-year students to manage in addition to the workload and expectations of transitioning to University.\n## How to checkif you are ready\nWwe have put together a few questions on the key ideas you should already be familiar with so that you may self-assess yourself. You should be able to:\n\nExplain what a p-value is: What does a p-value actually mean? If you got a p-value of 0.03 from a biology experiment, what would you conclude?\nKnow your correlation: What’s the difference between positive and negative correlation? And why doesn’t correlation mean one thing causes another?\nTell data types apart: Can you explain the difference between continuous, discrete, and categorical data? Could you give an example of each?\nDescribe the ‘middle’ of your data i.e. central tendency: When would you use the mean instead of the median to talk about the centre of a dataset?\nUnderstand hypothesis testing: What are the main steps for testing a hypothesis? What do the null and alternative hypotheses do?\nUnderstand basic statistical tests: Can you remember what t-tests and simple linear regressions are for? Do you know what a ‘confidence interval’ or ‘standard error’ is telling you? It’s alright if you’re a bit rusty on these from first year, but could you get the gist with a quick recap?\n\nThe first couple of weeks of BEDA will briefly cover these concepts but we will be treating these as assumed knowledge/revision. If you are not familiar with these topics we strongly suggest you review them as soon as you can."
+  },
+  {
+    "objectID": "unit-information.html",
+    "href": "unit-information.html",
+    "title": "Unit information",
+    "section": "",
+    "text": "WelcomeAssumed knowledgeModulesLectures & pracsCode of conduct\n\n\nThank you for joining BIOL2022: Biology Experimental Design and Analysis, also known as BEDA (🐝-da). The ability to critically evaluate evidence is a fundamental life skill. In BEDA, we build this skill through hands-on work in experimental design and data analysis. How do we design a robust study? How does a study’s design shape its results? How do we choose statistical tools that fit the research question? The reasoning skills you develop will be invaluable not just in biology, but in any future career path you choose.\nOur approach in BEDA is based on three principles:\n\nThe MODEL determines the method. Building a model makes the structure of your question and data explicit. This guides you towards the appropriate test, even when you do not know its name (although most likely it is a general linear model). We will therefore focus on the model and its assumptions, which is easier than trying to remember all the different tests.\nThe workflow is consistent. We show you a process for analysing data that can be applied to (almost) any dataset. You will learn to check assumptions, visualise data, fit a model and interpret results using a single technique that works across most software.\nThe focus is on statistical thinking The same model can be fitted in Jamovi, R, SPSS or another program. A strong understanding of the model matters more than familiarity with a particular interface.\n\nWhile the focus of BEDA is on the reasoning behind data analysis and interpreting results, we also provide practical guidance on using software. We recommend Jamovi if you are new to statistical software. If you already have experience with R, you are welcome to use it. SPSS remains a supported alternative although you need to weigh its limitations outside of academia.\n\n\nBEDA is designed to build on introductory statistics rather than teach it from the beginning. We use ideas such as data types, sampling variation, hypothesis testing, p-values, confidence intervals and simple statistical models from the opening weeks. This allows us to spend more time on designing biological studies, building appropriate models and interpreting evidence.\nBecause BEDA has broad prerequisites, completing a prerequisite does not always mean that you have studied statistics. However, taking a first-year statistics unit is an assumed knowledge for BIOL2022. Not fully meeting the assumed knowledge may make BEDA extremely challenging as we have limited time to explain basic concepts that are assumed to be known from first-year statistics.\nYou do not need to remember everything perfectly. However, the main ideas should be familiar enough that a short recap brings them back. Use Am I ready for BEDA? to check your starting point. If several topics are completely new, review them before semester or ask the teaching team where to begin.\n\n\nBEDA is organised into three modules, each taught by a different lecturer. Ideas introduced early in the unit continue through the semester as they are applied to different kinds of biological research.\nIn Module 1 (Weeks 1–5), Januar introduces the foundations of study design and statistical modelling. You will look at how a research question, the way a study is designed and the data you collect come together in a model.\nIn Module 2 (Weeks 6–8), Clare develops these ideas through univariate experiments. You will work with real examples and examine how decisions made during study design affect the results and the conclusions. This leads into Report 1, where you will design and analyse an experiment of your own.\nIn Module 3 (Weeks 9–12), Mat extends the unit into multivariate analysis, where several variables may change together. For Report 2, you will collect data from your environment and learn how to describe and interpret the patterns within it.\n\n\nThere are two lectures each week. Unfortunately we do not get to pick the locations, so they are held in different buildings on different days. You are expected to attend 80% of lectures in one way or another. We record this attendance in-person and online when you watch the recordings.\n\nTuesday, 10–11 am — Belinda Hutchinson Building, Lecture Theatre 1110\nWednesday, 10–11 am — Sydney Nanoscience Hub, Lecture Theatre 4002 (Messel)\n\nYou will also attend one two-hour practical each week in your allocated class:\n\nTuesday, 2–4 pm or 4–6 pm\nWednesday, 2–4 pm or 4–6 pm\nFriday, 2–4 pm or 4–6 pm\n\nAll practicals are held in Carslaw Building, Wet Lab 307. Check your personal timetable for your allocated class and any timetable changes. Do note that because we are a large cohort, once you are allocated to a practical class, you cannot change it. To change your practical class, you must contact the unit coordinator and provide a valid reason, normally a time table clash with another unit or caring responsibilities.\nAttendance: You are expected to participate in at least 80% of timetabled activities and must attend at least 10 of the 12 practicals. See Attendance under the Code of Conduct for further details.\n\n\nA code of conduct is a shared agreement about how we learn and work together.\nBEDA should be a respectful and inclusive place to learn. Treat classmates and staff with courtesy, including when you disagree. Use people’s correct names and pronouns, respect different backgrounds and levels of experience, make space for others to contribute, and avoid disrupting lectures or practicals. Discrimination, intimidation and harassment are not acceptable. Follow staff instructions and all laboratory safety requirements when working in laboratory spaces.\n\nWorking with your group and data\nContribute fairly to your group’s work and raise participation problems early. As with any group work, the issues that arise are often best resolved by talking to your group members first. It is important to use a group charter to clarify expectations and responsibilities including how to share data and work together.\nShare group data and the information needed to interpret it promptly. Never fabricate data, or omit or alter observations without documenting and justifying the decision. You may discuss your analysis with your group, but any individual report must be written and submitted independently.\nMore information on how to work work with your group is provided with the Report 1 and Report 2 instructions. If you are unsure about what is acceptable, ask your practical demonstrator or the unit coordinator.\n\n\nAttendance\nAttend lectures live where possible. If you miss a lecture, watch the recording promptly. You are expected to have attended or watched the Tuesday lecture before your practical. Because practicals run on Tuesday, Wednesday and Friday, the Wednesday lecture is not assumed knowledge for that week’s practical, but you should attend or watch it during the same week.\nYou must attend at least 10 of the 12 practicals to meet the 80% attendance requirement. Practical attendance is not managed through special consideration. Record your own attendance during each practical using the QR code or website link, then check that it has been recorded correctly. You have one week to request a correction.\n\n\nRaising a concern\nFor routine group-work, data-sharing or class concerns, speak with your practical demonstrator or the unit coordinator as early as possible. You do not need to approach the teaching team first if the matter is serious or you would be uncomfortable doing so. The University provides separate pathways for complaints, bullying, harassment and discrimination and confidential support through Safer Communities for sexual harm or gender-based violence. In an immediate emergency, call 000 and follow the University’s emergency and campus safety guidance."
   }
 ]
