@@ -26,14 +26,17 @@ website:
     - module03/304-week11.qmd
     - module03/305-week12.qmd
   navbar:
-    collapse-below: xl
+    collapse-below: lg
     left:
       - icon: house-fill
         text: Home
         href: index.qmd
       - icon: info-circle-fill
-        text: Unit information
+        text: About
         href: unit-information.qmd
+      - icon: clock-history
+        text: Updates
+        href: updates.qmd
       # - icon: clipboard-check
       #   text: Assessments
       #   href: assessments/assessments.qmd

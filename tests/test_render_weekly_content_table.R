@@ -829,7 +829,7 @@ early_feedback_note <- html_notes[grepl(
   fixed = TRUE
 )]
 expect_true(
-  length(early_feedback_note) == 2L &&
+  length(early_feedback_note) == 4L &&
     any(grepl("Assessment (5%):", early_feedback_note, fixed = TRUE)) &&
     any(grepl("Assessment (10%):", early_feedback_note, fixed = TRUE)) &&
     !any(grepl("Task \\(5\\%\\)", early_feedback_note, fixed = TRUE)) &&
@@ -853,15 +853,15 @@ internal_note <- html_notes[grepl(
   fixed = TRUE
 )]
 expect_true(
-  length(internal_note) == 1 &&
-    any(grepl("{.weekly-note-link}", internal_note, fixed = TRUE)) &&
+  length(internal_note) == 2 &&
+    any(grepl("weekly-note-link", internal_note, fixed = TRUE)) &&
     !any(grepl("↗", internal_note, fixed = TRUE)),
   "Internal Notes should be linked without an external marker."
 )
 
 unlinked_note <- html_notes[grepl("Quiz 1", html_notes, fixed = TRUE)]
 expect_true(
-  length(unlinked_note) == 1 &&
+  length(unlinked_note) == 2 &&
     !any(grepl("[Quiz 1](", unlinked_note, fixed = TRUE)) &&
     !any(grepl("↗", unlinked_note, fixed = TRUE)),
   "Unlinked Notes should contain neither a link nor an external marker."
@@ -902,7 +902,7 @@ render_front_page <- function() {
 rendered_html_table <- render_front_page()
 expect_true(
   grepl(
-    '<div id="weekly-content"[^>]*role="region"[^>]*aria-label="Weekly content table"',
+    '<div id="weekly-content"[^>]*role="region"[^>]*aria-label="Weekly content schedule"',
     rendered_html_table,
     perl = TRUE
   ),
@@ -919,6 +919,61 @@ expect_true(
     fixed = TRUE
   ),
   "The rendered schedule should give its table a stable accessible name."
+)
+expect_true(
+  grepl("weekly-schedule-desktop", rendered_html_table, fixed = TRUE) &&
+    grepl("weekly-schedule-mobile", rendered_html_table, fixed = TRUE),
+  "HTML should provide dedicated desktop and mobile schedule presentations."
+)
+expect_true(
+  count_fixed_matches(rendered_html_table, 'data-schedule-week="') == 13L,
+  "The mobile schedule should include one chronological block for every week."
+)
+expect_true(
+  grepl(
+    'class="weekly-current-week-jump" href="#mobile-week-1" hidden',
+    rendered_html_table,
+    fixed = TRUE
+  ) &&
+    grepl("Jump to current week", rendered_html_table, fixed = TRUE),
+  "The mobile schedule should include a progressively enhanced current-week jump."
+)
+expect_true(
+  grepl("weekly-mobile-break", rendered_html_table, fixed = TRUE) &&
+    grepl(
+      "<strong>Mid-semester break</strong> — 28 September–2 October 2026",
+      rendered_html_table,
+      fixed = TRUE
+    ),
+  "The chronological mobile schedule should include the configured semester break."
+)
+expect_true(
+  grepl("Open Week 1 practical", rendered_html_table, fixed = TRUE) &&
+    grepl("weekly-mobile-notes", rendered_html_table, fixed = TRUE),
+  "Mobile weeks should keep practicals and Notes visible."
+)
+expect_true(
+  grepl("@media (width < 48rem)", timeline_css, fixed = TRUE) &&
+    grepl(
+      "#weekly-content .weekly-schedule-desktop",
+      timeline_css,
+      fixed = TRUE
+    ) &&
+    grepl(".weekly-mobile-week.is-current-week", timeline_css, fixed = TRUE),
+  "The schedule should switch presentations and retain current-week styling on phones."
+)
+expect_true(
+  grepl(
+    'document.querySelectorAll("#weekly-content .weekly-mobile-week")',
+    semester_status_script,
+    fixed = TRUE
+  ) &&
+    grepl(
+      'jumpLink.href = `#mobile-week-${week}`',
+      semester_status_script,
+      fixed = TRUE
+    ),
+  "Current-week logic should update both the mobile highlight and jump target."
 )
 expect_true(
   !grepl("<caption", rendered_html_table, fixed = TRUE),
@@ -988,7 +1043,9 @@ external_marker_tags <- regmatches(
 )[[1]]
 expect_true(
   length(note_icon_tags) ==
-    sum(weekly_content$section == "extra" & weekly_content$show_on_schedule) &&
+    2L * sum(
+      weekly_content$section == "extra" & weekly_content$show_on_schedule
+    ) &&
     all(grepl('aria-hidden="true"', note_icon_tags, fixed = TRUE)),
   "Every rendered Note icon should be decorative."
 )
@@ -1156,7 +1213,7 @@ expect_true(
   "The site should retain a 16 px accessible base font size."
 )
 expect_true(
-  grepl("collapse-below: xl", quarto_config, fixed = TRUE),
+  grepl("collapse-below: lg", quarto_config, fixed = TRUE),
   "Navigation should collapse before its links or brand become cramped."
 )
 expect_true(

@@ -2,7 +2,7 @@
 
 <script src="scripts/semester-status.js"></script>
 
-::: {#weekly-content .table-responsive tabindex="0" role="region" aria-label="Weekly content table"}
+::: {#weekly-content role="region" aria-label="Weekly content schedule"}
 
 ```{r}
 #| echo: false

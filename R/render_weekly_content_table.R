@@ -149,6 +149,10 @@ escape_html_attribute <- function(value) {
   gsub(">", "&gt;", value, fixed = TRUE)
 }
 
+escape_html_text <- function(value) {
+  escape_html_attribute(value)
+}
+
 validate_semester_breaks <- function(data) {
   if (is.null(data)) {
     return(invisible(TRUE))
@@ -706,6 +710,193 @@ semester_break_table_lines <- function(entry) {
   )
 }
 
+weekly_mobile_resource_html <- function(resource, class_name) {
+  title <- escape_html_text(resource$title)
+  class_name <- escape_html_attribute(class_name)
+
+  if (is.null(resource$url) || !nzchar(resource$url)) {
+    return(sprintf('<span class="%s">%s</span>', class_name, title))
+  }
+
+  sprintf(
+    '<a class="%s" href="%s">%s</a>',
+    class_name,
+    escape_html_attribute(resource$url),
+    title
+  )
+}
+
+weekly_mobile_note_html <- function(resource) {
+  definition <- weekly_note_definition(resource)
+  label <- if (identical(resource$note_type, "assessment")) {
+    paste0(definition$label, " (", resource$note_weight, "%)")
+  } else {
+    definition$label
+  }
+  destination <- escape_html_text(resource$title)
+  if (!is.null(resource$url) && nzchar(resource$url)) {
+    destination <- sprintf(
+      '<a class="weekly-note-link" href="%s">%s</a>',
+      escape_html_attribute(resource$url),
+      destination
+    )
+  }
+  external_marker <- if (identical(resource$url_kind, "external")) {
+    '<span class="weekly-note-external-marker" aria-hidden="true">↗</span>'
+  } else {
+    ""
+  }
+
+  paste0(
+    '<li><span class="bi ', definition$icon,
+    ' weekly-note-icon" aria-hidden="true"></span>',
+    '<span class="weekly-note-content">',
+    '<span class="weekly-note-category">',
+    escape_html_text(label), ':</span> ',
+    destination, external_marker,
+    "</span></li>"
+  )
+}
+
+weekly_mobile_week_lines <- function(entry) {
+  lecture <- if (length(entry$lectures) == 0) NULL else entry$lectures[[1]]
+  theme <- if (is.null(lecture)) {
+    paste("Week", entry$week)
+  } else {
+    weekly_mobile_resource_html(lecture, "weekly-mobile-theme")
+  }
+  description <- if (is.null(lecture) || is.null(lecture$description)) {
+    "—"
+  } else {
+    escape_html_text(lecture$description)
+  }
+
+  practical_entry <- if (is.null(entry$workshop)) {
+    entry$practical
+  } else {
+    entry$workshop
+  }
+  practical_title <- if (is.null(practical_entry)) {
+    "—"
+  } else {
+    title <- paste("Open Week", entry$week, "practical")
+    visible_title <- escape_html_text(title)
+    destination <- if (
+      is.null(practical_entry$url) || !nzchar(practical_entry$url)
+    ) {
+      paste0(
+        '<span class="weekly-mobile-practical-label">',
+        visible_title,
+        "</span>"
+      )
+    } else {
+      sprintf(
+        '<a class="weekly-mobile-practical-link" href="%s">%s</a>',
+        escape_html_attribute(practical_entry$url),
+        visible_title
+      )
+    }
+    paste0(
+      '<span class="weekly-mobile-practical-entry">',
+      '<span class="weekly-mobile-practical-icon" aria-hidden="true"></span>',
+      destination,
+      "</span>"
+    )
+  }
+
+  note_lines <- if (length(entry$extras) == 0) {
+    '<span class="weekly-mobile-empty">—</span>'
+  } else {
+    c(
+      '<ul class="weekly-note-list weekly-mobile-notes">',
+      vapply(entry$extras, weekly_mobile_note_html, character(1)),
+      "</ul>"
+    )
+  }
+
+  c(
+    sprintf(
+      paste0(
+        '<section class="weekly-mobile-week" id="mobile-week-%s" ',
+        'data-schedule-week="%s" aria-labelledby="mobile-week-%s-title">'
+      ),
+      entry$week,
+      entry$week,
+      entry$week
+    ),
+    paste0(
+      '<div class="weekly-mobile-week-number"><span>',
+      entry$week,
+      '</span><small>Week</small></div>'
+    ),
+    '<div class="weekly-mobile-week-content">',
+    '<div class="weekly-mobile-week-heading">',
+    sprintf(
+      '<h3 id="mobile-week-%s-title">%s</h3>',
+      entry$week,
+      theme
+    ),
+    '<span class="weekly-mobile-current-label" hidden></span>',
+    "</div>",
+    '<div class="weekly-mobile-item">',
+    '<span class="weekly-mobile-item-label">Lectures</span>',
+    sprintf(
+      '<span class="weekly-mobile-description">%s</span>',
+      description
+    ),
+    "</div>",
+    '<div class="weekly-mobile-item">',
+    '<span class="weekly-mobile-item-label">Practical</span>',
+    practical_title,
+    "</div>",
+    '<div class="weekly-mobile-item">',
+    '<span class="weekly-mobile-item-label">Notes</span>',
+    note_lines,
+    "</div>",
+    "</div>",
+    "</section>"
+  )
+}
+
+weekly_mobile_break_lines <- function(entry) {
+  c(
+    '<section class="weekly-mobile-break">',
+    '<div class="weekly-mobile-break-rail" aria-hidden="true">Break</div>',
+    paste0(
+      '<p><strong>', escape_html_text(entry$title), "</strong> — ",
+      escape_html_text(entry$date_range), "</p>"
+    ),
+    "</section>"
+  )
+}
+
+weekly_mobile_schedule_lines <- function(weekly_content, semester_breaks) {
+  lines <- c(
+    '<div class="weekly-schedule-mobile">',
+    '<div class="weekly-mobile-header">',
+    "<h2>Weekly schedule</h2>",
+    paste0(
+      '<a class="weekly-current-week-jump" href="#mobile-week-1" hidden>',
+      'Jump to current week <span aria-hidden="true">↓</span></a>'
+    ),
+    "</div>"
+  )
+
+  for (entry in weekly_content) {
+    lines <- c(lines, weekly_mobile_week_lines(entry))
+
+    breaks_after_week <- Filter(
+      function(break_entry) break_entry$after_week == entry$week,
+      semester_breaks
+    )
+    for (break_entry in breaks_after_week) {
+      lines <- c(lines, weekly_mobile_break_lines(break_entry))
+    }
+  }
+
+  c(lines, "</div>")
+}
+
 weekly_table_lines <- function(
   weekly_content,
   semester_breaks,
@@ -870,6 +1061,17 @@ render_weekly_content_table <- function(
       html_output,
       plain_output
     )
+    if (html_output) {
+      lines <- c(
+        '::: {.weekly-schedule-desktop .table-responsive tabindex="0"}',
+        "",
+        lines,
+        "",
+        ":::",
+        "",
+        weekly_mobile_schedule_lines(weekly_content, semester_breaks)
+      )
+    }
   }
 
   cat(paste(lines, collapse = "\n"), "\n")
