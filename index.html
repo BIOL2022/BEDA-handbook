@@ -77,6 +77,7 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="assets/timeline.css">
 <link rel="stylesheet" href="assets/manual-headings.css">
+<link rel="stylesheet" href="assets/handbook-download.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -174,6 +175,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Welcome to the BEDA handbook. This book contains (most) lectures, tutorials and practical content for BIOL2022. Unless otherwise noted, material published here is available under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 licence</a>. See <a href="./about-handbook.html">About this handbook</a> for the licence scope, exclusions, edition and citation details.</p>
+<div class="handbook-download">
+<p><a href="downloads/BIOL2022-unit-handbook.pdf" class="handbook-download-link"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Download PDF handbook</a></p>
+</div>
 <p id="semester-status" role="status" aria-live="polite">
 Loading semester status…
 </p>
@@ -778,7 +782,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/BIOL2022\.github\.io\/BEDA-handbook\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
