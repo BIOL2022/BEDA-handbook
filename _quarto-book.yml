@@ -1,32 +1,34 @@
 project:
   type: book
+  output-dir: _book
+  # The selected PDF pages are controlled by book.chapters below.
+  render: []
 
 date: today
-date-format: "[Semester 2,] YYYY"
-
+date-format: "[Semester 2 ·] YYYY"
 
 book:
   title: Biology Experimental Design and Analysis
-  subtitle: BIOL2022 Unit Manual
+  subtitle: BIOL2022 Unit Handbook
   author:
     - Dr. Januar Harianto
     - Prof. Clare McArthur
     - Prof. Matthew Crowther
   date: today
-  # site-url: https://biol2022.github.io/BIOL2022-unit-manual/
-  sidebar:
-    # background: "#EEE5E9"
-    # logo: assets/bedalogo.svg
-    search: true
-    style: floating
   chapters:
     - index.qmd
-    
+    - unit-information.qmd
+
 format:
-  pdf: 
-    toc: true
-    # monofont: "DejaVu Sans Mono"
-    mainfont: "Times New Roman"
+  typst:
+    template-partials:
+      - typst/typst-show.typ
+papersize: a4
+number-sections: true
+toc: true
+
+filters:
+  - filters/typst-book-index.lua
 
 execute:
   freeze: auto

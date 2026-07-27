@@ -9,6 +9,36 @@ execute:
 
 ---
 
-Welcome to the BEDA handbook. This book contains (most) lectures, tutorials and practical content for BIOL2022. Any resource that is published here is available under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). **If resources link back to [Canvas](https://canvas.sydney.edu.au/courses/74353), they are not covered by this license. Please do not share Canvas materials outside of the course.**
+::: {.content-visible when-format="html"}
+
+Welcome to the BEDA handbook. This book contains (most) lectures, tutorials and
+practical content for BIOL2022. Unless otherwise noted, material published here
+is available under the [CC BY 4.0
+licence](https://creativecommons.org/licenses/by/4.0/). See
+[About this handbook](about-handbook.qmd) for the licence scope, exclusions,
+edition and citation details.
 
 {{< include _partials/weekly-schedule.qmd >}}
+
+:::
+
+::: {.content-visible when-format="typst"}
+
+```{=typst}
+#beda-colophon[
+#text(size: 8pt, weight: "semibold", fill: black)[
+  {{< meta edition-label >}} · Semester {{< meta edition-semester >}},
+  {{< meta edition-year >}}
+]
+#v(0.35em)
+```
+
+# About this edition {#about-this-edition .unnumbered .unlisted .colophon-title}
+
+{{< include _partials/colophon-content.qmd >}}
+
+```{=typst}
+]
+```
+
+:::

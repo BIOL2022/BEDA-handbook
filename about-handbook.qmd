@@ -1,0 +1,9 @@
+---
+title: "About this handbook"
+toc: true
+---
+
+**{{< meta edition-label >}} · Semester {{< meta edition-semester >}},
+{{< meta edition-year >}}**
+
+{{< include _partials/colophon-content.qmd >}}

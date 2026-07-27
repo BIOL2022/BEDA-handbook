@@ -49,7 +49,7 @@ You will also attend one two-hour practical each week in your allocated class:
 - **Wednesday, 2–4 pm or 4–6 pm**
 - **Friday, 2–4 pm or 4–6 pm**
 
-All practicals are held in [**Carslaw Building, Wet Lab 307**](). Check your personal timetable for your allocated class and any timetable changes. Do note that because we are a large cohort, once you are allocated to a practical class, you cannot change it. To change your practical class, you must contact the unit coordinator and provide a valid reason, normally a time table clash with another unit or caring responsibilities.
+All practicals are held in **Carslaw Building, Wet Lab 307**. Check your personal timetable for your allocated class and any timetable changes. Do note that because we are a large cohort, once you are allocated to a practical class, you cannot change it. To change your practical class, you must contact the unit coordinator and provide a valid reason, normally a time table clash with another unit or caring responsibilities.
 
 **Attendance:** You are expected to participate in at least 80% of timetabled activities and must attend at least 10 of the 12 practicals. See **Attendance** under the Code of Conduct for further details.
 
@@ -73,8 +73,19 @@ Attend lectures live where possible. If you miss a lecture, watch the recording 
 
 You must attend at least 10 of the 12 practicals to meet the 80% attendance requirement. Practical attendance is not managed through special consideration. Record your own attendance during each practical using the QR code or website link, then check that it has been recorded correctly. You have one week to request a correction.
 
+```{=typst}
+#pagebreak(weak: true)
+```
+
 #### Raising a concern
 
 For routine group-work, data-sharing or class concerns, speak with your practical demonstrator or the unit coordinator as early as possible. You do not need to approach the teaching team first if the matter is serious or you would be uncomfortable doing so. The University provides separate pathways for [complaints, bullying, harassment and discrimination](https://www.sydney.edu.au/students/complaints.html) and confidential support through [Safer Communities](https://www.sydney.edu.au/students/health-wellbeing/sexual-harm-and-gender-based-violence-support.html) for sexual harm or gender-based violence. In an immediate emergency, call 000 and follow the University's [emergency and campus safety guidance](https://www.sydney.edu.au/students/emergencies-safety-on-campus.html).
+
+:::
+
+::: {.content-visible when-format="html"}
+
+For publication, edition, licensing and citation details, see
+[About this handbook](about-handbook.qmd).
 
 :::

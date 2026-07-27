@@ -1,0 +1,66 @@
+This edition of the *Biology Experimental Design and Analysis Unit Handbook*
+was prepared for BIOL2022 at the University of Sydney.
+
+Biology Experimental Design and Analysis changes as we refine the teaching,
+practical activities, datasets and assessments. Students returning to this
+material should use the edition from the year in which they completed the unit.
+Later editions may differ, sometimes substantially.
+
+## Authors
+
+Januar Harianto · Clare McArthur · Matthew Crowther
+
+## How this book was built
+
+This handbook is written in Quarto using Markdown and R. The online handbook is
+published as HTML, while the A4 edition is typeset with Typst. The print edition
+uses Libertinus Serif throughout. The source is developed openly on GitHub, and
+meaningful changes are recorded on the Updates page.
+
+## Rendering the handbook
+
+Most students should use the published PDF. Students who want to build a local
+copy can install Quarto 1.9 or later and R. The
+[rendering instructions in the source repository](https://github.com/BIOL2022/BEDA-handbook#rendering-the-handbook)
+explain the remaining steps.
+
+## Licence
+
+The [Creative Commons Attribution 4.0 International
+licence](https://creativecommons.org/licenses/by/4.0/) applies to the original
+content in this handbook except where otherwise noted. You may share and adapt
+this material with appropriate credit, a link to the licence and an indication
+of any changes.
+
+Materials linked from Canvas and separately credited images or other
+third-party content are not included under this licence.
+
+---
+
+::: {.content-visible when-format="html"}
+
+- [Open the online handbook](https://biol2022.github.io/BEDA-handbook)
+- [View the source repository](https://github.com/BIOL2022/BEDA-handbook)
+- [Read handbook updates](https://biol2022.github.io/BEDA-handbook/updates.html)
+
+:::
+
+::: {.content-visible when-format="typst"}
+
+**Online handbook:** <https://biol2022.github.io/BEDA-handbook>
+
+**Source:** <https://github.com/BIOL2022/BEDA-handbook>
+
+**Updates:** <https://biol2022.github.io/BEDA-handbook/updates.html>
+
+:::
+
+## Suggested citation
+
+Harianto, J., McArthur, C., & Crowther, M. ({{< meta edition-year >}}).
+*Biology Experimental Design and Analysis Unit Handbook* ({{< meta edition-citation-label >}}).
+[{{< meta edition-citation-url >}}]({{< meta edition-citation-url >}})
+
+*This handbook has been shaped by the students and staff who have studied and
+taught Biology Experimental Design and Analysis. Their questions, feedback and
+practical experience continue to inform each edition.*

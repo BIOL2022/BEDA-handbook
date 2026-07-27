@@ -9,6 +9,9 @@ project:
     - "!_book/**"
     - "!_partials/**"
 
+metadata-files:
+  - _edition.yml
+
 website:
   title: "BIOL2022"
   search: true
@@ -53,6 +56,10 @@ website:
       - icon: chat-dots-fill
         text: Ed
         href: https://edstem.org/au/courses/36475/
+  page-footer:
+    left:
+      - text: About this handbook
+        href: about-handbook.qmd
 
 format:
   html:
