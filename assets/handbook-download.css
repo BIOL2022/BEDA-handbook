@@ -14,3 +14,12 @@
 .handbook-download-link .bi {
   font-size: 1.05em;
 }
+
+.handbook-download-link.is-disabled,
+.handbook-download-status {
+  color: #5c636a;
+}
+
+.handbook-download-status {
+  margin-left: 0.4rem;
+}

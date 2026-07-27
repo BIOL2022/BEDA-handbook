@@ -8,7 +8,7 @@ toc: true
 
 ::: {.handbook-download}
 
-[<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Download PDF handbook](downloads/BIOL2022-unit-handbook.pdf){.handbook-download-link}
+[<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF handbook]{.handbook-download-link .is-disabled} [The PDF version will be available soon.]{.handbook-download-status}
 
 :::
 
