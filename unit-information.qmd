@@ -5,26 +5,25 @@ title: "Unit information"
 
 ::: {.panel-tabset}
 
+
 ## Welcome {.section-rail}
+
+![](/assets/images/banner02.png)
 
 Thank you for joining **BIOL2022: Biology Experimental Design and Analysis**, also known as BEDA (🐝-da). The ability to critically evaluate evidence is a fundamental life skill. In BEDA, we build this skill through hands-on work in experimental design and data analysis. How do we design a robust study? How does a study’s design shape its results? How do we choose statistical tools that fit the research question? The reasoning skills you develop will be invaluable not just in biology, but in *any* future career path you choose.
 
-Our approach in BEDA is based on three principles:
-
-1. **The MODEL determines the method.** Building a model makes the structure of your question and data explicit. This guides you towards the appropriate test, even when you do not know its name (although most likely it is a general linear model). We will therefore focus on the model and its assumptions, which is easier than trying to remember all the different tests.
-2. **The workflow is consistent.** We show you a process for analysing data that can be applied to (almost) any dataset. You will learn to check assumptions, visualise data, fit a model and interpret results using a single technique that works across most software.
-3. **The focus is on statistical thinking** The same model can be fitted in Jamovi, R, SPSS or another program. A strong understanding of the model matters more than familiarity with a particular interface.
-
-
-While the focus of BEDA is on the reasoning behind data analysis and interpreting results, we also provide practical guidance on using software. We recommend **Jamovi** if you are new to statistical software. If you already have experience with **R**, you are welcome to use it. **SPSS** remains a supported alternative although you need to weigh its limitations outside of academia.
+While the focus of BEDA is on the reasoning behind data analysis and interpreting results, we also provide practical guidance on using software. We recommend **Jamovi** if you are new to statistical software. If you already have experience with **R**, you are welcome to use it. **SPSS** and PRIMER are also supported but we prefer to use open-source software where possible as they remain accessible to all.
 
 ## Assumed knowledge {.section-rail}
 
+### If you have not studied statistics before, BEDA WILL BE CHALLENGING...
 BEDA is designed to build on introductory statistics rather than teach it from the beginning. We use ideas such as data types, sampling variation, hypothesis testing, p-values, confidence intervals and simple statistical models from the opening weeks. This allows us to spend more time on designing biological studies, building appropriate models and interpreting evidence.
 
-Because BEDA has broad prerequisites, completing a prerequisite does not always mean that you have studied statistics. **However, taking a first-year statistics unit is an [**assumed knowledge for BIOL2022**](https://www.sydney.edu.au/units/BIOL2022#:~:text=Assumed%20knowledge)**. Not fully meeting the assumed knowledge may make BEDA *extremely* challenging as we have limited time to explain basic concepts that are assumed to be known from first-year statistics.
+Because BEDA has broad prerequisites, qualifying for enrolment into this unit does **not** always mean that you have studied statistics. **However, taking a first-year statistics unit is an [**assumed knowledge for BIOL2022**](https://www.sydney.edu.au/units/BIOL2022#:~:text=Assumed%20knowledge)**. Not fully meeting the assumed knowledge may make BEDA *extremely* challenging as we have limited time to explain basic concepts that are assumed to be known from first-year statistics.
 
-You do not need to remember everything perfectly. However, the main ideas should be familiar enough that a short recap brings them back. Use [Am I ready for BEDA?](prerequisites.qmd) to check your starting point. If several topics are completely new, review them before semester or ask the teaching team where to begin.
+Some enthusiastic students choose to take BEDA straight after their first semester of first year. If this is you, there may be extra challenges, as report writing, group work, and time management skills are usually developed across the full first year of university. For this reason, we strongly recommend taking BEDA in your second year (as intended), so you are better prepared for the workload and expectations of a unit designed for students with more experience.
+
+If you decide to stick around, use [Am I ready for BEDA?](prerequisites.qmd) to see what you need to review so that you can get the most out of the unit.
 
 ## Modules {.section-rail}
 

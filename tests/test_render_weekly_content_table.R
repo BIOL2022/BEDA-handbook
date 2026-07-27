@@ -225,11 +225,12 @@ expect_true(
     weekly_note_registry,
     list(
       resource = list(label = "Resource", icon = "bi-book"),
+      quiz = list(label = "Practice quiz (0%)", icon = "bi-check2-square"),
       assessment = list(label = "Assessment", icon = "bi-clipboard-check"),
       notice = list(label = "Notice", icon = "bi-info-circle")
     )
   ),
-  "The Notes registry should cover the three supported categories."
+  "The Notes registry should cover the four supported categories."
 )
 
 missing_note_type <- weekly_content
@@ -313,10 +314,10 @@ read_authored_note_weight <- function(value) {
     warn = FALSE,
     encoding = "UTF-8"
   )
-  target_line <- grep("^1,extra,2,", csv_lines)
+  target_line <- grep("^4,extra,1,", csv_lines)
   stopifnot(length(target_line) == 1L)
   csv_lines[[target_line]] <- sub(
-    ",assessment,0$",
+    ",assessment,5$",
     paste0(",assessment,", value),
     csv_lines[[target_line]]
   )
@@ -338,7 +339,7 @@ for (authored_value in c("05", " 5", "5e1")) {
   )
   expect_error(
     validate_weekly_content(authored_weight),
-    "week 1, position 2",
+    "week 4, position 1",
     paste(
       "Authored note_weight should be rejected without normalisation:",
       shQuote(authored_value)
@@ -429,7 +430,8 @@ invalid_note_titles <- c(
   "bi bi-book Bootstrap icon",
   "Destination arrow →",
   "Destination arrow ↗",
-  "Resource: Prefixed category"
+  "Resource: Prefixed category",
+  "Practice quiz: Prefixed category"
 )
 for (value in invalid_note_titles) {
   invalid_title_data <- weekly_content
@@ -453,15 +455,17 @@ expect_true(
 )
 
 expected_note_types <- c(
-  "1:1" = "resource", "1:2" = "assessment",
-  "2:1" = "resource", "2:2" = "assessment",
-  "3:1" = "assessment", "3:2" = "assessment",
+  "1:1" = "resource", "1:2" = "quiz",
+  "2:1" = "resource", "2:2" = "quiz",
+  "3:1" = "quiz", "3:2" = "notice",
   "4:1" = "assessment",
-  "5:1" = "assessment", "5:2" = "assessment",
-  "6:1" = "assessment", "6:2" = "notice",
-  "9:2" = "notice", "9:3" = "assessment",
-  "10:1" = "notice", "10:2" = "assessment",
-  "11:1" = "assessment", "11:2" = "assessment"
+  "5:1" = "assessment", "5:2" = "notice",
+  "6:1" = "notice",
+  "8:1" = "assessment",
+  "9:1" = "notice",
+  "10:1" = "notice", "10:2" = "notice",
+  "11:1" = "assessment",
+  "13:1" = "assessment"
 )
 expected_note_titles <- c(
   "1:1" = "Am I ready for BEDA?",
@@ -469,32 +473,24 @@ expected_note_titles <- c(
   "2:1" = "(See how) common statistical tests are linear models",
   "2:2" = "Quiz 2",
   "3:1" = "Quiz 3",
-  "3:2" = "Early Feedback Task — opens Friday at 10 am",
-  "4:1" = "Early Feedback Task: Evaluation Quiz",
-  "5:1" = "Work on your experiments for Report 1",
-  "5:2" = "Review the Report 1 overview and requirements",
-  "6:1" = "Review the Report 1 project and revision timeline",
-  "6:2" = "Project and revision week",
-  "9:2" = "Labour Day — Monday 5 October",
-  "9:3" = "Review Report 1 requirements and due information",
+  "3:2" = "Early Feedback Task opens Friday 21 August at 10:00",
+  "4:1" = "Early Feedback Task due Friday 28 August at 23:59",
+  "5:1" = "Evaluation Quiz due Friday 4 September at 23:59",
+  "5:2" = "Begin working on Report 1",
+  "6:1" = "Report 1 project and revision week",
+  "8:1" = "Report 1 due Friday 25 September at 23:59",
+  "9:1" = "Labour Day — Monday 5 October",
   "10:1" = "Present your experimental design for feedback",
-  "10:2" = "Review the Report 2 overview and requirements",
-  "11:1" = "Submit the group dataset",
-  "11:2" = "Review the Report 2 overview and due information"
+  "10:2" = "Prepare for Report 2",
+  "11:1" = "Report 2 group dataset due at 10:00 on your practical day",
+  "13:1" = "Report 2 individual report due Friday 6 November at 23:59"
 )
 expected_note_weights <- c(
-  "1:2" = 0L,
-  "2:2" = 0L,
-  "3:1" = 0L,
-  "3:2" = 5L,
-  "4:1" = 10L,
-  "5:1" = 25L,
-  "5:2" = 25L,
-  "6:1" = 25L,
-  "9:3" = 25L,
-  "10:2" = 20L,
+  "4:1" = 5L,
+  "5:1" = 10L,
+  "8:1" = 25L,
   "11:1" = 5L,
-  "11:2" = 15L
+  "13:1" = 15L
 )
 note_keys <- paste(
   weekly_content$week[note_rows],
@@ -502,22 +498,22 @@ note_keys <- paste(
   sep = ":"
 )
 expect_true(
-  length(note_rows) == 17L,
-  "The maintained schedule should contain exactly 17 Notes rows."
+  length(note_rows) == 16L,
+  "The maintained schedule should contain exactly 16 Notes rows."
 )
 expect_true(
   identical(
     unname(weekly_content$note_type[note_rows]),
     unname(expected_note_types[note_keys])
   ),
-  "All 17 Notes rows should match the approved taxonomy."
+  "All 16 Notes rows should match the approved taxonomy."
 )
 expect_true(
   identical(
     unname(weekly_content$title[note_rows]),
     unname(expected_note_titles[note_keys])
   ),
-  "All 17 Notes rows should use the approved final titles."
+  "All 16 Notes rows should use the approved final titles."
 )
 expect_true(
   identical(
@@ -579,8 +575,8 @@ expect_true(
 )
 expect_true(
   is.null(entries[[1]]$extras[[1]]$note_weight) &&
-    identical(entries[[1]]$extras[[2]]$note_weight, 0L),
-  "Resource objects should retain Assessment weights and blank other weights."
+    is.null(entries[[1]]$extras[[2]]$note_weight),
+  "Resource and Practice quiz objects should retain blank weights."
 )
 expect_true(
   identical(entries[[1]]$extras[[1]]$url_kind, "internal"),
@@ -819,9 +815,9 @@ expect_true(
   "HTML Resources should include their decorative icon and visible label."
 )
 expect_true(
-  any(grepl("Assessment (0%):", html_notes, fixed = TRUE)) &&
+  any(grepl("Practice quiz (0%):", html_notes, fixed = TRUE)) &&
     any(grepl("Assessment (25%):", html_notes, fixed = TRUE)),
-  "HTML Assessment labels should include their configured weights."
+  "HTML quiz and Assessment labels should show their configured emphasis."
 )
 early_feedback_note <- html_notes[grepl(
   "Early Feedback Task",
@@ -831,10 +827,9 @@ early_feedback_note <- html_notes[grepl(
 expect_true(
   length(early_feedback_note) == 4L &&
     any(grepl("Assessment (5%):", early_feedback_note, fixed = TRUE)) &&
-    any(grepl("Assessment (10%):", early_feedback_note, fixed = TRUE)) &&
-    !any(grepl("Task \\(5\\%\\)", early_feedback_note, fixed = TRUE)) &&
-    !any(grepl("Quiz \\(10\\%\\)", early_feedback_note, fixed = TRUE)),
-  "Assessment weights should appear in labels without being repeated in titles."
+    any(grepl("Notice:", early_feedback_note, fixed = TRUE)) &&
+    !any(grepl("Task \\(5\\%\\)", early_feedback_note, fixed = TRUE)),
+  "The Early Feedback Task should distinguish its opening notice and deadline."
 )
 expect_true(
   any(grepl("[Notice:]{.weekly-note-category}", html_notes, fixed = TRUE)) &&
@@ -1379,13 +1374,16 @@ expect_true(
   "Typst should preserve visible category labels."
 )
 expect_true(
-  any(grepl("**Assessment (0%):** Quiz 1", typst_output, fixed = TRUE)) &&
+  any(grepl("**Practice quiz (0%):** Quiz 1", typst_output, fixed = TRUE)) &&
     any(grepl(
-      "**Assessment (15%):** Review the Report 2 overview and due information",
+      paste0(
+        "**Assessment (15%):** Report 2 individual report due ",
+        "Friday 6 November at 23\\:59"
+      ),
       typst_output,
       fixed = TRUE
     )),
-  "Typst should include configured weights in Assessment labels."
+  "Typst should distinguish practice quizzes from weighted Assessments."
 )
 expect_true(
   any(grepl("**Notice:**", typst_output, fixed = TRUE)) &&

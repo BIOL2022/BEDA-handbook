@@ -3,6 +3,7 @@ weekly_content_sections <- c("lecture", "workshop", "practical", "extra")
 
 weekly_note_registry <- list(
   resource = list(label = "Resource", icon = "bi-book"),
+  quiz = list(label = "Practice quiz (0%)", icon = "bi-check2-square"),
   assessment = list(label = "Assessment", icon = "bi-clipboard-check"),
   notice = list(label = "Notice", icon = "bi-info-circle")
 )
@@ -113,7 +114,7 @@ title_has_presentation_markup <- function(value) {
   grepl("<[^>]+>", value) ||
     grepl("\\bbi\\s+bi-", value, perl = TRUE) ||
     grepl("[→↗]", value) ||
-    grepl("^(Resource|Assessment|Notice):", value)
+    grepl("^(Resource|Practice quiz|Assessment|Notice):", value)
 }
 
 escape_markdown_label <- function(value) {
@@ -349,7 +350,7 @@ validate_weekly_content <- function(data) {
       if (is.na(note_type) || !note_type %in% weekly_note_types) {
         stop(
           context,
-          ": note_type must be resource, assessment, or notice.",
+          ": note_type must be resource, quiz, assessment, or notice.",
           call. = FALSE
         )
       }

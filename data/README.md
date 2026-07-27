@@ -8,22 +8,22 @@ section. Workshop rows remain available to the practical pages but must set
 `show_on_schedule` to `FALSE`.
 
 The `note_type` field is required for every `extra` row and must be exactly
-`resource`, `assessment`, or `notice`. Leave it blank for lectures, workshops,
-and practicals. Do not put labels, icons, arrows, or other presentation markup
-in the CSV.
+`resource`, `quiz`, `assessment`, or `notice`. Leave it blank for lectures,
+workshops, and practicals. Do not put labels, icons, arrows, or other
+presentation markup in the CSV.
 
 The `note_weight` field is required only when `note_type` is `assessment`.
 Enter the assessment weight as a whole number from `0` to `100`, without a
-percent sign. Use `0` for an unweighted required or formative assessment item.
-Do not use leading zeros, surrounding spaces, or scientific notation. Leave
-`note_weight` blank for Resource and Notice rows and for all rows outside Notes.
+percent sign. Do not use leading zeros, surrounding spaces, or scientific
+notation. Leave `note_weight` blank for Resource, Practice quiz, and Notice
+rows and for all rows outside Notes.
 
 For example:
 
 ```csv
 title,note_type,note_weight
-Quiz 1,assessment,0
-Review the Report 1 overview and requirements,assessment,25
+Quiz 1,quiz,
+Report 1 due Friday 25 September at 23:59,assessment,25
 Check whether you are ready for BEDA,resource,
 Labour Day — Monday 5 October,notice,
 ```
@@ -35,6 +35,12 @@ Labour Day — Monday 5 October,notice,
 Use `resource` when the main purpose is to give students material to read,
 watch, or consult. This includes handbook pages, explanatory Canvas or Ed
 posts, books, articles, revision material, and reusable self-check resources.
+
+### Practice quiz
+
+Use `quiz` for the weekly unweighted practice quizzes. These appear as
+“Practice quiz (0%)” so that they remain visible without looking like another
+marked assessment.
 
 ### Assessment
 
@@ -56,9 +62,10 @@ the handbook, Canvas, Ed, or another site. Apply these questions in order:
 
 1. Is it submitted or marked, a hurdle, or a rule, deadline, required output,
    or submission step for a named assessment? Use `assessment`.
-2. Is its main object material to read, watch, or consult? Use `resource`, even
+2. Is it one of the weekly unweighted practice quizzes? Use `quiz`.
+3. Is its main object material to read, watch, or consult? Use `resource`, even
    when students need it for an assessment.
-3. Is it operational information, a general direction, an event, or an
+4. Is it operational information, a general direction, an event, or an
    unmarked invitation to participate? Use `notice`.
 
 ## Mixed-purpose entries
@@ -104,10 +111,10 @@ future or unpublished destination is allowed.
 
 1. A required experimental activity that produces data for Report 1 is
    Assessment. Name Report 1 in the title.
-2. A formative quiz is Assessment only when its attempt is required, marked, a
-   hurdle, or a required output for a named assessment. A reusable optional
-   self-check quiz is Resource; a one-off invitation to try an unmarked
-   activity is Notice.
+2. A weekly unweighted practice quiz is Practice quiz. A marked quiz or a quiz
+   that is a hurdle or required output for a named assessment is Assessment.
+   A reusable optional self-check quiz is Resource; a one-off invitation to try
+   an unmarked activity is Notice.
 3. A formal hurdle or attendance requirement is Assessment. A reminder to
    record attendance is Notice unless it states the formal requirement.
 4. A required draft submission is Assessment. An optional peer-feedback

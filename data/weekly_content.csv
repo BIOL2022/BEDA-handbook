@@ -3,42 +3,40 @@ week,section,position,title,url,description,show_on_schedule,note_type,note_weig
 1,workshop,1,Software and graphical models,module01/w01-intro.qmd,,FALSE,,
 1,practical,1,Getting started,module01/102-week01.qmd,,TRUE,,
 1,extra,1,Am I ready for BEDA?,prerequisites.qmd,,TRUE,resource,
-1,extra,2,Quiz 1,,,TRUE,assessment,0
+1,extra,2,Quiz 1,,,TRUE,quiz,
 2,lecture,1,Sampling and the linear model,lectures/L02/index.qmd,Randomisation and why we teach the linear model first,TRUE,,
 2,practical,1,Study design,module01/103-week02.qmd,,TRUE,,
 2,extra,1,(See how) common statistical tests are linear models,https://lindeloev.github.io/tests-as-linear/,,TRUE,resource,
-2,extra,2,Quiz 2,,,TRUE,assessment,0
+2,extra,2,Quiz 2,,,TRUE,quiz,
 3,lecture,1,Choosing the right model(s),lectures/L03/index.qmd,The easy way to validate model assumptions.,TRUE,,
 3,practical,1,Data analysis,module01/104-week03.qmd,,TRUE,,
-3,extra,1,Quiz 3,,,TRUE,assessment,0
-3,extra,2,Early Feedback Task — opens Friday at 10 am,,,TRUE,assessment,5
+3,extra,1,Quiz 3,,,TRUE,quiz,
+3,extra,2,Early Feedback Task opens Friday 21 August at 10:00,,,TRUE,notice,
 4,lecture,1,Multiple predictors and transformations,lectures/L04/index.qmd,Expanding models and using transformations to increase model fit.,TRUE,,
 4,practical,1,Project launch and pilot study timeline,module02/202-timeline.qmd#wk4,,TRUE,,
-4,extra,1,Early Feedback Task: Evaluation Quiz,,,TRUE,assessment,10
+4,extra,1,Early Feedback Task due Friday 28 August at 23:59,,,TRUE,assessment,5
 5,lecture,1,Controls and revision,lectures/L05/index.qmd,How to control your experiments with data that you collect.,TRUE,,
 5,practical,1,Main experiment timeline,module02/202-timeline.qmd#wk5,,TRUE,,
-5,extra,1,Work on your experiments for Report 1,,,TRUE,assessment,25
-5,extra,2,Review the Report 1 overview and requirements,,,TRUE,assessment,25
+5,extra,1,Evaluation Quiz due Friday 4 September at 23:59,,,TRUE,assessment,10
+5,extra,2,Begin working on Report 1,,,TRUE,notice,
 6,lecture,1,Refresher and categorical variables,lectures/L06/index.qmd,A refresher on designing experiments with categorical variables.,TRUE,,
-6,extra,1,Review the Report 1 project and revision timeline,,,TRUE,assessment,25
-6,extra,2,Project and revision week,,,TRUE,notice,
 7,lecture,1,Relationships and binary responses,lectures/L07/index.qmd,How to design experiments with continuous or binary responses.,TRUE,,
 7,practical,1,Project data analysis timeline,module02/202-timeline.qmd#wk7,,TRUE,,
 8,lecture,1,Model selection and revision,lectures/L08/index.qmd,Which model should we use? Some ideas.,TRUE,,
 8,practical,1,Project report and feedback timeline,module02/202-timeline.qmd#wk8,,TRUE,,
+8,extra,1,Report 1 due Friday 25 September at 23:59,,,TRUE,assessment,25
 9,lecture,1,Multivariate analysis and PCA,lectures/L09/index.qmd,"Introducing multivariate analysis, principal component analysis and factor analysis.",TRUE,,
 9,practical,1,PCA and Report 2,module03/302-week09.qmd,,TRUE,,
-9,extra,2,Labour Day — Monday 5 October,,,TRUE,notice,
-9,extra,3,Review Report 1 requirements and due information,,,TRUE,assessment,25
+9,extra,1,Labour Day — Monday 5 October,,,TRUE,notice,
 10,lecture,1,Clustering and multidimensional scaling,lectures/L10/index.qmd,Using clustering and nMDS to identify and test multivariate patterns.,TRUE,,
 10,practical,1,Permutational techniques,module03/303-week10.qmd,,TRUE,,
 10,extra,1,Present your experimental design for feedback,,,TRUE,notice,
-10,extra,2,Review the Report 2 overview and requirements,,,TRUE,assessment,20
+10,extra,2,Prepare for Report 2,,,TRUE,notice,
 11,lecture,1,MANOVA and multivariate revision,lectures/L11/index.qmd,The MANOVA way of designing and interpreting experiments.,TRUE,,
 11,practical,1,Report 2 data analysis,module03/304-week11.qmd,,TRUE,,
-11,extra,1,Submit the group dataset,,,TRUE,assessment,5
-11,extra,2,Review the Report 2 overview and due information,,,TRUE,assessment,15
+11,extra,1,Report 2 group dataset due at 10:00 on your practical day,,,TRUE,assessment,5
 12,lecture,1,Rarefaction and Bayesian analysis,lectures/L12/index.qmd,The lectures cover rarefaction for diversity comparisons and Bayesian statistical inference.,TRUE,,
 12,practical,1,Report 2 support,module03/305-week12.qmd,,TRUE,,
 13,lecture,1,Exam revision,lectures/L13/index.qmd,You will review the course's experimental-design and modelling concepts for the final exam.,TRUE,,
 13,practical,1,Feedback and discussion practical,,,TRUE,,
+13,extra,1,Report 2 individual report due Friday 6 November at 23:59,,,TRUE,assessment,15
