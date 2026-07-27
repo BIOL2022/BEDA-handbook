@@ -2,8 +2,8 @@ function startCountdown(targetDate, elementId) {
   const countdownElement = document.getElementById(elementId);
   if (!countdownElement) return;
 
-  countdownElement.setAttribute("role", "status");
-  countdownElement.setAttribute("aria-live", "polite");
+  countdownElement.setAttribute("role", "timer");
+  countdownElement.setAttribute("aria-live", "off");
 
   let interval;
 
@@ -20,10 +20,11 @@ function startCountdown(targetDate, elementId) {
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    countdownElement.textContent = `${days}d ${hours}h ${minutes}m`;
+    countdownElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   }
 
   updateCountdown();
-  interval = setInterval(updateCountdown, 60000);
+  interval = setInterval(updateCountdown, 1000);
 }
