@@ -18,6 +18,12 @@ licence](https://creativecommons.org/licenses/by/4.0/). See
 [About this handbook](about-handbook.qmd) for the licence scope, exclusions,
 edition and citation details.
 
+::: {.handbook-download}
+
+[<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Download PDF handbook](downloads/BIOL2022-unit-handbook.pdf){.handbook-download-link}
+
+:::
+
 {{< include _partials/weekly-schedule.qmd >}}
 
 :::

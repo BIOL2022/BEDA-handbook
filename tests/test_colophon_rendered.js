@@ -12,6 +12,7 @@ const {
 } = require("./helpers/edition_metadata.js");
 
 const repoRoot = path.resolve(__dirname, "..");
+const handbookPdfHref = "downloads/BIOL2022-unit-handbook.pdf";
 
 function read(file) {
   return fs.readFileSync(path.join(repoRoot, file), "utf8");
@@ -174,6 +175,32 @@ assertLink(
 assert.match(
   textContent(unitInformationMain),
   /For publication, edition, licensing and citation details, see About this handbook\s*\./,
+);
+
+const homepagePdfLinks = links(homepageMain).filter(
+  (link) => link.href.replace(/^\.\//, "") === handbookPdfHref,
+);
+const aboutPdfLinks = aboutLinks.filter(
+  (link) => link.href.replace(/^\.\//, "") === handbookPdfHref,
+);
+assertLink(links(homepageMain), handbookPdfHref, "Download PDF handbook");
+assertLink(aboutLinks, handbookPdfHref, "Download PDF handbook");
+assert.equal(homepagePdfLinks.length, 1);
+assert.equal(aboutPdfLinks.length, 1);
+assert.equal(homepagePdfLinks[0].text, "Download PDF handbook");
+assert.equal(aboutPdfLinks[0].text, "Download PDF handbook");
+
+const stagedHandbookPdf = path.join(
+  repoRoot,
+  "_site/downloads/BIOL2022-unit-handbook.pdf",
+);
+assert.ok(
+  fs.existsSync(stagedHandbookPdf),
+  `missing staged handbook PDF: ${stagedHandbookPdf}`,
+);
+assert.ok(
+  fs.statSync(stagedHandbookPdf).size > 0,
+  `staged handbook PDF is empty: ${stagedHandbookPdf}`,
 );
 
 console.log("PASS: rendered HTML colophon contract");

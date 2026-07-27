@@ -68,6 +68,7 @@ format:
     css:
       - assets/timeline.css
       - assets/manual-headings.css
+      - assets/handbook-download.css
     toc: true
 
 editor:

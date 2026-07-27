@@ -133,10 +133,15 @@ assert.match(readme, /Quarto 1\.9 or later/);
 assert.match(readme, /and R before rendering/);
 assert.match(readme, /`quarto render`/);
 assert.match(readme, /`quarto render --profile book`/);
+assert.match(readme, /`bash scripts\/stage-handbook-pdf\.sh`/);
 assert.match(readme, /`_site`/);
 assert.match(
   readme,
   /`_book\/Biology-Experimental-Design-and-Analysis\.pdf`/,
+);
+assert.match(
+  readme,
+  /`_site\/downloads\/BIOL2022-unit-handbook\.pdf`/,
 );
 assert.match(readme, /^## Updating the edition$/m);
 assert.match(readme, /`_edition\.yml`/);
@@ -153,6 +158,7 @@ for (const command of [
   "node tests/test_colophon_rendered.js",
   "node tests/test_colophon_layout.js",
   "node tests/test_colophon_pdf.js",
+  "node tests/test_pdf_download.js",
 ]) {
   assert.ok(readme.includes(`\`${command}\``), `missing README command: ${command}`);
 }

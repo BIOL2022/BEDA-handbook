@@ -12,9 +12,11 @@ Use this handbook to navigate BIOL2022 — it contains weekly practicals, assess
 
 Install [Quarto 1.9 or later](https://quarto.org/) and R before rendering.
 
-- Run `quarto render` to build the website in `_site`.
 - Run `quarto render --profile book` to build the Typst handbook at
   `_book/Biology-Experimental-Design-and-Analysis.pdf`.
+- Run `quarto render` to build the website in `_site`.
+- Run `bash scripts/stage-handbook-pdf.sh` to copy the current handbook to
+  `_site/downloads/BIOL2022-unit-handbook.pdf`.
 
 ## Updating the edition
 
@@ -28,3 +30,4 @@ both outputs and run the edition and colophon tests:
 - `node tests/test_colophon_rendered.js`
 - `node tests/test_colophon_layout.js`
 - `node tests/test_colophon_pdf.js`
+- `node tests/test_pdf_download.js`

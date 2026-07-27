@@ -6,4 +6,10 @@ toc: true
 **{{< meta edition-label >}} · Semester {{< meta edition-semester >}},
 {{< meta edition-year >}}**
 
+::: {.handbook-download}
+
+[<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Download PDF handbook](downloads/BIOL2022-unit-handbook.pdf){.handbook-download-link}
+
+:::
+
 {{< include _partials/colophon-content.qmd >}}
