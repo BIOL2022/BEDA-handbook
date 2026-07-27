@@ -4,84 +4,187 @@ date: today
 ---
 
 <style>
+.assessment-list {
+  margin: 2rem 0;
+}
 .assessment-section {
-  border: 2px solid #0072B2;
-  border-radius: 8px;
-  padding: 1em;
-  margin-bottom: 1.5em;
-  background: #f9f9f9;
+  min-width: 0;
+  margin: 0 0 1.25rem;
+  padding: 1.5rem;
+  border: 1px solid #d9d2cf;
+  border-top: 4px solid #6B210F;
+  border-radius: 0;
+  background: #fdfcfc;
+  box-shadow: 0 0.2rem 0.7rem rgb(58 43 38 / 6%);
+}
+.assessment-section h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+.assessment-section h2 .bi {
+  margin-right: 0.4rem;
+  color: #6B210F;
+  font-size: 0.85em;
+}
+.assessment-parts {
+  margin-top: 1.25rem;
+  border-top: 1px solid #d9d2cf;
+}
+.assessment-part {
+  padding: 1rem 0;
+  border-bottom: 1px solid #d9d2cf;
+}
+.assessment-part h3 {
+  margin-top: 0;
+  margin-bottom: 0.65rem;
+  color: #3e3734;
+  font-size: 1.15rem;
+}
+.assessment-due {
+  margin: 0.25rem 0 1rem;
+  color: #4a4542;
+  font-size: 0.95rem;
 }
 [id^="countdown-"] {
-  font-weight: bold;
-  font-size: 1.1em;
-  color: #176b28;
+  display: inline-block;
+  color: #0f6b5b;
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.assessment-countdown {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin: 1.2rem 0 0.75rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.assessment-countdown strong {
+  color: #5a5451;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.assessment-countdown [id^="countdown-"] {
+  font-size: 1.35rem;
+  letter-spacing: 0.01em;
+}
+.assessment-section .assessment-link {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.35rem 0 0.15rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #0f6b5b;
+  border-radius: 0.15rem;
+  color: #0f6b5b !important;
+  background: transparent;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.assessment-section .assessment-link:hover {
+  color: #fff !important;
+  background: #0f6b5b;
+}
+.assessment-section .assessment-link:focus-visible {
+  outline: 3px solid #0f6b5b;
+  outline-offset: 3px;
+}
+@media (width <= 36rem) {
+  .assessment-section {
+    padding: 1.15rem;
+  }
 }
 </style>
 
 
 
 
+::: {.assessment-list}
+
 ::: {.assessment-section}
-## <i class="bi bi-lightbulb"></i> Early Feedback Task (EFT) - 5%
-**Due:** 29 August 2025
+## <i class="bi bi-lightbulb" aria-hidden="true"></i> Early Feedback Task (EFT) - 5%
+<p class="assessment-due"><strong>Due:</strong> 28 August 2026 at 23:59</p>
+
 This is a short **quiz**, designed to give you early feedback on your prior understanding of statistics. 
 It will help you identify areas where you may need to focus your study efforts. 
 
-<p><strong>Due in:</strong> <span id="countdown-eft"></span></p>
-[Details](assessment-eft.qmd){.btn .btn-primary} [Submission link](https://canvas.sydney.edu.au/courses/74353/assignments/696326){.btn .btn-success}
+<p class="assessment-countdown"><strong>Due in:</strong> <span id="countdown-eft"></span></p>
+[View in Canvas](https://canvas.sydney.edu.au/courses/74353/assignments/696326){.assessment-link}
 :::
 
 ::: {.assessment-section}
-## <i class="bi bi-question-circle"></i> Evaluation Quiz (Module 1) - 10%
-**Due:** 5 September 2025
+## <i class="bi bi-question-circle" aria-hidden="true"></i> Evaluation Quiz (Module 1) - 10%
+<p class="assessment-due"><strong>Due:</strong> 4 September 2026 at 23:59</p>
+
 This is a **quiz** that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.
 
-<p><strong>Due in:</strong> <span id="countdown-mod1-quiz"></span></p>
-[Details](assessment-evaluation-quiz.qmd){.btn .btn-primary} [Submission link](https://canvas.sydney.edu.au/courses/74353/assignments/696327){.btn .btn-success}
+<p class="assessment-countdown"><strong>Due in:</strong> <span id="countdown-mod1-quiz"></span></p>
+[View in Canvas](https://canvas.sydney.edu.au/courses/74353/assignments/696327){.assessment-link}
 :::
 
 ::: {.assessment-section}
-## <i class="bi bi-file-earmark-text"></i> Report 1 (Module 2) - 25%
-**Due:** 7 October 2025
+## <i class="bi bi-file-earmark-text" aria-hidden="true"></i> Report 1 (Module 2) - 25%
+<p class="assessment-due"><strong>Due:</strong> 25 September 2026 at 23:59</p>
+
 You will use what you have learned so far to design and analyse an experiment based on a project of your choice. The experiments will be completed in groups, but the reports are individually written and assessed. You will have 6 weeks to complete it.
 
 **Role of Practicals:**  
 Practicals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans. Demonstrators act as advisors, similar to how support works in a research group, and you are welcome to interact with them and your peers for advice, just as you would with postdocs or supervisors. If you are organised, you can also request feedback on your report drafts during practicals to help improve your work.
 
-- [Explore the Report 1 project options](../module02/203-projects.qmd)
-- [Read the Report 1 instructions](../module02/204-report1.qmd)
-- [Open the Report 1 marking rubric](../module02/206-rubric.qmd)
-
-<p><strong>Report due:</strong> <span id="countdown-report1"></span></p>
-[Details](assessment-report-1.qmd){.btn .btn-primary} [**Data** submission](https://canvas.sydney.edu.au/courses/74353/assignments/696330){.btn .btn-success} [**Report** submission](https://canvas.sydney.edu.au/courses/74353/assignments/696331){.btn .btn-success}
+<p class="assessment-countdown"><strong>Due in:</strong> <span id="countdown-report1"></span></p>
+[View in Canvas](https://canvas.sydney.edu.au/courses/74353/assignments/696331){.assessment-link}
 :::
 
-::: {.assessment-section}
-## <i class="bi bi-file-earmark-bar-graph"></i> Report 2 (Module 3) - 20%
-**Due:** 21-24 October 2025 (dataset submission) | 7 November 2025 (report)
+:::: {.assessment-section}
+## <i class="bi bi-file-earmark-bar-graph" aria-hidden="true"></i> Report 2 (Module 3) - 20%
+<p class="assessment-due"><strong>Due:</strong> Week 11 (group dataset) · 6 November 2026 at 23:59 (individual report)</p>
+
 Report 2 is similar to Report 1, but you will need to focus on a project with a multivariate context. Note that there is a 5% group work component to this report that will be assessed via dataset submission, and the report is individually written and assessed (15%). You will have 5 weeks to complete the report.
 
 **Role of Practicals:**  
 Practicals are a mix of structured and unstructured sessions. Each practical begins with a brief workshop to practice a specific analysis technique, followed by time for you to work on your project. Some practicals are dedicated feedback sessions, for example we will prioritise giving feedback on your experimental design and analysis plans in Week 10. As usual, you are welcome to interact with demonstrators and your peers for advice and feedback.
 
-<p><strong>Dataset submission</strong><br>
-*Due at 10am on the day of your laboratory*:<br>
-**Tue groups**: <span id="countdown-report2-dataset-tue"></span><br>
-**Wed groups**: <span id="countdown-report2-dataset-wed"></span><br>
-**Fri groups**: <span id="countdown-report2-dataset-fri"></span><br>
-<strong>Report due:</strong> <span id="countdown-report2"></span></p>
-[Details](assessment-report-2.qmd){.btn .btn-primary} [**Data** submission](https://canvas.sydney.edu.au/courses/74353/assignments/696332){.btn .btn-success} [**Report** submission](https://canvas.sydney.edu.au/courses/74353/assignments/696333){.btn .btn-success}
+::: {.assessment-parts}
+
+::: {.assessment-part}
+### Part 1: Group dataset (5%)
+
+Submit your group's dataset with the information needed to understand how it
+was collected. It is due at **10 am on the day of your Week 11 practical**:
+
+- **Tuesday classes:** 20 October 2026 — <span id="countdown-report2-dataset-tue"></span>
+- **Wednesday classes:** 21 October 2026 — <span id="countdown-report2-dataset-wed"></span>
+- **Friday classes:** 23 October 2026 — <span id="countdown-report2-dataset-fri"></span>
+
+[View in Canvas](https://canvas.sydney.edu.au/courses/74353/assignments/696332){.assessment-link}
+:::
+
+::: {.assessment-part}
+### Part 2: Individual report (15%)
+
+Submit your individual four-page report by **6 November 2026 at 23:59**.
+
+<p class="assessment-countdown"><strong>Due in:</strong> <span id="countdown-report2"></span></p>
+
+[View in Canvas](https://canvas.sydney.edu.au/courses/74353/assignments/696333){.assessment-link}
+:::
+
+:::
+::::
+
 :::
 
 <script src="../scripts/countdown.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    startCountdown('2025-08-29T23:59:59', 'countdown-eft');
-    startCountdown('2025-09-05T23:59:59', 'countdown-mod1-quiz');
-    startCountdown('2025-10-07T23:59:59', 'countdown-report1');
-    startCountdown('2025-10-21T10:00:00', 'countdown-report2-dataset-tue');
-    startCountdown('2025-10-22T10:00:00', 'countdown-report2-dataset-wed');
-    startCountdown('2025-10-24T10:00:00', 'countdown-report2-dataset-fri');
-    startCountdown('2025-11-07T23:59:59', 'countdown-report2');
+    startCountdown('2026-08-28T23:59:00+10:00', 'countdown-eft');
+    startCountdown('2026-09-04T23:59:00+10:00', 'countdown-mod1-quiz');
+    startCountdown('2026-09-25T23:59:00+10:00', 'countdown-report1');
+    startCountdown('2026-10-20T10:00:00+11:00', 'countdown-report2-dataset-tue');
+    startCountdown('2026-10-21T10:00:00+11:00', 'countdown-report2-dataset-wed');
+    startCountdown('2026-10-23T10:00:00+11:00', 'countdown-report2-dataset-fri');
+    startCountdown('2026-11-06T23:59:00+11:00', 'countdown-report2');
   });
 </script>
