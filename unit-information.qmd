@@ -27,13 +27,48 @@ If you decide to stick around, use [Am I ready for BEDA?](prerequisites.qmd) to 
 
 ## Modules {.section-rail}
 
-BEDA is organised into three modules, each taught by a different lecturer. Ideas introduced early in the unit continue through the semester as they are applied to different kinds of biological research.
+BEDA is organised into three modules, each taught by a different lecturer. Ideas introduced early in the unit continue through the semester as they are applied to different kinds of biological research. Importantly the focus is on the reasoning behind the analysis and how the data are collected, rather than just the analysis itself.
 
-In **Module 1 (Weeks 1–5)**, Januar introduces the foundations of study design and statistical modelling. You will look at how a research question, the way a study is designed and the data you collect come together in a model.
 
-In **Module 2 (Weeks 6–8)**, Clare develops these ideas through univariate experiments. You will work with real examples and examine how decisions made during study design affect the results and the conclusions. This leads into Report 1, where you will design and analyse an experiment of your own.
 
-In **Module 3 (Weeks 9–12)**, Mat extends the unit into multivariate analysis, where several variables may change together. For Report 2, you will collect data from your environment and learn how to describe and interpret the patterns within it.
+#### Module 1 (Weeks 1–5)
+
+**Januar** introduces the foundations of study design and statistical modelling. You will look at how a research question, the way a study is designed and the data you collect come together in a model. Some students may be familiar with these ideas from first-year statistics, but we will explore them in a new context. **Importantly, we will use this module to ensure that all students are on the same page with the foundations of study design and statistical modelling, so that we can build on these ideas in later modules**.
+
+The module will introduce you to the following familiar ideas in a new context:
+
+- sampling and how it affects the conclusions you can draw
+- study design and variables
+- graphical models
+- the general linear model (GLM)
+- model assumptions of the GLM
+- transformations and why we use them
+- control variables and random effects as opposed to procedural controls
+
+These ideas help you begin designing your experiment for Report 1.
+
+#### Module 2 (Weeks 6–8)
+
+**Clare** develops the modelling workflow through univariate experiments, where the analysis focuses on one response variable. You will examine experiments involving categorical predictors, continuous relationships and binary responses, then consider how to choose between possible models.
+
+The module will see your starting to collect data for Report 1. You will also be coached on how to write a report that clearly communicates your study design, analysis and interpretation of results. Additional concepts introduced in this module include:
+
+- binary responses
+- non-normal data and dealing with it
+- picking the right model and choosing between models
+
+#### Module 3 (Weeks 9–12)
+
+**Mat** extends the same reasoning to multivariate data, where several response variables are considered together. You will learn how ordination methods such as principal component analysis and multidimensional scaling can reveal patterns in complex datasets, how clustering identifies similar observations, and how multivariate tests evaluate evidence for group differences. **Importantly, you will learn that multivariate methods are great for exploring patterns that you see in the world around you (and are thus very popular in biology)**.
+
+Report 2 brings these ideas together. You will design a multivariate study, collect a group dataset and use it to describe, test and interpret patterns in your environment. We will cover:
+
+- the reason behind multivariate methods
+- the ordination methods PCA and MDS
+- clustering
+- multivariate tests for group differences using PERMANOVA
+- ANOSIM and SIMPER for post-hoc analysis
+
 
 ## Lectures & pracs {.section-rail}
 
