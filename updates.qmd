@@ -4,9 +4,13 @@ title: "Updates"
 
 This page records changes to the handbook that may be useful to students. Small corrections to spelling or formatting are not listed.
 
+## 28 July 2026
+
+The [weekly schedule](index.qmd#weekly-content) now distinguishes unweighted practice quizzes from marked assessments and shows the 2026 deadlines in the weeks when they are due. Countdown timers on the [Assessments page](assessments/assessments.qmd) once again update every second without repeatedly announcing each change to screen readers. We are also preparing a PDF edition of the handbook for offline use; the [front page](index.qmd) and [About this handbook](about-handbook.qmd) page will provide the download when it is ready.
+
 ## 27 July 2026
 
-The current handbook is now available as a [downloadable PDF](downloads/BIOL2022-unit-handbook.pdf). The [Assessments page](assessments/assessments.qmd) now shows the 2026 due dates, clearer countdowns and direct links to each assessment in Canvas. Report 2 is presented as one assessment with separate group dataset and individual report components.
+The [Assessments page](assessments/assessments.qmd) now shows the 2026 due dates, clearer countdowns and direct links to each assessment in Canvas. Report 2 is presented as one assessment with separate group dataset and individual report components.
 
 ## 24 July 2026
 
