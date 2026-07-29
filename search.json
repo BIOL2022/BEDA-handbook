@@ -10,19 +10,26 @@
     "objectID": "updates.html#july-2026",
     "href": "updates.html#july-2026",
     "title": "Updates",
-    "section": "28 July 2026",
-    "text": "28 July 2026\nThe weekly schedule now distinguishes unweighted practice quizzes from marked assessments and shows the 2026 deadlines in the weeks when they are due. Countdown timers on the Assessments page once again update every second without repeatedly announcing each change to screen readers. We are also preparing a PDF edition of the handbook for offline use; the front page and About this handbook page will provide the download when it is ready.\nIn response to student feedback, the Modules overview now provides more detail about what each part of the unit covers and how the three modules connect."
+    "section": "29 July 2026",
+    "text": "29 July 2026\nWe clarified the assumed-knowledge guidance and self-check questions on Am I ready for BEDA?, making it easier to understand the background expected before starting the unit."
   },
   {
     "objectID": "updates.html#july-2026-1",
     "href": "updates.html#july-2026-1",
     "title": "Updates",
-    "section": "27 July 2026",
-    "text": "27 July 2026\nThe Assessments page now shows the 2026 due dates, clearer countdowns and direct links to each assessment in Canvas. Report 2 is presented as one assessment with separate group dataset and individual report components."
+    "section": "28 July 2026",
+    "text": "28 July 2026\nThe weekly schedule now distinguishes unweighted practice quizzes from marked assessments and shows the 2026 deadlines in the weeks when they are due. Countdown timers on the Assessments page once again update every second without repeatedly announcing each change to screen readers. We are also preparing a PDF edition of the handbook for offline use; the front page and About this handbook page will provide the download when it is ready.\nIn response to student feedback, the Modules overview now provides more detail about what each part of the unit covers and how the three modules connect."
   },
   {
     "objectID": "updates.html#july-2026-2",
     "href": "updates.html#july-2026-2",
+    "title": "Updates",
+    "section": "27 July 2026",
+    "text": "27 July 2026\nThe Assessments page now shows the 2026 due dates, clearer countdowns and direct links to each assessment in Canvas. Report 2 is presented as one assessment with separate group dataset and individual report components."
+  },
+  {
+    "objectID": "updates.html#july-2026-3",
+    "href": "updates.html#july-2026-3",
     "title": "Updates",
     "section": "24 July 2026",
     "text": "24 July 2026\nWe clarified parts of the weekly schedule and added assessment weightings to the Notes column. The About page now provides clearer information about statistical software, assumed knowledge, lectures, practicals, attendance and working with your group. On phones, the schedule now uses a stacked weekly layout so lectures, practicals, Notes and the mid-semester break can be read without horizontal scrolling. The current or upcoming week remains highlighted, with a shortcut to it at the top of the mobile schedule."
@@ -669,7 +676,14 @@
     "href": "prerequisites.html",
     "title": "Am I ready for BEDA?",
     "section": "",
-    "text": "Do you have the necessary background for BEDA? We spent a lot of time designing BEDA with the assumption that you have met the assumed knowledge of having completed a first-year statistics unit (e.g., ENVX1002 or DATA1001 or an equivalent). Many students miss this as it is not a strict prerequisite, but it is important to know that we have listed a statistics (or equivalent) unit of study as an ASSUMED KNOWLEDGE in the unit outline.\nAre you currently still in the first year of your undergraduate degree? If you are currently a first-year student, please DO NOT enrol in BEDA. Report writing and group work are a major component of the unit, and we run essay-type exams. These are often difficult for first-year students to manage in addition to the workload and expectations of transitioning to University.\n## How to checkif you are ready\nWwe have put together a few questions on the key ideas you should already be familiar with so that you may self-assess yourself. You should be able to:\n\nExplain what a p-value is: What does a p-value actually mean? If you got a p-value of 0.03 from a biology experiment, what would you conclude?\nKnow your correlation: What’s the difference between positive and negative correlation? And why doesn’t correlation mean one thing causes another?\nTell data types apart: Can you explain the difference between continuous, discrete, and categorical data? Could you give an example of each?\nDescribe the ‘middle’ of your data i.e. central tendency: When would you use the mean instead of the median to talk about the centre of a dataset?\nUnderstand hypothesis testing: What are the main steps for testing a hypothesis? What do the null and alternative hypotheses do?\nUnderstand basic statistical tests: Can you remember what t-tests and simple linear regressions are for? Do you know what a ‘confidence interval’ or ‘standard error’ is telling you? It’s alright if you’re a bit rusty on these from first year, but could you get the gist with a quick recap?\n\nThe first couple of weeks of BEDA will briefly cover these concepts but we will be treating these as assumed knowledge/revision. If you are not familiar with these topics we strongly suggest you review them as soon as you can."
+    "text": "Do you have the necessary background for BEDA? We spent a lot of time designing BEDA with the assumption that you have completed a first-year statistics unit (e.g., ENVX1002, DATA1001 or an equivalent) as part of the assumed knowledge. Many students miss this as it is not a strict prerequisite, but it is important to know that we have listed a statistics (or equivalent) unit of study as ASSUMED KNOWLEDGE in the unit outline.\nAre you currently still in the first year of your undergraduate degree? If you are currently a first-year student, please DO NOT enrol in BEDA. Report writing and group work are major components of the unit, and we run essay-type exams. These are often difficult for first-year students to manage in addition to the workload and expectations of transitioning to university."
+  },
+  {
+    "objectID": "prerequisites.html#how-to-check-if-you-are-ready",
+    "href": "prerequisites.html#how-to-check-if-you-are-ready",
+    "title": "Am I ready for BEDA?",
+    "section": "How to check if you are ready",
+    "text": "How to check if you are ready\nWe have put together a few questions on the key ideas you should already be familiar with to help you assess your readiness. You should be able to:\n\nExplain what a p-value is: What does a p-value actually mean? If you got a p-value of 0.03 from a biology experiment, what would you conclude?\nKnow your correlation: What’s the difference between positive and negative correlation? And why doesn’t correlation mean one thing causes another?\nTell data types apart: Can you explain the difference between continuous, discrete, and categorical data? Could you give an example of each?\nDescribe the ‘middle’ of your data (i.e. central tendency): When would you use the mean instead of the median to talk about the centre of a dataset?\nUnderstand hypothesis testing: What are the main steps for testing a hypothesis? What do the null and alternative hypotheses do?\nUnderstand basic statistical tests: Can you remember what t-tests and simple linear regressions are for? Do you know what a ‘confidence interval’ or ‘standard error’ is telling you? It’s alright if you’re a bit rusty on these from first year, but could you get the gist with a quick recap?\n\nThe first couple of weeks of BEDA will briefly cover these concepts, but we will be treating them as assumed knowledge and revision. If you are not familiar with these topics, we strongly suggest you review them as soon as you can."
   },
   {
     "objectID": "unit-information.html",
