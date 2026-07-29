@@ -2,21 +2,21 @@
 title: "Am I ready for BEDA?"
 ---
 
-**Do you have the necessary background for BEDA?** We spent a lot of time designing BEDA with the assumption that you have met the assumed knowledge of having completed a first-year statistics unit (e.g., [ENVX1002](https://www.sydney.edu.au/units/ENVX1002) or [DATA1001](https://www.sydney.edu.au/units/DATA1001) or an equivalent). [Many students miss this as it is not a strict prerequisite, but it is important to know that we have listed a statistics (or equivalent) unit of study as an ASSUMED KNOWLEDGE in the unit outline.]{style="color: red; font-weight: bold;"}
+**Do you have the necessary background for BEDA?** We spent a lot of time designing BEDA with the assumption that you have completed a first-year statistics unit (e.g., [ENVX1002](https://www.sydney.edu.au/units/ENVX1002), [DATA1001](https://www.sydney.edu.au/units/DATA1001) or an equivalent) as part of the assumed knowledge. [Many students miss this as it is not a strict prerequisite, but it is important to know that we have listed a statistics (or equivalent) unit of study as ASSUMED KNOWLEDGE in the unit outline.]{style="color: red; font-weight: bold;"}
 
-**Are you currently still in the first year of your undergraduate degree?** If you are currently a first-year student, please DO NOT enrol in BEDA. Report writing and group work are a major component of the unit, and we run essay-type exams. These are often difficult for first-year students to manage in addition to the workload and expectations of transitioning to University.
+**Are you currently still in the first year of your undergraduate degree?** If you are currently a first-year student, please DO NOT enrol in BEDA. Report writing and group work are major components of the unit, and we run essay-type exams. These are often difficult for first-year students to manage in addition to the workload and expectations of transitioning to university.
 
 
- ## How to checkif you are ready
+## How to check if you are ready
 
-Wwe have put together a few questions on the key ideas you should already be familiar with so that you may self-assess yourself. You should be able to:
+We have put together a few questions on the key ideas you should already be familiar with to help you assess your readiness. You should be able to:
 
 - **Explain what a p-value is:** What does a p-value actually mean? If you got a p-value of 0.03 from a biology experiment, what would you conclude?
 - **Know your correlation:** What's the difference between positive and negative correlation? And why doesn't correlation mean one thing causes another?
 - **Tell data types apart:** Can you explain the difference between continuous, discrete, and categorical data? Could you give an example of each?
-- **Describe the 'middle' of your data i.e. central tendency:** When would you use the mean instead of the median to talk about the centre of a dataset?
+- **Describe the 'middle' of your data (i.e. central tendency):** When would you use the mean instead of the median to talk about the centre of a dataset?
 - **Understand hypothesis testing:** What are the main steps for testing a hypothesis? What do the null and alternative hypotheses do?
 - **Understand basic statistical tests:** Can you remember what t-tests and simple linear regressions are for? Do you know what a 'confidence interval' or 'standard error' is telling you? *It's alright if you're a bit rusty on these from first year, but could you get the gist with a quick recap?*
 
 
-**The first couple of weeks of BEDA will briefly cover these concepts but we will be treating these as assumed knowledge/revision. If you are not familiar with these topics we strongly suggest you review them as soon as you can.**
+**The first couple of weeks of BEDA will briefly cover these concepts, but we will be treating them as assumed knowledge and revision. If you are not familiar with these topics, we strongly suggest you review them as soon as you can.**

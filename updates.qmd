@@ -4,6 +4,10 @@ title: "Updates"
 
 This page records changes to the handbook that may be useful to students. Small corrections to spelling or formatting are not listed.
 
+## 29 July 2026
+
+We found a bunch of typos on the [Am I ready for BEDA?](prerequisites.qmd) page (Januar needs to proofread more...) and fixed them. That is all.
+
 ## 28 July 2026
 
 The [weekly schedule](index.qmd#weekly-content) now distinguishes unweighted practice quizzes from marked assessments and shows the 2026 deadlines in the weeks when they are due. Countdown timers on the [Assessments page](assessments/assessments.qmd) once again update every second without repeatedly announcing each change to screen readers. We are also preparing a PDF edition of the handbook for offline use; the [front page](index.qmd) and [About this handbook](about-handbook.qmd) page will provide the download when it is ready.
@@ -16,4 +20,6 @@ The [Assessments page](assessments/assessments.qmd) now shows the 2026 due dates
 
 ## 24 July 2026
 
-We clarified parts of the weekly schedule and added assessment weightings to the Notes column. The About page now provides clearer information about statistical software, assumed knowledge, lectures, practicals, attendance and working with your group. On phones, the schedule now uses a stacked weekly layout so lectures, practicals, Notes and the mid-semester break can be read without horizontal scrolling. The current or upcoming week remains highlighted, with a shortcut to it at the top of the mobile schedule.
+Welcome to the changelog! Lots of updates (because we are migrating from the 2025 handbook).
+
+We clarified parts of the weekly schedule and added assessment weightings to the Notes column. The About page now provides clearer information about statistical software, assumed knowledge, lectures, practicals, attendance and working with your group. We also "optimised" the handbook for smaller screens like that phone or tablet that you are probably reading this on..
