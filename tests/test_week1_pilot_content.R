@@ -147,7 +147,7 @@ expect_true(
   "Week 1 should use the canonical Canvas-hosted dataset downloads."
 )
 expect_true(
-  match_count("#### Your task", practical) == 3L,
+  match_count("Your task {.student-task}", practical) == 3L,
   "Each practical exercise should contain a clear Your task heading."
 )
 expect_true(

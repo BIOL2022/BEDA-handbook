@@ -70,6 +70,7 @@ format:
       - assets/handbook-download.css
       - assets/academic-tables.css
       - assets/learning-outcomes.css
+      - assets/student-tasks.css
     toc: true
 
 editor:

@@ -131,7 +131,7 @@ You will now work in pairs to complete the practical exercises. Your demonstrato
 ### Exercise 1: Cheatsheets
 This exercise is designed to get you familiar with the cheatsheets and how to use them. You will be asked to complete a few tasks using the cheatsheets and your chosen software.
 
-#### Your task
+#### <i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Your task {.student-task}
 1. Open Cheatsheets.
 2. Choose **two (2)** cheatsheet that you are not familiar with and see if you can create the outputs that they describe.
 3. Save those outputs. A demonstrator will check your work and give you feedback.
@@ -144,7 +144,7 @@ This exercise is designed to get you familiar with the cheatsheets and how to us
 
 In this exercise you will work on the [**possums.xlsx**](https://canvas.sydney.edu.au/courses/74353/files/51697285/download?download_frd=1) dataset. If you have not already downloaded it, do that now and open it in your chosen software.
 
-#### Your task
+#### <i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Your task {.student-task}
 1. Carefully read the "Metadata" and "AllPossData" sheets in the MS Excel file. The metadata sheet describes the variables in the dataset and their units of measurement. The AllPossData sheet contains the actual data.
 2. Choose six variables, including at least two continuous variables and two categorical variables. Classify each variable and record its type in your lab notebook. Some variables may have more than one reasonable classification.
 3. Use those variables to identify two biologically meaningful pairs: one containing a continuous and a categorical variable, and another containing two continuous variables. You will choose one of these pairs for Exercise 3.
@@ -321,7 +321,7 @@ ggplot(dog_age_example, aes(x = Age_years, y = Sleep_hours)) +
 
 In the scatterplot, the exact ages are retained, making it easier to see how daily sleep time changes across the age range. The boxplots and scatterplot use the same response and predictor, but treating age as categorical or continuous changes what the plot shows and how we interpret the relationship.
 
-#### Your task
+#### <i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Your task {.student-task}
 
 Your goal is to practise thinking like a research biologist. Complete all five steps below for **one biological question and one graphical model**. You do not need to process or analyse the data. Knowing the variable types is enough to choose and sketch an appropriate plot.
 

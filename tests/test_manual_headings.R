@@ -69,7 +69,10 @@ expect_true(
   "Week 1 activities should not compete with the Workshop and Practical headings."
 )
 expect_true(
-  sum(week1_lines == "#### Your task") == 3L,
+  sum(grepl(
+    "^#### .*Your task \\{\\.student-task\\}$",
+    week1_lines
+  )) == 3L,
   "Each practical exercise should contain a Your task heading."
 )
 
