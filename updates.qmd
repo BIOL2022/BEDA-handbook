@@ -4,6 +4,10 @@ title: "Updates"
 
 This page records changes to the handbook that may be useful to students. Small corrections to spelling or formatting are not listed.
 
+## 30 July 2026
+
+We overhauled the [Week 1 practical](module01/102-week01.qmd) so that the workshop and practical are now presented together on one page. It includes clearer learning outcomes and tasks, Canvas-hosted datasets, software setup for Jamovi and R, accessible graphical-model examples and a final consolidation activity.
+
 ## 29 July 2026
 
 We found a bunch of typos on the [Am I ready for BEDA?](prerequisites.qmd) page (Januar needs to proofread more...) and fixed them. That is all.

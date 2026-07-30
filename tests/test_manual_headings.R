@@ -56,7 +56,7 @@ expect_true(
 
 week1_lines <- strsplit(week1, "\n", fixed = TRUE)[[1]]
 exercise_lines <- grep(
-  "^### Exercise [1-3]:",
+  "^### Exercise:",
   week1_lines,
   value = TRUE
 )
@@ -70,10 +70,10 @@ expect_true(
 )
 expect_true(
   sum(grepl(
-    "^#### .*Your task \\{\\.student-task\\}$",
+    "^#### .*Task [1-3] \\{\\.student-task\\}$",
     week1_lines
   )) == 3L,
-  "Each practical exercise should contain a Your task heading."
+  "Each practical exercise should contain a numbered Task heading."
 )
 
 leading_indent <- function(line) {

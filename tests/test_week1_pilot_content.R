@@ -147,13 +147,18 @@ expect_true(
   "Week 1 should use the canonical Canvas-hosted dataset downloads."
 )
 expect_true(
-  match_count("Your task {.student-task}", practical) == 3L,
-  "Each practical exercise should contain a clear Your task heading."
+  match_count("{.student-task}", practical) == 3L &&
+    all(vapply(
+      paste("Task", 1:3),
+      function(label) grepl(label, practical, fixed = TRUE),
+      logical(1)
+    )),
+  "Each practical exercise should contain a clear numbered Task heading."
 )
 expect_true(
-  grepl("### Exercise 1: Cheatsheets", practical, fixed = TRUE) &&
-    grepl("### Exercise 2: Data types", practical, fixed = TRUE) &&
-    grepl("### Exercise 3: Modelling basics", practical, fixed = TRUE),
+  grepl("### Exercise: Cheatsheets", practical, fixed = TRUE) &&
+    grepl("### Exercise: Data types", practical, fixed = TRUE) &&
+    grepl("### Exercise: Modelling basics", practical, fixed = TRUE),
   "The Practical should retain all three exercises."
 )
 expect_true(
