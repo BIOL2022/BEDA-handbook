@@ -362,10 +362,10 @@ if (!indexPage) {
       }
       if (
         week === 1 &&
-        practicalText !== "Week 1 practical session, including Workshop 1"
+        practicalText !== "Week 1 practical session"
       ) {
         failures.push(
-          "homepage Week 1 practical icon does not announce the included workshop",
+          "homepage Week 1 practical icon does not describe the combined session",
         );
       }
       if (practicalLinks.length > 1) {
@@ -399,7 +399,6 @@ if (!pages.has(scheduleFile)) {
 const contextualRoutes = new Map([
   ["prerequisites.html", ["index.html", "unit-information.html"]],
   ["module01/101-intro.html", ["module01/102-week01.html"]],
-  ["module01/w01-intro.html", ["module01/102-week01.html"]],
   ["module01/w02-tidy-data.html", ["module01/103-week02.html"]],
   ["module01/105-images.html", ["module01/103-week02.html"]],
   ["module01/106-species-id.html", ["module01/103-week02.html"]],

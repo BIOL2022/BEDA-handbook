@@ -47,80 +47,30 @@ front_matter_lines <- function(text) {
   lines[seq.int(2L, closing_line - 1L)]
 }
 
-practical <- read_text("module01/102-week01.qmd")
-workshop <- read_text("module01/w01-intro.qmd")
-
-pilot_pages <- list("Practical 1" = practical, "Workshop 1" = workshop)
-for (page_name in names(pilot_pages)) {
-  page_front_matter <- front_matter_lines(pilot_pages[[page_name]])
-  expect_true(
-    sum(page_front_matter == "body-classes: manual-page") == 1L,
-    paste(
-      "Each Week 1 pilot page should opt into manual-page styling exactly once.",
-      paste0("Page: ", page_name)
-    )
-  )
-}
-
-expected_activity_lines <- list(
-  practical = c(
-    "## [Workshop]{.manual-activity-label} Getting started (30 min) {.manual-activity #workshop-30-min}",
-    "## [Activity]{.manual-activity-label} Your task {.manual-activity #your-task}",
-    "## [Optional]{.manual-activity-label} Fancy a challenge? {.manual-activity .is-optional #fancy-a-challenge}"
-  ),
-  workshop = c(
-    "## [Optional]{.manual-activity-label} Before the timed workshop: optional survey {.manual-activity .is-optional #before-the-timed-workshop-optional-survey}",
-    "## [Activity]{.manual-activity-label} Workshop activities {.manual-activity #workshop-activities}",
-    "## [Activity]{.manual-activity-label} Readiness checkpoints {.manual-activity #readiness-checkpoints}"
-  )
+week1 <- read_text("module01/102-week01.qmd")
+expect_true(
+  has_line(week1, "## Workshop") &&
+    has_line(week1, "## Practical"),
+  "Workshop and Practical should be level-two sections on the combined Week 1 page."
 )
 
-for (line in expected_activity_lines$practical) {
-  expect_true(has_line(practical, line), paste("Practical 1 is missing:", line))
-}
-for (line in expected_activity_lines$workshop) {
-  expect_true(has_line(workshop, line), paste("Workshop 1 is missing:", line))
-}
-expect_true(
-  match_count("{.manual-activity ", practical) == 3L,
-  "Practical 1 should define exactly three activity headings."
+week1_lines <- strsplit(week1, "\n", fixed = TRUE)[[1]]
+exercise_lines <- grep(
+  "^### Exercise [1-3]:",
+  week1_lines,
+  value = TRUE
 )
 expect_true(
-  match_count("{.manual-activity ", workshop) == 3L,
-  "Workshop 1 should define exactly three activity headings."
+  length(exercise_lines) == 3L,
+  "The practical should contain three level-three exercises."
 )
-
-supporting_lines <- list(
-  practical = c(
-    "## Introduction",
-    "## Quick recap: questions, variables and plots",
-    "## Get ready",
-    "## That is a wrap!"
-  ),
-  workshop = c(
-    "## Software reference — not part of today's workshop"
-  )
-)
-for (line in supporting_lines$practical) {
-  expect_true(has_line(practical, line), paste("Practical supporting heading changed:", line))
-}
-for (line in supporting_lines$workshop) {
-  expect_true(has_line(workshop, line), paste("Workshop supporting heading changed:", line))
-}
 expect_true(
-  grepl("::: {.callout-note}\n## Example", practical, fixed = TRUE),
-  "Practical Example should remain a callout within Your task."
+  !any(grepl("^## Exercise", week1_lines)),
+  "Week 1 activities should not compete with the Workshop and Practical headings."
 )
-
-label_pattern <- "\\[([^]]+)\\]\\{\\.manual-activity-label\\}"
-labels <- c(
-  unlist(regmatches(practical, gregexpr(label_pattern, practical, perl = TRUE))),
-  unlist(regmatches(workshop, gregexpr(label_pattern, workshop, perl = TRUE)))
-)
-labels <- sub(label_pattern, "\\1", labels, perl = TRUE)
 expect_true(
-  identical(sort(unique(labels)), sort(c("Workshop", "Activity", "Optional"))),
-  "Manual activity labels should use only Workshop, Activity, and Optional."
+  sum(week1_lines == "#### Your task") == 3L,
+  "Each practical exercise should contain a Your task heading."
 )
 
 leading_indent <- function(line) {
@@ -254,7 +204,9 @@ print_css <- sub(
 print_css <- paste(trimws(strsplit(print_css, "\n", fixed = TRUE)[[1]]), collapse = "\n")
 print_label_selector_group <- paste(
   "body.manual-page main.content section.level2.manual-activity > h2.manual-activity > .manual-activity-label,",
-  "body.manual-page main.content section.level2.manual-activity.is-optional > h2.manual-activity > .manual-activity-label",
+  "body.manual-page main.content section.level2.manual-activity.is-optional > h2.manual-activity > .manual-activity-label,",
+  "body.manual-page main.content section.level3.manual-activity > h3.manual-activity > .manual-activity-label,",
+  "body.manual-page main.content section.level3.manual-activity.is-optional > h3.manual-activity > .manual-activity-label",
   sep = "\n"
 )
 expect_true(
@@ -314,15 +266,25 @@ expect_rule(
 expect_rule(
   "body.manual-page main.content section.level2.manual-activity",
   c(
+    "position: relative;",
     "margin-top: 2.75rem;",
-    "padding-block: 0.1rem 0.25rem;",
-    "padding-inline-start: 1rem;",
-    "border-inline-start: 4px solid var(--manual-heading-accent);"
+    "padding-block: 0.1rem 0.25rem;"
   )
 )
 expect_rule(
-  "body.manual-page main.content section.level2.manual-activity.is-optional",
-  "border-inline-start-color: var(--manual-optional-ink);"
+  "body.manual-page main.content section.level2.manual-activity::before",
+  c(
+    "position: absolute;",
+    "inset-block: 0;",
+    "inset-inline-start: -1rem;",
+    "width: 4px;",
+    "background: var(--manual-heading-accent);",
+    "content: \"\";"
+  )
+)
+expect_rule(
+  "body.manual-page main.content section.level2.manual-activity.is-optional::before",
+  "background: var(--manual-optional-ink);"
 )
 expect_rule(
   "body.manual-page main.content section.level2.manual-activity > h2.manual-activity",
@@ -341,11 +303,77 @@ expect_rule(
     "margin-right: 0.55rem;",
     "margin-bottom: 0.25rem;",
     "color: #fff;",
-    "background: var(--manual-heading-accent);"
+    "background: var(--manual-heading-accent);",
+    "text-transform: none;",
+    "vertical-align: middle;"
   )
 )
 expect_rule(
   "body.manual-page main.content section.level2.manual-activity.is-optional > h2.manual-activity > .manual-activity-label",
+  c(
+    "border: 1px solid var(--manual-optional-ink);",
+    "color: var(--manual-optional-ink);",
+    "background: var(--manual-optional-bg);"
+  )
+)
+expect_rule(
+  "body.manual-page main.content section.level3.manual-activity",
+  c(
+    "position: relative;",
+    "margin-top: 2rem;",
+    "padding-block: 0.1rem 0.25rem;"
+  )
+)
+expect_rule(
+  "body.manual-page main.content section.level3.manual-activity::before",
+  c(
+    "position: absolute;",
+    "inset-block: 0;",
+    "inset-inline-start: -1rem;",
+    "width: 4px;",
+    "background: var(--manual-heading-accent);",
+    "content: \"\";"
+  )
+)
+expect_rule(
+  "body.manual-page main.content section.level3.manual-activity.is-optional::before",
+  "background: var(--manual-optional-ink);"
+)
+activity_section_declarations <- unlist(c(
+  rule_blocks("body.manual-page main.content section.level2.manual-activity"),
+  rule_blocks("body.manual-page main.content section.level3.manual-activity")
+))
+expect_true(
+  !any(grepl(
+    "^(padding-inline-start|border-inline-start):",
+    activity_section_declarations
+  )),
+  "Activity content should align with the main body while its rail sits outside."
+)
+expect_rule(
+  "body.manual-page main.content section.level3.manual-activity > h3.manual-activity",
+  c(
+    "margin-top: 0;",
+    "margin-bottom: 0.5rem;",
+    "padding: 0;",
+    "break-after: avoid;",
+    "color: var(--manual-heading-ink);"
+  )
+)
+expect_rule(
+  "body.manual-page main.content section.level3.manual-activity > h3.manual-activity > .manual-activity-label",
+  c(
+    "display: inline-block;",
+    "margin-right: 0.55rem;",
+    "margin-bottom: 0.25rem;",
+    "color: #fff;",
+    "background: var(--manual-heading-accent);",
+    "text-transform: none;",
+    "vertical-align: middle;"
+  )
+)
+expect_rule(
+  "body.manual-page main.content section.level3.manual-activity.is-optional > h3.manual-activity > .manual-activity-label",
   c(
     "border: 1px solid var(--manual-optional-ink);",
     "color: var(--manual-optional-ink);",
@@ -364,6 +392,13 @@ expect_true(
       )
     ),
   paste("Manual heading CSS should contain the exact inline-code wrapping rule:", inline_code_selector)
+)
+expect_rule(
+  "body.manual-page main.content section.level3.manual-activity :not(pre) > code",
+  c(
+    "white-space: normal;",
+    "overflow-wrap: anywhere;"
+  )
 )
 expect_rule(
   "body.manual-page main.content section.level2 > h2 .anchorjs-link:focus-visible",
@@ -522,7 +557,13 @@ writeLines(c(
   "",
   "## [Activity]{.manual-activity-label} Your task {.manual-activity #your-task}",
   "",
-  "Activity text."
+  "Activity text.",
+  "",
+  "## Practical",
+  "",
+  "### [Activity]{.manual-activity-label} Pick your software (10 min) {.manual-activity #software}",
+  "",
+  "Software activity text."
 ), file.path(fixture_root, "numbered.qmd"), useBytes = TRUE)
 
 writeLines(c(
@@ -578,8 +619,25 @@ expect_true(
   "The activity label should render as real heading text."
 )
 expect_true(
-  match_count('<span class="manual-activity-label">Activity</span>', numbered) == 2L,
-  "The activity label should appear once in the heading and once in the TOC."
+  grepl('<section id="software" class="[^"]*level3[^"]*manual-activity', numbered, perl = TRUE) &&
+    grepl(
+      '<h3 class="[^"]*manual-activity[^"]*anchored"[^>]*data-anchor-id="software"',
+      numbered,
+      perl = TRUE
+    ),
+  "Quarto should preserve level-three manual activity classes and anchors."
+)
+expect_true(
+  grepl(
+    '<span class="manual-activity-label">Activity</span> Pick your software (10 min)',
+    numbered,
+    fixed = TRUE
+  ),
+  "Level-three activity labels should render as real heading text."
+)
+expect_true(
+  match_count('<span class="manual-activity-label">Activity</span>', numbered) == 4L,
+  "Both activity labels should appear once in their heading and once in the TOC."
 )
 expect_true(
   grepl('href="#your-task"', numbered, fixed = TRUE),

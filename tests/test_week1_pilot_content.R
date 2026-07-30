@@ -30,14 +30,14 @@ match_count <- function(pattern, text, fixed = TRUE) {
 dataset_path <- "module01/assets/penguins.csv"
 expect_true(file.exists(dataset_path), "The canonical penguin CSV should exist.")
 expect_true(
-  unname(tools::md5sum(dataset_path)) == "ae91b3957d5cb695441bf9404b456fd3",
-  "The canonical dataset should match the checked-in palmerpenguins 0.1.1 export."
+  unname(tools::md5sum(dataset_path)) == "a06a0210251465a86fb970018292304d",
+  "The canonical dataset should match the official palmerpenguins 0.1.1 CSV."
 )
 
 penguins <- read.csv(
   dataset_path,
   stringsAsFactors = FALSE,
-  na.strings = "",
+  na.strings = "NA",
   check.names = FALSE
 )
 expected_columns <- c(
@@ -81,36 +81,38 @@ for (anchor in c(
 }
 
 lecture <- read_text("lectures/L01/index.qmd")
-workshop <- read_text("module01/w01-intro.qmd")
-practical <- read_text("module01/102-week01.qmd")
+week1 <- read_text("module01/102-week01.qmd")
 
-timed_labels <- unlist(regmatches(
-  workshop,
-  gregexpr(
-    "(?m)^### [1-6]\\..*— ([0-9]+) minutes(?: \\{[^\\n]+\\})?$",
-    workshop,
-    perl = TRUE
-  )
-))
-timed_minutes <- as.integer(sub(
-  ".*— ([0-9]+) minutes(?: \\{[^\\n]+\\})?$",
+workshop <- sub(
+  "^[\\s\\S]*?(## Workshop[\\s\\S]*?)\\n## Practical[\\s\\S]*$",
   "\\1",
-  timed_labels,
+  week1,
   perl = TRUE
-))
-expect_true(
-  length(timed_minutes) == 6L && sum(timed_minutes) == 40L,
-  "Workshop 1 should contain six timed activities totalling 40 minutes."
 )
+practical <- sub(
+  "^[\\s\\S]*?(## Practical[\\s\\S]*)$",
+  "\\1",
+  week1,
+  perl = TRUE
+)
+
 expect_true(
-  grepl("5 minutes of flex time", workshop, fixed = TRUE),
-  "Workshop 1 should protect five minutes of flex time."
+  grepl("## Workshop", week1, fixed = TRUE) &&
+    grepl("## Practical", week1, fixed = TRUE),
+  "Week 1 should combine the Workshop and Practical as level-two sections."
+)
+
+expect_true(
+  grepl("### Pick your software (15 min)", workshop, fixed = TRUE) &&
+    grepl("### A simple modelling exercise (10 min)", workshop, fixed = TRUE) &&
+    grepl("### Introduction to cheatsheets (5 min)", workshop, fixed = TRUE),
+  "The Workshop should retain its three introductory activities."
 )
 
 route_labels <- c(
-  "Jamovi — recommended",
-  "R/RStudio — for students with prior R experience",
-  "SPSS — supported alternative"
+  "#### Jamovi",
+  "#### R/RStudio",
+  "#### R/Positron"
 )
 route_positions <- vapply(
   route_labels,
@@ -119,79 +121,55 @@ route_positions <- vapply(
 )
 expect_true(
   all(route_positions > 0L) && identical(order(route_positions), 1:3),
-  "Workshop 1 should present Jamovi, experienced R, then SPSS."
+  "The Workshop should present Jamovi, RStudio, then Positron."
 )
 expect_true(
-  grepl("Complete one software route only", workshop, fixed = TRUE),
-  "Students should be told to complete one software route only."
+  match_count("::: {.panel-tabset}", workshop) == 1L,
+  "The software choices should appear in one tabset."
 )
 expect_true(
-  grepl("assets/penguins.csv", workshop, fixed = TRUE),
-  "Workshop 1 should link to the local penguin CSV."
-)
-for (anchor in c(
-  "../cheatsheets.qmd#cheatsheet-jamovi-boxplot",
-  "../cheatsheets.qmd#cheatsheet-r-boxplot",
-  "../cheatsheets.qmd#cheatsheet-spss-boxplot"
-)) {
-  expect_true(
-    grepl(anchor, workshop, fixed = TRUE),
-    paste("Workshop 1 should link through the stable local anchor", anchor)
-  )
-}
-expect_true(
-  match_count("**Do this**", workshop) >= 6L &&
-    match_count("**Expected result**", workshop) >= 6L &&
-    match_count("**If this did not happen**", workshop) >= 6L,
-  "Every major workshop activity should state the action, result, and recovery."
+  grepl("assets/penguins.png", workshop, fixed = TRUE) &&
+    grepl("assets/culmen_depth.png", workshop, fixed = TRUE),
+  "The Workshop should use the two penguin teaching illustrations."
 )
 expect_true(
-  grepl("Conceptual readiness — required", workshop, fixed = TRUE) &&
-    grepl("Software readiness — complete or follow-up required", workshop, fixed = TRUE),
-  "Workshop 1 should separate conceptual and software readiness."
-)
-expect_true(
-  grepl("supplied plot used; software follow-up recorded", workshop, fixed = TRUE),
-  "The Model Card should support the no-software fallback truthfully."
-)
-expect_true(
-  grepl("species ~ island", workshop, fixed = TRUE),
-  "Workshop 1 should include the approved invalid variable pairing."
-)
-reference_position <- regexpr(
-  "## Software reference — not part of today's workshop",
-  workshop,
-  fixed = TRUE
-)[[1]]
-readiness_position <- regexpr("#readiness-checkpoints}", workshop, fixed = TRUE)[[1]]
-expect_true(
-  reference_position > readiness_position && readiness_position > 0L,
-  "Broad software reference material should follow the timed workshop and readiness checks."
-)
-
-expect_true(
-  !grepl("## Workshop 01", practical, fixed = TRUE) &&
-    !grepl("## Exercise 1 – Cheatsheets", practical, fixed = TRUE),
-  "Practical 1 should not duplicate the workshop or cheatsheet exercise."
-)
-expect_true(
-  grepl("[penguins.csv](assets/penguins.csv)", practical, fixed = TRUE) &&
+  grepl(
+    "courses/74353/files/51697284/download?download_frd=1",
+    week1,
+    fixed = TRUE
+  ) &&
+    grepl(
+      "courses/74353/files/51697285/download?download_frd=1",
+      week1,
+      fixed = TRUE
+    ) &&
     !grepl("44247073", practical, fixed = TRUE),
-  "Practical 1 should use the canonical local penguin download."
+  "Week 1 should use the canonical Canvas-hosted dataset downloads."
 )
 expect_true(
-  !grepl("histogram", practical, ignore.case = TRUE),
-  "Practical 1 should not retain the univariate histogram option."
+  match_count("#### Your task", practical) == 3L,
+  "Each practical exercise should contain a clear Your task heading."
 )
 expect_true(
-  grepl("## Example", practical, fixed = TRUE) &&
-    grepl("#fancy-a-challenge}", practical, fixed = TRUE) &&
-    grepl("possums.xlsx", practical, fixed = TRUE),
-  "Practical 1 should retain its worked possum example and challenge."
+  grepl("### Exercise 1: Cheatsheets", practical, fixed = TRUE) &&
+    grepl("### Exercise 2: Data types", practical, fixed = TRUE) &&
+    grepl("### Exercise 3: Modelling basics", practical, fixed = TRUE),
+  "The Practical should retain all three exercises."
 )
 expect_true(
-  !grepl("#### What is a model?", practical, fixed = TRUE),
-  "Practical 1 should use a concise recap rather than repeat the lecture explanation."
+  grepl("fig-dog-sleep-age-groups", practical, fixed = TRUE) &&
+    grepl("fig-dog-sleep-age-continuous", practical, fixed = TRUE),
+  "Exercise 3 should retain both accessible dog-sleep examples."
+)
+expect_true(
+  grepl("Complete all five steps below", practical, fixed = TRUE) &&
+    grepl("#### What to show your demonstrator", practical, fixed = TRUE),
+  "Exercise 3 should state the complete task and demonstrator checkpoint."
+)
+expect_true(
+  grepl("### Consolidation", practical, fixed = TRUE) &&
+    grepl("**Biological question**", practical, fixed = TRUE),
+  "The Practical should finish by consolidating the modelling workflow."
 )
 
 expect_true(

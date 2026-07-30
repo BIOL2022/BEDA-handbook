@@ -477,7 +477,6 @@ expected_note_titles <- c(
   "4:1" = "Early Feedback Task due Friday 28 August at 23:59",
   "5:1" = "Evaluation Quiz due Friday 4 September at 23:59",
   "5:2" = "Begin working on Report 1",
-  "6:1" = "Report 1 project and revision week",
   "8:1" = "Report 1 due Friday 25 September at 23:59",
   "9:1" = "Labour Day — Monday 5 October",
   "10:1" = "Present your experimental design for feedback",
@@ -498,22 +497,22 @@ note_keys <- paste(
   sep = ":"
 )
 expect_true(
-  length(note_rows) == 16L,
-  "The maintained schedule should contain exactly 16 Notes rows."
+  length(note_rows) == 15L,
+  "The maintained schedule should contain exactly 15 Notes rows."
 )
 expect_true(
   identical(
     unname(weekly_content$note_type[note_rows]),
     unname(expected_note_types[note_keys])
   ),
-  "All 16 Notes rows should match the approved taxonomy."
+  "All 15 Notes rows should match the approved taxonomy."
 )
 expect_true(
   identical(
     unname(weekly_content$title[note_rows]),
     unname(expected_note_titles[note_keys])
   ),
-  "All 16 Notes rows should use the approved final titles."
+  "All 15 Notes rows should use the approved final titles."
 )
 expect_true(
   identical(
@@ -562,8 +561,9 @@ expect_true(
   "Weeks should be ordered from 1 to 13."
 )
 expect_true(
-  identical(entries[[1]]$workshop$url, "module01/w01-intro.qmd"),
-  "Week 1 should retain its hidden workshop as the session entry point."
+  is.null(entries[[1]]$workshop) &&
+    identical(entries[[1]]$practical$url, "module01/102-week01.qmd"),
+  "Week 1 should use the combined practical page as its session entry point."
 )
 expect_true(
   is.null(entries[[2]]$workshop),
@@ -628,13 +628,9 @@ for (invalid_visibility in list("", " ", NA_character_, "true", "yes")) {
   )
 }
 
-expect_true(
-  any(weekly_content$section == "workshop"),
-  "The maintained content should include the Week 1 workshop row."
-)
-
 visible_workshop <- weekly_content
-workshop_row <- which(visible_workshop$section == "workshop")[[1]]
+workshop_row <- which(visible_workshop$section == "practical")[[1]]
+visible_workshop$section[[workshop_row]] <- "workshop"
 visible_workshop$show_on_schedule[[workshop_row]] <- TRUE
 expect_error(
   validate_weekly_content(visible_workshop),
@@ -1064,13 +1060,13 @@ expect_true(
 expect_true(
   grepl(
     paste0(
-      '<a href="./module01/w01-intro.html"[^>]*>',
-      'Week 1 practical session, including Workshop 1</a>'
+      '<a href="./module01/102-week01.html"[^>]*>',
+      'Week 1 practical session</a>'
     ),
     rendered_html_table,
     perl = TRUE
   ) || grepl(
-    "<td>Week 1 practical session, including Workshop 1</td>",
+    "<td>Week 1 practical session</td>",
     rendered_html_table,
     fixed = TRUE
   ),
@@ -1302,23 +1298,19 @@ expect_true(
 )
 expect_true(
   any(grepl(
-    paste0(
-      "[Week 1 practical session, including Workshop 1]",
-      '(module01/w01-intro.qmd "Getting started — starts with ',
-      'Software and graphical models")'
-    ),
+    '[Week 1 practical session](module01/102-week01.qmd "Getting started")',
     hidden_caption,
     fixed = TRUE
   )),
-  "The Week 1 practical icon should announce that the session includes Workshop 1."
+  "The Week 1 practical icon should describe the combined Week 1 session."
 )
 expect_true(
   any(grepl(
-    "[Week 1 practical session, including Workshop 1](module01/w01-intro.qmd",
+    "[Week 1 practical session](module01/102-week01.qmd",
     hidden_caption,
     fixed = TRUE
   )),
-  "The Week 1 practical-session icon should open Workshop 1."
+  "The Week 1 practical-session icon should open the combined Week 1 page."
 )
 expect_true(
   any(grepl(

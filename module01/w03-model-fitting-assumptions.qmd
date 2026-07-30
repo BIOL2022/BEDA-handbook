@@ -44,7 +44,7 @@ $$
 $$
 
 ::: {.column-margin}
-Imagine if flipper length were categorical (e.g., short, medium, long). We could still model the relationship with body mass, but the approach would change. We will need to use "dummy variables" to represent the categories and then determine the differences in body mass between these categories. This is explained in [Lecture 3b](https://biol2022.github.io/L03b-ttests/) when there are just *two* categories, and in Lecture 4b next week for more than two categories.
+<i class="bi bi-info-circle me-1" aria-hidden="true"></i> Imagine if flipper length were categorical (e.g., short, medium, long). We could still model the relationship with body mass, but the approach would change. We will need to use "dummy variables" to represent the categories and then determine the differences in body mass between these categories. This is explained in [Lecture 3b](https://biol2022.github.io/L03b-ttests/) when there are just *two* categories, and in Lecture 4b next week for more than two categories.
 :::
 
 The data types for our variables are as follows:
@@ -86,7 +86,7 @@ par(mfrow = c(1, 1))
 ```
 
 ::: {.column-margin}
-### Interpreting the plots
+### <i class="bi bi-info-circle me-1" aria-hidden="true"></i> Interpreting the plots
 
 1. **Residuals vs Fitted:** Checks for linearity. Points should be randomly scattered around zero. A curved pattern means the relationship may not be linear. Here, the scatter looks random, so linearity is fine.
 2. **Normal Q-Q:** Checks if residuals are normally distributed. Points should follow the dashed line. Ours do, so normality is met.

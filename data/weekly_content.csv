@@ -1,6 +1,5 @@
 week,section,position,title,url,description,show_on_schedule,note_type,note_weight
 1,lecture,1,Introduction and fundamentals,lectures/L01/index.qmd,Welcome to BEDA!,TRUE,,
-1,workshop,1,Software and graphical models,module01/w01-intro.qmd,,FALSE,,
 1,practical,1,Getting started,module01/102-week01.qmd,,TRUE,,
 1,extra,1,Am I ready for BEDA?,prerequisites.qmd,,TRUE,resource,
 1,extra,2,Quiz 1,,,TRUE,quiz,

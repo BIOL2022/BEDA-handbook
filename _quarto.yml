@@ -17,7 +17,6 @@ website:
   search: true
   # draft-mode: gone
   drafts:
-    - module01/w01-intro.qmd
     - module01/w02-tidy-data.qmd
     - module01/w03-model-fitting-assumptions.qmd
     - module01/102-week01.qmd
@@ -69,6 +68,8 @@ format:
       - assets/timeline.css
       - assets/manual-headings.css
       - assets/handbook-download.css
+      - assets/academic-tables.css
+      - assets/learning-outcomes.css
     toc: true
 
 editor:

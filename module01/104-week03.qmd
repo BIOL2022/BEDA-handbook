@@ -24,7 +24,7 @@ Once you are done with your data, and if you have time, spend some effort to ana
 ## Things to prepare
 
 1. Make sure you have access to the data you collected in the previous lab. This can be obtained from your group's [Google Drive folder](https://drive.google.com/drive/folders/1rDyHyzgTVWUmPEzNte0F1CgVb3_Eitlk?usp=drive_link).
-2. Bring your laptop and the necessary software (e.g., R, Jamovi) installed for data analysis. See [Workshop 01](w01-intro.qmd) materials for installation instructions.
+2. Bring your laptop and the necessary software (e.g., R, Jamovi) installed for data analysis. See the [Week 1 software reference](102-week01.qmd#software-reference-use-outside-the-timed-class) for installation instructions.
 3. [Lecture 3a](https://biol2022.github.io/L03a-model-appropriate/) may be helpful for understanding the concepts we will be applying in this practical, as they cover model assumptions and diagnostics.
 
 ::: callout-important
@@ -125,7 +125,7 @@ The simplest way to check these assumptions is by examining residual plots. Form
 Remember, minor violations of normality are often not a major concern (can you explain why?), but large differences in variance can seriously affect your conclusions. Always discuss any issues and how you addressed them in your analysis.
 
 ::: {.column-margin}
-Violation of the normality assumption is often ignored when sampling is large, as the Central Limit Theorem suggests that the sampling distribution of the mean will be normally distributed regardless of the shape of the population distribution.
+<i class="bi bi-info-circle me-1" aria-hidden="true"></i> Violation of the normality assumption is often ignored when sampling is large, as the Central Limit Theorem suggests that the sampling distribution of the mean will be normally distributed regardless of the shape of the population distribution.
 :::
 
 ::: {.callout-note}
