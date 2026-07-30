@@ -1,0 +1,52 @@
+.learning-outcomes-table {
+  margin-block: 1.25rem 2rem;
+}
+
+main.content .learning-outcomes-table table {
+  margin-bottom: 0;
+  border-top: 2px solid #6a5acd;
+  border-bottom-color: #d9d4eb;
+}
+
+main.content .learning-outcomes-table table > thead > tr > th {
+  padding: 0.7rem 0.8rem;
+  border-bottom-color: #d9d4eb;
+  color: #302b50;
+  background: #f0eef8;
+  font-weight: 650;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+main.content .learning-outcomes-table table > tbody > tr > td {
+  padding: 0.75rem 0.8rem;
+  border-bottom: 1px solid #e2dfeb;
+  vertical-align: top;
+}
+
+main.content .learning-outcomes-table table > tbody > tr:last-child > td {
+  border-bottom: 0;
+}
+
+main.content .learning-outcomes-table table > tbody > tr > td:first-child {
+  width: 44%;
+  color: #302b50;
+}
+
+@media (width <= 40rem) {
+  .learning-outcomes-table {
+    overflow-x: auto;
+  }
+
+  main.content .learning-outcomes-table table {
+    min-width: 34rem;
+  }
+}
+
+@media print {
+  main.content .learning-outcomes-table table > thead > tr > th {
+    border-bottom: 1px solid #000;
+    color: #000;
+    background: #fff;
+  }
+}

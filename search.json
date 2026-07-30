@@ -10,26 +10,33 @@
     "objectID": "updates.html#july-2026",
     "href": "updates.html#july-2026",
     "title": "Updates",
-    "section": "29 July 2026",
-    "text": "29 July 2026\nWe found a bunch of typos on the Am I ready for BEDA? page (Januar needs to proofread more…) and fixed them. That is all."
+    "section": "30 July 2026",
+    "text": "30 July 2026\nWe overhauled the Week 1 practical so that the workshop and practical are now presented together on one page. It includes clearer learning outcomes and tasks, Canvas-hosted datasets, software setup for Jamovi and R, accessible graphical-model examples and a final consolidation activity."
   },
   {
     "objectID": "updates.html#july-2026-1",
     "href": "updates.html#july-2026-1",
     "title": "Updates",
-    "section": "28 July 2026",
-    "text": "28 July 2026\nThe weekly schedule now distinguishes unweighted practice quizzes from marked assessments and shows the 2026 deadlines in the weeks when they are due. Countdown timers on the Assessments page once again update every second without repeatedly announcing each change to screen readers. We are also preparing a PDF edition of the handbook for offline use; the front page and About this handbook page will provide the download when it is ready.\nIn response to student feedback, the Modules overview now provides more detail about what each part of the unit covers and how the three modules connect."
+    "section": "29 July 2026",
+    "text": "29 July 2026\nWe found a bunch of typos on the Am I ready for BEDA? page (Januar needs to proofread more…) and fixed them. That is all."
   },
   {
     "objectID": "updates.html#july-2026-2",
     "href": "updates.html#july-2026-2",
     "title": "Updates",
-    "section": "27 July 2026",
-    "text": "27 July 2026\nThe Assessments page now shows the 2026 due dates, clearer countdowns and direct links to each assessment in Canvas. Report 2 is presented as one assessment with separate group dataset and individual report components."
+    "section": "28 July 2026",
+    "text": "28 July 2026\nThe weekly schedule now distinguishes unweighted practice quizzes from marked assessments and shows the 2026 deadlines in the weeks when they are due. Countdown timers on the Assessments page once again update every second without repeatedly announcing each change to screen readers. We are also preparing a PDF edition of the handbook for offline use; the front page and About this handbook page will provide the download when it is ready.\nIn response to student feedback, the Modules overview now provides more detail about what each part of the unit covers and how the three modules connect."
   },
   {
     "objectID": "updates.html#july-2026-3",
     "href": "updates.html#july-2026-3",
+    "title": "Updates",
+    "section": "27 July 2026",
+    "text": "27 July 2026\nThe Assessments page now shows the 2026 due dates, clearer countdowns and direct links to each assessment in Canvas. Report 2 is presented as one assessment with separate group dataset and individual report components."
+  },
+  {
+    "objectID": "updates.html#july-2026-4",
+    "href": "updates.html#july-2026-4",
     "title": "Updates",
     "section": "24 July 2026",
     "text": "24 July 2026\nWelcome to the changelog! Lots of updates (because we are migrating from the 2025 handbook).\nWe clarified parts of the weekly schedule and added assessment weightings to the Notes column. The About page now provides clearer information about statistical software, assumed knowledge, lectures, practicals, attendance and working with your group. We also “optimised” the handbook for smaller screens like that phone or tablet that you are probably reading this on.."
@@ -168,137 +175,200 @@
     "text": "4 How you will get feedback\n\nYou will receive informative, but not exhaustive, feedback on your report in relation to the marking matrix. This will show what you achieved against each criterion, and why.\nTo help you understand how you could improve, it helps enormously if you make a conscious effort to compare your submitted work against others. To facilitate this, I will post the best report written for your particular project.\nShould you want feedback beyond this, please reflect on your report and write a summary of how your report compares to the best one, addressing each of the marking criteria. Once you’ve done that, please email me to request an appointment, attaching your summary to the email message. BUT please note that because of the large class size, I may not be able to meet with everyone who wants to. As I am sure you will appreciate, I will give priority to any students with low/fail marks."
   },
   {
-    "objectID": "module01/106-species-id.html",
-    "href": "module01/106-species-id.html",
-    "title": "Species ID guide",
+    "objectID": "module01/105-images.html",
+    "href": "module01/105-images.html",
+    "title": "Intertidal sites",
     "section": "",
-    "text": "Use this page to identify the species that you sample. Note that all images are copyrighted. We have provided the source of each image so that you can find more information about the species, and to give credit to the original authors.\nNote: images are only available in the HTML version of this document."
+    "text": "This page contains images of intertidal rocky shore sites along the Great Southern Reef. These images are provided for the purpose of the lab activities in Weeks 2 (and maybe 3)."
   },
   {
-    "objectID": "module01/106-species-id.html#id-guide",
-    "href": "module01/106-species-id.html#id-guide",
-    "title": "Species ID guide",
-    "section": "1 Identification guide",
-    "text": "1 Identification guide"
+    "objectID": "module01/105-images.html#two-sites",
+    "href": "module01/105-images.html#two-sites",
+    "title": "Intertidal sites",
+    "section": "Two sites",
+    "text": "Two sites\nYou will be working with images from two sites: Site A and Site B. Each site has 20 images, which are randomly selected from a larger set of images.\nThe advantage of sampling two sites is that you can assess whether your observations from one site can be generalised to another. This is a common approach in ecology, where we often sample multiple sites to understand patterns at a larger scale, and addresses representative sampling and pseudoreplication.\n\n\n\n\n\n\nImportant\n\n\n\nYou now get to decide how the story goes:\n\nAre you sampling both sites as one?\nAre you sampling just one of the two sites?\nAre you sampling each site separately, but comparing them to each other?\n\nDepending on what you decide, your model may need to be tweaked, and your observations may need to be reinterpreted or improved."
   },
   {
-    "objectID": "module01/106-species-id.html#common-snails",
-    "href": "module01/106-species-id.html#common-snails",
-    "title": "Species ID guide",
-    "section": "2 Common snails",
-    "text": "2 Common snails\n\nBembicium nanum\n     \nImages from Grove, S.J. (2018).\n\n\nAustrocochlea porcata\n     \nImages from Grove, S.J. (2018).\n\n\nAustrococchlea concamerata\n  \nImages from Iredale, T. & McMichael, D. F. (1962) and Australian Museum.\n\n\nNerita atramentosa\n  \nImages from Grove, S.J. (2018).\n\n\nAustrolittorina unifasciata\n   \nImages from Grove, S.J. (2018)."
+    "objectID": "module01/105-images.html#assumptions-and-prior-knowledge",
+    "href": "module01/105-images.html#assumptions-and-prior-knowledge",
+    "title": "Intertidal sites",
+    "section": "Assumptions and prior knowledge",
+    "text": "Assumptions and prior knowledge\n\nImages are randomly selected and assumed to be independent.\nImages are assumed to be representative of their respective site(s).\n\nThe next step is to define your sampling strategy, and decide how you will use the images to answer your question."
   },
   {
-    "objectID": "module01/106-species-id.html#whelks",
-    "href": "module01/106-species-id.html#whelks",
-    "title": "Species ID guide",
-    "section": "3 Whelks",
-    "text": "3 Whelks\n\nTenguella marginalba\n  \nImages by Donald Hobern, Femorale.com, Joop Trausel and Frans Slieker."
+    "objectID": "module01/105-images.html#sites",
+    "href": "module01/105-images.html#sites",
+    "title": "Intertidal sites",
+    "section": "Sites",
+    "text": "Sites\nNote: images are only available in the HTML version of this document. If you choose to (or if the images below do not load), you can also access the images by downloading them as a zipped archive here.\n\nSite 1Site 2"
   },
   {
-    "objectID": "module01/106-species-id.html#limpets",
-    "href": "module01/106-species-id.html#limpets",
-    "title": "Species ID guide",
-    "section": "4 Limpets",
-    "text": "4 Limpets\n\nCellana tramoserica\n     \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nMontfortula rugosa\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nPatelloida mimula\n  \nImages from Sea Shells of New South Wales and WoRMS Editorial Board (2023).\n\n\nPatelloida mufria\n \nImages from Sea Shells of New South Wales and WoRMS Editorial Board (2023).\n\n\nPatelloida latistrigata\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nPatelloida alticostata\n          \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nNotoacmea flammea\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nScutellastra chapmani\n     \nImages from Grove, S.J. (2018) and Sea Shells of New South Wales.\n\n\nScutellastra peronii\n              \nImages from Grove, S.J. (2018) and Sea Shells of New South Wales."
-  },
-  {
-    "objectID": "module01/106-species-id.html#chitons",
-    "href": "module01/106-species-id.html#chitons",
-    "title": "Species ID guide",
-    "section": "5 Chitons",
-    "text": "5 Chitons\n\nSypharochiton pelliserpentis\n   \nImages from WoRMS Editorial Board (2023) and Sea Shells of New South Wales.\n\n\nAcanthochiton sp.\n   \n\n\nIschnochiton sp.\n        \nImages from Grove, S.J. (2018)."
-  },
-  {
-    "objectID": "module01/106-species-id.html#sea-stars",
-    "href": "module01/106-species-id.html#sea-stars",
-    "title": "Species ID guide",
-    "section": "6 Sea stars",
-    "text": "6 Sea stars\n\nParvulastra exigua"
-  },
-  {
-    "objectID": "module01/106-species-id.html#barnacles",
-    "href": "module01/106-species-id.html#barnacles",
-    "title": "Species ID guide",
-    "section": "7 Barnacles",
-    "text": "7 Barnacles\n\nBalanus amphitrite\n  \nImages from Wikipedia and WoRMS Editorial Board (2023).\n\n\nBalanus trigonus\n  \nImages from Wikipedia, Western Australia Museum and WoRMS Editorial Board (2023).\n\n\nChthamalus antennatus\n   \nImages from Wikipedia, Museum Victoria Collections and SA Marine Life.\n\n\nCatomerus polymerus\n    \nImages from Wikipedia and Museum Victoria Collections.\n\n\nTesseropora rosea\n   \nimages from Wikipedia, Museum Victoria Collections, Atlas of Life and iNaturalist Australia.\n\n\nTetraclitella purpurascens\n  \nImage by Simon Grove via Flickr (2014), Atlas of Living Australia and Museum Victoria Collections.\n\n\nMegabalanus coccopoma\n   \nImages from Wikipedia, WoRMS Editorial Board (2023) and Invasive.org.\n\n\nAmphibalanus variegatus\n  \nImages from Port Phillip Bay Taxonomy, Wikipedia and Denis Riek (2021).\n\n\nAustrobalanus imperator\n  \nImages from Wikipedia and iNaturalist Australia."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "BEDA Handbook",
+    "objectID": "module01/101-intro.html",
+    "href": "module01/101-intro.html",
+    "title": "Introduction",
     "section": "",
-    "text": "Welcome to the BEDA handbook. This book contains (most) lectures, tutorials and practical content for BIOL2022. Unless otherwise noted, material published here is available under the CC BY 4.0 licence. See About this handbook for the licence scope, exclusions, edition and citation details.\n\n PDF handbook The PDF version will be available soon.\n\n\nLoading semester status…\n\n\n\n\n\n\n\nWeek\nLectures\nPractical\nNotes\n\n\n\n\n1\nIntroduction and fundamentals Welcome to BEDA!\nWeek 1 practical session, including Workshop 1\n\n\n Resource: Am I ready for BEDA?\n Practice quiz (0%): Quiz 1\n\n\n\n\n2\nSampling and the linear model Randomisation and why we teach the linear model first\nWeek 2 practical session\n\n\n Resource: (See how) common statistical tests are linear models ↗\n Practice quiz (0%): Quiz 2\n\n\n\n\n3\nChoosing the right model(s) The easy way to validate model assumptions.\nWeek 3 practical session\n\n\n Practice quiz (0%): Quiz 3\n Notice: Early Feedback Task opens Friday 21 August at 10:00\n\n\n\n\n4\nMultiple predictors and transformations Expanding models and using transformations to increase model fit.\nWeek 4 practical session\n\n\n Assessment (5%): Early Feedback Task due Friday 28 August at 23:59\n\n\n\n\n5\nControls and revision How to control your experiments with data that you collect.\nWeek 5 practical session\n\n\n Assessment (10%): Evaluation Quiz due Friday 4 September at 23:59\n Notice: Begin working on Report 1\n\n\n\n\n6\nRefresher and categorical variables A refresher on designing experiments with categorical variables.\n—\n—\n\n\n7\nRelationships and binary responses How to design experiments with continuous or binary responses.\nWeek 7 practical session\n—\n\n\n8\nModel selection and revision Which model should we use? Some ideas.\nWeek 8 practical session\n\n\n Assessment (25%): Report 1 due Friday 25 September at 23:59\n\n\n\n\nBreak\nMid-semester break — 28 September–2 October 2026\n\n\n\n\n9\nMultivariate analysis and PCA Introducing multivariate analysis, principal component analysis and factor analysis.\nWeek 9 practical session\n\n\n Notice: Labour Day — Monday 5 October\n\n\n\n\n10\nClustering and multidimensional scaling Using clustering and nMDS to identify and test multivariate patterns.\nWeek 10 practical session\n\n\n Notice: Present your experimental design for feedback\n Notice: Prepare for Report 2\n\n\n\n\n11\nMANOVA and multivariate revision The MANOVA way of designing and interpreting experiments.\nWeek 11 practical session\n\n\n Assessment (5%): Report 2 group dataset due at 10:00 on your practical day\n\n\n\n\n12\nRarefaction and Bayesian analysis The lectures cover rarefaction for diversity comparisons and Bayesian statistical inference.\nWeek 12 practical session\n—\n\n\n13\nExam revision You will review the course's experimental-design and modelling concepts for the final exam.\nPractical session\n\n\n Assessment (15%): Report 2 individual report due Friday 6 November at 23:59\n\n\n\n\n\n\n\n\n\nWeekly schedule\n\nJump to current week ↓\n\n\n\n1Week\n\n\n\n\nIntroduction and fundamentals\n\n\n\n\nLectures Welcome to BEDA!\n\n\nPractical Open Week 1 practical\n\n\nNotes\n\n\nResource: Am I ready for BEDA?\n\n\nPractice quiz (0%): Quiz 1\n\n\n\n\n\n\n\n2Week\n\n\n\n\nSampling and the linear model\n\n\n\n\nLectures Randomisation and why we teach the linear model first\n\n\nPractical Open Week 2 practical\n\n\nNotes\n\n\nResource: (See how) common statistical tests are linear models↗\n\n\nPractice quiz (0%): Quiz 2\n\n\n\n\n\n\n\n3Week\n\n\n\n\nChoosing the right model(s)\n\n\n\n\nLectures The easy way to validate model assumptions.\n\n\nPractical Open Week 3 practical\n\n\nNotes\n\n\nPractice quiz (0%): Quiz 3\n\n\nNotice: Early Feedback Task opens Friday 21 August at 10:00\n\n\n\n\n\n\n\n4Week\n\n\n\n\nMultiple predictors and transformations\n\n\n\n\nLectures Expanding models and using transformations to increase model fit.\n\n\nPractical Open Week 4 practical\n\n\nNotes\n\n\nAssessment (5%): Early Feedback Task due Friday 28 August at 23:59\n\n\n\n\n\n\n\n5Week\n\n\n\n\nControls and revision\n\n\n\n\nLectures How to control your experiments with data that you collect.\n\n\nPractical Open Week 5 practical\n\n\nNotes\n\n\nAssessment (10%): Evaluation Quiz due Friday 4 September at 23:59\n\n\nNotice: Begin working on Report 1\n\n\n\n\n\n\n\n6Week\n\n\n\n\nRefresher and categorical variables\n\n\n\n\nLectures A refresher on designing experiments with categorical variables.\n\n\nPractical —\n\n\nNotes —\n\n\n\n\n\n7Week\n\n\n\n\nRelationships and binary responses\n\n\n\n\nLectures How to design experiments with continuous or binary responses.\n\n\nPractical Open Week 7 practical\n\n\nNotes —\n\n\n\n\n\n8Week\n\n\n\n\nModel selection and revision\n\n\n\n\nLectures Which model should we use? Some ideas.\n\n\nPractical Open Week 8 practical\n\n\nNotes\n\n\nAssessment (25%): Report 1 due Friday 25 September at 23:59\n\n\n\n\n\n\n\nBreak\n\n\nMid-semester break — 28 September–2 October 2026\n\n\n\n\n9Week\n\n\n\n\nMultivariate analysis and PCA\n\n\n\n\nLectures Introducing multivariate analysis, principal component analysis and factor analysis.\n\n\nPractical Open Week 9 practical\n\n\nNotes\n\n\nNotice: Labour Day — Monday 5 October\n\n\n\n\n\n\n\n10Week\n\n\n\n\nClustering and multidimensional scaling\n\n\n\n\nLectures Using clustering and nMDS to identify and test multivariate patterns.\n\n\nPractical Open Week 10 practical\n\n\nNotes\n\n\nNotice: Present your experimental design for feedback\n\n\nNotice: Prepare for Report 2\n\n\n\n\n\n\n\n11Week\n\n\n\n\nMANOVA and multivariate revision\n\n\n\n\nLectures The MANOVA way of designing and interpreting experiments.\n\n\nPractical Open Week 11 practical\n\n\nNotes\n\n\nAssessment (5%): Report 2 group dataset due at 10:00 on your practical day\n\n\n\n\n\n\n\n12Week\n\n\n\n\nRarefaction and Bayesian analysis\n\n\n\n\nLectures The lectures cover rarefaction for diversity comparisons and Bayesian statistical inference.\n\n\nPractical Open Week 12 practical\n\n\nNotes —\n\n\n\n\n\n13Week\n\n\n\n\nExam revision\n\n\n\n\nLectures You will review the course’s experimental-design and modelling concepts for the final exam.\n\n\nPractical Open Week 13 practical\n\n\nNotes\n\n\nAssessment (15%): Report 2 individual report due Friday 6 November at 23:59"
+    "text": "Science is about asking the right questions in the right way so we can draw meaningful conclusions from the data we collect. This is not as simple as it seems, but it is a key skill in scientific enquiry. We need to be able to ask questions in a quantitative way to distinguish between different explanations for the things we observe. Before we start using t-tests, regression, or ANOVA; before we perform mixed modelling or moltivariate analyses; before we use the newest tools for data analysis, we must first learn to ask the right questions. So let’s go back to basics.\nIn this module:\n\nLectures (Weeks 1 –5) will cover the fundamental principles of scientific enquiry, including how to ask the right questions, how to design a study, and how to interpret results. We will also introduce to you the linear modelling framework, which is a powerful tool for understanding the relationships between variables in your data.\nPracticals (Weeks 1–3) aim to help you build the essential skills for scientific enquiry. We will cover experimental design, model formulation, and sampling design. Each week begins with a short 30-minute workshop to introduce the main ideas and techniques. You will then complete the practical work."
   },
   {
-    "objectID": "cheatsheets.html",
-    "href": "cheatsheets.html",
-    "title": "Cheatsheets",
+    "objectID": "lectures.html",
+    "href": "lectures.html",
+    "title": "Lectures",
     "section": "",
-    "text": "All cheatsheets are open source and available on the SOLES GitHub repository."
+    "text": "Browse the lecture hubs by week, or return to Weekly content for practicals and other resources."
   },
   {
-    "objectID": "cheatsheets.html#rstudior",
-    "href": "cheatsheets.html#rstudior",
-    "title": "Cheatsheets",
-    "section": "RStudio/R",
-    "text": "RStudio/R\n\nimporting data into R - data\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nPublication-ready(-ish) ANOVA/regression tables in R - vis\nmodelling a numerical response against:\n\nthe intercept only (one-sample or paired t-test) - stats\na categorical predictor with two groups (two-sample t-test) - stats\none or more categorical predictors (ANOVA) - stats\none or more numerical predictors (linear regression) - stats"
+    "objectID": "lectures.html#module-1-fundamentals",
+    "href": "lectures.html#module-1-fundamentals",
+    "title": "Lectures",
+    "section": "Module 1: Fundamentals",
+    "text": "Module 1: Fundamentals\n\nWeek 1 — Introduction and fundamentals\nWeek 2 — Sampling and modelling\nWeek 3 — Assumptions and comparisons\nWeek 4 — Multiple predictors and transformations\nWeek 5 — Fixed and random effects"
   },
   {
-    "objectID": "cheatsheets.html#jamovi",
-    "href": "cheatsheets.html#jamovi",
-    "title": "Cheatsheets",
-    "section": "Jamovi",
-    "text": "Jamovi\n\nUsing flexplot to create common plots in Jamovi - vis\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nmodelling a numerical response against:\n\none or more categorical predictors (t-tests & ANOVA) - stats\none or more numerical predictors (linear regression) - stats\n\nPrincipal Component Analysis (PCA) - stats"
+    "objectID": "lectures.html#module-2-univariate-experiments",
+    "href": "lectures.html#module-2-univariate-experiments",
+    "title": "Lectures",
+    "section": "Module 2: Univariate experiments",
+    "text": "Module 2: Univariate experiments\n\nWeek 6 — Refresher and categorical variables\nWeek 7 — Relationships and binary responses\nWeek 8 — Model selection and revision"
   },
   {
-    "objectID": "cheatsheets.html#general",
-    "href": "cheatsheets.html#general",
-    "title": "Cheatsheets",
-    "section": "General",
-    "text": "General\n\n⭐ New Univariate analysis flowchart (by Gabby Jarvis)\n⭐ New Multivariate analysis cheatsheets (6 pages, 7 topics, by Gabby Jarvis)\npublication-ready ANOVA tables - vis\npublication-ready regression tables - vis\nhow to report statistics in text (planned) - stats\nR and GitHub Copilot (planned) - gen_ai"
+    "objectID": "lectures.html#module-3-multivariate-data",
+    "href": "lectures.html#module-3-multivariate-data",
+    "title": "Lectures",
+    "section": "Module 3: Multivariate data",
+    "text": "Module 3: Multivariate data\n\nWeek 9 — Multivariate analysis and PCA\nWeek 10 — Clustering and multidimensional scaling\nWeek 11 — MANOVA and multivariate revision\nWeek 12 — Rarefaction and Bayesian analysis\nWeek 13 — Exam revision"
   },
   {
-    "objectID": "cheatsheets.html#spss",
-    "href": "cheatsheets.html#spss",
-    "title": "Cheatsheets",
-    "section": "SPSS",
-    "text": "SPSS\n\nboxplots - vis\nscatterplots - vis\nusing the chart builder - vis"
-  },
-  {
-    "objectID": "cheatsheets.html#primer",
-    "href": "cheatsheets.html#primer",
-    "title": "Cheatsheets",
-    "section": "PRIMER",
-    "text": "PRIMER\n\n[Multivariate Analysis Cheatsheet (nMDS, PERMANOVA, SIMPER, ANOSIM)]"
-  },
-  {
-    "objectID": "assessments/assessment-report-2.html",
-    "href": "assessments/assessment-report-2.html",
-    "title": "Report 2",
+    "objectID": "help.html",
+    "href": "help.html",
+    "title": "Contact, Help & Support",
     "section": "",
-    "text": "This assessment involves a group data submission in addition to the individual report.\n\nSubmit one Excel file containing your group’s:\n\nSpecies (assemblage) data\nHabitat data\n\nOnly one group member needs to upload the file on behalf of the group.\nDue: By 10:00am on the day of your Week 11 practical session\nWorth: 5% of your total unit mark\n\nMake sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi."
+    "text": "You can, at any time, contact Januar via email. Check the Canvas site for his contact details."
   },
   {
-    "objectID": "assessments/assessment-report-2.html#group-data-submission",
-    "href": "assessments/assessment-report-2.html#group-data-submission",
-    "title": "Report 2",
+    "objectID": "help.html#consultation",
+    "href": "help.html#consultation",
+    "title": "Contact, Help & Support",
+    "section": "Consultation",
+    "text": "Consultation\nBEDA has a dedicated consultation hour at least once every week, where you can ask questions about the unit, your projects, or any other related topics. All drop-in sessions are run by Januar. This is conducted via Zoom and the link is available on Canvas. Please check Ed for the full schedule of drop-in sessions.\n\nWhat is a drop-in session?\nIt is an informal meeting, where nothing is recorded and the general atmosphere is relaxed. There are no expectations for you to prepare anything in advance. Januar can help you with any questions you have about BEDA. You can also use this time to discuss your progress, ask for feedback, or seek advice on specific challenges you are facing."
+  },
+  {
+    "objectID": "help.html#ways-to-get-more-help",
+    "href": "help.html#ways-to-get-more-help",
+    "title": "Contact, Help & Support",
+    "section": "Ways to get more help",
+    "text": "Ways to get more help\n\nPracticals\nThere is no better avenue for getting help than attending the practicals. Your demonstrators are more than happy to help you with any questions you have. Demonstrators can discuss your work with you, help you troubleshoot problems, and provide feedback on your projects. They are also academics and students themselves, so don’t hesitate to ask them about their own research or experiences in their disciplines!\n\n\nEd discussions\nIn many cases, Ed is the best place to ask for help. Posts on Ed are visible to all students, so you can benefit from the answers to questions that others have asked. Staff also monitor Ed regularly and you can expect responses within 24 hours on weekdays.\n\n\nEmail\nIf you have a specific question that you would like to ask via email, please do so. Make sure to include the unit code (BIOL2022) in the subject line, e.g. “BIOL2022: Question about Assignment 1”, so that Januar can easily identify your email (he teaches many units related to statistics)."
+  },
+  {
+    "objectID": "help.html#feedback",
+    "href": "help.html#feedback",
+    "title": "Contact, Help & Support",
+    "section": "Feedback",
+    "text": "Feedback\nIf you need more feedback on your work, you can ask for it during the drop-in sessions. Januar will happily discuss your work in more detail. Many students find it helpful to bring their work to the drop-in sessions, so they can get specific feedback on their projects or assignments. This can be done before the submission deadline or after you have received your marks and feedback."
+  },
+  {
+    "objectID": "assessments/assessments.html",
+    "href": "assessments/assessments.html",
+    "title": "Assessments",
     "section": "",
-    "text": "This assessment involves a group data submission in addition to the individual report.\n\nSubmit one Excel file containing your group’s:\n\nSpecies (assemblage) data\nHabitat data\n\nOnly one group member needs to upload the file on behalf of the group.\nDue: By 10:00am on the day of your Week 11 practical session\nWorth: 5% of your total unit mark\n\nMake sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi."
+    "text": "Due: 28 August 2026 at 23:59\n\nThis is a short quiz, designed to give you early feedback on your prior understanding of statistics. It will help you identify areas where you may need to focus your study efforts.\n\nDue in: \n\nView in Canvas\n\n\n\n\nDue: 4 September 2026 at 23:59\n\nThis is a quiz that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.\n\nDue in: \n\nView in Canvas\n\n\n\n\nDue: 25 September 2026 at 23:59\n\nYou will use what you have learned so far to design and analyse an experiment based on a project of your choice. The experiments will be completed in groups, but the reports are individually written and assessed. You will have 6 weeks to complete it.\nRole of Practicals:\nPracticals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans. Demonstrators act as advisors, similar to how support works in a research group, and you are welcome to interact with them and your peers for advice, just as you would with postdocs or supervisors. If you are organised, you can also request feedback on your report drafts during practicals to help improve your work.\n\nDue in: \n\nView in Canvas\n\n\n\n\nDue: Week 11 (group dataset) · 6 November 2026 at 23:59 (individual report)\n\nReport 2 is similar to Report 1, but you will need to focus on a project with a multivariate context. Note that there is a 5% group work component to this report that will be assessed via dataset submission, and the report is individually written and assessed (15%). You will have 5 weeks to complete the report.\nRole of Practicals:\nPracticals are a mix of structured and unstructured sessions. Each practical begins with a brief workshop to practice a specific analysis technique, followed by time for you to work on your project. Some practicals are dedicated feedback sessions, for example we will prioritise giving feedback on your experimental design and analysis plans in Week 10. As usual, you are welcome to interact with demonstrators and your peers for advice and feedback.\n\n\n\nSubmit your group’s dataset with the information needed to understand how it was collected. It is due at 10 am on the day of your Week 11 practical:\n\nTuesday classes: 20 October 2026 — \nWednesday classes: 21 October 2026 — \nFriday classes: 23 October 2026 — \n\nView in Canvas\n\n\n\nSubmit your individual four-page report by 6 November 2026 at 23:59.\n\nDue in: \n\nView in Canvas"
   },
   {
-    "objectID": "assessments/assessment-report-2.html#individual-report",
-    "href": "assessments/assessment-report-2.html#individual-report",
-    "title": "Report 2",
-    "section": "Individual Report",
-    "text": "Individual Report\nInstructions for this assessment are in Week 9 Practical. Please read the instructions carefully.\nBelow is a brief summary of the requirements. You must still read the full instructions above in full.\n\nThis is an individual report based on your group’s multivariate study, focusing primarily on the Methods and Results sections.\nThe report must follow the format of a short scientific article suitable for submission to Austral Ecology, including sections such as Title, Abstract (if applicable), Introduction, Materials and Methods, Results, Discussion (brief), and References.\nSubmit your report anonymously via Canvas by 11:59pm at the end of Week 13, using an appropriate filename.\nPage limit: maximum 4 single-spaced pages (not including cover sheet, title/abstract page, references, tables, or figures).\nInclude a brief Introduction with clearly stated hypotheses, a detailed Methods section describing data collection and analyses, and a well-presented Results section with tables, figures, and descriptions.\nEmphasis is on clear explanation of analytical methods, accurate description of data, and concise presentation of results.\nWrite the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).\nFollow academic integrity guidelines: avoid plagiarism, and be prepared for plagiarism checking.\nUse the marking rubric as a checklist to ensure all criteria are met before submission.\nConsult the provided references and resources for guidance on analyses and reporting."
+    "objectID": "assessments/assessments.html#early-feedback-task-eft---5",
+    "href": "assessments/assessments.html#early-feedback-task-eft---5",
+    "title": "Assessments",
+    "section": "",
+    "text": "Due: 28 August 2026 at 23:59\n\nThis is a short quiz, designed to give you early feedback on your prior understanding of statistics. It will help you identify areas where you may need to focus your study efforts.\n\nDue in: \n\nView in Canvas"
   },
   {
-    "objectID": "assessments/assessment-report-2.html#marking-scheme",
-    "href": "assessments/assessment-report-2.html#marking-scheme",
-    "title": "Report 2",
-    "section": "Marking scheme",
-    "text": "Marking scheme\n\nIntroduction (use your imagination) – 10 marks\n\nAims of the experiment and hypotheses being tested\nWhy is the study important and/or interesting\nStudy system – species, location of experiment (brief)\nWelcome to use imagination with references and background, but will not be penalised if you are unable to provide real examples.\n\n\n\nMaterials and Methods – 30 marks\n\nSet-up of experiment/survey\nData / variables recorded and how\nSampling design and justifications for analyses\nStatistical analyses used, including which are dependent/independent variable(s) (if applicable), unit of replication, actual test(s) and statistical package(s)\n\n\n\nResults – 40 marks\n\nStatement of results (data and stats). Refer to tables and figures as needed.\nSummary presentation of data (no raw data) as tables, figures or in text as appropriate. Use tables for large amounts of data where detail is important, use figures to illustrate patterns. Indicate sample size and errors, and note whether the latter are standard errors or standard deviations. Format consistently.\nEvidence of thought in choices of analyses.\nResults of statistical analyses presented either in text, on figures, or in tables.\nDo not screenshot figures of tables\n\n\n\nDiscussion – 10 marks\n\nMain conclusions or findings\nInterpretation of results – what do they mean? How do they relate to original aims?\nLimitations of approach or methods\nFuture studies – what would you do next to improve what you did and/or extend the understanding of the subject?\n\n\n\nGeneral\n\nBrief Abstract at start of report\nWritten in plain English\nPresentation (format/length)\nNo screenshotting of figures and tables\nReferences if used and cited correctly\n\nBack to assessments"
+    "objectID": "assessments/assessments.html#evaluation-quiz-module-1---10",
+    "href": "assessments/assessments.html#evaluation-quiz-module-1---10",
+    "title": "Assessments",
+    "section": "",
+    "text": "Due: 4 September 2026 at 23:59\n\nThis is a quiz that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.\n\nDue in: \n\nView in Canvas"
+  },
+  {
+    "objectID": "assessments/assessments.html#report-1-module-2---25",
+    "href": "assessments/assessments.html#report-1-module-2---25",
+    "title": "Assessments",
+    "section": "",
+    "text": "Due: 25 September 2026 at 23:59\n\nYou will use what you have learned so far to design and analyse an experiment based on a project of your choice. The experiments will be completed in groups, but the reports are individually written and assessed. You will have 6 weeks to complete it.\nRole of Practicals:\nPracticals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans. Demonstrators act as advisors, similar to how support works in a research group, and you are welcome to interact with them and your peers for advice, just as you would with postdocs or supervisors. If you are organised, you can also request feedback on your report drafts during practicals to help improve your work.\n\nDue in: \n\nView in Canvas"
+  },
+  {
+    "objectID": "assessments/assessments.html#report-2-module-3---20",
+    "href": "assessments/assessments.html#report-2-module-3---20",
+    "title": "Assessments",
+    "section": "",
+    "text": "Due: Week 11 (group dataset) · 6 November 2026 at 23:59 (individual report)\n\nReport 2 is similar to Report 1, but you will need to focus on a project with a multivariate context. Note that there is a 5% group work component to this report that will be assessed via dataset submission, and the report is individually written and assessed (15%). You will have 5 weeks to complete the report.\nRole of Practicals:\nPracticals are a mix of structured and unstructured sessions. Each practical begins with a brief workshop to practice a specific analysis technique, followed by time for you to work on your project. Some practicals are dedicated feedback sessions, for example we will prioritise giving feedback on your experimental design and analysis plans in Week 10. As usual, you are welcome to interact with demonstrators and your peers for advice and feedback.\n\n\n\nSubmit your group’s dataset with the information needed to understand how it was collected. It is due at 10 am on the day of your Week 11 practical:\n\nTuesday classes: 20 October 2026 — \nWednesday classes: 21 October 2026 — \nFriday classes: 23 October 2026 — \n\nView in Canvas\n\n\n\nSubmit your individual four-page report by 6 November 2026 at 23:59.\n\nDue in: \n\nView in Canvas"
+  },
+  {
+    "objectID": "assessments/assessment-report-1.html",
+    "href": "assessments/assessment-report-1.html",
+    "title": "Report 01",
+    "section": "",
+    "text": "Most of the instructions for this assessment are presented in Report 1 - Instructions. Please read those instructions carefully before starting this report. There are also some helpful resources linked in the Resources for Practicals page.\nBelow is just a brief summary of the requirements. You must still read the instructions above in full.\n\nYou are collecting your own data for this report. The topic is of your choosing based on the list provided in the Projects page.\nThe report must follow the structure of a scientific paper, including sections such as Title, Abstract, Introduction, Materials and Methods, Results, Discussion, and References.\nSubmit your report anonymously via Canvas by 7 October 2025, using the filename format “Day-Time-Project-Your SID” (e.g., “WED2-4pmProj4A-123456789”).\nPage limit: maximum 10 pages double-spaced, including abstract, references, figures/tables, and any AI usage statement.\nInclude a minimum of 10 relevant references from primary scientific literature (peer-reviewed journals).\nUse minimum 12 pt font and no less than 2 cm margins all around.\nWrite the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).\nFollow academic integrity guidelines: avoid plagiarism, complete the AHEM module, and be prepared for plagiarism checking.\nUse the marking rubric as a checklist to ensure all criteria are met before submission.\nLate penalty: 5% per 24 hours or part thereof after the deadline; length penalty: 5% per page or part thereof over the limit.\n\nBack to assessments"
+  },
+  {
+    "objectID": "assessments/assessment-evaluation-quiz.html",
+    "href": "assessments/assessment-evaluation-quiz.html",
+    "title": "Evaluation Quiz (Module 1)",
+    "section": "",
+    "text": "This quiz is an individual task worth 10% of your final grade.\nLocation: You can do this quiz online. This means that you are responsible for picking a time and place that maximises your ability to complete the quiz without interruption, which includes having a stable internet connection.\nTime limit: The quiz has a time limit of 40 minutes. In reality it should take you much less time than that to complete the quiz. The additional time is for unforeseen circumstances.\nResources: The quiz is open book. This means you can use any resources you have available to you, including the internet, your notes, and the course materials. The reason for this is that as an evaluation tool, we hope that you use it as a learning opportunity. There is no point in cheating as you will only be cheating yourself out of evaluating your own understanding of the material. Most of you should do well if you have been keeping up with the content anyway.\nAttempts: you will have two attempts to complete the quiz. The highest score will be recorded. No extra chances will be given for any reason outside of technical issues. A technical issue is defined as a problem with the quiz itself. Internet connection issues will not be good reasons for extra attempts.\nDue: You have about 7 days to complete both attempts of the quiz once it is opened. Note that this is approximate.\nThe quiz consists of multiple choice (one correct answer) and multiple answer (more than one correct answer) questions.\n\nBack to assessments"
+  },
+  {
+    "objectID": "about-handbook.html",
+    "href": "about-handbook.html",
+    "title": "About this handbook",
+    "section": "",
+    "text": "Third edition · Semester 2, 2026\nThis edition of the Biology Experimental Design and Analysis Unit Handbook was prepared for BIOL2022 at the University of Sydney.\nBiology Experimental Design and Analysis changes as we refine the teaching, practical activities, datasets and assessments. Students returning to this material should use the edition from the year in which they completed the unit. Later editions may differ, sometimes substantially."
+  },
+  {
+    "objectID": "about-handbook.html#authors",
+    "href": "about-handbook.html#authors",
+    "title": "About this handbook",
+    "section": "Authors",
+    "text": "Authors\nJanuar Harianto · Clare McArthur · Matthew Crowther"
+  },
+  {
+    "objectID": "about-handbook.html#how-this-book-was-built",
+    "href": "about-handbook.html#how-this-book-was-built",
+    "title": "About this handbook",
+    "section": "How this book was built",
+    "text": "How this book was built\nThis handbook is written in Quarto using Markdown and R. The online handbook is published as HTML, while the A4 edition is typeset with Typst. The print edition uses Libertinus Serif throughout. The source is developed openly on GitHub, and meaningful changes are recorded on the Updates page."
+  },
+  {
+    "objectID": "about-handbook.html#rendering-the-handbook",
+    "href": "about-handbook.html#rendering-the-handbook",
+    "title": "About this handbook",
+    "section": "Rendering the handbook",
+    "text": "Rendering the handbook\nMost students should use the published PDF. Students who want to build a local copy can install Quarto 1.9 or later and R. The rendering instructions in the source repository explain the remaining steps."
+  },
+  {
+    "objectID": "about-handbook.html#licence",
+    "href": "about-handbook.html#licence",
+    "title": "About this handbook",
+    "section": "Licence",
+    "text": "Licence\nThe Creative Commons Attribution 4.0 International licence applies to the original content in this handbook except where otherwise noted. You may share and adapt this material with appropriate credit, a link to the licence and an indication of any changes.\nMaterials linked from Canvas and separately credited images or other third-party content are not included under this licence.\n\n\nOpen the online handbook\nView the source repository\nRead handbook updates"
+  },
+  {
+    "objectID": "about-handbook.html#suggested-citation",
+    "href": "about-handbook.html#suggested-citation",
+    "title": "About this handbook",
+    "section": "Suggested citation",
+    "text": "Suggested citation\nHarianto, J., McArthur, C., & Crowther, M. (2026). Biology Experimental Design and Analysis Unit Handbook (3rd ed.). https://biol2022.github.io/BEDA-handbook\nThis handbook has been shaped by the students and staff who have studied and taught Biology Experimental Design and Analysis. Their questions, feedback and practical experience continue to inform each edition."
+  },
+  {
+    "objectID": "assessments/assessment-eft.html",
+    "href": "assessments/assessment-eft.html",
+    "title": "Early Feedback Task",
+    "section": "",
+    "text": "In this assessment you will complete a quiz and write a short reflection (about 100 words) on how things are going (so far). Tell us what you’ve learned, any challenges you’re facing, and what you’d like to improve. The goal is to help you reflect on whether you are actually prepared for BEDA. We can also use the information you provide to better support you moving forward.\nThink of it as a check-in, not a test. The questions are designed to help you identify areas where you may need to focus your study efforts.\n\nWeighting: 5%\nDue Date: Friday, Week 4, 11:59 PM\n\nWith EFTs, we may reach out to you to provide additional support or resources based on your responses.\nBack to assessments"
+  },
+  {
+    "objectID": "assessments/assessment-eft.html#overview",
+    "href": "assessments/assessment-eft.html#overview",
+    "title": "Early Feedback Task",
+    "section": "",
+    "text": "In this assessment you will complete a quiz and write a short reflection (about 100 words) on how things are going (so far). Tell us what you’ve learned, any challenges you’re facing, and what you’d like to improve. The goal is to help you reflect on whether you are actually prepared for BEDA. We can also use the information you provide to better support you moving forward.\nThink of it as a check-in, not a test. The questions are designed to help you identify areas where you may need to focus your study efforts.\n\nWeighting: 5%\nDue Date: Friday, Week 4, 11:59 PM\n\nWith EFTs, we may reach out to you to provide additional support or resources based on your responses.\nBack to assessments"
   },
   {
     "objectID": "assessments/assessment-final-exam.html",
@@ -364,200 +434,165 @@
     "text": "8. Feedback\n\nHow and When: [Explain, e.g., “Final exam marks will be released with your overall unit grade as per the University’s official results release schedule. Individual exam scripts are generally not returned, but opportunities for viewing scripts may be available under specific circumstances (refer to University policy).”]"
   },
   {
-    "objectID": "assessments/assessment-eft.html",
-    "href": "assessments/assessment-eft.html",
-    "title": "Early Feedback Task",
+    "objectID": "assessments/assessment-report-2.html",
+    "href": "assessments/assessment-report-2.html",
+    "title": "Report 2",
     "section": "",
-    "text": "In this assessment you will complete a quiz and write a short reflection (about 100 words) on how things are going (so far). Tell us what you’ve learned, any challenges you’re facing, and what you’d like to improve. The goal is to help you reflect on whether you are actually prepared for BEDA. We can also use the information you provide to better support you moving forward.\nThink of it as a check-in, not a test. The questions are designed to help you identify areas where you may need to focus your study efforts.\n\nWeighting: 5%\nDue Date: Friday, Week 4, 11:59 PM\n\nWith EFTs, we may reach out to you to provide additional support or resources based on your responses.\nBack to assessments"
+    "text": "This assessment involves a group data submission in addition to the individual report.\n\nSubmit one Excel file containing your group’s:\n\nSpecies (assemblage) data\nHabitat data\n\nOnly one group member needs to upload the file on behalf of the group.\nDue: By 10:00am on the day of your Week 11 practical session\nWorth: 5% of your total unit mark\n\nMake sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi."
   },
   {
-    "objectID": "assessments/assessment-eft.html#overview",
-    "href": "assessments/assessment-eft.html#overview",
-    "title": "Early Feedback Task",
+    "objectID": "assessments/assessment-report-2.html#group-data-submission",
+    "href": "assessments/assessment-report-2.html#group-data-submission",
+    "title": "Report 2",
     "section": "",
-    "text": "In this assessment you will complete a quiz and write a short reflection (about 100 words) on how things are going (so far). Tell us what you’ve learned, any challenges you’re facing, and what you’d like to improve. The goal is to help you reflect on whether you are actually prepared for BEDA. We can also use the information you provide to better support you moving forward.\nThink of it as a check-in, not a test. The questions are designed to help you identify areas where you may need to focus your study efforts.\n\nWeighting: 5%\nDue Date: Friday, Week 4, 11:59 PM\n\nWith EFTs, we may reach out to you to provide additional support or resources based on your responses.\nBack to assessments"
+    "text": "This assessment involves a group data submission in addition to the individual report.\n\nSubmit one Excel file containing your group’s:\n\nSpecies (assemblage) data\nHabitat data\n\nOnly one group member needs to upload the file on behalf of the group.\nDue: By 10:00am on the day of your Week 11 practical session\nWorth: 5% of your total unit mark\n\nMake sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi."
   },
   {
-    "objectID": "about-handbook.html",
-    "href": "about-handbook.html",
-    "title": "About this handbook",
+    "objectID": "assessments/assessment-report-2.html#individual-report",
+    "href": "assessments/assessment-report-2.html#individual-report",
+    "title": "Report 2",
+    "section": "Individual Report",
+    "text": "Individual Report\nInstructions for this assessment are in Week 9 Practical. Please read the instructions carefully.\nBelow is a brief summary of the requirements. You must still read the full instructions above in full.\n\nThis is an individual report based on your group’s multivariate study, focusing primarily on the Methods and Results sections.\nThe report must follow the format of a short scientific article suitable for submission to Austral Ecology, including sections such as Title, Abstract (if applicable), Introduction, Materials and Methods, Results, Discussion (brief), and References.\nSubmit your report anonymously via Canvas by 11:59pm at the end of Week 13, using an appropriate filename.\nPage limit: maximum 4 single-spaced pages (not including cover sheet, title/abstract page, references, tables, or figures).\nInclude a brief Introduction with clearly stated hypotheses, a detailed Methods section describing data collection and analyses, and a well-presented Results section with tables, figures, and descriptions.\nEmphasis is on clear explanation of analytical methods, accurate description of data, and concise presentation of results.\nWrite the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).\nFollow academic integrity guidelines: avoid plagiarism, and be prepared for plagiarism checking.\nUse the marking rubric as a checklist to ensure all criteria are met before submission.\nConsult the provided references and resources for guidance on analyses and reporting."
+  },
+  {
+    "objectID": "assessments/assessment-report-2.html#marking-scheme",
+    "href": "assessments/assessment-report-2.html#marking-scheme",
+    "title": "Report 2",
+    "section": "Marking scheme",
+    "text": "Marking scheme\n\nIntroduction (use your imagination) – 10 marks\n\nAims of the experiment and hypotheses being tested\nWhy is the study important and/or interesting\nStudy system – species, location of experiment (brief)\nWelcome to use imagination with references and background, but will not be penalised if you are unable to provide real examples.\n\n\n\nMaterials and Methods – 30 marks\n\nSet-up of experiment/survey\nData / variables recorded and how\nSampling design and justifications for analyses\nStatistical analyses used, including which are dependent/independent variable(s) (if applicable), unit of replication, actual test(s) and statistical package(s)\n\n\n\nResults – 40 marks\n\nStatement of results (data and stats). Refer to tables and figures as needed.\nSummary presentation of data (no raw data) as tables, figures or in text as appropriate. Use tables for large amounts of data where detail is important, use figures to illustrate patterns. Indicate sample size and errors, and note whether the latter are standard errors or standard deviations. Format consistently.\nEvidence of thought in choices of analyses.\nResults of statistical analyses presented either in text, on figures, or in tables.\nDo not screenshot figures of tables\n\n\n\nDiscussion – 10 marks\n\nMain conclusions or findings\nInterpretation of results – what do they mean? How do they relate to original aims?\nLimitations of approach or methods\nFuture studies – what would you do next to improve what you did and/or extend the understanding of the subject?\n\n\n\nGeneral\n\nBrief Abstract at start of report\nWritten in plain English\nPresentation (format/length)\nNo screenshotting of figures and tables\nReferences if used and cited correctly\n\nBack to assessments"
+  },
+  {
+    "objectID": "cheatsheets.html",
+    "href": "cheatsheets.html",
+    "title": "Cheatsheets",
     "section": "",
-    "text": "Third edition · Semester 2, 2026\nThis edition of the Biology Experimental Design and Analysis Unit Handbook was prepared for BIOL2022 at the University of Sydney.\nBiology Experimental Design and Analysis changes as we refine the teaching, practical activities, datasets and assessments. Students returning to this material should use the edition from the year in which they completed the unit. Later editions may differ, sometimes substantially."
+    "text": "All cheatsheets are open source and available on the SOLES GitHub repository."
   },
   {
-    "objectID": "about-handbook.html#authors",
-    "href": "about-handbook.html#authors",
-    "title": "About this handbook",
-    "section": "Authors",
-    "text": "Authors\nJanuar Harianto · Clare McArthur · Matthew Crowther"
+    "objectID": "cheatsheets.html#rstudior",
+    "href": "cheatsheets.html#rstudior",
+    "title": "Cheatsheets",
+    "section": "RStudio/R",
+    "text": "RStudio/R\n\nimporting data into R - data\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nPublication-ready(-ish) ANOVA/regression tables in R - vis\nmodelling a numerical response against:\n\nthe intercept only (one-sample or paired t-test) - stats\na categorical predictor with two groups (two-sample t-test) - stats\none or more categorical predictors (ANOVA) - stats\none or more numerical predictors (linear regression) - stats"
   },
   {
-    "objectID": "about-handbook.html#how-this-book-was-built",
-    "href": "about-handbook.html#how-this-book-was-built",
-    "title": "About this handbook",
-    "section": "How this book was built",
-    "text": "How this book was built\nThis handbook is written in Quarto using Markdown and R. The online handbook is published as HTML, while the A4 edition is typeset with Typst. The print edition uses Libertinus Serif throughout. The source is developed openly on GitHub, and meaningful changes are recorded on the Updates page."
+    "objectID": "cheatsheets.html#jamovi",
+    "href": "cheatsheets.html#jamovi",
+    "title": "Cheatsheets",
+    "section": "Jamovi",
+    "text": "Jamovi\n\nUsing flexplot to create common plots in Jamovi - vis\nboxplots - vis\nscatterplots - vis\nhistograms - vis\nmodelling a numerical response against:\n\none or more categorical predictors (t-tests & ANOVA) - stats\none or more numerical predictors (linear regression) - stats\n\nPrincipal Component Analysis (PCA) - stats"
   },
   {
-    "objectID": "about-handbook.html#rendering-the-handbook",
-    "href": "about-handbook.html#rendering-the-handbook",
-    "title": "About this handbook",
-    "section": "Rendering the handbook",
-    "text": "Rendering the handbook\nMost students should use the published PDF. Students who want to build a local copy can install Quarto 1.9 or later and R. The rendering instructions in the source repository explain the remaining steps."
+    "objectID": "cheatsheets.html#general",
+    "href": "cheatsheets.html#general",
+    "title": "Cheatsheets",
+    "section": "General",
+    "text": "General\n\n⭐ New Univariate analysis flowchart (by Gabby Jarvis)\n⭐ New Multivariate analysis cheatsheets (6 pages, 7 topics, by Gabby Jarvis)\npublication-ready ANOVA tables - vis\npublication-ready regression tables - vis\nhow to report statistics in text (planned) - stats\nR and GitHub Copilot (planned) - gen_ai"
   },
   {
-    "objectID": "about-handbook.html#licence",
-    "href": "about-handbook.html#licence",
-    "title": "About this handbook",
-    "section": "Licence",
-    "text": "Licence\nThe Creative Commons Attribution 4.0 International licence applies to the original content in this handbook except where otherwise noted. You may share and adapt this material with appropriate credit, a link to the licence and an indication of any changes.\nMaterials linked from Canvas and separately credited images or other third-party content are not included under this licence.\n\n\nOpen the online handbook\nView the source repository\nRead handbook updates"
+    "objectID": "cheatsheets.html#spss",
+    "href": "cheatsheets.html#spss",
+    "title": "Cheatsheets",
+    "section": "SPSS",
+    "text": "SPSS\n\nboxplots - vis\nscatterplots - vis\nusing the chart builder - vis"
   },
   {
-    "objectID": "about-handbook.html#suggested-citation",
-    "href": "about-handbook.html#suggested-citation",
-    "title": "About this handbook",
-    "section": "Suggested citation",
-    "text": "Suggested citation\nHarianto, J., McArthur, C., & Crowther, M. (2026). Biology Experimental Design and Analysis Unit Handbook (3rd ed.). https://biol2022.github.io/BEDA-handbook\nThis handbook has been shaped by the students and staff who have studied and taught Biology Experimental Design and Analysis. Their questions, feedback and practical experience continue to inform each edition."
+    "objectID": "cheatsheets.html#primer",
+    "href": "cheatsheets.html#primer",
+    "title": "Cheatsheets",
+    "section": "PRIMER",
+    "text": "PRIMER\n\n[Multivariate Analysis Cheatsheet (nMDS, PERMANOVA, SIMPER, ANOSIM)]"
   },
   {
-    "objectID": "assessments/assessment-evaluation-quiz.html",
-    "href": "assessments/assessment-evaluation-quiz.html",
-    "title": "Evaluation Quiz (Module 1)",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BEDA Handbook",
     "section": "",
-    "text": "This quiz is an individual task worth 10% of your final grade.\nLocation: You can do this quiz online. This means that you are responsible for picking a time and place that maximises your ability to complete the quiz without interruption, which includes having a stable internet connection.\nTime limit: The quiz has a time limit of 40 minutes. In reality it should take you much less time than that to complete the quiz. The additional time is for unforeseen circumstances.\nResources: The quiz is open book. This means you can use any resources you have available to you, including the internet, your notes, and the course materials. The reason for this is that as an evaluation tool, we hope that you use it as a learning opportunity. There is no point in cheating as you will only be cheating yourself out of evaluating your own understanding of the material. Most of you should do well if you have been keeping up with the content anyway.\nAttempts: you will have two attempts to complete the quiz. The highest score will be recorded. No extra chances will be given for any reason outside of technical issues. A technical issue is defined as a problem with the quiz itself. Internet connection issues will not be good reasons for extra attempts.\nDue: You have about 7 days to complete both attempts of the quiz once it is opened. Note that this is approximate.\nThe quiz consists of multiple choice (one correct answer) and multiple answer (more than one correct answer) questions.\n\nBack to assessments"
+    "text": "Welcome to the BEDA handbook. This book contains (most) lectures, tutorials and practical content for BIOL2022. Unless otherwise noted, material published here is available under the CC BY 4.0 licence. See About this handbook for the licence scope, exclusions, edition and citation details.\n\n PDF handbook The PDF version will be available soon.\n\n\nLoading semester status…\n\n\n\n\n\n\n\nWeek\nLectures\nPractical\nNotes\n\n\n\n\n1\nIntroduction and fundamentals Welcome to BEDA!\nWeek 1 practical session\n\n\n Resource: Am I ready for BEDA?\n Practice quiz (0%): Quiz 1\n\n\n\n\n2\nSampling and the linear model Randomisation and why we teach the linear model first\nWeek 2 practical session\n\n\n Resource: (See how) common statistical tests are linear models ↗\n Practice quiz (0%): Quiz 2\n\n\n\n\n3\nChoosing the right model(s) The easy way to validate model assumptions.\nWeek 3 practical session\n\n\n Practice quiz (0%): Quiz 3\n Notice: Early Feedback Task opens Friday 21 August at 10:00\n\n\n\n\n4\nMultiple predictors and transformations Expanding models and using transformations to increase model fit.\nWeek 4 practical session\n\n\n Assessment (5%): Early Feedback Task due Friday 28 August at 23:59\n\n\n\n\n5\nControls and revision How to control your experiments with data that you collect.\nWeek 5 practical session\n\n\n Assessment (10%): Evaluation Quiz due Friday 4 September at 23:59\n Notice: Begin working on Report 1\n\n\n\n\n6\nRefresher and categorical variables A refresher on designing experiments with categorical variables.\n—\n—\n\n\n7\nRelationships and binary responses How to design experiments with continuous or binary responses.\nWeek 7 practical session\n—\n\n\n8\nModel selection and revision Which model should we use? Some ideas.\nWeek 8 practical session\n\n\n Assessment (25%): Report 1 due Friday 25 September at 23:59\n\n\n\n\nBreak\nMid-semester break — 28 September–2 October 2026\n\n\n\n\n9\nMultivariate analysis and PCA Introducing multivariate analysis, principal component analysis and factor analysis.\nWeek 9 practical session\n\n\n Notice: Labour Day — Monday 5 October\n\n\n\n\n10\nClustering and multidimensional scaling Using clustering and nMDS to identify and test multivariate patterns.\nWeek 10 practical session\n\n\n Notice: Present your experimental design for feedback\n Notice: Prepare for Report 2\n\n\n\n\n11\nMANOVA and multivariate revision The MANOVA way of designing and interpreting experiments.\nWeek 11 practical session\n\n\n Assessment (5%): Report 2 group dataset due at 10:00 on your practical day\n\n\n\n\n12\nRarefaction and Bayesian analysis The lectures cover rarefaction for diversity comparisons and Bayesian statistical inference.\nWeek 12 practical session\n—\n\n\n13\nExam revision You will review the course's experimental-design and modelling concepts for the final exam.\nPractical session\n\n\n Assessment (15%): Report 2 individual report due Friday 6 November at 23:59\n\n\n\n\n\n\n\n\n\nWeekly schedule\n\nJump to current week ↓\n\n\n\n1Week\n\n\n\n\nIntroduction and fundamentals\n\n\n\n\nLectures Welcome to BEDA!\n\n\nPractical Open Week 1 practical\n\n\nNotes\n\n\nResource: Am I ready for BEDA?\n\n\nPractice quiz (0%): Quiz 1\n\n\n\n\n\n\n\n2Week\n\n\n\n\nSampling and the linear model\n\n\n\n\nLectures Randomisation and why we teach the linear model first\n\n\nPractical Open Week 2 practical\n\n\nNotes\n\n\nResource: (See how) common statistical tests are linear models↗\n\n\nPractice quiz (0%): Quiz 2\n\n\n\n\n\n\n\n3Week\n\n\n\n\nChoosing the right model(s)\n\n\n\n\nLectures The easy way to validate model assumptions.\n\n\nPractical Open Week 3 practical\n\n\nNotes\n\n\nPractice quiz (0%): Quiz 3\n\n\nNotice: Early Feedback Task opens Friday 21 August at 10:00\n\n\n\n\n\n\n\n4Week\n\n\n\n\nMultiple predictors and transformations\n\n\n\n\nLectures Expanding models and using transformations to increase model fit.\n\n\nPractical Open Week 4 practical\n\n\nNotes\n\n\nAssessment (5%): Early Feedback Task due Friday 28 August at 23:59\n\n\n\n\n\n\n\n5Week\n\n\n\n\nControls and revision\n\n\n\n\nLectures How to control your experiments with data that you collect.\n\n\nPractical Open Week 5 practical\n\n\nNotes\n\n\nAssessment (10%): Evaluation Quiz due Friday 4 September at 23:59\n\n\nNotice: Begin working on Report 1\n\n\n\n\n\n\n\n6Week\n\n\n\n\nRefresher and categorical variables\n\n\n\n\nLectures A refresher on designing experiments with categorical variables.\n\n\nPractical —\n\n\nNotes —\n\n\n\n\n\n7Week\n\n\n\n\nRelationships and binary responses\n\n\n\n\nLectures How to design experiments with continuous or binary responses.\n\n\nPractical Open Week 7 practical\n\n\nNotes —\n\n\n\n\n\n8Week\n\n\n\n\nModel selection and revision\n\n\n\n\nLectures Which model should we use? Some ideas.\n\n\nPractical Open Week 8 practical\n\n\nNotes\n\n\nAssessment (25%): Report 1 due Friday 25 September at 23:59\n\n\n\n\n\n\n\nBreak\n\n\nMid-semester break — 28 September–2 October 2026\n\n\n\n\n9Week\n\n\n\n\nMultivariate analysis and PCA\n\n\n\n\nLectures Introducing multivariate analysis, principal component analysis and factor analysis.\n\n\nPractical Open Week 9 practical\n\n\nNotes\n\n\nNotice: Labour Day — Monday 5 October\n\n\n\n\n\n\n\n10Week\n\n\n\n\nClustering and multidimensional scaling\n\n\n\n\nLectures Using clustering and nMDS to identify and test multivariate patterns.\n\n\nPractical Open Week 10 practical\n\n\nNotes\n\n\nNotice: Present your experimental design for feedback\n\n\nNotice: Prepare for Report 2\n\n\n\n\n\n\n\n11Week\n\n\n\n\nMANOVA and multivariate revision\n\n\n\n\nLectures The MANOVA way of designing and interpreting experiments.\n\n\nPractical Open Week 11 practical\n\n\nNotes\n\n\nAssessment (5%): Report 2 group dataset due at 10:00 on your practical day\n\n\n\n\n\n\n\n12Week\n\n\n\n\nRarefaction and Bayesian analysis\n\n\n\n\nLectures The lectures cover rarefaction for diversity comparisons and Bayesian statistical inference.\n\n\nPractical Open Week 12 practical\n\n\nNotes —\n\n\n\n\n\n13Week\n\n\n\n\nExam revision\n\n\n\n\nLectures You will review the course’s experimental-design and modelling concepts for the final exam.\n\n\nPractical Open Week 13 practical\n\n\nNotes\n\n\nAssessment (15%): Report 2 individual report due Friday 6 November at 23:59"
   },
   {
-    "objectID": "assessments/assessment-report-1.html",
-    "href": "assessments/assessment-report-1.html",
-    "title": "Report 01",
+    "objectID": "module01/102-week01.html",
+    "href": "module01/102-week01.html",
+    "title": " Week 1: Getting started",
     "section": "",
-    "text": "Most of the instructions for this assessment are presented in Report 1 - Instructions. Please read those instructions carefully before starting this report. There are also some helpful resources linked in the Resources for Practicals page.\nBelow is just a brief summary of the requirements. You must still read the instructions above in full.\n\nYou are collecting your own data for this report. The topic is of your choosing based on the list provided in the Projects page.\nThe report must follow the structure of a scientific paper, including sections such as Title, Abstract, Introduction, Materials and Methods, Results, Discussion, and References.\nSubmit your report anonymously via Canvas by 7 October 2025, using the filename format “Day-Time-Project-Your SID” (e.g., “WED2-4pmProj4A-123456789”).\nPage limit: maximum 10 pages double-spaced, including abstract, references, figures/tables, and any AI usage statement.\nInclude a minimum of 10 relevant references from primary scientific literature (peer-reviewed journals).\nUse minimum 12 pt font and no less than 2 cm margins all around.\nWrite the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).\nFollow academic integrity guidelines: avoid plagiarism, complete the AHEM module, and be prepared for plagiarism checking.\nUse the marking rubric as a checklist to ensure all criteria are met before submission.\nLate penalty: 5% per 24 hours or part thereof after the deadline; length penalty: 5% per page or part thereof over the limit.\n\nBack to assessments"
+    "text": "Welcome to your first BEDA practical. This week, you will get familiar with the tools and approaches you will use throughout the semester. You will also have time to explore the software and support resources before completing your first modelling task, which is to communicate your ideas using a model, even when you do not yet have a statistical model to fit.\n\n\n\nAttend or watch the Week 1, Tuesday lecture. This is essential.\nRead through this practical before class. You will have a better experience if you are familiar with the tasks. You do not need to complete anything in advance, but reading ahead will help you plan your time and know what to expect.\nBring a laptop. If possible, install your chosen software and the required modules or packages before the practical. If setup is not finished when class begins, work with a partner while the downloads continue.\nBring a pen or pencil for your lab notebook. You will use it to sketch ideas, annotate figures, and quickly record decisions during activities.\n\n\n\n Note: Please avoid asking AI to summarise this practical before you have read it yourself. You need to develop critical reasoning skills, which often requires engaging directly with the material and tasks. It takes about 5 minutes to read, and doing so will help you understand what you do (and do not) know so that you can ask for the right help during the practical.\n\n\n\n\n\n\nImportantDownload the Week 1 datasets\n\n\n\nDownload both files before you begin and keep their filenames unchanged:\n\nDownload penguins.csv\nDownload possums.xlsx\n\nIf the links do not work, you can also download the files from Canvas - Module Content and Resources.\n\n\n\n\n\nBy the end of this practical, you should be able to:\n\n\n\n\n\n\n\n\nLearning outcome\nHow you will practise it\n\n\n\n\nFormulate a measurable biological question from observations or available data.\nTurn observations about penguins into questions, then formulate your own question using variables from another dataset on possums.\n\n\nDistinguish response and predictor variables and classify them by data type.\nClassify variables, form biologically meaningful pairs and identify what you want to explain and what might explain it.\n\n\nExplain how decisions made during study design shape the models that can be used.\nCompare age recorded as categories with age measured continuously, then consider how measuring or classifying your own variables differently would change the model.\n\n\nUse a graphical model to communicate an expected biological relationship before analysing data.\nChoose and justify an appropriate plot, label both axes and sketch a plausible relationship in your lab notebook."
   },
   {
-    "objectID": "assessments/assessments.html",
-    "href": "assessments/assessments.html",
-    "title": "Assessments",
+    "objectID": "module01/102-week01.html#introduction",
+    "href": "module01/102-week01.html#introduction",
+    "title": " Week 1: Getting started",
     "section": "",
-    "text": "Due: 28 August 2026 at 23:59\n\nThis is a short quiz, designed to give you early feedback on your prior understanding of statistics. It will help you identify areas where you may need to focus your study efforts.\n\nDue in: \n\nView in Canvas\n\n\n\n\nDue: 4 September 2026 at 23:59\n\nThis is a quiz that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.\n\nDue in: \n\nView in Canvas\n\n\n\n\nDue: 25 September 2026 at 23:59\n\nYou will use what you have learned so far to design and analyse an experiment based on a project of your choice. The experiments will be completed in groups, but the reports are individually written and assessed. You will have 6 weeks to complete it.\nRole of Practicals:\nPracticals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans. Demonstrators act as advisors, similar to how support works in a research group, and you are welcome to interact with them and your peers for advice, just as you would with postdocs or supervisors. If you are organised, you can also request feedback on your report drafts during practicals to help improve your work.\n\nDue in: \n\nView in Canvas\n\n\n\n\nDue: Week 11 (group dataset) · 6 November 2026 at 23:59 (individual report)\n\nReport 2 is similar to Report 1, but you will need to focus on a project with a multivariate context. Note that there is a 5% group work component to this report that will be assessed via dataset submission, and the report is individually written and assessed (15%). You will have 5 weeks to complete the report.\nRole of Practicals:\nPracticals are a mix of structured and unstructured sessions. Each practical begins with a brief workshop to practice a specific analysis technique, followed by time for you to work on your project. Some practicals are dedicated feedback sessions, for example we will prioritise giving feedback on your experimental design and analysis plans in Week 10. As usual, you are welcome to interact with demonstrators and your peers for advice and feedback.\n\n\n\nSubmit your group’s dataset with the information needed to understand how it was collected. It is due at 10 am on the day of your Week 11 practical:\n\nTuesday classes: 20 October 2026 — \nWednesday classes: 21 October 2026 — \nFriday classes: 23 October 2026 — \n\nView in Canvas\n\n\n\nSubmit your individual four-page report by 6 November 2026 at 23:59.\n\nDue in: \n\nView in Canvas"
+    "text": "Welcome to your first BEDA practical. This week, you will get familiar with the tools and approaches you will use throughout the semester. You will also have time to explore the software and support resources before completing your first modelling task, which is to communicate your ideas using a model, even when you do not yet have a statistical model to fit.\n\n\n\nAttend or watch the Week 1, Tuesday lecture. This is essential.\nRead through this practical before class. You will have a better experience if you are familiar with the tasks. You do not need to complete anything in advance, but reading ahead will help you plan your time and know what to expect.\nBring a laptop. If possible, install your chosen software and the required modules or packages before the practical. If setup is not finished when class begins, work with a partner while the downloads continue.\nBring a pen or pencil for your lab notebook. You will use it to sketch ideas, annotate figures, and quickly record decisions during activities.\n\n\n\n Note: Please avoid asking AI to summarise this practical before you have read it yourself. You need to develop critical reasoning skills, which often requires engaging directly with the material and tasks. It takes about 5 minutes to read, and doing so will help you understand what you do (and do not) know so that you can ask for the right help during the practical.\n\n\n\n\n\n\nImportantDownload the Week 1 datasets\n\n\n\nDownload both files before you begin and keep their filenames unchanged:\n\nDownload penguins.csv\nDownload possums.xlsx\n\nIf the links do not work, you can also download the files from Canvas - Module Content and Resources.\n\n\n\n\n\nBy the end of this practical, you should be able to:\n\n\n\n\n\n\n\n\nLearning outcome\nHow you will practise it\n\n\n\n\nFormulate a measurable biological question from observations or available data.\nTurn observations about penguins into questions, then formulate your own question using variables from another dataset on possums.\n\n\nDistinguish response and predictor variables and classify them by data type.\nClassify variables, form biologically meaningful pairs and identify what you want to explain and what might explain it.\n\n\nExplain how decisions made during study design shape the models that can be used.\nCompare age recorded as categories with age measured continuously, then consider how measuring or classifying your own variables differently would change the model.\n\n\nUse a graphical model to communicate an expected biological relationship before analysing data.\nChoose and justify an appropriate plot, label both axes and sketch a plausible relationship in your lab notebook."
   },
   {
-    "objectID": "assessments/assessments.html#early-feedback-task-eft---5",
-    "href": "assessments/assessments.html#early-feedback-task-eft---5",
-    "title": "Assessments",
+    "objectID": "module01/102-week01.html#workshop",
+    "href": "module01/102-week01.html#workshop",
+    "title": " Week 1: Getting started",
+    "section": "1 Workshop",
+    "text": "1 Workshop\nWe will begin with a short workshop to get you started with the software and the empirical modelling approach. You will then apply the same reasoning to complete the practical tasks.\n\n1.1 Pick your software (15 min)\nIf you are new to statistical software, please choose Jamovi. Demonstrators with expertise in R and SPSS will also be available, although we recommend Jamovi if you would otherwise choose SPSS.\nThe 15-minute setup period is for choosing and checking your software route. A new installation may take longer, so work with a partner if your downloads are still running.\n\n\n Note: If you use other software, we assume that you are already familiar with it and can complete the practical tasks independently.\n\nJamoviR/RStudioR/Positron\n\n\n\nGo to the Jamovi download page.\nDownload the current Desktop version for your operating system.\nOpen the downloaded installer and follow the prompts. On macOS, open the .dmg file and move Jamovi to your Applications folder.\nOpen Jamovi.\nClick the + icon in the top-right corner and select jamovi library.\nSelect Available, then install GAMLj3, vijPlots and flexplot.\n\n\n\n\nR and RStudio are separate programs. Install R first, then install RStudio.\n\nDownload R for Windows or macOS. On a Mac, choose the installer that matches Apple silicon or Intel.\nOpen the R installer and accept the default options.\nDownload the free version of RStudio Desktop for your operating system.\nIf you cannot install RStudio, you can use Posit Cloud in a web browser or install Positron using the next tab.\n\n\n\n\nR and Positron are separate programs. Install R first, then install Positron.\n\nDownload and install R for Windows or macOS. Positron requires R 4.2 or later.\nGo to the Positron download page.\nChoose the installer for your computer. On a Snapdragon-based Windows 11 laptop, choose Windows arm64. If you do not have administrator access, choose the Windows user-level installer.\nInstall and open Positron. If prompted, select the R installation you just installed.\n\n\n\n\n\n\nInstall the course R packages\nIf you chose RStudio or Positron, copy the entire block below into the R console and run it:\nrepo &lt;- \"https://cloud.r-project.org\"\ncourse_packages &lt;- c(\"tidyverse\", \"vegan\", \"car\")\n\ninstalled &lt;- installed.packages()[, \"Version\"]\navailable &lt;- available.packages(repos = repo)[, \"Version\"]\n\nto_install &lt;- course_packages[vapply(course_packages, function(pkg) {\n  if (!pkg %in% names(installed)) return(TRUE)\n  if (!pkg %in% names(available)) return(FALSE)\n  package_version(installed[[pkg]]) &lt; package_version(available[[pkg]])\n}, logical(1))]\n\nif (length(to_install) &gt; 0) {\n  install.packages(to_install, repos = repo)\n} else {\n  message(\"Your course packages are already up to date.\")\n}\nThis installs any missing packages and updates older copies without reinstalling packages that are already current.\n\n\n\n1.2 A simple modelling exercise (10 min)\nWhat is in a question? When we see an interesting pattern and want to investigate it, we need to be able to ask questions that can be addressed with data. Let’s start with a familiar example.\n\n\n\nThe penguin dataset. Artwork by @allison_horst.\n\n\nThe above are simple illustrations of the three penguin species in the penguins.csv dataset. Suppose we were, in fact, scientists on a research expedition to the Palmer Archipelago of Antarctica, and we saw these cartoon penguins. They’re not moving, all we see are their shapes and sizes, and we happen to observe that there are at least three species. What interesting observations might we make about them? How could we turn those observations into a question that can be addressed with data? In most cases, we would look for measurable differences, which are often data that can be expressed as numbers. For example, we might notice that the penguins have different bill shapes and sizes. We could measure the bill length and depth of each penguin, then ask a question about how those measurements differ among species.\n\n\n\nBill dimensions in penguins. Artwork by @allison_horst.\n\n\nTo be able to recognise data that we can measure, we need to be able to identify the response and predictor variables in a question. What is a response variable? What is a predictor variable?\nLet’s assume that we have obtained the penguins.csv dataset, which contains measurements of penguin bill length and depth, flipper length, body mass, species, sex and island, because we had questions about how those variables are related. Can we back-track from the data to the questions that might have motivated the collection of those data?\nWe will, as a class, come up with a few questions based on the dataset. In this workshop we will also use both Jamovi and R to explore and model two of those questions to give everybody an idea of what modelling is about.\n\n\n1.3 Introduction to cheatsheets (5 min)\nIn the final part of the workshop, we will introduce cheatsheets, which are quick reference guides that we have developed to guide you—and your digital assistants, if you choose to use them—through the software. We hope that this makes the purpose of BEDA clear: software should be the least of your worries. It is more important to learn how to think about the data and the questions you are asking, as these skills will be useful throughout your future careers. Software and techniques, on the other hand, are tools that change over time and are less important to retain.\nWe will vote on a cheatsheet to demonstrate in the workshop. You will work on cheatsheets again in the practical."
+  },
+  {
+    "objectID": "module01/102-week01.html#practical",
+    "href": "module01/102-week01.html#practical",
+    "title": " Week 1: Getting started",
+    "section": "2 Practical",
+    "text": "2 Practical\nYou will now work in pairs to complete the practical exercises. Your demonstrators will roam the room and check in with you to see how you are going. If you have any questions, please ask them! Demonstrators will check each of your exercises to ensure that you are on the right track.\n\n2.1 Exercise: Cheatsheets\nThis exercise is designed to get you familiar with the cheatsheets and how to use them. You will be asked to complete a few tasks using the cheatsheets and your chosen software.\n\n Task 1\n\nOpen Cheatsheets.\nChoose two cheatsheets that you have not used before and see if you can create the outputs they describe.\nSave those outputs. A demonstrator will check your work and give you feedback.\n\n\n\n Note: If you have never used Jamovi before, now is a good time to try it.\n\n\n\n2.2 Exercise: Data types\nIn this exercise you will work on the possums.xlsx dataset. If you have not already downloaded it, do that now and open it in your chosen software.\n\n Task 2\n\nCarefully read the “Metadata” and “AllPossData” sheets in the MS Excel file. The metadata sheet describes the variables in the dataset and their units of measurement. The AllPossData sheet contains the actual data.\nChoose six variables, including at least two continuous variables and two categorical variables. Classify each variable and record its type in your lab notebook. Some variables may have more than one reasonable classification.\nUse those variables to identify two biologically meaningful pairs: one containing a continuous and a categorical variable, and another containing two continuous variables. You will choose one of these pairs for Task 3.\n\n\n\n Note: The same underlying trait can be recorded in different ways. For example, exact age can be treated as continuous, whereas age classes such as young, adult and old are ordinal. Binary variables are also categorical variables with exactly two levels. If you are unsure about a classification, ask a demonstrator. Data classification is a key step in the modelling process.\n\nData types\n\n\n\nData type\nWhat it means\n\n\n\n\nContinuous\nA numeric measurement that can take many values\n\n\nDiscrete\nA numeric count with whole-number values\n\n\nCategorical (nominal)\nA label or group with no natural order\n\n\nOrdinal\nA category with a meaningful order\n\n\nBinary\nA categorical variable with two levels\n\n\n\n\n\n\n\n2.3 Exercise: Modelling basics\nIn this exercise you will use variables from the possums.xlsx dataset to formulate one biological question and develop one graphical model. You will choose an appropriate plot and sketch the relationship you expect to see; you do not need to analyse the data in software.\nWhat is the point? A model is just a simple way to represent something complicated. In data analysis, a model helps us make sense of a dataset, test ideas (hypotheses), or make predictions. Models can be as simple or as fancy as you like, depending on your data and your research question.\nSoon, you will start using empirical models to describe relationships between variables. We will write these relationships using simple notation, such as \\(y \\sim x\\). We won’t do that just yet; for now, we will plot the data.\n\nIf you can plot it, you are already modelling it\nFor now, let us focus on graphical models – in other words, plots! Plots are models because they show relationships between variables.\nFor example, you could plot the daily sleep time of dogs against their age to see if there is a pattern. At this stage, more than one pattern may be biologically plausible. The important thing is to make your expectation explicit and be able to explain it. Younger and older dogs might sleep for similar amounts of time, or one group might sleep longer than the other. These possibilities could look like this:\n\n\n\n\n\n\n\n\n\n\n\n(a) Similar sleep time between age groups.\n\n\n\n\n\n\n\n\n\n\n\n(b) Older dogs sleep longer.\n\n\n\n\n\n\n\n\n\n\n\n\n\n(c) Younger dogs sleep longer.\n\n\n\n\n\n\n\n\n\n\n\n(d) Greater variation in sleep time among older dogs.\n\n\n\n\n\n\n\nFigure 1: Four possible patterns in daily sleep time between younger and older dogs.\n\n\n\nEach plot represents a different possible relationship, but they all use the same response and predictor variables. The response is daily sleep time in hours, and the predictor is age group (younger or older)—a categorical variable.\nInterestingly, how we consider our variables can drastically change the type of plot and model used for data analysis. For example, consider the same relationship as above, but while planning the study, we decide to record the exact age of each dog in years. Now, age is a continuous variable, and we can use a scatterplot to show how daily sleep time changes across the age range:\n\n\n\n\n\n\n\n\nFigure 2: One possible relationship between daily sleep time and age in dogs.\n\n\n\n\n\nIn the scatterplot, the exact ages are retained, making it easier to see how daily sleep time changes across the age range. The boxplots and scatterplot use the same response and predictor, but treating age as categorical or continuous changes what the plot shows and how we interpret the relationship.\n\n\n Task 3\nYour goal is to practise thinking like a research biologist. Complete all five steps below for one biological question and one graphical model. You do not need to process or analyse the data. Knowing the variable types is enough to choose and sketch an appropriate plot.\n\nChoose a variable pair. Return to the two pairs you identified in Task 2 and choose one for this task.\nFormulate a research question. Choose variables that could address a simple biological question. Identify the response variable, the predictor variable and the type of each variable.\nChoose a plot. Match the plot to your question and variable types:\n\nScatterplot: Shows the relationship between two continuous variables.\nBoxplot: Compares a continuous response across the groups of a categorical predictor.\n\nSketch your graphical model. In your lab notebook, write your research question and draw the plot you expect to see. Label both axes and show a plausible pattern. The sketch represents your idea; it does not need to match the data.\nExplain your model. State the relationship in words and explain why the plot suits your variables. Consider whether a different way of measuring or classifying one variable would change the plot you use. Discuss your reasoning with your partner or demonstrator.\n\n\n\n\n\n\n\nImportantWhat to show your demonstrator\n\n\n\nYour lab notebook should contain:\n\nyour biological question;\nthe response and predictor variables, including their types;\na labelled sketch of the plot;\nthe expected relationship stated in words; and\na brief explanation of why the plot is suitable.\n\nYou do not need to fit or test a statistical model.\n\n\n\n\n\n2.4 Consolidation\nThe three exercises follow the same reasoning that you will use throughout BEDA:\nBiological question → variables → data types → graphical model → model in words\nBefore you finish, show your graphical model to another student. Without looking at the dataset, can they identify what you are trying to explain, what might explain it and the pattern you expect? If not, revise the question, labels or sketch until the relationship is clear.\n\n\n\n\n\n\nNoteThe main idea\n\n\n\nA plot is not just something produced after an analysis. It represents how you think the variables may be related. These early decisions also guide the statistical model you will eventually choose and fit."
+  },
+  {
+    "objectID": "module01/106-species-id.html",
+    "href": "module01/106-species-id.html",
+    "title": "Species ID guide",
     "section": "",
-    "text": "Due: 28 August 2026 at 23:59\n\nThis is a short quiz, designed to give you early feedback on your prior understanding of statistics. It will help you identify areas where you may need to focus your study efforts.\n\nDue in: \n\nView in Canvas"
+    "text": "Use this page to identify the species that you sample. Note that all images are copyrighted. We have provided the source of each image so that you can find more information about the species, and to give credit to the original authors.\nNote: images are only available in the HTML version of this document."
   },
   {
-    "objectID": "assessments/assessments.html#evaluation-quiz-module-1---10",
-    "href": "assessments/assessments.html#evaluation-quiz-module-1---10",
-    "title": "Assessments",
-    "section": "",
-    "text": "Due: 4 September 2026 at 23:59\n\nThis is a quiz that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.\n\nDue in: \n\nView in Canvas"
+    "objectID": "module01/106-species-id.html#id-guide",
+    "href": "module01/106-species-id.html#id-guide",
+    "title": "Species ID guide",
+    "section": "1 Identification guide",
+    "text": "1 Identification guide"
   },
   {
-    "objectID": "assessments/assessments.html#report-1-module-2---25",
-    "href": "assessments/assessments.html#report-1-module-2---25",
-    "title": "Assessments",
-    "section": "",
-    "text": "Due: 25 September 2026 at 23:59\n\nYou will use what you have learned so far to design and analyse an experiment based on a project of your choice. The experiments will be completed in groups, but the reports are individually written and assessed. You will have 6 weeks to complete it.\nRole of Practicals:\nPracticals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans. Demonstrators act as advisors, similar to how support works in a research group, and you are welcome to interact with them and your peers for advice, just as you would with postdocs or supervisors. If you are organised, you can also request feedback on your report drafts during practicals to help improve your work.\n\nDue in: \n\nView in Canvas"
+    "objectID": "module01/106-species-id.html#common-snails",
+    "href": "module01/106-species-id.html#common-snails",
+    "title": "Species ID guide",
+    "section": "2 Common snails",
+    "text": "2 Common snails\n\nBembicium nanum\n     \nImages from Grove, S.J. (2018).\n\n\nAustrocochlea porcata\n     \nImages from Grove, S.J. (2018).\n\n\nAustrococchlea concamerata\n  \nImages from Iredale, T. & McMichael, D. F. (1962) and Australian Museum.\n\n\nNerita atramentosa\n  \nImages from Grove, S.J. (2018).\n\n\nAustrolittorina unifasciata\n   \nImages from Grove, S.J. (2018)."
   },
   {
-    "objectID": "assessments/assessments.html#report-2-module-3---20",
-    "href": "assessments/assessments.html#report-2-module-3---20",
-    "title": "Assessments",
-    "section": "",
-    "text": "Due: Week 11 (group dataset) · 6 November 2026 at 23:59 (individual report)\n\nReport 2 is similar to Report 1, but you will need to focus on a project with a multivariate context. Note that there is a 5% group work component to this report that will be assessed via dataset submission, and the report is individually written and assessed (15%). You will have 5 weeks to complete the report.\nRole of Practicals:\nPracticals are a mix of structured and unstructured sessions. Each practical begins with a brief workshop to practice a specific analysis technique, followed by time for you to work on your project. Some practicals are dedicated feedback sessions, for example we will prioritise giving feedback on your experimental design and analysis plans in Week 10. As usual, you are welcome to interact with demonstrators and your peers for advice and feedback.\n\n\n\nSubmit your group’s dataset with the information needed to understand how it was collected. It is due at 10 am on the day of your Week 11 practical:\n\nTuesday classes: 20 October 2026 — \nWednesday classes: 21 October 2026 — \nFriday classes: 23 October 2026 — \n\nView in Canvas\n\n\n\nSubmit your individual four-page report by 6 November 2026 at 23:59.\n\nDue in: \n\nView in Canvas"
+    "objectID": "module01/106-species-id.html#whelks",
+    "href": "module01/106-species-id.html#whelks",
+    "title": "Species ID guide",
+    "section": "3 Whelks",
+    "text": "3 Whelks\n\nTenguella marginalba\n  \nImages by Donald Hobern, Femorale.com, Joop Trausel and Frans Slieker."
   },
   {
-    "objectID": "help.html",
-    "href": "help.html",
-    "title": "Contact, Help & Support",
-    "section": "",
-    "text": "You can, at any time, contact Januar via email. Check the Canvas site for his contact details."
+    "objectID": "module01/106-species-id.html#limpets",
+    "href": "module01/106-species-id.html#limpets",
+    "title": "Species ID guide",
+    "section": "4 Limpets",
+    "text": "4 Limpets\n\nCellana tramoserica\n     \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nMontfortula rugosa\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nPatelloida mimula\n  \nImages from Sea Shells of New South Wales and WoRMS Editorial Board (2023).\n\n\nPatelloida mufria\n \nImages from Sea Shells of New South Wales and WoRMS Editorial Board (2023).\n\n\nPatelloida latistrigata\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nPatelloida alticostata\n          \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nNotoacmea flammea\n        \nImages from Leon Altoff and Grove, S.J. (2018).\n\n\nScutellastra chapmani\n     \nImages from Grove, S.J. (2018) and Sea Shells of New South Wales.\n\n\nScutellastra peronii\n              \nImages from Grove, S.J. (2018) and Sea Shells of New South Wales."
   },
   {
-    "objectID": "help.html#consultation",
-    "href": "help.html#consultation",
-    "title": "Contact, Help & Support",
-    "section": "Consultation",
-    "text": "Consultation\nBEDA has a dedicated consultation hour at least once every week, where you can ask questions about the unit, your projects, or any other related topics. All drop-in sessions are run by Januar. This is conducted via Zoom and the link is available on Canvas. Please check Ed for the full schedule of drop-in sessions.\n\nWhat is a drop-in session?\nIt is an informal meeting, where nothing is recorded and the general atmosphere is relaxed. There are no expectations for you to prepare anything in advance. Januar can help you with any questions you have about BEDA. You can also use this time to discuss your progress, ask for feedback, or seek advice on specific challenges you are facing."
+    "objectID": "module01/106-species-id.html#chitons",
+    "href": "module01/106-species-id.html#chitons",
+    "title": "Species ID guide",
+    "section": "5 Chitons",
+    "text": "5 Chitons\n\nSypharochiton pelliserpentis\n   \nImages from WoRMS Editorial Board (2023) and Sea Shells of New South Wales.\n\n\nAcanthochiton sp.\n   \n\n\nIschnochiton sp.\n        \nImages from Grove, S.J. (2018)."
   },
   {
-    "objectID": "help.html#ways-to-get-more-help",
-    "href": "help.html#ways-to-get-more-help",
-    "title": "Contact, Help & Support",
-    "section": "Ways to get more help",
-    "text": "Ways to get more help\n\nPracticals\nThere is no better avenue for getting help than attending the practicals. Your demonstrators are more than happy to help you with any questions you have. Demonstrators can discuss your work with you, help you troubleshoot problems, and provide feedback on your projects. They are also academics and students themselves, so don’t hesitate to ask them about their own research or experiences in their disciplines!\n\n\nEd discussions\nIn many cases, Ed is the best place to ask for help. Posts on Ed are visible to all students, so you can benefit from the answers to questions that others have asked. Staff also monitor Ed regularly and you can expect responses within 24 hours on weekdays.\n\n\nEmail\nIf you have a specific question that you would like to ask via email, please do so. Make sure to include the unit code (BIOL2022) in the subject line, e.g. “BIOL2022: Question about Assignment 1”, so that Januar can easily identify your email (he teaches many units related to statistics)."
+    "objectID": "module01/106-species-id.html#sea-stars",
+    "href": "module01/106-species-id.html#sea-stars",
+    "title": "Species ID guide",
+    "section": "6 Sea stars",
+    "text": "6 Sea stars\n\nParvulastra exigua"
   },
   {
-    "objectID": "help.html#feedback",
-    "href": "help.html#feedback",
-    "title": "Contact, Help & Support",
-    "section": "Feedback",
-    "text": "Feedback\nIf you need more feedback on your work, you can ask for it during the drop-in sessions. Januar will happily discuss your work in more detail. Many students find it helpful to bring their work to the drop-in sessions, so they can get specific feedback on their projects or assignments. This can be done before the submission deadline or after you have received your marks and feedback."
-  },
-  {
-    "objectID": "lectures.html",
-    "href": "lectures.html",
-    "title": "Lectures",
-    "section": "",
-    "text": "Browse the lecture hubs by week, or return to Weekly content for practicals and other resources."
-  },
-  {
-    "objectID": "lectures.html#module-1-fundamentals",
-    "href": "lectures.html#module-1-fundamentals",
-    "title": "Lectures",
-    "section": "Module 1: Fundamentals",
-    "text": "Module 1: Fundamentals\n\nWeek 1 — Introduction and fundamentals\nWeek 2 — Sampling and modelling\nWeek 3 — Assumptions and comparisons\nWeek 4 — Multiple predictors and transformations\nWeek 5 — Fixed and random effects"
-  },
-  {
-    "objectID": "lectures.html#module-2-univariate-experiments",
-    "href": "lectures.html#module-2-univariate-experiments",
-    "title": "Lectures",
-    "section": "Module 2: Univariate experiments",
-    "text": "Module 2: Univariate experiments\n\nWeek 6 — Refresher and categorical variables\nWeek 7 — Relationships and binary responses\nWeek 8 — Model selection and revision"
-  },
-  {
-    "objectID": "lectures.html#module-3-multivariate-data",
-    "href": "lectures.html#module-3-multivariate-data",
-    "title": "Lectures",
-    "section": "Module 3: Multivariate data",
-    "text": "Module 3: Multivariate data\n\nWeek 9 — Multivariate analysis and PCA\nWeek 10 — Clustering and multidimensional scaling\nWeek 11 — MANOVA and multivariate revision\nWeek 12 — Rarefaction and Bayesian analysis\nWeek 13 — Exam revision"
-  },
-  {
-    "objectID": "module01/101-intro.html",
-    "href": "module01/101-intro.html",
-    "title": "Introduction",
-    "section": "",
-    "text": "Science is about asking the right questions in the right way so we can draw meaningful conclusions from the data we collect. This is not as simple as it seems, but it is a key skill in scientific enquiry. We need to be able to ask questions in a quantitative way to distinguish between different explanations for the things we observe. Before we start using t-tests, regression, or ANOVA; before we perform mixed modelling or moltivariate analyses; before we use the newest tools for data analysis, we must first learn to ask the right questions. So let’s go back to basics.\nIn this module:\n\nLectures (Weeks 1 –5) will cover the fundamental principles of scientific enquiry, including how to ask the right questions, how to design a study, and how to interpret results. We will also introduce to you the linear modelling framework, which is a powerful tool for understanding the relationships between variables in your data.\nPracticals (Weeks 1–3) aim to help you build the essential skills for scientific enquiry. We will cover experimental design, model formulation, and sampling design. Each week begins with a short 30-minute workshop to introduce the main ideas and techniques. You will then complete the practical work."
-  },
-  {
-    "objectID": "module01/105-images.html",
-    "href": "module01/105-images.html",
-    "title": "Intertidal sites",
-    "section": "",
-    "text": "This page contains images of intertidal rocky shore sites along the Great Southern Reef. These images are provided for the purpose of the lab activities in Weeks 2 (and maybe 3)."
-  },
-  {
-    "objectID": "module01/105-images.html#two-sites",
-    "href": "module01/105-images.html#two-sites",
-    "title": "Intertidal sites",
-    "section": "Two sites",
-    "text": "Two sites\nYou will be working with images from two sites: Site A and Site B. Each site has 20 images, which are randomly selected from a larger set of images.\nThe advantage of sampling two sites is that you can assess whether your observations from one site can be generalised to another. This is a common approach in ecology, where we often sample multiple sites to understand patterns at a larger scale, and addresses representative sampling and pseudoreplication.\n\n\n\n\n\n\nImportant\n\n\n\nYou now get to decide how the story goes:\n\nAre you sampling both sites as one?\nAre you sampling just one of the two sites?\nAre you sampling each site separately, but comparing them to each other?\n\nDepending on what you decide, your model may need to be tweaked, and your observations may need to be reinterpreted or improved."
-  },
-  {
-    "objectID": "module01/105-images.html#assumptions-and-prior-knowledge",
-    "href": "module01/105-images.html#assumptions-and-prior-knowledge",
-    "title": "Intertidal sites",
-    "section": "Assumptions and prior knowledge",
-    "text": "Assumptions and prior knowledge\n\nImages are randomly selected and assumed to be independent.\nImages are assumed to be representative of their respective site(s).\n\nThe next step is to define your sampling strategy, and decide how you will use the images to answer your question."
-  },
-  {
-    "objectID": "module01/105-images.html#sites",
-    "href": "module01/105-images.html#sites",
-    "title": "Intertidal sites",
-    "section": "Sites",
-    "text": "Sites\nNote: images are only available in the HTML version of this document. If you choose to (or if the images below do not load), you can also access the images by downloading them as a zipped archive here.\n\nSite 1Site 2"
+    "objectID": "module01/106-species-id.html#barnacles",
+    "href": "module01/106-species-id.html#barnacles",
+    "title": "Species ID guide",
+    "section": "7 Barnacles",
+    "text": "7 Barnacles\n\nBalanus amphitrite\n  \nImages from Wikipedia and WoRMS Editorial Board (2023).\n\n\nBalanus trigonus\n  \nImages from Wikipedia, Western Australia Museum and WoRMS Editorial Board (2023).\n\n\nChthamalus antennatus\n   \nImages from Wikipedia, Museum Victoria Collections and SA Marine Life.\n\n\nCatomerus polymerus\n    \nImages from Wikipedia and Museum Victoria Collections.\n\n\nTesseropora rosea\n   \nimages from Wikipedia, Museum Victoria Collections, Atlas of Life and iNaturalist Australia.\n\n\nTetraclitella purpurascens\n  \nImage by Simon Grove via Flickr (2014), Atlas of Living Australia and Museum Victoria Collections.\n\n\nMegabalanus coccopoma\n   \nImages from Wikipedia, WoRMS Editorial Board (2023) and Invasive.org.\n\n\nAmphibalanus variegatus\n  \nImages from Port Phillip Bay Taxonomy, Wikipedia and Denis Riek (2021).\n\n\nAustrobalanus imperator\n  \nImages from Wikipedia and iNaturalist Australia."
   },
   {
     "objectID": "module02/204-report1.html",
@@ -690,6 +725,6 @@
     "href": "unit-information.html",
     "title": "Unit information",
     "section": "",
-    "text": "WelcomeAssumed knowledgeModulesLectures & pracsCode of conduct\n\n\n\nThank you for joining BIOL2022: Biology Experimental Design and Analysis, also known as BEDA (🐝-da). The ability to critically evaluate evidence is a fundamental life skill. In BEDA, we build this skill through hands-on work in experimental design and data analysis. How do we design a robust study? How does a study’s design shape its results? How do we choose statistical tools that fit the research question? The reasoning skills you develop will be invaluable not just in biology, but in any future career path you choose.\nWhile the focus of BEDA is on the reasoning behind data analysis and interpreting results, we also provide practical guidance on using software. We recommend Jamovi if you are new to statistical software. If you already have experience with R, you are welcome to use it. SPSS and PRIMER are also supported but we prefer to use open-source software where possible as they remain accessible to all.\n\n\n\nIf you have not studied statistics before, BEDA WILL BE CHALLENGING…\nBEDA is designed to build on introductory statistics rather than teach it from the beginning. We use ideas such as data types, sampling variation, hypothesis testing, p-values, confidence intervals and simple statistical models from the opening weeks. This allows us to spend more time on designing biological studies, building appropriate models and interpreting evidence.\nBecause BEDA has broad prerequisites, qualifying for enrolment into this unit does not always mean that you have studied statistics. However, taking a first-year statistics unit is an assumed knowledge for BIOL2022. Not fully meeting the assumed knowledge may make BEDA extremely challenging as we have limited time to explain basic concepts that are assumed to be known from first-year statistics.\nSome enthusiastic students choose to take BEDA straight after their first semester of first year. If this is you, there may be extra challenges, as report writing, group work, and time management skills are usually developed across the full first year of university. For this reason, we strongly recommend taking BEDA in your second year (as intended), so you are better prepared for the workload and expectations of a unit designed for students with more experience.\nIf you decide to stick around, use Am I ready for BEDA? to see what you need to review so that you can get the most out of the unit.\n\n\n\nBEDA is organised into three modules, each taught by a different lecturer. Ideas introduced early in the unit continue through the semester as they are applied to different kinds of biological research. Importantly the focus is on the reasoning behind the analysis and how the data are collected, rather than just the analysis itself.\n\nModule 1 (Weeks 1–5)\nJanuar introduces the foundations of study design and statistical modelling. You will look at how a research question, the way a study is designed and the data you collect come together in a model. Some students may be familiar with these ideas from first-year statistics, but we will explore them in a new context. Importantly, we will use this module to ensure that all students are on the same page with the foundations of study design and statistical modelling, so that we can build on these ideas in later modules.\nThe module will introduce you to the following familiar ideas in a new context:\n\nsampling and how it affects the conclusions you can draw\nstudy design and variables\ngraphical models\nthe general linear model (GLM)\nmodel assumptions of the GLM\ntransformations and why we use them\ncontrol variables and random effects as opposed to procedural controls\n\nThese ideas help you begin designing your experiment for Report 1.\n\n\nModule 2 (Weeks 6–8)\nClare develops the modelling workflow through univariate experiments, where the analysis focuses on one response variable. You will examine experiments involving categorical predictors, continuous relationships and binary responses, then consider how to choose between possible models.\nThe module will see your starting to collect data for Report 1. You will also be coached on how to write a report that clearly communicates your study design, analysis and interpretation of results. Additional concepts introduced in this module include:\n\nbinary responses\nnon-normal data and dealing with it\npicking the right model and choosing between models\n\n\n\nModule 3 (Weeks 9–12)\nMat extends the same reasoning to multivariate data, where several response variables are considered together. You will learn how ordination methods such as principal component analysis and multidimensional scaling can reveal patterns in complex datasets, how clustering identifies similar observations, and how multivariate tests evaluate evidence for group differences. Importantly, you will learn that multivariate methods are great for exploring patterns that you see in the world around you (and are thus very popular in biology).\nReport 2 brings these ideas together. You will design a multivariate study, collect a group dataset and use it to describe, test and interpret patterns in your environment. We will cover:\n\nthe reason behind multivariate methods\nthe ordination methods PCA and MDS\nclustering\nmultivariate tests for group differences using PERMANOVA\nANOSIM and SIMPER for post-hoc analysis\n\n\n\n\nThere are two lectures each week. Unfortunately we do not get to pick the locations, so they are held in different buildings on different days. You are expected to attend 80% of lectures in one way or another. We record this attendance in-person and online when you watch the recordings.\n\nTuesday, 10–11 am — Belinda Hutchinson Building, Lecture Theatre 1110\nWednesday, 10–11 am — Sydney Nanoscience Hub, Lecture Theatre 4002 (Messel)\n\nYou will also attend one two-hour practical each week in your allocated class:\n\nTuesday, 2–4 pm or 4–6 pm\nWednesday, 2–4 pm or 4–6 pm\nFriday, 2–4 pm or 4–6 pm\n\nAll practicals are held in Carslaw Building, Wet Lab 307. Check your personal timetable for your allocated class and any timetable changes. Do note that because we are a large cohort, once you are allocated to a practical class, you cannot change it. To change your practical class, you must contact the unit coordinator and provide a valid reason, normally a time table clash with another unit or caring responsibilities.\nAttendance: You are expected to participate in at least 80% of timetabled activities and must attend at least 10 of the 12 practicals. See Attendance under the Code of Conduct for further details.\n\n\nA code of conduct is a shared agreement about how we learn and work together.\nBEDA should be a respectful and inclusive place to learn. Treat classmates and staff with courtesy, including when you disagree. Use people’s correct names and pronouns, respect different backgrounds and levels of experience, make space for others to contribute, and avoid disrupting lectures or practicals. Discrimination, intimidation and harassment are not acceptable. Follow staff instructions and all laboratory safety requirements when working in laboratory spaces.\n\nWorking with your group and data\nContribute fairly to your group’s work and raise participation problems early. As with any group work, the issues that arise are often best resolved by talking to your group members first. It is important to use a group charter to clarify expectations and responsibilities including how to share data and work together.\nShare group data and the information needed to interpret it promptly. Never fabricate data, or omit or alter observations without documenting and justifying the decision. You may discuss your analysis with your group, but any individual report must be written and submitted independently.\nMore information on how to work work with your group is provided with the Report 1 and Report 2 instructions. If you are unsure about what is acceptable, ask your practical demonstrator or the unit coordinator.\n\n\nAttendance\nAttend lectures live where possible. If you miss a lecture, watch the recording promptly. You are expected to have attended or watched the Tuesday lecture before your practical. Because practicals run on Tuesday, Wednesday and Friday, the Wednesday lecture is not assumed knowledge for that week’s practical, but you should attend or watch it during the same week.\nYou must attend at least 10 of the 12 practicals to meet the 80% attendance requirement. Practical attendance is not managed through special consideration. Record your own attendance during each practical using the QR code or website link, then check that it has been recorded correctly. You have one week to request a correction.\n\n\nRaising a concern\nFor routine group-work, data-sharing or class concerns, speak with your practical demonstrator or the unit coordinator as early as possible. You do not need to approach the teaching team first if the matter is serious or you would be uncomfortable doing so. The University provides separate pathways for complaints, bullying, harassment and discrimination and confidential support through Safer Communities for sexual harm or gender-based violence. In an immediate emergency, call 000 and follow the University’s emergency and campus safety guidance.\n\n\n\n\nFor publication, edition, licensing and citation details, see About this handbook."
+    "text": "WelcomeAssumed knowledgeModulesLectures & pracsCode of conduct\n\n\n\nThank you for joining BIOL2022: Biology Experimental Design and Analysis, also known as BEDA (🐝-da). The ability to critically evaluate evidence is a fundamental life skill. In BEDA, we build this skill through hands-on work in experimental design and data analysis. How do we design a robust study? How does a study’s design shape its results? How do we choose statistical tools that fit the research question? The reasoning skills you develop will be invaluable not just in biology, but in any future career path you choose.\nWhile the focus of BEDA is on the reasoning behind data analysis and interpreting results, we also provide practical guidance on using software. We recommend Jamovi if you are new to statistical software. If you already have experience with R, you are welcome to use it. SPSS and PRIMER are also supported but we prefer to use open-source software where possible as they remain accessible to all.\nClick on the tabs above to find out more about the unit.\n\n\n\nIf you have not studied statistics before, BEDA WILL BE CHALLENGING\nBEDA is designed to build on introductory statistics (rather than teach it from the beginning). We use ideas such as data types, sampling variation, hypothesis testing, p-values, confidence intervals and simple statistical models from the opening weeks. This allows us to spend more time on designing biological studies, building appropriate models and interpreting evidence.\nBecause BEDA has broad prerequisites, qualifying for enrolment into this unit does not always mean that you have studied statistics. However, taking a first-year statistics unit is an assumed knowledge for BIOL2022. Not fully meeting the assumed knowledge may make BEDA extremely challenging as we have limited time to explain basic concepts that are assumed to be known from first-year statistics.\nSome enthusiastic students choose to take BEDA straight after their first semester of first year. If this is you, there may be extra challenges, as report writing, group work, and time management skills are usually developed across the full first year of university. For this reason, we strongly recommend taking BEDA in your second year (as intended), so you are better prepared for the workload and expectations of a unit designed for students with more experience.\nIf you decide to stick around, use Am I ready for BEDA? to see what you need to review so that you can get the most out of the unit.\n\n\n\nBEDA is organised into three modules, each taught by a different lecturer. Ideas introduced early in the unit continue through the semester as they are applied to different kinds of biological research. Importantly the focus is on the reasoning behind the analysis and how the data are collected, rather than just the analysis itself.\n\nModule 1 (Weeks 1–5)\nJanuar introduces the foundations of study design and statistical modelling. You will look at how a research question, the way a study is designed and the data you collect come together in a model. Some students may be familiar with these ideas from first-year statistics, but we will explore them in a new context. Importantly, we will use this module to ensure that all students are on the same page with the foundations of study design and statistical modelling, so that we can build on these ideas in later modules.\nThe module will introduce you to the following familiar ideas in a new context:\n\nsampling and how it affects the conclusions you can draw\nstudy design and variables\ngraphical models\nthe general linear model (GLM)\nmodel assumptions of the GLM\ntransformations and why we use them\ncontrol variables and random effects as opposed to procedural controls\n\nThese ideas help you begin designing your experiment for Report 1.\n\n\nModule 2 (Weeks 6–8)\nClare develops the modelling workflow through univariate experiments, where the analysis focuses on one response variable. You will examine experiments involving categorical predictors, continuous relationships and binary responses, then consider how to choose between possible models.\nThe module will see your starting to collect data for Report 1. You will also be coached on how to write a report that clearly communicates your study design, analysis and interpretation of results. Additional concepts introduced in this module include:\n\nbinary responses\nnon-normal data and dealing with it\npicking the right model and choosing between models\n\n\n\nModule 3 (Weeks 9–12)\nMat extends the same reasoning to multivariate data, where several response variables are considered together. You will learn how ordination methods such as principal component analysis and multidimensional scaling can reveal patterns in complex datasets, how clustering identifies similar observations, and how multivariate tests evaluate evidence for group differences. Importantly, you will learn that multivariate methods are great for exploring patterns that you see in the world around you (and are thus very popular in biology).\nReport 2 brings these ideas together. You will design a multivariate study, collect a group dataset and use it to describe, test and interpret patterns in your environment. We will cover:\n\nthe reason behind multivariate methods\nthe ordination methods PCA and MDS\nclustering\nmultivariate tests for group differences using PERMANOVA\nANOSIM and SIMPER for post-hoc analysis\n\n\n\n\nThere are two lectures each week. Unfortunately we do not get to pick the locations, so they are held in different buildings on different days. You are expected to attend 80% of lectures in one way or another. We record this attendance in-person and online when you watch the recordings.\n\nTuesday, 10–11 am — Belinda Hutchinson Building, Lecture Theatre 1110\nWednesday, 10–11 am — Sydney Nanoscience Hub, Lecture Theatre 4002 (Messel)\n\nYou will also attend one two-hour practical each week in your allocated class:\n\nTuesday, 2–4 pm or 4–6 pm\nWednesday, 2–4 pm or 4–6 pm\nFriday, 2–4 pm or 4–6 pm\n\nAll practicals are held in Carslaw Building, Wet Lab 307. Check your personal timetable for your allocated class and any timetable changes. Do note that because we are a large cohort, once you are allocated to a practical class, you cannot change it. To change your practical class, you must contact the unit coordinator and provide a valid reason, normally a time table clash with another unit or caring responsibilities.\nAttendance: You are expected to participate in at least 80% of timetabled activities and must attend at least 10 of the 12 practicals. See Attendance under the Code of Conduct for further details.\n\n\nA code of conduct is a shared agreement about how we learn and work together.\nBEDA should be a respectful and inclusive place to learn. Treat classmates and staff with courtesy, including when you disagree. Use people’s correct names and pronouns, respect different backgrounds and levels of experience, make space for others to contribute, and avoid disrupting lectures or practicals. Discrimination, intimidation and harassment are not acceptable. Follow staff instructions and all laboratory safety requirements when working in laboratory spaces.\n\nWorking with your group and data\nContribute fairly to your group’s work and raise participation problems early. As with any group work, the issues that arise are often best resolved by talking to your group members first. It is important to use a group charter to clarify expectations and responsibilities including how to share data and work together.\nShare group data and the information needed to interpret it promptly. Never fabricate data, or omit or alter observations without documenting and justifying the decision. You may discuss your analysis with your group, but any individual report must be written and submitted independently.\nMore information on how to work work with your group is provided with the Report 1 and Report 2 instructions. If you are unsure about what is acceptable, ask your practical demonstrator or the unit coordinator.\n\n\nAttendance\nAttend lectures live where possible. If you miss a lecture, watch the recording promptly. You are expected to have attended or watched the Tuesday lecture before your practical. Because practicals run on Tuesday, Wednesday and Friday, the Wednesday lecture is not assumed knowledge for that week’s practical, but you should attend or watch it during the same week.\nYou must attend at least 10 of the 12 practicals to meet the 80% attendance requirement. Practical attendance is not managed through special consideration. Record your own attendance during each practical using the QR code or website link, then check that it has been recorded correctly. You have one week to request a correction.\n\n\nRaising a concern\nFor routine group-work, data-sharing or class concerns, speak with your practical demonstrator or the unit coordinator as early as possible. You do not need to approach the teaching team first if the matter is serious or you would be uncomfortable doing so. The University provides separate pathways for complaints, bullying, harassment and discrimination and confidential support through Safer Communities for sexual harm or gender-based violence. In an immediate emergency, call 000 and follow the University’s emergency and campus safety guidance.\n\n\n\n\nFor publication, edition, licensing and citation details, see About this handbook."
   }
 ]

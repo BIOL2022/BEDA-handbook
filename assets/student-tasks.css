@@ -1,0 +1,26 @@
+main.content h4.student-task {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  padding: 0.55rem 0.75rem;
+  border-left: 3px solid #6a5acd;
+  color: #30294f;
+  background: #f4f1fb;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+main.content h4.student-task .bi {
+  color: #584c9c;
+}
+
+@media print {
+  main.content h4.student-task {
+    border-left-color: #30294f;
+    color: #000;
+    background: transparent;
+  }
+
+  main.content h4.student-task .bi {
+    color: #000;
+  }
+}

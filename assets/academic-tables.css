@@ -1,0 +1,44 @@
+main.content table {
+  --academic-table-rule: #555;
+  --bs-table-bg: transparent;
+  --bs-table-striped-bg: transparent;
+  --bs-table-hover-bg: transparent;
+
+  border-top: 1.5px solid var(--academic-table-rule);
+  border-bottom: 1.5px solid var(--academic-table-rule);
+  border-collapse: collapse;
+}
+
+main.content table caption {
+  caption-side: top;
+  padding: 0 0 0.45rem;
+  color: inherit;
+  font-style: italic;
+  text-align: left;
+}
+
+main.content table > thead > tr > th {
+  padding: 0.55rem 0.7rem;
+  border: 0;
+  border-bottom: 1px solid var(--academic-table-rule);
+  color: inherit;
+  background: transparent;
+  font-weight: 600;
+  font-variant: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  vertical-align: bottom;
+}
+
+main.content table > tbody > tr > td {
+  padding: 0.5rem 0.7rem;
+  border: 0;
+  background: transparent;
+  vertical-align: top;
+}
+
+@media print {
+  main.content table {
+    --academic-table-rule: #000;
+  }
+}

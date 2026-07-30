@@ -7,6 +7,10 @@ body.manual-page {
   --manual-optional-ink: #4b4328;
 }
 
+body.manual-page #TOC .manual-activity-label {
+  display: none;
+}
+
 body.manual-page main.content section.level2 > h2:not(.manual-activity) {
   margin-top: 2.25rem;
   padding-bottom: 0.5rem;
@@ -26,14 +30,22 @@ body.manual-page main.content section.level2 > h2:not(.manual-activity)::before 
 }
 
 body.manual-page main.content section.level2.manual-activity {
+  position: relative;
   margin-top: 2.75rem;
   padding-block: 0.1rem 0.25rem;
-  padding-inline-start: 1rem;
-  border-inline-start: 4px solid var(--manual-heading-accent);
 }
 
-body.manual-page main.content section.level2.manual-activity.is-optional {
-  border-inline-start-color: var(--manual-optional-ink);
+body.manual-page main.content section.level2.manual-activity::before {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: -1rem;
+  width: 4px;
+  background: var(--manual-heading-accent);
+  content: "";
+}
+
+body.manual-page main.content section.level2.manual-activity.is-optional::before {
+  background: var(--manual-optional-ink);
 }
 
 body.manual-page main.content section.level2.manual-activity > h2.manual-activity {
@@ -56,12 +68,62 @@ body.manual-page main.content section.level2.manual-activity > h2.manual-activit
   font-weight: 700;
   letter-spacing: 0.08em;
   line-height: 1;
-  text-transform: uppercase;
-  vertical-align: 0.12em;
+  text-transform: none;
+  vertical-align: middle;
   white-space: nowrap;
 }
 
 body.manual-page main.content section.level2.manual-activity.is-optional > h2.manual-activity > .manual-activity-label {
+  border: 1px solid var(--manual-optional-ink);
+  color: var(--manual-optional-ink);
+  background: var(--manual-optional-bg);
+}
+
+body.manual-page main.content section.level3.manual-activity {
+  position: relative;
+  margin-top: 2rem;
+  padding-block: 0.1rem 0.25rem;
+}
+
+body.manual-page main.content section.level3.manual-activity::before {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: -1rem;
+  width: 4px;
+  background: var(--manual-heading-accent);
+  content: "";
+}
+
+body.manual-page main.content section.level3.manual-activity.is-optional::before {
+  background: var(--manual-optional-ink);
+}
+
+body.manual-page main.content section.level3.manual-activity > h3.manual-activity {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  break-after: avoid;
+  color: var(--manual-heading-ink);
+}
+
+body.manual-page main.content section.level3.manual-activity > h3.manual-activity > .manual-activity-label {
+  display: inline-block;
+  margin-right: 0.55rem;
+  margin-bottom: 0.25rem;
+  padding: 0.22rem 0.55rem;
+  color: #fff;
+  background: var(--manual-heading-accent);
+  font-family: var(--bs-body-font-family);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+body.manual-page main.content section.level3.manual-activity.is-optional > h3.manual-activity > .manual-activity-label {
   border: 1px solid var(--manual-optional-ink);
   color: var(--manual-optional-ink);
   background: var(--manual-optional-bg);
@@ -72,7 +134,18 @@ body.manual-page main.content section.level2.manual-activity :not(pre) > code {
   overflow-wrap: anywhere;
 }
 
+body.manual-page main.content section.level3.manual-activity :not(pre) > code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
 body.manual-page main.content section.level2 > h2 .anchorjs-link:focus-visible {
+  border-radius: 0.15rem;
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
+body.manual-page main.content section.level3 > h3 .anchorjs-link:focus-visible {
   border-radius: 0.15rem;
   outline: 3px solid currentColor;
   outline-offset: 3px;
@@ -85,27 +158,48 @@ body.manual-page main.content section.level2 > h2 .anchorjs-link:focus-visible {
 
   body.manual-page main.content section.level2.manual-activity {
     margin-top: 2.5rem;
-    padding-inline-start: 0.75rem;
-    border-inline-start-width: 3px;
+  }
+
+  body.manual-page main.content section.level2.manual-activity::before {
+    inset-inline-start: -0.75rem;
+    width: 3px;
   }
 
   body.manual-page main.content section.level2.manual-activity > h2.manual-activity > .manual-activity-label {
     margin-right: 0.45rem;
   }
+
+  body.manual-page main.content section.level3.manual-activity {
+    margin-top: 1.75rem;
+  }
+
+  body.manual-page main.content section.level3.manual-activity::before {
+    inset-inline-start: -0.75rem;
+    width: 3px;
+  }
+
+  body.manual-page main.content section.level3.manual-activity > h3.manual-activity > .manual-activity-label {
+    margin-right: 0.45rem;
+  }
 }
 
 @media print {
-  body.manual-page main.content section.level2.manual-activity,
-  body.manual-page main.content section.level2.manual-activity.is-optional {
-    border-inline-start-color: #000;
+  body.manual-page main.content section.level2.manual-activity::before,
+  body.manual-page main.content section.level2.manual-activity.is-optional::before,
+  body.manual-page main.content section.level3.manual-activity::before,
+  body.manual-page main.content section.level3.manual-activity.is-optional::before {
+    background: #000;
   }
 
-  body.manual-page main.content section.level2.manual-activity > h2.manual-activity {
+  body.manual-page main.content section.level2.manual-activity > h2.manual-activity,
+  body.manual-page main.content section.level3.manual-activity > h3.manual-activity {
     color: #000;
   }
 
   body.manual-page main.content section.level2.manual-activity > h2.manual-activity > .manual-activity-label,
-  body.manual-page main.content section.level2.manual-activity.is-optional > h2.manual-activity > .manual-activity-label {
+  body.manual-page main.content section.level2.manual-activity.is-optional > h2.manual-activity > .manual-activity-label,
+  body.manual-page main.content section.level3.manual-activity > h3.manual-activity > .manual-activity-label,
+  body.manual-page main.content section.level3.manual-activity.is-optional > h3.manual-activity > .manual-activity-label {
     border: 1px solid #000;
     color: #000;
     background: #fff;
