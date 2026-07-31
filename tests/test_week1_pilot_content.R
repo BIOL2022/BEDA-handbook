@@ -168,13 +168,13 @@ expect_true(
 )
 expect_true(
   grepl("Complete all five steps below", practical, fixed = TRUE) &&
-    grepl("#### What to show your demonstrator", practical, fixed = TRUE),
-  "Exercise 3 should state the complete task and demonstrator checkpoint."
+    grepl("Your lab notebook should contain:", practical, fixed = TRUE),
+  "Exercise 3 should state the complete task and required notebook contents."
 )
 expect_true(
-  grepl("### Consolidation", practical, fixed = TRUE) &&
-    grepl("**Biological question**", practical, fixed = TRUE),
-  "The Practical should finish by consolidating the modelling workflow."
+  grepl("### That is a wrap", practical, fixed = TRUE) &&
+    grepl("10-minute Q&A session", practical, fixed = TRUE),
+  "The Practical should finish with the closing Q&A and attendance reminder."
 )
 
 expect_true(

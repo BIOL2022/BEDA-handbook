@@ -75,22 +75,23 @@ $endfor$
       set heading(outlined: false, numbering: none)
       set par(
         justify: false,
-        leading: 0.7em,
-        spacing: 0.8em,
+        leading: 0.68em,
+        spacing: 1.5em,
         first-line-indent: 0pt,
       )
-      show text: set text(fill: black)
+      show link: set text(fill: beda-purple)
+      show link: underline
       show heading.where(level: 1): it => {
-        text(size: 16pt, weight: "bold", fill: black)[#it.body]
-        v(0.55em)
-        line(length: 19mm, stroke: 0.9pt + beda-maroon)
-        v(0.75em)
+        text(size: 16pt, weight: "bold", fill: beda-purple)[#it.body]
+        v(0.45em)
+        line(length: 100%, stroke: 1pt + beda-purple)
+        v(1.2em)
       }
       show heading.where(level: 2): it => block(
-        above: 0.85em,
-        below: 0.14em,
+        above: 1.5em,
+        below: 0.5em,
       )[
-        #text(size: 9.6pt, weight: "semibold", fill: black)[#it.body]
+        #text(size: 10.5pt, weight: "bold", fill: beda-purple)[#it.body]
       ]
       body
     },
@@ -114,12 +115,13 @@ $endif$
     cover-background: none,
     copyright: context {
       let colophons = query(metadata).filter(
-        item => item.value.at("kind", default: none) == "beda-colophon",
+        item => type(item.value) == dictionary
+          and item.value.at("kind", default: none) == "beda-colophon",
       )
       if colophons.len() > 0 {
         set page(
           margin: (left: 42mm, right: 42mm, top: 40mm, bottom: 28mm),
-          fill: beda-cream,
+          fill: white,
           footer: none,
         )
         block(
@@ -152,6 +154,8 @@ $endif$
         spacing: 1.5em,
         first-line-indent: 0pt,
       )
+      show link: set text(fill: beda-purple)
+      show link: underline
       show heading.where(level: 1): it => {
         pagebreak(to: "odd")
         counter(figure.where(kind: image)).update(0)

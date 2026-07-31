@@ -18,6 +18,7 @@ book:
   chapters:
     - index.qmd
     - unit-information.qmd
+    - module01/102-week01.qmd
 
 format:
   typst:
@@ -28,6 +29,7 @@ number-sections: true
 toc: true
 
 filters:
+  - filters/typst-inline-margin-notes.lua
   - filters/typst-book-index.lua
 
 execute:

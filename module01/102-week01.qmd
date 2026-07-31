@@ -12,11 +12,13 @@ number-depth: 3
 
 ## Introduction {.unnumbered}
 
-Welcome to your first BEDA practical. This week, you will get familiar with the tools and approaches you will use throughout the semester. You will also have time to explore the software and support resources before completing your first modelling task, which is to communicate your ideas using a model, even when you do *not* yet have a statistical model to fit.
+Welcome to your first BEDA practical. Imagine that this is the first day of your new job. A decent workplace environment would see you being introduced to the people, the tools and the resources you will use for your job. Maybe you have done it before, but there is always something new. This practical is *that* introduction.
+
+This week, you will get familiar with the tools and approaches you will use throughout the semester. You will also have time to explore the software and support resources before completing your first modelling task, which is to communicate your ideas using a model, even when you do *not* yet have a statistical model to fit.
 
 ### Before the practical {.unnumbered}
 
-1. Attend or watch the Week 1, Tuesday lecture. **This is essential.**
+1. Attend or watch the Week 1, Tuesday lecture.
 2. Read through this practical before class. You will have a better experience if you are familiar with the tasks. **You do not need to complete anything in advance, but reading ahead will help you plan your time and know what to expect.**
 3. Bring a laptop. If possible, install your chosen software and the required modules or packages before the practical. If setup is not finished when class begins, work with a partner while the downloads continue.
 4. Bring a pen or pencil for your lab notebook. You will use it to sketch ideas, annotate figures, and quickly record decisions during activities.
@@ -25,7 +27,7 @@ Welcome to your first BEDA practical. This week, you will get familiar with the 
 <i class="bi bi-info-circle me-1" aria-hidden="true"></i> **Note:** Please avoid asking AI to summarise this practical before you have read it yourself. You need to develop critical reasoning skills, which often requires engaging directly with the material and tasks. It takes about 5 minutes to read, and doing so will help you understand what you do (and do not) know so that you can ask for the right help during the practical.
 :::
 
-::: {.callout-important}
+::: {.callout-note appearance="simple"}
 ### Download the Week 1 datasets
 
 Download both files before you begin and keep their filenames unchanged:
@@ -51,7 +53,7 @@ By the end of this practical, you should be able to:
 
 
 ## Workshop
-We will begin with a short workshop to get you started with the software and the empirical modelling approach. You will then apply the same reasoning to complete the practical tasks.
+We will begin with a short workshop to help you get started.
 
 
 ### Pick your software (15 min)
@@ -84,7 +86,8 @@ R and RStudio are separate programs. **Install R first, then install RStudio.**
 1. Download R for [Windows](https://cran.r-project.org/bin/windows/base/){target="_blank" rel="noopener noreferrer"} or [macOS](https://cran.r-project.org/bin/macosx/){target="_blank" rel="noopener noreferrer"}. On a Mac, choose the installer that matches Apple silicon or Intel.
 2. Open the R installer and accept the default options.
 3. Download the free version of [RStudio Desktop](https://posit.co/download/rstudio-desktop/){target="_blank" rel="noopener noreferrer"} for your operating system.
-4. If you cannot install RStudio, you can use [Posit Cloud](https://posit.cloud/) in a web browser or install Positron using the next tab.
+4. If you cannot install RStudio, you can use [Posit Cloud](https://posit.cloud/) in a web browser or install Positron instead.
+5. Open RStudio and run `install.packages(c("tidyverse", "vegan", "car"), repos = "https://cloud.r-project.org")` in the R console to install the required packages.
 
 <!-- Follow the [Install R with RStudio or Positron cheatsheet](https://usyd-soles-edu.github.io/cheatsheets/r/getting-started/){target="_blank" rel="noopener noreferrer"} and choose the RStudio route. -->
 
@@ -96,69 +99,40 @@ R and Positron are separate programs. **Install R first, then install Positron.*
 2. Go to the [Positron download page](https://positron.posit.co/download.html){target="_blank" rel="noopener noreferrer"}.
 3. Choose the installer for your computer. On a Snapdragon-based Windows 11 laptop, choose **Windows arm64**. If you do not have administrator access, choose the Windows **user-level** installer.
 4. Install and open Positron. If prompted, select the R installation you just installed.
+5. Run `install.packages(c("tidyverse", "vegan", "car"), repos = "https://cloud.r-project.org")` in the R console to install the required packages.
 
 <!-- Follow the [Install R with RStudio or Positron cheatsheet](https://usyd-soles-edu.github.io/cheatsheets/r/getting-started/){target="_blank" rel="noopener noreferrer"} and choose the Positron route. -->
 
 :::
 
-#### Install the course R packages
-
-If you chose RStudio or Positron, copy the entire block below into the R console and run it:
-
-```r
-repo <- "https://cloud.r-project.org"
-course_packages <- c("tidyverse", "vegan", "car")
-
-installed <- installed.packages()[, "Version"]
-available <- available.packages(repos = repo)[, "Version"]
-
-to_install <- course_packages[vapply(course_packages, function(pkg) {
-  if (!pkg %in% names(installed)) return(TRUE)
-  if (!pkg %in% names(available)) return(FALSE)
-  package_version(installed[[pkg]]) < package_version(available[[pkg]])
-}, logical(1))]
-
-if (length(to_install) > 0) {
-  install.packages(to_install, repos = repo)
-} else {
-  message("Your course packages are already up to date.")
-}
-```
-
-This installs any missing packages and updates older copies without reinstalling packages that are already current.
-
-
 ### A simple modelling exercise (10 min)
 
 **What is in a question?** When we see an interesting pattern and want to investigate it, we need to be able to ask questions that can be addressed with data. Let's start with a familiar example.
 
-![The penguin dataset. Artwork by @allison_horst.](assets/penguins.png)
+![The penguin dataset. Artwork by [Allison Horst](https://allisonhorst.com/).](assets/penguins.png)
 
-The above are simple illustrations of the three penguin species in the `penguins.csv` dataset. Suppose we were, in fact, scientists on a research expedition to the Palmer Archipelago of Antarctica, and we saw these cartoon penguins. *They're not moving, all we see are their shapes and sizes, and we happen to observe that there are at least three species*. What interesting observations might we make about them? How could we turn those observations into a question that can be addressed with data? In most cases, we would look for **measurable differences**, which are often data that can be expressed as numbers. For example, we might notice that the penguins have different bill shapes and sizes. We could measure the bill length and depth of each penguin, then ask a question about how those measurements differ among species.
+The above are simple illustrations of the three penguin species in the `penguins.csv` dataset. Suppose we were, in fact, scientists on a research expedition to the Palmer Archipelago of Antarctica, and we saw these cartoon penguins. *They're not moving, all we see are their shapes and sizes, and we happen to observe that there are at least three species*. What interesting observations might we make about them? How could we turn those observations into a question that can be addressed with data?
 
-![Bill dimensions in penguins. Artwork by @allison_horst.](assets/culmen_depth.png)
+<!-- In most cases, we would look for **measurable differences**, which are often data that can be expressed as numbers. For example, we might notice that the penguins have different bill shapes and sizes. We could measure the bill length and depth of each penguin, then ask a question about how those measurements differ among species. -->
 
-To be able to recognise data that we can measure, we need to be able to identify the **response** and **predictor** variables in a question. What is a response variable? What is a predictor variable?
+![Bill dimensions in penguins. Artwork by [Allison Horst](https://allisonhorst.com/).](assets/culmen_depth.png)
 
-Let's assume that we have obtained the `penguins.csv` dataset, which contains measurements of penguin bill length and depth, flipper length, body mass, species, sex and island, because we had **questions about how those variables are related**. Can we back-track from the data to the questions that might have motivated the collection of those data?
+To be able to recognise data that we can measure, we need to be able to identify the **response** and **predictor** variables in a question. What is a response variable? What is a predictor variable? It will be ideal for you to write down your definitions in your lab notebook as these terms will be used throughout the semester.
 
-We will, as a class, come up with a few questions based on the dataset. In this workshop we will also use both Jamovi and R to explore and model two of those questions to give everybody an idea of what modelling is about.
+We will now open the `penguins.csv` dataset and talk through variables, data types, relationships and formulating questions. To do this, we have to *pretend* that we are biologists who have just observed these penguins in the wild and have an idea of the possible variables that might be important to measure. We will then formulate a question and sketch a model to represent the relationship we expect to see. No software is needed!
 
 
 
 ### Introduction to cheatsheets (5 min)
 
-In the final part of the workshop, we will introduce cheatsheets, which are quick reference guides that we have developed to guide you—and your digital assistants, if you choose to use them—through the software. We hope that this makes the purpose of BEDA clear: software should be the *least* of your worries. It is more important to learn how to **think about the data and the questions you are asking**, as these skills will be useful throughout your future careers. Software and techniques, on the other hand, are tools that change over time and are less important to retain.
-
-We will vote on a cheatsheet to demonstrate in the workshop. You will work on cheatsheets again in the practical.
-
+In the final part of the workshop, we will introduce cheatsheets, which are quick reference guides that we have developed to guide you through the software. We hope that this makes the purpose of BEDA clear: software should be the *least* of your worries.
 
 ## Practical
 
 You will now work in pairs to complete the practical exercises. Your demonstrators will roam the room and check in with you to see how you are going. If you have any questions, please ask them! **Demonstrators will check each of your exercises to ensure that you are on the right track.**
 
 ### Exercise: Cheatsheets
-This exercise is designed to get you familiar with the cheatsheets and how to use them. You will be asked to complete a few tasks using the cheatsheets and your chosen software.
+This exercise is designed to get you familiar with the cheatsheets and how to use them. You will be asked to complete a few cheatsheets that are based on Jamovi or R. Please do not attempt other cheatsheets for now - we want to make sure you are familiar with the software today and catch technical issues early.
 
 #### <i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Task 1 {.student-task}
 1. Open Cheatsheets.
@@ -222,6 +196,8 @@ For example, you could plot the daily sleep time of dogs against their age to se
 #| layout-ncol: 2
 #| fig-width: 4.2
 #| fig-height: 3.8
+#| dev: png
+#| fig-pos: H
 #| echo: false
 
 library(ggplot2)
@@ -310,6 +286,7 @@ Interestingly, how we consider our variables can drastically change the type of 
 #| label: fig-dog-sleep-age-continuous
 #| fig-cap: "One possible relationship between daily sleep time and age in dogs."
 #| fig-alt: "Scatterplot of daily sleep time in hours against dog age in years, showing a moderate increase in sleep time across the age range."
+#| dev: png
 #| echo: false
 #| message: false
 
@@ -323,7 +300,7 @@ dog_age_example$Sleep_hours <- 9.5 +
 ggplot(dog_age_example, aes(x = Age_years, y = Sleep_hours)) +
   geom_point(
     colour = "#49368c",
-    size = 3
+    size = 1
   ) +
   labs(
     x = "Age (years)",
@@ -335,7 +312,7 @@ ggplot(dog_age_example, aes(x = Age_years, y = Sleep_hours)) +
     linewidth = 0.9,
     se = FALSE
   ) +
-  theme_classic(base_size = 17) +
+  theme_classic(base_size = 16) +
   theme(
     axis.text = element_text(
       colour = "#222222",
@@ -343,7 +320,7 @@ ggplot(dog_age_example, aes(x = Age_years, y = Sleep_hours)) +
     ),
     axis.title = element_text(
       colour = "#222222",
-      size = 16
+      size = 14
     ),
     axis.line = element_line(
       colour = "#222222",
@@ -371,8 +348,6 @@ Your goal is to practise thinking like a research biologist. Complete all five s
 
 5. **Explain your model.** State the relationship in words and explain why the plot suits your variables. Consider whether a different way of measuring or classifying one variable would change the plot you use. Discuss your reasoning with your partner or demonstrator.
 
-::: {.callout-important}
-#### What to show your demonstrator
 
 Your lab notebook should contain:
 
@@ -383,18 +358,8 @@ Your lab notebook should contain:
 - a brief explanation of why the plot is suitable.
 
 You do not need to fit or test a statistical model.
-:::
 
-### Consolidation
 
-The three exercises follow the same reasoning that you will use throughout BEDA:
+### That is a wrap
 
-**Biological question** → **variables** → **data types** → **graphical model** → **model in words**
-
-Before you finish, show your graphical model to another student. Without looking at the dataset, can they identify what you are trying to explain, what might explain it and the pattern you expect? If not, revise the question, labels or sketch until the relationship is clear.
-
-::: {.callout-note}
-#### The main idea
-
-A plot is not just something produced after an analysis. It represents how you think the variables may be related. These early decisions also guide the statistical model you will eventually choose and fit.
-:::
+That's it for today! If you have any questions, ask your demonstrators who are happy to help. We will do a 10-minute Q&A session before showing the attendance QR code. Make sure to take attendance as it is a compulsory component (80% attendance required to pass the course).

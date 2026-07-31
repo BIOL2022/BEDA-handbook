@@ -4,26 +4,30 @@ title: "Updates"
 
 This page records changes to the handbook that may be useful to students. Small corrections to spelling or formatting are not listed.
 
-## 30 July 2026
+#### 1 Aug 2026
 
-We overhauled the [Week 1 practical](module01/102-week01.qmd) so that the workshop and practical are now presented together on one page. It includes clearer learning outcomes and tasks, Canvas-hosted datasets, software setup for Jamovi and R, accessible graphical-model examples and a final consolidation activity.
+- **NEW**: The [Week 1 practical](module01/102-week01.qmd) has been redesigned, and released. The workshop is now more focused, software setup instructions are shorter and the graphical examples are easier to read compared to the 2025 version.
+- **NEW**: Additional demonstrator checks have been added. Damn you AI, making us work harder to ensure learning!
 
-## 29 July 2026
+#### 29 Jul 2026
 
-We found a bunch of typos on the [Am I ready for BEDA?](prerequisites.qmd) page (Januar needs to proofread more...) and fixed them. That is all.
+- **FIX**: We found a bunch of typos on the [Am I ready for BEDA?](prerequisites.qmd) page (Januar needs to proofread more...) and fixed them. That is all.
 
-## 28 July 2026
+#### 28 Jul 2026
 
-The [weekly schedule](index.qmd#weekly-content) now distinguishes unweighted practice quizzes from marked assessments and shows the 2026 deadlines in the weeks when they are due. Countdown timers on the [Assessments page](assessments/assessments.qmd) once again update every second without repeatedly announcing each change to screen readers. We are also preparing a PDF edition of the handbook for offline use; the [front page](index.qmd) and [About this handbook](about-handbook.qmd) page will provide the download when it is ready.
+- **FIX**: The [weekly schedule](index.qmd#weekly-content) now distinguishes practice quizzes from marked assessments and shows the correct deadlines in the weeks when they are due.
+- **NEW**: We are also preparing a PDF edition of the handbook for offline use; the [front page](index.qmd) and [About this handbook](about-handbook.qmd) page will provide the download when it is ready.
+- **NEW**: In response to student feedback, the [Modules overview](unit-information.qmd#modules) now provides more detail about what each part of the unit covers and how the three modules connect.
 
-In response to student feedback, the [Modules overview](unit-information.qmd#modules) now provides more detail about what each part of the unit covers and how the three modules connect.
+#### 27 Jul 2026
 
-## 27 July 2026
+- **FIX**: The [Assessments page](assessments/assessments.qmd) now shows the 2026 due dates, clearer countdowns and direct links to each assessment in Canvas.
+- **NEW**: Report 2 is presented as one assessment with separate group dataset and individual report components.
 
-The [Assessments page](assessments/assessments.qmd) now shows the 2026 due dates, clearer countdowns and direct links to each assessment in Canvas. Report 2 is presented as one assessment with separate group dataset and individual report components.
-
-## 24 July 2026
+#### 24 Jul 2026
 
 Welcome to the changelog! Lots of updates (because we are migrating from the 2025 handbook).
 
-We clarified parts of the weekly schedule and added assessment weightings to the Notes column. The About page now provides clearer information about statistical software, assumed knowledge, lectures, practicals, attendance and working with your group. We also "optimised" the handbook for smaller screens like that phone or tablet that you are probably reading this on..
+- **FIX**: We clarified parts of the weekly schedule and added assessment weightings to the Notes column.
+- **NEW**: The About page now provides clearer information about statistical software, assumed knowledge, lectures, practicals, attendance and working with your group.
+- **NEW**: We "optimised" the handbook for smaller screens like that phone or tablet that you are probably reading this on...
