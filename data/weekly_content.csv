@@ -1,5 +1,5 @@
 week,section,position,title,url,description,show_on_schedule,note_type,note_weight
-1,lecture,1,Introduction and fundamentals,lectures/L01/index.qmd,Welcome to BEDA!,TRUE,,
+1,lecture,1,Introduction and fundamentals,https://biol2022.github.io/2026-lectures/#week-1-introduction-and-fundamentals,Welcome to BEDA!,TRUE,,
 1,practical,1,Getting started,module01/102-week01.qmd,,TRUE,,
 1,extra,1,Am I ready for BEDA?,prerequisites.qmd,,TRUE,resource,
 1,extra,2,Quiz 1,,,TRUE,quiz,
