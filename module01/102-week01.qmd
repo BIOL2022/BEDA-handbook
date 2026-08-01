@@ -87,7 +87,7 @@ R and RStudio are separate programs. **Install R first, then install RStudio.**
 2. Open the R installer and accept the default options.
 3. Download the free version of [RStudio Desktop](https://posit.co/download/rstudio-desktop/){target="_blank" rel="noopener noreferrer"} for your operating system.
 4. If you cannot install RStudio, you can use [Posit Cloud](https://posit.cloud/) in a web browser or install Positron instead.
-5. Open RStudio and run `install.packages(c("tidyverse", "vegan", "car"), repos = "https://cloud.r-project.org")` in the R console to install the required packages.
+
 
 <!-- Follow the [Install R with RStudio or Positron cheatsheet](https://usyd-soles-edu.github.io/cheatsheets/r/getting-started/){target="_blank" rel="noopener noreferrer"} and choose the RStudio route. -->
 
@@ -99,7 +99,7 @@ R and Positron are separate programs. **Install R first, then install Positron.*
 2. Go to the [Positron download page](https://positron.posit.co/download.html){target="_blank" rel="noopener noreferrer"}.
 3. Choose the installer for your computer. On a Snapdragon-based Windows 11 laptop, choose **Windows arm64**. If you do not have administrator access, choose the Windows **user-level** installer.
 4. Install and open Positron. If prompted, select the R installation you just installed.
-5. Run `install.packages(c("tidyverse", "vegan", "car"), repos = "https://cloud.r-project.org")` in the R console to install the required packages.
+
 
 <!-- Follow the [Install R with RStudio or Positron cheatsheet](https://usyd-soles-edu.github.io/cheatsheets/r/getting-started/){target="_blank" rel="noopener noreferrer"} and choose the Positron route. -->
 
@@ -360,6 +360,32 @@ Your lab notebook should contain:
 You do not need to fit or test a statistical model.
 
 
+## End of practical notes
+
+### Help us collect 400 snails!
+
+We need about 400 common garden snails for the Module 2 plant-herbivore projects! Lots of prizes in gift cards to be won. See the [snail competition](https://canvas.sydney.edu.au/courses/74353/pages/snail-collecting-competition) page for details.
+
+You can collect a container from the laboratory during your practical. Snails can be returned on any day the BIOL2022 laboratories are running, so check the current laboratory schedule on Canvas before coming in. Please do not leave containers outside an unattended laboratory.
+
+Taking part is optional and has no effect on your marks. Only collect snails from your own backyard. Read the [snail collection competition page on Canvas](https://canvas.sydney.edu.au/courses/74353/pages/snail-collecting-competition) *before* collecting anything.
+
+#### Prizes
+
+We have prepared **21 prizes** for this competition! But of course each student can win only one prize.
+
+- First prize: a $50 voucher and a textbook
+- Second prize: a $50 voucher
+- Third prize: a $40 voucher
+
+**In addition to these three prizes, up to 18 more students will each win a $20 voucher.**
+
+To enter the participation draw, you need to contribute at least eight snails. Each eligible student receives one entry, regardless of how many snails they contribute beyond this minimum. The draw is for eligible contributors who do not finish in the top three.
+
+We will keep a running total until the competition closes at the end of Week 4.
+
+
+
 ### That is a wrap
 
-That's it for today! If you have any questions, ask your demonstrators who are happy to help. We will do a 10-minute Q&A session before showing the attendance QR code. Make sure to take attendance as it is a compulsory component (80% attendance required to pass the course).
+That's it for today! If you have any questions, ask your demonstrators who are happy to help. If there is time, we will do a 10-minute Q&A session before showing the attendance QR code. Make sure to take attendance before you leave.
