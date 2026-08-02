@@ -455,7 +455,7 @@ expect_true(
 )
 
 expected_note_types <- c(
-  "1:1" = "resource", "1:2" = "quiz",
+  "1:1" = "resource", "1:2" = "quiz", "1:3" = "notice",
   "2:1" = "resource", "2:2" = "quiz",
   "3:1" = "quiz", "3:2" = "notice",
   "4:1" = "assessment",
@@ -470,7 +470,8 @@ expected_note_types <- c(
 expected_note_titles <- c(
   "1:1" = "Am I ready for BEDA?",
   "1:2" = "Quiz 1",
-  "2:1" = "(See how) common statistical tests are linear models",
+  "1:3" = "Snail-collecting competition: prizes to be won",
+  "2:1" = "Common statistical tests are linear models",
   "2:2" = "Quiz 2",
   "3:1" = "Quiz 3",
   "3:2" = "Early Feedback Task opens Friday 21 August at 10:00",
@@ -497,22 +498,22 @@ note_keys <- paste(
   sep = ":"
 )
 expect_true(
-  length(note_rows) == 15L,
-  "The maintained schedule should contain exactly 15 Notes rows."
+  length(note_rows) == 16L,
+  "The maintained schedule should contain exactly 16 Notes rows."
 )
 expect_true(
   identical(
     unname(weekly_content$note_type[note_rows]),
     unname(expected_note_types[note_keys])
   ),
-  "All 15 Notes rows should match the approved taxonomy."
+  "All 16 Notes rows should match the approved taxonomy."
 )
 expect_true(
   identical(
     unname(weekly_content$title[note_rows]),
     unname(expected_note_titles[note_keys])
   ),
-  "All 15 Notes rows should use the approved final titles."
+  "All 16 Notes rows should use the approved final titles."
 )
 expect_true(
   identical(
@@ -1385,7 +1386,7 @@ expect_true(
 expect_true(
   any(grepl(
     paste0(
-      "[\\(See how\\) common statistical tests are linear models]",
+      "[Common statistical tests are linear models]",
       "(<https://lindeloev.github.io/tests-as-linear/>)"
     ),
     typst_output,

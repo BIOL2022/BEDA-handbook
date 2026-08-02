@@ -1,6 +1,5 @@
 ---
 title: "Week 1 — Introduction and fundamentals"
-draft: true
 ---
 
 ::: {.lecture-actions}
@@ -9,7 +8,7 @@ draft: true
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<iframe class="lecture-preview" src="https://biol2022.github.io/L00-Welcome-to-BEDA/" title="Preview of Welcome to BEDA lecture slides" loading="lazy" allowfullscreen></iframe>
+<iframe class="lecture-preview" src="https://biol2022.github.io/2026-lectures/lectures/L00-welcome-to-beda/index.html" title="Preview of Welcome to BEDA lecture slides" loading="lazy" allowfullscreen></iframe>
 ```
 :::
 
@@ -21,7 +20,7 @@ draft: true
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<iframe class="lecture-preview" src="https://biol2022.github.io/L01-intro-exp-design-analysis/" title="Preview of Introduction to experimental design and analysis lecture slides" loading="lazy" allowfullscreen></iframe>
+<iframe class="lecture-preview" src="https://biol2022.github.io/2026-lectures/lectures/L01-intro-exp-design-analysis/index.html" title="Preview of Introduction to experimental design and analysis lecture slides" loading="lazy" allowfullscreen></iframe>
 ```
 :::
 

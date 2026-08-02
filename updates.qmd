@@ -4,6 +4,11 @@ title: "Updates"
 
 This page records changes to the handbook that may be useful to students. Small corrections to spelling or formatting are not listed.
 
+#### 2 Aug 2026
+
+- **New:** The [Week 1 lectures](lectures/L01/index.qmd) are now available from the weekly schedule, with updated previews of the 2026 lecture slides.
+- **New:** We have a snail-collecting competition! See Week 1 of the [weekly schedule](index.qmd#weekly-content) for details and a direct link to the competition page on Canvas.
+
 #### 1 Aug 2026
 
 - **NEW**: The [Week 1 practical](module01/102-week01.qmd) has been redesigned, and released. The workshop is now more focused, software setup instructions are shorter and the graphical examples are easier to read compared to the 2025 version.
