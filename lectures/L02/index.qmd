@@ -6,7 +6,7 @@ draft: true
 
 
 ::: {.lecture-actions}
- **Monday: L02a What is a representative sample?** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L02a-represenative-sampling/){.lecture-action aria-label="Open What is a representative sample? full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L02a-represenative-sampling/L02a-representative-sampling.pdf){.lecture-action aria-label="Open What is a representative sample? PDF"}
+ **Monday: L02a What is a representative sample?** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}
@@ -16,7 +16,7 @@ draft: true
 
 
 ::: {.lecture-actions}
- **Tuesday: L02b Modelling fundamentals — the linear model** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L02b-linear-model/){.lecture-action aria-label="Open Modelling fundamentals full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L02b-linear-model/L02b-linear-model.pdf){.lecture-action aria-label="Open Modelling fundamentals PDF"}
+ **Tuesday: L02b Modelling fundamentals — the linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}
@@ -25,7 +25,7 @@ draft: true
 
 
 ::: {.lecture-actions}
- **Tuesday: L02c (Almost) every statistical technique is a linear model** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L02c-all-linear-model/){.lecture-action aria-label="Open Every statistical technique is a linear model full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L02c-all-linear-model/L02c-general-linear-model.pdf){.lecture-action aria-label="Open Every statistical technique is a linear model PDF"}
+ **Tuesday: L02c (Almost) every statistical technique is a linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}

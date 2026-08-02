@@ -5,7 +5,7 @@ draft: true
 
 
 ::: {.lecture-actions}
-**Monday: Is my model appropriate? (testing assumptions)** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L03a-model-appropriate/){.lecture-action aria-label="Open Is my model appropriate? full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L03a-model-appropriate/L03a-glm-assumptions.pdf){.lecture-action aria-label="Open Is my model appropriate? PDF"}
+**Monday: Is my model appropriate? (testing assumptions)** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}
@@ -13,7 +13,7 @@ draft: true
 ```
 
 ::: {.lecture-actions}
-**Tuesday: Modelling differences between two groups** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L03b-ttests/){.lecture-action aria-label="Open Modelling differences between two things full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L03b-ttests/L03b-ttests.pdf){.lecture-action aria-label="Open Modelling differences between two things PDF"}
+**Tuesday: Modelling differences between two groups** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}

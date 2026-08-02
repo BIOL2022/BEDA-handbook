@@ -620,6 +620,17 @@ main.content section.level2.section-rail > h2 {
   outline-offset: 3px;
 }
 
+.lecture-action.is-disabled {
+  color: var(--bs-secondary-color);
+  cursor: not-allowed;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.lecture-action.is-disabled:hover {
+  text-decoration: none;
+}
+
 .lecture-preview {
   aspect-ratio: 16 / 9;
   background: var(--bs-body-bg);
@@ -629,6 +640,48 @@ main.content section.level2.section-rail > h2 {
   height: auto;
   margin: 0.75rem 0 2.5rem;
   width: 100%;
+}
+
+.lecture-preview-frame {
+  aspect-ratio: 16 / 9;
+  background: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.25rem;
+  margin: 0.75rem 0 2.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.lecture-preview-frame .lecture-preview {
+  border: 0;
+  border-radius: 0;
+  height: 100%;
+  margin: 0;
+}
+
+.lecture-preview-open {
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.lecture-preview-open:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: -4px;
+}
+
+.lecture-preview-frame.is-unavailable {
+  align-items: center;
+  background: var(--bs-tertiary-bg);
+  display: flex;
+  justify-content: center;
+}
+
+.lecture-preview-status {
+  color: var(--bs-secondary-color);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 .lecture-preview:focus-visible {

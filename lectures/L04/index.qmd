@@ -7,7 +7,7 @@ draft: true
 
 
 ::: {.lecture-actions}
-**Monday: Modelling multiple continuous relationships** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L04a-mlr/){.lecture-action aria-label="Open Modelling multiple relationships full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L04a-mlr/L04a-mlr.pdf){.lecture-action aria-label="Open Modelling multiple relationships PDF"}
+**Monday: Modelling multiple continuous relationships** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}
@@ -16,7 +16,7 @@ draft: true
 
 
 ::: {.lecture-actions}
-**Tuesday: Modelling multiple categorical differences** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L04b-anova/){.lecture-action aria-label="Open Modelling multiple differences full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L04b-anova/L04b-anova.pdf){.lecture-action aria-label="Open Modelling multiple differences PDF"}
+**Tuesday: Modelling multiple categorical differences** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}
@@ -24,7 +24,7 @@ draft: true
 ```
 
 ::: {.lecture-actions}
-**Tuesday: Why do we transform data?** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L04c-model-transformations/){.lecture-action aria-label="Open Model transformations full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L04c-model-transformations/L04c-model-transformations.pdf){.lecture-action aria-label="Open Model transformations PDF"}
+**Tuesday: Why do we transform data?** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}

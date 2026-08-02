@@ -3,7 +3,7 @@ title: "Week 1 — Introduction and fundamentals"
 ---
 
 ::: {.lecture-actions}
-**Monday: L01a Welcome to BEDA** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L00-Welcome-to-BEDA/){.lecture-action aria-label="Open Welcome to BEDA full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L00-Welcome-to-BEDA/L00-welcome.pdf){.lecture-action aria-label="Open Welcome to BEDA PDF"}
+**Monday: L01a Welcome to BEDA** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ::: {.content-visible when-format="html"}
@@ -15,7 +15,7 @@ title: "Week 1 — Introduction and fundamentals"
 
 
 ::: {.lecture-actions}
-**Tuesday: L01b The fundamentals** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L01-intro-exp-design-analysis/){.lecture-action aria-label="Open Introduction to experimental design and analysis full screen"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/L01-intro-exp-design-analysis/L01c-Introduction.pdf){.lecture-action aria-label="Open Introduction to experimental design and analysis PDF"}
+**Tuesday: L01b The fundamentals** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ::: {.content-visible when-format="html"}

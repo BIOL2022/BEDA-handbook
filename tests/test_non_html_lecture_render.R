@@ -77,18 +77,12 @@ expect_true(
   "The LaTeX lecture should omit raw HTML iframe previews."
 )
 expect_true(
-  match_count("Full screen", latex_flat) == 2L,
-  "The LaTeX lecture should retain both descriptive full-screen links."
+  !grepl("Full screen", latex_flat, fixed = TRUE),
+  "The LaTeX lecture should omit the removed full-screen actions."
 )
 expect_true(
-  lengths(regmatches(
-    latex_flat,
-    gregexpr(
-      "\\\\href\\{[^}]+\\.pdf\\}\\{ *PDF\\}",
-      latex_flat,
-      perl = TRUE
-    )
-  )) == 2L,
-  "The LaTeX lecture should retain both descriptive PDF links."
+  match_count("PDF (coming soon)", latex_flat) == 2L &&
+    !grepl("\\\\href\\{[^}]+\\.pdf\\}", latex_flat, perl = TRUE),
+  "The LaTeX lecture should show two disabled PDF labels without links."
 )
 cat(sprintf("PASS: non-HTML lecture render (%d checks)\n", checks))

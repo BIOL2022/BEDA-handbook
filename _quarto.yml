@@ -63,6 +63,8 @@ format:
   html:
     theme: zephyr
     fontsize: 16px
+    include-after-body:
+      - _partials/lecture-preview-status.html
     css:
       - assets/timeline.css
       - assets/manual-headings.css

@@ -6,7 +6,7 @@ draft: true
 
 
 ::: {.lecture-actions}
-**Monday: Controlling your experiments with data** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L05a-blocking-fixed-random/){.lecture-action aria-label="Open Control, fixed and random variables full screen"}
+**Monday: Controlling your experiments with data**
 :::
 
 ```{=html}
@@ -14,7 +14,7 @@ draft: true
 ```
 
 ::: {.lecture-actions}
-**Tuesday: You've got this — Module 1 revision** [<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen](https://biol2022.github.io/L05b-revision/){.lecture-action aria-label="Open Module 1 revision full screen"}
+**Tuesday: You've got this — Module 1 revision**
 :::
 
 ```{=html}
