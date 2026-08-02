@@ -174,11 +174,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="lecture-actions">
-<p><strong>Monday: L01a Welcome to BEDA</strong> <a href="https://biol2022.github.io/L00-Welcome-to-BEDA/" class="lecture-action" aria-label="Open Welcome to BEDA full screen"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen</a> <a href="https://biol2022.github.io/L00-Welcome-to-BEDA/L00-welcome.pdf" class="lecture-action" aria-label="Open Welcome to BEDA PDF"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF</a></p>
+<p><strong>Monday: L01a Welcome to BEDA</strong> <span class="lecture-action is-disabled" aria-disabled="true"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)</span></p>
 </div>
 <iframe class="lecture-preview" src="https://biol2022.github.io/2026-lectures/lectures/L00-welcome-to-beda/index.html" title="Preview of Welcome to BEDA lecture slides" loading="lazy" allowfullscreen=""></iframe>
 <div class="lecture-actions">
-<p><strong>Tuesday: L01b The fundamentals</strong> <a href="https://biol2022.github.io/L01-intro-exp-design-analysis/" class="lecture-action" aria-label="Open Introduction to experimental design and analysis full screen"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Full screen</a> <a href="https://biol2022.github.io/L01-intro-exp-design-analysis/L01c-Introduction.pdf" class="lecture-action" aria-label="Open Introduction to experimental design and analysis PDF"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF</a></p>
+<p><strong>Tuesday: L01b The fundamentals</strong> <span class="lecture-action is-disabled" aria-disabled="true"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)</span></p>
 </div>
 <iframe class="lecture-preview" src="https://biol2022.github.io/2026-lectures/lectures/L01-intro-exp-design-analysis/index.html" title="Preview of Introduction to experimental design and analysis lecture slides" loading="lazy" allowfullscreen=""></iframe>
 <div class="lecture-week-nav">
@@ -188,6 +188,53 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const showComingSoon = (frame, preview, openLink) => {
+    frame.classList.add("is-unavailable");
+    openLink.remove();
+    preview.remove();
+
+    const status = document.createElement("p");
+    status.className = "lecture-preview-status";
+    status.setAttribute("role", "status");
+    status.textContent = "Coming soon";
+    frame.append(status);
+  };
+
+  for (const preview of document.querySelectorAll("iframe.lecture-preview")) {
+    const url = preview.getAttribute("src");
+    if (!url) {
+      continue;
+    }
+
+    const frame = document.createElement("div");
+    frame.className = "lecture-preview-frame";
+    preview.before(frame);
+    frame.append(preview);
+    preview.tabIndex = -1;
+
+    const lectureName = preview.title
+      .replace(/^Preview of /, "")
+      .replace(/ lecture slides$/, "");
+    const openLink = document.createElement("a");
+    openLink.className = "lecture-preview-open";
+    openLink.href = url;
+    openLink.setAttribute("aria-label", "Open " + lectureName + " full screen");
+    frame.append(openLink);
+
+    fetch(url, { method: "HEAD", cache: "no-store" })
+      .then((response) => {
+        if (response.status === 404) {
+          showComingSoon(frame, preview, openLink);
+        }
+      })
+      .catch(() => {
+        // Leave the preview available when its host does not permit a status check.
+      });
+  }
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

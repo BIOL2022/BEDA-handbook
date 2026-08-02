@@ -216,6 +216,53 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const showComingSoon = (frame, preview, openLink) => {
+    frame.classList.add("is-unavailable");
+    openLink.remove();
+    preview.remove();
+
+    const status = document.createElement("p");
+    status.className = "lecture-preview-status";
+    status.setAttribute("role", "status");
+    status.textContent = "Coming soon";
+    frame.append(status);
+  };
+
+  for (const preview of document.querySelectorAll("iframe.lecture-preview")) {
+    const url = preview.getAttribute("src");
+    if (!url) {
+      continue;
+    }
+
+    const frame = document.createElement("div");
+    frame.className = "lecture-preview-frame";
+    preview.before(frame);
+    frame.append(preview);
+    preview.tabIndex = -1;
+
+    const lectureName = preview.title
+      .replace(/^Preview of /, "")
+      .replace(/ lecture slides$/, "");
+    const openLink = document.createElement("a");
+    openLink.className = "lecture-preview-open";
+    openLink.href = url;
+    openLink.setAttribute("aria-label", "Open " + lectureName + " full screen");
+    frame.append(openLink);
+
+    fetch(url, { method: "HEAD", cache: "no-store" })
+      .then((response) => {
+        if (response.status === 404) {
+          showComingSoon(frame, preview, openLink);
+        }
+      })
+      .catch(() => {
+        // Leave the preview available when its host does not permit a status check.
+      });
+  }
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
