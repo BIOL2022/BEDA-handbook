@@ -584,8 +584,8 @@ expect_true(
   "Repository-relative Notes links should be classified as internal."
 )
 expect_true(
-  identical(entries[[1]]$extras[[2]]$url_kind, "none"),
-  "Unlinked Notes should be classified as none."
+  identical(entries[[1]]$extras[[2]]$url_kind, "external"),
+  "Canvas Notes links should be classified as external."
 )
 expect_true(
   identical(entries[[2]]$extras[[1]]$url_kind, "external"),
@@ -851,12 +851,17 @@ expect_true(
   "Internal Notes should be linked without an external marker."
 )
 
-unlinked_note <- html_notes[grepl("Quiz 1", html_notes, fixed = TRUE)]
+quiz_one_note <- html_notes[grepl("Quiz 1", html_notes, fixed = TRUE)]
 expect_true(
-  length(unlinked_note) == 2 &&
-    !any(grepl("[Quiz 1](", unlinked_note, fixed = TRUE)) &&
-    !any(grepl("↗", unlinked_note, fixed = TRUE)),
-  "Unlinked Notes should contain neither a link nor an external marker."
+  length(quiz_one_note) == 2 &&
+    any(grepl("weekly-note-link", quiz_one_note, fixed = TRUE)) &&
+    any(grepl(
+      "https://canvas.sydney.edu.au/courses/74353/assignments/696323",
+      quiz_one_note,
+      fixed = TRUE
+    )) &&
+    any(grepl("↗", quiz_one_note, fixed = TRUE)),
+  "Quiz 1 should link to its published Canvas quiz."
 )
 
 plain_notes <- render_output("plain", caption = FALSE)
@@ -1377,7 +1382,14 @@ expect_true(
   "Typst should preserve visible category labels."
 )
 expect_true(
-  any(grepl("**Practice quiz (0%):** Quiz 1", typst_output, fixed = TRUE)) &&
+  any(grepl(
+    paste0(
+      "**Practice quiz (0%):** [Quiz 1]",
+      "(<https://canvas.sydney.edu.au/courses/74353/assignments/696323>)"
+    ),
+    typst_output,
+    fixed = TRUE
+  )) &&
     any(grepl(
       paste0(
         "**Assessment (15%):** Report 2 individual report due ",

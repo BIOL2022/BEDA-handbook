@@ -3,7 +3,7 @@ title: "Week 1 — Introduction and fundamentals"
 ---
 
 ::: {.lecture-actions}
-**Tuesday: L01a Welcome to BEDA** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Tuesday: L01a Welcome to BEDA** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L00-welcome-to-beda/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ::: {.content-visible when-format="html"}
@@ -15,7 +15,7 @@ title: "Week 1 — Introduction and fundamentals"
 
 
 ::: {.lecture-actions}
-**Wednesday: L01b The fundamentals** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Wednesday: L01b The fundamentals** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L01-intro-exp-design-analysis/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ::: {.content-visible when-format="html"}
