@@ -1315,11 +1315,21 @@ expect_true(
 )
 expect_true(
   any(grepl(
-    "[Week 2 practical session](module01/103-week02.qmd",
+    'aria-label="Week 2 practical session"',
     hidden_caption,
     fixed = TRUE
-  )),
-  "A week without a workshop should continue to open its practical."
+  )) &&
+    !any(grepl("module01/103-week02.qmd", hidden_caption, fixed = TRUE)),
+  "Week 2 practical should remain visible without a schedule link."
+)
+expect_true(
+  any(grepl(
+    'aria-label="Week 3 practical session"',
+    hidden_caption,
+    fixed = TRUE
+  )) &&
+    !any(grepl("module01/104-week03.qmd", hidden_caption, fixed = TRUE)),
+  "Week 3 practical should remain visible without a schedule link."
 )
 
 latex_output <- render_output("latex", caption = FALSE)
