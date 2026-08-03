@@ -15,7 +15,7 @@ title: "Week 1 — Introduction and fundamentals"
 
 
 ::: {.lecture-actions}
-**Wednesday: L01b The fundamentals** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L01-intro-exp-design-analysis/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
+**Wednesday: L01b Fundamentals of experimental design and analysis** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L01-intro-exp-design-analysis/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ::: {.content-visible when-format="html"}
