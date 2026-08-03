@@ -32,8 +32,8 @@ This week, you will get familiar with the tools and approaches you will use thro
 
 Download both files before you begin and keep their filenames unchanged:
 
-- [Download **penguins.csv**](https://canvas.sydney.edu.au/courses/74353/files/51697284/download?download_frd=1)
-- [Download **possums.xlsx**](https://canvas.sydney.edu.au/courses/74353/files/51697285/download?download_frd=1)
+- [Download **week01-penguins.csv**](https://canvas.sydney.edu.au/courses/74353/files/51697284/download?download_frd=1)
+- [Download **week01-possums.xlsx**](https://canvas.sydney.edu.au/courses/74353/files/51697285/download?download_frd=1)
 
 If the links do not work, you can also download the files from [Canvas - Module Content and Resources](https://canvas.sydney.edu.au/courses/74353/pages/biol2022-module-content-and-resources).
 :::
@@ -108,17 +108,17 @@ R and Positron are separate programs. **Install R first, then install Positron.*
 
 **What is in a question?** When we see an interesting pattern and want to investigate it, we need to be able to ask questions that can be addressed with data. Let's start with a familiar example.
 
-![The penguin dataset. Artwork by [Allison Horst](https://allisonhorst.com/).](assets/penguins.png)
+![The penguin dataset. Artwork by [Allison Horst](https://allisonhorst.com/).](assets/penguins.png){fig-alt="Cartoon illustrations of three penguin species: Adelie, Chinstrap and Gentoo."}
 
-The above are simple illustrations of the three penguin species in the `penguins.csv` dataset. Suppose we were, in fact, scientists on a research expedition to the Palmer Archipelago of Antarctica, and we saw these cartoon penguins. *They're not moving, all we see are their shapes and sizes, and we happen to observe that there are at least three species*. What interesting observations might we make about them? How could we turn those observations into a question that can be addressed with data?
+The above are simple illustrations of the three penguin species in the `week01-penguins.csv` dataset. Suppose we were, in fact, scientists on a research expedition to the Palmer Archipelago of Antarctica, and we saw these cartoon penguins. *Imagine these are the only observations available to us: the penguins are not moving, so we can only compare their shapes and sizes, and we can see at least three species.* What interesting observations might we make about them? How could we turn those observations into a question that can be addressed with data?
 
 <!-- In most cases, we would look for **measurable differences**, which are often data that can be expressed as numbers. For example, we might notice that the penguins have different bill shapes and sizes. We could measure the bill length and depth of each penguin, then ask a question about how those measurements differ among species. -->
 
-![Bill dimensions in penguins. Artwork by [Allison Horst](https://allisonhorst.com/).](assets/culmen_depth.png)
+![Bill dimensions in penguins. Artwork by [Allison Horst](https://allisonhorst.com/).](assets/culmen_depth.png){fig-alt="Diagram of a penguin head showing where bill length and bill depth are measured."}
 
 To work with measurable data, you need to identify the **response** and **predictor** variables in a question. What is a response variable? What is a predictor variable? Write your own definitions in your lab notebook, as you will use these terms throughout the semester.
 
-Next, we will open the `penguins.csv` dataset and discuss variables, data types, relationships, and how to formulate questions. For this activity, *pretend* you are biologists who have just observed these penguins in the wild and are deciding which variables are important to measure. **We will work together to formulate a question and sketch a model of the relationship between them. No software is needed.**
+Next, we will open the `week01-penguins.csv` dataset and discuss variables, data types, relationships, and how to formulate questions. For this activity, *pretend* you are biologists who have just observed these penguins in the wild and are deciding which variables are important to measure. **We will work together to formulate a question and sketch a model of the relationship between them. No software is needed.**
 
 
 ### Introduction to cheatsheets (5 min)
@@ -129,7 +129,9 @@ In the final part of the workshop, we will introduce cheatsheets, which are quic
 
 You will now work in pairs to complete the practical exercises. Your demonstrators will roam the room and check in with you to see how you are going. If you have any questions, please ask them! **Demonstrators will check each of your exercises to ensure that you are on the right track.**
 
-### Exercise: Cheatsheets
+The times below are a guide. You must complete Exercise 3 in full, so ask for help early if software setup delays you.
+
+### Exercise: Cheatsheets (25 min)
 This exercise is designed to get you familiar with the cheatsheets and how to use them. You will be asked to complete a few cheatsheets that are based on Jamovi or R. Please do not attempt other cheatsheets for now - we want to make sure you are familiar with the software today and catch technical issues early.
 
 #### <i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Task 1 {.student-task}
@@ -141,9 +143,9 @@ This exercise is designed to get you familiar with the cheatsheets and how to us
 <i class="bi bi-info-circle me-1" aria-hidden="true"></i> **Note:** If you have never used Jamovi before, now is a good time to try it.
 :::
 
-### Exercise: Data types
+### Exercise: Data types (25 min)
 
-In this exercise you will work on the [**possums.xlsx**](https://canvas.sydney.edu.au/courses/74353/files/51697285/download?download_frd=1) dataset. If you have not already downloaded it, do that now and open it in your chosen software.
+In this exercise you will work on the [**week01-possums.xlsx**](https://canvas.sydney.edu.au/courses/74353/files/51697285/download?download_frd=1) dataset. If you have not already downloaded it, do that now and open it in your chosen software.
 
 #### <i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Task 2 {.student-task}
 1. Carefully read the "Metadata" and "AllPossData" sheets in the MS Excel file. The metadata sheet describes the variables in the dataset and their units of measurement. The AllPossData sheet contains the actual data.
@@ -165,16 +167,16 @@ In this exercise you will work on the [**possums.xlsx**](https://canvas.sydney.e
 | Binary | A categorical variable with *two levels* |
 
 
-### Exercise: Modelling basics
+### Exercise: Modelling basics (45 min)
 
-In this exercise you will use variables from the **possums.xlsx** dataset to formulate one biological question and develop one graphical model. You will choose an appropriate plot and sketch the relationship you expect to see; you do not need to analyse the data in software.
+In this exercise you will use variables from the **week01-possums.xlsx** dataset to formulate one biological question and develop one graphical model. You will choose an appropriate plot and sketch the relationship you expect to see; you do not need to analyse the data in software.
 
 **What is the point?** A model is just a simple way to represent something complicated. In data analysis, a model helps us make sense of a dataset, test ideas (hypotheses), or make predictions. Models can be as simple or as fancy as you like, depending on your data and your research question.
 
-Soon, you will start using empirical models to describe relationships between variables. We will write these relationships using simple notation, such as $y \sim x$. We won't do that just yet; for now, we will plot the data.
+Soon, you will use empirical models to describe relationships observed in data. We write the structure of these models using simple notation, such as $y \sim x$, where $y$ is the response variable and $x$ is the predictor variable. We won't fit a statistical model just yet; for now, we will use plots to represent relationships we might expect to see.
 
-#### If you can **plot** it, you are already **modelling** it
-For now, let us focus on graphical models – in other words, plots! Plots are models because they show relationships between variables.
+#### If you can plot the relationship, you can begin to model it
+For now, we will use plots as simple graphical models. They are abstractions: simplified representations of relationships we expect to see between variables. These are not fitted statistical models yet; they are a way to make our expectations explicit.
 
 For example, you could plot the daily sleep time of dogs against their age to see if there is a pattern. **At this stage, more than one pattern may be biologically plausible. The important thing is to make your expectation explicit and be able to explain it.** Younger and older dogs might sleep for similar amounts of time, or one group might sleep longer than the other. These possibilities could look like this:
 
@@ -304,11 +306,11 @@ ggplot(dog_age_example, aes(x = Age_years, y = Sleep_hours)) +
     x = "Age (years)",
     y = "Sleep (hours/day)"
   ) +
-  geom_smooth(
-    method = "lm",
+  geom_abline(
+    intercept = 9.5,
+    slope = 0.25,
     colour = "#332b5c",
-    linewidth = 0.9,
-    se = FALSE
+    linewidth = 0.9
   ) +
   theme_classic(base_size = 16) +
   theme(
@@ -362,7 +364,7 @@ You do not need to fit or test a statistical model.
 
 ### Help us collect lots of snails!
 
-We need about 400 common garden snails for the Module 2 plant-herbivore projects! Lots of prizes in gift cards to be won. See the [snail competition](https://canvas.sydney.edu.au/courses/74353/pages/snail-collecting-competition) page for details. We have prepared **up to 17 prizes** for this competition, so check out the Canvas page out and help us.
+We need about 400 common garden snails for the Module 2 plant-herbivore projects! Lots of prizes in gift cards to be won. See the [snail competition](https://canvas.sydney.edu.au/courses/74353/pages/snail-collecting-competition) page for details. We have prepared **up to 17 prizes** for this competition, so check out the Canvas page and help us.
 
 If you are interested, please collect the following from the lab before you leave:
 
