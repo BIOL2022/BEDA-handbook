@@ -1,6 +1,8 @@
 ---
 title: '<i class="bi bi-flask me-2" aria-hidden="true"></i> **Week 1**: Getting started'
 subtitle: Biology Experimental Design and Analysis (BEDA)
+comments:
+  hypothesis: true
 # body-classes: manual-page
 toc: true
 toc-location: left
