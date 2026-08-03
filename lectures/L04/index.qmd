@@ -7,7 +7,7 @@ draft: true
 
 
 ::: {.lecture-actions}
-**Monday: Modelling multiple continuous relationships** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Tuesday: Modelling multiple continuous relationships** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}
@@ -16,7 +16,7 @@ draft: true
 
 
 ::: {.lecture-actions}
-**Tuesday: Modelling multiple categorical differences** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Wednesday: Modelling multiple categorical differences** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}
@@ -24,7 +24,7 @@ draft: true
 ```
 
 ::: {.lecture-actions}
-**Tuesday: Why do we transform data?** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Wednesday: Why do we transform data?** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}

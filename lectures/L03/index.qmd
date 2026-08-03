@@ -5,7 +5,7 @@ draft: true
 
 
 ::: {.lecture-actions}
-**Monday: Is my model appropriate? (testing assumptions)** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Tuesday: Is my model appropriate? (testing assumptions)** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}
@@ -13,7 +13,7 @@ draft: true
 ```
 
 ::: {.lecture-actions}
-**Tuesday: Modelling differences between two groups** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Wednesday: Modelling differences between two groups** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}

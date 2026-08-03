@@ -6,7 +6,7 @@ draft: true
 
 
 ::: {.lecture-actions}
- **Monday: L02a What is a representative sample?** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+ **Tuesday: L02a What is a representative sample?** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}
@@ -16,7 +16,7 @@ draft: true
 
 
 ::: {.lecture-actions}
- **Tuesday: L02b Modelling fundamentals — the linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+ **Wednesday: L02b Modelling fundamentals — the linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}
@@ -25,7 +25,7 @@ draft: true
 
 
 ::: {.lecture-actions}
- **Tuesday: L02c (Almost) every statistical technique is a linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+ **Wednesday: L02c (Almost) every statistical technique is a linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
 :::
 
 ```{=html}

@@ -6,7 +6,7 @@ draft: true
 
 
 ::: {.lecture-actions}
-**Monday: Controlling your experiments with data**
+**Tuesday: Controlling your experiments with data**
 :::
 
 ```{=html}
@@ -14,7 +14,7 @@ draft: true
 ```
 
 ::: {.lecture-actions}
-**Tuesday: You've got this — Module 1 revision**
+**Wednesday: You've got this — Module 1 revision**
 :::
 
 ```{=html}
