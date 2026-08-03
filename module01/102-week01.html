@@ -194,9 +194,9 @@ window.Quarto = {
   </ul></li>
   <li><a href="#practical" id="toc-practical" class="nav-link" data-scroll-target="#practical"><span class="header-section-number">2</span> Practical</a>
   <ul class="collapse">
-  <li><a href="#exercise-cheatsheets" id="toc-exercise-cheatsheets" class="nav-link" data-scroll-target="#exercise-cheatsheets"><span class="header-section-number">2.1</span> Exercise: Cheatsheets</a></li>
-  <li><a href="#exercise-data-types" id="toc-exercise-data-types" class="nav-link" data-scroll-target="#exercise-data-types"><span class="header-section-number">2.2</span> Exercise: Data types</a></li>
-  <li><a href="#exercise-modelling-basics" id="toc-exercise-modelling-basics" class="nav-link" data-scroll-target="#exercise-modelling-basics"><span class="header-section-number">2.3</span> Exercise: Modelling basics</a></li>
+  <li><a href="#exercise-cheatsheets-25-min" id="toc-exercise-cheatsheets-25-min" class="nav-link" data-scroll-target="#exercise-cheatsheets-25-min"><span class="header-section-number">2.1</span> Exercise: Cheatsheets (25 min)</a></li>
+  <li><a href="#exercise-data-types-25-min" id="toc-exercise-data-types-25-min" class="nav-link" data-scroll-target="#exercise-data-types-25-min"><span class="header-section-number">2.2</span> Exercise: Data types (25 min)</a></li>
+  <li><a href="#exercise-modelling-basics-45-min" id="toc-exercise-modelling-basics-45-min" class="nav-link" data-scroll-target="#exercise-modelling-basics-45-min"><span class="header-section-number">2.3</span> Exercise: Modelling basics (45 min)</a></li>
   </ul></li>
   <li><a href="#end-of-practical-notes" id="toc-end-of-practical-notes" class="nav-link" data-scroll-target="#end-of-practical-notes"><span class="header-section-number">3</span> End of practical notes</a>
   <ul class="collapse">
@@ -260,8 +260,8 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>Download both files before you begin and keep their filenames unchanged:</p>
 <ul>
-<li><a href="https://canvas.sydney.edu.au/courses/74353/files/51697284/download?download_frd=1">Download <strong>penguins.csv</strong></a></li>
-<li><a href="https://canvas.sydney.edu.au/courses/74353/files/51697285/download?download_frd=1">Download <strong>possums.xlsx</strong></a></li>
+<li><a href="https://canvas.sydney.edu.au/courses/74353/files/51697284/download?download_frd=1">Download <strong>week01-penguins.csv</strong></a></li>
+<li><a href="https://canvas.sydney.edu.au/courses/74353/files/51697285/download?download_frd=1">Download <strong>week01-possums.xlsx</strong></a></li>
 </ul>
 <p>If the links do not work, you can also download the files from <a href="https://canvas.sydney.edu.au/courses/74353/pages/biol2022-module-content-and-resources">Canvas - Module Content and Resources</a>.</p>
 </div>
@@ -355,20 +355,20 @@ window.Quarto = {
 <p><strong>What is in a question?</strong> When we see an interesting pattern and want to investigate it, we need to be able to ask questions that can be addressed with data. Let’s start with a familiar example.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="assets/penguins.png" class="img-fluid figure-img"></p>
+<p><img src="assets/penguins.png" class="img-fluid figure-img" alt="Cartoon illustrations of three penguin species: Adelie, Chinstrap and Gentoo."></p>
 <figcaption>The penguin dataset. Artwork by <a href="https://allisonhorst.com/">Allison Horst</a>.</figcaption>
 </figure>
 </div>
-<p>The above are simple illustrations of the three penguin species in the <code>penguins.csv</code> dataset. Suppose we were, in fact, scientists on a research expedition to the Palmer Archipelago of Antarctica, and we saw these cartoon penguins. <em>They’re not moving, all we see are their shapes and sizes, and we happen to observe that there are at least three species</em>. What interesting observations might we make about them? How could we turn those observations into a question that can be addressed with data?</p>
+<p>The above are simple illustrations of the three penguin species in the <code>week01-penguins.csv</code> dataset. Suppose we were, in fact, scientists on a research expedition to the Palmer Archipelago of Antarctica, and we saw these cartoon penguins. <em>Imagine these are the only observations available to us: the penguins are not moving, so we can only compare their shapes and sizes, and we can see at least three species.</em> What interesting observations might we make about them? How could we turn those observations into a question that can be addressed with data?</p>
 <!-- In most cases, we would look for **measurable differences**, which are often data that can be expressed as numbers. For example, we might notice that the penguins have different bill shapes and sizes. We could measure the bill length and depth of each penguin, then ask a question about how those measurements differ among species. -->
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="assets/culmen_depth.png" class="img-fluid figure-img"></p>
+<p><img src="assets/culmen_depth.png" class="img-fluid figure-img" alt="Diagram of a penguin head showing where bill length and bill depth are measured."></p>
 <figcaption>Bill dimensions in penguins. Artwork by <a href="https://allisonhorst.com/">Allison Horst</a>.</figcaption>
 </figure>
 </div>
 <p>To work with measurable data, you need to identify the <strong>response</strong> and <strong>predictor</strong> variables in a question. What is a response variable? What is a predictor variable? Write your own definitions in your lab notebook, as you will use these terms throughout the semester.</p>
-<p>Next, we will open the <code>penguins.csv</code> dataset and discuss variables, data types, relationships, and how to formulate questions. For this activity, <em>pretend</em> you are biologists who have just observed these penguins in the wild and are deciding which variables are important to measure. <strong>We will work together to formulate a question and sketch a model of the relationship between them. No software is needed.</strong></p>
+<p>Next, we will open the <code>week01-penguins.csv</code> dataset and discuss variables, data types, relationships, and how to formulate questions. For this activity, <em>pretend</em> you are biologists who have just observed these penguins in the wild and are deciding which variables are important to measure. <strong>We will work together to formulate a question and sketch a model of the relationship between them. No software is needed.</strong></p>
 </section>
 <section id="introduction-to-cheatsheets-5-min" class="level3" data-number="1.3">
 <h3 data-number="1.3" class="anchored" data-anchor-id="introduction-to-cheatsheets-5-min"><span class="header-section-number">1.3</span> Introduction to cheatsheets (5 min)</h3>
@@ -378,8 +378,9 @@ window.Quarto = {
 <section id="practical" class="level2 page-columns page-full" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="practical"><span class="header-section-number">2</span> Practical</h2>
 <p>You will now work in pairs to complete the practical exercises. Your demonstrators will roam the room and check in with you to see how you are going. If you have any questions, please ask them! <strong>Demonstrators will check each of your exercises to ensure that you are on the right track.</strong></p>
-<section id="exercise-cheatsheets" class="level3 page-columns page-full" data-number="2.1">
-<h3 data-number="2.1" class="anchored" data-anchor-id="exercise-cheatsheets"><span class="header-section-number">2.1</span> Exercise: Cheatsheets</h3>
+<p>The times below are a guide. You must complete Exercise 3 in full, so ask for help early if software setup delays you.</p>
+<section id="exercise-cheatsheets-25-min" class="level3 page-columns page-full" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="exercise-cheatsheets-25-min"><span class="header-section-number">2.1</span> Exercise: Cheatsheets (25 min)</h3>
 <p>This exercise is designed to get you familiar with the cheatsheets and how to use them. You will be asked to complete a few cheatsheets that are based on Jamovi or R. Please do not attempt other cheatsheets for now - we want to make sure you are familiar with the software today and catch technical issues early.</p>
 <section id="task-1" class="level4 student-task page-columns page-full">
 <h4 class="student-task anchored" data-anchor-id="task-1"><i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Task 1</h4>
@@ -393,9 +394,9 @@ window.Quarto = {
 <p><i class="bi bi-info-circle me-1" aria-hidden="true"></i> <strong>Note:</strong> If you have never used Jamovi before, now is a good time to try it.</p>
 </div></div></section>
 </section>
-<section id="exercise-data-types" class="level3 page-columns page-full" data-number="2.2">
-<h3 data-number="2.2" class="anchored" data-anchor-id="exercise-data-types"><span class="header-section-number">2.2</span> Exercise: Data types</h3>
-<p>In this exercise you will work on the <a href="https://canvas.sydney.edu.au/courses/74353/files/51697285/download?download_frd=1"><strong>possums.xlsx</strong></a> dataset. If you have not already downloaded it, do that now and open it in your chosen software.</p>
+<section id="exercise-data-types-25-min" class="level3 page-columns page-full" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="exercise-data-types-25-min"><span class="header-section-number">2.2</span> Exercise: Data types (25 min)</h3>
+<p>In this exercise you will work on the <a href="https://canvas.sydney.edu.au/courses/74353/files/51697285/download?download_frd=1"><strong>week01-possums.xlsx</strong></a> dataset. If you have not already downloaded it, do that now and open it in your chosen software.</p>
 <section id="task-2" class="level4 student-task page-columns page-full">
 <h4 class="student-task anchored" data-anchor-id="task-2"><i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Task 2</h4>
 <ol type="1">
@@ -441,14 +442,14 @@ window.Quarto = {
 </section>
 </section>
 </section>
-<section id="exercise-modelling-basics" class="level3" data-number="2.3">
-<h3 data-number="2.3" class="anchored" data-anchor-id="exercise-modelling-basics"><span class="header-section-number">2.3</span> Exercise: Modelling basics</h3>
-<p>In this exercise you will use variables from the <strong>possums.xlsx</strong> dataset to formulate one biological question and develop one graphical model. You will choose an appropriate plot and sketch the relationship you expect to see; you do not need to analyse the data in software.</p>
+<section id="exercise-modelling-basics-45-min" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="exercise-modelling-basics-45-min"><span class="header-section-number">2.3</span> Exercise: Modelling basics (45 min)</h3>
+<p>In this exercise you will use variables from the <strong>week01-possums.xlsx</strong> dataset to formulate one biological question and develop one graphical model. You will choose an appropriate plot and sketch the relationship you expect to see; you do not need to analyse the data in software.</p>
 <p><strong>What is the point?</strong> A model is just a simple way to represent something complicated. In data analysis, a model helps us make sense of a dataset, test ideas (hypotheses), or make predictions. Models can be as simple or as fancy as you like, depending on your data and your research question.</p>
-<p>Soon, you will start using empirical models to describe relationships between variables. We will write these relationships using simple notation, such as <span class="math inline">\(y \sim x\)</span>. We won’t do that just yet; for now, we will plot the data.</p>
-<section id="if-you-can-plot-it-you-are-already-modelling-it" class="level4">
-<h4 class="anchored" data-anchor-id="if-you-can-plot-it-you-are-already-modelling-it">If you can <strong>plot</strong> it, you are already <strong>modelling</strong> it</h4>
-<p>For now, let us focus on graphical models – in other words, plots! Plots are models because they show relationships between variables.</p>
+<p>Soon, you will use empirical models to describe relationships observed in data. We write the structure of these models using simple notation, such as <span class="math inline">\(y \sim x\)</span>, where <span class="math inline">\(y\)</span> is the response variable and <span class="math inline">\(x\)</span> is the predictor variable. We won’t fit a statistical model just yet; for now, we will use plots to represent relationships we might expect to see.</p>
+<section id="if-you-can-plot-the-relationship-you-can-begin-to-model-it" class="level4">
+<h4 class="anchored" data-anchor-id="if-you-can-plot-the-relationship-you-can-begin-to-model-it">If you can plot the relationship, you can begin to model it</h4>
+<p>For now, we will use plots as simple graphical models. They are abstractions: simplified representations of relationships we expect to see between variables. These are not fitted statistical models yet; they are a way to make our expectations explicit.</p>
 <p>For example, you could plot the daily sleep time of dogs against their age to see if there is a pattern. <strong>At this stage, more than one pattern may be biologically plausible. The important thing is to make your expectation explicit and be able to explain it.</strong> Younger and older dogs might sleep for similar amounts of time, or one group might sleep longer than the other. These possibilities could look like this:</p>
 <div id="fig-dog-sleep-age-groups" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
@@ -559,7 +560,7 @@ Figure&nbsp;2: One possible relationship between daily sleep time and age in dog
 <h2 data-number="3" class="anchored" data-anchor-id="end-of-practical-notes"><span class="header-section-number">3</span> End of practical notes</h2>
 <section id="help-us-collect-lots-of-snails" class="level3" data-number="3.1">
 <h3 data-number="3.1" class="anchored" data-anchor-id="help-us-collect-lots-of-snails"><span class="header-section-number">3.1</span> Help us collect lots of snails!</h3>
-<p>We need about 400 common garden snails for the Module 2 plant-herbivore projects! Lots of prizes in gift cards to be won. See the <a href="https://canvas.sydney.edu.au/courses/74353/pages/snail-collecting-competition">snail competition</a> page for details. We have prepared <strong>up to 17 prizes</strong> for this competition, so check out the Canvas page out and help us.</p>
+<p>We need about 400 common garden snails for the Module 2 plant-herbivore projects! Lots of prizes in gift cards to be won. See the <a href="https://canvas.sydney.edu.au/courses/74353/pages/snail-collecting-competition">snail competition</a> page for details. We have prepared <strong>up to 17 prizes</strong> for this competition, so check out the Canvas page and help us.</p>
 <p>If you are interested, please collect the following from the lab before you leave:</p>
 <ol type="1">
 <li>A food container</li>
