@@ -60,7 +60,6 @@ We will begin with a short workshop to help you get started.
 
 **If you are new to statistical software, please choose Jamovi.** Demonstrators with expertise in R and SPSS will also be available, although we recommend Jamovi if you would otherwise choose SPSS.
 
-The 15-minute setup period is for choosing and checking your software route. A new installation may take longer, so work with a partner if your downloads are still running.
 
 ::: {.column-margin}
 <i class="bi bi-info-circle me-1" aria-hidden="true"></i> **Note:** If you use other software, we assume that you are already familiar with it and can complete the practical tasks independently.
@@ -117,10 +116,9 @@ The above are simple illustrations of the three penguin species in the `penguins
 
 ![Bill dimensions in penguins. Artwork by [Allison Horst](https://allisonhorst.com/).](assets/culmen_depth.png)
 
-To be able to recognise data that we can measure, we need to be able to identify the **response** and **predictor** variables in a question. What is a response variable? What is a predictor variable? It will be ideal for you to write down your definitions in your lab notebook as these terms will be used throughout the semester.
+To work with measurable data, you need to identify the **response** and **predictor** variables in a question. What is a response variable? What is a predictor variable? Write your own definitions in your lab notebook, as you will use these terms throughout the semester.
 
-We will now open the `penguins.csv` dataset and talk through variables, data types, relationships and formulating questions. To do this, we have to *pretend* that we are biologists who have just observed these penguins in the wild and have an idea of the possible variables that might be important to measure. We will then formulate a question and sketch a model to represent the relationship we expect to see. No software is needed!
-
+Next, we will open the `penguins.csv` dataset and discuss variables, data types, relationships, and how to formulate questions. For this activity, *pretend* you are biologists who have just observed these penguins in the wild and are deciding which variables are important to measure. **We will work together to formulate a question and sketch a model of the relationship between them. No software is needed.**
 
 
 ### Introduction to cheatsheets (5 min)
