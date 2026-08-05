@@ -79,6 +79,85 @@ ul.task-list li input[type="checkbox"] {
     document.body.classList.add('hypothesis-enabled');
   });
 </script>
+<script>
+(() => {
+  "use strict";
+
+  const storageKey = "beda-display-preference";
+  const manilaValue = "manila";
+  const root = document.documentElement;
+
+  function storedPreference() {
+    try {
+      return window.localStorage.getItem(storageKey);
+    } catch {
+      return null;
+    }
+  }
+
+  function savePreference(value) {
+    try {
+      if (value === manilaValue) {
+        window.localStorage.setItem(storageKey, value);
+      } else {
+        window.localStorage.removeItem(storageKey);
+      }
+    } catch {
+      // The display option still works when browser storage is unavailable.
+    }
+  }
+
+  function setManila(enabled) {
+    if (enabled) {
+      root.dataset.bedaDisplay = manilaValue;
+    } else {
+      delete root.dataset.bedaDisplay;
+    }
+  }
+
+  setManila(storedPreference() === manilaValue);
+
+  function addControl() {
+    const tools = document.querySelector(".quarto-navbar-tools");
+    if (!tools || document.getElementById("beda-manila-toggle")) return;
+
+    const button = document.createElement("button");
+    button.id = "beda-manila-toggle";
+    button.className = "quarto-navigation-tool beda-display-toggle";
+    button.type = "button";
+    button.setAttribute("aria-label", "Manila background");
+
+    const swatch = document.createElement("span");
+    swatch.className = "beda-display-swatch";
+    swatch.setAttribute("aria-hidden", "true");
+    button.append(swatch);
+
+    const updateState = () => {
+      const enabled = root.dataset.bedaDisplay === manilaValue;
+      button.setAttribute("aria-pressed", String(enabled));
+      button.title = enabled
+        ? "Use the standard background"
+        : "Use a manila background";
+    };
+
+    button.addEventListener("click", () => {
+      const enabled = root.dataset.bedaDisplay !== manilaValue;
+      setManila(enabled);
+      savePreference(enabled ? manilaValue : "standard");
+      updateState();
+    });
+
+    updateState();
+    tools.append(button);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", addControl, { once: true });
+  } else {
+    addControl();
+  }
+})();
+</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -116,6 +195,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../assets/academic-tables.css">
 <link rel="stylesheet" href="../assets/learning-outcomes.css">
 <link rel="stylesheet" href="../assets/student-tasks.css">
+<link rel="stylesheet" href="../assets/display-preference.css">
 </head>
 
 <body class="floating nav-fixed slimcontent quarto-light">
