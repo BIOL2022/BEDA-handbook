@@ -61,6 +61,8 @@ format:
   html:
     theme: zephyr
     fontsize: 16px
+    include-in-header:
+      - _partials/display-preference.html
     include-after-body:
       - _partials/lecture-preview-status.html
     css:
@@ -70,6 +72,7 @@ format:
       - assets/academic-tables.css
       - assets/learning-outcomes.css
       - assets/student-tasks.css
+      - assets/display-preference.css
     toc: true
 
 editor:

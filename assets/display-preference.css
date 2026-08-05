@@ -1,0 +1,107 @@
+@media screen {
+  :root[data-beda-display="manila"] {
+    color-scheme: light;
+    --beda-manila-bg: #f4e3b2;
+    --beda-manila-surface: #ecdaa5;
+    --beda-manila-surface-subtle: #f8edcf;
+    --bs-body-color: #3f3b2c;
+    --bs-body-color-rgb: 63, 59, 44;
+    --bs-body-bg: var(--beda-manila-bg);
+    --bs-body-bg-rgb: 244, 227, 178;
+    --bs-emphasis-color: #212117;
+    --bs-emphasis-color-rgb: 33, 33, 23;
+    --bs-secondary-color: #5b5541;
+    --bs-secondary-color-rgb: 91, 85, 65;
+    --bs-secondary-bg: var(--beda-manila-surface);
+    --bs-secondary-bg-rgb: 236, 218, 165;
+    --bs-tertiary-bg: var(--beda-manila-surface-subtle);
+    --bs-tertiary-bg-rgb: 248, 237, 207;
+    --bs-heading-color: #212117;
+    --bs-link-color: #164d8c;
+    --bs-link-color-rgb: 22, 77, 140;
+    --bs-link-hover-color: #0d3768;
+    --bs-link-hover-color-rgb: 13, 55, 104;
+    --bs-code-color: #651078;
+    --bs-highlight-bg: #ead18d;
+    --bs-border-color: #b9a979;
+    --bs-border-color-translucent: rgb(63 59 44 / 22%);
+  }
+
+  :root[data-beda-display="manila"] pre,
+  :root[data-beda-display="manila"] code {
+    background-color: var(--beda-manila-surface-subtle);
+  }
+
+  :root[data-beda-display="manila"] .card,
+  :root[data-beda-display="manila"] .list-group-item,
+  :root[data-beda-display="manila"] .accordion-item,
+  :root[data-beda-display="manila"] .accordion-button,
+  :root[data-beda-display="manila"] .dropdown-menu,
+  :root[data-beda-display="manila"] .form-control,
+  :root[data-beda-display="manila"] .form-select {
+    color: var(--bs-body-color);
+    background-color: var(--beda-manila-surface-subtle);
+    border-color: var(--bs-border-color);
+  }
+
+  :root[data-beda-display="manila"] .card {
+    --bs-card-bg: var(--beda-manila-surface-subtle);
+    --bs-card-border-color: var(--bs-border-color-translucent);
+  }
+
+  :root[data-beda-display="manila"] .table {
+    --bs-table-color: var(--bs-body-color);
+    --bs-table-bg: var(--beda-manila-bg);
+    --bs-table-border-color: var(--bs-border-color);
+  }
+
+  :root[data-beda-display="manila"] .table > :not(caption) > * > * {
+    background-color: var(--beda-manila-bg);
+  }
+
+  :root[data-beda-display="manila"] main.content .learning-outcomes-table table > thead > tr > th,
+  :root[data-beda-display="manila"] main.content h4.student-task {
+    background: var(--beda-manila-surface);
+  }
+}
+
+.beda-display-toggle {
+  display: inline-grid;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  border-radius: 0.25rem;
+  color: inherit;
+  background: transparent;
+  opacity: 0.82;
+}
+
+.beda-display-toggle:hover {
+  color: inherit;
+  background: rgb(255 255 255 / 12%);
+  opacity: 1;
+}
+
+.beda-display-swatch {
+  width: 1rem;
+  height: 1.15rem;
+  border: 1px solid currentColor;
+  border-radius: 0.08rem;
+  background: linear-gradient(135deg, #fff 0 48%, #f4e3b2 52% 100%);
+  box-shadow: 0 1px 0 rgb(0 0 0 / 16%);
+}
+
+.beda-display-toggle[aria-pressed="true"] .beda-display-swatch {
+  background: #f4e3b2;
+  box-shadow:
+    inset 0 0 0 2px rgb(33 33 23 / 24%),
+    0 1px 0 rgb(0 0 0 / 16%);
+}
+
+.beda-display-toggle:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 2px;
+  opacity: 1;
+}
