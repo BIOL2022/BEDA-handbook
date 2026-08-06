@@ -3,71 +3,217 @@
   "use strict";
 
   const storageKey = "beda-display-preference";
-  const manilaValue = "manila";
+  const quartoStorageKey = "quarto-color-scheme";
+  const modes = ["default", "manila", "dark"];
+  const labels = {
+    default: "Default",
+    manila: "Manila",
+    dark: "Dark"
+  };
   const root = document.documentElement;
+  let control = null;
 
-  function storedPreference() {
+  root.classList.add("beda-display-control");
+
+  function readStorage(key) {
     try {
-      return window.localStorage.getItem(storageKey);
+      return window.localStorage.getItem(key);
     } catch {
       return null;
     }
   }
 
-  function savePreference(value) {
+  function writeStorage(key, value) {
     try {
-      if (value === manilaValue) {
-        window.localStorage.setItem(storageKey, value);
+      if (value === null) {
+        window.localStorage.removeItem(key);
       } else {
-        window.localStorage.removeItem(storageKey);
+        window.localStorage.setItem(key, value);
       }
     } catch {
-      // The display option still works when browser storage is unavailable.
+      // The display selector still works when browser storage is unavailable.
     }
+  }
+
+  function normaliseMode(value) {
+    return modes.includes(value) ? value : "default";
+  }
+
+  function storedPreference() {
+    return normaliseMode(readStorage(storageKey));
   }
 
   function setManila(enabled) {
     if (enabled) {
-      root.dataset.bedaDisplay = manilaValue;
+      root.dataset.bedaDisplay = "manila";
     } else {
       delete root.dataset.bedaDisplay;
     }
   }
 
-  setManila(storedPreference() === manilaValue);
+  function setQuartoPreference(mode) {
+    writeStorage(quartoStorageKey, mode === "dark" ? "alternate" : "default");
+  }
+
+  function savePreference(mode) {
+    writeStorage(storageKey, mode === "default" ? null : mode);
+  }
+
+  function darkModeIsActive() {
+    return document.body?.classList.contains("quarto-dark") ?? false;
+  }
+
+  function updateControl(mode) {
+    if (!control) return;
+
+    control.button.dataset.mode = mode;
+    control.button.title = `Display: ${labels[mode]}`;
+    control.button.setAttribute("aria-label", `Display: ${labels[mode]}`);
+
+    for (const option of control.options) {
+      const selected = option.input.value === mode;
+      option.input.checked = selected;
+      option.label.classList.toggle("is-selected", selected);
+    }
+  }
+
+  function applyPreference(value, persist = true) {
+    const mode = normaliseMode(value);
+    const wantsDark = mode === "dark";
+
+    setManila(mode === "manila");
+
+    if (
+      document.body &&
+      darkModeIsActive() !== wantsDark &&
+      typeof window.quartoToggleColorScheme === "function"
+    ) {
+      window.quartoToggleColorScheme();
+    }
+
+    setQuartoPreference(mode);
+    if (persist) savePreference(mode);
+    updateControl(mode);
+    return mode;
+  }
+
+  const initialMode = storedPreference();
+  setManila(initialMode === "manila");
+  setQuartoPreference(initialMode);
 
   function addControl() {
     const tools = document.querySelector(".quarto-navbar-tools");
-    if (!tools || document.getElementById("beda-manila-toggle")) return;
+    if (!tools || document.getElementById("beda-display-picker")) return;
+
+    const picker = document.createElement("div");
+    picker.id = "beda-display-picker";
+    picker.className = "beda-display-picker";
 
     const button = document.createElement("button");
-    button.id = "beda-manila-toggle";
-    button.className = "quarto-navigation-tool beda-display-toggle";
+    button.id = "beda-display-button";
+    button.className = "quarto-navigation-tool beda-display-button";
     button.type = "button";
-    button.setAttribute("aria-label", "Manila background");
+    button.setAttribute("aria-controls", "beda-display-panel");
+    button.setAttribute("aria-expanded", "false");
 
-    const swatch = document.createElement("span");
-    swatch.className = "beda-display-swatch";
-    swatch.setAttribute("aria-hidden", "true");
-    button.append(swatch);
+    const icon = document.createElement("span");
+    icon.className = "beda-display-icon";
+    icon.setAttribute("aria-hidden", "true");
+    for (const mode of modes) {
+      const swatch = document.createElement("span");
+      swatch.className = `beda-display-icon-${mode}`;
+      icon.append(swatch);
+    }
+    button.append(icon);
 
-    const updateState = () => {
-      const enabled = root.dataset.bedaDisplay === manilaValue;
-      button.setAttribute("aria-pressed", String(enabled));
-      button.title = enabled
-        ? "Use the standard background"
-        : "Use a manila background";
-    };
+    const panel = document.createElement("div");
+    panel.id = "beda-display-panel";
+    panel.className = "beda-display-panel";
+    panel.hidden = true;
 
-    button.addEventListener("click", () => {
-      const enabled = root.dataset.bedaDisplay !== manilaValue;
-      setManila(enabled);
-      savePreference(enabled ? manilaValue : "standard");
-      updateState();
+    const fieldset = document.createElement("fieldset");
+    const legend = document.createElement("legend");
+    legend.textContent = "Display";
+    fieldset.append(legend);
+
+    const options = modes.map((mode) => {
+      const label = document.createElement("label");
+      label.className = "beda-display-option";
+
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.name = "beda-display-mode";
+      input.value = mode;
+
+      const preview = document.createElement("span");
+      preview.className = `beda-display-preview beda-display-preview-${mode}`;
+      preview.setAttribute("aria-hidden", "true");
+
+      const sample = document.createElement("span");
+      sample.textContent = "Aa";
+      const line = document.createElement("span");
+      line.className = "beda-display-preview-line";
+      preview.append(sample, line);
+
+      const name = document.createElement("span");
+      name.className = "beda-display-option-name";
+      name.textContent = labels[mode];
+
+      const check = document.createElement("span");
+      check.className = "beda-display-check";
+      check.setAttribute("aria-hidden", "true");
+      check.textContent = "✓";
+
+      input.addEventListener("change", () => {
+        if (!input.checked) return;
+        applyPreference(mode);
+        closePanel(true);
+      });
+
+      label.append(input, preview, name, check);
+      fieldset.append(label);
+      return { input, label };
     });
 
-    updateState();
-    tools.append(button);
+    panel.append(fieldset);
+    picker.append(button, panel);
+    tools.append(picker);
+    control = { button, options, panel };
+
+    function openPanel() {
+      panel.hidden = false;
+      button.setAttribute("aria-expanded", "true");
+      const selected = options.find((option) => option.input.checked)?.input;
+      window.requestAnimationFrame?.(() => selected?.focus());
+    }
+
+    function closePanel(returnFocus = false) {
+      panel.hidden = true;
+      button.setAttribute("aria-expanded", "false");
+      if (returnFocus) button.focus();
+    }
+
+    button.addEventListener("click", (event) => {
+      event.stopPropagation?.();
+      if (panel.hidden) {
+        openPanel();
+      } else {
+        closePanel();
+      }
+    });
+
+    panel.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closePanel(true);
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!panel.hidden && !picker.contains(event.target)) closePanel();
+    });
+
+    updateControl(initialMode);
   }
 
   if (document.readyState === "loading") {

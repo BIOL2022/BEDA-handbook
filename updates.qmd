@@ -4,6 +4,10 @@ title: "Updates"
 
 This page records changes to the handbook that may be useful to students. Small corrections to spelling or formatting are not listed.
 
+#### 6 Aug 2026
+
+- **New:** Added a new Manila mode and a Dark mode, based on student feedback. Hope it helps!
+
 #### 2 Aug 2026
 
 - **New:** The [Week 1 lectures](lectures/L01/index.qmd) are now available from the weekly schedule, with updated previews of the 2026 lecture slides.

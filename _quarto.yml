@@ -59,7 +59,11 @@ website:
 
 format:
   html:
-    theme: zephyr
+    theme:
+      light: zephyr
+      dark:
+        - zephyr
+        - assets/theme-dark.scss
     fontsize: 16px
     include-in-header:
       - _partials/display-preference.html

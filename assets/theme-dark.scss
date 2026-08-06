@@ -1,0 +1,34 @@
+/*-- scss:defaults --*/
+$body-bg: #171a1f;
+$body-color: #e7ebef;
+$emphasis-color: #ffffff;
+$headings-color: #f4f6f8;
+$secondary-color: #b8c0c8;
+$link-color: #8fc7ff;
+$link-hover-color: #b9dcff;
+$code-color: #efb0f5;
+$code-bg: #232932;
+$border-color: #46515d;
+$input-bg: #20262e;
+$popover-bg: #20262e;
+$card-bg: #20262e;
+$table-color: #e7ebef;
+$navbar-bg: #172440;
+$navbar-fg: #f7f9fc;
+$navbar-hl: #ffffff;
+$sidebar-bg: #171a1f;
+$sidebar-fg: #e7ebef;
+$sidebar-hl: #9bcfff;
+$toc-color: #c7ced6;
+$toc-active-border: #8fc7ff;
+$toc-inactive-border: #46515d;
+
+/*-- scss:rules --*/
+body.quarto-dark {
+  --bs-secondary-color: #b8c0c8;
+  --bs-secondary-color-rgb: 184, 192, 200;
+  --bs-tertiary-bg: #272e37;
+  --bs-tertiary-bg-rgb: 39, 46, 55;
+  --bs-border-color: #46515d;
+  --bs-border-color-translucent: rgb(184 192 200 / 24%);
+}
