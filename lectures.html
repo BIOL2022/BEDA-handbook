@@ -42,10 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-eb8115927b21890e882048716cdcbf0a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-eb8115927b21890e882048716cdcbf0a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-0299c93f4dfff43eafb2f2a75c8a3598.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-eb8115927b21890e882048716cdcbf0a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,71 +82,217 @@ ul.task-list li input[type="checkbox"] {
   "use strict";
 
   const storageKey = "beda-display-preference";
-  const manilaValue = "manila";
+  const quartoStorageKey = "quarto-color-scheme";
+  const modes = ["default", "manila", "dark"];
+  const labels = {
+    default: "Default",
+    manila: "Manila",
+    dark: "Dark"
+  };
   const root = document.documentElement;
+  let control = null;
 
-  function storedPreference() {
+  root.classList.add("beda-display-control");
+
+  function readStorage(key) {
     try {
-      return window.localStorage.getItem(storageKey);
+      return window.localStorage.getItem(key);
     } catch {
       return null;
     }
   }
 
-  function savePreference(value) {
+  function writeStorage(key, value) {
     try {
-      if (value === manilaValue) {
-        window.localStorage.setItem(storageKey, value);
+      if (value === null) {
+        window.localStorage.removeItem(key);
       } else {
-        window.localStorage.removeItem(storageKey);
+        window.localStorage.setItem(key, value);
       }
     } catch {
-      // The display option still works when browser storage is unavailable.
+      // The display selector still works when browser storage is unavailable.
     }
+  }
+
+  function normaliseMode(value) {
+    return modes.includes(value) ? value : "default";
+  }
+
+  function storedPreference() {
+    return normaliseMode(readStorage(storageKey));
   }
 
   function setManila(enabled) {
     if (enabled) {
-      root.dataset.bedaDisplay = manilaValue;
+      root.dataset.bedaDisplay = "manila";
     } else {
       delete root.dataset.bedaDisplay;
     }
   }
 
-  setManila(storedPreference() === manilaValue);
+  function setQuartoPreference(mode) {
+    writeStorage(quartoStorageKey, mode === "dark" ? "alternate" : "default");
+  }
+
+  function savePreference(mode) {
+    writeStorage(storageKey, mode === "default" ? null : mode);
+  }
+
+  function darkModeIsActive() {
+    return document.body?.classList.contains("quarto-dark") ?? false;
+  }
+
+  function updateControl(mode) {
+    if (!control) return;
+
+    control.button.dataset.mode = mode;
+    control.button.title = `Display: ${labels[mode]}`;
+    control.button.setAttribute("aria-label", `Display: ${labels[mode]}`);
+
+    for (const option of control.options) {
+      const selected = option.input.value === mode;
+      option.input.checked = selected;
+      option.label.classList.toggle("is-selected", selected);
+    }
+  }
+
+  function applyPreference(value, persist = true) {
+    const mode = normaliseMode(value);
+    const wantsDark = mode === "dark";
+
+    setManila(mode === "manila");
+
+    if (
+      document.body &&
+      darkModeIsActive() !== wantsDark &&
+      typeof window.quartoToggleColorScheme === "function"
+    ) {
+      window.quartoToggleColorScheme();
+    }
+
+    setQuartoPreference(mode);
+    if (persist) savePreference(mode);
+    updateControl(mode);
+    return mode;
+  }
+
+  const initialMode = storedPreference();
+  setManila(initialMode === "manila");
+  setQuartoPreference(initialMode);
 
   function addControl() {
     const tools = document.querySelector(".quarto-navbar-tools");
-    if (!tools || document.getElementById("beda-manila-toggle")) return;
+    if (!tools || document.getElementById("beda-display-picker")) return;
+
+    const picker = document.createElement("div");
+    picker.id = "beda-display-picker";
+    picker.className = "beda-display-picker";
 
     const button = document.createElement("button");
-    button.id = "beda-manila-toggle";
-    button.className = "quarto-navigation-tool beda-display-toggle";
+    button.id = "beda-display-button";
+    button.className = "quarto-navigation-tool beda-display-button";
     button.type = "button";
-    button.setAttribute("aria-label", "Manila background");
+    button.setAttribute("aria-controls", "beda-display-panel");
+    button.setAttribute("aria-expanded", "false");
 
-    const swatch = document.createElement("span");
-    swatch.className = "beda-display-swatch";
-    swatch.setAttribute("aria-hidden", "true");
-    button.append(swatch);
+    const icon = document.createElement("span");
+    icon.className = "beda-display-icon";
+    icon.setAttribute("aria-hidden", "true");
+    for (const mode of modes) {
+      const swatch = document.createElement("span");
+      swatch.className = `beda-display-icon-${mode}`;
+      icon.append(swatch);
+    }
+    button.append(icon);
 
-    const updateState = () => {
-      const enabled = root.dataset.bedaDisplay === manilaValue;
-      button.setAttribute("aria-pressed", String(enabled));
-      button.title = enabled
-        ? "Use the standard background"
-        : "Use a manila background";
-    };
+    const panel = document.createElement("div");
+    panel.id = "beda-display-panel";
+    panel.className = "beda-display-panel";
+    panel.hidden = true;
 
-    button.addEventListener("click", () => {
-      const enabled = root.dataset.bedaDisplay !== manilaValue;
-      setManila(enabled);
-      savePreference(enabled ? manilaValue : "standard");
-      updateState();
+    const fieldset = document.createElement("fieldset");
+    const legend = document.createElement("legend");
+    legend.textContent = "Display";
+    fieldset.append(legend);
+
+    const options = modes.map((mode) => {
+      const label = document.createElement("label");
+      label.className = "beda-display-option";
+
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.name = "beda-display-mode";
+      input.value = mode;
+
+      const preview = document.createElement("span");
+      preview.className = `beda-display-preview beda-display-preview-${mode}`;
+      preview.setAttribute("aria-hidden", "true");
+
+      const sample = document.createElement("span");
+      sample.textContent = "Aa";
+      const line = document.createElement("span");
+      line.className = "beda-display-preview-line";
+      preview.append(sample, line);
+
+      const name = document.createElement("span");
+      name.className = "beda-display-option-name";
+      name.textContent = labels[mode];
+
+      const check = document.createElement("span");
+      check.className = "beda-display-check";
+      check.setAttribute("aria-hidden", "true");
+      check.textContent = "✓";
+
+      input.addEventListener("change", () => {
+        if (!input.checked) return;
+        applyPreference(mode);
+        closePanel(true);
+      });
+
+      label.append(input, preview, name, check);
+      fieldset.append(label);
+      return { input, label };
     });
 
-    updateState();
-    tools.append(button);
+    panel.append(fieldset);
+    picker.append(button, panel);
+    tools.append(picker);
+    control = { button, options, panel };
+
+    function openPanel() {
+      panel.hidden = false;
+      button.setAttribute("aria-expanded", "true");
+      const selected = options.find((option) => option.input.checked)?.input;
+      window.requestAnimationFrame?.(() => selected?.focus());
+    }
+
+    function closePanel(returnFocus = false) {
+      panel.hidden = true;
+      button.setAttribute("aria-expanded", "false");
+      if (returnFocus) button.focus();
+    }
+
+    button.addEventListener("click", (event) => {
+      event.stopPropagation?.();
+      if (panel.hidden) {
+        openPanel();
+      } else {
+        closePanel();
+      }
+    });
+
+    panel.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closePanel(true);
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!panel.hidden && !picker.contains(event.target)) closePanel();
+    });
+
+    updateControl(initialMode);
   }
 
   if (document.readyState === "loading") {
@@ -163,7 +313,169 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="assets/display-preference.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -220,6 +532,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -241,6 +554,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -343,6 +657,19 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
