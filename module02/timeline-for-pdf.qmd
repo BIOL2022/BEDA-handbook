@@ -1,10 +1,22 @@
 ---
 title: "Module 2 timeline"
+author: "BIOL2022 teaching team"
+lang: en
+keywords:
+  - BIOL2022
+  - Module 2
+  - Report 1
+  - timeline
 format:
   typst:
+    papersize: a4
     toc: false
     number-sections: false
-    keep-typ: true
+    pdf-standard: ua-1
+    filters:
+      - ../filters/module2-timeline-typst.lua
+    template-partials:
+      - ../typst/module2-timeline/typst-show.typ
 format-links: false
 ---
 
