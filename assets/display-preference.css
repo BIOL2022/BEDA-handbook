@@ -107,9 +107,29 @@
   :root[data-beda-display="manila"] main.content .learning-outcomes-table table > thead > tr > th,
   :root[data-beda-display="manila"] main.content h4.student-task,
   :root[data-beda-display="manila"] #weekly-content tbody tr.is-current-week > *,
+  :root[data-beda-display="manila"] .module2-timeline-table tbody tr.is-current-week > *,
   :root[data-beda-display="manila"] .weekly-mobile-week.is-current-week {
     color: var(--bs-body-color);
     background: var(--beda-manila-surface);
+  }
+
+  :root[data-beda-display="manila"] .module2-timeline-support {
+    background: var(--beda-manila-surface-subtle);
+  }
+
+  :root[data-beda-display="manila"] .module2-timeline-table table > thead > tr > th {
+    color: var(--bs-body-color);
+    background: var(--beda-manila-surface);
+  }
+
+  :root[data-beda-display="manila"] .module2-timeline-deadline {
+    color: var(--bs-body-color);
+    background: #ecd5c8;
+  }
+
+  :root[data-beda-display="manila"] .module2-timeline-meta,
+  :root[data-beda-display="manila"] .module2-week-date {
+    color: var(--bs-secondary-color);
   }
 
   :root[data-beda-display="manila"] body.manual-page {
@@ -200,9 +220,43 @@
   body.quarto-dark main.content .learning-outcomes-table table > thead > tr > th,
   body.quarto-dark main.content h4.student-task,
   body.quarto-dark #weekly-content tbody tr.is-current-week > *,
+  body.quarto-dark .module2-timeline-table tbody tr.is-current-week > *,
   body.quarto-dark .weekly-mobile-week.is-current-week {
     color: var(--bs-body-color);
     background: #26352f;
+  }
+
+  body.quarto-dark .module2-timeline-support {
+    background: #26352f;
+    border-left-color: #72d8c4;
+  }
+
+  body.quarto-dark .module2-timeline-table table > thead > tr > th {
+    color: var(--bs-body-color);
+    background: #26352f;
+  }
+
+  body.quarto-dark .module2-timeline-deadline {
+    background: #4a2926;
+    border-left-color: #f0aa9d;
+  }
+
+  body.quarto-dark .module2-timeline-meta,
+  body.quarto-dark .module2-week-date {
+    color: #c9d0cc;
+  }
+
+  body.quarto-dark .module2-timeline-table:focus-visible {
+    outline-color: #72d8c4;
+  }
+
+  body.quarto-dark .module2-timeline-table tbody tr.is-current-week > :first-child {
+    box-shadow: inset 5px 0 #72d8c4;
+  }
+
+  body.quarto-dark .module2-current-label {
+    color: #17201e;
+    background: #72d8c4;
   }
 
   body.quarto-dark main.content .learning-outcomes-table table > tbody > tr > td:first-child,

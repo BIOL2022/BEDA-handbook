@@ -11,6 +11,7 @@ partial_path <- file.path(project_root, "_partials", "module02-timeline.qmd")
 html_path <- file.path(project_root, "module02", "202-timeline.qmd")
 pdf_path <- file.path(project_root, "module02", "timeline-for-pdf.qmd")
 changelog_path <- file.path(project_root, "module02", "202-timeline-changelog.qmd")
+timeline_css_path <- file.path(project_root, "assets", "timeline.css")
 
 stopifnot(file.exists(partial_path), file.exists(changelog_path))
 
@@ -18,6 +19,7 @@ partial <- read_source(partial_path)
 html <- read_source(html_path)
 pdf <- read_source(pdf_path)
 changelog <- read_source(changelog_path)
+timeline_css <- read_source(timeline_css_path)
 partial_plain <- gsub("[[:space:]|]+", " ", partial)
 
 include <- "{{< include ../_partials/module02-timeline.qmd >}}"
@@ -49,6 +51,10 @@ for (hook in c("module2-timeline-meta", "module2-timeline-support", "module2-tim
   stopifnot(grepl(hook, partial, fixed = TRUE))
 }
 stopifnot(grepl("module2-week-date", partial))
+stopifnot(grepl(".module2-timeline-meta {\n  color: #536366;", timeline_css, fixed = TRUE))
+stopifnot(grepl(".module2-week-date {\n  color: #536366;", timeline_css, fixed = TRUE))
+stopifnot(grepl(".module2-timeline-table:focus-visible", timeline_css, fixed = TRUE))
+stopifnot(grepl("outline: 3px solid #0f6b5b;", timeline_css, fixed = TRUE))
 stopifnot(!grepl("<[^>]+>", partial))
 stopifnot(!grepl("You are here", partial, fixed = TRUE))
 stopifnot(!grepl("Week 9", partial, fixed = TRUE))
@@ -79,6 +85,14 @@ status <- system2(
 )
 stopifnot(status == 0, file.exists(rendered_path))
 rendered <- read_source(rendered_path)
+timeline_wrapper <- regmatches(
+  rendered,
+  regexpr("<div[^>]*module2-timeline-table[^>]*>", rendered, perl = TRUE)
+)
+stopifnot(length(timeline_wrapper) == 1L)
+stopifnot(grepl('role="region"', timeline_wrapper, fixed = TRUE))
+stopifnot(grepl('aria-label="Module 2 timeline"', timeline_wrapper, fixed = TRUE))
+stopifnot(grepl('tabindex="0"', timeline_wrapper, fixed = TRUE))
 header_cells <- gregexpr("<th(?: |>)[^>]*>", rendered, perl = TRUE)[[1]]
 body <- sub("(?s).*<tbody[^>]*>", "", rendered, perl = TRUE)
 body <- sub("(?s)</tbody>.*", "", body, perl = TRUE)
