@@ -1,11 +1,15 @@
 script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
 script_path <- normalizePath(sub("^--file=", "", script_arg[[1]]), mustWork = TRUE)
 project_root <- dirname(dirname(script_path))
+quarto_path <- file.path(project_root, "_quarto.yml")
 
 read_source <- function(path) {
   stopifnot(file.exists(path))
   paste(readLines(path, warn = FALSE, encoding = "UTF-8"), collapse = "\n")
 }
+
+quarto <- read_source(quarto_path)
+stopifnot(!grepl("    - module02/202-timeline.qmd", quarto, fixed = TRUE))
 
 partial_path <- file.path(project_root, "_partials", "module02-timeline.qmd")
 html_path <- file.path(project_root, "module02", "202-timeline.qmd")
