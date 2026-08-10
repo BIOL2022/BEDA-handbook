@@ -141,6 +141,34 @@
     }
   }
 
+  function highlightModule2TimelineWeek(week) {
+    const rows = Array.from(
+      document.querySelectorAll(".module2-timeline-table tbody tr")
+    );
+
+    for (const row of rows) {
+      row.classList.remove("is-current-week");
+      row.removeAttribute("aria-current");
+      row.cells[0]?.querySelector(".module2-current-label")?.remove();
+    }
+
+    if (!Number.isInteger(week) || week < 2 || week > 8) return;
+
+    const expectedLabel = week < 4 ? "Weeks 2–3" : `Week ${week}`;
+    const currentRow = rows.find(
+      (row) => row.cells[0]?.textContent.trim().startsWith(expectedLabel)
+    );
+    if (!currentRow) return;
+
+    currentRow.classList.add("is-current-week");
+    currentRow.setAttribute("aria-current", "true");
+
+    const marker = document.createElement("span");
+    marker.className = "module2-current-label";
+    marker.textContent = "You are here";
+    currentRow.cells[0].append(marker);
+  }
+
   function updatePage() {
     const status = document.getElementById("semester-status");
     const date = sydneyDate();
@@ -148,6 +176,7 @@
     if (date < semester.start) {
       if (status) status.textContent = countdown(semester.start, date);
       highlightScheduleWeek(1, "Coming up", false);
+      highlightModule2TimelineWeek(null);
       return;
     }
 
@@ -162,6 +191,7 @@
     }
 
     highlightScheduleWeek(period?.week ?? null);
+    highlightModule2TimelineWeek(period?.week);
   }
 
   if (document.readyState === "loading") {
