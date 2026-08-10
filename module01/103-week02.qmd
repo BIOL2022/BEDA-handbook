@@ -14,18 +14,18 @@ number-depth: 3
 
 ## Introduction {.unnumbered}
 
-Today we focus on **study design and sampling**. You will work in groups of at least four students to agree on a clear plan for collecting data in the next practical.
+Today we focus on **study design and sampling**. You will work in groups of at least four to agree on a clear plan for collecting data in the next practical.
 
-**Spend 2 to 3 minutes now looking at the image below.** What do you see? If you notice something, how would you propose to measure it? If there are things that you need to identify, how would you go about doing that? Logistical questions like these are the first step in designing a study and help determine whether data can be collected reliably and consistently.
+**Spend 2 to 3 minutes now looking at the image below.** What do you see? If you notice something, how would you propose to measure it? If there are things that you need to identify, how would you go about doing that? Questions like these are the first step in designing a study and help determine whether data can be collected reliably and consistently due to logistical constraints.
 
-![An image from the Eindhoven Wildflower Dataset, Schouten, Michielsen & Gravendeel (2024), DataverseNL, DOI https://doi.org/10.34894/U4VQJ6; licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/.](assets/urban-wildflowers.jpg){fig-alt="Top-down view of a woodland floor covered by divided green foliage, scattered white nodding flowers, and brown leaf litter; no scale or quadrat is visible."}
+![An image from the [Eindhoven Wildflower Dataset](https://doi.org/10.34894/U4VQJ6), Schouten, Michielsen & Gravendeel (2024), DataverseNL, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).](assets/urban-wildflowers.jpg){fig-alt="Top-down view of a woodland floor covered by divided green foliage, scattered white nodding flowers, and brown leaf litter; no scale or quadrat is visible."}
 
 ### Things to prepare {.unnumbered}
 
 1. [**Review Lecture 2a**](https://biol2022.github.io/2026-lectures/lectures/L02a-representative-sampling/index.html). It covers key ideas for today's practical. If you missed the lecture, please read through it beforehand so you are prepared.
 2. <i class="bi bi-journal-text me-1" aria-hidden="true"></i> **Lab notebook**. Use it to jot down your observations, models, and data-collection decisions. This will help you keep track of your work.
 3. **A laptop computer** with Jamovi and/or RStudio installed.
-4. Have a look through the [study-design guide](https://docs.google.com/document/d/1JhSevrzpLlDsD0a4225h_dcC4i5ZOII7dkTr8u4gCgs/edit#heading=h.rc1vfwuebyac). You will use it in the practical as a scaffold.
+4. Have a look through the [study-design](https://docs.google.com/document/d/1JhSevrzpLlDsD0a4225h_dcC4i5ZOII7dkTr8u4gCgs/edit#heading=h.rc1vfwuebyac) template that your supervisor cobbled up. You will use it in the practical as a scaffold.
 5. **Quick links:** [Intertidal site images](105-images.qmd) and [Species identification guide](106-species-id.qmd).
 
 ::: {.callout-note appearance="simple"}
@@ -55,7 +55,7 @@ By the end of this practical, you should be able to:
 
 ## A sampling primer
 
-In this short workshop, we will explore how to sample data from a site using images. You will consider counts, presence or absence, cover, and other measurements.
+In this short workshop, we will explore how to sample data from a site. It would be nice if we were there, but today we can only pretend to be on site as few of us are ready to work in the field just yet. You will consider counts, presence or absence, cover, and other measurements.
 
 We will open a brainstorming document for this exercise and share it with the class. Please contribute your ideas so that everyone can benefit from them.
 
