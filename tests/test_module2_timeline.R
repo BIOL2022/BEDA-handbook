@@ -57,6 +57,23 @@ stopifnot(grepl("file.rename(staged_output, output_path)", generator, fixed = TR
 stopifnot(!grepl("readLines|writeLines|file_move|library\\(fs\\)", generator))
 stopifnot(!grepl("\\[[0-9]+:[0-9]+\\]", generator))
 
+generator_environment <- new.env(parent = globalenv())
+sys.source(generator_path, envir = generator_environment)
+stopifnot(is.function(generator_environment$is_absolute_path))
+absolute_paths <- c(
+  "/tmp/module2-timeline.pdf",
+  "C:/tmp/module2-timeline.pdf",
+  "C:\\tmp\\module2-timeline.pdf",
+  "\\\\server\\share\\module2-timeline.pdf",
+  "//server/share/module2-timeline.pdf"
+)
+stopifnot(all(vapply(
+  absolute_paths,
+  generator_environment$is_absolute_path,
+  logical(1)
+)))
+stopifnot(!generator_environment$is_absolute_path("relative/module2-timeline.pdf"))
+
 expected_support <- paste0(
   "**Equipment and technical help:** Contact the technical officer listed on Canvas ",
   "[here](https://canvas.sydney.edu.au/courses/74353/). Please include your project group name and practical time in your request."

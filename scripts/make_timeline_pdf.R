@@ -1,3 +1,9 @@
+is_absolute_path <- function(path) {
+  grepl("^/", path) ||
+    grepl("^[[:alpha:]]:[/\\\\]", path) ||
+    grepl("^[/\\\\]{2}", path)
+}
+
 main <- function() {
   script_flags <- grep(
     "^--file=",
@@ -42,7 +48,7 @@ main <- function() {
 
   if (length(arguments) == 1L) {
     output_argument <- path.expand(arguments[[1]])
-    if (!grepl("^/", output_argument)) {
+    if (!is_absolute_path(output_argument)) {
       output_argument <- file.path(getwd(), output_argument)
     }
     output_dir_argument <- dirname(output_argument)
@@ -122,4 +128,6 @@ main <- function() {
   cat("Rendered Module 2 timeline PDF: ", output_path, "\n", sep = "")
 }
 
-main()
+if (sys.nframe() == 0L) {
+  main()
+}
