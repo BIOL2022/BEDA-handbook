@@ -77,6 +77,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
 <script>
 (() => {
   "use strict";
@@ -313,7 +319,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../assets/display-preference.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -540,33 +546,40 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-you-need-this-week" id="toc-what-you-need-this-week" class="nav-link active" data-scroll-target="#what-you-need-this-week"><span class="header-section-number">1</span> What you need this week</a></li>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">2</span> Introduction</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
   <ul class="collapse">
   <li><a href="#things-to-prepare" id="toc-things-to-prepare" class="nav-link" data-scroll-target="#things-to-prepare">Things to prepare</a></li>
   <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes">Learning outcomes</a></li>
-  <li><a href="#what-to-submit" id="toc-what-to-submit" class="nav-link" data-scroll-target="#what-to-submit">What to submit</a></li>
   </ul></li>
-  <li><a href="#workshop" id="toc-workshop" class="nav-link" data-scroll-target="#workshop"><span class="header-section-number">3</span> Workshop</a></li>
-  <li><a href="#exercise-1-modelling-from-observations" id="toc-exercise-1-modelling-from-observations" class="nav-link" data-scroll-target="#exercise-1-modelling-from-observations"><span class="header-section-number">4</span> Exercise 1 – Modelling from observations</a>
+  <li><a href="#a-sampling-primer" id="toc-a-sampling-primer" class="nav-link" data-scroll-target="#a-sampling-primer"><span class="header-section-number">1</span> A sampling primer</a>
   <ul class="collapse">
-  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a></li>
-  <li><a href="#study-design" id="toc-study-design" class="nav-link" data-scroll-target="#study-design">Study design</a></li>
-  <li><a href="#task" id="toc-task" class="nav-link" data-scroll-target="#task">Task</a></li>
+  <li><a href="#try-different-measurements-10-min" id="toc-try-different-measurements-10-min" class="nav-link" data-scroll-target="#try-different-measurements-10-min"><span class="header-section-number">1.1</span> Try different measurements (10 min)</a></li>
+  <li><a href="#think-about-logistics-10-min" id="toc-think-about-logistics-10-min" class="nav-link" data-scroll-target="#think-about-logistics-10-min"><span class="header-section-number">1.2</span> Think about logistics (10 min)</a></li>
   </ul></li>
-  <li><a href="#exercise-2-data-entry" id="toc-exercise-2-data-entry" class="nav-link" data-scroll-target="#exercise-2-data-entry"><span class="header-section-number">5</span> Exercise 2 – data entry</a></li>
-  <li><a href="#submit-your-data" id="toc-submit-your-data" class="nav-link" data-scroll-target="#submit-your-data"><span class="header-section-number">6</span> Submit your data</a></li>
-  <li><a href="#end-of-practical" id="toc-end-of-practical" class="nav-link" data-scroll-target="#end-of-practical"><span class="header-section-number">7</span> End of practical</a></li>
-  <li><a href="#snail-competition-reminder" id="toc-snail-competition-reminder" class="nav-link" data-scroll-target="#snail-competition-reminder"><span class="header-section-number">8</span> Snail competition reminder</a></li>
+  <li><a href="#practical" id="toc-practical" class="nav-link" data-scroll-target="#practical"><span class="header-section-number">2</span> Practical</a>
+  <ul class="collapse">
+  <li><a href="#exercise-observe-and-choose-a-measurement-10-min" id="toc-exercise-observe-and-choose-a-measurement-10-min" class="nav-link" data-scroll-target="#exercise-observe-and-choose-a-measurement-10-min"><span class="header-section-number">2.1</span> Exercise: Observe and choose a measurement (10 min)</a></li>
+  <li><a href="#exercise-write-the-study-design-15-min" id="toc-exercise-write-the-study-design-15-min" class="nav-link" data-scroll-target="#exercise-write-the-study-design-15-min"><span class="header-section-number">2.2</span> Exercise: Write the study design (15 min)</a></li>
+  <li><a href="#exercise-finalise-and-share-the-sampling-scheme-30-min" id="toc-exercise-finalise-and-share-the-sampling-scheme-30-min" class="nav-link" data-scroll-target="#exercise-finalise-and-share-the-sampling-scheme-30-min"><span class="header-section-number">2.3</span> Exercise: Finalise and share the sampling scheme (30 min)</a></li>
+  <li><a href="#bonus-if-you-finish-early" id="toc-bonus-if-you-finish-early" class="nav-link" data-scroll-target="#bonus-if-you-finish-early"><span class="header-section-number">2.4</span> Bonus (if you finish early)</a></li>
+  </ul></li>
+  <li><a href="#end-of-practical-notes" id="toc-end-of-practical-notes" class="nav-link" data-scroll-target="#end-of-practical-notes"><span class="header-section-number">3</span> End of practical notes</a>
+  <ul class="collapse">
+  <li><a href="#preview-group-projects" id="toc-preview-group-projects" class="nav-link" data-scroll-target="#preview-group-projects"><span class="header-section-number">3.1</span> Preview group projects</a></li>
+  <li><a href="#snail-competition-reminder" id="toc-snail-competition-reminder" class="nav-link" data-scroll-target="#snail-competition-reminder"><span class="header-section-number">3.2</span> Snail competition reminder</a></li>
+  <li><a href="#attendance" id="toc-attendance" class="nav-link" data-scroll-target="#attendance"><span class="header-section-number">3.3</span> Attendance</a></li>
+  </ul></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -591,283 +604,257 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="../index.html#weekly-content">Return to weekly content</a></p>
-<section id="what-you-need-this-week" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="what-you-need-this-week"><span class="header-section-number">1</span> What you need this week</h2>
-<ul>
-<li>Workshop 2: Tidy data</li>
-<li><a href="../module01/105-images.html">Intertidal site images</a></li>
-<li><a href="../module01/106-species-id.html">Species identification guide</a></li>
-</ul>
-</section>
-<section id="introduction" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2</span> Introduction</h2>
-<p>Today we will be focusing on data collection and how to prepare your data for analysis. <strong>You will be working in groups of at least 4 students in this practical.</strong></p>
-<section id="things-to-prepare" class="level3">
-<h3 class="anchored" data-anchor-id="things-to-prepare">Things to prepare</h3>
+<section id="introduction" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Today we focus on <strong>study design and sampling</strong>. You will work in groups of at least four students to agree on a clear plan for collecting data in the next practical.</p>
+<p><strong>Spend 2 to 3 minutes now looking at the image below.</strong> What do you see? If you notice something, how would you propose to measure it? If there are things that you need to identify, how would you go about doing that? Logistical questions like these are the first step in designing a study and help determine whether data can be collected reliably and consistently.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/urban-wildflowers.jpg" class="img-fluid figure-img" alt="Top-down view of a woodland floor covered by divided green foliage, scattered white nodding flowers, and brown leaf litter; no scale or quadrat is visible."></p>
+<figcaption>An image from the Eindhoven Wildflower Dataset, Schouten, Michielsen &amp; Gravendeel (2024), DataverseNL, DOI https://doi.org/10.34894/U4VQJ6; licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/.</figcaption>
+</figure>
+</div>
+<section id="things-to-prepare" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="things-to-prepare">Things to prepare</h3>
 <ol type="1">
-<li><a href="https://biol2022.github.io/L02a-represenative-sampling/"><strong>Review Lecture 2a</strong></a>. These cover key ideas for today’s practical. If you missed the lecture, please read through the material beforehand so you are prepared (it beats doing nothing and waiting for the demonstrator to catch up with you).</li>
-<li><strong>Lab notebook</strong>. You received a blank notebook in Week 1. Use it to jot down your observations, models, and data collection. This will help you keep track of your work. <em>Note: it’s not compulsory, but good practice.</em></li>
-<li><strong>A computer</strong> with spreadsheet software (such as Excel, Google Sheets, or Numbers) and the statistical software of your choice. You can use your own laptop or a lab computer. iPads are fine if you plan to use R, but make sure you know how to use Posit Cloud.</li>
+<li><a href="https://biol2022.github.io/2026-lectures/lectures/L02a-representative-sampling/index.html"><strong>Review Lecture 2a</strong></a>. It covers key ideas for today’s practical. If you missed the lecture, please read through it beforehand so you are prepared.</li>
+<li><i class="bi bi-journal-text me-1" aria-hidden="true"></i> <strong>Lab notebook</strong>. Use it to jot down your observations, models, and data-collection decisions. This will help you keep track of your work.</li>
+<li><strong>A laptop computer</strong> with Jamovi and/or RStudio installed.</li>
+<li>Have a look through the <a href="https://docs.google.com/document/d/1JhSevrzpLlDsD0a4225h_dcC4i5ZOII7dkTr8u4gCgs/edit#heading=h.rc1vfwuebyac">study-design guide</a>. You will use it in the practical as a scaffold.</li>
+<li><strong>Quick links:</strong> <a href="../module01/105-images.html">Intertidal site images</a> and <a href="../module01/106-species-id.html">Species identification guide</a>.</li>
 </ol>
-</section>
-<section id="learning-outcomes" class="level3">
-<h3 class="anchored" data-anchor-id="learning-outcomes">Learning outcomes</h3>
-<p>By the end of this practical, you should be able to:</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Formulate a model and hypothesis based on observations.</label></li>
-<li><label><input type="checkbox">Design a study to test your model.</label></li>
-<li><label><input type="checkbox">Enter data in a manner that improves redundancy (using a notebook) and is also <strong>tidy</strong> in preparation for analysis.</label></li>
-<li><label><input type="checkbox">Understand the importance of tidy data.</label></li>
-</ul>
-</section>
-<section id="what-to-submit" class="level3">
-<h3 class="anchored" data-anchor-id="what-to-submit">What to submit</h3>
-<ol type="1">
-<li><strong>A (simple) study design</strong> based on your observations of the photos provided, documented on Google Docs. This will be sighted by a Demonstrator during the practical before you can proceed to the next exercise.</li>
-<li><strong>Data in the form of a tidy spreadsheet</strong> – your collected data will need to be submitted to Google Drive. This submission is not a formal assessment (it is not graded), but it is essential for the next practical, so please make sure you submit it.</li>
-</ol>
-</section>
-</section>
-<section id="workshop" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="workshop"><span class="header-section-number">3</span> Workshop</h2>
-<p>The Week 2 workshop linked above will go through <strong>Tidy data principles</strong>. Tidy data is a way of structuring your data so that it is easy to work with and analyse. It is a key principle in data analysis and will help you avoid common pitfalls when working with data.</p>
-</section>
-<section id="exercise-1-modelling-from-observations" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="exercise-1-modelling-from-observations"><span class="header-section-number">4</span> Exercise 1 – Modelling from observations</h2>
-<section id="background" class="level3">
-<h3 class="anchored" data-anchor-id="background">Background</h3>
-<p>Images are commonly used to quantify patterns in biology, from molecules to ecosystems. In ecology, for instance, satellite images and aerial photographs are used in some ecological studies to quantify patterns of distribution and abundances of animals and plants across habitats.</p>
-<p>Here you will explore experimental design, model formulation and data analysis by collecting data from available images and use both evidence and logic to work out how to explain the patterns you observe.</p>
-<p><strong>Work in groups</strong> – You will be working in groups of 3-4 students. Your task is to <strong>observe</strong> the images provided and formulate a <strong>model</strong> that explains the patterns you observe. You will then create a <strong>study design</strong> that will allow you to test your model.</p>
-<p>Remember, the best models are often the simplest. Focus on logical and critical thinking when designing your study. <strong>The sampling design certainly the bigger focus here in this short exercise.</strong> Keep this in mind as you work through the exercise!</p>
-<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+<span class="screen-reader-only">Note</span>Download the Week 2 image sets
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Do not proceed to Exercise 2 until you have completed this exercise, and a Demonstrator has sighted your study design.</p>
+<p>This is optional, but you may download these files and unzip them if you want to work offline.</p>
+<ul>
+<li><a href="https://canvas.sydney.edu.au/courses/74353/files/51851648/download?download_frd=1">Download <strong>Week 2 Site 1 photos (ZIP)</strong></a></li>
+<li><a href="https://canvas.sydney.edu.au/courses/74353/files/51851649/download?download_frd=1">Download <strong>Week 2 Site 2 photos (ZIP)</strong></a></li>
+</ul>
+<p>If the links do not work, you can also download the files from <a href="https://canvas.sydney.edu.au/courses/74353/pages/biol2022-module-content-and-resources">Canvas - Module Content and Resources</a>.</p>
 </div>
 </div>
 </section>
-<section id="getting-started" class="level3">
-<h3 class="anchored" data-anchor-id="getting-started">Getting started</h3>
-<p>You are provided with random, representative, replicate photographs of a common marine habitat that spans &gt; 8,000 km of the Great Southern Reef, i.e.&nbsp;the coastline along the bottom half of Australia – intertidal rocky shores (Fig 1).</p>
-<p>Use the intertidal site images linked in <strong>What you need this week</strong>, which include background information.</p>
-<p><strong>Using these images and the species identification guide, formulate a model and a (testable) hypothesis. You will then think about what data you need to collect to test your hypothesis.</strong> See below for further details.</p>
+<section id="learning-outcomes" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="learning-outcomes">Learning outcomes</h3>
+<p>By the end of this practical, you should be able to:</p>
+<div class="learning-outcomes-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Learning outcome</th>
+<th>How you will practise it</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Develop a simple, testable <strong>study design</strong> from observations.</td>
+<td>Use observations of the intertidal images to identify response and predictor <strong>variables</strong>, write a biological question and hypothesis, and sketch the expected relationship.</td>
+</tr>
+<tr class="even">
+<td>Apply a <strong>standardised</strong> measurement protocol to image-based data.</td>
+<td>Use the physical quadrat shown in each image to define a consistent area for measurement, choose a counting or measurement rule, and apply it <strong>consistently</strong>.</td>
+</tr>
+<tr class="odd">
+<td>Design a <strong>defensible</strong> sampling scheme.</td>
+<td>Use the study-design guide to define the target population and sampling frame, independent image-level replicates, and a selection method that reduces bias and pseudoreplication.</td>
+</tr>
+<tr class="even">
+<td>Communicate a reproducible sampling plan for group data collection.</td>
+<td>Agree on one group scheme, then write it clearly in your <i class="bi bi-journal-text me-1" aria-hidden="true"></i> notebook and upload a photo as a handoff for next week.</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="study-design" class="level3">
-<h3 class="anchored" data-anchor-id="study-design">Study design</h3>
-<p><strong>Focus on the sampling design as you work on your model.</strong> Keep this in mind as you work through the exercise. If overwhelmed, think simple – the focus is on working through these sampling design considerations explained in this week’s lectures:</p>
+</section>
+<section id="a-sampling-primer" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="a-sampling-primer"><span class="header-section-number">1</span> A sampling primer</h2>
+<p>In this short workshop, we will explore how to sample data from a site using images. You will consider counts, presence or absence, cover, and other measurements.</p>
+<p>We will open a brainstorming document for this exercise and share it with the class. Please contribute your ideas so that everyone can benefit from them.</p>
+<p>Look at the four images below, two from <strong>Site 1</strong> and two from <strong>Site 2</strong>. Each photograph contains a <a href="https://en.wikipedia.org/wiki/Quadrat">quadrat</a>. Its interior defines the area you score or measure.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/site01/IMG_0179.jpeg" class="img-fluid figure-img" alt="A square white quadrat frame resting on a dry, light-brown rock surface scattered with many small pale cone-shaped shells and some darker rounded shells gathered in the lower areas."></p>
+<figcaption>Image A01, Site 1.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/site01/IMG_0577.jpeg" class="img-fluid figure-img" alt="A square white quadrat frame on a rough, dry, light-brown rock with a small shallow wet pool in the lower section; the surface is dotted with small pale cone-shaped shells and a few dark smooth dome-shaped shells."></p>
+<figcaption>Image A02, Site 1.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/site02/IMG_0889.jpeg" class="img-fluid figure-img" alt="A square white quadrat frame on a dry, rough, light-brown rock surface covered with many small pale cone-shaped shells and tiny dark bumps."></p>
+<figcaption>Image B01, Site 2.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/site02/IMG_1121.jpeg" class="img-fluid figure-img" alt="A square white quadrat frame on a dry, rough, light-brown rock surface scattered with many small pale cone-shaped shells."></p>
+<figcaption>Image B02, Site 2.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Let’s say we want to quantify the number, proportion, or cover of <em>something</em> in the images, either to compare the two sites or to describe a pattern across all the images.</p>
+<p><strong>How would you start measuring?</strong> As a class, let’s discuss:</p>
 <ul>
-<li>Control</li>
-<li>Replication</li>
-<li>Randomisation</li>
+<li>what is measurable in the images;</li>
+<li>what logistical constraints we need to consider when working with images; and</li>
+<li>how to measure consistently across images and sites, with different members of your group.</li>
 </ul>
-<p>Have a clear model in mind before collecting data. The model determines your sampling strategy and the type of data you need. Consider the following:</p>
+<section id="try-different-measurements-10-min" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="try-different-measurements-10-min"><span class="header-section-number">1.1</span> Try different measurements (10 min)</h3>
+<p>In your group, split into pairs and pick one site per pair. Can you come up with a <strong>repeatable measurement rule</strong> for each of the following options?</p>
 <ul>
-<li><strong>What is the point of your model?</strong> Think about the biological question you are trying to answer, and the kinds of data you need to collect to answer it. Remember that the model is a simplified representation of reality, so it should be as simple as possible while still capturing the essence of the question you are trying to answer.</li>
-<li>Think of how you would collect data to test your model. <strong>What are the variables you need to measure?</strong> How would you measure them?</li>
-<li>Scrutinise your images with the model in mind. <strong>Can the data be collected representatively from the images?</strong> Are there issues of replication or confounding variables that you need to consider?</li>
-<li>Do you have the time and resources to complete the study in the time frame provided, i.e.&nbsp;by the end of next week?</li>
-<li>What is your <strong>backup plan</strong> if data assumptions are not met?</li>
+<li><strong>Count</strong>. Identify and record how many visible units there are inside each image.</li>
+<li><strong>Presence/absence</strong>. Record whether a variable is present (<code>1</code>) or absent (<code>0</code>).</li>
+<li><strong>Continuous measurement</strong>. Measure a variable such as shell length, but only when the image includes a scale or other standardised reference. Is there one?</li>
 </ul>
-<p>While you may not have all the answers right away, it’s important to have a rough idea of what you want to do, such as comparing groups, measuring correlation, or creating a linear model.</p>
+<p>For each option, use your <i class="bi bi-journal-text me-1" aria-hidden="true"></i> notebook to write what you would measure and the rule you would use. <strong>You do not need to perform the measurements yet.</strong> Your protocol should be clear enough for someone else to follow it and get the same results. In other words, it should be reproducible.</p>
+<p>For example, for a count:</p>
+<ol type="1">
+<li>Identify what you are counting (e.g., a species, a type of shell, or a substrate).</li>
+<li>Define what counts as one unit (e.g., a single shell, a cluster of shells, or a patch of substrate).</li>
+<li>Decide how to handle ambiguous cases (e.g., partially visible shells, overlapping shells, or shells that are too small to identify).</li>
+<li>Count all units that meet your criteria within the quadrat area of the image. Or decide to count only a subset of the quadrat area.</li>
+</ol>
+<p>Other useful options include the following, although we will not work through them today.</p>
+<ul>
+<li><strong>Percent cover</strong>. Estimate the proportion of the quadrat area occupied by a focal species or substrate, for example using a grid or point-intercept rule.</li>
+<li><strong>Frequency across sub-quadrats</strong>. Divide the quadrat into smaller cells and record in how many cells the focal variable appears.</li>
+<li><strong>Density</strong>. Count individuals and report the number per unit area, for example per quadrat.</li>
+<li><strong>Richness</strong>. Count how many different taxa or types are visible within the quadrat.</li>
+<li><strong>Ordinal score</strong>. Assign a standardised category, such as low, medium, or high cover, using predefined thresholds.</li>
+<li><strong>Condition score</strong>. Record a reproducible state metric, such as intact or damaged, or alive or dead if clearly identifiable.</li>
+<li><strong>Spatial position</strong>. Record the coordinates of observations within the quadrat to analyse clustering or dispersion.</li>
+</ul>
+</section>
+<section id="think-about-logistics-10-min" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="think-about-logistics-10-min"><span class="header-section-number">1.2</span> Think about logistics (10 min)</h3>
+<p>Now imagine collecting data from 40 such images in 20 minutes. How would you organise yourselves to be efficient and consistent? You will need to think about:</p>
+<ul>
+<li>what options do you have to collect and share data as a group,</li>
+<li>how to ensure that you have sufficient sample size to answer your question, and</li>
+<li>what to do when not everyone in your group is an expert at identifying species or measuring variables.</li>
+</ul>
+<p><strong>We will work on a brainstorming document together as a class. Please contribute your ideas to it.</strong></p>
+</section>
+</section>
+<section id="practical" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="practical"><span class="header-section-number">2</span> Practical</h2>
+<p>Work in groups of four. You are now expected to independently observe a novel dataset, think about what looks interesting, and design a study to test a hypothesis. You will then agree on a <strong>group sampling scheme</strong> that you will use to collect data in the next practical.</p>
+<p>You are provided with representative photographs of a common marine habitat that spans more than 8,000 km of the Great Southern Reef, the coastline along the bottom half of Australia. These images are your actual data source.</p>
+<p>First, open the <a href="../module01/105-images.html">intertidal site images</a> page. You need to read it to obtain relevant background information. Then look through the <a href="../module01/106-species-id.html">species identification guide</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../assets/southern-reef-map.png" class="img-fluid figure-img" style="width:70.0%" alt="Map showing the Great Southern Reef coastline around southern Australia."></p>
 <figcaption>The Great Southern Reef coastline around southern Australia. © 2021 California Academy of Sciences.</figcaption>
 </figure>
 </div>
-</section>
-<section id="task" class="level3">
-<h3 class="anchored" data-anchor-id="task">Task</h3>
-<p>A <a href="https://docs.google.com/document/d/1JhSevrzpLlDsD0a4225h_dcC4i5ZOII7dkTr8u4gCgs/edit#heading=h.rc1vfwuebyac">Google Docs page</a> is available for you as a guide to record your responses. <strong>On the document, select File &gt; Download to save the file to use in your group.</strong> Note that this document is a guide and you may choose to use a different format to record your progress.</p>
-<p>Then, address your study design by answering the following questions:</p>
+<p>Work through the exercises in order. <strong>The best models are usually the simplest,</strong> so don’t make them complicated. We are working on the logistics of data collection and project management, so statistical analysis is secondary.</p>
+<section id="exercise-observe-and-choose-a-measurement-10-min" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="exercise-observe-and-choose-a-measurement-10-min"><span class="header-section-number">2.1</span> Exercise: Observe and choose a measurement (10 min)</h3>
+<section id="task-1" class="level4 student-task">
+<h4 class="student-task anchored" data-anchor-id="task-1"><i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Task 1</h4>
+<p>Look through the intertidal images. In your <i class="bi bi-journal-text me-1" aria-hidden="true"></i> notebook:</p>
 <ol type="1">
-<li><strong>Model and hypothesis</strong>: What is your model and hypothesis? What are you trying to test and how will you test it? What would the plot look like?</li>
-<li><strong>Variables</strong>: What are the variables you need to measure? What types of variables are they (e.g.&nbsp;continuous, categorical)?</li>
-<li><strong>Data collection</strong>: How would you collect data to test your model? What are the potential issues you need to consider?</li>
+<li>Write <strong>two direct observations</strong>. These should be things you can see, stated as facts.</li>
+<li>Base on the observations, write <strong>one biological question</strong> that you could answer with a simple study design.</li>
+<li>Write the hypothesis to idenfity the variable(s) that you will need to answer your questions (it can be a form of a question or plot)</li>
+<li>In one sentence, describe how you would measure the variable(s), and include units if feasible. A a quick example, you might write “… will measure the length of each shell in mm and record the site for that measurement…” for a model that associates shell length with site.</li>
 </ol>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Example
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Note that this example will probably not work for the images, but it should give you an idea of what is expected. Also note that you do not need to follow the template exactly!</p>
+</section>
+</section>
+<section id="exercise-write-the-study-design-15-min" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="exercise-write-the-study-design-15-min"><span class="header-section-number">2.2</span> Exercise: Write the study design (15 min)</h3>
+<section id="task-2" class="level4 student-task">
+<h4 class="student-task anchored" data-anchor-id="task-2"><i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Task 2</h4>
+<p>Open the <a href="https://docs.google.com/document/d/1JhSevrzpLlDsD0a4225h_dcC4i5ZOII7dkTr8u4gCgs/edit#heading=h.rc1vfwuebyac">study-design guide</a> and work through it with your group. Use the guide as a scaffold, then write your final design in your <i class="bi bi-journal-text me-1" aria-hidden="true"></i> notebook.</p>
+<p>As you work through the guide, you may need to do some literature review or research to work out how to carry out parts of your design. For example, you may do a quick Google search to find out how to measure the cover of a species or identify a species from a photo. You may also need to check the <a href="../module01/106-species-id.html">species identification guide</a> for help.</p>
+<p>Your design should state:</p>
 <ul>
-<li><strong>Project title:</strong> Does rock size influence the number of species that can be found on a rocky shore?</li>
-<li><strong>Group name</strong>: Schist happens</li>
+<li>the biological question;</li>
+<li>the response and predictor variables;</li>
+<li>the expected pattern or hypothesis;</li>
+<li>a sketch of the expected relationship, with the response variable on the y-axis and the predictor variable on the x-axis;</li>
+<li>the measurement and uncertainty rules; and</li>
+<li>the population, sampling unit, and selection method.</li>
 </ul>
-<ol type="1">
-<li><strong>Model and hypothesis</strong>:
-<ul>
-<li>We hypothesise that the number of species on the rocky shore is positively correlated with the size of the rocks.</li>
-<li>We will model the relationship between the number of species and the size of the rocks using a linear model.</li>
-<li>The plot is expected to be a scatter plot with the number of species on the y-axis and the size of the rocks on the x-axis.</li>
-</ul></li>
-<li><strong>Variables</strong>:
-<ul>
-<li>We need to measure the number of species and the size of the rocks.</li>
-<li>Number of species is an integer variable.</li>
-<li>Size of the rocks is continuous variable.</li>
-</ul></li>
-<li><strong>Sampling design, control, replication, randomisation</strong>:
-<ul>
-<li>For each image, we will divide it into a 10x10 grid.</li>
-<li>3 random quadrats will be selected from each grid.</li>
-<li>The size of all visible rocks will be measured in each quadrat.</li>
-<li>The number of unique species in each quadrat will also be counted.</li>
-<li>We will then calculate the average size of rocks and the average number of species for each image to minimise pseudoreplication.</li>
-<li>Possible confounding could arise from the presence of seaweed, which could affect the number of species present.</li>
-<li>If the number of species is too high to count, we will group species into functional groups and count the number of functional groups instead.</li>
-</ul></li>
-<li><strong>Backup plan</strong>:
-<ul>
-<li>If the assumptions of the linear model are not met, we will transform the data, otherwise we will attempt a non-linear model.</li>
-</ul></li>
-</ol>
-</div>
-</div>
+<p>This is where your demonstrators can help you refine your ideas. They will make time to visit each group.</p>
 </section>
 </section>
-<section id="exercise-2-data-entry" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="exercise-2-data-entry"><span class="header-section-number">5</span> Exercise 2 – data entry</h2>
-<p>It is time to sample data from the images. While doing so, consider how you might minimise bias in your sampling. Also, if have not already done so, plan for time:</p>
+<section id="exercise-finalise-and-share-the-sampling-scheme-30-min" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="exercise-finalise-and-share-the-sampling-scheme-30-min"><span class="header-section-number">2.3</span> Exercise: Finalise and share the sampling scheme (30 min)</h3>
+<p>Do you have a clear plan for collecting data in the next practical? Is there a protocol written down so that everyone in your group can follow it? If not, you need to work on it now.</p>
+<section id="task-3" class="level4 student-task">
+<h4 class="student-task anchored" data-anchor-id="task-3"><i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Task 3</h4>
+<p>Discuss your individual designs and ideas, then agree on <strong>one group sampling scheme</strong>. Decide how to share the work so everyone can read and contribute to the protocol and data. Will you use a shared Google Sheet, or will you collect data in your own notebooks and combine it later?</p>
+<p>Your group must agree on:</p>
 <ul>
-<li>How long will it take to sample data from each image?</li>
-<li>How many images will you sample from?</li>
-<li>How many samples will you take from each image?</li>
+<li>which images or image set you will sample;</li>
+<li>what counts as one independent replicate;</li>
+<li>how images or parts of images will be selected to be representative;</li>
+<li>how the measurement and uncertainty rules will be implemented; and</li>
+<li>who will do what before the next practical.</li>
 </ul>
-<p><strong>Enter your data into a spreadsheet as soon as you have them.</strong> You can use any spreadsheet software you like (e.g.&nbsp;Excel, Google Sheets, Numbers). Google Sheets is easiest if everyone in your group is sampling and entering data at the same time as it is easy to set up a shared spreadsheet, but you may also share the same computer and enter data one at a time.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Discuss
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If more than one person is entering data, will it influence the results? Why or why not? Think about how you can reduce the impact of this.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Optional: tidy your data
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>To make your life easier, <em>recall</em> the <a href="https://r4ds.had.co.nz/tidy-data.html">tidy data principles</a> outlined in the workshop:</p>
+</section>
+</section>
+<section id="bonus-if-you-finish-early" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="bonus-if-you-finish-early"><span class="header-section-number">2.4</span> Bonus (if you finish early)</h3>
+<p>Can you analyse your data? Use your group’s study design and have a go at plotting and modelling it in Jamovi or RStudio before you collect any real data.</p>
 <ol type="1">
-<li>Each variable must have its own column.</li>
-<li>Each observation must have its own row.</li>
-<li>Each value must have its own cell.</li>
+<li>Open Jamovi or RStudio and open your group’s shared data file. Create a new data file if you have not started one yet.</li>
+<li>Using the variables you have planned, add some made-up values. They do not need to be realistic, but keep them consistent with the measurement rules you have defined. For example, do not enter a negative value for a count.</li>
+<li>Try making the plot you expect to use when you collect the data. Do the made-up values work well enough to produce the plot?</li>
 </ol>
-<p>The table below is tidy:</p>
-<table class="caption-top table">
-<caption>Table 1. Tidy data.</caption>
-<thead>
-<tr class="header">
-<th>Person</th>
-<th>Treatment</th>
-<th style="text-align: right;">Count</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>John</td>
-<td>A</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr class="even">
-<td>Mary</td>
-<td>A</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr class="odd">
-<td>Jane</td>
-<td>A</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td>John</td>
-<td>B</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr class="odd">
-<td>Mary</td>
-<td>B</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td>Jane</td>
-<td>B</td>
-<td style="text-align: right;">5</td>
-</tr>
-</tbody>
-</table>
-<p>The table below is not (although it may look “better” to you). Why?</p>
-<table class="caption-top table">
-<caption>Table 2. Non-tidy data. Treatment A and B represent the same variable (count).</caption>
-<thead>
-<tr class="header">
-<th>Person</th>
-<th style="text-align: right;">Treatment A</th>
-<th style="text-align: right;">Treatment B</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>John</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr class="even">
-<td>Mary</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="odd">
-<td>Jane</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">5</td>
-</tr>
-</tbody>
-</table>
-<p>Note: tidy data will reduce the amount of time you spend cleaning your data during data analysis, but you can also choose not to follow these principles if you prefer.</p>
-</div>
-</div>
+<p>This is a useful way to check whether your data sheet is ready for analysis and whether you can produce the plot you have in mind. If you cannot make the plot, go back and adjust the data sheet or your study design.</p>
 </section>
-<section id="submit-your-data" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="submit-your-data"><span class="header-section-number">6</span> Submit your data</h2>
-<p>Submit your data to <a href="https://drive.google.com/drive/folders/1rDyHyzgTVWUmPEzNte0F1CgVb3_Eitlk?usp=drive_link">Google Drive</a> as an Excel file. <strong>Your group will be using this data next week so make sure that we have it!</strong></p>
 </section>
-<section id="end-of-practical" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="end-of-practical"><span class="header-section-number">7</span> End of practical</h2>
-<p>Don’t forget to submit your data! You should also start to look at the <a href="../module02/203-projects.html">projects available for Report 1</a>, as you will sign up for one of them <strong>next week</strong> to work on Report 1.</p>
+<section id="end-of-practical-notes" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="end-of-practical-notes"><span class="header-section-number">3</span> End of practical notes</h2>
+<section id="preview-group-projects" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="preview-group-projects"><span class="header-section-number">3.1</span> Preview group projects</h3>
+<p>Next week you will be choosing a project to work on until Week 8. Please check Ed Discussion for an announcement about the projects and how to sign up.</p>
 </section>
-<section id="snail-competition-reminder" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="snail-competition-reminder"><span class="header-section-number">8</span> Snail competition reminder</h2>
-<p>The BIOL2022 snail-collecting competition remains open until the end of Week 4. You can return snails on any day the BIOL2022 laboratories are running, so check the current laboratory schedule on Canvas before coming in.</p>
-<p>Read the <a href="https://canvas.sydney.edu.au/courses/74353/pages/snail-collecting-competition">snail collection and care guide</a> before collecting anything. The current competition and prize details will be provided on Canvas.</p>
+<section id="snail-competition-reminder" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="snail-competition-reminder"><span class="header-section-number">3.2</span> Snail competition reminder</h3>
+<p>Snails?</p>
+<p><strong>Snails!</strong></p>
+<p>See the <a href="https://canvas.sydney.edu.au/courses/74353/pages/snail-collecting-competition">snail collecting competition</a> if you missed this announcement. If you are interested, you may take one or more containers and some gloves at the end of this practical, then do some nice “field” sampling in your own time.</p>
+</section>
+<section id="attendance" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="attendance"><span class="header-section-number">3.3</span> Attendance</h3>
+<p>Attendance will be taken towards the end of the practical. Please remind a demonstrator if it has not been recorded.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
