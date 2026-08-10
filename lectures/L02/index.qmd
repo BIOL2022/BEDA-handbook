@@ -15,20 +15,20 @@ title: "Week 2 — Sampling and modelling"
 
 
 ::: {.lecture-actions}
- **Wednesday: Modelling fundamentals — the linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Wednesday: Modelling fundamentals — the linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L02b-linear-model/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ```{=html}
-<iframe class="lecture-preview" src="https://biol2022.github.io/L02b-linear-model/" title="Preview of Modelling fundamentals lecture slides" loading="lazy" allowfullscreen></iframe>
+<iframe class="lecture-preview" src="https://biol2022.github.io/2026-lectures/lectures/L02b-linear-model/index.html" title="Preview of Modelling fundamentals lecture slides" loading="lazy" allowfullscreen></iframe>
 ```
 
 
 ::: {.lecture-actions}
- **Wednesday: (Almost) every statistical technique is a linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Wednesday: (Almost) every statistical technique is a linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L02c-all-linear-model/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ```{=html}
-<iframe class="lecture-preview" src="https://biol2022.github.io/L02c-all-linear-model/" title="Preview of Every statistical technique is a linear model lecture slides" loading="lazy" allowfullscreen></iframe>
+<iframe class="lecture-preview" src="https://biol2022.github.io/2026-lectures/lectures/L02c-all-linear-model/index.html" title="Preview of Every statistical technique is a linear model lecture slides" loading="lazy" allowfullscreen></iframe>
 ```
 
 ::: {.lecture-week-nav}
