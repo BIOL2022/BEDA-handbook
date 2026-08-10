@@ -787,28 +787,30 @@ weekly_mobile_week_lines <- function(entry) {
   practical_title <- if (is.null(practical_entry)) {
     "—"
   } else {
-    title <- if (identical(tolower(trimws(practical_entry$title)), "no practical")) {
-      "No practical"
-    } else {
-      "Open"
-    }
+    is_no_practical <- identical(
+      tolower(trimws(practical_entry$title)),
+      "no practical"
+    )
+    has_practical_url <- !is.null(practical_entry$url) &&
+      nzchar(practical_entry$url)
+    title <- if (is_no_practical) "No practical" else "Open"
     visible_title <- escape_html_text(title)
-    destination <- if (
-      is.null(practical_entry$url) || !nzchar(practical_entry$url)
-    ) {
+    destination <- if (has_practical_url) {
+      sprintf(
+        '<a class="weekly-mobile-practical-link" href="%s">%s</a>',
+        escape_html_attribute(practical_entry$url),
+        visible_title
+      )
+    } else if (is_no_practical) {
       paste0(
         '<span class="weekly-mobile-practical-label">',
         visible_title,
         "</span>"
       )
     } else {
-      sprintf(
-        '<a class="weekly-mobile-practical-link" href="%s">%s</a>',
-        escape_html_attribute(practical_entry$url),
-        visible_title
-      )
+      ""
     }
-    practical_icon <- if (identical(title, "No practical")) {
+    practical_icon <- if (is_no_practical) {
       ""
     } else {
       '<span class="weekly-mobile-practical-icon" aria-hidden="true"></span>'
