@@ -1,0 +1,15 @@
+---
+title: "Module 2 timeline changelog"
+number-sections: false
+toc: false
+---
+
+Return to the [Module 2 timeline](202-timeline.qmd).
+
+## 9 August 2026
+
+- Made a schedule correction to use the 2026 dates and submission deadline.
+- Replaced the previous timeline with a three-column table that separates timetabled work from preparation before the next session.
+- Clarified Week 6 project work, with no structured practical activity.
+- Brought the group data file and individual report components together in the Week 8 submission guidance.
+- Added an accessible current-position marker for the rendered timeline.
