@@ -1,0 +1,12 @@
+project:
+  type: default
+  output-dir: _word
+  render:
+    - module02/201-intro.qmd
+
+subtitle: "Module 2 · introduction"
+
+format:
+  docx:
+    reference-doc: word/beda-reference.docx
+    highlight-style: none

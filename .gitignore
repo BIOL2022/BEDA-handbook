@@ -24,6 +24,7 @@
 /.quarto/
 _book/
 _site/
+/_word/
 
 # Temporary files
 # --------------

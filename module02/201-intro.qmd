@@ -10,7 +10,9 @@ I think one of the most exciting things about being a biologist is discovering h
 My message is: whether you are doing this unit just because you have to, or because you are interested – take heart! I never did anything much more complicated than a *t*-test even during my PhD. But now I LOVE designing experiments and grappling with data. It can be frustrating at first, especially if you are time-poor and just want to get the job done. It can be infuriating. It can also be fun (yes – fun!). Most of all it’s incredibly satisfying and extraordinarily useful. 
 So, persist, try your best, and ask for help if you need it.
 
+::: {custom-style="BEDA Callout"}
 [**Please remember we want you to learn this stuff.**]{style="color: firebrick; font-size: 125%;"}
+:::
 
 No question you ask is EVER silly! 
 So ask for help any time. 
@@ -44,5 +46,6 @@ This assessment requires two separate submissions in Canvas:
 - Should you want feedback beyond this, please reflect on your report and write a summary of how your report compares to the best one, addressing each of the marking criteria. Once you’ve done that, please email me to request an appointment, attaching your summary to the email message. BUT please note that because of the large class size, I may not be able to meet with everyone who wants to. As I am sure you will appreciate, I will give priority to any students with low/fail marks.
 
 
-<!-- \includepdf[pages=1-3, landscape=false, pagecommand={\thispagestyle{plain}}]{assets/timeline_v3.pdf}  -->
-\includepdf[pages=1-3, landscape=false]{assets/timeline_v3.pdf} 
+::: {.content-visible unless-format="docx"}
+\includepdf[pages=1-3, landscape=false]{assets/timeline_v3.pdf}
+:::
