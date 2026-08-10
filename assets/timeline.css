@@ -361,12 +361,18 @@ main.content section.level2.section-rail > h2 {
   width: 1.25rem;
 }
 
-#weekly-content tbody tr:not(:has(.semester-break-row)) td:nth-child(3):not(:has(> a)):not(:has(> .weekly-practical-link)) {
+#weekly-content tbody tr:not(:has(.semester-break-row)) td:nth-child(3):not(:has(> a)):not(:has(> .weekly-practical-link)):not(:has(> .weekly-practical-no-session)) {
   color: #005ea8;
   font-size: 0;
 }
+#weekly-content td:nth-child(3) > .weekly-practical-no-session {
+  color: #005ea8;
+  display: inline-block;
+  font-size: 0.95em;
+  padding: 0.35rem 0.5rem;
+}
 
-#weekly-content tbody tr:not(:has(.semester-break-row)) td:nth-child(3):not(:has(> a)):not(:has(> .weekly-practical-link))::before {
+#weekly-content tbody tr:not(:has(.semester-break-row)) td:nth-child(3):not(:has(> a)):not(:has(> .weekly-practical-link)):not(:has(> .weekly-practical-no-session))::before {
   background-color: currentColor;
   content: "";
   display: inline-block;

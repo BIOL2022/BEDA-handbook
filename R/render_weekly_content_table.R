@@ -658,11 +658,14 @@ practical_cell_line <- function(
   }
 
   if (!html_output) {
+    if (identical(tolower(trimws(practical$title)), "no practical")) {
+      return("  - No practical")
+    }
     if (is.null(practical$url) || !nzchar(practical$url)) {
       return("  - Practical session")
     }
 
-    return(sprintf("  - [Open Week %s practical](%s)", week, practical$url))
+    return(sprintf("  - [Open](%s)", practical$url))
   }
 
   label <- if (includes_workshop) {
@@ -681,11 +684,14 @@ practical_cell_line <- function(
     paste0(practical$title, " — starts with ", workshop$title)
   }
   accessible_label <- label
-  link_label <- paste0("Open Week ", week, " practical")
+  link_label <- "Open"
   label <- escape_html_attribute(accessible_label)
   title <- escape_html_attribute(title_text)
 
   if (is.null(session_entry$url) || !nzchar(session_entry$url)) {
+    if (identical(tolower(trimws(practical$title)), "no practical")) {
+      return("  - [No practical]{.weekly-practical-no-session}")
+    }
     return(paste0(
       "  - [Practical session]",
       '{.weekly-practical-link .weekly-practical-link-static role="img" ',
@@ -781,7 +787,11 @@ weekly_mobile_week_lines <- function(entry) {
   practical_title <- if (is.null(practical_entry)) {
     "—"
   } else {
-    title <- paste("Open Week", entry$week, "practical")
+    title <- if (identical(tolower(trimws(practical_entry$title)), "no practical")) {
+      "No practical"
+    } else {
+      "Open"
+    }
     visible_title <- escape_html_text(title)
     destination <- if (
       is.null(practical_entry$url) || !nzchar(practical_entry$url)
@@ -798,9 +808,14 @@ weekly_mobile_week_lines <- function(entry) {
         visible_title
       )
     }
+    practical_icon <- if (identical(title, "No practical")) {
+      ""
+    } else {
+      '<span class="weekly-mobile-practical-icon" aria-hidden="true"></span>'
+    }
     paste0(
       '<span class="weekly-mobile-practical-entry">',
-      '<span class="weekly-mobile-practical-icon" aria-hidden="true"></span>',
+      practical_icon,
       destination,
       "</span>"
     )
