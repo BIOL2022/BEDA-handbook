@@ -1,202 +1,216 @@
 ---
 title: "**Week 2**: Study design"
+comments:
+  hypothesis: true
+# body-classes: manual-page
+toc: true
+toc-location: left
+toc-depth: 3
+number-sections: true
+number-depth: 3
 ---
 
-[Return to weekly content](../index.qmd#weekly-content)
 
-## What you need this week
 
-- [Workshop 2: Tidy data](w02-tidy-data.qmd)
-- [Intertidal site images](105-images.qmd)
-- [Species identification guide](106-species-id.qmd)
+## Introduction {.unnumbered}
 
-## Introduction
+Today we focus on **study design and sampling**. You will work in groups of at least four students to agree on a clear plan for collecting data in the next practical.
 
-Today we will be focusing on data collection and how to prepare your data for analysis.
-**You will be working in groups of at least 4 students in this practical.**
+**Spend 2 to 3 minutes now looking at the image below.** What do you see? If you notice something, how would you propose to measure it? If there are things that you need to identify, how would you go about doing that? Logistical questions like these are the first step in designing a study and help determine whether data can be collected reliably and consistently.
 
-### Things to prepare
-1. [**Review Lecture 2a**](https://biol2022.github.io/L02a-represenative-sampling/). These cover key ideas for today’s practical. If you missed the lecture, please read through the material beforehand so you are prepared (it beats doing nothing and waiting for the demonstrator to catch up with you).
-2. **Lab notebook**. You received a blank notebook in Week 1. Use it to jot down your observations, models, and data collection. This will help you keep track of your work. *Note: it’s not compulsory, but good practice.* 
-3. **A computer** with spreadsheet software (such as Excel, Google Sheets, or Numbers) and the statistical software of your choice. You can use your own laptop or a lab computer. iPads are fine if you plan to use R, but make sure you know how to use Posit Cloud.
+![An image from the Eindhoven Wildflower Dataset, Schouten, Michielsen & Gravendeel (2024), DataverseNL, DOI https://doi.org/10.34894/U4VQJ6; licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/.](assets/urban-wildflowers.jpg){fig-alt="Top-down view of a woodland floor covered by divided green foliage, scattered white nodding flowers, and brown leaf litter; no scale or quadrat is visible."}
 
-### Learning outcomes
+### Things to prepare {.unnumbered}
+
+1. [**Review Lecture 2a**](https://biol2022.github.io/2026-lectures/lectures/L02a-representative-sampling/index.html). It covers key ideas for today's practical. If you missed the lecture, please read through it beforehand so you are prepared.
+2. <i class="bi bi-journal-text me-1" aria-hidden="true"></i> **Lab notebook**. Use it to jot down your observations, models, and data-collection decisions. This will help you keep track of your work.
+3. **A laptop computer** with Jamovi and/or RStudio installed.
+4. Have a look through the [study-design guide](https://docs.google.com/document/d/1JhSevrzpLlDsD0a4225h_dcC4i5ZOII7dkTr8u4gCgs/edit#heading=h.rc1vfwuebyac). You will use it in the practical as a scaffold.
+5. **Quick links:** [Intertidal site images](105-images.qmd) and [Species identification guide](106-species-id.qmd).
+
+::: {.callout-note appearance="simple"}
+### Download the Week 2 image sets {.unnumbered}
+
+This is optional, but you may download these files and unzip them if you want to work offline.
+
+- [Download **Week 2 Site 1 photos (ZIP)**](https://canvas.sydney.edu.au/courses/74353/files/51851648/download?download_frd=1)
+- [Download **Week 2 Site 2 photos (ZIP)**](https://canvas.sydney.edu.au/courses/74353/files/51851649/download?download_frd=1)
+
+If the links do not work, you can also download the files from [Canvas - Module Content and Resources](https://canvas.sydney.edu.au/courses/74353/pages/biol2022-module-content-and-resources).
+:::
+
+### Learning outcomes {.unnumbered}
 
 By the end of this practical, you should be able to:
 
-- [ ] Formulate a model and hypothesis based on observations.
-- [ ] Design a study to test your model.
-- [ ] Enter data in a manner that improves redundancy (using a notebook) and is also **tidy** in preparation for analysis.
-- [ ] Understand the importance of tidy data.
-
-### What to submit
-1. **A (simple) study design** based on your observations of the photos provided, documented on Google Docs. This will be sighted by a Demonstrator during the practical before you can proceed to the next exercise.
-2. **Data in the form of a tidy spreadsheet** -- your collected data will need to be submitted to Google Drive. This submission is not a formal assessment (it is not graded), but it is essential for the next practical, so please make sure you submit it.
-
-## Workshop
-The Week 2 workshop linked above will go through **Tidy data principles**. Tidy data is a way of structuring your data so that it is easy to work with and analyse. It is a key principle in data analysis and will help you avoid common pitfalls when working with data.
+::::: {.learning-outcomes-table}
+| Learning outcome | How you will practise it |
+|---|---|
+| Develop a simple, testable **study design** from observations. | Use observations of the intertidal images to identify response and predictor **variables**, write a biological question and hypothesis, and sketch the expected relationship. |
+| Apply a **standardised** measurement protocol to image-based data. | Use the physical quadrat shown in each image to define a consistent area for measurement, choose a counting or measurement rule, and apply it **consistently**. |
+| Design a **defensible** sampling scheme. | Use the study-design guide to define the target population and sampling frame, independent image-level replicates, and a selection method that reduces bias and pseudoreplication. |
+| Communicate a reproducible sampling plan for group data collection. | Agree on one group scheme, then write it clearly in your <i class="bi bi-journal-text me-1" aria-hidden="true"></i> notebook and upload a photo as a handoff for next week. |
+::::
 
 
-## Exercise 1 -- Modelling from observations
+## A sampling primer
+
+In this short workshop, we will explore how to sample data from a site using images. You will consider counts, presence or absence, cover, and other measurements.
+
+We will open a brainstorming document for this exercise and share it with the class. Please contribute your ideas so that everyone can benefit from them.
+
+Look at the four images below, two from **Site 1** and two from **Site 2**. Each photograph contains a [quadrat](https://en.wikipedia.org/wiki/Quadrat). Its interior defines the area you score or measure.
 
 
-### Background
-Images are commonly used to quantify patterns in biology, from molecules to ecosystems. In ecology, for instance, satellite images and aerial photographs are used in some ecological studies to quantify patterns of distribution and abundances of animals and plants across habitats. 
+:::::: {layout-ncol=2}
 
-Here you will explore experimental design, model formulation and data analysis by collecting data from available images and use both evidence and logic to work out how to explain the patterns you observe.
+![Image A01, Site 1.](assets/site01/IMG_0179.jpeg){fig-alt="A square white quadrat frame resting on a dry, light-brown rock surface scattered with many small pale cone-shaped shells and some darker rounded shells gathered in the lower areas."}
 
-**Work in groups** -- You will be working in groups of 3-4 students. Your task is to **observe** the images provided and formulate a **model** that explains the patterns you observe. You will then create a **study design** that will allow you to test your model. 
+![Image A02, Site 1.](assets/site01/IMG_0577.jpeg){fig-alt="A square white quadrat frame on a rough, dry, light-brown rock with a small shallow wet pool in the lower section; the surface is dotted with small pale cone-shaped shells and a few dark smooth dome-shaped shells."}
 
-Remember, the best models are often the simplest. Focus on logical and critical thinking when designing your study. **The sampling design certainly the bigger focus here in this short exercise.** Keep this in mind as you work through the exercise!
+![Image B01, Site 2.](assets/site02/IMG_0889.jpeg){fig-alt="A square white quadrat frame on a dry, rough, light-brown rock surface covered with many small pale cone-shaped shells and tiny dark bumps."}
+
+![Image B02, Site 2.](assets/site02/IMG_1121.jpeg){fig-alt="A square white quadrat frame on a dry, rough, light-brown rock surface scattered with many small pale cone-shaped shells."}
+
+::::::
+
+Let's say we want to quantify the number, proportion, or cover of *something* in the images, either to compare the two sites or to describe a pattern across all the images.
+
+**How would you start measuring?** As a class, let's discuss:
+
+- what is measurable in the images;
+- what logistical constraints we need to consider when working with images; and
+- how to measure consistently across images and sites, with different members of your group.
+
+### Try different measurements (10 min)
+
+In your group, split into pairs and pick one site per pair. Can you come up with a **repeatable measurement rule** for each of the following options?
+
+- **Count**. Identify and record how many visible units there are inside each image.
+- **Presence/absence**. Record whether a variable is present (`1`) or absent (`0`).
+- **Continuous measurement**. Measure a variable such as shell length, but only when the image includes a scale or other standardised reference. Is there one?
+
+For each option, use your <i class="bi bi-journal-text me-1" aria-hidden="true"></i> notebook to write what you would measure and the rule you would use. **You do not need to perform the measurements yet.** Your protocol should be clear enough for someone else to follow it and get the same results. In other words, it should be reproducible.
+
+For example, for a count:
+
+1. Identify what you are counting (e.g., a species, a type of shell, or a substrate).
+2. Define what counts as one unit (e.g., a single shell, a cluster of shells, or a patch of substrate).
+3. Decide how to handle ambiguous cases (e.g., partially visible shells, overlapping shells, or shells that are too small to identify).
+4. Count all units that meet your criteria within the quadrat area of the image. Or decide to count only a subset of the quadrat area.
+
+Other useful options include the following, although we will not work through them today.
+
+- **Percent cover**. Estimate the proportion of the quadrat area occupied by a focal species or substrate, for example using a grid or point-intercept rule.
+- **Frequency across sub-quadrats**. Divide the quadrat into smaller cells and record in how many cells the focal variable appears.
+- **Density**. Count individuals and report the number per unit area, for example per quadrat.
+- **Richness**. Count how many different taxa or types are visible within the quadrat.
+- **Ordinal score**. Assign a standardised category, such as low, medium, or high cover, using predefined thresholds.
+- **Condition score**. Record a reproducible state metric, such as intact or damaged, or alive or dead if clearly identifiable.
+- **Spatial position**. Record the coordinates of observations within the quadrat to analyse clustering or dispersion.
 
 
-::: callout-important
-Do not proceed to Exercise 2 until you have completed this exercise, and a Demonstrator has sighted your study design.
-:::
 
-### Getting started
 
-You are provided with random, representative, replicate photographs of a common marine habitat that spans > 8,000 km of the Great Southern Reef, i.e. the coastline along the bottom half of Australia -- intertidal rocky shores (Fig 1). 
+### Think about logistics (10 min)
 
-::: {.content-visible when-format="html"}
-Use the intertidal site images linked in **What you need this week**, which include background information.
-:::
+Now imagine collecting data from 40 such images in 20 minutes. How would you organise yourselves to be efficient and consistent? You will need to think about:
 
-::: {.content-visible when-format="pdf"}
+- what options do you have to collect and share data as a group,
+- how to ensure that you have sufficient sample size to answer your question, and
+- what to do when not everyone in your group is an expert at identifying species or measuring variables.
+
+**We will work on a brainstorming document together as a class. Please contribute your ideas to it.**
+
+## Practical
+
+Work in groups of four. You are now expected to independently observe a novel dataset, think about what looks interesting, and design a study to test a hypothesis. You will then agree on a **group sampling scheme** that you will use to collect data in the next practical.
+
+You are provided with representative photographs of a common marine habitat that spans more than 8,000 km of the Great Southern Reef, the coastline along the bottom half of Australia. These images are your actual data source.
+
+:::: {.content-visible when-format="html"}
+First, open the [intertidal site images](105-images.qmd) page. You need to read it to obtain relevant background information. Then look through the [species identification guide](106-species-id.qmd).
+:::::
+
+:::: {.content-visible when-format="pdf"}
 Please check the online Unit Manual for the link to the images. Your demonstrators will also be able to show you how to access the images.
-:::
-
-
-**Using these images and the species identification guide, formulate a model and a (testable) hypothesis. You will then think about what data you need to collect to test your hypothesis.** See below for further details.
-
-
-
-### Study design
-
-**Focus on the sampling design as you work on your model.** Keep this in mind as you work through the exercise. If overwhelmed, think simple -- the focus is on working through these sampling design considerations explained in this week's lectures:
-
-- Control
-- Replication
-- Randomisation
-
-
-Have a clear model in mind before collecting data. The model determines your sampling strategy and the type of data you need. Consider the following:
-
-- **What is the point of your model?** Think about the biological question you are trying to answer, and the kinds of data you need to collect to answer it. Remember that the model is a simplified representation of reality, so it should be as simple as possible while still capturing the essence of the question you are trying to answer.
-- Think of how you would collect data to test your model. **What are the variables you need to measure?** How would you measure them?
-- Scrutinise your images with the model in mind. **Can the data be collected representatively from the images?** Are there issues of replication or confounding variables that you need to consider?
-- Do you have the time and resources to complete the study in the time frame provided, i.e. by the end of next week?
-- What is your **backup plan** if data assumptions are not met? 
-
-While you may not have all the answers right away, it's important to have a rough idea of what you want to do, such as comparing groups, measuring correlation, or creating a linear model.
+::::
 
 ![The Great Southern Reef coastline around southern Australia. © 2021 California Academy of Sciences.](../assets/southern-reef-map.png){width=70% fig-alt="Map showing the Great Southern Reef coastline around southern Australia."}
 
-### Task
+Work through the exercises in order. **The best models are usually the simplest,** so don't make them complicated. We are working on the logistics of data collection and project management, so statistical analysis is secondary.
 
-A [Google Docs page](https://docs.google.com/document/d/1JhSevrzpLlDsD0a4225h_dcC4i5ZOII7dkTr8u4gCgs/edit#heading=h.rc1vfwuebyac) is available for you as a guide to record your responses. **On the document, select File > Download to save the file to use in your group.** Note that this document is a guide and you may choose to use a different format to record your progress.
+### Exercise: Observe and choose a measurement (10 min)
 
-Then, address your study design by answering the following questions:
+#### <i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Task 1 {.student-task}
 
-1. **Model and hypothesis**: What is your model and hypothesis? What are you trying to test and how will you test it? What would the plot look like?
-2. **Variables**: What are the variables you need to measure? What types of variables are they (e.g. continuous, categorical)?
-3. **Data collection**: How would you collect data to test your model? What are the potential issues you need to consider? 
+Look through the intertidal images. In your <i class="bi bi-journal-text me-1" aria-hidden="true"></i> notebook:
 
-::: {.callout-note}
-## Example
-Note that this example will probably not work for the images, but it should give you an idea of what is expected. Also note that you do not need to follow the template exactly!
-
-- **Project title:** Does rock size influence the number of species that can be found on a rocky shore?
-- **Group name**: Schist happens
-
-1. **Model and hypothesis**: 
-   - We hypothesise that the number of species on the rocky shore is positively correlated with the size of the rocks. 
-   - We will model the relationship between the number of species and the size of the rocks using a linear model.
-   - The plot is expected to be a scatter plot with the number of species on the y-axis and the size of the rocks on the x-axis.
-2. **Variables**: 
-   - We need to measure the number of species and the size of the rocks. 
-   - Number of species is an integer variable.
-   - Size of the rocks is continuous variable.
-3. **Sampling design, control, replication, randomisation**: 
-   - For each image, we will divide it into a 10x10 grid.
-   - 3 random quadrats will be selected from each grid.
-   - The size of all visible rocks will be measured in each quadrat.
-   - The number of unique species in each quadrat will also be counted.
-   - We will then calculate the average size of rocks and the average number of species for each image to minimise pseudoreplication.
-   - Possible confounding could arise from the presence of seaweed, which could affect the number of species present.
-   - If the number of species is too high to count, we will group species into functional groups and count the number of functional groups instead.
-4. **Backup plan**: 
-   - If the assumptions of the linear model are not met, we will transform the data, otherwise we will attempt a non-linear model.
-
-:::
+1. Write **two direct observations**. These should be things you can see, stated as facts.
+2. Base on the observations, write **one biological question** that you could answer with a simple study design.
+3. Write the hypothesis to idenfity the variable(s) that you will need to answer your questions (it can be a form of a question or plot)
+4. In one sentence, describe how you would measure the variable(s), and include units if feasible. A a quick example, you might write "... will measure the length of each shell in mm and record the site for that measurement..." for a model that associates shell length with site. 
 
 
-## Exercise 2 -- data entry
+### Exercise: Write the study design (15 min)
 
-It is time to sample data from the images. While doing so, consider how you might minimise bias in your sampling. Also, if have not already done so, plan for time: 
+#### <i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Task 2 {.student-task}
 
-- How long will it take to sample data from each image?
-- How many images will you sample from?
-- How many samples will you take from each image?
+Open the [study-design guide](https://docs.google.com/document/d/1JhSevrzpLlDsD0a4225h_dcC4i5ZOII7dkTr8u4gCgs/edit#heading=h.rc1vfwuebyac) and work through it with your group. Use the guide as a scaffold, then write your final design in your <i class="bi bi-journal-text me-1" aria-hidden="true"></i> notebook.
 
-**Enter your data into a spreadsheet as soon as you have them.** You can use any spreadsheet software you like (e.g. Excel, Google Sheets, Numbers). Google Sheets is easiest if everyone in your group is sampling and entering data at the same time as it is easy to set up a shared spreadsheet, but you may also share the same computer and enter data one at a time.
+As you work through the guide, you may need to do some literature review or research to work out how to carry out parts of your design. For example, you may do a quick Google search to find out how to measure the cover of a species or identify a species from a photo. You may also need to check the [species identification guide](106-species-id.qmd) for help.
 
-:::{.callout-important}
+Your design should state:
 
-## Discuss
-If more than one person is entering data, will it influence the results? Why or why not? Think about how you can reduce the impact of this.
-:::
+- the biological question;
+- the response and predictor variables;
+- the expected pattern or hypothesis;
+- a sketch of the expected relationship, with the response variable on the y-axis and the predictor variable on the x-axis;
+- the measurement and uncertainty rules; and
+- the population, sampling unit, and selection method.
 
+This is where your demonstrators can help you refine your ideas. They will make time to visit each group.
 
-::: {.callout-note}
+### Exercise: Finalise and share the sampling scheme (30 min)
 
-## Optional: tidy your data
-To make your life easier, *recall* the [tidy data principles](https://r4ds.had.co.nz/tidy-data.html) outlined in the workshop:
+Do you have a clear plan for collecting data in the next practical? Is there a protocol written down so that everyone in your group can follow it? If not, you need to work on it now.
 
-1. Each variable must have its own column.
-2. Each observation must have its own row.
-3. Each value must have its own cell. 
+#### <i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Task 3 {.student-task}
 
-The table below is tidy:
+Discuss your individual designs and ideas, then agree on **one group sampling scheme**. Decide how to share the work so everyone can read and contribute to the protocol and data. Will you use a shared Google Sheet, or will you collect data in your own notebooks and combine it later?
 
-| Person | Treatment | Count |
-|---|---|---:|
-| John | A | 5 |
-| Mary | A | 3 |
-| Jane | A | 2 |
-| John | B | 6 |
-| Mary | B | 4 |
-| Jane | B | 5 |
+Your group must agree on:
 
-: Table 1. Tidy data.
+- which images or image set you will sample;
+- what counts as one independent replicate;
+- how images or parts of images will be selected to be representative;
+- how the measurement and uncertainty rules will be implemented; and
+- who will do what before the next practical.
 
-The table below is not (although it may look "better” to you). Why?
+### Bonus (if you finish early)
 
-| Person | Treatment A | Treatment B |
-|---|---:|---:|
-| John | 5 | 6 |
-| Mary | 3 | 4 |
-| Jane | 2 | 5 |
+Can you analyse your data? Use your group's study design and have a go at plotting and modelling it in Jamovi or RStudio before you collect any real data.
 
-: Table 2. Non-tidy data. Treatment A and B represent the same variable (count).
+1. Open Jamovi or RStudio and open your group's shared data file. Create a new data file if you have not started one yet.
+2. Using the variables you have planned, add some made-up values. They do not need to be realistic, but keep them consistent with the measurement rules you have defined. For example, do not enter a negative value for a count.
+3. Try making the plot you expect to use when you collect the data. Do the made-up values work well enough to produce the plot?
 
+This is a useful way to check whether your data sheet is ready for analysis and whether you can produce the plot you have in mind. If you cannot make the plot, go back and adjust the data sheet or your study design.
 
-Note: tidy data will reduce the amount of time you spend cleaning your data during data analysis, but you can also choose not to follow these principles if you prefer.
+## End of practical notes
 
-:::
+### Preview group projects
 
-## Submit your data
+Next week you will be choosing a project to work on until Week 8. Please check Ed Discussion for an announcement about the projects and how to sign up.
 
-Submit your data to [Google Drive](https://drive.google.com/drive/folders/1rDyHyzgTVWUmPEzNte0F1CgVb3_Eitlk?usp=drive_link) as an Excel file.
- **Your group will be using this data next week so make sure that we have it!**
+### Snail competition reminder
 
+Snails?
 
-## End of practical
+**Snails!**
 
-Don't forget to submit your data! You should also start to look at the [projects available for Report 1](../module02/203-projects.qmd), as you will sign up for one of them **next week** to work on Report 1.
+See the [snail collecting competition](https://canvas.sydney.edu.au/courses/74353/pages/snail-collecting-competition) if you missed this announcement. If you are interested, you may take one or more containers and some gloves at the end of this practical, then do some nice "field" sampling in your own time.
 
-## Snail competition reminder
+### Attendance
 
-The BIOL2022 snail-collecting competition remains open until the end of Week 4. You can return snails on any day the BIOL2022 laboratories are running, so check the current laboratory schedule on Canvas before coming in.
-
-Read the [snail collection and care guide](https://canvas.sydney.edu.au/courses/74353/pages/snail-collecting-competition) before collecting anything. The current competition and prize details will be provided on Canvas.
+Attendance will be taken towards the end of the practical. Please remind a demonstrator if it has not been recorded.

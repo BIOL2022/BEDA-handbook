@@ -658,11 +658,19 @@ practical_cell_line <- function(
   }
 
   if (!html_output) {
+    if (identical(tolower(trimws(practical$title)), "no practical")) {
+      return("  - No practical")
+    }
     if (is.null(practical$url) || !nzchar(practical$url)) {
-      return("  - Practical session")
+      return(paste0(
+        "  - [Practical session]",
+        '{.weekly-practical-link .weekly-practical-link-static role="img" ',
+        'aria-label="Week ', week, ' practical session" title="',
+        escape_html_attribute(practical$title), '"}'
+      ))
     }
 
-    return(sprintf("  - [Practical session](%s)", practical$url))
+    return(sprintf("  - [Open](%s)", practical$url))
   }
 
   label <- if (includes_workshop) {
@@ -681,10 +689,14 @@ practical_cell_line <- function(
     paste0(practical$title, " — starts with ", workshop$title)
   }
   accessible_label <- label
+  link_label <- "Open"
   label <- escape_html_attribute(accessible_label)
   title <- escape_html_attribute(title_text)
 
   if (is.null(session_entry$url) || !nzchar(session_entry$url)) {
+    if (identical(tolower(trimws(practical$title)), "no practical")) {
+      return("  - [No practical]{.weekly-practical-no-session}")
+    }
     return(paste0(
       "  - [Practical session]",
       '{.weekly-practical-link .weekly-practical-link-static role="img" ',
@@ -693,7 +705,7 @@ practical_cell_line <- function(
   }
 
   paste0(
-    "  - [", escape_markdown_label(accessible_label), "](",
+    "  - [", escape_markdown_label(link_label), "](",
     session_entry$url, ' "', title, '")'
   )
 }
@@ -780,26 +792,37 @@ weekly_mobile_week_lines <- function(entry) {
   practical_title <- if (is.null(practical_entry)) {
     "—"
   } else {
-    title <- paste("Open Week", entry$week, "practical")
+    is_no_practical <- identical(
+      tolower(trimws(practical_entry$title)),
+      "no practical"
+    )
+    has_practical_url <- !is.null(practical_entry$url) &&
+      nzchar(practical_entry$url)
+    title <- if (is_no_practical) "No practical" else "Open"
     visible_title <- escape_html_text(title)
-    destination <- if (
-      is.null(practical_entry$url) || !nzchar(practical_entry$url)
-    ) {
+    destination <- if (has_practical_url) {
+      sprintf(
+        '<a class="weekly-mobile-practical-link" href="%s">%s</a>',
+        escape_html_attribute(practical_entry$url),
+        visible_title
+      )
+    } else if (is_no_practical) {
       paste0(
         '<span class="weekly-mobile-practical-label">',
         visible_title,
         "</span>"
       )
     } else {
-      sprintf(
-        '<a class="weekly-mobile-practical-link" href="%s">%s</a>',
-        escape_html_attribute(practical_entry$url),
-        visible_title
-      )
+      ""
+    }
+    practical_icon <- if (is_no_practical) {
+      ""
+    } else {
+      '<span class="weekly-mobile-practical-icon" aria-hidden="true"></span>'
     }
     paste0(
       '<span class="weekly-mobile-practical-entry">',
-      '<span class="weekly-mobile-practical-icon" aria-hidden="true"></span>',
+      practical_icon,
       destination,
       "</span>"
     )
