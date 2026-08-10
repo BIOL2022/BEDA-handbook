@@ -341,10 +341,13 @@ main.content section.level2.section-rail > h2 {
   border-radius: 0.25rem;
   color: #005ea8;
   display: inline-flex;
-  font-size: 0;
-  justify-content: center;
+  font-size: 0.95em;
+  gap: 0.45rem;
+  justify-content: flex-start;
+  line-height: 1.3;
   min-height: 2.5rem;
   min-width: 2.5rem;
+  padding: 0.35rem 0.5rem;
   text-decoration: none;
 }
 

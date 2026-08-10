@@ -5,7 +5,7 @@ week,section,position,title,url,description,show_on_schedule,note_type,note_weig
 1,extra,2,Quiz 1,https://canvas.sydney.edu.au/courses/74353/assignments/696323,,TRUE,quiz,
 1,extra,3,Snail-collecting competition: prizes to be won,https://canvas.sydney.edu.au/courses/74353/pages/snail-collecting-competition,,TRUE,notice,
 2,lecture,1,Sampling and the linear model,lectures/L02/index.qmd,Randomisation and why we teach the linear model first,TRUE,,
-2,practical,1,Study design,,,TRUE,,
+2,practical,1,Study design,module01/103-week02.qmd,,TRUE,,
 2,extra,1,Common statistical tests are linear models,https://lindeloev.github.io/tests-as-linear/,,TRUE,resource,
 2,extra,2,Quiz 2,,,TRUE,quiz,
 3,lecture,1,Choosing the right model(s),lectures/L03/index.qmd,The easy way to validate model assumptions.,TRUE,,

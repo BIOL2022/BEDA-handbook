@@ -662,7 +662,7 @@ practical_cell_line <- function(
       return("  - Practical session")
     }
 
-    return(sprintf("  - [Practical session](%s)", practical$url))
+    return(sprintf("  - [Open Week %s practical](%s)", week, practical$url))
   }
 
   label <- if (includes_workshop) {
@@ -681,6 +681,7 @@ practical_cell_line <- function(
     paste0(practical$title, " — starts with ", workshop$title)
   }
   accessible_label <- label
+  link_label <- paste0("Open Week ", week, " practical")
   label <- escape_html_attribute(accessible_label)
   title <- escape_html_attribute(title_text)
 
@@ -693,7 +694,7 @@ practical_cell_line <- function(
   }
 
   paste0(
-    "  - [", escape_markdown_label(accessible_label), "](",
+    "  - [", escape_markdown_label(link_label), "](",
     session_entry$url, ' "', title, '")'
   )
 }
