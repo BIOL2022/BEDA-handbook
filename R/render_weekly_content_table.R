@@ -662,7 +662,12 @@ practical_cell_line <- function(
       return("  - No practical")
     }
     if (is.null(practical$url) || !nzchar(practical$url)) {
-      return("  - Practical session")
+      return(paste0(
+        "  - [Practical session]",
+        '{.weekly-practical-link .weekly-practical-link-static role="img" ',
+        'aria-label="Week ', week, ' practical session" title="',
+        escape_html_attribute(practical$title), '"}'
+      ))
     }
 
     return(sprintf("  - [Open](%s)", practical$url))

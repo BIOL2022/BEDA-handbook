@@ -394,6 +394,10 @@ main.content section.level2.section-rail > h2 {
   outline-offset: 2px;
 }
 
+.weekly-practical-link-static {
+  font-size: 0;
+}
+
 .weekly-practical-link-static:hover {
   background: transparent;
 }
