@@ -1,16 +1,15 @@
 ---
 title: "Week 2 — Sampling and modelling"
-draft: true
 ---
 
 
 
 ::: {.lecture-actions}
- **Tuesday: L02a What is a representative sample?** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Tuesday: L02a What is a representative sample?** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L02a-representative-sampling/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ```{=html}
-<iframe class="lecture-preview" src="https://biol2022.github.io/L02a-represenative-sampling/" title="Preview of What is a representative sample? lecture slides" loading="lazy" allowfullscreen></iframe>
+<iframe class="lecture-preview" src="https://biol2022.github.io/2026-lectures/lectures/L02a-representative-sampling/index.html" title="Preview of What is a representative sample? lecture slides" loading="lazy" allowfullscreen></iframe>
 ```
 
 
