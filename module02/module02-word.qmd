@@ -1,0 +1,24 @@
+---
+title: "BIOL2022: Biology Experimental Design and Analysis"
+subtitle: "Unit Handbook · Semester 2 · 2026"
+author:
+  - Dr. Januar Harianto
+  - Prof. Clare McArthur
+  - Prof. Matthew Crowther
+format:
+  docx:
+    highlight-style: none
+    reference-doc: ../word/beda-reference.docx
+---
+
+{{< pagebreak >}}
+
+# Introduction to Module 2
+
+{{< include ../_partials/module02-intro.qmd >}}
+
+{{< pagebreak >}}
+
+# Module 2 timeline
+
+{{< include ../_partials/module02-timeline.qmd >}}

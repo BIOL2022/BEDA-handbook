@@ -1,0 +1,30 @@
+---
+format:
+  docx:
+    reference-doc: beda-reference.docx
+    highlight-style: none
+---
+
+::: {custom-style="MockupCentredTitle"}
+BIOL2022
+:::
+
+::: {custom-style="MockupCentredTitle"}
+Biology Experimental Design and Analysis
+:::
+
+::: {custom-style="MockupCentredTitle"}
+Unit Handbook
+:::
+
+::: {custom-style="MockupCentredTitle"}
+Dr. Januar Harianto · Prof. Clare McArthur · Prof. Matthew Crowther
+:::
+
+::: {custom-style="MockupCentredTitle"}
+Semester 2 · 2026
+:::
+
+{{< pagebreak >}}
+
+{{< include ../_partials/module02-word-sample.qmd >}}

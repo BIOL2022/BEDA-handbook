@@ -2,9 +2,7 @@ project:
   type: default
   output-dir: _word
   render:
-    - module02/201-intro.qmd
-
-subtitle: "Module 2 · introduction"
+    - module02/module02-word.qmd
 
 format:
   docx:

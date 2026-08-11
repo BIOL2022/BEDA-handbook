@@ -1,0 +1,33 @@
+---
+format:
+  docx:
+    reference-doc: beda-reference.docx
+    highlight-style: none
+filters:
+  - docx-mockup-table.lua
+---
+
+::: {custom-style="MockupLeftTitle"}
+BIOL2022 Biology Experimental Design and Analysis
+:::
+
+::: {custom-style="MockupLabel"}
+Collaborative review copy
+:::
+
+::: {.mockup-info-table}
+
+| Field | Detail |
+|---|---|
+| Unit code | BIOL2022 |
+| Unit title | Biology Experimental Design and Analysis |
+| Format | Unit Handbook |
+| Semester | Semester 2 · 2026 |
+| Authors | Dr. Januar Harianto; Prof. Clare McArthur; Prof. Matthew Crowther |
+| Status | Draft for collaborative review |
+
+:::
+
+{{< pagebreak >}}
+
+{{< include ../_partials/module02-word-sample.qmd >}}

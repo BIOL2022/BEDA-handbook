@@ -19,8 +19,12 @@ timeline_css_path <- file.path(project_root, "assets", "timeline.css")
 filter_path <- file.path(project_root, "filters", "module2-timeline-typst.lua")
 typst_partial_path <- file.path(project_root, "typst", "module2-timeline", "typst-show.typ")
 generator_path <- file.path(project_root, "scripts", "make_timeline_pdf.R")
+page_partial_path <- file.path(project_root, "_partials", "module02-timeline-page.qmd")
+intro_partial_path <- file.path(project_root, "_partials", "module02-intro.qmd")
+intro_path <- file.path(project_root, "module02", "201-intro.qmd")
+word_wrapper_path <- file.path(project_root, "module02", "module02-word.qmd")
 
-stopifnot(file.exists(partial_path), file.exists(changelog_path))
+stopifnot(file.exists(partial_path), file.exists(page_partial_path), file.exists(intro_partial_path), file.exists(word_wrapper_path), file.exists(changelog_path))
 
 partial <- read_source(partial_path)
 html <- read_source(html_path)
@@ -30,12 +34,30 @@ timeline_css <- read_source(timeline_css_path)
 typst_filter <- read_source(filter_path)
 typst_partial <- read_source(typst_partial_path)
 generator <- read_source(generator_path)
+page <- read_source(page_partial_path)
+intro <- read_source(intro_path)
+intro_partial <- read_source(intro_partial_path)
+word <- read_source(word_wrapper_path)
 partial_plain <- gsub("[[:space:]|]+", " ", partial)
 
-include <- "{{< include ../_partials/module02-timeline.qmd >}}"
-stopifnot(sum(gregexpr(include, html, fixed = TRUE)[[1]] > 0L) == 1L)
-stopifnot(sum(gregexpr(include, pdf, fixed = TRUE)[[1]] > 0L) == 1L)
-stopifnot(grepl("semester-status\\.js", html), !grepl("semester-status\\.js", pdf))
+table_include <- "{{< include ../_partials/module02-timeline.qmd >}}"
+page_include <- "{{< include ../_partials/module02-timeline-page.qmd >}}"
+intro_include <- "{{< include ../_partials/module02-intro.qmd >}}"
+stopifnot(sum(gregexpr(page_include, html, fixed = TRUE)[[1]] > 0L) == 1L)
+stopifnot(sum(gregexpr(table_include, pdf, fixed = TRUE)[[1]] > 0L) == 1L)
+stopifnot(grepl("semester-status\\.js", page), !grepl("semester-status\\.js", pdf))
+
+# Word wrapper carries metadata-free intro + schedule-table bodies and no web-only page assembly.
+stopifnot(sum(gregexpr(intro_include, word, fixed = TRUE)[[1]] > 0L) == 1L)
+stopifnot(sum(gregexpr(table_include, word, fixed = TRUE)[[1]] > 0L) == 1L)
+stopifnot(!grepl(page_include, word, fixed = TRUE))
+stopifnot(!grepl("semester-status\\.js", word))
+
+# Intro shell keeps the metadata; the shared body partial is metadata-free.
+stopifnot(sum(gregexpr(intro_include, intro, fixed = TRUE)[[1]] > 0L) == 1L)
+stopifnot(startsWith(intro, "---"))
+stopifnot(!startsWith(intro_partial, "---"))
+stopifnot(grepl("## Preamble", intro_partial, fixed = TRUE))
 stopifnot(grepl("papersize: a4", pdf, fixed = TRUE))
 stopifnot(grepl("pdf-standard: ua-1", pdf, fixed = TRUE))
 stopifnot(grepl("../filters/module2-timeline-typst.lua", pdf, fixed = TRUE))
@@ -78,8 +100,8 @@ expected_support <- paste0(
   "**Equipment and technical help:** Contact the technical officer listed on Canvas ",
   "[here](https://canvas.sydney.edu.au/courses/74353/). Please include your project group name and practical time in your request."
 )
-stopifnot(grepl(expected_support, partial, fixed = TRUE))
-stopifnot(grepl("202-timeline-changelog\\.qmd", partial))
+stopifnot(grepl(expected_support, page, fixed = TRUE))
+stopifnot(grepl("202-timeline-changelog\\.qmd", page))
 stopifnot(grepl("202-timeline\\.qmd", changelog))
 
 resources <- c(
@@ -88,13 +110,16 @@ resources <- c(
   "[Practical resources](205-resources.qmd)",
   "[Report instructions](204-report1.qmd)"
 )
-positions <- vapply(resources, regexpr, integer(1), text = partial, fixed = TRUE)
+positions <- vapply(resources, regexpr, integer(1), text = page, fixed = TRUE)
 stopifnot(all(positions > 0L), identical(positions, sort(positions)))
 stopifnot(grepl("Submission deadline", partial, fixed = TRUE))
 stopifnot(grepl("Friday 25 September at 23:59", partial, fixed = TRUE))
 stopifnot(grepl("**Submission deadline**\n**Friday 25 September at 23:59**", partial, fixed = TRUE))
 
-for (hook in c("module2-timeline-meta", "module2-timeline-support", "module2-timeline-resources", "module2-timeline-deadline", "module2-timeline-table")) {
+for (hook in c("module2-timeline-meta", "module2-timeline-support", "module2-timeline-resources")) {
+  stopifnot(grepl(hook, page, fixed = TRUE))
+}
+for (hook in c("module2-timeline-deadline", "module2-timeline-table")) {
   stopifnot(grepl(hook, partial, fixed = TRUE))
 }
 stopifnot(grepl("module2-week-date", partial))
@@ -170,15 +195,17 @@ stopifnot(grepl("table.header", rendered_typst, fixed = TRUE))
 stopifnot(grepl("#module2-timeline-table[", rendered_typst, fixed = TRUE))
 stopifnot(!grepl("You are here", rendered_typst, fixed = TRUE))
 
-canonical_links <- c(
-  "https://biol2022.github.io/BEDA-handbook/module02/202-timeline-changelog.html",
-  "https://biol2022.github.io/BEDA-handbook/module02/201-intro.html",
-  "https://biol2022.github.io/BEDA-handbook/module02/203-projects.html",
-  "https://biol2022.github.io/BEDA-handbook/module02/205-resources.html",
-  "https://biol2022.github.io/BEDA-handbook/module02/204-report1.html"
+# Under the shell/partial split the schedule-table partial no longer carries the
+# navigation links; they live in the timeline-page partial and are rewritten by the
+# filter (exercised in isolation below). Verify the page partial still sources them.
+page_links <- c(
+  "202-timeline-changelog.qmd",
+  "201-intro.qmd",
+  "203-projects.qmd",
+  "205-resources.qmd",
+  "204-report1.qmd"
 )
-stopifnot(all(vapply(canonical_links, grepl, logical(1), x = rendered_typst, fixed = TRUE)))
-stopifnot(!grepl('.qmd")', rendered_typst, fixed = TRUE))
+stopifnot(all(vapply(page_links, grepl, logical(1), x = page, fixed = TRUE)))
 
 filter_cases_path <- tempfile(fileext = ".md")
 writeLines(

@@ -1,0 +1,17 @@
+:::: {.module2-timeline-meta}
+[Changelog](202-timeline-changelog.qmd) · Last updated 9 August 2026
+::::
+
+:::: {.module2-timeline-support}
+**Equipment and technical help:** Contact the technical officer listed on Canvas [here](https://canvas.sydney.edu.au/courses/74353/). Please include your project group name and practical time in your request.
+::::
+
+:::: {.module2-timeline-resources}
+[Module 2 introduction](201-intro.qmd) · [Project information](203-projects.qmd) · [Practical resources](205-resources.qmd) · [Report instructions](204-report1.qmd)
+::::
+
+{{< include ../_partials/module02-timeline.qmd >}}
+
+```{=html}
+<script src="../scripts/semester-status.js"></script>
+```

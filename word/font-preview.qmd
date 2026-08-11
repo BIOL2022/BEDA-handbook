@@ -1,0 +1,28 @@
+---
+format:
+  docx:
+    reference-doc: beda-reference.docx
+    highlight-style: none
+---
+
+# Font preview
+
+The full shared Module 2 sample, shown below in three candidate body fonts so you can compare them directly. Every sample is black, left-aligned, and double-spaced.
+
+**Times New Roman — 12 pt**
+
+::: {custom-style="FontPreviewTimes"}
+{{< include ../_partials/module02-word-sample.qmd >}}
+:::
+
+**Georgia — 12 pt**
+
+::: {custom-style="FontPreviewGeorgia"}
+{{< include ../_partials/module02-word-sample.qmd >}}
+:::
+
+**Arial — 11 pt**
+
+::: {custom-style="FontPreviewArial"}
+{{< include ../_partials/module02-word-sample.qmd >}}
+:::

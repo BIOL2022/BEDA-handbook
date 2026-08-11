@@ -8,9 +8,14 @@ project:
     - "**/*.qmd"
     - "!_book/**"
     - "!_partials/**"
+    - "!module02/module02-word.qmd"
+    - "!word/title-page-mock-*.qmd"
+    - "!word/font-preview.qmd"
 
 metadata-files:
   - _edition.yml
+filters:
+  - word/docx-mockup-table.lua
 
 website:
   title: "BIOL2022"

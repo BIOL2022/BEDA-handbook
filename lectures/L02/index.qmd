@@ -5,7 +5,7 @@ title: "Sampling data"
 
 
 ::: {.lecture-actions}
-**Tuesday: What is a representative sample?** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L02a-representative-sampling/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
+**Tuesday: What is a representative sample?** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L02a-representative-sampling/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (solarised)](https://biol2022.github.io/2026-lectures/lectures/L02a-representative-sampling/slides-solarized.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ```{=html}
@@ -15,7 +15,7 @@ title: "Sampling data"
 
 
 ::: {.lecture-actions}
-**Wednesday: Modelling fundamentals: the linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L02b-linear-model/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
+**Wednesday: Modelling fundamentals: the linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L02b-linear-model/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (solarised)](https://biol2022.github.io/2026-lectures/lectures/L02b-linear-model/slides-solarized.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ```{=html}
@@ -24,7 +24,7 @@ title: "Sampling data"
 
 
 ::: {.lecture-actions}
-**Wednesday: (Almost) every statistical technique is a linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L02c-all-linear-model/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
+**Wednesday: (Almost) every statistical technique is a linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L02c-all-linear-model/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (solarised)](https://biol2022.github.io/2026-lectures/lectures/L02c-all-linear-model/slides-solarized.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ```{=html}

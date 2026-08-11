@@ -4,8 +4,4 @@ number-sections: false
 toc: false
 ---
 
-{{< include ../_partials/module02-timeline.qmd >}}
-
-```{=html}
-<script src="../scripts/semester-status.js"></script>
-```
+{{< include ../_partials/module02-timeline-page.qmd >}}
