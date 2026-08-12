@@ -24,8 +24,9 @@ title: "Sampling data"
 
 
 ::: {.lecture-actions}
-**Wednesday: (Almost) every statistical technique is a linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L02c-all-linear-model/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (solarised)](https://biol2022.github.io/2026-lectures/lectures/L02c-all-linear-model/slides-solarized.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
+**Read: (Almost) every statistical technique is a linear model** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L02c-all-linear-model/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (solarised)](https://biol2022.github.io/2026-lectures/lectures/L02c-all-linear-model/slides-solarized.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
+Please read these slides at your own time. They provide a reference for the lecture content this week and in future weeks.
 
 ```{=html}
 <iframe class="lecture-preview" src="https://biol2022.github.io/2026-lectures/lectures/L02c-all-linear-model/index.html" title="Preview of Every statistical technique is a linear model lecture slides" loading="lazy" allowfullscreen></iframe>
