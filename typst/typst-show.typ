@@ -98,6 +98,72 @@ $endfor$
   ))
 }
 
+#let beda-rule = rgb("#c9c5b8")
+#let beda-header = rgb("#edf4f5")
+#let beda-support = rgb("#f1f7f5")
+#let beda-deadline = rgb("#f8eef1")
+
+// Module 2 timeline blocks. These mirror the standalone timeline styling but
+// are retuned for the portrait book page: a wider Week/date column, readable
+// list spacing, left/top alignment, and non-justified text. Table rows do not
+// split across a page boundary, so the timeline can span pages cleanly.
+#let module2-timeline-meta(body) = block(below: 8pt)[
+  #set text(size: 9pt, fill: beda-muted)
+  #body
+]
+
+#let module2-timeline-support(body) = block(
+  width: 100%,
+  below: 8pt,
+  breakable: false,
+  fill: beda-support,
+  inset: (left: 9pt, right: 9pt, top: 7pt, bottom: 7pt),
+  stroke: (left: 3pt + beda-green),
+)[#body]
+
+#let module2-timeline-resources(body) = block(
+  width: 100%,
+  below: 9pt,
+)[
+  #set text(size: 9pt)
+  #body
+]
+
+#let module2-timeline-deadline(body) = block(
+  width: 100%,
+  below: 10pt,
+  breakable: false,
+  fill: beda-deadline,
+  inset: (left: 9pt, right: 9pt, top: 7pt, bottom: 7pt),
+  stroke: (left: 3pt + beda-maroon),
+)[
+  #set text(weight: "bold", fill: beda-maroon)
+  #body
+]
+
+#let module2-week-date(body) = text(
+  size: 8.7pt,
+  fill: beda-muted,
+  [#linebreak()#body],
+)
+
+ #let module2-timeline-table(body) = align(center, block(width: 100% + 6mm)[
+  #set align(left)
+  #set text(size: 9pt)
+  #show par: set par(justify: false, leading: 0.5em, spacing: 0.2em, first-line-indent: 0pt)
+  #show table: set table(
+    columns: (24mm, 1fr, 1fr),
+    inset: (x: 5pt, y: 2.5pt),
+    align: left + top,
+    stroke: (x: none, y: 0.45pt + beda-rule),
+  )
+  #show table.cell.where(y: 0): set table.cell(fill: beda-header)
+  #show table.cell: set table.cell(breakable: false)
+  #show list: set list(indent: 1.05em, body-indent: 0.7em, spacing: 0.65em)
+  #show list: set block(above: 0em, below: 0em)
+  #body
+ ])
+
 #show: doc => {
   book(
     title: [],

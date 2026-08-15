@@ -19,6 +19,7 @@ book:
     - index.qmd
     - unit-information.qmd
     - module01/102-week01.qmd
+    - module02/202-timeline.qmd
 
 format:
   typst:
@@ -31,6 +32,7 @@ toc: true
 filters:
   - filters/typst-inline-margin-notes.lua
   - filters/typst-book-index.lua
+  - filters/module2-timeline-typst.lua
 
 execute:
   freeze: auto

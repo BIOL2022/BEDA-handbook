@@ -14,7 +14,32 @@ local div_functions = {
   ["module2-timeline-table"] = "module2-timeline-table",
 }
 
+-- Relative column widths for the Module 2 timeline table. The first column is
+-- kept just wide enough for the longest week/date label; the saved space goes
+-- to the two activity columns, which carry most of the text.
+local timeline_col_widths = { 0.22, 0.39, 0.39 }
+
+local function adjust_timeline_columns(block)
+  local specs = block.colspecs
+  if not specs or #specs < 3 then
+    return
+  end
+  for i = 1, 3 do
+    local spec = specs[i]
+    if type(spec) ~= "table" then
+      return
+    end
+    local alignment = spec[1] or "AlignLeft"
+    specs[i] = { alignment, timeline_col_widths[i] }
+  end
+  block.colspecs = specs
+end
+
 function Link(link)
+  if FORMAT ~= "typst" then
+    return nil
+  end
+
   local path, suffix = link.target:match("^([^?#]+)(.*)$")
   if path then
     path = path:gsub("^%./", "")
@@ -26,8 +51,20 @@ function Link(link)
 end
 
 function Div(div)
+  if FORMAT ~= "typst" then
+    return nil
+  end
+
   for class_name, function_name in pairs(div_functions) do
     if div.classes:includes(class_name) then
+      if class_name == "module2-timeline-table" then
+        for _, block in ipairs(div.content) do
+          if block.t == "Table" then
+            adjust_timeline_columns(block)
+          end
+        end
+      end
+
       if class_name == "module2-timeline-deadline" then
         for _, block in ipairs(div.content) do
           if block.t == "Para" or block.t == "Plain" then
@@ -51,6 +88,10 @@ function Div(div)
 end
 
 function Span(span)
+  if FORMAT ~= "typst" then
+    return nil
+  end
+
   if span.classes:includes("module2-week-date") then
     local inlines = pandoc.Inlines({
       pandoc.RawInline("typst", "#module2-week-date["),

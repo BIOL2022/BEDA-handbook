@@ -62,7 +62,11 @@ main <- function() {
     )
     output_path <- file.path(output_dir, basename(output_argument))
   } else {
-    output_path <- file.path(project_root, "module02", "module02-timeline.pdf")
+    default_output_dir <- file.path(project_root, "_pdf")
+    if (!dir.exists(default_output_dir)) {
+      dir.create(default_output_dir, recursive = TRUE, showWarnings = FALSE)
+    }
+    output_path <- file.path(default_output_dir, "module02-timeline.pdf")
   }
 
   if (!dir.exists(dirname(output_path))) {

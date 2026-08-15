@@ -51,20 +51,20 @@
   [#linebreak()#body],
 )
 
-#let module2-timeline-table(body) = block(width: 100%)[
+#let module2-timeline-table(body) = block(width: 100%, breakable: true)[
   #set text(size: 9.5pt)
-  #set par(leading: 0.58em, spacing: 0.35em)
+  #set par(leading: 0.6em, spacing: 0.7em, justify: false)
   #show table: set table(
-    inset: (x: 5.5pt, y: 5.5pt),
+    inset: (x: 7pt, y: 5.5pt),
     align: left + top,
     stroke: (x: none, y: 0.45pt + beda-rule),
   )
   #show table.cell.where(y: 0): set table.cell(fill: beda-header)
   #show table.cell: set table.cell(breakable: false)
   #show list: set list(
-    indent: 1.05em,
-    body-indent: 0.5em,
-    spacing: 0.25em,
+    indent: 1.15em,
+    body-indent: 0.6em,
+    spacing: 0.55em,
   )
   #body
 ]
@@ -81,7 +81,8 @@
   set par(leading: 0.64em, spacing: 0.72em, justify: false)
   set page(
     paper: "a4",
-    margin: (top: 20mm, bottom: 20mm, left: 18mm, right: 18mm),
+    flipped: true,
+    margin: (top: 6mm, bottom: 6mm, left: 18mm, right: 18mm),
     fill: beda-cream,
     header: context [
       #set text(size: 8.5pt, fill: beda-muted)
