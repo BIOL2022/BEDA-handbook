@@ -7,11 +7,30 @@ resources:
   - assets/cane.xlsx
 ---
 
-[Return to weekly content](../index.qmd#weekly-content)
+## Introduction {.unnumbered}
 
-## What you need this week
+Today, you will be collecting data based on your final sampling design from last week and then performing data analysis on the data you collected.
 
-- [Workshop 3: Model fitting and assumptions](w03-model-fitting-assumptions.qmd)
+## Before the practical
+
+- Check out the lecture on modelling assumptions. You will apply it to your model today (if possible).
+
+
+## Preparation (Module 2)
+
+Module 2 will introduce you to project-based experimental design. Before this practical, read the [Report 1 project descriptions](../module02/203-projects.qmd) and identify three projects that interest you.
+
+The first five minutes of today's practical are reserved for confirming your preferences:
+
+1. Choose a first, second, and third project preference.
+2. Submit your preferences through the Canvas project-preference activity.
+3. Choose a project, **not a specific group**. Staff will allocate students to projects within the available capacity and then create balanced Canvas groups.
+
+Project capacity is a hard limit. If a project is oversubscribed, staff will use the ranked preferences and a random tie-break rather than submission order. Read the project descriptions before class so that you can complete this activity quickly.
+
+This project-preference activity is separate from today's data-analysis group. You will continue working with the same groups as last week for the practical below.
+
+
 
 ## Introduction
 
