@@ -16,7 +16,8 @@ Install [Quarto 1.9 or later](https://quarto.org/) and R before rendering.
   `_book/Biology-Experimental-Design-and-Analysis.pdf`.
 - Run `quarto render` to build the website in `_site`.
 - Run `bash scripts/stage-handbook-pdf.sh` to copy the current handbook to
-  `_site/downloads/BIOL2022-unit-handbook.pdf`.
+  `_site/downloads/BIOL2022-unit-handbook.pdf` and
+  `_pdf/Biology-Experimental-Design-and-Analysis.pdf`.
 
 ## Updating the edition
 
