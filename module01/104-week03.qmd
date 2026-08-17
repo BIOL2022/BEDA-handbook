@@ -10,7 +10,7 @@ Today, you will use the sampling plan your group developed last week to collect 
 
 ### Things to prepare {.unnumbered}
 
-1. **Lecture 3a** covers the model assumptions and diagnostics that you will apply today. Please review it before the practical.
+1. [**Review Lecture 3a**](https://biol2022.github.io/2026-lectures/lectures/L03a-model-appropriate/index.html). It covers the model assumptions and diagnostics that you will apply today. Please review it before the practical.
 2. <i class="bi bi-journal-text me-1" aria-hidden="true"></i> **Lab notebook**. If you are (still) wondering why we ask you to keep one, many fields formally require clear records of what you did and why for auditing and accountability, including [research](https://en.wikipedia.org/wiki/Lab_notebook), [clinical work](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-58), engineering (e.g. under [ISO 9001](https://www.iso.org/iso-9001-quality-management.html)), and finance. Not surprisingly, this is increasingly crucial in the age of AI. **Get into the habit now.**
 3. Your **laptop computer**, as usual.
 4. Your **sampling protocol** from the previous practical (last week).
