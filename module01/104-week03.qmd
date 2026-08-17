@@ -166,13 +166,11 @@ Your demonstrator will introduce the available projects, explain the relevant pr
 
 #### <i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Final Task: Establish your group charter {.student-task}
 
-Download the group-charter template. Work through it together to:
+Download the [group-charter template](assets/word/group-charter-template.docx).
 
-- exchange contact details;
-- agree on roles, communication channels, and meeting arrangements;
-- agree on a code of conduct;
-- complete and sign the charter; and
-- submit the completed charter individually on Canvas before you leave.
+Start the charter together before you leave today. Record your current group members, agree initial roles and communication arrangements, and decide where you will keep the shared document.
+
+Treat the charter as a living record: update it as members join or leave, responsibilities change, or the group makes an important decision. Keep meeting notes up to date. Your demonstrator will explain how and when your group will submit the charter to Canvas once the submission arrangements are confirmed.
 
 ## End of practical notes
 
