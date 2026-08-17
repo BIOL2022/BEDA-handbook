@@ -1,0 +1,193 @@
+---
+title: "Report 1 projects — preview"
+subtitle: "Proposed catalogue redesign"
+toc: true
+toc-location: left
+toc-depth: 2
+number-sections: false
+---
+
+:::: {.callout-note}
+### Preview page
+
+This is a proposed redesign of the [current Report 1 project catalogue](203-projects.qmd). The current catalogue remains unchanged while this version is reviewed.
+::::
+
+## Choosing a project
+
+This page helps you compare the available Module 2 project options before you join a Canvas project group. Choose a project that interests you and that your group can carry out well within the available time.
+
+:::: {.callout-important}
+### Keep your project simple
+
+Choose one clear biological question that your group can answer well within the available time. Start with a straightforward study design and an analysis that matches your response and predictor variables. Your demonstrators can help you refine your question, design, and analysis plan.
+::::
+
+Before choosing, consider:
+
+- Does the question interest your group?
+- Can your group realistically collect the data the project requires?
+- Are you comfortable with the materials, practical expectations, and any out-of-class work?
+- Does the project have animal ethics conditions that you need to read before choosing?
+
+Canvas controls project-group availability. If an option is full or you are unsure which one to choose, speak to a demonstrator.
+
+## Compare the project options
+
+| Project | What you would investigate | Materials and setting | Key expectation |
+|---|---|---|---|
+| [Previous plant damage and herbivory](#previous-plant-damage-and-herbivory) | Whether prior damage changes later snail herbivory on tomato plants | Tomato seedlings, garden snails, and feeding containers | Snails are available; groups may also collect snails. |
+| [Plant species and herbivory](#plant-species-and-herbivory) | Whether prior damage changes herbivory differently for tomato and cucumber | Tomato and cucumber seedlings, garden snails, and feeding containers | Keep the comparison between plant species and damage treatments manageable. |
+| [Ant food preference](#ant-food-preference) | Whether ants prefer particular food types | Food baits and containers | The final bait setup will be confirmed in class. |
+| [Ant access costs](#ant-access-costs) | Whether ants prefer food that is easier to access | Food baits, containers, and access treatments | The final treatment setup will be confirmed in class. |
+| [Wheat germination](#wheat-germination-and-water-availability) | How water availability affects wheat germination or growth | Wheat seed, seed-raising mix, punnets, labels, and watering equipment | Plan for repeated watering and measurement. |
+| [Seed germination](#seed-germination-and-watering) | How watering affects germination of an available seed type | Seed and core growing materials | The exact seed species will be confirmed closer to the practical. |
+| [Bird activity](#bird-activity-across-times-of-day) | Whether bird activity differs across times of day | Binoculars and bird guides | Read the [bird-project ethics requirements](#bird-project-ethics-and-record-keeping) before choosing. |
+| [Urban water bodies](#urban-water-bodies-and-bird-use) | Whether water-body characteristics affect bird use | Binoculars and bird guides | Read the [bird-project ethics requirements](#bird-project-ethics-and-record-keeping) before choosing. |
+
+## Project options
+
+### Plant–herbivore interactions
+
+#### Previous plant damage and herbivory
+
+**Question:** Does previous damage to tomato plants affect their vulnerability to subsequent herbivory? Does the amount of previous damage matter?
+
+**Background:** Many plants have plant secondary metabolites (PSMs), which often play a role in defence against herbivores. In some plant species, PSM levels can increase after herbivore damage. This change can occur within a day, potentially affecting later leaf damage.
+
+**Materials and equipment:** Tomato seedlings, garden snails, and snail-feeding containers will be available. Groups may also collect snails.
+
+**What your group will need to do:** Develop a simple treatment for prior plant damage, measure subsequent herbivory, and record your data consistently.
+
+**Optional extension:** Ask whether the amount of initial damage affects the outcome.
+
+:::: {.callout-note}
+You do not need to measure PSMs. They provide a possible mechanism for any difference in subsequent herbivory.
+::::
+
+#### Plant species and herbivory
+
+**Question:** Does previous damage affect the vulnerability of vegetables to subsequent herbivory? Does the effect depend on plant species?
+
+**Background:** Plants can respond to herbivore damage by changing their defensive chemistry. Comparing tomato and cucumber plants lets you investigate whether previous damage has similar effects across plant species.
+
+**Materials and equipment:** Tomato and cucumber seedlings, garden snails, and snail-feeding containers will be available. Groups may also collect snails.
+
+**What your group will need to do:** Plan a manageable comparison of plant species and prior damage, then measure subsequent herbivory consistently.
+
+:::: {.callout-note}
+You do not need to measure PSMs. They provide a possible mechanism for any difference in subsequent herbivory.
+::::
+
+### Ant foraging
+
+#### Ant food preference
+
+**Question:** Do ants prefer some food types over others?
+
+**Background:** Ants spend much of their time searching for food, but food differs in nutritional and energetic value. Scout ants can recruit other ants to a food source, so the time taken or number recruited may help us understand how ants respond to different foods.
+
+**Materials and equipment:** Food baits and containers will be arranged. The final bait setup will be confirmed in class.
+
+**What your group will need to do:** Choose a simple, repeatable way to compare ant responses to the available food types.
+
+#### Ant access costs
+
+**Question:** Do ants seek food that is easier to access?
+
+**Background:** The effort needed to harvest food may affect how ants value it. Food that is difficult or slow to access may be less preferred than food that is easy to access.
+
+**Materials and equipment:** Food baits, containers, and access treatments will be arranged. The final treatment setup will be confirmed in class.
+
+**What your group will need to do:** Compare ant responses to food sources that differ in accessibility, using a repeatable observation rule.
+
+**Optional extension:** Ask whether food value changes the effort ants are willing to expend to access it.
+
+### Germination and growth
+
+#### Wheat germination and water availability
+
+**Question:** How does water availability affect wheat germination, seedling growth, or survival?
+
+**Background:** In Australia, rainfall is highly variable. The amount of water available when seeds are sown may affect whether wheat germinates, grows, or survives.
+
+**Materials and equipment:** Wheat seed, seed-raising mix, six-cell punnets, labels, and syringe/beaker watering equipment will be available.
+
+**What your group will need to do:** Set up clear watering treatments, label them carefully, and make repeated measurements using a consistent rule.
+
+#### Seed germination and watering
+
+**Question:** How does watering affect germination of an available native or horticultural seed?
+
+**Background:** Germination may depend on how often water is available. Understanding this relationship can help explain plant recruitment and has applications in agriculture and horticulture.
+
+**Materials and equipment:** Seed, seed-raising mix, six-cell punnets, labels, and syringe/beaker watering equipment will be available. The exact seed species will be confirmed closer to the practical.
+
+**What your group will need to do:** Design a simple watering comparison, label treatments carefully, and make repeated measurements using a consistent rule.
+
+:::: {.callout-note}
+If your main trial has not produced germination after seven days, your group may be able to switch to the wheat option to ask a similar question.
+::::
+
+### Bird surveys and urban ecology
+
+#### Bird activity across times of day
+
+**Question:** Are birds active at different times of day?
+
+**Background:** Bird activity can vary for many reasons. Comparing observations made at different times of day can help you assess whether the timing of a survey changes what you record.
+
+**Materials and equipment:** Binoculars and bird guides will be available.
+
+**What your group will need to do:** Develop a repeatable bird-observation method and consider the factors you need to control or record alongside time of day.
+
+:::: {.callout-important}
+Read the [bird-project ethics requirements](#bird-project-ethics-and-record-keeping) before choosing this project.
+::::
+
+#### Urban water bodies and bird use
+
+**Question:** Do characteristics of urban water bodies influence which birds use them?
+
+**Background:** Urban water bodies can provide food, nesting sites, and shelter. Understanding how their characteristics relate to bird use can help us understand urban bird diversity.
+
+**Materials and equipment:** Binoculars and bird guides will be available.
+
+**What your group will need to do:** Develop a repeatable bird-survey method and decide which water-body characteristics your group will measure or record.
+
+:::: {.callout-important}
+Read the [bird-project ethics requirements](#bird-project-ethics-and-record-keeping) before choosing this project.
+::::
+
+## Bird-project ethics and record-keeping
+
+If you choose a bird project, you must follow the animal ethics requirements approved by the University of Sydney Animal Ethics Committee.
+
+**Project “Ecology teaching – bird surveys”. Project Number: 2022/2148.**
+
+You may collect data for up to 10 visits per site over a 2 to 4 week period. For the bird survey, you may observe birds, count them and identify each to species if you can, using binoculars where needed. You may observe birds at a site for up to approximately one hour per visit, but must not interfere with or handle the birds.
+
+At a given site, the surveyor (1 to 5 students per site) will find a suitable location to observe birds. They will stand or sit still for 15 to 30 minutes per location and count the birds they can see at their site. They may need to move to up to five other locations per site if they have difficulty identifying birds from afar. The number of each species will be recorded with reference to bird guides, and a total of about one hour will be spent at each site per observation period.
+
+Depending on your project, you may quantify other data, such as vegetation assessments and the size of habitat types including water bodies, enabling a test of the factors affecting bird abundance and species diversity.
+
+Observers must remain far enough from birds that the birds are not visibly affected by them: they must not move away or alter their behaviour because of the observers. This avoids any impact of the observers on bird time or energy budgets, as described in Bateman and Fleming (2011).
+
+**Reference:** Bateman, P. W., and P. A. Fleming. 2011. Who are you looking at? Hadeda ibises use direction of gaze, head orientation and approach speed in their risk assessment of a potential predator. *Journal of Zoology* 285:316–323.
+
+### Conditions of bird project approval
+
+1. You must use the approved monitoring sheet, **Bird survey monitoring sheet.xls**, which will be provided to you. You may add columns or sheets appropriate to your study.
+2. You must take photos of the fieldwork sites and the observers watching the birds, so that the relative locations of observers and birds are clear.
+3. By the end of Week 9, you must post the following on Canvas:
+   - a complete, legible copy of the final monitoring sheets;
+   - a summary of the total number of native birds, invasive birds, and all birds counted at each site and across all sites, plus a list of monitored sites with GPS coordinates; and
+   - clearly and informatively labelled fieldwork photos.
+4. In the unlikely event that you find an injured bird, you must:
+   - seek advice from Clare McArthur (clare.mcarthur@sydney.edu.au; subject: `BIOL2022 URGENT - bird project`) or another academic in the unit of study;
+   - while ensuring your own safety first, arrange appropriate transport for a seriously injured animal to the nearest veterinarian if necessary; and
+   - notify Clare McArthur by email within 24 hours, summarising what occurred. This must be reported to the Animal Ethics Committee even if you played no part in the injury.
+
+## Next steps
+
+During Week 3, read the option that interests you, choose an available Canvas project group, and complete your group charter with that group. Use the [Module 2 timeline](202-timeline.qmd), [practical resources](205-resources.qmd), and [Report 1 instructions](204-report1.qmd) as you plan your work.
