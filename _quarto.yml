@@ -23,7 +23,6 @@ website:
   # draft-mode: gone
   drafts:
     - module01/w02-tidy-data.qmd
-    - module01/w03-model-fitting-assumptions.qmd
     - module03/302-week09.qmd
     - module03/303-week10.qmd
     - module03/304-week11.qmd

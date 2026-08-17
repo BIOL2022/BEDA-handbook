@@ -1,5 +1,5 @@
 ---
-title: "Workshop 3: Model fitting and assumptions"
+title: "Model fitting and assumptions"
 author: "Januar Harianto"
 number-sections: false
 ---
@@ -15,11 +15,11 @@ library(patchwork) # To combine plots
 
 ## Introduction
 
-Welcome to the third workshop. In this session, we will explore a crucial step in statistical analysis: checking the assumptions of our models. When we run models under the general linear model framework we are making certain assumptions about our data. If these assumptions are violated, the results of our tests might not be reliable.
+Use this resource while working through the Week 3 practical. It provides worked examples of fitting models and checking their assumptions.
 
-Today, we will learn how to use diagnostic plots to visually inspect these assumptions. **We use R code in this workshop but Januar will also guide (quickly) through Jamovi.** 
+When we fit a model under the general linear model framework, we make assumptions about the data. If those assumptions are violated, the results of our tests might not be reliable.
 
-We will be using the ever-popular `palmerpenguins` dataset, which contains data on three penguin species from the Palmer Archipelago in Antarctica.
+The examples use R code and Jamovi output, so you can use the approach that best fits your group’s workflow. We use the `palmerpenguins` dataset, which contains data on three penguin species from the Palmer Archipelago in Antarctica.
 
 ```{r load-data}
 #| include: false
@@ -33,9 +33,9 @@ penguins_clean <- penguins |>
   drop_na() # remove rows with missing data
 ```
 
-## 1. A GLM with a *continuous* predictor
+## 1. A general linear model with a *continuous* predictor
 
-Let's examine the relationship between a penguin's body mass and its flipper length. We begin by thinking about how these two variables might be related and construct the model. Words are fine as the GLM will work out the details once the model is fitted!
+Let's examine the relationship between a penguin's body mass and its flipper length. We begin by thinking about how these two variables might be related and construct the model. Words are fine; the general linear model will work out the details once it is fitted!
 
 > Body mass is likely to be related to flipper length. We should be able to use flipper length to predict body mass.
 
@@ -69,14 +69,14 @@ lm_fit <- lm(body_mass_g ~ flipper_length_mm, data = penguins_clean)
 ```
 
 
-We can generate a set of standard diagnostic plots in R, Jamovi and most other statistical software packages when we fit a generalised linear model. For example, below is an output in R.
+We can generate a set of standard diagnostic plots in R, Jamovi and most other statistical software packages when we fit a general linear model. For example, below is an output in R.
 
 ```{r fig-lm-diagnostics}
 #| fig-width: 10
 #| fig-height: 8
 #| cache: true
 #| echo: false
-#| fig-cap: "Diagnostic plots for the linear model of penguin flipper length predicted by body mass. The plots are produced in R."
+#| fig-cap: "Diagnostic plots for the linear model of penguin body mass predicted by flipper length. The plots are produced in R."
 #| fig-alt: "Four diagnostic plots for a linear model of penguin body mass by flipper length."
 
 par(mfrow = c(2, 2))
@@ -104,10 +104,10 @@ In Jamovi, no specific module is necessary to perform a simple linear regression
 
 ![Residuals vs Fitted](assets/wt_penguin_residuals_fitted.svg){width=300 fig-alt="Residuals versus fitted values plot for Jamovi diagnostics."}
 
-Diagnostic plots for the linear model of penguin flipper length predicted by body mass. The plots are produced in Jamovi.
+Diagnostic plots for the linear model of penguin body mass predicted by flipper length. The plots are produced in Jamovi.
 :::
 
-## 2. A GLM with a *categorical* predictor
+## 2. A general linear model with a *categorical* predictor
 
 In this case, we are interested in examining the relationship between a penguin's bill length and its sex (male or female). We can use a general linear model to assess whether there are significant differences in bill length between the two sexes.
 

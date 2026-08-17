@@ -1,234 +1,185 @@
 ---
-title: "**Week 3**: Data analysis"
-resources:
-  - assets/cats.xlsx
-  - assets/cherry.xlsx
-  - assets/pigs.xlsx
-  - assets/cane.xlsx
+title: "**Week 3**: Sampling, analysis and teamwork"
 ---
 
 ## Introduction {.unnumbered}
 
-Today, you will be collecting data based on your final sampling design from last week and then performing data analysis on the data you collected.
+Welcome to the third and *final* practical for **Module 1**. Yes, time flies!
 
-## Before the practical
+Today, you will use the sampling plan your group developed last week to collect data and answer your biological question. In the second half of the practical, you will choose a Module 2 project group and agree on how you will work together.
 
-- Check out the lecture on modelling assumptions. You will apply it to your model today (if possible).
+### Things to prepare {.unnumbered}
 
+1. **Lecture 3a** covers the model assumptions and diagnostics that you will apply today. Please review it before the practical.
+2. <i class="bi bi-journal-text me-1" aria-hidden="true"></i> **Lab notebook**. If you are (still) wondering why we ask you to keep one, many fields formally require clear records of what you did and why for auditing and accountability, including [research](https://en.wikipedia.org/wiki/Lab_notebook), [clinical work](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-58), engineering (e.g. under [ISO 9001](https://www.iso.org/iso-9001-quality-management.html)), and finance. Not surprisingly, this is increasingly crucial in the age of AI. **Get into the habit now.**
+3. Your **laptop computer**, as usual.
+4. Your **sampling protocol** from the previous practical (last week).
 
-## Preparation (Module 2)
-
-Module 2 will introduce you to project-based experimental design. Before this practical, read the [Report 1 project descriptions](../module02/203-projects.qmd) and identify three projects that interest you.
-
-The first five minutes of today's practical are reserved for confirming your preferences:
-
-1. Choose a first, second, and third project preference.
-2. Submit your preferences through the Canvas project-preference activity.
-3. Choose a project, **not a specific group**. Staff will allocate students to projects within the available capacity and then create balanced Canvas groups.
-
-Project capacity is a hard limit. If a project is oversubscribed, staff will use the ranked preferences and a random tie-break rather than submission order. Read the project descriptions before class so that you can complete this activity quickly.
-
-This project-preference activity is separate from today's data-analysis group. You will continue working with the same groups as last week for the practical below.
-
-
-
-## Introduction
-
-In today's practical, we will focus on data analysis. You will work with your group to analyse the data you collected in the previous lab. Cheatsheets are available for you to use, and your demonstrators are ready to help. 
-
-*You may need to clean your data before you can analyse it.*
-
-Once you are done with your data, and if you have time, spend some effort to analyse the other data in **Exercise 3**.
-
-## Things to prepare
-
-1. Make sure you have access to the data you collected in the previous lab. This can be obtained from your group's [Google Drive folder](https://drive.google.com/drive/folders/1rDyHyzgTVWUmPEzNte0F1CgVb3_Eitlk?usp=drive_link).
-2. Bring your laptop and the necessary software (e.g., R, Jamovi) installed for data analysis. See the [Week 1 software reference](102-week01.qmd#software-reference-use-outside-the-timed-class) for installation instructions.
-3. [Lecture 3a](https://biol2022.github.io/L03a-model-appropriate/) may be helpful for understanding the concepts we will be applying in this practical, as they cover model assumptions and diagnostics.
-
-::: callout-important
-You will be working in the same groups as **last week**. **If you were not present last week, join the group closest to you and work with them.**
-:::
-
-## Learning outcomes
+### Learning outcomes {.unnumbered}
 
 By the end of this practical, you should be able to:
-  
-- [ ] Fit a model to your data.
-- [ ] Check if the data meets the assumptions of the model.
-- [ ] Interpret the model output.
-- [ ] (optional) have working templates for fitting GLMs to data with different structures, such as comparing group means or modelling relationships between continuous variables.
 
-### What to submit at the end of the practical
+:::::: {.learning-outcomes-table}
+| Learning outcome | How you will practise it |
+|---|---|
+| Collect data in a **reproducible** manner. | Apply the sampling scheme your group developed in Week 2, using its agreed selection, measurement, uncertainty, and recording rules for each sampled image. |
+| Tidy data in **Microsoft Excel** or an equivalent spreadsheet program, then visualise and analyse it in **Jamovi, R, or another statistical program**. | Organise and check your group’s data in a spreadsheet. Then fit the planned analysis in your chosen statistical program and plot the results. |
+| Choose, fit, check, and **interpret** an appropriate statistical model. | Use the response and predictor variables from your Week 2 study design to fit an appropriate model, check whether your data meet its assumptions, and write short statistical and biological conclusions. |
+:::::
 
-**Your plot and model output**, on Google Drive. We will spend some time discussing the results at the end of the tutorial.
-   
+### Resources for today {.unnumbered}
 
-## Workshop
+Keep these resources open as you work through the practical:
 
-The Workshop 3 resource linked above is a hands-on preview of running models in both R and Jamovi.
+- [Intertidal site images](105-images.qmd)
+- [Model fitting and assumptions](w03-model-fitting-assumptions.qmd)
+- [R and Jamovi cheatsheets](../cheatsheets.qmd)
 
-## Lab activity
+Relevant resources are linked within each task.
 
-### Google Drive
-
-[Open the shared Google Drive folder](https://drive.google.com/drive/folders/1rDyHyzgTVWUmPEzNte0F1CgVb3_Eitlk?usp=drive_link).
-
-When ready, work with your group to analyse the data you collected in the previous lab using a **general linear model**. Click on the link above to access the data that you have collected.
-
-You will need to:
-
-- Fit your intended model to the data.
-- Check if the data meets the assumptions of the model.
-- Interpret the model output.
-
-Of particular importance is the assessment of assumptions using residual plots, rather than formal tests of assumptions. 
-
-**Your demonstrators are ready to help.** We expect you to be able to select the appropriate model to your data, but you can consult our cheatsheets and your demonstrators for help.
-
-::: callout-note
-## If using Jamovi
-Please install the **GAMLj3** module in Jamovi. This will allow you to run general linear models in Jamovi with a lot of options:
-
-1. Select the **Analyses** tab.
-2. Click on the **Modules** button and select **jamovi library**.
-3. In the Available tab, search for **GAMLj3** and click on the **INSTALL** button.
-
-::: {.content-visible unless-format="pdf"}
-![How to install the GAMLj3 module in Jamovi. Note that version numbers may differ. Click on the image to enlarge it. Image last updated in Aug 2024.](assets/jamovi_install_GAMLj3.gif){#fig-install-gamj3.lightbox fig-alt="Animated screenshot showing how to install the GAMLj3 module from the Jamovi library."}
-
-:::
-
-While you are at it, you may want to consider installing the **flexplot** module in Jamovi, which uses GLM fundamentals to automatically generate plots for you.
-:::
-
-Your data is available to download on Canvas. Please check that you have all the data you need before proceeding. You also have access to the data collected by other groups should you wish to practice your data analysis skills.
-
-### Background
-
-If you have followed study design principles, the data you have collected should be clean and ready for analysis. However, it is still a good idea to inspect your data further before proceeding with the analysis. This includes a check for:
-
-- Missing data
-- Outliers
-- Data entry errors
-- Assumptions of the statistical model, and whether the data meets them
-
-
-### Missing data, outliers and data entry errors
-
-These are what we sometimes call systematic errors. They can be detected by looking at the data and checking for unusual values, or cross-checking methods within your group. Make sure to remove or correct these errors before proceeding with the analysis.
-
-## Exercise 2 -- Data analysis
-
-### Fitting a model to data
-
-Recall that you have an empirical model e.g. `y ~ x`. You will need to use an appropriate statistical model to fit this relationship to your data.
-
-:::{.callout-note}
-You should already know what model you are fitting to your data as it it part of your study design!
-:::
-
-
-### Checking model assumptions
-
-Before interpreting your results, it is important to check that your chosen model is suitable for your data. This means assessing whether the data meet the assumptions required by the model. If these assumptions are not met, your results may be misleading.
-
-The main assumptions for general linear models are:
-
-- **Normality of residuals**: The differences between observed and predicted values (residuals) should be roughly normally distributed.
-- **Homogeneity of variance**: The spread of residuals should be similar across all levels of your predictors.
-- **Independence of observations**: Each data point should be independent of the others. This is assumed, so we do not need to test it explicitly.
-
-The simplest way to check these assumptions is by examining residual plots. Formal statistical tests are available such as the Shapiro-Wilk test for normality and Levene's test for homogeneity of variance, but they can be overly sensitive (especially with large datasets) **and may suggest problems where none exist**.
-
-Remember, minor violations of normality are often not a major concern (can you explain why?), but large differences in variance can seriously affect your conclusions. Always discuss any issues and how you addressed them in your analysis.
+### Research groups
 
 ::: {.column-margin}
-<i class="bi bi-info-circle me-1" aria-hidden="true"></i> Violation of the normality assumption is often ignored when sampling is large, as the Central Limit Theorem suggests that the sampling distribution of the mean will be normally distributed regardless of the shape of the population distribution.
+#### Need a group?
+
+If you were absent last week or cannot join your original group, speak to a demonstrator at the beginning of the practical. They will help you join an established group. Do **not** work alone: this is a group-based practical.
 :::
 
-::: {.callout-note}
-Your demonstrators may show you how to transform variables to better meet the assumptions of your chosen model.
+**You are now a small research group.** Your group is responsible for making and recording decisions about sampling, data preparation, analysis, and interpretation. **Treat your demonstrators as research advisers.** They can help you interpret a resource, check a decision, troubleshoot software, or work through a problem in your data. When you ask for help, explain your question, what you have tried, and where you are unsure.
+
+Once your lab supervisor has explained the practical, you can get started. 
+
+## Practical -- Part 1 (50 minutes)
+
+In the first half of today’s practical, work with your group to collect and analyse data.
+
+#### <i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Task 1: Collect data using your sampling scheme {.student-task}
+
+Before you begin, check that you all agree on:
+
+1. your biological question;
+2. the response and predictor variables;
+3. which images or parts of images you will sample;
+4. what counts as one sampling unit;
+5. the measurement and uncertainty rules; and
+6. how you will record and combine the data.
+
+**Update your lab notebook so that everyone in your group can follow the plan.** Divide the sampling work according to your group’s plan, then start collecting data. If it would help your group trace or resolve a later measurement, **note who sampled each image or unit** by including a name column in your final spreadsheet.
+
+::: {.column-margin}
+**Resources:** Check the [study-design template](https://docs.google.com/document/d/1JhSevrzpLlDsD0a4225h_dcC4i5ZOII7dkTr8u4gCgs/edit#heading=h.rc1vfwuebyac) and the [intertidal site images](105-images.qmd) if you need to refresh your memory about your sampling scheme. You can download the images from Canvas.
+:::
+
+#### Start collecting data from images
+
+You may record observations directly in a shared spreadsheet or combine notebook records into one sheet when you complete your sampling.
+
+If you run into a problem at this stage, speak with a demonstrator, who may be able to suggest a change. Record any agreed change in your notebook, then keep going.
+
+::: {.column-margin}
+**What a demonstrator can help with:** an ambiguous measurement (for example, a species you cannot identify clearly), a protocol that cannot be applied as written, or a proposed change to your sampling scheme.
 :::
 
 
-### Running models
 
-Running the model is probably the *least* eventful part of the analytical workflow and will take you a few seconds regardless of the software you are using, especially if you are running GLMs. Make sure that you record the software used and the specific statistical technique selected such that the analysis is **reproducible**.
+#### <i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Task 2: Tidy and visualise your data {.student-task}
 
+At this stage, make sure the spreadsheet is ready for analysis. Use the following as a checklist; depending on your data and how you import it into Jamovi or R, not every item will require changes:
 
-### Interpretation
+- each row represents one sampling unit or observation;
+- each column represents one variable;
+- variable names and units are clear;
+- labels, codes, and missing values are recorded consistently; and
+- recorded values follow the measurement rules in your sampling scheme.
 
-Interpreting the output of a statistical model is a skill that takes time to develop. You will need to be able to:
-
-- Understand the important parts of the output e.g. F-statistic, p-value, degrees of freedom, etc.
-- Explain what the output means in the context of your data.
-- Explain what the output means in the context of your research question.
-
-Your lectures and this week's workshop will help you develop these skills.
-
-Your data may not be interpretable due to the way it was collected. This is ok -- a lesson learnt. You can still discuss the issues with the data and what you would do differently next time. Meanwhile, you can still practice your data analysis skills on your data (or download another group's data).
-
-
-## Exercise 3 -- putting it all together
-
-
-The general linear modelling framework is incredibly intuitive for building statistical models. Use the datasets below to repeat Exercises 1 and 2. Some hints:
-
-- Try to add more than one predictor to your model and see how the output changes. 
-- Use your understanding of data structure to determine if you have set your model up correctly -- i.e. is that variable really numeric?
-- The data may need to be cleaned before you can analyse it. This is a good opportunity to practice your data cleaning skills.
-
-::: callout-note
-On top of the simple models you have been taught so far (e.g., using a single continuous or categorical predictor), you will see how the GLM framework can be extended to include multiple predictors of different types. These will be touched on in the next few weeks but you can get a head start now -- that's the beauty of GLMs!
+::: {.column-margin}
+**Resources:** Check the [cheatsheets](../cheatsheets.qmd) for tips on tidying and plotting data in Jamovi or R.
 :::
 
+When ready, make a plot that answers your biological question and clearly shows the relationship between your response and predictor variables. You may need to transform your data or choose a different plot type to make the pattern clearer. If you are unsure, ask a demonstrator for advice. **Export the plot as an image: you will submit it to Canvas at the end of the practical.**
+
+#### <i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Task 3: Fit, check, and interpret a model {.student-task}
+
+Use the response and predictor variables in your Week 2 study design to identify an appropriate, **simple** model. Keep the planned response--predictor relationship as your core analysis, and do **not** add extra predictors unless a demonstrator advises you to.
+
+| Your response variable is... | Your predictor is... | Start with... |
+|---|---|---|
+| A continuous measurement | A categorical variable with two groups | An independent-samples *t*-test / general linear model |
+| A continuous measurement | A categorical variable with three or more groups | A one-way ANOVA / general linear model |
+| A continuous measurement | A continuous measurement | Linear regression / general linear model |
+| Present/absent | A categorical or continuous variable | Logistic regression / generalised linear model -- **ask a demonstrator for help** |
+| A count | A categorical or continuous variable | A count model / generalised linear model -- **ask a demonstrator for help** |
+| Percent cover or a proportion | Any predictor | **Ask a demonstrator for help choosing an appropriate model** |
+
+Fit the model in Jamovi, R, or another statistical program. If you are fitting a continuous-response general linear model, **use visual diagnostic plots to check its assumptions rather than relying only on formal tests** such as Shapiro--Wilk or Levene’s test. Discuss any concerns with a demonstrator.
+
+::: {.column-margin}
+#### General linear or generalised linear model?
+
+For a continuous response, *t*-tests, ANOVA, and linear regression are all examples of a **general linear model**. Binary and count responses usually need a different family of models, called **generalised linear models**. Your demonstrators can help you choose and run these models in Jamovi.
+:::
+
+Before the practical ends, submit the Word document provided on Canvas. It should include:
+
+1. your plot;
+2. a short **statistical conclusion** that identifies the question, the pattern, and the supporting statistical evidence; and
+3. a short **biological conclusion** that answers your biological question.
 
 
-### Weight data for domestic cats
-
-[Download cats.xlsx](assets/cats.xlsx)
-
-Handy hints:
-
-- Read the metadata if you are unsure what the variables mean.
-- You can look at the relationships between the continuous variables for each gender of cat. Is there a way to combine these relationships into one model?
-- Can Sex be used as a response variable in this model? *You don't have to do this, but it is an interesting question to consider.*
-
-### Cherry trees
-
-[Download cherry.xlsx](assets/cherry.xlsx)
-
-Handy hints:
-
-- This dataset seems very simple and should be easy to analyse... or is it?
-- Use what you have learnt about simple linear regression and add more predictors to your model!
-- Think about the assumptions of the model and whether they are met. Do you need to alter your interpretation of these diagnostic plots in any way?
-
-### (**Extra challenge**) effects of dietary protein on pigs
-
-[Download pigs.xlsx](assets/pigs.xlsx)
-
-Handy hints:
-
-- This dataset is messy and may need to be tidied up before you can analyse it.
- - Think of how a model with a two-level categorical predictor (which compares two groups) can be extended to a predictor with multiple levels to compare multiple groups. Does this change the way you need to set up your model?
- - Are you brave enough to look for interactions between variables?
-
-### (**Extra challenge**) Sugar cane disease data
-
-[Download cane.xlsx](assets/cane.xlsx)
-
-Handy hints:
-
-- This dataset is a bit more complex than the others. You may need to spend some time understanding the variables before you can analyse the data.
-- You do not need to use all the variables in your analysis. There are two possible response variables in this dataset - you can choose which one to use.
+::: {.column-margin}
+**What a demonstrator can help with:** choosing a model; explaining diagnostics (but not interpreting the results unless you try first); software problems; or helping you work through the interpretation of your results.
+::::
 
 
-## Submit your results
+:::: callout-note
+### If you are using Jamovi
 
-Once complete, please upload your results to the Google Drive folder provided in class for archival. If there's time, we will discuss the results together.
+Please install the **GAMLj3** module in Jamovi. This gives you access to general, generalised, and mixed linear models:
 
-## End
+1. Select the **Analyses** tab.
+2. Click the **Modules** button and select **jamovi library**.
+3. In the Available tab, search for **GAMLj3** and click **INSTALL**.
 
-That's it. Module 1 practicals are now complete. I hope you have learnt a few things about experimental design and data analysis. We will continue to build on these skills in the next module using real-world data.
+:::: {.content-visible unless-format="pdf"}
+![How to install the GAMLj3 module in Jamovi. Note that version numbers may differ. Click on the image to enlarge it. Image last updated in Aug 2024.](assets/jamovi_install_GAMLj3.gif){#fig-install-gamj3.lightbox fig-alt="Animated screenshot showing how to install the GAMLj3 module from the Jamovi library."}
+::::
+::::
+
+
+
+## Take a break!
+
+Pack your bags and take a walk. In the second half of this practical, you will need to move around to join your project group, so be ready to do that.
+
+## Practical -- Part 2 (30 minutes)
+
+Your demonstrator will introduce the available projects, explain the relevant practical or ethics requirements, show you how Canvas group availability works, and help you decide where to seek further advice.
+
+### Choose and join a Module 2 project group
+
+1. Read the [Report 1 project catalogue](../module02/203-projects.qmd).
+2. Choose an available project that interests you and that your group can realistically complete.
+3. Join the corresponding Canvas group.
+4. Gather with the students who joined that project group.
+
+**We may not be able to place you and your friends in the same group because the number of available projects and places in each group is limited.** Treat this as a real-world scenario where you may need to work with colleagues you do not know well.
+
+#### <i class="bi bi-pencil-square me-1" aria-hidden="true"></i> Final Task: Establish your group charter {.student-task}
+
+Download the group-charter template. Work through it together to:
+
+- exchange contact details;
+- agree on roles, communication channels, and meeting arrangements;
+- agree on a code of conduct;
+- complete and sign the charter; and
+- submit the completed charter individually on Canvas before you leave.
+
+## End of practical notes
+
+### Module 2 starts next week
+
+Starting next week, Professor Clare McArthur will lead the Module 2 practicals.
+
+### Attendance
+
+Attendance will be taken towards the end of the practical. Please remind a demonstrator if it has not been recorded.
