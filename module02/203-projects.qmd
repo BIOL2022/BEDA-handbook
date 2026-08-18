@@ -12,6 +12,11 @@ toc-depth: 4
   margin-bottom: 1.5em;
   background: #f9f9f9;
 }
+.project-summary :is(th, td):first-child {
+  min-width: 4rem;
+  white-space: nowrap;
+}
+
 </style>
 
 {{< include ../_partials/module02-projects.qmd >}}
