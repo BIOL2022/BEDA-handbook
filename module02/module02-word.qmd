@@ -1,24 +1,66 @@
 ---
-title: "BIOL2022: Biology Experimental Design and Analysis"
-subtitle: "Unit Handbook · Semester 2 · 2026"
-author:
-  - Dr. Januar Harianto
-  - Prof. Clare McArthur
-  - Prof. Matthew Crowther
 format:
   docx:
     highlight-style: none
     reference-doc: ../word/beda-reference.docx
 ---
 
+::::: {custom-style="MockupLeftTitle"}
+BIOL2022
+:::::
+
+::::: {custom-style="BEDACoverSubtitle"}
+Biology Experimental Design and Analysis
+:::::
+
+::::: {custom-style="BEDACoverMeta"}
+Unit Handbook · Module 2
+:::::
+
+::::: {custom-style="BEDACoverMeta"}
+Dr. Januar Harianto · Prof. Clare McArthur · Prof. Matthew Crowther
+:::::
+
+::::: {custom-style="BEDACoverMeta"}
+Semester 2 · 2026
+:::::
+
+:::: {custom-style="MockupRule"}
+ 
+::::
+
 {{< pagebreak >}}
 
-# Introduction to Module 2
+# Welcome to Module 2
 
-{{< include ../_partials/module02-intro.qmd >}}
+{{< include ../_partials/module02-welcome.qmd >}}
 
 {{< pagebreak >}}
 
 # Module 2 timeline
 
 {{< include ../_partials/module02-timeline.qmd >}}
+
+{{< pagebreak >}}
+
+# Report 1 -- Projects
+
+{{< include ../_partials/module02-projects.qmd >}}
+
+{{< pagebreak >}}
+
+# Report 1 -- Instructions
+
+{{< include ../_partials/module02-report1.qmd >}}
+
+{{< pagebreak >}}
+
+# Weeks 4--8 practicals: resources
+
+{{< include ../_partials/module02-resources.qmd >}}
+
+{{< pagebreak >}}
+
+# Report 1 -- Rubric
+
+The full marking rubric for Report 1 is provided as a separate PDF. Download it from the [BEDA handbook](https://biol2022.github.io/BEDA-handbook/module02/206-rubric.html) or from the BIOL2022 Canvas site. Read the rubric and use it as a check-list before, during and after writing your report, and again before you submit it.

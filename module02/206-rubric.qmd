@@ -1,13 +1,7 @@
 ---
 title: Report 1 -- Rubric
-resources: 
-  - assets/2025-r1-rubric.pdf
+sidebar: module-2
+
 ---
 
-Download the rubric for Report 1 [here](assets/2025-r1-rubric.pdf){target="_blank" rel="noopener noreferrer"}.
-
-:::{.column-page}
-<object data="assets/2025-r1-rubric.pdf" type="application/pdf" width="100%" height="1000" title="Report 1 marking rubric PDF">
-  <p><a href="assets/2025-r1-rubric.pdf">Download the Report 1 marking rubric PDF.</a></p>
-</object>
-:::
+The Report 1 marking rubric will be released soon on Canvas. Please check Canvas for the current rubric before you begin preparing your report.

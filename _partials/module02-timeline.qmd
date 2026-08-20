@@ -5,7 +5,7 @@
 
 ::::: {.module2-timeline-table role="region" aria-label="Module 2 timeline" tabindex="0"}
 +--------------------------------------------------+---------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
-| Week                                             | In your timetabled session                                                                              | Before the next session                                                                            |
+| **Week**                                         | **In your timetabled session**                                                                          | **Before the next session**                                                                        |
 +==================================================+=========================================================================================================+====================================================================================================+
 | **Weeks 2–3**                                    | - **Form your group:** Join a Report 1 research group in Canvas.                                        | - **Choose a direction:** Review the project information.                                          |
 | [10–23 August]{.module2-week-date}               | - All group members must be in the same practical.                                                      | - Make sure all group members are in the correct Canvas group.                                     |

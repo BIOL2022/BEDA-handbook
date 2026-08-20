@@ -60,6 +60,23 @@ website:
     left:
       - text: About this handbook
         href: about-handbook.qmd
+  sidebar:
+    - id: module-2
+      title: "Module 2"
+      style: docked
+      contents:
+        - text: Welcome
+          href: module02/200-welcome.qmd
+        - text: Schedule
+          href: module02/202-timeline.qmd
+        - text: Projects
+          href: module02/203-projects.qmd
+        - text: Report 1 instructions
+          href: module02/204-report1.qmd
+        - text: Practical resources
+          href: module02/205-resources.qmd
+        - text: Report 1 rubric
+          href: module02/206-rubric.qmd
 
 format:
   html:

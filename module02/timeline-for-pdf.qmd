@@ -29,7 +29,7 @@ format-links: false
 :::::
 
 ::::: {.module2-timeline-resources}
-[Module 2 introduction](201-intro.qmd) · [Project information](203-projects.qmd) · [Practical resources](205-resources.qmd) · [Report instructions](204-report1.qmd)
+[Module 2 welcome](200-welcome.qmd) · [Project information](203-projects.qmd) · [Practical resources](205-resources.qmd) · [Report instructions](204-report1.qmd)
 :::::
 
 {{< include ../_partials/module02-timeline.qmd >}}

@@ -33,7 +33,7 @@
 ## Projects
 
 ::: {.project-section}
-#### **🌱🐌🍅 Project P01** – Plant-herbivore interactions: Does previous damage to tomato plants affect their vulnerability to subsequent herbivory? Does the amount of previous damage matter? {#p01}
+#### **Project P01** – Plant-herbivore interactions: Does previous damage to tomato plants affect their vulnerability to subsequent herbivory? Does the amount of previous damage matter? {#p01}
 <br>
 
 **Background**: Many plants have plant secondary metabolites (PSMs), which often play a role in defence against herbivores. In some plant species, PSMs can be induced (levels increase) after damage from herbivores chewing on leaves. This change can take place within a day, affecting subsequent leaf damage by herbivores, and result in less subsequent damage. Is the evidence consistent with this idea?
@@ -48,7 +48,7 @@
 
 
 ::: {.project-section}
-#### **🥒🐌🍅 Project P02** – Plant-herbivore interactions: Does previous damage affect vulnerability of vegetables to subsequent herbivory? Does it depend on plant species? {#p02}
+#### **Project P02** – Plant-herbivore interactions: Does previous damage affect vulnerability of vegetables to subsequent herbivory? Does it depend on plant species? {#p02}
 <br>
 
 **Background**: Many plants have plant secondary metabolites (PSMs), which often play a role in defence against herbivores. In some plant species, PSMs can be induced (levels increase) after damage from herbivores chewing on leaves. This change can take place within a day, affecting subsequent leaf damage by herbivores, and result in less subsequent damage. Is the evidence consistent with this idea? Does it depend on plant species?
@@ -60,7 +60,7 @@
 :::
 
 ::: {.project-section}
-#### **🍣🐜🍯 Project P03** – Foraging strategies in relation to food type: Do ants prefer some food over others? {#p03}
+#### **Project P03** – Foraging strategies in relation to food type: Do ants prefer some food over others? {#p03}
 <br>
 
 **Background**: Ants spend a lot of their time searching for food, but the food they find varies in its nutritional and energetic value. Do they just forage for any foods or do they show preferences? Honey and tuna, for example, are very different foods. Do ants care? Honey is a high-carbohydrate low-protein food, while tuna is high protein, low carbs; although there are lots of other differences between these food as well.
@@ -69,7 +69,7 @@ Scout ants go out and look for food, then return to the nest and recruit others 
 :::
 
 ::: {.project-section}
-#### **🍯🚧🐜 Project P04** – Foraging strategies in relation to costs and benefits: Do ants seek food that is easier to access? {#p04}
+#### **Project P04** – Foraging strategies in relation to costs and benefits: Do ants seek food that is easier to access? {#p04}
 <br>
 
 **Background**: Ants spend a lot of time searching for food, but the effort needed to harvest a given food could affect how they value it. For example, food that is difficult or slow to access (e.g. surrounded by complicated 3-D local habitat or with narrow access points slowing ant traffic) may be less preferred than food that is easy to access.
@@ -80,7 +80,7 @@ Scout ants go out and look for food, then return to the nest and recruit others 
 :::
 
 ::: {.project-section}
-#### **🌧️🌾 Project P05** – Germination and growth of wheat in relation to water availability {#p05}
+#### **Project P05** – Germination and growth of wheat in relation to water availability {#p05}
 <br>
 
 **Background**: Growing crops such as wheat is crucial for food security. In Australia, our rainfall is highly variable, and this can be daunting for farmers wondering whether to sow seed and whether it will germinate if they do. White wheat varieties in Australia can germinate under a range of temperatures (12 to 25oC), but whether the initial rainfall is light (e.g. shower) versus heavy (e.g. soaking) may affect whether seeds germinate and/or seedlings grow and/or survive.
@@ -89,7 +89,7 @@ Understanding these relationships is one step in understanding the conditions re
 :::
 
 ::: {.project-section}
-#### **🪻🥬 Project P06** – Germination of native grass seeds OR a horticultural plant (flower or veggie) in relation to water availability {#p06}
+#### **Project P06** – Germination of native grass seeds OR a horticultural plant (flower or veggie) in relation to water availability {#p06}
 <br>
 
 **Background**: Germination of **native plants** is triggered by a range of factors in Australia. Some plants need heat initially, others simply need water. If we can, we will provide you with seed from a native plant that germinates quickly under the right conditions. How often it rains may affect whether seeds germinate, in turn affecting recruitment and regeneration. Understanding the relationship between rain (watering) frequency and probability of seeds germinating helps us understand how climate influences the dynamics of our grasslands and use of native plants in agriculture.
@@ -101,7 +101,7 @@ Germination of **horticultural plants** is crucial for the cut flower or veggie 
 :::
 
 ::: {.project-section}
-#### **🐦🌅 Project P07** – Are birds active at different times of day? {#p07}
+#### **Project P07** – Are birds active at different times of day? {#p07}
 <br>
 
 **Background**: Birds may be active at different times of day for a variety of reasons. As a first step in understanding bird abundance and diversity we need to be able to measure it and know whether when we measure it makes a difference. If you stand in the same spot and count birds, does the outcome depend on when you did it? Are there other factors you need to control or at least take into account?
@@ -111,7 +111,7 @@ Germination of **horticultural plants** is crucial for the cut flower or veggie 
 :::
 
 ::: {.project-section}
-#### **🐦🌊💧 Project P08** – Use of urban water bodies by birds: Do characteristics of urban water bodies influence which birds use them? {#p08}
+#### **Project P08** – Use of urban water bodies by birds: Do characteristics of urban water bodies influence which birds use them? {#p08}
 <br>
 
 **Background**: Bird diversity within cities is affected by many factors, including availability of food, sites for nesting and shelter from predators. Water bodies, such as ponds and lakes, in parks and gardens can attract native (and introduced) birds. The Sydney Council, for example, has upgraded and revegetated the ponds in Sydney Park, just south of Sydney Uni, to encourage water birds. To maximise bird diversity, as well as simply maximise bird numbers, it is important to understand the relationship between characteristics of different water bodies and the diversity of birds they support.

@@ -1,6 +1,0 @@
----
-title: "Introduction to Module 2"
-author: Clare McArthur
----
-
-{{< include ../_partials/module02-intro.qmd >}}

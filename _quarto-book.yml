@@ -19,7 +19,12 @@ book:
     - index.qmd
     - unit-information.qmd
     - module01/102-week01.qmd
+    - module02/200-welcome.qmd
     - module02/202-timeline.qmd
+    - module02/203-projects.qmd
+    - module02/204-report1.qmd
+    - module02/205-resources.qmd
+    - module02/206-rubric.qmd
 
 format:
   typst:

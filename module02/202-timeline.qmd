@@ -2,6 +2,8 @@
 title: "Module 2 timeline"
 number-sections: false
 toc: false
+sidebar: module-2
+
 ---
 
 ```{=typst}
@@ -9,25 +11,19 @@ toc: false
 #set page(flipped: true)
 ```
 
-::::: {.module2-timeline-meta}
-[Changelog](202-timeline-changelog.qmd) · Last updated 9 August 2026
-:::::
 
 ::::: {.module2-timeline-support}
 **Equipment and technical help:** Please refer to the [BIOL2022 Canvas site](https://canvas.sydney.edu.au/courses/74353/) for the current technical officer’s contact details and arrangements. When requesting help or equipment, include your project name, group name and practical time. Clare, technical staff, and demonstrators will be available during practical sessions to discuss expectations and project plans. Your group should aim to be self-sufficient outside practical times. For some projects, you will be able to take gear home straight away to run a pilot study; for others, plan now and pick up gear in consultation with technical staff.
 :::::
 
-::::: {.module2-timeline-resources}
-[Module 2 introduction](201-intro.qmd) · [Project information](203-projects.qmd) · [Practical resources](205-resources.qmd) · [Report instructions](204-report1.qmd)
-:::::
 
-## How to use this timeline
 
-Use this timeline as a working checklist. It shows the activities you need to complete during your timetabled sessions and the tasks you need to complete before the next session, including work that must be done in your own time. Keep track of your group’s progress, communicate with your group members, and make sure that important tasks, such as piloting, data collection, analysis, and report preparation, are completed by the indicated time.
-
-Some activities are group responsibilities, while others need to be completed individually so that you develop your own skills in data analysis and scientific writing. If your group falls behind or is unsure what to do next, ask your demonstrator or teaching team for help as early as possible.
 
 {{< include ../_partials/module02-timeline.qmd >}}
+
+```{=typst}
+#set page(flipped: false)
+```
 
 ```{=html}
 <script src="../scripts/semester-status.js"></script>

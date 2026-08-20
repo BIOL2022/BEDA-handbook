@@ -198,7 +198,7 @@ $endif$
         ]
       }
     },
-    heading-style: 2,
+    heading-style: 0,
     font-size: 10.5pt,
     first-line-indent: false,
 $if(toc-depth)$
@@ -243,6 +243,11 @@ $endif$
       }
       show heading.where(level: 2): set text(fill: beda-purple)
       show heading.where(level: 2): set block(below: 0.5em)
+      show heading.where(level: 3): set block(above: 1em, below: 0.5em)
+      show heading.where(level: 4): it => {
+        v(1em)
+        it
+      }
       show enum: set enum(
         indent: 1.15em,
         body-indent: 0.75em,
