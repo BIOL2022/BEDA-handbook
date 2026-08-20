@@ -581,146 +581,328 @@ Loading semester status…
 <script src="scripts/semester-status.js"></script>
 <div id="weekly-content" role="region" aria-label="Weekly content schedule">
 <div class="weekly-schedule-desktop table-responsive" tabindex="0">
-<table class="caption-top table">
+<table id="tbl-weekly-content" class="caption-top table">
 <thead>
 <tr class="header">
-<th>Week</th>
-<th>Lectures</th>
-<th>Practical</th>
-<th>Notes</th>
+<th id="weekly-content-week" scope="col">
+Week
+</th>
+<th id="weekly-content-resources" scope="col">
+Resources
+</th>
+<th id="weekly-content-notes" scope="col">
+Notes
+</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td><a href="./lectures/L01/index.html">Introduction and fundamentals</a> <span class="weekly-lecture-description">Welcome to BEDA!</span></td>
-<td><a href="./module01/102-week01.html" title="Getting started">Open</a></td>
-<td><div class="weekly-note-list">
-<ul>
-<li><span class="bi bi-book weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Resource:</span> <a href="./prerequisites.html" class="weekly-note-link">Am I ready for BEDA?</a></span></li>
-<li><span class="bi bi-check2-square weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Practice quiz (0%):</span> <a href="https://canvas.sydney.edu.au/courses/74353/assignments/696323" class="weekly-note-link is-external">Quiz 1</a> <span class="weekly-note-external-marker" aria-hidden="true">↗</span></span></li>
-<li><span class="bi bi-info-circle weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Notice:</span> <a href="https://canvas.sydney.edu.au/courses/74353/pages/snail-collecting-competition" class="weekly-note-link is-external">Snail-collecting competition: prizes to be won</a> <span class="weekly-note-external-marker" aria-hidden="true">↗</span></span></li>
+<th class="weekly-week-cell" scope="row">
+1
+</th>
+<td class="weekly-resources-cell">
+<a class="weekly-lecture-title" href="./lectures/L01/index.html">Introduction and fundamentals</a><span class="weekly-lecture-description">Welcome to BEDA!</span>
+<ul class="weekly-practical-resources">
+<li>
+<a href="./module01/102-week01.html">Practical 1</a>
+</li>
 </ul>
-</div></td>
+</td>
+<td class="weekly-notes-cell">
+<div class="weekly-note-list">
+<ul>
+<li>
+<span class="bi bi-book weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Resource:</span> <a class="weekly-note-link" href="./prerequisites.html">Am I ready for BEDA?</a></span>
+</li>
+<li>
+<span class="bi bi-check2-square weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Practice quiz (0%):</span> <a class="weekly-note-link is-external" href="https://canvas.sydney.edu.au/courses/74353/assignments/696323">Quiz 1</a><span class="weekly-note-external-marker" aria-hidden="true">↗</span></span>
+</li>
+<li>
+<span class="bi bi-info-circle weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Notice:</span> <a class="weekly-note-link is-external" href="https://canvas.sydney.edu.au/courses/74353/pages/snail-collecting-competition">Snail-collecting competition: prizes to be won</a><span class="weekly-note-external-marker" aria-hidden="true">↗</span></span>
+</li>
+</ul>
+</div>
+</td>
 </tr>
 <tr class="even">
-<td>2</td>
-<td><a href="./lectures/L02/index.html">Sampling and the linear model</a> <span class="weekly-lecture-description">Randomisation and why we teach the linear model first</span></td>
-<td><a href="./module01/103-week02.html" title="Study design">Open</a></td>
-<td><div class="weekly-note-list">
-<ul>
-<li><span class="bi bi-book weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Resource:</span> <a href="https://lindeloev.github.io/tests-as-linear/" class="weekly-note-link is-external">Common statistical tests are linear models</a> <span class="weekly-note-external-marker" aria-hidden="true">↗</span></span></li>
-<li><span class="bi bi-check2-square weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Practice quiz (0%):</span> Quiz 2</span></li>
+<th class="weekly-week-cell" scope="row">
+2
+</th>
+<td class="weekly-resources-cell">
+<a class="weekly-lecture-title" href="./lectures/L02/index.html">Sampling and the linear model</a><span class="weekly-lecture-description">Randomisation and why we teach the linear model first</span>
+<ul class="weekly-practical-resources">
+<li>
+<a href="./module01/103-week02.html">Practical 2</a>
+</li>
 </ul>
-</div></td>
+</td>
+<td class="weekly-notes-cell">
+<div class="weekly-note-list">
+<ul>
+<li>
+<span class="bi bi-book weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Resource:</span> <a class="weekly-note-link is-external" href="https://lindeloev.github.io/tests-as-linear/">Common statistical tests are linear models</a><span class="weekly-note-external-marker" aria-hidden="true">↗</span></span>
+</li>
+<li>
+<span class="bi bi-check2-square weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Practice quiz (0%):</span> <a class="weekly-note-link is-external" href="https://canvas.sydney.edu.au/courses/74353/assignments/696324">Quiz 2</a><span class="weekly-note-external-marker" aria-hidden="true">↗</span></span>
+</li>
+</ul>
+</div>
+</td>
 </tr>
 <tr class="odd">
-<td>3</td>
-<td><a href="https://biol2022.github.io/2026-lectures/#week-3-assumptions-and-comparisons">Choosing the right model(s)</a> <span class="weekly-lecture-description">Validating GLMs and modelling differences between groups.</span></td>
-<td><a href="./module01/104-week03.html" title="Sampling analysis and teamwork">Open</a></td>
-<td><div class="weekly-note-list">
-<ul>
-<li><span class="bi bi-book weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Resource:</span> <a href="./module02/203-projects.html" class="weekly-note-link">Report 1 Projects</a></span></li>
-<li><span class="bi bi-check2-square weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Practice quiz (0%):</span> <a href="https://canvas.sydney.edu.au/courses/74353/assignments/696325" class="weekly-note-link is-external">Quiz 3</a> <span class="weekly-note-external-marker" aria-hidden="true">↗</span></span></li>
-<li><span class="bi bi-info-circle weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Notice:</span> Early Feedback Task opens Friday 21 August at 10:00</span></li>
+<th class="weekly-week-cell" scope="row">
+3
+</th>
+<td class="weekly-resources-cell">
+<a class="weekly-lecture-title" href="https://biol2022.github.io/2026-lectures/#week-3-assumptions-and-comparisons">Choosing the right model(s)</a><span class="weekly-lecture-description">Validating GLMs and modelling differences between groups.</span>
+<ul class="weekly-practical-resources">
+<li>
+<a href="./module01/104-week03.html">Practical 3</a>
+</li>
 </ul>
-</div></td>
+</td>
+<td class="weekly-notes-cell">
+<div class="weekly-note-list">
+<ul>
+<li>
+<span class="bi bi-book weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Resource:</span> <a class="weekly-note-link" href="./module02/203-projects.html">Report 1 Projects</a></span>
+</li>
+<li>
+<span class="bi bi-check2-square weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Practice quiz (0%):</span> <a class="weekly-note-link is-external" href="https://canvas.sydney.edu.au/courses/74353/assignments/696325">Quiz 3</a><span class="weekly-note-external-marker" aria-hidden="true">↗</span></span>
+</li>
+<li>
+<span class="bi bi-info-circle weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Notice:</span> Early Feedback Task opens Friday 21 August at 10:00</span>
+</li>
+</ul>
+</div>
+</td>
 </tr>
 <tr class="even">
-<td>4</td>
-<td>Multiple predictors and transformations <span class="weekly-lecture-description">Expanding models and transformations to increase model fit.</span></td>
-<td><span class="weekly-practical-link weekly-practical-link-static" role="img" aria-label="Week 4 practical session" title="Project launch and pilot study timeline">Practical session</span></td>
-<td><div class="weekly-note-list">
-<ul>
-<li><span class="bi bi-clipboard-check weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Assessment (5%):</span> Early Feedback Task due Friday 28 August at 23:59</span></li>
+<th class="weekly-week-cell" scope="row">
+4
+</th>
+<td class="weekly-resources-cell">
+<span class="weekly-lecture-title">Multiple predictors and transformations</span><span class="weekly-lecture-description">Expanding models and transformations to increase model fit.</span>
+<ul class="weekly-practical-resources">
+<li>
+<a href="module02/200-welcome.qmd">Welcome to Module 2 Practicals</a>
+</li>
+<li>
+<a href="./module02/202-timeline.html">Module 2 timeline</a>
+</li>
 </ul>
-</div></td>
+</td>
+<td class="weekly-notes-cell">
+<div class="weekly-note-list">
+<ul>
+<li>
+<span class="bi bi-clipboard-check weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Assessment (5%):</span> Early Feedback Task due Friday 28 August at 23:59</span>
+</li>
+</ul>
+</div>
+</td>
 </tr>
 <tr class="odd">
-<td>5</td>
-<td>Controls and revision <span class="weekly-lecture-description">How to control your experiments with data that you collect.</span></td>
-<td><span class="weekly-practical-link weekly-practical-link-static" role="img" aria-label="Week 5 practical session" title="Main experiment timeline">Practical session</span></td>
-<td><div class="weekly-note-list">
-<ul>
-<li><span class="bi bi-clipboard-check weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Assessment (10%):</span> Evaluation Quiz due Friday 4 September at 23:59</span></li>
-<li><span class="bi bi-info-circle weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Notice:</span> Begin working on Report 1</span></li>
+<th class="weekly-week-cell" scope="row">
+5
+</th>
+<td class="weekly-resources-cell">
+<span class="weekly-lecture-title">Controls and revision</span><span class="weekly-lecture-description">How to control your experiments with data that you collect.</span>
+<ul class="weekly-practical-resources">
+<li>
+<a href="./module02/202-timeline.html">Module 2 timeline</a>
+</li>
 </ul>
-</div></td>
+</td>
+<td class="weekly-notes-cell">
+<div class="weekly-note-list">
+<ul>
+<li>
+<span class="bi bi-clipboard-check weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Assessment (10%):</span> Evaluation Quiz due Friday 4 September at 23:59</span>
+</li>
+<li>
+<span class="bi bi-info-circle weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Notice:</span> Begin working on Report 1</span>
+</li>
+</ul>
+</div>
+</td>
 </tr>
 <tr class="even">
-<td>6</td>
-<td>Refresher and categorical variables <span class="weekly-lecture-description">A refresher on designing experiments with categorical variables.</span></td>
-<td><span class="weekly-practical-no-session">No practical</span></td>
-<td>—</td>
+<th class="weekly-week-cell" scope="row">
+6
+</th>
+<td class="weekly-resources-cell">
+<span class="weekly-lecture-title">Refresher and categorical variables</span><span class="weekly-lecture-description">A refresher on designing experiments with categorical variables.</span>
+<ul class="weekly-practical-resources">
+<li>
+No practical
+</li>
+</ul>
+</td>
+<td class="weekly-notes-cell">
+<div class="weekly-note-list">
+<ul>
+<li>
+<span class="bi bi-info-circle weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Notice:</span> If needed, use your practical time to meet and conduct experiments.</span>
+</li>
+</ul>
+</div>
+</td>
 </tr>
 <tr class="odd">
-<td>7</td>
-<td>Relationships and binary responses <span class="weekly-lecture-description">How to design experiments with continuous or binary responses.</span></td>
-<td><span class="weekly-practical-link weekly-practical-link-static" role="img" aria-label="Week 7 practical session" title="Project data analysis timeline">Practical session</span></td>
-<td>—</td>
+<th class="weekly-week-cell" scope="row">
+7
+</th>
+<td class="weekly-resources-cell">
+<span class="weekly-lecture-title">Relationships and binary responses</span><span class="weekly-lecture-description">How to design experiments with continuous or binary responses.</span>
+<ul class="weekly-practical-resources">
+<li>
+<a href="./module02/202-timeline.html">Module 2 timeline</a>
+</li>
+</ul>
+</td>
+<td class="weekly-notes-cell">
+—
+</td>
 </tr>
 <tr class="even">
-<td>8</td>
-<td>Model selection and revision <span class="weekly-lecture-description">Which model should we use? Some ideas.</span></td>
-<td><span class="weekly-practical-link weekly-practical-link-static" role="img" aria-label="Week 8 practical session" title="Project report and feedback timeline">Practical session</span></td>
-<td><div class="weekly-note-list">
-<ul>
-<li><span class="bi bi-clipboard-check weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Assessment (25%):</span> Report 1 due Friday 25 September at 23:59</span></li>
+<th class="weekly-week-cell" scope="row">
+8
+</th>
+<td class="weekly-resources-cell">
+<span class="weekly-lecture-title">Model selection and revision</span><span class="weekly-lecture-description">Which model should we use? Some ideas.</span>
+<ul class="weekly-practical-resources">
+<li>
+<a href="./module02/202-timeline.html">Module 2 timeline</a>
+</li>
 </ul>
-</div></td>
+</td>
+<td class="weekly-notes-cell">
+<div class="weekly-note-list">
+<ul>
+<li>
+<span class="bi bi-clipboard-check weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Assessment (25%):</span> Report 1 due Friday 25 September at 23:59</span>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr class="odd weekly-semester-break">
+<th class="weekly-week-cell" scope="row">
+<span class="semester-break-row">Break</span>
+</th>
+<td class="weekly-resources-cell">
+<strong>Mid-semester break</strong> — 28 September–2 October 2026
+</td>
+<td class="weekly-notes-cell">
+</td>
+</tr>
+<tr class="even">
+<th class="weekly-week-cell" scope="row">
+9
+</th>
+<td class="weekly-resources-cell">
+<span class="weekly-lecture-title">Multivariate analysis and PCA</span><span class="weekly-lecture-description">Introducing multivariate analysis, principal component analysis and factor analysis.</span>
+<ul class="weekly-practical-resources">
+<li>
+Practical 9
+</li>
+</ul>
+</td>
+<td class="weekly-notes-cell">
+<div class="weekly-note-list">
+<ul>
+<li>
+<span class="bi bi-info-circle weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Notice:</span> Labour Day — Monday 5 October</span>
+</li>
+</ul>
+</div>
+</td>
 </tr>
 <tr class="odd">
-<td><span class="semester-break-row">Break</span></td>
-<td><strong>Mid-semester break</strong> — 28 September–2 October 2026</td>
-<td></td>
-<td></td>
+<th class="weekly-week-cell" scope="row">
+10
+</th>
+<td class="weekly-resources-cell">
+<span class="weekly-lecture-title">Clustering and multidimensional scaling</span><span class="weekly-lecture-description">Using clustering and nMDS to identify and test multivariate patterns.</span>
+<ul class="weekly-practical-resources">
+<li>
+Practical 10
+</li>
+</ul>
+</td>
+<td class="weekly-notes-cell">
+<div class="weekly-note-list">
+<ul>
+<li>
+<span class="bi bi-info-circle weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Notice:</span> Present your experimental design for feedback</span>
+</li>
+<li>
+<span class="bi bi-info-circle weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Notice:</span> Prepare for Report 2</span>
+</li>
+</ul>
+</div>
+</td>
 </tr>
 <tr class="even">
-<td>9</td>
-<td>Multivariate analysis and PCA <span class="weekly-lecture-description">Introducing multivariate analysis, principal component analysis and factor analysis.</span></td>
-<td><span class="weekly-practical-link weekly-practical-link-static" role="img" aria-label="Week 9 practical session" title="PCA and Report 2">Practical session</span></td>
-<td><div class="weekly-note-list">
-<ul>
-<li><span class="bi bi-info-circle weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Notice:</span> Labour Day — Monday 5 October</span></li>
+<th class="weekly-week-cell" scope="row">
+11
+</th>
+<td class="weekly-resources-cell">
+<span class="weekly-lecture-title">MANOVA and multivariate revision</span><span class="weekly-lecture-description">The MANOVA way of designing and interpreting experiments.</span>
+<ul class="weekly-practical-resources">
+<li>
+Practical 11
+</li>
 </ul>
-</div></td>
+</td>
+<td class="weekly-notes-cell">
+<div class="weekly-note-list">
+<ul>
+<li>
+<span class="bi bi-clipboard-check weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Assessment (5%):</span> Report 2 group dataset due at 10:00 on your practical day</span>
+</li>
+</ul>
+</div>
+</td>
 </tr>
 <tr class="odd">
-<td>10</td>
-<td>Clustering and multidimensional scaling <span class="weekly-lecture-description">Using clustering and nMDS to identify and test multivariate patterns.</span></td>
-<td><span class="weekly-practical-link weekly-practical-link-static" role="img" aria-label="Week 10 practical session" title="Permutational techniques">Practical session</span></td>
-<td><div class="weekly-note-list">
-<ul>
-<li><span class="bi bi-info-circle weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Notice:</span> Present your experimental design for feedback</span></li>
-<li><span class="bi bi-info-circle weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Notice:</span> Prepare for Report 2</span></li>
+<th class="weekly-week-cell" scope="row">
+12
+</th>
+<td class="weekly-resources-cell">
+<span class="weekly-lecture-title">Rarefaction and Bayesian analysis</span><span class="weekly-lecture-description">The lectures cover rarefaction for diversity comparisons and Bayesian statistical inference.</span>
+<ul class="weekly-practical-resources">
+<li>
+Practical 12
+</li>
 </ul>
-</div></td>
+</td>
+<td class="weekly-notes-cell">
+—
+</td>
 </tr>
 <tr class="even">
-<td>11</td>
-<td>MANOVA and multivariate revision <span class="weekly-lecture-description">The MANOVA way of designing and interpreting experiments.</span></td>
-<td><span class="weekly-practical-link weekly-practical-link-static" role="img" aria-label="Week 11 practical session" title="Report 2 data analysis">Practical session</span></td>
-<td><div class="weekly-note-list">
-<ul>
-<li><span class="bi bi-clipboard-check weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Assessment (5%):</span> Report 2 group dataset due at 10:00 on your practical day</span></li>
+<th class="weekly-week-cell" scope="row">
+13
+</th>
+<td class="weekly-resources-cell">
+<span class="weekly-lecture-title">Exam revision</span><span class="weekly-lecture-description">You will review the course’s experimental-design and modelling concepts for the final exam.</span>
+<ul class="weekly-practical-resources">
+<li>
+Exam revision practical
+</li>
 </ul>
-</div></td>
-</tr>
-<tr class="odd">
-<td>12</td>
-<td>Rarefaction and Bayesian analysis <span class="weekly-lecture-description">The lectures cover rarefaction for diversity comparisons and Bayesian statistical inference.</span></td>
-<td><span class="weekly-practical-link weekly-practical-link-static" role="img" aria-label="Week 12 practical session" title="Report 2 support">Practical session</span></td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td>13</td>
-<td>Exam revision <span class="weekly-lecture-description">You will review the course's experimental-design and modelling concepts for the final exam.</span></td>
-<td><span class="weekly-practical-link weekly-practical-link-static" role="img" aria-label="Week 13 practical session" title="Feedback and discussion practical">Practical session</span></td>
-<td><div class="weekly-note-list">
+</td>
+<td class="weekly-notes-cell">
+<div class="weekly-note-list">
 <ul>
-<li><span class="bi bi-clipboard-check weekly-note-icon" aria-hidden="true"></span> <span class="weekly-note-content"><span class="weekly-note-category">Assessment (15%):</span> Report 2 individual report due Friday 6 November at 23:59</span></li>
+<li>
+<span class="bi bi-clipboard-check weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Assessment (15%):</span> Report 2 individual report due Friday 6 November at 23:59</span>
+</li>
 </ul>
-</div></td>
+</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -743,11 +925,13 @@ Weekly schedule
 </h3>
 <p><span class="weekly-mobile-current-label" hidden=""></span></p>
 </div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Lectures</span> <span class="weekly-mobile-description">Welcome to BEDA!</span></p>
-</div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Practical</span> <span class="weekly-mobile-practical-entry"><span class="weekly-mobile-practical-icon" aria-hidden="true"></span><a class="weekly-mobile-practical-link" href="./module01/102-week01.html">Open</a></span></p>
+<div class="weekly-mobile-item weekly-mobile-resources">
+<span class="weekly-mobile-item-label">Resources</span> <span class="weekly-mobile-description">Welcome to BEDA!</span>
+<ul class="weekly-practical-resources">
+<li>
+<a href="./module01/102-week01.html">Practical 1</a>
+</li>
+</ul>
 </div>
 <div class="weekly-mobile-item">
 <span class="weekly-mobile-item-label">Notes</span>
@@ -776,11 +960,13 @@ Weekly schedule
 </h3>
 <p><span class="weekly-mobile-current-label" hidden=""></span></p>
 </div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Lectures</span> <span class="weekly-mobile-description">Randomisation and why we teach the linear model first</span></p>
-</div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Practical</span> <span class="weekly-mobile-practical-entry"><span class="weekly-mobile-practical-icon" aria-hidden="true"></span><a class="weekly-mobile-practical-link" href="./module01/103-week02.html">Open</a></span></p>
+<div class="weekly-mobile-item weekly-mobile-resources">
+<span class="weekly-mobile-item-label">Resources</span> <span class="weekly-mobile-description">Randomisation and why we teach the linear model first</span>
+<ul class="weekly-practical-resources">
+<li>
+<a href="./module01/103-week02.html">Practical 2</a>
+</li>
+</ul>
 </div>
 <div class="weekly-mobile-item">
 <span class="weekly-mobile-item-label">Notes</span>
@@ -789,7 +975,7 @@ Weekly schedule
 <span class="bi bi-book weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Resource:</span> <a class="weekly-note-link" href="https://lindeloev.github.io/tests-as-linear/">Common statistical tests are linear models</a><span class="weekly-note-external-marker" aria-hidden="true">↗</span></span>
 </li>
 <li>
-<span class="bi bi-check2-square weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Practice quiz (0%):</span> Quiz 2</span>
+<span class="bi bi-check2-square weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Practice quiz (0%):</span> <a class="weekly-note-link" href="https://canvas.sydney.edu.au/courses/74353/assignments/696324">Quiz 2</a><span class="weekly-note-external-marker" aria-hidden="true">↗</span></span>
 </li>
 </ul>
 </div>
@@ -806,11 +992,13 @@ Weekly schedule
 </h3>
 <p><span class="weekly-mobile-current-label" hidden=""></span></p>
 </div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Lectures</span> <span class="weekly-mobile-description">Validating GLMs and modelling differences between groups.</span></p>
-</div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Practical</span> <span class="weekly-mobile-practical-entry"><span class="weekly-mobile-practical-icon" aria-hidden="true"></span><a class="weekly-mobile-practical-link" href="./module01/104-week03.html">Open</a></span></p>
+<div class="weekly-mobile-item weekly-mobile-resources">
+<span class="weekly-mobile-item-label">Resources</span> <span class="weekly-mobile-description">Validating GLMs and modelling differences between groups.</span>
+<ul class="weekly-practical-resources">
+<li>
+<a href="./module01/104-week03.html">Practical 3</a>
+</li>
+</ul>
 </div>
 <div class="weekly-mobile-item">
 <span class="weekly-mobile-item-label">Notes</span>
@@ -839,11 +1027,16 @@ Weekly schedule
 </h3>
 <p><span class="weekly-mobile-current-label" hidden=""></span></p>
 </div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Lectures</span> <span class="weekly-mobile-description">Expanding models and transformations to increase model fit.</span></p>
-</div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Practical</span> <span class="weekly-mobile-practical-entry"><span class="weekly-mobile-practical-icon" aria-hidden="true"></span></span></p>
+<div class="weekly-mobile-item weekly-mobile-resources">
+<span class="weekly-mobile-item-label">Resources</span> <span class="weekly-mobile-description">Expanding models and transformations to increase model fit.</span>
+<ul class="weekly-practical-resources">
+<li>
+<a href="module02/200-welcome.qmd">Welcome to Module 2 Practicals</a>
+</li>
+<li>
+<a href="./module02/202-timeline.html">Module 2 timeline</a>
+</li>
+</ul>
 </div>
 <div class="weekly-mobile-item">
 <span class="weekly-mobile-item-label">Notes</span>
@@ -866,11 +1059,13 @@ Weekly schedule
 </h3>
 <p><span class="weekly-mobile-current-label" hidden=""></span></p>
 </div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Lectures</span> <span class="weekly-mobile-description">How to control your experiments with data that you collect.</span></p>
-</div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Practical</span> <span class="weekly-mobile-practical-entry"><span class="weekly-mobile-practical-icon" aria-hidden="true"></span></span></p>
+<div class="weekly-mobile-item weekly-mobile-resources">
+<span class="weekly-mobile-item-label">Resources</span> <span class="weekly-mobile-description">How to control your experiments with data that you collect.</span>
+<ul class="weekly-practical-resources">
+<li>
+<a href="./module02/202-timeline.html">Module 2 timeline</a>
+</li>
+</ul>
 </div>
 <div class="weekly-mobile-item">
 <span class="weekly-mobile-item-label">Notes</span>
@@ -896,14 +1091,21 @@ Weekly schedule
 </h3>
 <p><span class="weekly-mobile-current-label" hidden=""></span></p>
 </div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Lectures</span> <span class="weekly-mobile-description">A refresher on designing experiments with categorical variables.</span></p>
+<div class="weekly-mobile-item weekly-mobile-resources">
+<span class="weekly-mobile-item-label">Resources</span> <span class="weekly-mobile-description">A refresher on designing experiments with categorical variables.</span>
+<ul class="weekly-practical-resources">
+<li>
+No practical
+</li>
+</ul>
 </div>
 <div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Practical</span> <span class="weekly-mobile-practical-entry"><span class="weekly-mobile-practical-label">No practical</span></span></p>
-</div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Notes</span> <span class="weekly-mobile-empty">—</span></p>
+<span class="weekly-mobile-item-label">Notes</span>
+<ul class="weekly-note-list weekly-mobile-notes">
+<li>
+<span class="bi bi-info-circle weekly-note-icon" aria-hidden="true"></span><span class="weekly-note-content"><span class="weekly-note-category">Notice:</span> If needed, use your practical time to meet and conduct experiments.</span>
+</li>
+</ul>
 </div>
 </div>
 </section>
@@ -918,11 +1120,13 @@ Weekly schedule
 </h3>
 <p><span class="weekly-mobile-current-label" hidden=""></span></p>
 </div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Lectures</span> <span class="weekly-mobile-description">How to design experiments with continuous or binary responses.</span></p>
-</div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Practical</span> <span class="weekly-mobile-practical-entry"><span class="weekly-mobile-practical-icon" aria-hidden="true"></span></span></p>
+<div class="weekly-mobile-item weekly-mobile-resources">
+<span class="weekly-mobile-item-label">Resources</span> <span class="weekly-mobile-description">How to design experiments with continuous or binary responses.</span>
+<ul class="weekly-practical-resources">
+<li>
+<a href="./module02/202-timeline.html">Module 2 timeline</a>
+</li>
+</ul>
 </div>
 <div class="weekly-mobile-item">
 <p><span class="weekly-mobile-item-label">Notes</span> <span class="weekly-mobile-empty">—</span></p>
@@ -940,11 +1144,13 @@ Weekly schedule
 </h3>
 <p><span class="weekly-mobile-current-label" hidden=""></span></p>
 </div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Lectures</span> <span class="weekly-mobile-description">Which model should we use? Some ideas.</span></p>
-</div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Practical</span> <span class="weekly-mobile-practical-entry"><span class="weekly-mobile-practical-icon" aria-hidden="true"></span></span></p>
+<div class="weekly-mobile-item weekly-mobile-resources">
+<span class="weekly-mobile-item-label">Resources</span> <span class="weekly-mobile-description">Which model should we use? Some ideas.</span>
+<ul class="weekly-practical-resources">
+<li>
+<a href="./module02/202-timeline.html">Module 2 timeline</a>
+</li>
+</ul>
 </div>
 <div class="weekly-mobile-item">
 <span class="weekly-mobile-item-label">Notes</span>
@@ -975,11 +1181,13 @@ Break
 </h3>
 <p><span class="weekly-mobile-current-label" hidden=""></span></p>
 </div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Lectures</span> <span class="weekly-mobile-description">Introducing multivariate analysis, principal component analysis and factor analysis.</span></p>
-</div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Practical</span> <span class="weekly-mobile-practical-entry"><span class="weekly-mobile-practical-icon" aria-hidden="true"></span></span></p>
+<div class="weekly-mobile-item weekly-mobile-resources">
+<span class="weekly-mobile-item-label">Resources</span> <span class="weekly-mobile-description">Introducing multivariate analysis, principal component analysis and factor analysis.</span>
+<ul class="weekly-practical-resources">
+<li>
+Practical 9
+</li>
+</ul>
 </div>
 <div class="weekly-mobile-item">
 <span class="weekly-mobile-item-label">Notes</span>
@@ -1002,11 +1210,13 @@ Break
 </h3>
 <p><span class="weekly-mobile-current-label" hidden=""></span></p>
 </div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Lectures</span> <span class="weekly-mobile-description">Using clustering and nMDS to identify and test multivariate patterns.</span></p>
-</div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Practical</span> <span class="weekly-mobile-practical-entry"><span class="weekly-mobile-practical-icon" aria-hidden="true"></span></span></p>
+<div class="weekly-mobile-item weekly-mobile-resources">
+<span class="weekly-mobile-item-label">Resources</span> <span class="weekly-mobile-description">Using clustering and nMDS to identify and test multivariate patterns.</span>
+<ul class="weekly-practical-resources">
+<li>
+Practical 10
+</li>
+</ul>
 </div>
 <div class="weekly-mobile-item">
 <span class="weekly-mobile-item-label">Notes</span>
@@ -1032,11 +1242,13 @@ Break
 </h3>
 <p><span class="weekly-mobile-current-label" hidden=""></span></p>
 </div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Lectures</span> <span class="weekly-mobile-description">The MANOVA way of designing and interpreting experiments.</span></p>
-</div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Practical</span> <span class="weekly-mobile-practical-entry"><span class="weekly-mobile-practical-icon" aria-hidden="true"></span></span></p>
+<div class="weekly-mobile-item weekly-mobile-resources">
+<span class="weekly-mobile-item-label">Resources</span> <span class="weekly-mobile-description">The MANOVA way of designing and interpreting experiments.</span>
+<ul class="weekly-practical-resources">
+<li>
+Practical 11
+</li>
+</ul>
 </div>
 <div class="weekly-mobile-item">
 <span class="weekly-mobile-item-label">Notes</span>
@@ -1059,11 +1271,13 @@ Break
 </h3>
 <p><span class="weekly-mobile-current-label" hidden=""></span></p>
 </div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Lectures</span> <span class="weekly-mobile-description">The lectures cover rarefaction for diversity comparisons and Bayesian statistical inference.</span></p>
-</div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Practical</span> <span class="weekly-mobile-practical-entry"><span class="weekly-mobile-practical-icon" aria-hidden="true"></span></span></p>
+<div class="weekly-mobile-item weekly-mobile-resources">
+<span class="weekly-mobile-item-label">Resources</span> <span class="weekly-mobile-description">The lectures cover rarefaction for diversity comparisons and Bayesian statistical inference.</span>
+<ul class="weekly-practical-resources">
+<li>
+Practical 12
+</li>
+</ul>
 </div>
 <div class="weekly-mobile-item">
 <p><span class="weekly-mobile-item-label">Notes</span> <span class="weekly-mobile-empty">—</span></p>
@@ -1081,11 +1295,13 @@ Break
 </h3>
 <p><span class="weekly-mobile-current-label" hidden=""></span></p>
 </div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Lectures</span> <span class="weekly-mobile-description">You will review the course’s experimental-design and modelling concepts for the final exam.</span></p>
-</div>
-<div class="weekly-mobile-item">
-<p><span class="weekly-mobile-item-label">Practical</span> <span class="weekly-mobile-practical-entry"><span class="weekly-mobile-practical-icon" aria-hidden="true"></span></span></p>
+<div class="weekly-mobile-item weekly-mobile-resources">
+<span class="weekly-mobile-item-label">Resources</span> <span class="weekly-mobile-description">You will review the course’s experimental-design and modelling concepts for the final exam.</span>
+<ul class="weekly-practical-resources">
+<li>
+Exam revision practical
+</li>
+</ul>
 </div>
 <div class="weekly-mobile-item">
 <span class="weekly-mobile-item-label">Notes</span>
