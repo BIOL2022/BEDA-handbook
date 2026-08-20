@@ -12,10 +12,10 @@ week,section,position,title,url,description,show_on_schedule,note_type,note_weig
 3,practical,1,Sampling analysis and teamwork,module01/104-week03.qmd,,TRUE,,
 3,extra,1,Report 1 Projects,module02/203-projects.qmd,,TRUE,resource,
 3,extra,2,Quiz 3,https://canvas.sydney.edu.au/courses/74353/assignments/696325,,TRUE,quiz,
-3,extra,3,Early Feedback Task opens Friday 21 August at 10:00,,,TRUE,notice,
+3,extra,3,Early Feedback Task opens Friday 21 August at 10:00,https://canvas.sydney.edu.au/courses/74353/assignments/696326,,TRUE,notice,
 4,lecture,1,Multiple predictors and transformations,,Expanding models and transformations to increase model fit.,TRUE,,
 4,practical,1,Welcome to Module 2 practicals,module02/202-timeline.qmd,,TRUE,,
-4,extra,1,Early Feedback Task due Friday 28 August at 23:59,,,TRUE,assessment,5
+4,extra,1,Early Feedback Task due Friday 28 August at 23:59,https://canvas.sydney.edu.au/courses/74353/assignments/696326,,TRUE,assessment,5
 5,lecture,1,Controls and revision,,How to control your experiments with data that you collect.,TRUE,,
 5,practical,1,Main experiment timeline,module02/202-timeline.qmd,,TRUE,,
 5,extra,1,Evaluation Quiz due Friday 4 September at 23:59,,,TRUE,assessment,10
