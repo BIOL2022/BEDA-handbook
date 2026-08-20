@@ -1,5 +1,6 @@
 weekly_content_weeks <- 1:13
 weekly_content_sections <- c("lecture", "workshop", "practical", "extra")
+weekly_module_two_welcome_url <- "module02/200-welcome.qmd"
 
 weekly_note_registry <- list(
   resource = list(label = "Resource", icon = "bi-book"),
@@ -645,88 +646,24 @@ lecture_theme_cell_lines <- function(resources) {
   )
 }
 
-weekly_practical_label <- function(week) {
-  if (week %in% 1:3) {
-    return("Module 1")
-  }
-  if (week %in% 4:8) {
-    return("Module 2")
-  }
-  if (week %in% 9:12) {
-    return("Module 3")
-  }
-  if (week %in% 13) {
-    return("Exam Revision")
-  }
-
-  "Open"
-}
-
-weekly_practical_marker <- function(label) {
-  switch(label,
-    "Module 1" = "weekly-practical-module-1",
-    "Module 2" = "weekly-practical-module-2",
-    "Module 3" = "weekly-practical-module-3",
-    "Exam Revision" = "weekly-practical-exam-revision",
-    NULL
-  )
-}
-
-practical_cell_line <- function(practical, workshop, html_output, week) {
+practical_cell_line <- function(practical, week) {
   if (is.null(practical)) {
     return("  - —")
   }
 
-  if (!html_output) {
-    if (identical(tolower(trimws(practical$title)), "no practical")) {
-      return("  - No practical")
-    }
-    if (is.null(practical$url) || !nzchar(practical$url)) {
-      return(paste0(
-        "  - [Practical session]",
-        '{.weekly-practical-link .weekly-practical-link-static role="img" ',
-        'aria-label="Week ', week, ' practical session" title="',
-        escape_html_attribute(practical$title), '"}'
-      ))
-    }
-
-    return(sprintf("  - [Open](%s)", practical$url))
+  if (identical(tolower(trimws(practical$title)), "no practical")) {
+    return("  - No practical")
   }
-
-  session_entry <- if (is.null(workshop)) practical else workshop
-  title_text <- if (is.null(workshop)) {
-    practical$title
-  } else {
-    paste0(practical$title, " — starts with ", workshop$title)
-  }
-  title <- escape_html_attribute(title_text)
-  label <- weekly_practical_label(week)
-  marker <- weekly_practical_marker(label)
-
-  if (is.null(session_entry$url) || !nzchar(session_entry$url)) {
-    if (identical(tolower(trimws(practical$title)), "no practical")) {
-      return("  - [No practical]{.weekly-practical-no-session}")
-    }
-    static_classes <- if (is.null(marker)) {
-      "{.weekly-practical-static-label}"
-    } else {
-      paste0("{.weekly-practical-static-label .", marker, "}")
-    }
+  if (is.null(practical$url) || !nzchar(practical$url)) {
     return(paste0(
-      "  - [", escape_markdown_label(label), "]",
-      static_classes
+      "  - [Practical session]",
+      '{.weekly-practical-link .weekly-practical-link-static role="img" ',
+      'aria-label="Week ', week, ' practical session" title="',
+      escape_html_attribute(practical$title), '"}'
     ))
   }
 
-  link_attributes <- if (is.null(marker)) {
-    ""
-  } else {
-    paste0("{.", marker, "}")
-  }
-  paste0(
-    "  - [", escape_markdown_label(label), "](",
-    session_entry$url, ' "', title, '")', link_attributes
-  )
+  sprintf("  - [Open](%s)", practical$url)
 }
 
 semester_break_table_lines <- function(entry) {
@@ -742,23 +679,40 @@ semester_break_table_lines <- function(entry) {
   )
 }
 
-weekly_mobile_resource_html <- function(resource, class_name) {
-  title <- escape_html_text(resource$title)
-  class_name <- escape_html_attribute(class_name)
-
-  if (is.null(resource$url) || !nzchar(resource$url)) {
-    return(sprintf('<span class="%s">%s</span>', class_name, title))
+weekly_html_link <- function(url, label, class_name = NULL, title = NULL) {
+  class_attribute <- if (is.null(class_name) || !nzchar(class_name)) {
+    ""
+  } else {
+    sprintf(' class="%s"', escape_html_attribute(class_name))
+  }
+  title_attribute <- if (is.null(title) || !nzchar(title)) {
+    ""
+  } else {
+    sprintf(' title="%s"', escape_html_attribute(title))
   }
 
   sprintf(
-    '<a class="%s" href="%s">%s</a>',
-    class_name,
-    escape_html_attribute(resource$url),
-    title
+    '<a%s href="%s"%s>%s</a>',
+    class_attribute,
+    escape_html_attribute(url),
+    title_attribute,
+    escape_html_text(label)
   )
 }
 
-weekly_mobile_note_html <- function(resource) {
+weekly_resource_html <- function(resource, class_name) {
+  if (is.null(resource$url) || !nzchar(resource$url)) {
+    return(sprintf(
+      '<span class="%s">%s</span>',
+      escape_html_attribute(class_name),
+      escape_html_text(resource$title)
+    ))
+  }
+
+  weekly_html_link(resource$url, resource$title, class_name)
+}
+
+weekly_note_html <- function(resource, external_link_class = FALSE) {
   definition <- weekly_note_definition(resource)
   label <- if (identical(resource$note_type, "assessment")) {
     paste0(definition$label, " (", resource$note_weight, "%)")
@@ -767,10 +721,18 @@ weekly_mobile_note_html <- function(resource) {
   }
   destination <- escape_html_text(resource$title)
   if (!is.null(resource$url) && nzchar(resource$url)) {
-    destination <- sprintf(
-      '<a class="weekly-note-link" href="%s">%s</a>',
-      escape_html_attribute(resource$url),
-      destination
+    link_class <- if (
+      external_link_class &&
+        identical(resource$url_kind, "external")
+    ) {
+      "weekly-note-link is-external"
+    } else {
+      "weekly-note-link"
+    }
+    destination <- weekly_html_link(
+      resource$url,
+      resource$title,
+      link_class
     )
   }
   external_marker <- if (identical(resource$url_kind, "external")) {
@@ -790,12 +752,90 @@ weekly_mobile_note_html <- function(resource) {
   )
 }
 
+weekly_practical_resource_items <- function(entry) {
+  practical <- entry$practical
+  if (is.null(practical)) {
+    return(list(list(label = "—", url = NULL)))
+  }
+
+  session_entry <- if (is.null(entry$workshop)) {
+    practical
+  } else {
+    entry$workshop
+  }
+  destination <- if (
+    is.null(session_entry$url) || !nzchar(session_entry$url)
+  ) {
+    NULL
+  } else {
+    session_entry$url
+  }
+
+  if (entry$week %in% 1:3) {
+    return(list(list(
+      label = paste("Practical", entry$week),
+      url = destination
+    )))
+  }
+  if (identical(entry$week, 4L)) {
+    return(list(
+      list(
+        label = "Welcome to Module 2 Practicals",
+        url = weekly_module_two_welcome_url
+      ),
+      list(label = "Module 2 timeline", url = destination)
+    ))
+  }
+  if (entry$week %in% c(5L, 7L, 8L)) {
+    return(list(list(label = "Module 2 timeline", url = destination)))
+  }
+  if (identical(entry$week, 6L)) {
+    return(list(list(label = "No practical", url = NULL)))
+  }
+  if (entry$week %in% 9:12) {
+    return(list(list(
+      label = paste("Practical", entry$week),
+      url = NULL
+    )))
+  }
+  if (identical(entry$week, 13L)) {
+    return(list(list(
+      label = "Exam revision practical",
+      url = NULL
+    )))
+  }
+
+  list(list(label = practical$title, url = destination))
+}
+
+weekly_practical_resources_html <- function(entry) {
+  items <- weekly_practical_resource_items(entry)
+  item_html <- vapply(
+    items,
+    function(item) {
+      content <- if (is.null(item$url) || !nzchar(item$url)) {
+        escape_html_text(item$label)
+      } else {
+        weekly_html_link(item$url, item$label)
+      }
+      paste0("<li>", content, "</li>")
+    },
+    character(1)
+  )
+
+  paste0(
+    '<ul class="weekly-practical-resources">',
+    paste0(item_html, collapse = ""),
+    "</ul>"
+  )
+}
+
 weekly_mobile_week_lines <- function(entry) {
   lecture <- if (length(entry$lectures) == 0) NULL else entry$lectures[[1]]
   theme <- if (is.null(lecture)) {
     paste("Week", entry$week)
   } else {
-    weekly_mobile_resource_html(lecture, "weekly-mobile-theme")
+    weekly_resource_html(lecture, "weekly-mobile-theme")
   }
   description <- if (is.null(lecture) || is.null(lecture$description)) {
     "—"
@@ -803,68 +843,12 @@ weekly_mobile_week_lines <- function(entry) {
     escape_html_text(lecture$description)
   }
 
-  practical_entry <- if (is.null(entry$workshop)) {
-    entry$practical
-  } else {
-    entry$workshop
-  }
-  practical_title <- if (is.null(practical_entry)) {
-    "—"
-  } else {
-    is_no_practical <- identical(
-      tolower(trimws(practical_entry$title)),
-      "no practical"
-    )
-    has_practical_url <- !is.null(practical_entry$url) &&
-      nzchar(practical_entry$url)
-    title <- if (is_no_practical) {
-      "No practical"
-    } else {
-      weekly_practical_label(entry$week)
-    }
-    marker <- if (is_no_practical) {
-      NULL
-    } else {
-      weekly_practical_marker(title)
-    }
-    visible_title <- escape_html_text(title)
-    destination <- if (has_practical_url) {
-      sprintf(
-        '<a class="weekly-mobile-practical-link" href="%s">%s</a>',
-        escape_html_attribute(practical_entry$url),
-        visible_title
-      )
-    } else {
-      paste0(
-        '<span class="weekly-mobile-practical-label">',
-        visible_title,
-        "</span>"
-      )
-    }
-    practical_icon <- if (is_no_practical) {
-      ""
-    } else {
-      '<span class="weekly-mobile-practical-icon" aria-hidden="true"></span>'
-    }
-    entry_class <- if (is.null(marker)) {
-      "weekly-mobile-practical-entry"
-    } else {
-      paste0("weekly-mobile-practical-entry ", marker)
-    }
-    paste0(
-      '<span class="', entry_class, '">',
-      practical_icon,
-      destination,
-      "</span>"
-    )
-  }
-
   note_lines <- if (length(entry$extras) == 0) {
     '<span class="weekly-mobile-empty">—</span>'
   } else {
     c(
       '<ul class="weekly-note-list weekly-mobile-notes">',
-      vapply(entry$extras, weekly_mobile_note_html, character(1)),
+      vapply(entry$extras, weekly_note_html, character(1)),
       "</ul>"
     )
   }
@@ -893,16 +877,13 @@ weekly_mobile_week_lines <- function(entry) {
     ),
     '<span class="weekly-mobile-current-label" hidden></span>',
     "</div>",
-    '<div class="weekly-mobile-item">',
-    '<span class="weekly-mobile-item-label">Lectures</span>',
+    '<div class="weekly-mobile-item weekly-mobile-resources">',
+    '<span class="weekly-mobile-item-label">Resources</span>',
     sprintf(
       '<span class="weekly-mobile-description">%s</span>',
       description
     ),
-    "</div>",
-    '<div class="weekly-mobile-item">',
-    '<span class="weekly-mobile-item-label">Practical</span>',
-    practical_title,
+    weekly_practical_resources_html(entry),
     "</div>",
     '<div class="weekly-mobile-item">',
     '<span class="weekly-mobile-item-label">Notes</span>',
@@ -951,6 +932,142 @@ weekly_mobile_schedule_lines <- function(weekly_content, semester_breaks) {
 
   c(lines, "</div>")
 }
+weekly_desktop_lecture_html <- function(resources) {
+  if (length(resources) == 0) {
+    return("—")
+  }
+
+  resource <- resources[[1]]
+  description <- if (is.null(resource$description)) {
+    ""
+  } else {
+    paste0(
+      '<span class="weekly-lecture-description">',
+      escape_html_text(resource$description),
+      "</span>"
+    )
+  }
+
+  paste0(
+    weekly_resource_html(resource, "weekly-lecture-title"),
+    description
+  )
+}
+
+weekly_desktop_resources_html <- function(entry) {
+  paste0(
+    weekly_desktop_lecture_html(entry$lectures),
+    weekly_practical_resources_html(entry)
+  )
+}
+
+weekly_html_note_cell_lines <- function(resources) {
+  if (length(resources) == 0) {
+    return('<td class="weekly-notes-cell">—</td>')
+  }
+
+  c(
+    '<td class="weekly-notes-cell">',
+    '<div class="weekly-note-list">',
+    "<ul>",
+    vapply(
+      resources,
+      weekly_note_html,
+      character(1),
+      external_link_class = TRUE
+    ),
+    "</ul>",
+    "</div>",
+    "</td>"
+  )
+}
+
+weekly_html_break_row_lines <- function(entry, row_class) {
+  c(
+    sprintf('<tr class="%s weekly-semester-break">', row_class),
+    paste0(
+      '<th class="weekly-week-cell" scope="row">',
+      '<span class="semester-break-row">Break</span></th>'
+    ),
+    paste0(
+      '<td class="weekly-resources-cell"><strong>',
+      escape_html_text(entry$title),
+      "</strong> — ",
+      escape_html_text(entry$date_range),
+      "</td>"
+    ),
+    '<td class="weekly-notes-cell"></td>',
+    "</tr>"
+  )
+}
+
+weekly_html_table_lines <- function(
+  weekly_content,
+  semester_breaks,
+  caption
+) {
+  caption_lines <- if (length(caption) == 0) {
+    character()
+  } else {
+    paste0("<caption>", escape_html_text(caption), "</caption>")
+  }
+  lines <- c(
+    '<div class="weekly-schedule-desktop table-responsive" tabindex="0">',
+    '<table id="tbl-weekly-content" class="caption-top table">',
+    caption_lines,
+    "<thead>",
+    '<tr class="header">',
+    '<th id="weekly-content-week" scope="col">Week</th>',
+    '<th id="weekly-content-resources" scope="col">Resources</th>',
+    '<th id="weekly-content-notes" scope="col">Notes</th>',
+    "</tr>",
+    "</thead>",
+    "<tbody>"
+  )
+  row_number <- 0L
+
+  for (entry in weekly_content) {
+    row_number <- row_number + 1L
+    row_class <- if (row_number %% 2L == 1L) "odd" else "even"
+    lines <- c(
+      lines,
+      sprintf('<tr class="%s">', row_class),
+      sprintf(
+        '<th class="weekly-week-cell" scope="row">%s</th>',
+        entry$week
+      )
+    )
+
+    lines <- c(
+      lines,
+      paste0(
+        '<td class="weekly-resources-cell">',
+        weekly_desktop_resources_html(entry),
+        "</td>"
+      )
+    )
+    lines <- c(
+      lines,
+      weekly_html_note_cell_lines(entry$extras),
+      "</tr>"
+    )
+
+    breaks_after_week <- Filter(
+      function(break_entry) break_entry$after_week == entry$week,
+      semester_breaks
+    )
+    for (break_entry in breaks_after_week) {
+      row_number <- row_number + 1L
+      row_class <- if (row_number %% 2L == 1L) "odd" else "even"
+      lines <- c(
+        lines,
+        weekly_html_break_row_lines(break_entry, row_class)
+      )
+    }
+  }
+
+  c(lines, "</tbody>", "</table>", "</div>")
+}
 
 weekly_table_lines <- function(
   weekly_content,
@@ -975,12 +1092,7 @@ weekly_table_lines <- function(
       lines,
       sprintf("- - %s", entry$week),
       lecture_theme_cell_lines(entry$lectures),
-      practical_cell_line(
-        entry$practical,
-        entry$workshop,
-        html_output,
-        entry$week
-      ),
+      practical_cell_line(entry$practical, entry$week),
       weekly_note_cell_lines(
         entry$extras,
         html_output,
@@ -1107,6 +1219,12 @@ render_weekly_content_table <- function(
 
   if (identical(pandoc_to, "typst")) {
     lines <- weekly_typst_schedule_lines(weekly_content, semester_breaks)
+  } else if (html_output) {
+    lines <- c(
+      weekly_html_table_lines(weekly_content, semester_breaks, caption),
+      "",
+      weekly_mobile_schedule_lines(weekly_content, semester_breaks)
+    )
   } else {
     lines <- weekly_table_lines(
       weekly_content,
@@ -1115,17 +1233,6 @@ render_weekly_content_table <- function(
       html_output,
       plain_output
     )
-    if (html_output) {
-      lines <- c(
-        '::: {.weekly-schedule-desktop .table-responsive tabindex="0"}',
-        "",
-        lines,
-        "",
-        ":::",
-        "",
-        weekly_mobile_schedule_lines(weekly_content, semester_breaks)
-      )
-    }
   }
 
   cat(paste(lines, collapse = "\n"), "\n")
