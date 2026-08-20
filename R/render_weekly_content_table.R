@@ -504,8 +504,7 @@ weekly_content_entries <- function(data) {
       lectures = resources_for(rows, "lecture"),
       workshop = if (length(workshop) == 0) NULL else workshop[[1]],
       practical = if (length(practical) == 0) NULL else practical[[1]],
-      extras = resources_for(rows, "extra"),
-      includes_workshop = length(workshop) > 0
+      extras = resources_for(rows, "extra")
     )
   })
 }
@@ -646,13 +645,34 @@ lecture_theme_cell_lines <- function(resources) {
   )
 }
 
-practical_cell_line <- function(
-  practical,
-  workshop,
-  html_output,
-  week,
-  includes_workshop
-) {
+weekly_practical_label <- function(week) {
+  if (week %in% 1:3) {
+    return("Module 1")
+  }
+  if (week %in% 4:8) {
+    return("Module 2")
+  }
+  if (week %in% 9:12) {
+    return("Module 3")
+  }
+  if (week %in% 13) {
+    return("Exam Revision")
+  }
+
+  "Open"
+}
+
+weekly_practical_marker <- function(label) {
+  switch(label,
+    "Module 1" = "weekly-practical-module-1",
+    "Module 2" = "weekly-practical-module-2",
+    "Module 3" = "weekly-practical-module-3",
+    "Exam Revision" = "weekly-practical-exam-revision",
+    NULL
+  )
+}
+
+practical_cell_line <- function(practical, workshop, html_output, week) {
   if (is.null(practical)) {
     return("  - —")
   }
@@ -673,40 +693,39 @@ practical_cell_line <- function(
     return(sprintf("  - [Open](%s)", practical$url))
   }
 
-  label <- if (includes_workshop) {
-    sprintf(
-      "Week %s practical session, including Workshop %s",
-      week,
-      week
-    )
-  } else {
-    sprintf("Week %s practical session", week)
-  }
   session_entry <- if (is.null(workshop)) practical else workshop
   title_text <- if (is.null(workshop)) {
     practical$title
   } else {
     paste0(practical$title, " — starts with ", workshop$title)
   }
-  accessible_label <- label
-  link_label <- "Open"
-  label <- escape_html_attribute(accessible_label)
   title <- escape_html_attribute(title_text)
+  label <- weekly_practical_label(week)
+  marker <- weekly_practical_marker(label)
 
   if (is.null(session_entry$url) || !nzchar(session_entry$url)) {
     if (identical(tolower(trimws(practical$title)), "no practical")) {
       return("  - [No practical]{.weekly-practical-no-session}")
     }
+    static_classes <- if (is.null(marker)) {
+      "{.weekly-practical-static-label}"
+    } else {
+      paste0("{.weekly-practical-static-label .", marker, "}")
+    }
     return(paste0(
-      "  - [Practical session]",
-      '{.weekly-practical-link .weekly-practical-link-static role="img" ',
-      'aria-label="', label, '" title="', title, '"}'
+      "  - [", escape_markdown_label(label), "]",
+      static_classes
     ))
   }
 
+  link_attributes <- if (is.null(marker)) {
+    ""
+  } else {
+    paste0("{.", marker, "}")
+  }
   paste0(
-    "  - [", escape_markdown_label(link_label), "](",
-    session_entry$url, ' "', title, '")'
+    "  - [", escape_markdown_label(label), "](",
+    session_entry$url, ' "', title, '")', link_attributes
   )
 }
 
@@ -798,7 +817,16 @@ weekly_mobile_week_lines <- function(entry) {
     )
     has_practical_url <- !is.null(practical_entry$url) &&
       nzchar(practical_entry$url)
-    title <- if (is_no_practical) "No practical" else "Open"
+    title <- if (is_no_practical) {
+      "No practical"
+    } else {
+      weekly_practical_label(entry$week)
+    }
+    marker <- if (is_no_practical) {
+      NULL
+    } else {
+      weekly_practical_marker(title)
+    }
     visible_title <- escape_html_text(title)
     destination <- if (has_practical_url) {
       sprintf(
@@ -806,22 +834,25 @@ weekly_mobile_week_lines <- function(entry) {
         escape_html_attribute(practical_entry$url),
         visible_title
       )
-    } else if (is_no_practical) {
+    } else {
       paste0(
         '<span class="weekly-mobile-practical-label">',
         visible_title,
         "</span>"
       )
-    } else {
-      ""
     }
     practical_icon <- if (is_no_practical) {
       ""
     } else {
       '<span class="weekly-mobile-practical-icon" aria-hidden="true"></span>'
     }
+    entry_class <- if (is.null(marker)) {
+      "weekly-mobile-practical-entry"
+    } else {
+      paste0("weekly-mobile-practical-entry ", marker)
+    }
     paste0(
-      '<span class="weekly-mobile-practical-entry">',
+      '<span class="', entry_class, '">',
       practical_icon,
       destination,
       "</span>"
@@ -948,8 +979,7 @@ weekly_table_lines <- function(
         entry$practical,
         entry$workshop,
         html_output,
-        entry$week,
-        entry$includes_workshop
+        entry$week
       ),
       weekly_note_cell_lines(
         entry$extras,

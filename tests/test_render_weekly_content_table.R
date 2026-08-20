@@ -457,7 +457,7 @@ expect_true(
 expected_note_types <- c(
   "1:1" = "resource", "1:2" = "quiz", "1:3" = "notice",
   "2:1" = "resource", "2:2" = "quiz",
-  "3:1" = "quiz", "3:2" = "notice",
+  "3:1" = "resource", "3:2" = "quiz", "3:3" = "notice",
   "4:1" = "assessment",
   "5:1" = "assessment", "5:2" = "notice",
   "6:1" = "notice",
@@ -473,11 +473,13 @@ expected_note_titles <- c(
   "1:3" = "Snail-collecting competition: prizes to be won",
   "2:1" = "Common statistical tests are linear models",
   "2:2" = "Quiz 2",
-  "3:1" = "Quiz 3",
-  "3:2" = "Early Feedback Task opens Friday 21 August at 10:00",
+  "3:1" = "Report 1 Projects",
+  "3:2" = "Quiz 3",
+  "3:3" = "Early Feedback Task opens Friday 21 August at 10:00",
   "4:1" = "Early Feedback Task due Friday 28 August at 23:59",
   "5:1" = "Evaluation Quiz due Friday 4 September at 23:59",
   "5:2" = "Begin working on Report 1",
+  "6:1" = "If needed, use your practical time to meet and conduct experiments.",
   "8:1" = "Report 1 due Friday 25 September at 23:59",
   "9:1" = "Labour Day — Monday 5 October",
   "10:1" = "Present your experimental design for feedback",
@@ -498,22 +500,22 @@ note_keys <- paste(
   sep = ":"
 )
 expect_true(
-  length(note_rows) == 16L,
-  "The maintained schedule should contain exactly 16 Notes rows."
+  length(note_rows) == 18L,
+  "The maintained schedule should contain exactly 18 Notes rows."
 )
 expect_true(
   identical(
     unname(weekly_content$note_type[note_rows]),
     unname(expected_note_types[note_keys])
   ),
-  "All 16 Notes rows should match the approved taxonomy."
+  "All 18 Notes rows should match the approved taxonomy."
 )
 expect_true(
   identical(
     unname(weekly_content$title[note_rows]),
     unname(expected_note_titles[note_keys])
   ),
-  "All 16 Notes rows should use the approved final titles."
+  "All 18 Notes rows should use the approved final titles."
 )
 expect_true(
   identical(
@@ -864,6 +866,19 @@ expect_true(
   "Quiz 1 should link to its published Canvas quiz."
 )
 
+quiz_two_note <- html_notes[grepl("Quiz 2", html_notes, fixed = TRUE)]
+expect_true(
+  length(quiz_two_note) == 2 &&
+    any(grepl("weekly-note-link", quiz_two_note, fixed = TRUE)) &&
+    any(grepl(
+      "https://canvas.sydney.edu.au/courses/74353/assignments/696324",
+      quiz_two_note,
+      fixed = TRUE
+    )) &&
+    any(grepl("↗", quiz_two_note, fixed = TRUE)),
+  "Quiz 2 should link to its published Canvas quiz."
+)
+
 plain_notes <- render_output("plain", caption = FALSE)
 expect_true(
   any(grepl(
@@ -897,6 +912,19 @@ render_front_page <- function() {
 }
 
 rendered_html_table <- render_front_page()
+expect_true(
+  grepl(
+    '<a href="https://canvas.sydney.edu.au/courses/74353/assignments/696324" class="weekly-note-link is-external">Quiz 2</a>',
+    rendered_html_table,
+    fixed = TRUE
+  ) &&
+    grepl(
+      '<a class="weekly-note-link" href="https://canvas.sydney.edu.au/courses/74353/assignments/696324">Quiz 2</a>',
+      rendered_html_table,
+      fixed = TRUE
+    ),
+  "Quiz 2 should link to Canvas in the desktop and mobile schedules."
+)
 expect_true(
   grepl(
     '<div id="weekly-content"[^>]*role="region"[^>]*aria-label="Weekly content schedule"',
@@ -945,7 +973,7 @@ expect_true(
   "The chronological mobile schedule should include the configured semester break."
 )
 expect_true(
-  grepl("Open Week 1 practical", rendered_html_table, fixed = TRUE) &&
+  grepl("weekly-mobile-practical-link", rendered_html_table, fixed = TRUE) &&
     grepl("weekly-mobile-notes", rendered_html_table, fixed = TRUE),
   "Mobile weeks should keep practicals and Notes visible."
 )
@@ -1065,18 +1093,23 @@ expect_true(
 )
 expect_true(
   grepl(
-    paste0(
-      '<a href="./module01/102-week01.html"[^>]*>',
-      'Week 1 practical session</a>'
-    ),
+    '<a href="./module01/102-week01.html"[^>]*>Module 1</a>',
     rendered_html_table,
     perl = TRUE
-  ) || grepl(
-    "<td>Week 1 practical session</td>",
-    rendered_html_table,
-    fixed = TRUE
   ),
-  "Rendered practical cells should retain their accessible text when draft links are removed."
+  "The rendered desktop Week 1 practical link should show its Module 1 label."
+)
+rendered_module_one_links <- regmatches(
+  rendered_html_table,
+  gregexpr(
+    '<a href="[^"]*module01/10[234]-week0[123][.]html"[^>]*>Module 1</a>',
+    rendered_html_table,
+    perl = TRUE
+  )
+)[[1]]
+expect_true(
+  length(rendered_module_one_links) == 3L,
+  "The desktop schedule should label every Module 1 practical link Module 1."
 )
 expect_true(
   grepl(
@@ -1283,15 +1316,23 @@ expect_true(
 )
 expected_visible_rows <- weekly_content[
   weekly_content$show_on_schedule,
-  c("section", "title"),
+  c("week", "section", "title"),
   drop = FALSE
 ]
 expect_true(
   all(vapply(
     seq_len(nrow(expected_visible_rows)),
     function(index) {
-      title <- expected_visible_rows$title[[index]]
-      escaped_title <- if (expected_visible_rows$section[[index]] == "extra") {
+      section <- expected_visible_rows$section[[index]]
+      title <- if (section == "practical" && !identical(
+        tolower(trimws(expected_visible_rows$title[[index]])),
+        "no practical"
+      )) {
+        weekly_practical_label(expected_visible_rows$week[[index]])
+      } else {
+        expected_visible_rows$title[[index]]
+      }
+      escaped_title <- if (section == "extra") {
         escape_markdown_text(title)
       } else {
         escape_markdown_label(title)
@@ -1304,37 +1345,199 @@ expect_true(
 )
 expect_true(
   any(grepl(
-    '[Week 1 practical session](module01/102-week01.qmd "Getting started")',
+    '[Module 1](module01/102-week01.qmd "Getting started")',
     hidden_caption,
     fixed = TRUE
   )),
-  "The Week 1 practical icon should describe the combined Week 1 session."
+  "The Week 1 practical link should keep its Getting started title metadata."
 )
 expect_true(
   any(grepl(
-    "[Week 1 practical session](module01/102-week01.qmd",
+    "[Module 1](module01/102-week01.qmd",
     hidden_caption,
     fixed = TRUE
   )),
-  "The Week 1 practical-session icon should open the combined Week 1 page."
+  "The Week 1 practical Module 1 link should target the combined Week 1 page."
 )
 expect_true(
-  any(grepl(
-    'aria-label="Week 2 practical session"',
-    hidden_caption,
-    fixed = TRUE
-  )) &&
-    !any(grepl("module01/103-week02.qmd", hidden_caption, fixed = TRUE)),
-  "Week 2 practical should remain visible without a schedule link."
+  any(grepl("[Module 1](module01/103-week02.qmd", hidden_caption, fixed = TRUE)),
+  "The Week 2 practical link should keep the Module 1 label."
 )
 expect_true(
-  any(grepl(
-    'aria-label="Week 3 practical session"',
+  any(grepl("[Module 1](module01/104-week03.qmd", hidden_caption, fixed = TRUE)),
+  "The Week 3 practical link should keep the Module 1 label."
+)
+
+module_two_mobile_links <- regmatches(
+  rendered_html_table,
+  gregexpr(
+    '<a class="weekly-mobile-practical-link"[^>]*>Module 2</a>',
+    rendered_html_table,
+    perl = TRUE
+  )
+)[[1]]
+expect_true(
+  count_fixed_matches(hidden_caption, "[Module 2](module02/202-timeline.qmd") == 4L,
+  "Weeks 4, 5, 7, and 8 should label their Module 2 practical links Module 2."
+)
+expect_true(
+  length(module_two_mobile_links) == 4L,
+  "The mobile schedule should show four Module 2 practical links."
+)
+module_one_mobile_links <- regmatches(
+  rendered_html_table,
+  gregexpr(
+    '<a class="weekly-mobile-practical-link"[^>]*>Module 1</a>',
+    rendered_html_table,
+    perl = TRUE
+  )
+)[[1]]
+expect_true(
+  count_fixed_matches(hidden_caption, "[Module 1](module01/") == 3L,
+  "Weeks 1, 2, and 3 should label their Module 1 practical links Module 1."
+)
+expect_true(
+  length(module_one_mobile_links) == 3L,
+  "The mobile schedule should show three Module 1 practical links."
+)
+expect_true(
+  count_fixed_matches(
     hidden_caption,
-    fixed = TRUE
-  )) &&
-    !any(grepl("module01/104-week03.qmd", hidden_caption, fixed = TRUE)),
-  "Week 3 practical should remain visible without a schedule link."
+    "[No practical]{.weekly-practical-no-session}"
+  ) == 1L &&
+    count_fixed_matches(
+      rendered_html_table,
+      '<span class="weekly-mobile-practical-label">No practical</span>'
+    ) == 1L,
+  "Week 6 should remain No practical on desktop and mobile without a link."
+)
+expect_true(
+  count_fixed_matches(hidden_caption, "[Module 1](module01/102-week01.qmd") == 1L,
+  "The Week 1 practical link should use the Module 1 label exactly once."
+)
+expect_true(
+  grepl(
+    '<a class="weekly-mobile-practical-link" href="[^"]*102-week01[^"]*">Module 1</a>',
+    rendered_html_table,
+    perl = TRUE
+  ),
+  "The mobile Week 1 practical link should show its Module 1 label."
+)
+expect_true(
+  count_fixed_matches(
+    hidden_caption,
+    "[Module 3]{.weekly-practical-static-label"
+  ) == 4L,
+  "Weeks 9 to 12 should show a static Module 3 practical label."
+)
+expect_true(
+  count_fixed_matches(
+    hidden_caption,
+    "[Exam Revision]{.weekly-practical-static-label"
+  ) == 1L,
+  "Week 13 should show a static Exam Revision practical label."
+)
+rendered_module_three_statics <- regmatches(
+  rendered_html_table,
+  gregexpr(
+    '<span[^>]*weekly-practical-static-label[^>]*>Module 3</span>',
+    rendered_html_table,
+    perl = TRUE
+  )
+)[[1]]
+rendered_exam_revision_static <- regmatches(
+  rendered_html_table,
+  gregexpr(
+    '<span[^>]*weekly-practical-static-label[^>]*>Exam Revision</span>',
+    rendered_html_table,
+    perl = TRUE
+  )
+)[[1]]
+expect_true(
+  length(rendered_module_three_statics) == 4L &&
+    length(rendered_exam_revision_static) == 1L,
+  "The desktop schedule should render Module 3 and Exam Revision as static labels."
+)
+expect_true(
+  count_fixed_matches(
+    rendered_html_table,
+    '<span class="weekly-mobile-practical-label">Module 3</span>'
+  ) == 4L &&
+    count_fixed_matches(
+      rendered_html_table,
+      '<span class="weekly-mobile-practical-label">Exam Revision</span>'
+    ) == 1L,
+  "The mobile schedule should render Module 3 and Exam Revision as static labels."
+)
+expect_true(
+  !grepl(">Module 3</a>", rendered_html_table, fixed = TRUE) &&
+    !grepl(">Exam Revision</a>", rendered_html_table, fixed = TRUE),
+  "Static practical labels should not acquire links."
+)
+expect_true(
+  count_fixed_matches(
+    rendered_html_table,
+    '<a class="weekly-mobile-practical-link"'
+  ) == 7L,
+  "Only Weeks 1 to 8 practicals should link on mobile."
+)
+expect_true(
+  !any(grepl("[Open](", hidden_caption, fixed = TRUE)) &&
+    !grepl(
+      '<a class="weekly-mobile-practical-link"[^>]*>Open</a>',
+      rendered_html_table,
+      perl = TRUE
+    ),
+  "No HTML practical entry should keep the generic Open label."
+)
+module_group_counts <- c(module1 = 3L, module2 = 4L, module3 = 4L, exam = 1L)
+group_classes <- c(
+  module1 = "weekly-practical-module-1",
+  module2 = "weekly-practical-module-2",
+  module3 = "weekly-practical-module-3",
+  exam = "weekly-practical-exam-revision"
+)
+desktop_schedule_start <- regexpr('class="weekly-schedule-mobile"', rendered_html_table, fixed = TRUE)
+rendered_desktop_schedule <- substring(rendered_html_table, 1L, desktop_schedule_start - 1L)
+rendered_mobile_schedule <- substring(rendered_html_table, desktop_schedule_start)
+desktop_counts <- vapply(group_classes, function(marker) count_fixed_matches(rendered_desktop_schedule, marker), integer(1))
+mobile_counts <- vapply(group_classes, function(marker) count_fixed_matches(rendered_mobile_schedule, marker), integer(1))
+expect_true(identical(desktop_counts, module_group_counts) && identical(mobile_counts, module_group_counts), "Practical group markers should use exact desktop and mobile multiplicities.")
+
+no_session_desktop_tags <- regmatches(rendered_desktop_schedule, gregexpr('<[^>]+class="[^"]*weekly-practical-no-session[^"]*"[^>]*>', rendered_desktop_schedule, perl = TRUE))[[1]]
+no_session_mobile_labels <- regmatches(rendered_mobile_schedule, gregexpr('<span[^>]*class="[^"]*weekly-mobile-practical-label[^"]*"[^>]*>No practical</span>', rendered_mobile_schedule, perl = TRUE))[[1]]
+no_session_pattern <- "weekly-practical-(module-1|module-2|module-3|exam-revision)"
+expect_true(
+  length(no_session_desktop_tags) == 1L && length(no_session_mobile_labels) == 1L &&
+    !grepl(no_session_pattern, no_session_desktop_tags, perl = TRUE) &&
+    !grepl(no_session_pattern, no_session_mobile_labels, perl = TRUE),
+  "Week 6 should stay No practical without a group marker in both schedules."
+)
+
+for (marker in group_classes) {
+  group_rules <- regmatches(
+    timeline_css,
+    gregexpr(paste0("[^{}]*#weekly-content[^{}]*\\.", marker, "[^{}]*\\{[^}]*\\}"), timeline_css, perl = TRUE)
+  )[[1]]
+  expect_true(
+    any(grepl("color:", group_rules, fixed = TRUE) & grepl("background", group_rules, fixed = TRUE)),
+    paste("Every marker should define scoped colour and background declarations:", marker)
+  )
+}
+
+module_three_rules <- regmatches(timeline_css, gregexpr('#weekly-content[^{}]*\\.weekly-practical-static-label\\.weekly-practical-module-3[^{}]*\\{[^}]*\\}', timeline_css, perl = TRUE))[[1]]
+module_three_before <- regmatches(timeline_css, gregexpr('#weekly-content[^{}]*\\.weekly-practical-static-label\\.weekly-practical-module-3::before\\s*\\{[^}]*\\}', timeline_css, perl = TRUE))[[1]]
+expect_true(
+  length(module_three_before) >= 1L &&
+    length(module_three_rules) >= 1L &&
+    grepl("mask:", module_three_before[[1L]], fixed = TRUE) &&
+    grepl('content: ""', module_three_before[[1L]], fixed = TRUE) &&
+    (grepl("gap:", module_three_rules[[1L]], fixed = TRUE) || grepl("margin", module_three_rules[[1L]], fixed = TRUE)),
+  "Module 3 static labels should carry an empty-content masked beaker with spacing."
+)
+expect_true(
+  !grepl("weekly-practical-exam-revision[^{}]*::before[^{}]*\\{[^}]*mask:", timeline_css, perl = TRUE),
+  "Exam Revision should not add a masked beaker pseudo-element."
 )
 
 latex_output <- render_output("latex", caption = FALSE)
@@ -1355,8 +1558,25 @@ expect_true(
   "LaTeX table output should include the semester break row."
 )
 expect_true(
-  any(grepl("[Practical session](", latex_output, fixed = TRUE)),
-  "Non-HTML practicals should use Markdown links."
+  any(grepl(
+    "[Practical session]{.weekly-practical-link",
+    latex_output,
+    fixed = TRUE
+  )),
+  "URL-less non-HTML practicals should retain a labelled static session."
+)
+expect_true(
+  any(grepl("[Open](module02/202-timeline.qmd)", latex_output, fixed = TRUE)),
+  "Non-HTML output should keep the generic Open label for Module 2 practicals."
+)
+expect_true(
+  any(grepl("[Open](module01/102-week01.qmd)", latex_output, fixed = TRUE)),
+  "Non-HTML output should keep the generic Open label for Module 1 practicals."
+)
+expect_true(
+  !any(grepl("[Module 3]", latex_output, fixed = TRUE)) &&
+    !any(grepl("[Exam Revision]", latex_output, fixed = TRUE)),
+  "The Module 3 and Exam Revision labels should remain HTML-only."
 )
 
 typst_external_link <- run_pandoc(
@@ -1415,6 +1635,17 @@ expect_true(
     fixed = TRUE
   )),
   "Typst should preserve the external hyperlink."
+)
+expect_true(
+  any(grepl(
+    paste0(
+      "[Quiz 2]",
+      "(<https://canvas.sydney.edu.au/courses/74353/assignments/696324>)"
+    ),
+    typst_output,
+    fixed = TRUE
+  )),
+  "Typst output should preserve the Quiz 2 Canvas hyperlink."
 )
 expect_true(
   any(grepl(week_one_escaped_description, typst_output, fixed = TRUE)),

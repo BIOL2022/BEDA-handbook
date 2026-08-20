@@ -247,11 +247,15 @@ main.content .module2-timeline-table table > thead > tr > th {
 }
 
 #weekly-content tbody tr.is-current-week > * {
-  background-color: #f4f8e8;
+  box-shadow: inset 0 2px #0f6b5b, inset 0 -2px #0f6b5b;
 }
 
 #weekly-content tbody tr.is-current-week > :first-child {
-  box-shadow: inset 5px 0 #0f6b5b;
+  box-shadow: inset 5px 0 #0f6b5b, inset 0 2px #0f6b5b, inset 0 -2px #0f6b5b;
+}
+
+#weekly-content tbody tr.is-current-week > :last-child {
+  box-shadow: inset -5px 0 #0f6b5b, inset 0 2px #0f6b5b, inset 0 -2px #0f6b5b;
 }
 
 .current-week-label {
@@ -279,10 +283,15 @@ main.content .module2-timeline-table table > thead > tr > th {
 }
 
 #weekly-content th:first-child,
-#weekly-content td:first-child,
+#weekly-content td:first-child {
+  text-align: center;
+}
+
 #weekly-content th:nth-child(3),
 #weekly-content td:nth-child(3) {
+  min-width: 10rem;
   text-align: center;
+  width: 10rem;
 }
 
 #weekly-content td ul,
@@ -409,18 +418,19 @@ main.content .module2-timeline-table table > thead > tr > th {
   width: 1.25rem;
 }
 
-#weekly-content tbody tr:not(:has(.semester-break-row)) td:nth-child(3):not(:has(> a)):not(:has(> .weekly-practical-link)):not(:has(> .weekly-practical-no-session)) {
+#weekly-content tbody tr:not(:has(.semester-break-row)) td:nth-child(3):not(:has(> a)):not(:has(> .weekly-practical-link)):not(:has(> .weekly-practical-no-session)):not(:has(> .weekly-practical-static-label)) {
   color: #005ea8;
   font-size: 0;
 }
-#weekly-content td:nth-child(3) > .weekly-practical-no-session {
+#weekly-content td:nth-child(3) > .weekly-practical-no-session,
+#weekly-content td:nth-child(3) > .weekly-practical-static-label {
   color: #005ea8;
   display: inline-block;
   font-size: 0.95em;
   padding: 0.35rem 0.5rem;
 }
 
-#weekly-content tbody tr:not(:has(.semester-break-row)) td:nth-child(3):not(:has(> a)):not(:has(> .weekly-practical-link)):not(:has(> .weekly-practical-no-session))::before {
+#weekly-content tbody tr:not(:has(.semester-break-row)) td:nth-child(3):not(:has(> a)):not(:has(> .weekly-practical-link)):not(:has(> .weekly-practical-no-session)):not(:has(> .weekly-practical-static-label))::before {
   background-color: currentColor;
   content: "";
   display: inline-block;
@@ -448,6 +458,76 @@ main.content .module2-timeline-table table > thead > tr > th {
 
 .weekly-practical-link-static:hover {
   background: transparent;
+}
+
+/* Grouped practical-colour treatment: module/revision whole-cell palettes. */
+#weekly-content td:nth-child(3):has(> .weekly-practical-module-1) {
+  background: #f0f6fc;
+  color: #005ea8;
+}
+
+#weekly-content td:nth-child(3) > .weekly-practical-module-1 {
+  color: #005ea8;
+}
+
+#weekly-content td:nth-child(3) > a.weekly-practical-module-1:hover {
+  color: #003f73;
+}
+
+#weekly-content td:nth-child(3):has(> .weekly-practical-module-2) {
+  background: #f4f8e8;
+  color: #0f6b5b;
+}
+
+#weekly-content td:nth-child(3) > .weekly-practical-module-2 {
+  color: #0f6b5b;
+}
+
+#weekly-content td:nth-child(3) > a.weekly-practical-module-2:hover {
+  color: #0a4a3f;
+}
+
+#weekly-content td:nth-child(3):has(> .weekly-practical-module-3) {
+  background: #fcf2e8;
+  color: #8f4000;
+}
+
+#weekly-content td:nth-child(3) > .weekly-practical-module-3 {
+  color: #8f4000;
+}
+
+#weekly-content td:nth-child(3) > a.weekly-practical-module-3:hover {
+  color: #6b3000;
+}
+
+#weekly-content td:nth-child(3) > .weekly-practical-static-label.weekly-practical-module-3 {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.45rem;
+  justify-content: flex-start;
+}
+
+#weekly-content td:nth-child(3) > .weekly-practical-static-label.weekly-practical-module-3::before {
+  background-color: currentColor;
+  content: "";
+  display: inline-block;
+  flex: 0 0 auto;
+  height: 1.25rem;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M5 1.5h6M6 1.5v4L2.8 12a1.8 1.8 0 0 0 1.6 2.5h7.2a1.8 1.8 0 0 0 1.6-2.5L10 5.5v-4M4.5 9.5h7'/%3E%3C/svg%3E") center / contain no-repeat;
+  width: 1.25rem;
+}
+
+#weekly-content td:nth-child(3):has(> .weekly-practical-exam-revision) {
+  background: #f0f1f2;
+  color: #3b4249;
+}
+
+#weekly-content td:nth-child(3) > .weekly-practical-exam-revision {
+  color: #3b4249;
+}
+
+#weekly-content td:nth-child(3) > a.weekly-practical-exam-revision:hover {
+  color: #23282d;
 }
 
 #weekly-content {
@@ -597,6 +677,58 @@ main.content .module2-timeline-table table > thead > tr > th {
     height: 1.1rem;
     mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M5 1.5h6M6 1.5v4L2.8 12a1.8 1.8 0 0 0 1.6 2.5h7.2a1.8 1.8 0 0 0 1.6-2.5L10 5.5v-4M4.5 9.5h7'/%3E%3C/svg%3E") center / contain no-repeat;
     width: 1.1rem;
+  }
+
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-module-1 {
+    background: #f0f6fc;
+    border-radius: 0.25rem;
+    color: #005ea8;
+    padding: 0.16rem 0.5rem;
+  }
+
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-module-1 .weekly-mobile-practical-link,
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-module-1 .weekly-mobile-practical-link:visited,
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-module-1 .weekly-mobile-practical-link:hover {
+    color: #005ea8;
+  }
+
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-module-2 {
+    background: #f4f8e8;
+    border-radius: 0.25rem;
+    color: #0f6b5b;
+    padding: 0.16rem 0.5rem;
+  }
+
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-module-2 .weekly-mobile-practical-link,
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-module-2 .weekly-mobile-practical-link:visited,
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-module-2 .weekly-mobile-practical-link:hover {
+    color: #0f6b5b;
+  }
+
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-module-3 {
+    background: #fcf2e8;
+    border-radius: 0.25rem;
+    color: #8f4000;
+    padding: 0.16rem 0.5rem;
+  }
+
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-module-3 .weekly-mobile-practical-link,
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-module-3 .weekly-mobile-practical-link:visited,
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-module-3 .weekly-mobile-practical-link:hover {
+    color: #8f4000;
+  }
+
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-exam-revision {
+    background: #f0f1f2;
+    border-radius: 0.25rem;
+    color: #3b4249;
+    padding: 0.16rem 0.5rem;
+  }
+
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-exam-revision .weekly-mobile-practical-link,
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-exam-revision .weekly-mobile-practical-link:visited,
+  #weekly-content .weekly-mobile-practical-entry.weekly-practical-exam-revision .weekly-mobile-practical-link:hover {
+    color: #3b4249;
   }
 
   .weekly-mobile-notes {
