@@ -8,7 +8,7 @@ title: "Week 3 — Choosing the right model based on assumptions"
 :::
 
 ```{=html}
-<iframe class="lecture-preview" src="https://biol2022.github.io/L03a-model-appropriate/" title="Preview of Is my model appropriate? lecture slides" loading="lazy" allowfullscreen></iframe>
+<iframe class="lecture-preview" src="https://biol2022.github.io/2026-lectures/lectures/L03a-model-appropriate/index.html" title="Preview of Is my model appropriate? lecture slides" loading="lazy" allowfullscreen></iframe>
 ```
 
 ::: {.lecture-actions}
@@ -16,7 +16,7 @@ title: "Week 3 — Choosing the right model based on assumptions"
 :::
 
 ```{=html}
-<iframe class="lecture-preview" src="https://biol2022.github.io/L03b-ttests/" title="Preview of Modelling differences between two things lecture slides" loading="lazy" allowfullscreen></iframe>
+<iframe class="lecture-preview" src="https://biol2022.github.io/2026-lectures/lectures/L03b-ttests/index.html" title="Preview of Modelling differences between two things lecture slides" loading="lazy" allowfullscreen></iframe>
 ```
 
 ::: {.lecture-week-nav}

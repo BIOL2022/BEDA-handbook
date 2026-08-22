@@ -9,7 +9,7 @@ title: "Week 5 — Controls and revision"
 :::
 
 ```{=html}
-<iframe class="lecture-preview" src="https://biol2022.github.io/L05a-blocking-fixed-random/" title="Preview of Control, fixed and random variables lecture slides" loading="lazy" allowfullscreen></iframe>
+<iframe class="lecture-preview" src="https://biol2022.github.io/2026-lectures/lectures/L05a-blocking-fixed-random/index.html" title="Preview of Control, fixed and random variables lecture slides" loading="lazy" allowfullscreen></iframe>
 ```
 
 ::: {.lecture-actions}
@@ -17,7 +17,7 @@ title: "Week 5 — Controls and revision"
 :::
 
 ```{=html}
-<iframe class="lecture-preview" src="https://biol2022.github.io/L05b-revision/" title="Preview of Module 1 revision lecture slides" loading="lazy" allowfullscreen></iframe>
+<iframe class="lecture-preview" src="https://biol2022.github.io/2026-lectures/lectures/L05b-revision/index.html" title="Preview of Module 1 revision lecture slides" loading="lazy" allowfullscreen></iframe>
 ```
 
 ::: {.lecture-week-nav}
