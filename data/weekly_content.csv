@@ -8,15 +8,15 @@ week,section,position,title,url,description,show_on_schedule,note_type,note_weig
 2,practical,1,Study design,module01/103-week02.qmd,,TRUE,,
 2,extra,1,Common statistical tests are linear models,https://lindeloev.github.io/tests-as-linear/,,TRUE,resource,
 2,extra,2,Quiz 2,https://canvas.sydney.edu.au/courses/74353/assignments/696324,,TRUE,quiz,
-3,lecture,1,Choosing the right model(s),https://biol2022.github.io/2026-lectures/#week-3-assumptions-and-comparisons,Validating GLMs and modelling differences between groups.,TRUE,,
+3,lecture,1,Choosing the right model(s),lectures/L03/index.qmd,Validating GLMs and modelling differences between groups.,TRUE,,
 3,practical,1,Sampling analysis and teamwork,module01/104-week03.qmd,,TRUE,,
 3,extra,1,Report 1 Projects,module02/203-projects.qmd,,TRUE,resource,
 3,extra,2,Quiz 3,https://canvas.sydney.edu.au/courses/74353/assignments/696325,,TRUE,quiz,
 3,extra,3,Early Feedback Task opens Friday 21 August at 10:00,https://canvas.sydney.edu.au/courses/74353/assignments/696326,,TRUE,notice,
-4,lecture,1,Multiple predictors and transformations,https://biol2022.github.io/2026-lectures/#week-4-multiple-predictors-and-transformations,Expanding models and transformations to increase model fit.,TRUE,,
+4,lecture,1,Multiple predictors and transformations,lectures/L04/index.qmd,Expanding models and transformations to increase model fit.,TRUE,,
 4,practical,1,Welcome to Module 2 practicals,module02/202-timeline.qmd,,TRUE,,
 4,extra,1,Early Feedback Task due Friday 28 August at 23:59,https://canvas.sydney.edu.au/courses/74353/assignments/696326,,TRUE,assessment,5
-5,lecture,1,Controls and revision,https://biol2022.github.io/L05a-blocking-fixed-random/,How to control your experiments with data that you collect.,TRUE,,
+5,lecture,1,Controls and revision,lectures/L05/index.qmd,How to control your experiments with data that you collect.,TRUE,,
 5,practical,1,Main experiment timeline,module02/202-timeline.qmd,,TRUE,,
 5,extra,1,Evaluation Quiz due Friday 4 September at 23:59,,,TRUE,assessment,10
 5,extra,2,Begin working on Report 1,,,TRUE,notice,
