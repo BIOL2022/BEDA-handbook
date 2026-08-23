@@ -23,7 +23,7 @@
 | [**P03**](#p03) | Ant food preferences<br>Ant-foraging experiment | Field-based, likely in backyards or another controlled outdoor setting. Your group will set up food treatments and observe ant recruitment. |
 | [**P04**](#p04) | Ant foraging costs and benefits<br>Ant-foraging experiment | Field-based, likely in backyards or another controlled outdoor setting. Your group will manipulate access to food and observe ant recruitment. |
 | [**P05**](#p05) | Wheat germination and growth<br>Germination experiment | Requires carefully controlled conditions and regular care of plants over time. |
-| [**P06**](#p06) | Native or horticultural germination<br>Germination experiment | Requires carefully controlled conditions and regular care of plants over time. You can switch to P05 if germination fails. |
+| [**P06**](#p06) | Native grass germination<br>Germination experiment | Requires carefully controlled conditions and regular care of plants over time. You can switch to P05 if germination fails. |
 | [**P07**](#p07) | Bird activity across time of day<br>Bird survey | Outdoor activity across a broader geographic area. Animal ethics conditions apply: observe birds only; do not handle or disturb them. |
 | [**P08**](#p08) | Bird use of urban water bodies<br>Bird survey | Outdoor activity across multiple water bodies or sites. Animal ethics conditions apply: observe birds only; do not handle or disturb them. |
 :::
@@ -89,12 +89,11 @@ Understanding these relationships is one step in understanding the conditions re
 :::
 
 ::: {.project-section}
-#### **Project P06** – Germination of native grass seeds OR a horticultural plant (flower or veggie) in relation to water availability {#p06}
+#### **Project P06** – Germination of native grass seeds in relation to water availability {#p06}
 <br>
 
 **Background**: Germination of **native plants** is triggered by a range of factors in Australia. Some plants need heat initially, others simply need water. If we can, we will provide you with seed from a native plant that germinates quickly under the right conditions. How often it rains may affect whether seeds germinate, in turn affecting recruitment and regeneration. Understanding the relationship between rain (watering) frequency and probability of seeds germinating helps us understand how climate influences the dynamics of our grasslands and use of native plants in agriculture.
 
-Germination of **horticultural plants** is crucial for the cut flower or veggie industries; no germination, no plants, no business! How often it rains or how often seeds are watered may affect whether or how quickly and/or how many seeds germinate – but you need to find this out.
 
 **NOTE**: In your main trial, if you get no germination after 7 days, your group can choose to switch to wheat (Project P05) to ask the same question, because wheat germinates quickly.
 
