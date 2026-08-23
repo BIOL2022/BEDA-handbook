@@ -105,7 +105,7 @@ Understanding these relationships is one step in understanding the conditions re
 
 **Background**: Birds may be active at different times of day for a variety of reasons. As a first step in understanding bird abundance and diversity we need to be able to measure it and know whether when we measure it makes a difference. If you stand in the same spot and count birds, does the outcome depend on when you did it? Are there other factors you need to control or at least take into account?
 
-**NOTE**: Animal Ethics conditions apply (see below).
+**NOTE**: Animal ethics and bird safety conditions apply (see below).
 
 :::
 
@@ -115,12 +115,16 @@ Understanding these relationships is one step in understanding the conditions re
 
 **Background**: Bird diversity within cities is affected by many factors, including availability of food, sites for nesting and shelter from predators. Water bodies, such as ponds and lakes, in parks and gardens can attract native (and introduced) birds. The Sydney Council, for example, has upgraded and revegetated the ponds in Sydney Park, just south of Sydney Uni, to encourage water birds. To maximise bird diversity, as well as simply maximise bird numbers, it is important to understand the relationship between characteristics of different water bodies and the diversity of birds they support.
 
-**NOTE**: Animal Ethics conditions apply (see below).
+**NOTE**: Animal ethics and bird safety conditions apply (see below).
 :::
 
 ## Animal Ethics requirements for Projects on birds
 
 If you sign up to these projects, you must follow the animal ethics requirements as approved by the University of Sydney Animal Ethics Committee:
+
+### Bird safety and biosecurity
+
+**Do not touch, handle, move, clean up, or transport birds or other wildlife.** If you find a sick, dead, or injured bird or other wildlife while undertaking this project, keep your distance, record what you observe, and call the Emergency Animal Disease Hotline on **1800 675 888** for advice and to report it. Notify Clare McArthur by email within 24 hours with a summary of what happened; this will be reported to the Animal Ethics Committee as an adverse event.
 
 **Project “Ecology teaching – bird surveys”. Project Number: 2022/2148.**
 
@@ -143,7 +147,3 @@ Observers will remain far enough from birds that the birds are not visibly affec
    a. A complete legible copy of the final monitoring sheets from (1)
    b. A summary of the total number of (i) native birds, (ii) invasive birds hence (iii) all birds you counted at each site and across all sites over the course of your project, and a list of the sites you monitored, with GPS coordinates.
    c. Clearly and informatively labelled photos from (2).
-4. Injured birds: In the very unlikely event that birds are found injured on site: you must:
-   a. seek advice from Clare McArthur (clare.mcarthur@sydney.edu.au, subject heading: “BIOL2022 URGENT - bird project”) or other academic in the unit of study,
-   b. while ensuring your own safety first, if necessary arrange to appropriately transport seriously injured animals to the nearest veterinarian for treatment, AND
-   c. you must notify Clare McArthur by email within 24h, summarising what has occurred (this will be reported as an adverse event to the Animal Ethics Committee even if you played no part in the injury).
