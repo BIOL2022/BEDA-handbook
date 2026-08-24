@@ -1,7 +1,7 @@
 ---
-title: "Module 2"
+title: "Preamble"
 sidebar: module-2
-
+author: Prof. Clare McArthur
 ---
 
-{{< include ../_partials/module02-welcome.qmd >}}
+{{< include ../_partials/module02-preamble.qmd >}}

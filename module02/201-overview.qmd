@@ -1,0 +1,7 @@
+---
+title: "What this module is about"
+sidebar: module-2
+
+---
+
+{{< include ../_partials/module02-overview.qmd >}}

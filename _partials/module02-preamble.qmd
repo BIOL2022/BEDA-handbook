@@ -1,0 +1,22 @@
+I think one of the most exciting things about being a biologist is discovering how the world works. One skill that helps me do so, is knowing how to set up an experiment to test my ideas about the world. You may need to overcome that initial learning hump, but if you persist, you will have a skill at your fingertips that will stand you in really good stead for the future. It doesn’t matter whether you intend to go on in research or not - knowing what makes good research and good evidence is important in so many walks of life.
+
+My message is: whether you are doing this unit just because you have to, or because you are interested – take heart! I never did anything much more complicated than a *t*-test even during my PhD. But now I LOVE designing experiments and grappling with data. It can be frustrating at first, especially if you are time-poor and just want to get the job done. It can be infuriating. It can also be fun (yes – fun!). Most of all it’s incredibly satisfying and extraordinarily useful.
+So, persist, try your best, and ask for help if you need it.
+
+::::::: {.content-visible when-format="docx"}
+:::::: {custom-style="BEDA Callout"}
+**Please remember we want you to learn this stuff.**
+::::::
+:::::::
+
+::::::: {.content-visible unless-format="docx"}
+:::::: {custom-style="BEDA Callout"}
+[**Please remember we want you to learn this stuff.**]{style="color: firebrick; font-size: 125%;"}
+::::::
+:::::::
+
+No question you ask is EVER silly!
+So ask for help any time.
+We *do* expect you to have a go at telling us what you *think* the answer is. This helps us understand what you get and what you don’t get, and so helps us help you.
+
+We don’t judge you by the questions you ask, but by what you end up learning.

@@ -33,7 +33,13 @@ Semester 2 · 2026
 
 # Welcome to Module 2
 
-{{< include ../_partials/module02-welcome.qmd >}}
+## Preamble
+
+{{< include ../_partials/module02-preamble.qmd >}}
+
+## What this module is about
+
+{{< include ../_partials/module02-overview.qmd >}}
 
 {{< pagebreak >}}
 

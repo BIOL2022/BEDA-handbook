@@ -64,11 +64,13 @@ website:
       title: "Module 2"
       style: docked
       contents:
-        - text: Welcome
+        - text: Preamble
           href: module02/200-welcome.qmd
-        - text: Schedule
+        - text: What this module is about
+          href: module02/201-overview.qmd
+        - text: Timeline
           href: module02/202-timeline.qmd
-        - text: Projects
+        - text: Projects on offer
           href: module02/203-projects.qmd
         - text: Report 1 instructions
           href: module02/204-report1.qmd
