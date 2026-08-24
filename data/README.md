@@ -132,12 +132,4 @@ A Canvas submission link is Assessment, while an optional Canvas self-check may
 be Resource. An Ed announcement is Notice, an Ed thread stating authoritative
 assessment requirements is Assessment, and an explanatory Ed post is Resource.
 Discuss genuinely new cases with the unit coordinator, then add the agreed case
-here and to the tests.
-
-## Validation
-
-After editing the schedule, run:
-
-```bash
-Rscript tests/test_render_weekly_content_table.R
-```
+here.

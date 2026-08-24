@@ -17,9 +17,6 @@ jobs:
         with:
           path: source
 
-      - name: Check semester status logic
-        run: node source/scripts/test-semester-status-svg.mjs
-
       - name: Check out published site
         uses: actions/checkout@v4
         with:

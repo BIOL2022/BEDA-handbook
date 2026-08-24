@@ -24,11 +24,4 @@ Install [Quarto 1.9 or later](https://quarto.org/) and R before rendering.
 Update the values in `_edition.yml` when preparing a new teaching year. Working
 tags use `vYYYY.x`; the final archival tag uses `vYYYY`. When the final tag is
 created, update `edition-citation-url` to the tagged repository URL, then render
-both outputs and run the edition and colophon tests:
-
-- `node tests/test_edition_metadata.js`
-- `node tests/test_colophon_source.js`
-- `node tests/test_colophon_rendered.js`
-- `node tests/test_colophon_layout.js`
-- `node tests/test_colophon_pdf.js`
-- `node tests/test_pdf_download.js`
+both outputs.

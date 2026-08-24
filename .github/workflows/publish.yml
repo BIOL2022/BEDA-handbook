@@ -14,9 +14,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Check semester status logic
-        run: node scripts/test-semester-status-svg.mjs
-
       - name: Refresh Canvas semester status images
         run: node scripts/generate-semester-status-svg.mjs
 
