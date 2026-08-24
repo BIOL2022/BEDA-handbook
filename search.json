@@ -186,6 +186,20 @@
     "text": "Science is about asking the right questions in the right way so we can draw meaningful conclusions from the data we collect. This is not as simple as it seems, but it is a key skill in scientific enquiry. We need to be able to ask questions in a quantitative way to distinguish between different explanations for the things we observe. Before we start using t-tests, regression, or ANOVA; before we perform mixed modelling or moltivariate analyses; before we use the newest tools for data analysis, we must first learn to ask the right questions. So let’s go back to basics.\nIn this module:\n\nLectures (Weeks 1 –5) will cover the fundamental principles of scientific enquiry, including how to ask the right questions, how to design a study, and how to interpret results. We will also introduce to you the linear modelling framework, which is a powerful tool for understanding the relationships between variables in your data.\nPracticals (Weeks 1–3) aim to help you build the essential skills for scientific enquiry. We will cover experimental design, model formulation, and sampling design. Each week begins with a short 30-minute workshop to introduce the main ideas and techniques. You will then complete the practical work."
   },
   {
+    "objectID": "lectures/L08/index.html",
+    "href": "lectures/L08/index.html",
+    "title": "Week 8 — Model selection and revision",
+    "section": "",
+    "text": "Tuesday: Information-theoretic methods vs. null hypothesis testing  Open in Canvas\n\n\n  McArthur_BEDA_L5 InformationTheoryLecture_final.pdf\n  PDF slides · Opens in Canvas\n\n\nWednesday: Revision: answering your queries  Open in Canvas\n\n\n  Materials will appear in Canvas\n  Opens in Canvas\n\n\n← Week 7: Relationships and binary responses\nWeek 9: Multivariate analysis and PCA →"
+  },
+  {
+    "objectID": "lectures/L06/index.html",
+    "href": "lectures/L06/index.html",
+    "title": "Week 6 — Refresher and categorical variables",
+    "section": "",
+    "text": "Tuesday: General refresher  Open in Canvas\n\n\n  McArthur_BEDA_L1_final PRE-lecture.pdf\n  PDF slides · Opens in Canvas\n\n\nWednesday: Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables  Open in Canvas\n\n\n  McArthur_BEDA_L2_final PRE-lecture.pdf\n  PDF slides · Opens in Canvas\n\n\n← Week 5: Fixed and random effects\nWeek 7: Relationships and binary responses →"
+  },
+  {
     "objectID": "lectures/L04/index.html",
     "href": "lectures/L04/index.html",
     "title": "Week 4 — Expanding your models",
@@ -522,6 +536,13 @@
     "text": "Tuesday: Controlling your experiments with data\n\n\n\nWednesday: You’ve got this — Module 1 revision\n\n\n\n← Week 4: Multiple predictors and transformations\nWeek 6: Refresher and categorical variables →"
   },
   {
+    "objectID": "lectures/L07/index.html",
+    "href": "lectures/L07/index.html",
+    "title": "Week 7 — Relationships and binary responses",
+    "section": "",
+    "text": "Tuesday: Does wind reduce tree growth? Detecting differences versus describing relationships  Open in Canvas\n\n\n  McArthur_BEDA_L3_final POST-lecture.pdf\n  PDF slides · Opens in Canvas\n\n\nWednesday: What are the chances of finding a bandicoot? Dealing with binary response data  Open in Canvas\n\n\n  McArthur_BEDA_L4_final.pdf\n  PDF slides · Opens in Canvas\n\n\n← Week 6: Refresher and categorical variables\nWeek 8: Model selection and revision →"
+  },
+  {
     "objectID": "module01/102-week01.html",
     "href": "module01/102-week01.html",
     "title": " Week 1: Getting started",
@@ -738,7 +759,7 @@
     "href": "module02/204-report1.html",
     "title": "Report 1 – Instructions",
     "section": "",
-    "text": "The project written report is the individual component of this assessment It is submitted via the Canvas assignment called Report 1.\nThe other component of this assignment is the data file, which should be submitted by one group member via the Canvas assignment called Report 1: Group data submission.\nDate due: Week 9, check Canvas for exact date\nLate penalty: you will incur a penalty of 5% (5 points out of 100) for each 24 hours or part thereof after the deadline (weekends and public holidays included), unless you have Special Consideration.\nLength penalty: you will incur a penalty of 5% (5 points out of 100; up to 30 points) for each page or part thereof over the page limit.",
+    "text": "The project written report is the individual component of this assessment It is submitted via the Canvas assignment called Report 1.\nThe other component of this assignment is the data file, which should be submitted by one group member via the Canvas assignment called Report 1: Group data submission.\nDate due: Friday 25 September 2026 at 23:59\nLate penalty: you will incur a penalty of 5% (5 points out of 100) for each 24 hours or part thereof after the deadline (weekends and public holidays included), unless you have Special Consideration.\nLength penalty: you will incur a penalty of 5% (5 points out of 100; up to 30 points) for each page or part thereof over the page limit.",
     "crumbs": [
       "Home",
       "Report 1 instructions"
@@ -749,7 +770,7 @@
     "href": "module02/204-report1.html#about",
     "title": "Report 1 – Instructions",
     "section": "",
-    "text": "The project written report is the individual component of this assessment It is submitted via the Canvas assignment called Report 1.\nThe other component of this assignment is the data file, which should be submitted by one group member via the Canvas assignment called Report 1: Group data submission.\nDate due: Week 9, check Canvas for exact date\nLate penalty: you will incur a penalty of 5% (5 points out of 100) for each 24 hours or part thereof after the deadline (weekends and public holidays included), unless you have Special Consideration.\nLength penalty: you will incur a penalty of 5% (5 points out of 100; up to 30 points) for each page or part thereof over the page limit.",
+    "text": "The project written report is the individual component of this assessment It is submitted via the Canvas assignment called Report 1.\nThe other component of this assignment is the data file, which should be submitted by one group member via the Canvas assignment called Report 1: Group data submission.\nDate due: Friday 25 September 2026 at 23:59\nLate penalty: you will incur a penalty of 5% (5 points out of 100) for each 24 hours or part thereof after the deadline (weekends and public holidays included), unless you have Special Consideration.\nLength penalty: you will incur a penalty of 5% (5 points out of 100; up to 30 points) for each page or part thereof over the page limit.",
     "crumbs": [
       "Home",
       "Report 1 instructions"
