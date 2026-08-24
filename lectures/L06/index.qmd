@@ -1,18 +1,32 @@
 ---
 title: "Week 6 — Refresher and categorical variables"
-draft: true
 ---
 
-## General refresher
+::: {.lecture-actions}
+**Tuesday: General refresher** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open in Canvas](https://canvas.sydney.edu.au/courses/74353/pages/week-06-tue-general-refresher){.lecture-action target="_blank" rel="noopener noreferrer"}
+:::
 
-[Open “General refresher” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135742)
+::: {.content-visible when-format="html"}
+```{=html}
+<a href="https://canvas.sydney.edu.au/courses/74353/pages/week-06-tue-general-refresher" class="lecture-deck-preview" target="_blank" rel="noopener noreferrer">
+  <span class="lecture-deck-title">McArthur_BEDA_L1_final PRE-lecture.pdf</span>
+  <span class="lecture-deck-utility">PDF slides &middot; Opens in Canvas</span>
+</a>
+```
+:::
 
-## Is aerobic enzyme activity greater in male or female birds?
+::: {.lecture-actions}
+**Wednesday: Is aerobic enzyme activity greater in male or female birds? Dealing with class explanatory variables** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open in Canvas](https://canvas.sydney.edu.au/courses/74353/pages/week-06-wed-is-aerobic-enzyme-activity-greater-in-male-or-female-birds-dealing-with-class-explanatory-variables){.lecture-action target="_blank" rel="noopener noreferrer"}
+:::
 
-Dealing with categorical explanatory variables.
-
-[Open “Aerobic enzyme activity” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135743)
-
+::: {.content-visible when-format="html"}
+```{=html}
+<a href="https://canvas.sydney.edu.au/courses/74353/pages/week-06-wed-is-aerobic-enzyme-activity-greater-in-male-or-female-birds-dealing-with-class-explanatory-variables" class="lecture-deck-preview" target="_blank" rel="noopener noreferrer">
+  <span class="lecture-deck-title">McArthur_BEDA_L2_final PRE-lecture.pdf</span>
+  <span class="lecture-deck-utility">PDF slides &middot; Opens in Canvas</span>
+</a>
+```
+:::
 ::: {.lecture-week-nav}
 [← Week 5: Fixed and random effects](../L05/index.qmd){.lecture-previous}
 

@@ -1,20 +1,32 @@
 ---
 title: "Week 7 — Relationships and binary responses"
-draft: true
 ---
 
-## Does wind reduce tree growth?
+::: {.lecture-actions}
+**Tuesday: Does wind reduce tree growth? Detecting differences versus describing relationships** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open in Canvas](https://canvas.sydney.edu.au/courses/74353/pages/week-07-tue-does-wind-reduce-tree-growth-detecting-differences-versus-describing-relationships){.lecture-action target="_blank" rel="noopener noreferrer"}
+:::
 
-Detecting differences versus describing relationships.
+::: {.content-visible when-format="html"}
+```{=html}
+<a href="https://canvas.sydney.edu.au/courses/74353/pages/week-07-tue-does-wind-reduce-tree-growth-detecting-differences-versus-describing-relationships" class="lecture-deck-preview" target="_blank" rel="noopener noreferrer">
+  <span class="lecture-deck-title">McArthur_BEDA_L3_final POST-lecture.pdf</span>
+  <span class="lecture-deck-utility">PDF slides &middot; Opens in Canvas</span>
+</a>
+```
+:::
 
-[Open “Does wind reduce tree growth?” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135744)
+::: {.lecture-actions}
+**Wednesday: What are the chances of finding a bandicoot? Dealing with binary response data** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open in Canvas](https://canvas.sydney.edu.au/courses/74353/pages/week-07-wed-what-are-the-chances-of-finding-a-bandicoot-dealing-with-binary-response-data){.lecture-action target="_blank" rel="noopener noreferrer"}
+:::
 
-## What are the chances of finding a bandicoot?
-
-Dealing with binary response data.
-
-[Open “What are the chances of finding a bandicoot?” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135745)
-
+::: {.content-visible when-format="html"}
+```{=html}
+<a href="https://canvas.sydney.edu.au/courses/74353/pages/week-07-wed-what-are-the-chances-of-finding-a-bandicoot-dealing-with-binary-response-data" class="lecture-deck-preview" target="_blank" rel="noopener noreferrer">
+  <span class="lecture-deck-title">McArthur_BEDA_L4_final.pdf</span>
+  <span class="lecture-deck-utility">PDF slides &middot; Opens in Canvas</span>
+</a>
+```
+:::
 ::: {.lecture-week-nav}
 [← Week 6: Refresher and categorical variables](../L06/index.qmd){.lecture-previous}
 

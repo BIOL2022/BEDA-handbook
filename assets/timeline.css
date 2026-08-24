@@ -703,3 +703,57 @@ main.content .module2-timeline-table table > thead > tr > th {
     text-align: left;
   }
 }
+
+.lecture-deck-preview {
+  align-items: center;
+  aspect-ratio: 16 / 9;
+  background-color: var(--bs-body-bg, #fff);
+  background-image: 
+    linear-gradient(to right, rgba(92, 99, 106, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(92, 99, 106, 0.05) 1px, transparent 1px);
+  background-position: center center;
+  background-size: 1.5rem 1.5rem;
+  border: 1px solid var(--bs-border-color, #dee2e6);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.75rem 0 2.5rem;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.lecture-deck-preview:hover,
+.lecture-deck-preview:focus {
+  background-color: rgba(0, 94, 168, 0.02);
+  border-color: #005ea8;
+  text-decoration: none;
+}
+
+.lecture-deck-preview:focus-visible {
+  outline: 3px solid #0f6b5b;
+  outline-offset: 3px;
+}
+
+.lecture-deck-title {
+  color: #005ea8;
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+}
+
+.lecture-deck-preview:hover .lecture-deck-title,
+.lecture-deck-preview:focus .lecture-deck-title {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.lecture-deck-utility {
+  color: #5c636a;
+  display: block;
+  font-size: 0.9rem;
+}

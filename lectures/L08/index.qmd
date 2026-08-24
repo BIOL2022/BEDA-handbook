@@ -1,16 +1,32 @@
 ---
 title: "Week 8 — Model selection and revision"
-draft: true
 ---
 
-## Information-theoretic methods vs. null hypothesis testing
+::: {.lecture-actions}
+**Tuesday: Information-theoretic methods vs. null hypothesis testing** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open in Canvas](https://canvas.sydney.edu.au/courses/74353/pages/week-08-tue-information-theoretic-methods-vs-null-hypothesis-testing){.lecture-action target="_blank" rel="noopener noreferrer"}
+:::
 
-[Open “Information-theoretic methods” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135746)
+::: {.content-visible when-format="html"}
+```{=html}
+<a href="https://canvas.sydney.edu.au/courses/74353/pages/week-08-tue-information-theoretic-methods-vs-null-hypothesis-testing" class="lecture-deck-preview" target="_blank" rel="noopener noreferrer">
+  <span class="lecture-deck-title">McArthur_BEDA_L5 InformationTheoryLecture_final.pdf</span>
+  <span class="lecture-deck-utility">PDF slides &middot; Opens in Canvas</span>
+</a>
+```
+:::
 
-## Revision: answering your queries
+::: {.lecture-actions}
+**Wednesday: Revision: answering your queries** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open in Canvas](https://canvas.sydney.edu.au/courses/74353/pages/week-08-wed-revision-answering-your-queries){.lecture-action target="_blank" rel="noopener noreferrer"}
+:::
 
-Coming soon.
-
+::: {.content-visible when-format="html"}
+```{=html}
+<a href="https://canvas.sydney.edu.au/courses/74353/pages/week-08-wed-revision-answering-your-queries" class="lecture-deck-preview" target="_blank" rel="noopener noreferrer">
+  <span class="lecture-deck-title">Materials will appear in Canvas</span>
+  <span class="lecture-deck-utility">Opens in Canvas</span>
+</a>
+```
+:::
 ::: {.lecture-week-nav}
 [← Week 7: Relationships and binary responses](../L07/index.qmd){.lecture-previous}
 

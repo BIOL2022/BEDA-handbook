@@ -20,12 +20,12 @@ week,section,position,title,url,description,show_on_schedule,note_type,note_weig
 5,practical,1,Main experiment timeline,module02/202-timeline.qmd,,TRUE,,
 5,extra,1,Evaluation Quiz due Friday 4 September at 23:59,,,TRUE,assessment,10
 5,extra,2,Begin working on Report 1,,,TRUE,notice,
-6,lecture,1,Refresher and categorical variables,,A refresher on designing experiments with categorical variables.,TRUE,,
+6,lecture,1,Refresher and categorical variables,lectures/L06/index.qmd,A refresher on designing experiments with categorical variables.,TRUE,,
 6,practical,1,No practical,,,TRUE,,
 6,extra,1,"If needed, use your practical time to meet and conduct experiments.",,,TRUE,notice,
-7,lecture,1,Relationships and binary responses,,How to design experiments with continuous or binary responses.,TRUE,,
+7,lecture,1,Relationships and binary responses,lectures/L07/index.qmd,How to design experiments with continuous or binary responses.,TRUE,,
 7,practical,1,Project data analysis timeline,module02/202-timeline.qmd,,TRUE,,
-8,lecture,1,Model selection and revision,,Which model should we use? Some ideas.,TRUE,,
+8,lecture,1,Model selection and revision,lectures/L08/index.qmd,Which model should we use? Some ideas.,TRUE,,
 8,practical,1,Project report and feedback timeline,module02/202-timeline.qmd,,TRUE,,
 8,extra,1,Report 1 due Friday 25 September at 23:59,,,TRUE,assessment,25
 9,lecture,1,Multivariate analysis and PCA,,"Introducing multivariate analysis, principal component analysis and factor analysis.",TRUE,,
