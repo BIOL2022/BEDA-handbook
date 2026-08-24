@@ -1,7 +1,7 @@
 ## About 
 - The project written report is the individual component of this assessment It is submitted via the Canvas assignment called **Report 1**. 
 - The other component of this assignment is the data file, which should be submitted by one group member via the Canvas assignment called **Report 1: Group data submission**.
-- **Date due**: Week 9, check Canvas for exact date
+- **Date due**: Friday 25 September 2026 at 23:59
 - **Late penalty**: you will incur a penalty of 5% (5 points out of 100) for each 24 hours or part thereof after the deadline (weekends and public holidays included), unless you have Special Consideration.
 - **Length penalty**: you will incur a penalty of 5% (5 points out of 100; up to 30 points) for each page or part thereof over the page limit.
 
