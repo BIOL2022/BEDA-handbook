@@ -6,7 +6,7 @@ title: "Week 4 — Expanding your models"
 
 
 ::: {.lecture-actions}
-**Tuesday: Modelling multiple continuous relationships** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Tuesday: Modelling multiple continuous relationships** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L04a-mlr/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (solarised)](https://biol2022.github.io/2026-lectures/lectures/L04a-mlr/slides-solarized.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ```{=html}
@@ -15,7 +15,7 @@ title: "Week 4 — Expanding your models"
 
 
 ::: {.lecture-actions}
-**Wednesday: Modelling multiple categorical differences** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Wednesday: Modelling multiple categorical differences** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L04b-anova/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (solarised)](https://biol2022.github.io/2026-lectures/lectures/L04b-anova/slides-solarized.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ```{=html}
@@ -23,7 +23,7 @@ title: "Week 4 — Expanding your models"
 ```
 
 ::: {.lecture-actions}
-**Wednesday: Why do we transform data?** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Wednesday: Model transformations** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L04c-model-transformations/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (solarised)](https://biol2022.github.io/2026-lectures/lectures/L04c-model-transformations/slides-solarized.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ```{=html}

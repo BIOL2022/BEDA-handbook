@@ -4,7 +4,7 @@ title: "Week 3 — Choosing the right model based on assumptions"
 
 
 ::: {.lecture-actions}
-**Tuesday: Is my model appropriate? (testing assumptions)** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Tuesday: Is my model appropriate? (testing assumptions)** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L03a-model-appropriate/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (solarised)](https://biol2022.github.io/2026-lectures/lectures/L03a-model-appropriate/slides-solarized.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ```{=html}
@@ -12,7 +12,7 @@ title: "Week 3 — Choosing the right model based on assumptions"
 ```
 
 ::: {.lecture-actions}
-**Wednesday: Modelling differences between two groups** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (coming soon)]{.lecture-action .is-disabled aria-disabled="true"}
+**Wednesday: Modelling differences between two groups** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L03b-ttests/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (solarised)](https://biol2022.github.io/2026-lectures/lectures/L03b-ttests/slides-solarized.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ```{=html}

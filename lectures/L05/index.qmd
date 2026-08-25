@@ -5,7 +5,7 @@ title: "Week 5 — Controls and revision"
 
 
 ::: {.lecture-actions}
-**Tuesday: Controlling your experiments with data**
+**Tuesday: Controlling your experiments with data** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L05a-blocking-fixed-random/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (solarised)](https://biol2022.github.io/2026-lectures/lectures/L05a-blocking-fixed-random/slides-solarized.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ```{=html}
