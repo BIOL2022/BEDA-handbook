@@ -4,7 +4,7 @@
 - a paired t-test (Week 3), 
 - an independent t-test (Week 3), 
 - 1-way ANOVA, 2-way ANOVA (Week 4), 
-- correlation, linear regression(Week 4), 
+- correlation or linear regression (Week 4), 
 - Chi-Square analysis (if necessary) or 
 - logistic regression (if necessary, Weeks 6-7)
 - GLM (which covers a lot of the analyses above) and GLMM are fine **if applied correctly**.
@@ -22,8 +22,8 @@
 | [**P02**](#p02) | Vegetable herbivory after leaf damage<br>Plant--snail experiment | Hands-on, controlled experiment using plants and snails; includes animal handling and comparison between plant species. |
 | [**P03**](#p03) | Ant food preferences<br>Ant-foraging experiment | Field-based, likely in backyards or another controlled outdoor setting. Your group will set up food treatments and observe ant recruitment. |
 | [**P04**](#p04) | Ant foraging costs and benefits<br>Ant-foraging experiment | Field-based, likely in backyards or another controlled outdoor setting. Your group will manipulate access to food and observe ant recruitment. |
-| [**P05**](#p05) | Wheat germination and growth<br>Germination experiment | Requires carefully controlled conditions and regular care of plants over time. |
-| [**P06**](#p06) | Native grass germination<br>Germination experiment | Requires carefully controlled conditions and regular care of plants over time. You can switch to P05 if germination fails. |
+| [**P05**](#p05) | Wheat seed germination and growth<br>Germination experiment | Requires carefully controlled conditions and regular care of plants over time. |
+| [**P06**](#p06) | Native grass, wheat or horticultural seed germination<br>Germination experiment | Requires carefully controlled conditions and regular care of plants over time. You can switch to P05 if germination fails. |
 | [**P07**](#p07) | Bird activity across time of day<br>Bird survey | Outdoor activity across a broader geographic area. Animal ethics conditions apply: observe birds only; do not handle or disturb them. |
 | [**P08**](#p08) | Bird use of urban water bodies<br>Bird survey | Outdoor activity across multiple water bodies or sites. Animal ethics conditions apply: observe birds only; do not handle or disturb them. |
 :::
@@ -36,13 +36,13 @@
 #### **Project P01** – Plant-herbivore interactions: Does previous damage to tomato plants affect their vulnerability to subsequent herbivory? Does the amount of previous damage matter? {#p01}
 <br>
 
-**Background**: Many plants have plant secondary metabolites (PSMs), which often play a role in defence against herbivores. In some plant species, PSMs can be induced (levels increase) after damage from herbivores chewing on leaves. This change can take place within a day, affecting subsequent leaf damage by herbivores, and result in less subsequent damage. Is the evidence consistent with this idea?
+**Background**: Many plants have plant secondary metabolites (PSMs), which often play a role in defence against herbivores. In some plant species, PSMs can be induced (levels increase) after damage from herbivores chewing on leaves. This change may take place within a day (but check previous studies), affecting subsequent leaf damage by herbivores, and result in less subsequent damage. Is the evidence consistent with this idea?
 
 **Plants and herbivores**: this project will likely use tomato seedlings and common garden snails. Your group may need to collect at least some snails yourself.
 
 **Variation**: If you want to answer a more complicated question, you could ask whether the amount of initial damage (a little versus lots?) affects the outcome.
 
-**NOTE**: You do not need to measure PSMs. Rather, they provide a potential mechanism to explain any difference in subsequent herbivory.
+**NOTE**: You will not measure PSMs. Rather, they provide a potential mechanism to explain any difference in subsequent herbivory.
 
 :::
 
@@ -51,11 +51,11 @@
 #### **Project P02** – Plant-herbivore interactions: Does previous damage affect vulnerability of vegetables to subsequent herbivory? Does it depend on plant species? {#p02}
 <br>
 
-**Background**: Many plants have plant secondary metabolites (PSMs), which often play a role in defence against herbivores. In some plant species, PSMs can be induced (levels increase) after damage from herbivores chewing on leaves. This change can take place within a day, affecting subsequent leaf damage by herbivores, and result in less subsequent damage. Is the evidence consistent with this idea? Does it depend on plant species?
+**Background**: Many plants have plant secondary metabolites (PSMs), which often play a role in defence against herbivores. In some plant species, PSMs can be induced (levels increase) after damage from herbivores chewing on leaves. This change may take place within a day (but check previous studies), affecting subsequent leaf damage by herbivores, and result in less subsequent damage. Is the evidence consistent with this idea? Does it depend on plant species?
 
 **Plants and herbivores**: this project will likely use tomato and cucumber seedlings and common garden snails. Your group may need to collect at least some snails yourself.
 
-**NOTE**: You do not need to measure PSMs. Rather, they provide a potential mechanism to explain any difference in subsequent herbivory.
+**NOTE**: You will not measure PSMs. Rather, they provide a potential mechanism to explain any difference in subsequent herbivory.
 
 :::
 
@@ -63,7 +63,7 @@
 #### **Project P03** – Foraging strategies in relation to food type: Do ants prefer some food over others? {#p03}
 <br>
 
-**Background**: Ants spend a lot of their time searching for food, but the food they find varies in its nutritional and energetic value. Do they just forage for any foods or do they show preferences? Honey and tuna, for example, are very different foods. Do ants care? Honey is a high-carbohydrate low-protein food, while tuna is high protein, low carbs; although there are lots of other differences between these food as well.
+**Background**: Ants spend a lot of their time searching for food, but the food they find varies in its nutritional and energetic value. Do they just forage for any foods or do they show preferences? Honey and tuna, for example, are very different foods. Do ants care? Honey is a high-carbohydrate low-protein food, while tuna is high protein, low carbs; although there are also lots of other differences between these foods.
 
 Scout ants go out and look for food, then return to the nest and recruit others to help them. We can understand something about the requirements ants have for different foods by looking at how quickly and/or how many ants are recruited to a food source once it has been located by the scout ant.
 :::
@@ -72,7 +72,7 @@ Scout ants go out and look for food, then return to the nest and recruit others 
 #### **Project P04** – Foraging strategies in relation to costs and benefits: Do ants seek food that is easier to access? {#p04}
 <br>
 
-**Background**: Ants spend a lot of time searching for food, but the effort needed to harvest a given food could affect how they value it. For example, food that is difficult or slow to access (e.g. surrounded by complicated 3-D local habitat or with narrow access points slowing ant traffic) may be less preferred than food that is easy to access.
+**Background**: Ants spend a lot of time searching for food, but the effort needed to harvest a given food could affect how they value it. For example, food that is difficult or slow to access (e.g. surrounded by complicated 3-D local habitat or with narrow access points slowing ant traffic) may be less preferred than the same food that is easy to access.
 
 **Variation**: IF you want to answer a more complicated question, you could ask whether ants balance the effort of getting food against the value of that food. Does food that is hard to access need to be higher in value (e.g. more concentrated) than food that is easy and less energetically costly to access?
 
@@ -89,13 +89,17 @@ Understanding these relationships is one step in understanding the conditions re
 :::
 
 ::: {.project-section}
-#### **Project P06** – Germination of native grass seeds in relation to water availability {#p06}
+#### **Project P06** – Germination of seeds of native grass OR wheat OR a horticultural plant (flower or veggie) in relation to water availability {#p06}
 <br>
 
 **Background**: Germination of **native plants** is triggered by a range of factors in Australia. Some plants need heat initially, others simply need water. If we can, we will provide you with seed from a native plant that germinates quickly under the right conditions. How often it rains may affect whether seeds germinate, in turn affecting recruitment and regeneration. Understanding the relationship between rain (watering) frequency and probability of seeds germinating helps us understand how climate influences the dynamics of our grasslands and use of native plants in agriculture.
 
 
-**NOTE**: In your main trial, if you get no germination after 7 days, your group can choose to switch to wheat (Project P05) to ask the same question, because wheat germinates quickly.
+**NOTE**: In your pilot study or main trial, if you get no germination after 7 days, your group can choose to switch to wheat (Project P05) or seeds of a horticultural plant to ask the same question, because these germinate quickly.
+
+Germination of wheat is crucial for food security (see Project P05).
+
+Germination of horticultural plants is crucial for the cut flower or veggie industries; no germination, no plants, no business! How often it rains or how often seeds are watered may affect whether or how quickly and/or how many seeds germinate – but you need to find this out.
 
 :::
 
@@ -124,9 +128,13 @@ If you sign up to these projects, you must follow the animal ethics requirements
 
 ### Bird safety and biosecurity
 
-**Do not touch, handle, move, clean up, or transport birds or other wildlife.** If you find a sick, dead, or injured bird or other wildlife while undertaking this project, keep your distance, record what you observe, and call the Emergency Animal Disease Hotline on **1800 675 888** for advice and to report it. Notify Clare McArthur by email within 24 hours with a summary of what happened; this will be reported to the Animal Ethics Committee as an adverse event.
+**Do not touch, handle, move, clean up, or transport birds or other wildlife.** In the very unlikely event that you find injured, sick or dead birds while undertaking this project, keep your distance, record what you observe, and follow the guidance below.
 
-**Project “Ecology teaching – bird surveys”. Project Number: 2022/2148.**
+- **Sick or dead birds:** at the time of writing, H5 bird flu has been detected in a low but increasing number of wild birds along the coast of Australia. Even though this project does NOT involve any handling of birds, you must avoid touching any sick or dead birds, and any sighted sick or dead birds need to be reported to the Emergency Animal Disease Hotline on **1800 675 888** (as outlined in the NSW Department of Primary Industries and Regional Development guidance).
+- **Injured birds:** do not handle, move or transport the bird yourself. Seek advice from Clare McArthur (clare.mcarthur@sydney.edu.au, subject heading: “BIOL2022 URGENT-bird project”) or another academic in the unit of study, who will advise you on contacting a wildlife carer or wildlife rescue organisation.
+- In every case, notify Clare McArthur by email within 24 hours, summarising what has occurred (this will be reported as an adverse event to the Animal Ethics Committee even if you played no part in the injury).
+
+**Project “BIOL2022 Ecology teaching-bird surveys”. Project Number: 2026/AE000123.**
 
 You may collect data for up to 10 visits per site over a 2 to 4 week period.
 For the bird survey, you may observe birds, count them and identify each to species if you can, using binoculars where needed. You may observe birds at a site for up to ~ one hour per visit, but must not interfere with nor handle the birds.
@@ -141,9 +149,9 @@ Observers will remain far enough from birds that the birds are not visibly affec
 
 ### Conditions of bird project approval:
 
-1. You must use the approved monitoring sheet “Bird survey monitoring sheet.xls” which will be provided to you. You may add additional columns or have additional sheets, as you decide, appropriate to your study.
+1. You must use the approved monitoring sheet “2026 BIOL2022 Bird survey monitoring sheet” (pdf or xlsx), which will be provided to you. You may add additional columns or have additional sheets, as you decide, appropriate to your study.
 2. You must take photos of the fieldwork sites and the observers watching the birds (i.e. to see the relative locations of the observers to the birds).
 3. By the end of Week 9, you must post on Canvas:
-   a. A complete legible copy of the final monitoring sheets from (1)
+   a. A complete, legible copy of the final monitoring sheets from (1)
    b. A summary of the total number of (i) native birds, (ii) invasive birds hence (iii) all birds you counted at each site and across all sites over the course of your project, and a list of the sites you monitored, with GPS coordinates.
    c. Clearly and informatively labelled photos from (2).

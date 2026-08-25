@@ -8,11 +8,11 @@ Below is just a brief summary of the requirements. **You must still read the ins
 
 1. You are collecting your own data for this report. The topic is of your choosing based on the list provided in the [Projects](../module02/203-projects.qmd) page.
 2. The report must follow the structure of a scientific paper, including sections such as Title, Abstract, Introduction, Materials and Methods, Results, Discussion, and References.
-3. Submit your report anonymously via Canvas by **7 October 2025,** using the filename format "Day-Time-Project-Your SID" (e.g., "WED2-4pmProj4A-123456789").
+3. Submit your report anonymously via Canvas by **Friday 25 September 2026 at 23:59 (end of Week 8),** using the filename format "Day-Time-Project-Your SID" (e.g., "WED2-4pmProj4A-123456789").
 4. **Page limit: maximum 10 pages** double-spaced, including abstract, references, figures/tables, and any AI usage statement.
 5. Include a **minimum of 10 relevant references** from primary scientific literature (peer-reviewed journals).
 6. Use minimum 12 pt font and no less than 2 cm margins all around.
-7. **Write the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).**
+7. **Write the entire report in your own words; include a statement about whether and how you used AI (or state that you did not use AI).** You must NOT upload your data set to any AI platform, and you must analyse your data yourself — tutors and demonstrators will ask each of you to show them your statistical analysis in prac class (see the [Report 1 instructions](../module02/204-report1.qmd) for the full conditions).
 8. **Follow academic integrity guidelines:** avoid plagiarism, complete the AHEM module, and be prepared for plagiarism checking.
 9. **Use the marking rubric as a checklist** to ensure all criteria are met before submission.
 10. **Late penalty:** 5% per 24 hours or part thereof after the deadline; length penalty: 5% per page or part thereof over the limit.

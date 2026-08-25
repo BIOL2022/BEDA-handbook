@@ -18,311 +18,156 @@
 |                                | group must attend the | members are in the    |
 |                                | same prac session.    | correct Canvas group. |
 +--------------------------------+-----------------------+-----------------------+
-| **Week 4**\                    | **Attend your Prac    | **Plan your pilot     |
-| [24--30                        | Session.**\           | study in class and    |
-| August]{.module2-week-date}    | \                     | run it before Week 5  |
-|                                | Work with your group  | Prac Session:** this  |
-|                                | to discuss and plan   | will help you refine  |
-|                                | your project.\        | your main experiment. |
-|                                | \                     | Everyone in your      |
-|                                | Pick up any gear that | group must            |
-|                                | you need, to run your | contribute.\          |
-|                                | pilot study.          | \                     |
-|                                |                       | **In your own time:** |
-|                                | - **Form your         | After the prac in     |
-|                                |   hypothesis:** as a  | Week 4, contribute to |
-|                                |   group, convert the  | your group's pilot    |
-|                                |   general biological  | study practical work, |
-|                                |   question into       | read relevant         |
-|                                |   specific biological | literature, and start |
-|                                |   hypotheses and      | preparing for your    |
-|                                |   predictions.        | written report.       |
-|                                | - **Plan the design   |                       |
-|                                |   of your main        |                       |
-|                                |   experiment:** with  |                       |
-|                                |   your group, design  |                       |
-|                                |   a simple experiment |                       |
-|                                |   to test the         |                       |
-|                                |   hypothesis. Ensure  |                       |
-|                                |   your design can be  |                       |
-|                                |   analysed using the  |                       |
-|                                |   stats you are       |                       |
-|                                |   familiar with (e.g. |                       |
-|                                |   from Januar's and   |                       |
-|                                |   Clare's lectures,   |                       |
-|                                |   and Module 1        |                       |
-|                                |   Pracs).             |                       |
-|                                | - Draw a graph of how |                       |
-|                                |   you expect your     |                       |
-|                                |   data to look (refer |                       |
-|                                |   to Clare's          |                       |
-|                                |   lectures). Decide   |                       |
-|                                |   what stats analysis |                       |
-|                                |   is appropriate and  |                       |
-|                                |   why (refer to       |                       |
-|                                |   Clare's lectures).  |                       |
-|                                |   If you can't work   |                       |
-|                                |   this out, you are   |                       |
-|                                |   not ready to run    |                       |
-|                                |   your experiment.    |                       |
-|                                | - **Draft your data   |                       |
-|                                |   sheets:** as a      |                       |
-|                                |   group, draft your   |                       |
-|                                |   data sheets for     |                       |
-|                                |   data collection     |                       |
-|                                |   (you may need to    |                       |
-|                                |   modify after your   |                       |
-|                                |   pilot study). This  |                       |
-|                                |   will ensure you     |                       |
-|                                |   collect all the     |                       |
-|                                |   data you should,    |                       |
-|                                |   and collect it all  |                       |
-|                                |   in the same way.    |                       |
-|                                | - **Work out what     |                       |
-|                                |   equipment you'll    |                       |
-|                                |   need:** decide      |                       |
-|                                |   equipment you need  |                       |
-|                                |   to do the research  |                       |
-|                                |   based around what   |                       |
-|                                |   we can supply you.  |                       |
-|                                |   Consult Clare,      |                       |
-|                                |   technical staff     |                       |
-|                                |   and/or              |                       |
-|                                |   demonstrators then  |                       |
-|                                |   make a list.        |                       |
-|                                | - For some projects,  |                       |
-|                                |   you will be able to |                       |
-|                                |   take gear home      |                       |
-|                                |   straight away to    |                       |
-|                                |   run a pilot study.  |                       |
-|                                | - For others, you     |                       |
-|                                |   need to plan now    |                       |
-|                                |   and pick up gear in |                       |
-|                                |   consultation with   |                       |
-|                                |   the technical       |                       |
-|                                |   staff. When         |                       |
-|                                |   contacting the tech |                       |
-|                                |   staff, ensure you   |                       |
-|                                |   state your name and |                       |
-|                                |   day, group number   |                       |
-|                                |   and project, e.g.   |                       |
-|                                |   BIOL2022 WED 2 to   |                       |
-|                                |   4pm, Group 7 birds, |                       |
-|                                |   Joe Blogs.          |                       |
-+--------------------------------+-----------------------+-----------------------+
-| **Week 5**\                    | **Attend your prac    | **Between Week 5 and  |
-| [31 August--6                  | session.**\           | Week 7, in your own   |
-| September]{.module2-week-date} | \                     | time:** Set up your   |
-|                                | **Work with your      | main experiment, run  |
-|                                | group.**\             | it, collect and       |
-|                                | \                     | collate the data.     |
-|                                | Finalise the design   | Everyone in your      |
-|                                | and plans for your    | group must            |
-|                                | main experiment based | contribute.\          |
-|                                | on your pilot study   | \                     |
-|                                | and your reading of   | **Collate the data:** |
-|                                | the relevant          | collate your group's  |
-|                                | scientific            | data into one Excel   |
-|                                | literature.\          | file -- e.g. using    |
-|                                | \                     | GoogleSheets. Include |
-|                                | Pick up any gear that | both a metadata       |
-|                                | you need for your     | worksheet and a clean |
-|                                | main experiment.      | results array in its  |
-|                                |                       | own worksheet for     |
-|                                | - Discuss what you    | data analysis. You    |
-|                                |   learnt from your    | can also have other   |
-|                                |   pilot study with    | worksheets for        |
-|                                |   your group.         | anything you want to  |
-|                                | - **Tweak the design  | record, plot, etc.\   |
-|                                |   of your main        | \                     |
-|                                |   experiment if you   | Finalise data         |
-|                                |   need to:** make any | collation before Week |
-|                                |   adjustments to your | 7 prac if you can,    |
-|                                |   plans, and finalise | leaving you more time |
-|                                |   your main           | for data analysis in  |
-|                                |   experiment and its  | Week 7 prac.          |
-|                                |   experimental        |                       |
-|                                |   design.             |                       |
-|                                | - **Know what stat    |                       |
-|                                |   tests you'll be     |                       |
-|                                |   doing:** ensure you |                       |
-|                                |   know how you expect |                       |
-|                                |   to statistically    |                       |
-|                                |   analyse your        |                       |
-|                                |   results; e.g. what  |                       |
-|                                |   your response and   |                       |
-|                                |   explanatory         |                       |
-|                                |   variable(s) are,    |                       |
-|                                |   what form and hence |                       |
-|                                |   what stats test you |                       |
-|                                |   intend to do.       |                       |
-+--------------------------------+-----------------------+-----------------------+
-| **Week 6**\                    | **In your own time    |                       |
-| [7--13                         | (there is no formal   |                       |
-| September]{.module2-week-date} | prac in Week 6).**    |                       |
-+--------------------------------+-----------------------+-----------------------+
-| **Week 7**\                    | **Attend your prac    | **In your own time,   |
-| [14--20                        | session.**\           | during Weeks 7--8:**  |
-| September]{.module2-week-date} | \                     | Continue your data    |
-|                                | **Work with your      | analysis if you have  |
-|                                | group.**\             | yet to complete it.\  |
-|                                | \                     | \                     |
-|                                | Finalise data         | Start drafting your   |
-|                                | collation of your     | report.\              |
-|                                | main experiment       | \                     |
-|                                | (including            | **Data analysis:** as |
-|                                | metadata).\           | above.\               |
-|                                | \                     | \                     |
-|                                | Start data analysis   | **Drafting your       |
-|                                | of your main          | report:** make a      |
-|                                | experiment (and if    | start on your report, |
-|                                | possible, complete    | e.g. framework for    |
-|                                | it).\                 | Introduction,         |
-|                                | \                     | Materials and         |
-|                                | Decide what plots and | Methods, and Results. |
-|                                | particular stats      | You could leave the   |
-|                                | output you will need  | Discussion until you  |
-|                                | to report in the      | have finalised your   |
-|                                | results section of    | Results. Refer to:    |
-|                                | your written report.\ |                       |
-|                                | \                     | - Clare's tips on     |
-|                                | If you have not done  |   writing your report |
-|                                | so already, finalise  | - More tips on        |
-|                                | data collation: spend |   writing your report |
-|                                | no more than 30 mins  | - Module 2: Marking   |
-|                                | of the prac           |   Scheme for Project  |
-|                                | finalising data       |   Report              |
-|                                | collation into an     |                       |
-|                                | Excel spreadsheet.    |                       |
-|                                | Preferably, have this |                       |
-|                                | done before this prac |                       |
-|                                | session.\             |                       |
+| **Week 4**\                    | **Plan and pilot:**   | **Run the pilot:**    |
+| [24--30                        | Discuss and plan the  | Plan and run it       |
+| August]{.module2-week-date}    | project, then form a  | before Week 5.        |
+|                                | hypothesis and        | \                     |
+|                                | predictions.          | In your own time,     |
+|                                | \                     | continue pilot work,  |
+|                                | Design a simple main  | read the literature,  |
+|                                | experiment you can    | and begin report      |
+|                                | analyse with familiar | preparation.          |
+|                                | statistics.           |                       |
 |                                | \                     |                       |
-|                                | **Metadata:** include |                       |
-|                                | a metadata worksheet  |                       |
-|                                | that summarises       |                       |
-|                                | important information |                       |
-|                                | referring to your     |                       |
-|                                | data, such as:        |                       |
-|                                |                       |                       |
-|                                | - names of group      |                       |
-|                                |   members             |                       |
-|                                | - the dates the       |                       |
-|                                |   experiment was run  |                       |
-|                                | - sites where you     |                       |
-|                                |   collected data      |                       |
-|                                | - response (i.e.      |                       |
-|                                |   dependent)          |                       |
-|                                |   variables and their |                       |
-|                                |   units of            |                       |
-|                                |   measurement         |                       |
-|                                | - explanatory (i.e.   |                       |
-|                                |   independent)        |                       |
-|                                |   variables, such as  |                       |
-|                                |   treatments (and the |                       |
-|                                |   levels within each  |                       |
-|                                |   treatment) and any  |                       |
-|                                |   continuous          |                       |
-|                                |   variables           |                       |
-|                                | - anything to help    |                       |
-|                                |   you understand your |                       |
-|                                |   project and data if |                       |
-|                                |   you were to publish |                       |
-|                                |   it for the world to |                       |
-|                                |   see and understand, |                       |
-|                                |   e.g. what the       |                       |
-|                                |   columns in your     |                       |
-|                                |   data sheet mean     |                       |
-|                                |                       |                       |
-|                                | **Plot, analyse and   |                       |
-|                                | interpret:** in the   |                       |
-|                                | remaining prac time   |                       |
-|                                | (at least an hour)    |                       |
-|                                | using your group's    |                       |
-|                                | data set, each group  |                       |
-|                                | member should         |                       |
-|                                | individually learn to |                       |
-|                                | use Excel and R or    |                       |
-|                                | SPSS to plot your     |                       |
-|                                | data, run appropriate |                       |
-|                                | statistical analyses  |                       |
-|                                | and interpret your    |                       |
-|                                | results. You need to  |                       |
-|                                | think about what      |                       |
-|                                | stats results you     |                       |
-|                                | need in the results   |                       |
-|                                | section of your       |                       |
-|                                | written report.       |                       |
-|                                | Fantastic if you can  |                       |
-|                                | complete this task by |                       |
-|                                | the end of Week 7.\   |                       |
+|                                | Sketch the expected   |                       |
+|                                | graph and decide      |                       |
+|                                | which statistics to   |                       |
+|                                | use, and why.         |                       |
 |                                | \                     |                       |
-|                                | **Note:** It is okay  |                       |
-|                                | to work with other    |                       |
-|                                | group members to plot |                       |
-|                                | and run the tests.    |                       |
-|                                | However, each group   |                       |
-|                                | member should do the  |                       |
-|                                | analyses on their own |                       |
-|                                | so that they learn;   |                       |
-|                                | watching someone else |                       |
-|                                | is not enough.        |                       |
+|                                | Draft data sheets and |                       |
+|                                | work out the          |                       |
+|                                | equipment you need.   |                       |
+|                                | \                     |                       |
+|                                | Pick up gear for the  |                       |
+|                                | pilot if needed.      |                       |
+|                                | \                     |                       |
+|                                | For some projects,    |                       |
+|                                | you will be able to   |                       |
+|                                | take gear home        |                       |
+|                                | straight away to run  |                       |
+|                                | a pilot study.        |                       |
+|                                | \                     |                       |
+|                                | For others, plan now  |                       |
+|                                | and pick up gear in   |                       |
+|                                | consultation with     |                       |
+|                                | technical staff.      |                       |
+|                                | \                     |                       |
+|                                | Everyone contributes  |                       |
+|                                | to the planning.      |                       |
 +--------------------------------+-----------------------+-----------------------+
-| **Week 8**\                    | **Attend your prac    | **Submit your         |
-| [21--27                        | session.**\           | assignment.**\        |
-| September]{.module2-week-date} | \                     | \                     |
-|                                | **Work with your      | Submit your group's   |
-|                                | group.**\             | data and your written |
-|                                | \                     | report in separate    |
-|                                | Clare will go through | assignments in        |
-|                                | writing your report.\ | Canvas.\              |
+| **Week 5**\                    | **Refine and run:**   | **Collate the data:** |
+| [31 August--6                  | Work with your group; | Keep one shared       |
+| September]{.module2-week-date} | finalise the main     | Excel/Google Sheets   |
+|                                | design in light of    | workbook with         |
+|                                | the pilot and         | metadata and a clean  |
+|                                | literature.           | results array.        |
 |                                | \                     | \                     |
-|                                | Finalise analyses,    | There are two Canvas  |
-|                                | stats output and      | assignments for this  |
-|                                | graphs.\              | assessment:           |
+|                                | Clarify the response  | Finish data collation |
+|                                | and explanatory       | before Week 7 if      |
+|                                | variables and the     | possible.             |
+|                                | analysis.             |                       |
 |                                | \                     |                       |
-|                                | **As a group:**       | - one person from     |
-|                                | prepare your Excel    |   your group needs to |
-|                                | data file for         |   submit the group's  |
-|                                | submission. The       |   data to **Report 1: |
-|                                | filename should be of |   Group data          |
-|                                | the form              |   submission \[0%\]** |
-|                                | Day-Time-Project,     | - each person in your |
-|                                | e.g.                  |   group needs to      |
-|                                | "WED2-4pmProj4A".     |   submit their own    |
-|                                | This file must        |   report to **Report  |
-|                                | include:              |   1: Individual       |
-|                                |                       |   submission          |
-|                                | - a metadata          |   \[25%\]**           |
-|                                |   worksheet           |                       |
-|                                | - a worksheet of the  | **Current handbook    |
-|                                |   data array you will | deadline:** Friday 25 |
-|                                |   have imported to a  | September 2026 at     |
-|                                |   stats package for   | 23:59.                |
-|                                |   analysis            |                       |
-|                                | - any other           |                       |
-|                                |   worksheets with     |                       |
-|                                |   workings, plots,    |                       |
-|                                |   etc.                |                       |
-|                                |                       |                       |
-|                                | **As individuals:**   |                       |
-|                                | each group member     |                       |
-|                                | needs to work on      |                       |
-|                                | writing their report  |                       |
-|                                | by:                   |                       |
-|                                |                       |                       |
-|                                | - completing their    |                       |
-|                                |   own results and     |                       |
-|                                |   graphs              |                       |
-|                                | - deciding what they  |                       |
-|                                |   will include in     |                       |
-|                                |   their individual    |                       |
-|                                |   report              |                       |
-|                                | - deciding how they   |                       |
-|                                |   will present the    |                       |
-|                                |   data and the        |                       |
-|                                |   associated          |                       |
-|                                |   statistics          |                       |
+|                                | Pick up any remaining |                       |
+|                                | gear.                 |                       |
+|                                | \                     |                       |
+|                                | Run the main          |                       |
+|                                | experiment and        |                       |
+|                                | collect and collate   |                       |
+|                                | the data as a group.  |                       |
++--------------------------------+-----------------------+-----------------------+
+| **Week 6**\                    | **Use the period for  | Make sure everyone    |
+| [7--13                         | project work.**       | contributes to        |
+| September]{.module2-week-date} | \                     | collecting and        |
+|                                | There is no           | organising the data.  |
+|                                | structured practical  |                       |
+|                                | this week.            |                       |
+|                                | \                     |                       |
+|                                | Use the time to       |                       |
+|                                | finish data           |                       |
+|                                | collection,           |                       |
+|                                | troubleshoot, and     |                       |
+|                                | organise the group    |                       |
+|                                | dataset.              |                       |
++--------------------------------+-----------------------+-----------------------+
+| **Week 7**\                    | **Analyse and         | **Begin the report:** |
+| [14--20                        | interpret:** Work     | Finish your analyses  |
+| September]{.module2-week-date} | with your group;      | and graphs.           |
+|                                | finalise data         | \                     |
+|                                | collation and         | Draft the             |
+|                                | metadata (no more     | Introduction,         |
+|                                | than 30 minutes).     | Methods, and Results  |
+|                                | \                     | using the report      |
+|                                | Metadata should cover | instructions and      |
+|                                | group members, dates, | rubric.               |
+|                                | sites, response       | \                     |
+|                                | variables and units,  | Continue your data    |
+|                                | explanatory variables | analysis if you have  |
+|                                | (treatments / levels  | yet to complete it.   |
+|                                | / continuous          | \                     |
+|                                | variables), and       | Start drafting your   |
+|                                | column explanations.  | report: begin with a  |
+|                                | \                     | framework for the     |
+|                                | Include anything that | Introduction,         |
+|                                | would help you        | Materials and         |
+|                                | understand your       | Methods, and Results. |
+|                                | project and data if   | You could leave the   |
+|                                | you were to publish   | Discussion until you  |
+|                                | it for the world to   | have finalised your   |
+|                                | see and understand,   | Results.              |
+|                                | such as what the      |                       |
+|                                | columns in your data  |                       |
+|                                | sheet mean.           |                       |
+|                                | \                     |                       |
+|                                | Spend the remaining   |                       |
+|                                | time (at least an     |                       |
+|                                | hour) learning to     |                       |
+|                                | plot, analyse, and    |                       |
+|                                | interpret in Excel    |                       |
+|                                | and R or SPSS.        |                       |
+|                                | \                     |                       |
+|                                | Collaboration is      |                       |
+|                                | fine, but each        |                       |
+|                                | student analyses      |                       |
+|                                | independently and     |                       |
+|                                | decides on plots and  |                       |
+|                                | statistical output.   |                       |
++--------------------------------+-----------------------+-----------------------+
+| **Deadline**                   | **Finalise            | **Submit both         |
+|                                | submission:** Use the | components.**         |
+|                                | report-writing        | \                     |
+|                                | guidance; finalise    | One group member      |
+|                                | analyses, statistical | submits Report 1:     |
+|                                | output, and figures.  | Group data submission |
+|                                | \                     | (the group data       |
+|                                | Prepare the group     | file).                |
+|                                | Excel file with       | \                     |
+|                                | metadata, a clean     | Every student submits |
+|                                | data array ready to   | Report 1 (individual  |
+|                                | import into a         | report).              |
+|                                | statistics package,   | \                     |
+|                                | and supporting        | Both are due Friday   |
+|                                | worksheets.           | 25 September 2026 at  |
+|                                | \                     | 23:59.                |
+|                                | Name the file         |                       |
+|                                | Day-Time-Project      |                       |
+|                                | (e.g.                 |                       |
+|                                | WED2-4pmProj4A).      |                       |
+|                                | \                     |                       |
+|                                | Each student works on |                       |
+|                                | their own report,     |                       |
+|                                | results, graphs, and  |                       |
+|                                | presentation.         |                       |
+|                                | \                     |                       |
+|                                | Each student should   |                       |
+|                                | complete their own    |                       |
+|                                | Results section and   |                       |
+|                                | graphs, decide what   |                       |
+|                                | to include in their   |                       |
+|                                | individual report,    |                       |
+|                                | and decide how to     |                       |
+|                                | present the data and  |                       |
+|                                | associated            |                       |
+|                                | statistics.           |                       |
 +--------------------------------+-----------------------+-----------------------+
 :::::
 

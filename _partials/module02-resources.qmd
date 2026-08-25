@@ -12,7 +12,7 @@
 ## BIRD GROUPS ONLY
 ::: callout-important
 ## Important Animal Ethics information
-Please read the [Animal Ethics information](https://canvas.sydney.edu.au/courses/74353/files/50497664?verifier=SFtoOifOluZHEfRzmb0hdSE7sCGTE4ClPstYcPWm&wrap=1) and use [this monitoring sheet](https://canvas.sydney.edu.au/courses/74353/files/50497669?verifier=D1755nSCtsQFKIL7AsAgvqvNKIZsaSAB6yA8Mxla&wrap=1) for your data collection.
+Please read the [2026 Animal Research Authority (ARA)](https://canvas.sydney.edu.au/courses/74353/files/52111463) and use the [2026 Bird survey monitoring sheet (PDF)](https://canvas.sydney.edu.au/courses/74353/files/52106044) for your data collection. For spreadsheet editing, use the [editable monitoring-sheet template (XLSX)](https://canvas.sydney.edu.au/courses/74353/files/50497669).
 
 As part of the Animal Ethics requirements each bird group must submit:
 

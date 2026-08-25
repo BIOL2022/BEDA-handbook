@@ -34,7 +34,7 @@ If you wish to opt out of this, please make a statement to this effect on your r
 - We expect information from the primary literature; i.e. academic peer-reviewed sources, particularly scientific journals. Avoid websites: they usually lack quality control, and they come and go. I recommend that you use:
   - Web of Science (and Google Scholar) as your main portal for accessing journal articles, searched using key words and 
   - EndNote or Mendeley for organising your references (but it is not essential). Consult the Library for short courses on how to use these if you don’t know already. 
-- **If you are uncertain about anything seek help early from the teaching staff in class.**
+- **If you are uncertain about anything, seek help early from the teaching staff in class.**
 
 
 ## Clare’s tips on writing your report
@@ -43,7 +43,7 @@ A great reference on how to write well:
 
 > Mensh B, Kording K (2017) [Ten simple rules for structuring papers.](https://journals.plos.org/ploscompbiol/article%3Fid%3D10.1371/journal.pcbi.1005619) PLoS Comp. Biol. 13. doi: 10.1371/journal.pcbi.1005619
 
-**START EARLY, START EARLY, START EARLY**: you can start to draft your introduction as early as Week 5, once you have read the literature on the topic and have a feel for what your experiment will cover. Don’t try to make it perfect – just get some words down. You can also start to draft your Materials and Methods section once you have started your experiment and before Week 7. You should be able to draft your result section after Week 7 and then finalise your whole report, including your discussion, in Week 8 and before submitting in Week 9.
+**START EARLY, START EARLY, START EARLY**: you can start to draft your introduction as early as Week 5, once you have read the literature on the topic and have a feel for what your experiment will cover. Don’t try to make it perfect – just get some words down. You can also start to draft your Materials and Methods section once you have started your experiment and before Week 7. You should be able to draft your result section after Week 7 and then finalise your whole report, including your discussion, in Week 8 and before submitting at the end of Week 8.
 
 **Title**: keep it brief, **relevant**, informative and interesting.
 
@@ -67,26 +67,28 @@ A great reference on how to write well:
 
 ### Results 
 - Written statements describing results (data and stats). Refer to tables and figures as needed. **Do NOT simply provide the tables and figures without supporting text.**
-- Summary presentation of data (no raw data) as tables, figures or in text as appropriate. Use tables for large amounts of data where detail is important, use figures to illustrate patterns. Indicate sample size and errors, and note whether the latter are standard errors or standard deviations... Format consistently. Make sure decimal places reflect your real capability to measure (e.g. can you really measure a 1 kg plant to 6 decimal places?)
+- Summary presentation of data (no raw data) in text & as figures or tables as appropriate. Use figures to illustrate patterns, use tables for large amounts of data where detail is important. Indicate sample size and errors, and note whether the latter are standard errors or standard deviations... Format consistently. Make sure decimal places reflect your real capability to measure (e.g. can you really measure a 1 kg plant to 6 decimal places?)
 - Results of statistical analyses presented either in text, on figures, or in tables.
 
 **Important tips:**
 
-1. Know what stats matter from the output – there are lots of them!
+1. **Stats and AI:** You are NOT allowed to upload your data set to any AI platform. If you need help to work out what stats is appropriate and WHY, you can use AI (as a complement to the lectures). BUT you MUST analyse your data yourself. Your tutors and demonstrators will ask each of you to show them your statistical analysis in the prac class. If you cannot do this, you will need to work with their guidance until you are able to do it.
+2. Know what stats matter from the output – there are lots of them!
    - Only **some/key stats** need to be included in your report
    - **Do not copy and paste stats output from your stats package**
    - DO type the key stats results up yourself and only include what matters -- that way we know you know what matters
-2. Check assumptions if any are associated with your stats analysis:
+3. Check assumptions, if any are associated with your stats analysis:
    - In your Methods section of your report: say what/whether you have checked, whether they were met, if not, what did you do?
    - in your report DO NOT present normality plots or plots of residuals
-3. Prepare your formal plot(s) for your report
-   - You may present the plot produced by your stats package
+4. Prepare your formal graph(s) for your report
+   - You may present the graph produced by your stats package
 
 ### Discussion 
 - Main conclusions or findings
 - Interpret results – what do they mean? How do they relate to original aims?
 - Compare with and discuss in context of previously published work.
-- Every single study has some limitations to its approach or methods. This does NOT mean it is necessarily flawed. Take a positive approach to your research, given the usual constraints of ANY study, and if you do want to mention/discuss these constraints, do not reduce your discussion to a lengthy apology.
+- “Limitations”: every single study has some context and defined approach or methods. This does NOT mean it is necessarily flawed. Take a positive approach to your research and how you word what you have done. If you do want to mention/discuss these constraints, do not reduce your discussion to a lengthy apology. You do not need to clutch at straws trying to find something wrong with your project so you can write about “limitations” section.
+- **What to do if your group made a genuine error?** Even though I would hope your group had clearly discussed your experimental design & analysis with me/tutor/demonstrator in Weeks 4 and 5 to ensure your design was robust, if your group did make a genuine error by mistake/lack of understanding, then yes – say *what* was wrong. But I want you to learn from mistakes, so you will not lose marks provided you say *why* it was wrong and *how* you would rectify it if you had the chance to do the study again (you won’t earn as many marks as if you had designed things well in the first place).
 - Future studies – what would you do next to extend our understanding of the subject and/or improve what you did? Keep this brief.
 
 ### General 
