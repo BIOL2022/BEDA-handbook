@@ -23,7 +23,7 @@
 | [**P03**](#p03) | Ant food preferences<br>Ant-foraging experiment | Field-based, likely in backyards or another controlled outdoor setting. Your group will set up food treatments and observe ant recruitment. |
 | [**P04**](#p04) | Ant foraging costs and benefits<br>Ant-foraging experiment | Field-based, likely in backyards or another controlled outdoor setting. Your group will manipulate access to food and observe ant recruitment. |
 | [**P05**](#p05) | Wheat seed germination and growth<br>Germination experiment | Requires carefully controlled conditions and regular care of plants over time. |
-| [**P06**](#p06) | Native grass, wheat or horticultural seed germination<br>Germination experiment | Requires carefully controlled conditions and regular care of plants over time. You can switch to P05 if germination fails. |
+| [**P06**](#p06) | Native grass or wheat seed germination<br>Germination experiment | Requires carefully controlled conditions and regular care of plants over time. You can switch to P05 if germination fails. |
 | [**P07**](#p07) | Bird activity across time of day<br>Bird survey | Outdoor activity across a broader geographic area. Animal ethics conditions apply: observe birds only; do not handle or disturb them. |
 | [**P08**](#p08) | Bird use of urban water bodies<br>Bird survey | Outdoor activity across multiple water bodies or sites. Animal ethics conditions apply: observe birds only; do not handle or disturb them. |
 :::
@@ -89,17 +89,16 @@ Understanding these relationships is one step in understanding the conditions re
 :::
 
 ::: {.project-section}
-#### **Project P06** – Germination of seeds of native grass OR wheat OR a horticultural plant (flower or veggie) in relation to water availability {#p06}
+#### **Project P06** – Germination of native grass seeds OR wheat seeds in relation to water availability {#p06}
 <br>
 
 **Background**: Germination of **native plants** is triggered by a range of factors in Australia. Some plants need heat initially, others simply need water. If we can, we will provide you with seed from a native plant that germinates quickly under the right conditions. How often it rains may affect whether seeds germinate, in turn affecting recruitment and regeneration. Understanding the relationship between rain (watering) frequency and probability of seeds germinating helps us understand how climate influences the dynamics of our grasslands and use of native plants in agriculture.
 
 
-**NOTE**: In your pilot study or main trial, if you get no germination after 7 days, your group can choose to switch to wheat (Project P05) or seeds of a horticultural plant to ask the same question, because these germinate quickly.
+**NOTE**: In your pilot study or main trial, if you get no germination after 7 days, your group can choose to switch to wheat (Project P05) to ask the same question, because wheat germinates quickly.
 
 Germination of wheat is crucial for food security (see Project P05).
 
-Germination of horticultural plants is crucial for the cut flower or veggie industries; no germination, no plants, no business! How often it rains or how often seeds are watered may affect whether or how quickly and/or how many seeds germinate – but you need to find this out.
 
 :::
 
@@ -114,10 +113,10 @@ Germination of horticultural plants is crucial for the cut flower or veggie indu
 :::
 
 ::: {.project-section}
-#### **Project P08** – Use of urban water bodies by birds: Do characteristics of urban water bodies influence which birds use them? {#p08}
+#### **Project P08** – Use of urban water bodies by birds: Do characteristics of urban water bodies, such as their size, influence which birds use them? {#p08}
 <br>
 
-**Background**: Bird diversity within cities is affected by many factors, including availability of food, sites for nesting and shelter from predators. Water bodies, such as ponds and lakes, in parks and gardens can attract native (and introduced) birds. The Sydney Council, for example, has upgraded and revegetated the ponds in Sydney Park, just south of Sydney Uni, to encourage water birds. To maximise bird diversity, as well as simply maximise bird numbers, it is important to understand the relationship between characteristics of different water bodies and the diversity of birds they support.
+**Background**: Bird diversity within cities is affected by many factors, including availability of food, sites for nesting and shelter from predators. Water bodies, such as ponds and lakes, in parks and gardens can attract native (and introduced) birds. The Sydney Council, for example, has upgraded and revegetated the ponds in Sydney Park, just south of Sydney Uni, to encourage water birds. To maximise bird diversity, as well as simply maximise bird numbers, it is important to understand the relationship between characteristics of different water bodies, such as their size, and the diversity of birds they support.
 
 **NOTE**: Animal ethics and bird safety conditions apply (see below).
 :::
