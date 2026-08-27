@@ -18,7 +18,7 @@ filters:
   - word/docx-mockup-table.lua
 
 website:
-  title: "BIOL2022"
+  title: "BIOL2022 Handbook"
   search: true
   # draft-mode: gone
   drafts:
@@ -28,7 +28,7 @@ website:
     - module03/304-week11.qmd
     - module03/305-week12.qmd
   navbar:
-    collapse-below: lg
+    collapse-below: xl
     left:
       - icon: house-fill
         text: Home

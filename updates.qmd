@@ -4,6 +4,55 @@ title: "Updates"
 
 This page records changes to the handbook that may be useful to students. Small corrections to spelling or formatting are not listed.
 
+#### 27 Aug 2026
+
+- **FIX:** The handbook header now identifies this site as the BIOL2022 Handbook and its navigation is easier to use on narrower screens.
+
+#### 25 Aug 2026
+
+- **New:** Slide PDFs for the Week 3–5 lectures are now available from the [weekly schedule](index.qmd#weekly-content).
+- **FIX:** The [Module 2 projects page](module02/203-projects.qmd) and Report 1 guidance have been updated for 2026.
+
+#### 24 Aug 2026
+
+- **New:** Lecture pages for Weeks 6–8 are now available from the [weekly schedule](index.qmd#weekly-content).
+- **FIX:** The [Module 2 timeline](module02/202-timeline.qmd) now includes the practical timeline and the correct Report 1 deadline.
+- **New:** Added bird-safety guidance to the relevant [Module 2 project](module02/203-projects.qmd).
+
+#### 23 Aug 2026
+
+- **FIX:** We clarified the native grass germination project on the [Module 2 projects page](module02/203-projects.qmd).
+
+#### 22 Aug 2026
+
+- **FIX:** The [weekly schedule](index.qmd#weekly-content) now links to the Week 4 and Week 5 lectures.
+
+#### 21 Aug 2026
+
+- **FIX:** The [weekly schedule](index.qmd#weekly-content) now links directly to the Early Feedback Task.
+
+#### 18 Aug 2026
+
+- **New:** The [Week 3 practical](module01/w03-model-fitting-assumptions.qmd) now includes a Group Charter example.
+- **New:** The [Module 2 projects page](module02/203-projects.qmd) now identifies projects P01–P08 and provides clearer project-selection information.
+
+#### 17 Aug 2026
+
+- **New:** The [Week 3 practical](module01/w03-model-fitting-assumptions.qmd) has been redesigned.
+
+#### 15 Aug 2026
+
+- **FIX:** Data-analysis guidance in the [Week 3 practical](module01/w03-model-fitting-assumptions.qmd) has been clarified.
+
+#### 10 Aug 2026
+
+- **New:** The [Week 2 practical](module01/103-week02.qmd) has been redesigned.
+- **New:** Week 2 lecture materials are now available from the [weekly schedule](index.qmd#weekly-content).
+
+#### 9 Aug 2026
+
+- **New:** The [Module 2 timeline](module02/202-timeline.qmd) has been refreshed for the 2026 schedule and now highlights the current week.
+
 #### 6 Aug 2026
 
 - **New:** Added a new Manila mode and a Dark mode, based on student feedback. Hope it helps!
