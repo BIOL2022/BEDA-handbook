@@ -18,6 +18,10 @@ Today we focus on **study design and sampling**. You will work in groups of at l
 
 **Spend 2 to 3 minutes now looking at the image below.** What do you see? If you notice something, how would you propose to measure it? If there are things that you need to identify, how would you go about doing that? Logistical questions like these are the first step in designing a study and help determine whether data can be collected reliably and consistently.
 
+```{=typst}
+#counter(figure.where(kind: image)).update(0)
+```
+
 ![An image from the Eindhoven Wildflower Dataset, Schouten, Michielsen & Gravendeel (2024), DataverseNL, DOI https://doi.org/10.34894/U4VQJ6; licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/.](assets/urban-wildflowers.jpg){fig-alt="Top-down view of a woodland floor covered by divided green foliage, scattered white nodding flowers, and brown leaf litter; no scale or quadrat is visible."}
 
 ### Things to prepare {.unnumbered}
@@ -26,7 +30,7 @@ Today we focus on **study design and sampling**. You will work in groups of at l
 2. <i class="bi bi-journal-text me-1" aria-hidden="true"></i> **Lab notebook**. Use it to jot down your observations, models, and data-collection decisions. This will help you keep track of your work.
 3. **A laptop computer** with Jamovi and/or RStudio installed.
 4. Have a look through the [study-design guide](https://docs.google.com/document/d/1JhSevrzpLlDsD0a4225h_dcC4i5ZOII7dkTr8u4gCgs/edit#heading=h.rc1vfwuebyac). You will use it in the practical as a scaffold.
-5. **Quick links:** [Intertidal site images](105-images.qmd) and [Species identification guide](106-species-id.qmd).
+5. **Quick links:** [Intertidal site images](https://biol2022.github.io/BEDA-handbook/module01/105-images.html) and [Species identification guide](https://biol2022.github.io/BEDA-handbook/module01/106-species-id.html).
 
 ::: {.callout-note appearance="simple"}
 ### Download the Week 2 image sets {.unnumbered}
@@ -50,7 +54,7 @@ By the end of this practical, you should be able to:
 | Apply a **standardised** measurement protocol to image-based data. | Use the physical quadrat shown in each image to define a consistent area for measurement, choose a counting or measurement rule, and apply it **consistently**. |
 | Design a **defensible** sampling scheme. | Use the study-design guide to define the target population and sampling frame, independent image-level replicates, and a selection method that reduces bias and pseudoreplication. |
 | Communicate a reproducible sampling plan for group data collection. | Agree on one group scheme, then write it clearly in your <i class="bi bi-journal-text me-1" aria-hidden="true"></i> notebook and upload a photo as a handoff for next week. |
-::::
+:::::
 
 
 ## A sampling primer
@@ -62,7 +66,7 @@ We will open a brainstorming document for this exercise and share it with the cl
 Look at the four images below, two from **Site 1** and two from **Site 2**. Each photograph contains a [quadrat](https://en.wikipedia.org/wiki/Quadrat). Its interior defines the area you score or measure.
 
 
-:::::: {layout-ncol=2}
+::::: {.content-visible when-format="html" layout-ncol=2}
 
 ![Image A01, Site 1.](assets/site01/IMG_0179.jpeg){fig-alt="A square white quadrat frame resting on a dry, light-brown rock surface scattered with many small pale cone-shaped shells and some darker rounded shells gathered in the lower areas."}
 
@@ -72,7 +76,11 @@ Look at the four images below, two from **Site 1** and two from **Site 2**. Each
 
 ![Image B02, Site 2.](assets/site02/IMG_1121.jpeg){fig-alt="A square white quadrat frame on a dry, rough, light-brown rock surface scattered with many small pale cone-shaped shells."}
 
-::::::
+:::
+
+::: {.content-visible when-format="typst"}
+The four sample photographs for this exercise are not printed in this handbook. View them on the [intertidal site images](https://biol2022.github.io/BEDA-handbook/module01/105-images.html) page of the online handbook, or download the Site 1 and Site 2 photo archives from Canvas (see "Download the Week 2 image sets" above).
+:::
 
 Let's say we want to quantify the number, proportion, or cover of *something* in the images, either to compare the two sites or to describe a pattern across all the images.
 
@@ -128,13 +136,7 @@ Work in groups of four. You are now expected to independently observe a novel da
 
 You are provided with representative photographs of a common marine habitat that spans more than 8,000 km of the Great Southern Reef, the coastline along the bottom half of Australia. These images are your actual data source.
 
-:::: {.content-visible when-format="html"}
-First, open the [intertidal site images](105-images.qmd) page. You need to read it to obtain relevant background information. Then look through the [species identification guide](106-species-id.qmd).
-:::::
-
-:::: {.content-visible when-format="pdf"}
-Please check the online Unit Manual for the link to the images. Your demonstrators will also be able to show you how to access the images.
-::::
+First, open the [intertidal site images](https://biol2022.github.io/BEDA-handbook/module01/105-images.html) page. You need to read it to obtain relevant background information. Then look through the [species identification guide](https://biol2022.github.io/BEDA-handbook/module01/106-species-id.html).
 
 ![The Great Southern Reef coastline around southern Australia. © 2021 California Academy of Sciences.](../assets/southern-reef-map.png){width=70% fig-alt="Map showing the Great Southern Reef coastline around southern Australia."}
 
@@ -158,7 +160,7 @@ Look through the intertidal images. In your <i class="bi bi-journal-text me-1" a
 
 Open the [study-design guide](https://docs.google.com/document/d/1JhSevrzpLlDsD0a4225h_dcC4i5ZOII7dkTr8u4gCgs/edit#heading=h.rc1vfwuebyac) and work through it with your group. Use the guide as a scaffold, then write your final design in your <i class="bi bi-journal-text me-1" aria-hidden="true"></i> notebook.
 
-As you work through the guide, you may need to do some literature review or research to work out how to carry out parts of your design. For example, you may do a quick Google search to find out how to measure the cover of a species or identify a species from a photo. You may also need to check the [species identification guide](106-species-id.qmd) for help.
+As you work through the guide, you may need to do some literature review or research to work out how to carry out parts of your design. For example, you may do a quick Google search to find out how to measure the cover of a species or identify a species from a photo. You may also need to check the [species identification guide](https://biol2022.github.io/BEDA-handbook/module01/106-species-id.html) for help.
 
 Your design should state:
 

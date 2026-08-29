@@ -7,6 +7,8 @@ number-sections: false
 ```{r setup}
 #| include: false
 #| cache: true
+#| dev: png
+
 
 library(tidyverse)
 library(palmerpenguins)
@@ -24,6 +26,7 @@ The examples use R code and Jamovi output, so you can use the approach that best
 ```{r load-data}
 #| include: false
 #| cache: true
+#| dev: png
 
 # install.packages("palmerpenguins")
 library(palmerpenguins)
@@ -63,6 +66,7 @@ Since we are fitting a continuous outcome variable (`body_mass_g`) with a contin
 ```{r lm-run}
 #| cache: true
 #| include: false
+#| dev: png
 
 # Fit the linear model
 lm_fit <- lm(body_mass_g ~ flipper_length_mm, data = penguins_clean)
@@ -74,6 +78,7 @@ We can generate a set of standard diagnostic plots in R, Jamovi and most other s
 ```{r fig-lm-diagnostics}
 #| fig-width: 10
 #| fig-height: 8
+#| dev: png
 #| cache: true
 #| echo: false
 #| fig-cap: "Diagnostic plots for the linear model of penguin body mass predicted by flipper length. The plots are produced in R."
@@ -118,10 +123,10 @@ $$
 $$
 
 This scenario is often handled with a two-sample t-test, which is a specific application of the general linear model. Because of this, we can check its assumptions by fitting an equivalent linear model and examining the same diagnostic plots!
-
 ```{r ttest-run}
 #| cache: true
 #| include: false
+#| dev: png
 # Fit the equivalent linear model
 ttest_lm_fit <- lm(bill_length_mm ~ sex, data = penguins_clean)
 ```
@@ -131,10 +136,12 @@ ttest_lm_fit <- lm(bill_length_mm ~ sex, data = penguins_clean)
 ```{r fig-ttest-plots}
 #| fig-width: 10
 #| fig-height: 8
+#| dev: png
 #| cache: true
 #| echo: false
 #| fig-cap: "Diagnostic plots for the general linear model with a categorical predictor (sex) and continuous outcome (bill length) to assess the assumptions of a two-sample t-test. The plots are produced in R."
 #| fig-alt: "Four diagnostic plots for a linear model of penguin bill length by sex."
+
 par(mfrow = c(2, 2))
 plot(ttest_lm_fit)
 par(mfrow = c(1, 1))
