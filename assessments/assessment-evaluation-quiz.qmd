@@ -8,7 +8,7 @@ title: "Evaluation Quiz (Module 1)"
 3. **Time limit**: The quiz has a time limit of 40 minutes. In reality it should take you much less time than that to complete the quiz. The additional time is for unforeseen circumstances.
 4. **Resources**: The quiz is **open book**. This means you can use any resources you have available to you, including the internet, your notes, and the course materials. The reason for this is that as an evaluation tool, we hope that you use it as a learning opportunity. There is no point in cheating as you will only be cheating yourself out of evaluating your own understanding of the material. Most of you should do well if you have been keeping up with the content anyway.
 5. **Attempts**: you will have two attempts to complete the quiz. The highest score will be recorded. No extra chances will be given for any reason outside of technical issues. A technical issue is defined as a problem with the quiz itself. Internet connection issues will not be good reasons for extra attempts.
-6. **Due**: You have about 7 days to complete both attempts of the quiz once it is opened. Note that this is approximate.
+6. **Due**: You have Week 5 to complete both attempts of the quiz.
 7. The quiz consists of multiple choice (one correct answer) and multiple answer (more than one correct answer) questions.
 
 [Back to assessments](assessments.qmd)

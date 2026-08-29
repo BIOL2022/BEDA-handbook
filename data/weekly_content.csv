@@ -16,9 +16,10 @@ week,section,position,title,url,description,show_on_schedule,note_type,note_weig
 4,lecture,1,Multiple predictors and transformations,lectures/L04/index.qmd,Expanding models and transformations to increase model fit.,TRUE,,
 4,practical,1,Welcome to Module 2 practicals,module02/202-timeline.qmd,,TRUE,,
 4,extra,1,Early Feedback Task due Friday 28 August at 23:59,https://canvas.sydney.edu.au/courses/74353/assignments/696326,,TRUE,assessment,5
+4,extra,2,Evaluation Quiz (Module 1) opens Sunday at 10:00,https://canvas.sydney.edu.au/courses/74353/assignments/696327,,TRUE,notice,
 5,lecture,1,Controls and revision,lectures/L05/index.qmd,How to control your experiments with data that you collect.,TRUE,,
 5,practical,1,Main experiment timeline,module02/202-timeline.qmd,,TRUE,,
-5,extra,1,Evaluation Quiz due Friday 4 September at 23:59,,,TRUE,assessment,10
+5,extra,1,Evaluation Quiz due Friday 4 September at 23:59,https://canvas.sydney.edu.au/courses/74353/assignments/696327,,TRUE,assessment,10
 5,extra,2,Begin working on Report 1,,,TRUE,notice,
 6,lecture,1,Refresher and categorical variables,lectures/L06/index.qmd,A refresher on designing experiments with categorical variables.,TRUE,,
 6,practical,1,No practical,,,TRUE,,
