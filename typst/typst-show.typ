@@ -1,4 +1,4 @@
-#import "@preview/orange-book:0.7.1": book, part, chapter, appendices
+#import "@preview/orange-book:0.7.1": book, chapter, appendices
 
 #let beda-green = rgb("#0f6b5b")
 #let beda-maroon = rgb("#6b210f")
@@ -6,6 +6,24 @@
 #let beda-cream = rgb("#fbfaf6")
 #let beda-ink = rgb("#142326")
 #let beda-muted = rgb("#536366")
+// Quarto's bundled orange-book filter emits native `#part[title]` calls.
+// Shadow the package's `part(title)` hook so Parts are real outlined/bookmarked
+// level-1 headings, numbered in Arabic, and bounded only by weak page breaks.
+// The package implementation has the same one-argument signature but hardcodes
+// Roman numerals and `pagebreak(to: "odd")`.
+#let part(title) = {
+  pagebreak()
+  heading(
+    level: 1,
+    numbering: "1",
+    supplement: "Part",
+    outlined: true,
+    bookmarked: true,
+    title,
+  )
+  pagebreak()
+}
+
 
 #let beda-cover = box(
   width: 210mm,
@@ -107,10 +125,6 @@ $endfor$
 // are retuned for the portrait book page: a wider Week/date column, readable
 // list spacing, left/top alignment, and non-justified text. Table rows do not
 // split across a page boundary, so the timeline can span pages cleanly.
-#let module2-timeline-meta(body) = block(below: 8pt)[
-  #set text(size: 9pt, fill: beda-muted)
-  #body
-]
 
 #let module2-timeline-support(body) = block(
   width: 100%,
@@ -198,6 +212,7 @@ $endif$
         ]
       }
     },
+    margin: (x: 20mm, top: 18mm, bottom: 18mm),
     heading-style: 0,
     font-size: 10.5pt,
     first-line-indent: false,
@@ -222,18 +237,59 @@ $endif$
       )
       show link: set text(fill: beda-purple)
       show link: underline
+      // Quarto's native orange-book filter converts each YAML `part:` title
+      // to `#part[title]`, which resolves to the local hook above. Pandoc emits
+      // ordinary chapter and section headings as relative Typst headings, so
+      // a Typst offset—not a Header-only Lua rewrite—places chapters at level
+      // 2 and sections below them. The resulting heading counter is
+      // (part, chapter, section), shared by the outline and PDF bookmarks.
+      set heading(offset: 1)
+      set figure(
+        numbering: num => {
+          let levels = counter(heading).get()
+          let heading_prefix = if levels.len() > 1 { levels.slice(0, 2) } else { levels }
+          numbering("1.1.1", ..heading_prefix, num)
+        },
+      )
+      set math.equation(
+        numbering: num => {
+          let levels = counter(heading).get()
+          let heading_prefix = if levels.len() > 1 { levels.slice(0, 2) } else { levels }
+          numbering("(1.1.1)", ..heading_prefix, num)
+        },
+      )
+      show heading.where(level: 1): set heading(supplement: "Part")
       show heading.where(level: 1): it => {
-        pagebreak(to: "odd")
-        counter(figure.where(kind: image)).update(0)
-        counter(figure.where(kind: table)).update(0)
-        counter(math.equation).update(0)
+        // The local `part(title)` hook owns the weak opening and closing page
+        // breaks, leaving this semantic heading as a title-only divider.
         set par(justify: false)
+        v(8em)
         align(right)[
           #if it.numbering != none {
-            text(size: 44pt, weight: "bold", fill: beda-purple)[
+            text(size: 64pt, weight: "bold", fill: beda-purple)[
               #counter(heading).display("1")
             ]
             v(-0.8em)
+          }
+          #text(size: 30pt, weight: "bold", fill: beda-purple)[#it.body]
+        ]
+        v(0.45em)
+        line(length: 100%, stroke: 1pt + beda-purple)
+      }
+      show heading.where(level: 2): set heading(supplement: "Chapter")
+      show heading.where(level: 2): it => {
+        // This rule is styling-only. Figure and equation counters continue
+        // across chapters; manipulating layout or counters here would drift
+        // the chapter's TOC anchor back a page.
+        set par(justify: false)
+        align(right)[
+          #context {
+            if it.numbering != none and counter(heading).get().first() > 0 {
+              text(size: 44pt, weight: "bold", fill: beda-purple)[
+                #counter(heading).display("1.1")
+              ]
+              v(-0.8em)
+            }
           }
           #text(size: 23pt, weight: "bold", fill: beda-purple)[#it.body]
         ]
@@ -241,10 +297,10 @@ $endif$
         line(length: 100%, stroke: 1pt + beda-purple)
         v(1.2em)
       }
-      show heading.where(level: 2): set text(fill: beda-purple)
-      show heading.where(level: 2): set block(below: 0.5em)
-      show heading.where(level: 3): set block(above: 1em, below: 0.5em)
-      show heading.where(level: 4): it => {
+      show heading.where(level: 3): set text(fill: beda-purple)
+      show heading.where(level: 3): set block(below: 0.5em)
+      show heading.where(level: 4): set block(above: 1em, below: 0.5em)
+      show heading.where(level: 5): it => {
         v(1em)
         it
       }

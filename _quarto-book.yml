@@ -17,17 +17,31 @@ book:
   date: today
   chapters:
     - index.qmd
-    - unit-information.qmd
-    - module01/102-week01.qmd
-    - module02/200-welcome.qmd
-    - module02/202-timeline.qmd
-    - module02/203-projects.qmd
-    - module02/204-report1.qmd
-    - module02/205-resources.qmd
-    - module02/206-rubric.qmd
+    - part: "Unit Information"
+      chapters:
+        - about-unit.qmd
+    - part: "Module 1"
+      chapters:
+        - module01/101-intro.qmd
+        - module01/102-week01.qmd
+        - module01/103-week02.qmd
+        - module01/104-week03.qmd
+        - module01/106-species-id.qmd
+        - module01/w03-model-fitting-assumptions.qmd
+    - part: "Module 2"
+      chapters:
+        - module02/book-overview.qmd
+        - module02/book-timeline.qmd
+        - module02/book-projects.qmd
+        - module02/book-report1.qmd
+        - module02/book-resources.qmd
+        - module02/book-rubric.qmd
+    - part: "Module 3"
+      chapters:
+        - module03/301-intro.qmd
 
 format:
-  typst:
+  orange-book-typst:
     template-partials:
       - typst/typst-show.typ
 papersize: a4

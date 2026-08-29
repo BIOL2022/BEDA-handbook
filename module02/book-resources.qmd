@@ -1,0 +1,5 @@
+---
+title: "Practical resources"
+---
+
+{{< include ../_partials/module02-resources.qmd >}}

@@ -8,7 +8,10 @@ project:
     - "**/*.qmd"
     - "!_book/**"
     - "!_partials/**"
+    - "!about-unit.qmd"
+    - "!module02/book-*.qmd"
     - "!module02/module02-word.qmd"
+    - "!parts/**"
     - "!word/title-page-mock-*.qmd"
     - "!word/font-preview.qmd"
 

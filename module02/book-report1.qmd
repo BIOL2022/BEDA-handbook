@@ -1,0 +1,5 @@
+---
+title: "Report 1 instructions"
+---
+
+{{< include ../_partials/module02-report1.qmd >}}
