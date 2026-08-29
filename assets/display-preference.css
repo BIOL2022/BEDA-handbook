@@ -127,7 +127,6 @@
     background: #ecd5c8;
   }
 
-  :root[data-beda-display="manila"] .module2-timeline-meta,
   :root[data-beda-display="manila"] .module2-week-date {
     color: var(--bs-secondary-color);
   }
@@ -241,7 +240,6 @@
     border-left-color: #f0aa9d;
   }
 
-  body.quarto-dark .module2-timeline-meta,
   body.quarto-dark .module2-week-date {
     color: #c9d0cc;
   }

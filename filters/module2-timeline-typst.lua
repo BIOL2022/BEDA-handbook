@@ -1,5 +1,5 @@
 local canonical_links = {
-  ["202-timeline-changelog.qmd"] = "https://biol2022.github.io/BEDA-handbook/module02/202-timeline-changelog.html",
+  ["201-overview.qmd"] = "https://biol2022.github.io/BEDA-handbook/module02/201-overview.html",
   ["200-welcome.qmd"] = "https://biol2022.github.io/BEDA-handbook/module02/200-welcome.html",
   ["203-projects.qmd"] = "https://biol2022.github.io/BEDA-handbook/module02/203-projects.html",
   ["205-resources.qmd"] = "https://biol2022.github.io/BEDA-handbook/module02/205-resources.html",
@@ -7,7 +7,6 @@ local canonical_links = {
 }
 
 local div_functions = {
-  ["module2-timeline-meta"] = "module2-timeline-meta",
   ["module2-timeline-support"] = "module2-timeline-support",
   ["module2-timeline-resources"] = "module2-timeline-resources",
   ["module2-timeline-deadline"] = "module2-timeline-deadline",

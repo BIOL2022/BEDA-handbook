@@ -9,12 +9,6 @@
 #let beda-support = rgb("#f1f7f5")
 #let beda-deadline = rgb("#f8eef1")
 
-#let module2-timeline-meta(body) = block(
-  below: 10pt,
-)[
-  #set text(size: 9.3pt, fill: beda-muted)
-  #body
-]
 
 #let module2-timeline-support(body) = block(
   width: 100%,

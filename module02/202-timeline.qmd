@@ -12,9 +12,7 @@ sidebar: module-2
 ```
 
 
-::::: {.module2-timeline-support}
-**Equipment and technical help:** Please refer to the [BIOL2022 Canvas site](https://canvas.sydney.edu.au/courses/74353/) for the current technical officer’s contact details and arrangements. When requesting help or equipment, include your project name, group name and practical time. Clare, technical staff, and demonstrators will be available during practical sessions to discuss expectations and project plans. Your group should aim to be self-sufficient outside practical times. For some projects, you will be able to take gear home straight away to run a pilot study; for others, plan now and pick up gear in consultation with technical staff.
-:::::
+{{< include ../_partials/module02-timeline-support.qmd >}}
 
 
 
