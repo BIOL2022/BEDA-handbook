@@ -170,7 +170,7 @@ Images from Leon Altoff and Grove, S.J. (2018).
 ![Scutellastra chapmani reference image 3](assets/id/Scutellastra-chapmani_c.jpg){group="schapmani" width=100 .lightbox}
 ![Scutellastra chapmani reference image 4](assets/id/Scutellastra-chapmani_d.jpg){group="schapmani" width=100 .lightbox}
 ![Scutellastra chapmani reference image 5](assets/id/Scutellastra-chapmani_e.jpg){group="schapmani" width=100 .lightbox}
-![Scutellastra chapmani reference image 6](assets/id/Scutellastra-chapmani_f.jpg){group="schapmani" width=100 .lightbox}
+![Scutellastra chapmani reference image 6](assets/id/Scutellastra-chapmani_f.JPG){group="schapmani" width=100 .lightbox}
 
 
 Images from Grove, S.J. (2018) and Sea Shells of New South Wales.
