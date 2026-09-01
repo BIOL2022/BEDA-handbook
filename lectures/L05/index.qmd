@@ -13,7 +13,7 @@ title: "Week 5 — Controls and revision"
 ```
 
 ::: {.lecture-actions}
-**Wednesday: You've got this — Module 1 revision**
+**Wednesday: You've got this — Module 1 revision** [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L05b-revision/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (solarised)](https://biol2022.github.io/2026-lectures/lectures/L05b-revision/slides-solarized.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ```{=html}
