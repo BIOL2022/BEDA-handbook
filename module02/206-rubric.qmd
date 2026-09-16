@@ -1,6 +1,7 @@
 ---
 title: Report 1 -- Rubric
 sidebar: module-2
+number-sections: false
 ---
 
 {{< include ../_partials/module02-rubric.qmd >}}

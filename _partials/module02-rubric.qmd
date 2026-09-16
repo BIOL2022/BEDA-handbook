@@ -1,1 +1,13 @@
-The Report 1 marking rubric will be released soon on Canvas. Please check Canvas for the current rubric before you begin preparing your report.
+::: {.callout-important}
+### Canvas login required
+**To access the marking rubric, you must be logged into the University of Sydney Canvas system with your UniKey.**
+:::
+
+## Accessing the Marking Rubric {.unnumbered}
+
+The official marking rubric for Report 1 is hosted directly on Canvas:
+
+- [**Download Report 1 Marking Rubric (PDF)**](https://canvas.sydney.edu.au/courses/74353/files/52398578/download?download_frd=1) (Canvas file: `BIOL2022-R01-rubric-2026.pdf`)
+- [**View Assignment on Canvas**](https://canvas.sydney.edu.au/courses/74353/assignments/696331){target="_blank"} to view the submission portal and the interactive marking criteria grid displayed below the assignment description.
+
+For comprehensive writing advice, section-by-section breakdown, and formatting guidelines, refer to the [Report 1 Instructions](204-report1.qmd){target="_blank"} page.
