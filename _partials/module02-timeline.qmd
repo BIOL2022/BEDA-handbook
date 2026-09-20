@@ -132,8 +132,9 @@
 |                                | decides on plots and  |                       |
 |                                | statistical output.   |                       |
 +--------------------------------+-----------------------+-----------------------+
-| **Deadline**                   | **Finalise            | **Submit both         |
-|                                | submission:** Use the | components.**         |
+| **Week 8**\                    | **Finalise            | **Submit both         |
+| [21--27                        | submission:**         | components.**         |
+| September]{.module2-week-date} | Use the               |                       |
 |                                | report-writing        | \                     |
 |                                | guidance; finalise    | One group member      |
 |                                | analyses, statistical | submits Report 1:     |
