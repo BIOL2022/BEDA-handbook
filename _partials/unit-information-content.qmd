@@ -9,7 +9,7 @@
 
 Thank you for joining **BIOL2022: Biology Experimental Design and Analysis**, also known as BEDA[&nbsp;(🐝-da)]{.content-visible when-format="html"}. The ability to critically evaluate evidence is a fundamental life skill. In BEDA, we build this skill through hands-on work in experimental design and data analysis. How do we design a robust study? How does a study’s design shape its results? How do we choose statistical tools that fit the research question? The reasoning skills you develop will be invaluable not just in biology, but in *any* future career path you choose.
 
-While the focus of BEDA is on the reasoning behind data analysis and interpreting results, we also provide practical guidance on using software. We recommend **Jamovi** if you are new to statistical software. If you already have experience with **R**, you are welcome to use it. **SPSS** and PRIMER are also supported but we prefer to use open-source software where possible as they remain accessible to all.
+While the focus of BEDA is on the reasoning behind data analysis and interpreting results, we also provide practical guidance on using software. We recommend **Jamovi** if you are new to statistical software. If you already have experience with **R**, you are welcome to use it. **SPSS** is also supported but we prefer to use open-source software where possible as it remains accessible to all.
 
 ::: {.content-visible when-format="html"}
 **Click on the tabs above to find out more about the unit.**

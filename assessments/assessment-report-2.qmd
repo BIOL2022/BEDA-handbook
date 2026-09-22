@@ -13,7 +13,7 @@ This assessment involves a group data submission in addition to the individual r
 - Due: By **10:00am** on the day of your **Week 11 practical session**
 - Worth: **5%** of your total unit mark
 
-Make sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi.
+Make sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in **Jamovi**.
 
 ## Individual Report
 Instructions for this assessment are in [Week 9 Practical](../module03/302-week09.qmd#assessment-overview). Please read the instructions carefully. 

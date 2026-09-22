@@ -46,7 +46,3 @@ Please provide feedback on the cheatsheets here: [**Give Feedback**](https://for
 - [boxplots](https://envx-resources.github.io/cheatsheet-spss-boxplot/){#cheatsheet-spss-boxplot target="_blank" rel="noopener noreferrer"} - `vis`
 - [scatterplots](https://usyd-soles-edu.github.io/cheatsheet-spss-scatterplot/){target="_blank" rel="noopener noreferrer"} - `vis`
 - [using the chart builder](https://usyd-soles-edu.github.io/cheatsheet-spss-chart-builder/){target="_blank" rel="noopener noreferrer"} - `vis`
-
-## PRIMER
-
-- [Multivariate Analysis Cheatsheet (nMDS, PERMANOVA, SIMPER, ANOSIM)]

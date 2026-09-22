@@ -4,6 +4,12 @@ title: "Updates"
 
 This page records changes to the handbook that may be useful to students. Small corrections to spelling or formatting are not listed.
 
+#### 22 Sep 2026
+
+- **New:** The Module 3 practicals now teach multivariate analyses (nMDS, cluster analysis, ANOSIM, PERMANOVA, PERMDISP and SIMPER) in jamovi using the MISO module, with a new ant-community dataset for the Week 10 practical.
+- **New:** The [Week 9 practical](module03/302-week09.qmd) PCA instructions now cover extraction settings, rotation output and missing-data handling.
+- **FIX:** References to PRIMER have been removed across the handbook following the move to jamovi.
+
 #### 27 Aug 2026
 
 - **FIX:** The handbook header now identifies this site as the BIOL2022 Handbook and its navigation is easier to use on narrower screens.
