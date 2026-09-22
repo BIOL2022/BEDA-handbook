@@ -38,7 +38,6 @@ At this stage it’s very easy to fiddle with your data – is there any reason 
 - Are you intending to make every sample equal?
 - Would it be worth analysing using your data at a higher “taxonomic” level?
 
-## Tips for PRIMER
-The graphics are not fantastic – for some outputs you may need to save the coordinates and make a new graph. You can save the images as a windows metafile or bitmap if you wish, they are good enough for your report. Resolution is too low for most journals. You should save appropriate output files using standard formats you can incorporate into your report. 
+
 
 If you don’t complete your analyses, I will make the program available to you outside of prac times. There will also be time in week 13 to do any extras.

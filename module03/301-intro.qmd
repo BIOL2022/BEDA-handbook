@@ -38,7 +38,7 @@ Although best scientific practice recommends selecting appropriate analyses befo
 
 ## Analyses and programs we’ll use
 
-The main programs we will use in this course are **Jamovi** and **PRIMER**. However, if you prefer working in **R**, complete **R scripts (RStudio files)** for all the methods covered will be made available on **Canvas**.
+The main program we will use in this course is **Jamovi**. However, if you prefer working in **R**, complete **R scripts (RStudio files)** for all the methods covered will be made available on **Canvas**.
 
 ### Principal Components Analysis
 
@@ -54,7 +54,7 @@ We will perform PCA using **Jamovi** (or **R**, if preferred).
 
 In this section of the course, we will explore techniques for **visualising** and **testing patterns** in complex multivariate datasets. These methods reduce the dimensionality of the data (e.g., species abundances across sites) to reveal meaningful patterns and relationships, and then allow us to test **explicit hypotheses** about these patterns—often in relation to predefined groups (e.g., treatment types) or environmental variables.
 
-We will primarily use **PRIMER 7** for these analyses, although equivalent **R** code will also be provided.
+We will primarily use the **MISO module in Jamovi** for these analyses, although equivalent **R** code will also be provided.
 
 ### nMDS – Non-metric multidimensional scaling
 
@@ -64,14 +64,14 @@ nMDS is an **ordination technique** used to visualise patterns in multivariate d
 
 ANOSIM tests whether groups of samples differ in composition based on a comparison of **within-group vs among-group similarity**. It uses rank-based distance measures and is best suited to **simple experimental designs**.
 
-- Software: **PRIMER 7** (or **R**)
+- Software: **Jamovi** (or **R**)
 - Output includes: **Global R statistic** and **p-value**
 
 ## PERMANOVA – Permutational multivariate analysis of variance
 
 PERMANOVA is a more flexible and powerful method for testing hypotheses in multivariate data. It uses **permutation-based ANOVA** on a resemblance matrix and can accommodate **complex experimental designs**, including multiple fixed and random factors.
 
-- Software: **PRIMER 7** (or **R**)
+- Software: **Jamovi** (or **R**)
 - Capable of testing main effects, interactions, and nested designs
 
 ## SIMPER – Similarity percentages
@@ -80,7 +80,7 @@ When a significant difference is detected (e.g., by ANOSIM or PERMANOVA), SIMPER
 
 - It calculates the **percentage contribution** of each variable to the overall dissimilarity.
 - Useful for interpreting biological meaning behind multivariate differences.
-- Software: **PRIMER 7** (or **R**)
+- Software: **Jamovi** (or **R**)
 
 ## Timeline
 

@@ -39,7 +39,7 @@ This assessment involves two separate submissions via Canvas:
    - Due: By **10:00am** on the day of your **Week 11 practical session**
    - Worth: **5%** of your total unit mark
 
-   Make sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in PRIMER or Jamovi.
+   Make sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in **Jamovi**.
 
 2. **Individual Report**
    - Submit your **individual report** based on your group's study.
@@ -75,16 +75,17 @@ You will use PCA to reduce your set of measured variables into a coherent smalle
 
 ![Video showing how to open the PCA analysis in Jamovi.](assets/w09-jamovi-run-pca.mp4)
 
-4. Method and assumption checks
-   - Under the **“Methods”** section, set Rotation to "Varimax" (this is the most common rotation method).
-   - Tick the box for **Bartlett’s test of sphericity** (to check if your data is suitable for PCA) in **Assumption checks**.
+4. Descriptive statistics and suitability tests
+   - Under **“Assumption Checks”**, tick the box for **Bartlett’s Test of Sphericity** (to check if your data is suitable for PCA).
 
-5. Number of components
-   - Select "**Based on eigenvalue**".
-   - The default is to retain components with eigenvalues **> 1** (Kaiser’s criterion). Change that if you have a specific reason to do so.
+5. Extraction settings
+   - Select **“Based on eigenvalue”** so that components with **eigenvalues > 1** (Kaiser’s criterion) are retained. Change this only if you have a specific reason to do so.
+   - Tick **Scree Plot**.
+   - Tick **Unrotated solution**.
 
-6. Additional Output
-   - **Select all of the options in this section.** These will provide you with useful information to interpret your PCA results.
+6. Rotation
+   - In the **“Rotation”** section, choose **Varimax** rotation (this is the most common rotation method).
+   - Tick **Display Rotated Solution**.
 
 ![Video showing the Jamovi PCA options to select.](assets/w09-jamovi-pca-options.mp4)
 
@@ -93,14 +94,22 @@ You will use PCA to reduce your set of measured variables into a coherent smalle
    - This will add new variables to your dataset representing each component.
    - You can view the new variables by clicking on the **Data** tab at the top of the screen and scrolling to the right.
 
+8. Missing data handling
+   - At the bottom of the PCA panel, set **“Missing values”** to **Exclude cases listwise**.
+
+9. Run the analysis
+   - Click anywhere outside the setup panel, and Jamovi will display your PCA results.
+
 
 ### After PCA: Review Your Output
 
-- **Scree Plot**: Helps determine how many components to retain.
-- **Saved Scores**: You can now use these component scores in further analyses (e.g., regression or cluster analysis).
+- **Correlation Matrix**: Check for variables that are not correlated with the others. These may not be suitable for PCA — you can remove them and rerun the analysis if needed.
 - **Bartlett’s Test of Sphericity** tests whether your correlation matrix is significantly different from an identity matrix—a matrix where all off-diagonal values are zero (no correlation between variables), and all diagonal values are one (each variable only correlates with itself). Bartlett’s Test should be significant (p < .05): a **significant result** means that your correlation matrix is not an identity matrix, and PCA ***can*** be used.
 
 That said, this test is most useful when used **alongside visual inspection** of your correlation matrix. If many variables aren’t correlated with others, they may not contribute much to PCA and could be removed.
+- **Scree Plot**: Helps determine how many components to retain.
+- **Rotated Solution**: Makes it easier to interpret your components.
+- **Saved Scores**: You can now use these component scores in further analyses (e.g., regression or cluster analysis).
 
 ### Interpreting the PCA
 
@@ -205,7 +214,7 @@ Each student will submit an individual short report, focusing primarily on the M
 
 Your individual report is due by **11:59pm at the end of Week 13**. Please ensure it is submitted electronically and anonymously via Canvas.
 
-We aim to return reports with summative feedback approximately one to two weeks after submission.
+We aim to return reports with summative feedback approximately one week after submission.
 
 ### Academic integrity
 
