@@ -1,15 +1,30 @@
 ---
 title: "Week 10 — Clustering and multidimensional scaling"
-draft: true
 ---
 
-## Clustering
+::: {.lecture-actions}
+**Tuesday: Clustering** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open in Canvas](https://canvas.sydney.edu.au/courses/74353/pages/week-10-tue-clustering){.lecture-action target="_blank" rel="noopener noreferrer"}
+:::
 
-[Open “Clustering” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135752)
+::: {.content-visible when-format="html"}
+```{=html}
+<a href="https://canvas.sydney.edu.au/courses/74353/pages/week-10-tue-clustering" class="lecture-deck-preview lecture-deck-image" target="_blank" rel="noopener noreferrer">
+  <img src="../../assets/lecture-previews/deck3.png" alt="First slide of the Clustering lecture" loading="lazy" />
+</a>
+```
+:::
 
-## Non-metric multi-dimensional scaling (nMDS) and hypothesis testing
+::: {.lecture-actions}
+**Wednesday: Non-metric multi-dimensional scaling (nMDS) and hypothesis testing** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open in Canvas](https://canvas.sydney.edu.au/courses/74353/pages/week-10-wed-non-metric-multi-dimensional-scaling-nmds-and-hypothesis-testing){.lecture-action target="_blank" rel="noopener noreferrer"}
+:::
 
-[Open “Non-metric multidimensional scaling” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135753)
+::: {.content-visible when-format="html"}
+```{=html}
+<a href="https://canvas.sydney.edu.au/courses/74353/pages/week-10-wed-non-metric-multi-dimensional-scaling-nmds-and-hypothesis-testing" class="lecture-deck-preview lecture-deck-image" target="_blank" rel="noopener noreferrer">
+  <img src="../../assets/lecture-previews/deck4.png" alt="First slide of the nMDS and hypothesis testing lecture" loading="lazy" />
+</a>
+```
+:::
 
 ::: {.lecture-week-nav}
 [← Week 9: Multivariate analysis and PCA](../L09/index.qmd){.lecture-previous}

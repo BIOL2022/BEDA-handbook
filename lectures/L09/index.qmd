@@ -1,15 +1,30 @@
 ---
 title: "Week 9 — Multivariate analysis and PCA"
-draft: true
 ---
 
-## Introduction to multivariate analysis
+::: {.lecture-actions}
+**Tuesday: Introduction to multivariate analysis** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open in Canvas](https://canvas.sydney.edu.au/courses/74353/pages/week-09-tue-introduction-to-multivariate-analysis){.lecture-action target="_blank" rel="noopener noreferrer"}
+:::
 
-[Open “Introduction to multivariate analysis” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135750)
+::: {.content-visible when-format="html"}
+```{=html}
+<a href="https://canvas.sydney.edu.au/courses/74353/pages/week-09-tue-introduction-to-multivariate-analysis" class="lecture-deck-preview lecture-deck-image" target="_blank" rel="noopener noreferrer">
+  <img src="../../assets/lecture-previews/deck1.png" alt="First slide of the Introduction to multivariate analysis lecture" loading="lazy" />
+</a>
+```
+:::
 
-## Principal Component Analysis (PCA) and Factor Analysis (FA)
+::: {.lecture-actions}
+**Wednesday: Principal Component Analysis (PCA) and Factor Analysis (FA)** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open in Canvas](https://canvas.sydney.edu.au/courses/74353/pages/week-09-wed-principal-component-analysis-pca-and-factor-analysis-fa){.lecture-action target="_blank" rel="noopener noreferrer"}
+:::
 
-[Open “PCA and Factor Analysis” in Canvas](https://canvas.sydney.edu.au/courses/74353/modules/items/3135751)
+::: {.content-visible when-format="html"}
+```{=html}
+<a href="https://canvas.sydney.edu.au/courses/74353/pages/week-09-wed-principal-component-analysis-pca-and-factor-analysis-fa" class="lecture-deck-preview lecture-deck-image" target="_blank" rel="noopener noreferrer">
+  <img src="../../assets/lecture-previews/deck2.png" alt="First slide of the PCA and Factor Analysis lecture" loading="lazy" />
+</a>
+```
+:::
 
 ::: {.lecture-week-nav}
 [← Week 8: Model selection and revision](../L08/index.qmd){.lecture-previous}
