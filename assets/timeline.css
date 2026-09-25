@@ -720,6 +720,17 @@ main.content .module2-timeline-table table > thead > tr > th {
   width: 100%;
 }
 
+.lecture-deck-preview.lecture-deck-image {
+  padding: 0;
+}
+
+.lecture-deck-preview.lecture-deck-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
 .lecture-deck-preview:hover,
 .lecture-deck-preview:focus {
   background-color: rgba(0, 94, 168, 0.02);
