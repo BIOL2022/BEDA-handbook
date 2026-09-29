@@ -1,31 +1,35 @@
 ---
-title: "**Week 9**: PCA and Report 2"
+title: "**Week 9**: Multivariate methods in Biology"
 number-depth: 3
 ---
 
-[Return to weekly content](../index.qmd#weekly-content)
 
-## What you need this week
+::: {.border .rounded .p-3 .mb-4 .bg-body-tertiary}
+**Module 3 objectives**
 
-- [Introduction to Module 3](301-intro.qmd)
+This module introduces widely used techniques for analysing multivariate biological data. By the end of this module, you will be able to:
 
-## Objectives {-}
-
-:::{.callout-tip appearance="simple"}
-The aim of this component of the practical series is to introduce you to several commonly used techniques for analysing multivariate data. By the end of the series, you will:
-
-- Understand the principles underlying **Principal Components Analysis (PCA)** and **Non-metric Multidimensional Scaling (nMDS)**
-- Be familiar with the concepts behind **multivariate hypothesis testing** using permutational techniques such as **ANOSIM** and **PERMANOVA**
-- Be able to **plan and conduct experiments** that test multivariate hypotheses
-- Know how to **carry out these analyses using relevant statistical software**
-- Be able to **interpret, present, and report** your findings clearly and effectively
-
+- Explain the principles underpinning principal components analysis (PCA), cluster analysis and non-metric multidimensional scaling (nMDS).
+- Explain the logic of permutation-based multivariate hypothesis testing, including PERMANOVA and ANOSIM.
+- Plan and conduct studies designed to test multivariate hypotheses.
+- Perform multivariate analyses using jamovi or R.
+- Interpret, present and report the results of multivariate analyses.
 :::
 
-In this specific practical you will:
 
-- [ ] Use **PCA** to analyse “lecturer perceptions” data gathered in previous years
-- [ ] In groups, design an investigation using a model system to test a multivariate hypothesis for your upcoming report
+
+## Introduction
+
+In this practical, you will:
+
+- Use **PCA** to analyse "lecturer perceptions" data collected in previous years
+- Work in groups to **design an investigation** using a model system to **test a multivariate hypothesis** for your upcoming report
+
+
+
+
+Please read the [Introduction to Module 3](301-intro.qmd) for an overview of the methods and activities covered in this module.
+
 
 ## What you need to submit for this module
 
@@ -36,16 +40,16 @@ This assessment involves two separate submissions via Canvas:
      - **Species (assemblage) data**
      - **Habitat data**
    - Only **one group member** needs to upload the file on behalf of the group.
-   - Due: By **10:00am** on the day of your **Week 11 practical session**
+   - Due: By **8:00am** on the day of your **Week 11 practical session**
    - Worth: **5%** of your total unit mark
 
-   Make sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in **Jamovi**.
+   Make sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in **R or Jamovi**.
 
 2. **Individual Report**
    - Submit your **individual report** based on your group's study.
    - Format: A **short scientific article** (see assessment guidelines on Canvas for details).
    - Worth: 15% of your total unit mark.
-   - Due date: Refer to the **Assessment** on Canvas and the **Unit Outline**.
+   - Due date: **06 November 2026 at 23:59.**
 
 ### Analyses covered in practical 1
 
@@ -152,6 +156,180 @@ Example: Cars as a Model System
 
 A sample proforma will be provided to illustrate how such a system can be structured to generate a multivariate dataset with **testable hypotheses**. See the [Module 3 Resources](https://canvas.sydney.edu.au/courses/67437/pages/module-3-resources) section on Canvas to download the template.
 
+A blank project-planning proforma and a completed car-park example are also included below.
+
+### Blank project-planning proforma
+
+**Project title:**
+
+**Name of group members:**
+
+| 1. | 4. | 7. | 10. |
+|---|---|---|---|
+| 2. | 5. | 8. | 11. |
+| 3. | 6. | 9. | 12. |
+
+**Hypotheses:**
+
+1. ________________________________________________________________
+2. ________________________________________________________________
+3. ________________________________________________________________
+4. ________________________________________________________________
+
+| Factor 1: | Factor 2: |
+|---|---|
+| a)<br>b)<br>c)<br>d) | a)<br>b)<br>c)<br>d) |
+| Provide details of how you are **DEFINING** each factor. | Provide details of how you are **DEFINING** each factor. |
+
+Write down your list of sites. For each site write how it will be classified for each factor.
+
+| Sites | Factor 1 | Factor 2 |
+|---|---|---|
+| 1. | | |
+| 2. | | |
+| 3. | | |
+| 4. | | |
+| 5. | | |
+| 6. | | |
+| 7. | | |
+| 8. | | |
+| 9. | | |
+| 10. | | |
+| 11. | | |
+| 12. | | |
+| 13. | | |
+| 14. | | |
+| 15. | | |
+| 16. | | |
+| 17. | | |
+| 18. | | |
+| 19. | | |
+| 20. | | |
+
+**Sampling method:** (describe your sampling method – describe how you will be surveying your sites)
+
+**Sampling effort:** (describe your sampling effort e.g. # transects, # quadrats, time based)
+
+**Species taxonomy:** (list or describe your species in enough detail that every member of your group will be able to clearly identify your taxa to species level).
+
+List the habitat variables that will be collected at each site. Add more if necessary.
+
+| Habitat variable | How it will be measured. |
+|---|---|
+| 1. | |
+| 2. | |
+| 3. | |
+| 4. | |
+| 5. | |
+| 6. | |
+| 7. | |
+| 8. | |
+| 9. | |
+| 10. | |
+| 11. | |
+| 12. | |
+| 13. | |
+| 14. | |
+| 15. | |
+| 16. | |
+| 17. | |
+| 18. | |
+| 19. | |
+| 20. | |
+
+### Completed example: car parks
+
+**Project title:** Travelling the road to success: Do shopping centres and sports fields support different car communities?
+
+**Name of group members:**
+
+| 1. | 4. | 7. | 10. |
+|---|---|---|---|
+| 2. | 5. | 8. | 11. |
+| 3. | 6. | 9. | 12. |
+
+**Hypotheses:**
+
+1. The assemblages of cars in car parks surrounding sport fields will be different from the assemblages of cars in car parks near shopping centres.
+2. The assemblages of cars found in local government areas (LGA) with high mean income will be different from assemblages of cars in LGA with low mean income. The assemblages of cars in LGA with medium mean income will not differ from the car assemblages in LGA with high or low mean income.
+3. Mean scores of principal components derived from habitat variables will differ between car parks adjacent to sporting fields and car parks adjacent to shopping centres (more specific hypotheses pending PCA).
+4. Principal components derived from habitat variables will predict car species richness and/or car abundance at each car park (more specific hypotheses pending PCA).
+
+| Factor 1: Car park functionality | Factor 2: LGA mean income |
+|---|---|
+| a) Car parks near sporting fields<br>b) Car parks adjoining shopping centres<br>c)<br>d) | a) Low<br>b) Medium<br>c) High<br>d) |
+| Provide details of how you are **DEFINING** each factor.<br><br>Car parks must have at least 25 marked carspaces and at least one side must be adjoining either a sporting field or a multilevel shopping centre. | Provide details of how you are **DEFINING** each factor.<br><br>LGA mean income will be defined using the ABS metric for average individual taxable income (taxable individuals only) for 2010. We define low mean income to be: &lt;$60000 year; medium between $65000 and $90000; high &gt;$95000 |
+
+**Sites and factor classifications:**
+
+| Sites | Factor 1 | Factor 2 |
+|---|---|---|
+| Hornsby Westfield (Hornsby LGA) | Shop | Medium |
+| Pennant Hills Park (Hornsby LGA) | Sport | Medium |
+| Rogers Park, Woy Woy (Gosford LGA) | Sport | Low |
+| Deepwater Plaza Shopping Centre, Woy Woy (Gosford LGA) | Shop | Low |
+| Gordon Shopping Centre (Ku Ring Gai LGA) | Shop | High |
+| Golden Jubilee Field, Wahroonga (Ku Ring Gai LGA) | Sport | High |
+| Top Ryde Shopping Centre (Ryde LGA) | Shop | Medium |
+| Meadowbank Park (Ryde LGA) | Sport | Medium |
+| Parramatta Park (Parramatta LGA) | Sport | Low |
+| Westfield Parramatta (Parramatta LGA) | Shop | Low |
+| Boronia Park (Hunters Hill LGA) | Sport | High |
+| Gladesville Shopping Centre (Hunters Hill LGA) | Shop | High |
+| Woollahra Oval (Woollahra LGA) | Sport | High |
+| Eastpoint food fair (Woollahra LGA) | Shop | High |
+| Royal Randwick Shopping Centre (Randwick LGA) | Shop | Medium |
+| Matraville Sports Centre (Randwick LGA) | Sport | Medium |
+| Booralee Park (Botany Bay LGA) | Sport | Low |
+| Westfield Eastgardens (Botany Bay LGA) | Shop | Low |
+
+**Sampling method:** We will not survey cars in roadside parking, only in car parks with designated car spaces. If car parks are multi-leveled only the ground-level will be surveyed (for both species composition and habitat variables). Each site will be sampled between 10am and 12noon on a Saturday so that we can capture car assemblages associated with children’s sport. Each group member will survey 2 car parks in one LGA (ie, one shopping centre and one sporting ground). We will only survey car species that are parked in designated car spaces within the car park.
+
+**Sampling effort:** A timed sampling effort will be used. We will survey each site (car park) for car species for 30mins. All habitat variables (except % free car spaces and # of shaded car spots) will be measured after the 30min sampling time.
+
+**Species taxonomy:** We will classify cars based on their make (i.e. Ford, Holden, Kia, Nissan, Ferrari, Toyota, Jeep, Subaru etc.) and type. Each car will be classified into 1 of 11 types:
+
+- 4WD
+- Van
+- sedan
+- station wagon
+- hatchback
+- Convertible
+- People mover (7+ seats)
+- Ute
+- Smartcar and/or mini
+- Sportscar
+- Other
+
+As an example, there will be 11 possible ‘species’ of car from the ‘genus’ Ford:
+
+| Ford fourwheeldrive | Ford hatchback | Ford smartcar |
+|---|---|---|
+| Ford van | Ford convertible | Ford sportscar |
+| Ford sedan | Ford peoplemover | Ford other |
+| Ford stationwagon | Ford ute | |
+
+**Habitat variables:**
+
+| Habitat variable | How it will be measured. |
+|---|---|
+| total # car spaces | Total # of spaces in car park or on ground floor of car park (estimate for large car parks) (continuous) |
+| % available car spaces | # of car spots that were empty during the 30 min survey period/(#free spaces + # individual cars counted in 30 min) x 100 (continuous) |
+| # of lights | # of individual light sources (continuous) |
+| # of trees/shrubs | # of individual trees or shrubs within the boundary of the car park (continuous) |
+| # of bins | # of bins within the boundary of the car park (continuous) |
+| # of exits | # of exits for the car park (whole car park) (continuous) |
+| cost/hr | 0 = free; 1 = x < $3; 2 = $3 < x < $5.99; 3 = $6 < x < $8.99; 4 = 9 < x where x is the average fee/hour (ignore timed free parking in shopping centres). (ordinal) |
+| timed parking | 1 = x < 15min; 2 = 15min < x <59 min; 3 = 1 h < x < 2 h; 4 = 2 h < x < 4 h; 5 = untimed where x is the maximum allowed parking time and/or time without payment (ordinal) |
+| area of car park | Total area of the car park (m2) – measured from satellite images (GoogleEarth) (continuous) |
+| % man made cover | Man –made cover only – includes roofs, shade covers, awnings etc. 0 = no cover; 1 = 1-25% cover; 2 = 26 – 50% cover; 3 = 51-75% cover; 4 = 76-99% cover; 5 = 100% cover. Estimate. (ordinal) |
+| # of car spots in shade | # of car spots in the 30 min sampling time that have over 33% shade. (continuous) |
+| Secure parking | Is the car park secure (i.e. boom gate/ticket gate/valet/security person present)? 0 = not secure’ 1 = secure (presence/absence) |
+| Glass on ground | Is there smashed glass on the ground? 0 = no, 1 = yes (presence/absence) |
+| # of rubbish items | # of individual rubbish items found within the survey area of the car park. (Cigarette butts or small pieces of glass not included) (Continuous) |
+
+Add more if necessary.
+
 
 ### Group work
 
@@ -212,7 +390,7 @@ Each student will submit an individual short report, focusing primarily on the M
 
 ## Report submission details
 
-Your individual report is due by **11:59pm at the end of Week 13**. Please ensure it is submitted electronically and anonymously via Canvas.
+Your individual report is due by **23:59 on 6 November 2026**. Please ensure it is submitted electronically and anonymously via Canvas.
 
 We aim to return reports with summative feedback approximately one week after submission.
 
@@ -279,3 +457,14 @@ You are encouraged to consult the references from the annotated reading list pro
 - Gaston, K. J., Blackburn, T. M., & Lawton, J. H. (1993). Comparing animals and automobiles – a vehicle for understanding body size and abundance relationships in species assemblages. Oikos, 66, 172–179.
 - Quinn, G. P., & Keough, M. J. (2002). Experimental Design and Data Analysis for Biologists. Cambridge: Cambridge University Press. (Relevant chapters)
 - Quinn, G. P., & Keough, M. J. (2023). Experimental Design and Data Analysis for Biologists (2nd ed.). Cambridge: Cambridge University Press. (Relevant chapters)
+
+## Support the MISO project {-}
+
+MISO is free, open-source software developed to support teaching and analysis. If you have a GitHub account and find MISO useful, please consider [starring the MISO repository](https://github.com/usyd-soles-edu/miso){target="_blank" rel="noopener noreferrer"}:
+
+1. Sign in to GitHub and open the MISO repository.
+2. Select **Star** near the top-right corner of the page.
+
+Starring the repository is completely optional and has no connection to your participation or assessment. It simply helps other GitHub users discover the project.
+
+![How to star the MISO repository on GitHub.](assets/w09-star-miso.gif){#fig-star-miso .lightbox fig-alt="Animated guide showing the Star button on the MISO GitHub repository being selected and changing to Starred."}

@@ -1,74 +1,32 @@
 ---
-title: "**Week 10**: Permutational techniques"
+title: "**Week 10**: Multivariate methods in biology"
 number-sections: false
 ---
 
 [Return to weekly content](../index.qmd#weekly-content)
 
-:::{.callout-tip appearance="simple"}
-## Objectives
+::: {.border .rounded .p-3 .mb-4 .bg-body-tertiary}
+**Module 3 objectives**
 
-The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. By the end of these practicals you will:
+This module introduces widely used techniques for analysing multivariate biological data. By the end of this module, you will be able to:
 
-* Be familiar with the principles underpinning principal components analysis (PCA), cluster analysis and non-metric multidimensional scaling
-* Understand multivariate hypothesis testing using permutational techniques
-* Understand how experimental design affects multivariate analyses
-* Know how to perform these analyses using **jamovi and the MISO module**
-* Be able to interpret, present and report the results of multivariate analyses.
-
+- Explain the principles underpinning principal components analysis (PCA), cluster analysis and non-metric multidimensional scaling (nMDS).
+- Explain the logic of permutation-based multivariate hypothesis testing, including PERMANOVA and ANOSIM.
+- Plan and conduct studies designed to test multivariate hypotheses.
+- Perform multivariate analyses using jamovi or R.
+- Interpret, present and report the results of multivariate analyses.
 :::
 
-For this specific practical you will:
+For this practical you will:
 
-* Present group presentations of model systems and experimental design.
-* Analyse sample ecological data in **jamovi using MISO** to:
-  * visualise assemblage structure using cluster analysis and nMDS;
-  * test one- and two-factor multivariate hypotheses using ANOSIM and PERMANOVA;
-  * assess multivariate dispersion using PERMDISP;
-  * determine which variables contribute most to differences among groups using SIMPER.
+- Present group presentations of model systems and experimental design.
+- Analyse sample ecological data in jamovi using MISO to:
+  - Visualise assemblage structure using cluster analysis and nMDS.
+  - Test one- and two-factor multivariate hypotheses using ANOSIM and PERMANOVA.
+  - Assess multivariate dispersion using PERMDISP.
+  - Determine which variables contribute most to differences among groups using SIMPER.
 
 These analyses are commonly used in ecology to compare species assemblages, visualise differences among groups, and test hypotheses about community composition.
-
-## Analyses covered in practical 2
-
-### nMDS and multivariate hypothesis testing
-
-**(ANOSIM, PERMANOVA, PERMDISP, and SIMPER)**
-
-These techniques are primarily used to:
-
-* **Produce ordinations** (e.g. via nMDS) that visualise patterns in complex multivariate datasets by reducing their dimensionality
-* **Test explicit hypotheses** about those patterns, based on **a priori groupings** (e.g., treatment types) or **relationships with predictor variables** (e.g., habitat characteristics)
-
-These methods are particularly useful in ecological studies for comparing species assemblages and identifying patterns in community composition.
-
-### ANOSIM – Analysis of Similarities
-
-* ANOSIM tests for **differences in community composition** among predefined groups by comparing **within-group** and **between-group** similarities.
-* It uses **distance-based rank comparisons** (e.g., Bray–Curtis).
-* Best suited to **simple, one-factor experimental designs**.
-* Output includes an **R statistic** and **p-value**, indicating the degree of group separation.
-
-### PERMANOVA – Permutational multivariate analysis of variance
-
-* PERMANOVA is a more flexible and **powerful method** for testing multivariate hypotheses using **permutation-based ANOVA** on a resemblance matrix.
-* Capable of analysing **complex designs**, including:
-  * Multiple fixed or random factors
-  * Interactions and nested structures
-* Appropriate for both **balanced** and **unbalanced** designs.
-
-### PERMDISP – Permutational analysis of multivariate dispersions
-
-* PERMANOVA tests for differences in assemblage **composition**. However, groups can also differ in how **variable or dispersed** their samples are.
-* PERMDISP tests whether groups differ in their **multivariate dispersion** (the spread of samples within each group).
-* If PERMDISP is significant, interpret the corresponding PERMANOVA results with additional caution.
-
-### SIMPER – Similarity percentages
-
-* SIMPER is used **after a significant difference** is found (e.g., via ANOSIM or PERMANOVA) to determine which **variables (e.g., species)** contribute most to differences between groups.
-* It calculates the **average contribution** of each species to overall dissimilarity between groups.
-* SIMPER is **descriptive**: a high contribution does not demonstrate that an individual species differs significantly between groups.
-* Useful for interpreting **ecological drivers** behind observed multivariate patterns.
 
 ### Community and assemblage structure
 
@@ -84,28 +42,9 @@ A typical workflow for analysing community data is:
 
 ## Using jamovi and MISO
 
-:::{.callout-important appearance="simple"}
-### Install jamovi and the MISO module
-
-Before the practical, make sure you have:
-
-1. **jamovi** — download the current version from [jamovi.org](https://www.jamovi.org/).
-2. The **MISO module** — download the latest MISO `.jmo` file from the [MISO releases page](https://github.com/usyd-soles-edu/miso/releases), then in jamovi go to **☰ → Modules → Install from file…** and select the downloaded file. If MISO is available in the jamovi library by the time you read this, you can install it from there instead (**Modules → jamovi library**).
-
-If you have trouble installing MISO on your own machine, ask a demonstrator — the lab computers will have it set up.
-:::
-
-:::{.callout-note appearance="simple"}
-### Video guides
-
-Video walkthroughs of the MISO analyses below are being updated and will be added here soon.
-:::
-
 ### 1. Open the data
 
-Open **jamovi**, then select **Open → This PC**, and open the file:
-
-[**Download AntDataTotal.csv**](assets/AntDataTotal.csv)
+Download [AntDataTotal.csv](assets/AntDataTotal.csv) to your computer. In jamovi, select the **☰ menu → Open → This PC → Browse**, then locate the downloaded file and select **Open**.
 
 Each row in the dataset represents **one sample**. The first three variables are:
 
@@ -123,10 +62,16 @@ Check the variable types before starting the analyses:
 
 **Site** can be retained as an identifier.
 
+To check a variable, double-click its column heading and inspect **Measure type**. To set all abundance variables at once, select the **Variables** tab, use the select-all checkbox, then deselect **Site**, **Community**, and **Sample**. Set **Measure type → Continuous** for the remaining 100 variables.
+
 For this dataset:
 
 * **Community** has five levels
 * **Sample** has two levels: **Edge** and **Interior**
+
+The video starts with the file already loaded and shows how to check the grouping variables and set the abundance variables to Continuous.
+
+![Checking the Week 10 variable types in jamovi on macOS.](assets/w10-jamovi-check-data.mp4)
 
 ### 2. Select the ant abundance variables
 

@@ -1,24 +1,30 @@
 ---
-title: "**Week 12**: Support session"
+title: "**Weeks 12 and 13**: Multivariate methods in biology (continued)"
 ---
 
 [Return to weekly content](../index.qmd#weekly-content)
 
-:::{.callout-tip appearance="simple"}
-## Objectives (you should know these by now!)
-The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will;
+::: {.border .rounded .p-3 .mb-4 .bg-body-tertiary}
+**Module 3 objectives**
 
-- Be familiar with the principles underpinning principal components analysis (PCA), and non-metric multidimensional scaling.
-- Be familiar with the principles underpinning multivariate hypothesis testing using permutational techniques
-- Planning and conducting experiments to test multivariate hypotheses
-- Know how to perform these analyses using relevant software
-- Be able to interpret, present and report on these analyses. 
+This module introduces widely used techniques for analysing multivariate biological data. By the end of this module, you will be able to:
+
+- Explain the principles underpinning principal components analysis (PCA), cluster analysis and non-metric multidimensional scaling (nMDS).
+- Explain the logic of permutation-based multivariate hypothesis testing, including PERMANOVA and ANOSIM.
+- Plan and conduct studies designed to test multivariate hypotheses.
+- Perform multivariate analyses using jamovi or R.
+- Interpret, present and report the results of multivariate analyses.
 :::
+
+
 
 ## Outline
 
-This week we will be in the lab to help with any analyses that groups wish to undertake. This may involve integrating the analyses (e.g. testing the relationships between PCs and univariate measures) or tweaking (not twerking) your analyses by examining subsets of your data using the options available in Jamovi.
+- **Week 12:** Carry out additional analyses, summarise your findings, and review guidance on describing multivariate methods and results in your report. Demonstrators will provide support with this work.
+- **Week 13:** Further support for additional analyses and any remaining work.
+
+During these weeks, we will be in the lab to help with any analyses that groups wish to undertake. This may involve integrating the analyses (e.g. testing the relationships between PCs and univariate measures) or tweaking (not twerking) your analyses by examining subsets of your data using the options available in Jamovi.
 
 ## Marking scheme
 
-The marking scheme can be found on Canvas, in the Assignments section under **Report 2**.
+The marking scheme is included in the Week 9 practical notes and is also available on Canvas, in the Assignments section under **Report 2**.

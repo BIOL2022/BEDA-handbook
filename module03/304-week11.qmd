@@ -4,19 +4,23 @@ title: "**Week 11**: Multivariate methods in biology (continued)"
 
 [Return to weekly content](../index.qmd#weekly-content)
 
-:::{.callout-tip appearance="simple"}
-## Objectives 
-The aim of this component of the practical series is to introduce you to several common techniques for analysing multivariate data. At the end of them you will:
+::: {.border .rounded .p-3 .mb-4 .bg-body-tertiary}
+**Module 3 objectives**
 
-- Be familiar with the principles underpinning principal components analysis (PCA) and non-metric multidimensional scaling.
-- Be familiar with the principles underpinning multivariate hypothesis testing using permutational techniques
-- Planning and conducting experiments to test multivariate hypotheses
-- Know how to perform these analyses using relevant software
-- Be able to interpret, present and report on these analyses. 
+This module introduces widely used techniques for analysing multivariate biological data. By the end of this module, you will be able to:
+
+- Explain the principles underpinning principal components analysis (PCA), cluster analysis and non-metric multidimensional scaling (nMDS).
+- Explain the logic of permutation-based multivariate hypothesis testing, including PERMANOVA and ANOSIM.
+- Plan and conduct studies designed to test multivariate hypotheses.
+- Perform multivariate analyses using jamovi or R.
+- Interpret, present and report the results of multivariate analyses.
+:::
+
 For this specific practical you will:
 - Analyse and interpret your group data using multivariate techniques learnt in weeks 1 (PCA) and 2 (nMDS, PERMANOVA, SIMPER (if appropriate, etc). 
 - Perform analyses (ANOVA, regressions etc) to test additional univariate hypotheses.
-:::
+
+
 
 ## Outline
 
@@ -40,4 +44,4 @@ At this stage it’s very easy to fiddle with your data – is there any reason 
 
 
 
-If you don’t complete your analyses, I will make the program available to you outside of prac times. There will also be time in week 13 to do any extras.
+If you don’t complete your analyses, I will make the program available to you outside of prac times. There will also be further support in Week 13 for any remaining analyses.
