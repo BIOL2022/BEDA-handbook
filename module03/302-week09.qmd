@@ -1,22 +1,21 @@
 ---
-title: "**Week 9**: Multivariate methods in Biology"
-number-depth: 3
+title: '<i class="bi bi-flask me-2" aria-hidden="true"></i> **Week 9**: Multivariate methods in biology'
+number-sections: false
+toc-location: left
 ---
-
 
 ::: {.border .rounded .p-3 .mb-4 .bg-body-tertiary}
 **Module 3 objectives**
 
 This module introduces widely used techniques for analysing multivariate biological data. By the end of this module, you will be able to:
 
-- Explain the principles underpinning principal components analysis (PCA), cluster analysis and non-metric multidimensional scaling (nMDS).
-- Explain the logic of permutation-based multivariate hypothesis testing, including PERMANOVA and ANOSIM.
-- Plan and conduct studies designed to test multivariate hypotheses.
-- Perform multivariate analyses using jamovi or R.
-- Interpret, present and report the results of multivariate analyses.
+- Understand the principles underpinning **Principal Components Analysis (PCA)** and **Non-metric Multidimensional Scaling (nMDS)**
+- Be familiar with the concepts behind **multivariate hypothesis testing** using **permutational techniques** such as **ANOSIM** and **PERMANOVA**
+- **Plan and conduct experiments** that test multivariate hypotheses
+- Perform these analyses using relevant software tools (**Jamovi**, PRIMER, or R)
+- **Interpret, present, and report** the results of multivariate analyses effectively
+
 :::
-
-
 
 ## Introduction
 
@@ -25,22 +24,18 @@ In this practical, you will:
 - Use **PCA** to analyse "lecturer perceptions" data collected in previous years
 - Work in groups to **design an investigation** using a model system to **test a multivariate hypothesis** for your upcoming report
 
-
-
-
 Please read the [Introduction to Module 3](301-intro.qmd) for an overview of the methods and activities covered in this module.
-
 
 ## What you need to submit for this module
 
-This assessment involves two separate submissions via Canvas:
+This module involves report writing and data collection. You will submit two separate items for assessment:
 
 1. **Group Data Submission (Excel File)**
    - Submit **one Excel file** containing your group’s:
      - **Species (assemblage) data**
      - **Habitat data**
    - Only **one group member** needs to upload the file on behalf of the group.
-   - Due: By **8:00am** on the day of your **Week 11 practical session**
+   - Due: By **8:00 am** on the day of your **Week 11 practical session**
    - Worth: **5%** of your total unit mark
 
    Make sure the file is clearly organised, with each dataset on a separate worksheet or in separate files, and correctly formatted for analysis in **R or Jamovi**.
@@ -51,71 +46,73 @@ This assessment involves two separate submissions via Canvas:
    - Worth: 15% of your total unit mark.
    - Due date: **06 November 2026 at 23:59.**
 
-### Analyses covered in practical 1
-
-**Principal Components Analysis (PCA)** is a technique used to **reduce the dimensionality** of a dataset by extracting a smaller set of **new variables (principal components)** that capture as much of the **variance** in the original data as possible. These components summarise complex patterns across multiple variables, making the data easier to visualise and interpret.
+Additional details on the report format, marking scheme, and submission instructions are provided in the [Assessment Overview](#assessment-overview) section below.
 
 ## Part 1: Principal components analysis – “perceptions of biology lecturers”
 
-You will use PCA to reduce your set of measured variables into a coherent smaller dataset. In addition, you will be comparing your lecturer perceptions between preferred systems (marine, freshwater or terrestrial), preferred taxon (animals or plants) and gender (male or female) using conventional univariate approaches (t-tests/ANOVAs). To perform these univariate approaches, make sure that you not only create the principal components (PCs) but also save the scores (see below) for each component. 
+**Principal Components Analysis (PCA)** is a technique used to **reduce the dimensionality** of a dataset by extracting a smaller set of **new variables (principal components)** that capture as much of the **variance** in the original data as possible. These components summarise complex patterns across multiple variables, making the data easier to visualise and interpret.
+
+You will use PCA to reduce your set of measured variables to a coherent, smaller dataset. In addition, you will compare perceptions of lecturers across groups defined by preferred system (marine, freshwater or terrestrial), preferred taxon (animals or plants) and gender (male or female), using conventional univariate approaches (t-tests/ANOVAs). To perform these univariate approaches, make sure that you not only create the principal components (PCs) but also save the scores (see below) for each component.
+
+### Run the PCA
 
 **The process in JAMOVI is listed below. R instructions are given on Canvas in an R script file.**
 
 1. Import your data. [**Download it here**](https://canvas.sydney.edu.au/courses/67437/pages/module-3-resources). If the link does not work, please go on to [Canvas](https://canvas.sydney.edu.au/courses/67437). A new **Module 3 Resources** link has been added to the front page.
    - Open **Jamovi**.
-   - Go to the top-left menu (☰) → click **Open** → **Browse** and select your Excel/csv file (e.g. your lecturer dataset).
-   - Once imported, check that all the columns (variables) are correctly recognised as numeric (look for a ruler icon in the column headers).
-   - You may convert columns of interest to numeric in several ways. One way is to use the **Variables** tab to select all the variables of interest (use Shift+click or Ctrl+click), then click on Edit and change "**Measure Type**" to "**Continuous**".
+   - Go to the top-left menu (☰) → click **Open** → **Browse** and select your Excel/csv file (e.g., your lecturer dataset).
+   - Once the data are imported, check that all the columns (variables) are correctly recognised as numeric (look for a ruler icon in the column headers).
+   - You may convert columns of interest to numeric in several ways. One way is to use the **Variables** tab to select all the variables of interest (use Shift+click or Ctrl+click) and then click on Edit and change "**Measure Type**" to "**Continuous**".
 
 ![Video showing how to load the Week 9 data file in Jamovi.](assets/w09-jamovi-load-data.mp4)
 
-2. Run Principal Components Analysis
+2. Run Principal Components Analysis.
    - Click on the **“Factor”** tab in the top toolbar.
    - Select **Principal Component Analysis**.
 
-3. Select your variables
-   - In the *new section, from the panel on the left, select the variables of interest and move them into the **“Variables”** box. 
-   - You can do this by either clicking on the arrow button or by dragging and dropping them.
+3. Select your variables.
+   - In the new section, select the variables of interest from the panel on the left and move them into the **“Variables”** box.
+   - You can do this by either clicking on the arrow button or dragging and dropping them.
 
 ![Video showing how to open the PCA analysis in Jamovi.](assets/w09-jamovi-run-pca.mp4)
 
-4. Descriptive statistics and suitability tests
+4. Descriptive statistics and suitability tests.
    - Under **“Assumption Checks”**, tick the box for **Bartlett’s Test of Sphericity** (to check if your data is suitable for PCA).
 
-5. Extraction settings
+5. Extraction settings.
    - Select **“Based on eigenvalue”** so that components with **eigenvalues > 1** (Kaiser’s criterion) are retained. Change this only if you have a specific reason to do so.
    - Tick **Scree Plot**.
    - Tick **Unrotated solution**.
 
-6. Rotation
+6. Rotation.
    - In the **“Rotation”** section, choose **Varimax** rotation (this is the most common rotation method).
    - Tick **Display Rotated Solution**.
 
 ![Video showing the Jamovi PCA options to select.](assets/w09-jamovi-pca-options.mp4)
 
-7. Save component scores
+7. Save component scores.
    - Tick “Save component scores to data set” (usually found under the Scores section at the bottom).
    - This will add new variables to your dataset representing each component.
    - You can view the new variables by clicking on the **Data** tab at the top of the screen and scrolling to the right.
 
-8. Missing data handling
+8. Missing data handling.
    - At the bottom of the PCA panel, set **“Missing values”** to **Exclude cases listwise**.
 
-9. Run the analysis
+9. Run the analysis.
    - Click anywhere outside the setup panel, and Jamovi will display your PCA results.
 
-
-### After PCA: Review Your Output
+### Review the output
 
 - **Correlation Matrix**: Check for variables that are not correlated with the others. These may not be suitable for PCA — you can remove them and rerun the analysis if needed.
 - **Bartlett’s Test of Sphericity** tests whether your correlation matrix is significantly different from an identity matrix—a matrix where all off-diagonal values are zero (no correlation between variables), and all diagonal values are one (each variable only correlates with itself). Bartlett’s Test should be significant (p < .05): a **significant result** means that your correlation matrix is not an identity matrix, and PCA ***can*** be used.
 
-That said, this test is most useful when used **alongside visual inspection** of your correlation matrix. If many variables aren’t correlated with others, they may not contribute much to PCA and could be removed.
+  That said, this test is most useful when used **alongside visual inspection** of your correlation matrix. If many variables aren’t correlated with others, they may not contribute much to PCA and could be removed.
+
 - **Scree Plot**: Helps determine how many components to retain.
 - **Rotated Solution**: Makes it easier to interpret your components.
 - **Saved Scores**: You can now use these component scores in further analyses (e.g., regression or cluster analysis).
 
-### Interpreting the PCA
+### Interpret the components
 
 You need to:
 
@@ -123,9 +120,9 @@ You need to:
 - Examine the scree plot and determine how many PCs you can identify (eigenvalues >1, Kaiser’s Criterion).
 - Establish a meaningful name for each component based on the loadings for individual variables in the rotated solutions.
 
-### After the PCA
+### Compare groups using component scores
 
-Examine whether gender, system biases (marine v. terrestrial) and taxon (animal v. plant) biases may affect the perceptions of biology lecturers. You will need to code the columns for each factor (i.e. males = 0, females = 1) for Jamovi to perform its standard one-way ANOVAs or t-tests.
+Examine whether gender, system biases (marine v. terrestrial) and taxon (animal v. plant) biases may affect the perceptions of biology lecturers. You will need to code the columns for each factor (i.e., males = 0, females = 1) for Jamovi to perform its standard one-way ANOVAs or t-tests.
 
 Questions to consider:
 
@@ -147,189 +144,15 @@ To explore these analytical techniques, you will work in groups to generate your
 
 These creative analogues allow you to test and visualise multivariate patterns in a controlled and accessible way.
 
-Example: Cars as a Model System
+#### Example: cars as a model system
 
-- Cars have been successfully used as a teaching model for ecological analysis (e.g., Gaston et al. 1993). In this context:
+Cars have been successfully used as a teaching model for ecological analysis (e.g., Gaston et al. 1993). In this context:
+
 - Different car **types** can be treated as "**species**".
 - Different **suburbs** or **locations** represent "**sites**".
 - The car park **characteristics** (e.g., size, surface, signage) act as "**habitat variables**".
 
-A sample proforma will be provided to illustrate how such a system can be structured to generate a multivariate dataset with **testable hypotheses**. See the [Module 3 Resources](https://canvas.sydney.edu.au/courses/67437/pages/module-3-resources) section on Canvas to download the template.
-
-A blank project-planning proforma and a completed car-park example are also included below.
-
-### Blank project-planning proforma
-
-**Project title:**
-
-**Name of group members:**
-
-| 1. | 4. | 7. | 10. |
-|---|---|---|---|
-| 2. | 5. | 8. | 11. |
-| 3. | 6. | 9. | 12. |
-
-**Hypotheses:**
-
-1. ________________________________________________________________
-2. ________________________________________________________________
-3. ________________________________________________________________
-4. ________________________________________________________________
-
-| Factor 1: | Factor 2: |
-|---|---|
-| a)<br>b)<br>c)<br>d) | a)<br>b)<br>c)<br>d) |
-| Provide details of how you are **DEFINING** each factor. | Provide details of how you are **DEFINING** each factor. |
-
-Write down your list of sites. For each site write how it will be classified for each factor.
-
-| Sites | Factor 1 | Factor 2 |
-|---|---|---|
-| 1. | | |
-| 2. | | |
-| 3. | | |
-| 4. | | |
-| 5. | | |
-| 6. | | |
-| 7. | | |
-| 8. | | |
-| 9. | | |
-| 10. | | |
-| 11. | | |
-| 12. | | |
-| 13. | | |
-| 14. | | |
-| 15. | | |
-| 16. | | |
-| 17. | | |
-| 18. | | |
-| 19. | | |
-| 20. | | |
-
-**Sampling method:** (describe your sampling method – describe how you will be surveying your sites)
-
-**Sampling effort:** (describe your sampling effort e.g. # transects, # quadrats, time based)
-
-**Species taxonomy:** (list or describe your species in enough detail that every member of your group will be able to clearly identify your taxa to species level).
-
-List the habitat variables that will be collected at each site. Add more if necessary.
-
-| Habitat variable | How it will be measured. |
-|---|---|
-| 1. | |
-| 2. | |
-| 3. | |
-| 4. | |
-| 5. | |
-| 6. | |
-| 7. | |
-| 8. | |
-| 9. | |
-| 10. | |
-| 11. | |
-| 12. | |
-| 13. | |
-| 14. | |
-| 15. | |
-| 16. | |
-| 17. | |
-| 18. | |
-| 19. | |
-| 20. | |
-
-### Completed example: car parks
-
-**Project title:** Travelling the road to success: Do shopping centres and sports fields support different car communities?
-
-**Name of group members:**
-
-| 1. | 4. | 7. | 10. |
-|---|---|---|---|
-| 2. | 5. | 8. | 11. |
-| 3. | 6. | 9. | 12. |
-
-**Hypotheses:**
-
-1. The assemblages of cars in car parks surrounding sport fields will be different from the assemblages of cars in car parks near shopping centres.
-2. The assemblages of cars found in local government areas (LGA) with high mean income will be different from assemblages of cars in LGA with low mean income. The assemblages of cars in LGA with medium mean income will not differ from the car assemblages in LGA with high or low mean income.
-3. Mean scores of principal components derived from habitat variables will differ between car parks adjacent to sporting fields and car parks adjacent to shopping centres (more specific hypotheses pending PCA).
-4. Principal components derived from habitat variables will predict car species richness and/or car abundance at each car park (more specific hypotheses pending PCA).
-
-| Factor 1: Car park functionality | Factor 2: LGA mean income |
-|---|---|
-| a) Car parks near sporting fields<br>b) Car parks adjoining shopping centres<br>c)<br>d) | a) Low<br>b) Medium<br>c) High<br>d) |
-| Provide details of how you are **DEFINING** each factor.<br><br>Car parks must have at least 25 marked carspaces and at least one side must be adjoining either a sporting field or a multilevel shopping centre. | Provide details of how you are **DEFINING** each factor.<br><br>LGA mean income will be defined using the ABS metric for average individual taxable income (taxable individuals only) for 2010. We define low mean income to be: &lt;$60000 year; medium between $65000 and $90000; high &gt;$95000 |
-
-**Sites and factor classifications:**
-
-| Sites | Factor 1 | Factor 2 |
-|---|---|---|
-| Hornsby Westfield (Hornsby LGA) | Shop | Medium |
-| Pennant Hills Park (Hornsby LGA) | Sport | Medium |
-| Rogers Park, Woy Woy (Gosford LGA) | Sport | Low |
-| Deepwater Plaza Shopping Centre, Woy Woy (Gosford LGA) | Shop | Low |
-| Gordon Shopping Centre (Ku Ring Gai LGA) | Shop | High |
-| Golden Jubilee Field, Wahroonga (Ku Ring Gai LGA) | Sport | High |
-| Top Ryde Shopping Centre (Ryde LGA) | Shop | Medium |
-| Meadowbank Park (Ryde LGA) | Sport | Medium |
-| Parramatta Park (Parramatta LGA) | Sport | Low |
-| Westfield Parramatta (Parramatta LGA) | Shop | Low |
-| Boronia Park (Hunters Hill LGA) | Sport | High |
-| Gladesville Shopping Centre (Hunters Hill LGA) | Shop | High |
-| Woollahra Oval (Woollahra LGA) | Sport | High |
-| Eastpoint food fair (Woollahra LGA) | Shop | High |
-| Royal Randwick Shopping Centre (Randwick LGA) | Shop | Medium |
-| Matraville Sports Centre (Randwick LGA) | Sport | Medium |
-| Booralee Park (Botany Bay LGA) | Sport | Low |
-| Westfield Eastgardens (Botany Bay LGA) | Shop | Low |
-
-**Sampling method:** We will not survey cars in roadside parking, only in car parks with designated car spaces. If car parks are multi-leveled only the ground-level will be surveyed (for both species composition and habitat variables). Each site will be sampled between 10am and 12noon on a Saturday so that we can capture car assemblages associated with children’s sport. Each group member will survey 2 car parks in one LGA (ie, one shopping centre and one sporting ground). We will only survey car species that are parked in designated car spaces within the car park.
-
-**Sampling effort:** A timed sampling effort will be used. We will survey each site (car park) for car species for 30mins. All habitat variables (except % free car spaces and # of shaded car spots) will be measured after the 30min sampling time.
-
-**Species taxonomy:** We will classify cars based on their make (i.e. Ford, Holden, Kia, Nissan, Ferrari, Toyota, Jeep, Subaru etc.) and type. Each car will be classified into 1 of 11 types:
-
-- 4WD
-- Van
-- sedan
-- station wagon
-- hatchback
-- Convertible
-- People mover (7+ seats)
-- Ute
-- Smartcar and/or mini
-- Sportscar
-- Other
-
-As an example, there will be 11 possible ‘species’ of car from the ‘genus’ Ford:
-
-| Ford fourwheeldrive | Ford hatchback | Ford smartcar |
-|---|---|---|
-| Ford van | Ford convertible | Ford sportscar |
-| Ford sedan | Ford peoplemover | Ford other |
-| Ford stationwagon | Ford ute | |
-
-**Habitat variables:**
-
-| Habitat variable | How it will be measured. |
-|---|---|
-| total # car spaces | Total # of spaces in car park or on ground floor of car park (estimate for large car parks) (continuous) |
-| % available car spaces | # of car spots that were empty during the 30 min survey period/(#free spaces + # individual cars counted in 30 min) x 100 (continuous) |
-| # of lights | # of individual light sources (continuous) |
-| # of trees/shrubs | # of individual trees or shrubs within the boundary of the car park (continuous) |
-| # of bins | # of bins within the boundary of the car park (continuous) |
-| # of exits | # of exits for the car park (whole car park) (continuous) |
-| cost/hr | 0 = free; 1 = x < $3; 2 = $3 < x < $5.99; 3 = $6 < x < $8.99; 4 = 9 < x where x is the average fee/hour (ignore timed free parking in shopping centres). (ordinal) |
-| timed parking | 1 = x < 15min; 2 = 15min < x <59 min; 3 = 1 h < x < 2 h; 4 = 2 h < x < 4 h; 5 = untimed where x is the maximum allowed parking time and/or time without payment (ordinal) |
-| area of car park | Total area of the car park (m2) – measured from satellite images (GoogleEarth) (continuous) |
-| % man made cover | Man –made cover only – includes roofs, shade covers, awnings etc. 0 = no cover; 1 = 1-25% cover; 2 = 26 – 50% cover; 3 = 51-75% cover; 4 = 76-99% cover; 5 = 100% cover. Estimate. (ordinal) |
-| # of car spots in shade | # of car spots in the 30 min sampling time that have over 33% shade. (continuous) |
-| Secure parking | Is the car park secure (i.e. boom gate/ticket gate/valet/security person present)? 0 = not secure’ 1 = secure (presence/absence) |
-| Glass on ground | Is there smashed glass on the ground? 0 = no, 1 = yes (presence/absence) |
-| # of rubbish items | # of individual rubbish items found within the survey area of the car park. (Cigarette butts or small pieces of glass not included) (Continuous) |
-
-Add more if necessary.
-
+A sample proforma is provided to illustrate how such a system can be structured to generate a multivariate dataset with **testable hypotheses**. Download the blank project-planning proforma and the completed car-park example from the [Project-planning downloads](#project-planning-downloads) section below.
 
 ### Group work
 
@@ -337,18 +160,23 @@ As a group, you will:
 
 - **Design your own non-biological multivariate model system.**
 - Develop 2–3 testable hypotheses relating to:
-  - The **assemblages** of "species" across different **treatments** (e.g., locations, types of environments),
+  - The **assemblages** of "species" across different **treatments** (e.g., locations, types of environments);
   - The role of measured "**habitat variables**" in shaping those assemblages.
 - Use a **two-factor design** where possible (e.g., site × time, or suburb × establishment type).
 - Ensure adequate replication—you will need at least 3 replicates per treatment.
 - Design a **sampling strategy** that allows you to collect the required data.
 - **Assign a data coordinator within your group to manage dataset preparation.**
 
+### Project-planning downloads
+
+- [Download the blank project-planning proforma (Word)](assets/w09-project-planning-template.docx){download="w09-project-planning-template.docx"} and type your group's plan into the document.
+- [Download the completed car-park example (Word)](assets/w09-project-planning-example.docx){download="w09-project-planning-example.docx"} for guidance on completing the proforma.
+
 ## Week 10 group presentation (compulsory)
 
-During the **Week 10** practical session (Week 2 of the prac series), your group will deliver a brief presentation (<5 minutes) using a PowerPoint to introduce your project.
+During the **Week 10** practical session (**next week**), your group will deliver a brief presentation (<5 minutes) using a PowerPoint presentation to introduce your project.
 
-This session is compulsory and designed to provide constructive feedback before you begin data collection. Don’t worry—feedback is friendly and intended to improve your design, not critique your creativity!
+This session is **compulsory** and designed to provide constructive feedback before you begin data collection. Don’t worry—feedback is friendly and intended to improve your design, not critique your creativity! **There are no marks allocated for this presentation.**
 
 Your presentation should include:
 
@@ -359,7 +187,7 @@ Your presentation should include:
 - A list of **habitat variables** you will measure at each site (and how you will measure them)
 - A simple **map of your sites**
 
-## Assessment overview {#assessment-overview}
+## Assessment overview {#assessment-overview .border .border-bottom-0 .rounded-top .px-3 .pt-3 .mb-0 .bg-body-tertiary}
 
 To give you the maximum opportunity to analyse your data and understand your results, your group’s dataset will be checked during Week 11 by demonstrators.
 
@@ -388,7 +216,7 @@ Each student will submit an individual short report, focusing primarily on the M
   - Accurate description of the data collected
   - Clear and concise presentation of results
 
-## Report submission details
+## Report submission details {.border .border-top-0 .rounded-bottom .px-3 .pb-3 .mt-0 .mb-4 .bg-body-tertiary}
 
 Your individual report is due by **23:59 on 6 November 2026**. Please ensure it is submitted electronically and anonymously via Canvas.
 
@@ -406,65 +234,13 @@ You are expected to complete your report independently and uphold the principles
 - You may use tools like ChatGPT to check grammar or assist with R coding.
 - However, extensive use of AI to write your report will be detectable and penalised. We are looking for your own scientific reasoning and interpretation.
 
-### Report Format
+### Report format
 
 Your report should follow the format of a short scientific article suitable for submission to Austral Ecology. The “Notice to Contributors” is available at: [Austral Ecology – Author Guidelines](https://onlinelibrary.wiley.com/page/journal/14429993/homepage/ForAuthors.html)
 
-
-### Marking scheme
-
-#### Introduction (use your imagination) -- **10 marks**
-- Aims of the experiment and hypotheses being tested
-- Why is the study important and/or interesting
-- Study system – species, location of experiment (brief)
-- Welcome to use imagination with references and background, but will not be penalised if you are unable to provide real examples.
-
-
-#### Materials and Methods -- **30 marks**
-- Set-up of experiment/survey
-- Data / variables recorded and how
-- Sampling design and justifications for analyses
-- Statistical analyses used, including which are dependent/independent variable(s) (if applicable), unit of replication, actual test(s) and statistical package(s)  
-
-
-#### Results -- **40 marks**
-- Statement of results (data and stats). Refer to tables and figures as needed.
-- Summary presentation of data (no raw data) as tables, figures or in text as appropriate. Use tables for large amounts of data where detail is important, use figures to illustrate patterns. Indicate sample size and errors, and note whether the latter are standard errors or standard deviations. Format consistently.
-- Evidence of thought in choices of analyses.
-- Results of statistical analyses presented either in text, on figures, or in tables.
-- Do not screenshot figures of tables  
-
-
-#### Discussion -- **10 marks**
-- Main conclusions or findings
-- Interpretation of results – what do they mean? How do they relate to original aims?
-- Limitations of approach or methods
-- Future studies – what would you do next to improve what you did and/or extend the understanding of the subject?  
-
-
-#### General
-- Brief Abstract at start of report
-- Written in plain English
-- Presentation (format/length)
-- No screenshotting of figures and tables
-- References if used and cited correctly  
-
-
-### References & resources
+## References and resources
 
 You are encouraged to consult the references from the annotated reading list provided with the lectures on the unit website. Key references include:
 
 - Gaston, K. J., Blackburn, T. M., & Lawton, J. H. (1993). Comparing animals and automobiles – a vehicle for understanding body size and abundance relationships in species assemblages. Oikos, 66, 172–179.
-- Quinn, G. P., & Keough, M. J. (2002). Experimental Design and Data Analysis for Biologists. Cambridge: Cambridge University Press. (Relevant chapters)
 - Quinn, G. P., & Keough, M. J. (2023). Experimental Design and Data Analysis for Biologists (2nd ed.). Cambridge: Cambridge University Press. (Relevant chapters)
-
-## Support the MISO project {-}
-
-MISO is free, open-source software developed to support teaching and analysis. If you have a GitHub account and find MISO useful, please consider [starring the MISO repository](https://github.com/usyd-soles-edu/miso){target="_blank" rel="noopener noreferrer"}:
-
-1. Sign in to GitHub and open the MISO repository.
-2. Select **Star** near the top-right corner of the page.
-
-Starring the repository is completely optional and has no connection to your participation or assessment. It simply helps other GitHub users discover the project.
-
-![How to star the MISO repository on GitHub.](assets/w09-star-miso.gif){#fig-star-miso .lightbox fig-alt="Animated guide showing the Star button on the MISO GitHub repository being selected and changing to Starred."}

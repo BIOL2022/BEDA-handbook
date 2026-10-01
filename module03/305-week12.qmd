@@ -1,21 +1,21 @@
 ---
-title: "**Weeks 12 and 13**: Multivariate methods in biology (continued)"
+title: '<i class="bi bi-flask me-2" aria-hidden="true"></i> **Weeks 12 and 13**: Multivariate methods in biology (continued)'
+number-sections: false
+toc-location: left
 ---
-
-[Return to weekly content](../index.qmd#weekly-content)
 
 ::: {.border .rounded .p-3 .mb-4 .bg-body-tertiary}
 **Module 3 objectives**
 
 This module introduces widely used techniques for analysing multivariate biological data. By the end of this module, you will be able to:
 
-- Explain the principles underpinning principal components analysis (PCA), cluster analysis and non-metric multidimensional scaling (nMDS).
-- Explain the logic of permutation-based multivariate hypothesis testing, including PERMANOVA and ANOSIM.
-- Plan and conduct studies designed to test multivariate hypotheses.
-- Perform multivariate analyses using jamovi or R.
-- Interpret, present and report the results of multivariate analyses.
-:::
+- Understand the principles underlying **Principal Components Analysis (PCA)** and **Non-metric Multidimensional Scaling (nMDS)**
+- Be familiar with the concepts behind **multivariate hypothesis testing** using **permutational techniques** such as **ANOSIM** and **PERMANOVA**
+- Be able to **plan and conduct experiments** that test multivariate hypotheses
+- Know how to **carry out these analyses using relevant statistical software**
+- Be able to **interpret, present, and report** your findings clearly and effectively
 
+:::
 
 
 ## Outline
