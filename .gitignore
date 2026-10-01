@@ -40,6 +40,10 @@ _site/
 # Project specific files
 # ---------------------
 assets/raw/
+/.local/
+/.pi/
+/tmp/
+/_quarto-objectives-preview.yml
 
 # Release artefacts
 # -----------------
