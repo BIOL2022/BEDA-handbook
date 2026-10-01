@@ -795,7 +795,7 @@ weekly_practical_resource_items <- function(entry) {
   if (entry$week %in% 9:12) {
     return(list(list(
       label = paste("Practical", entry$week),
-      url = NULL
+      url = destination
     )))
   }
   if (identical(entry$week, 13L)) {
@@ -817,6 +817,12 @@ weekly_practical_resources_html <- function(entry) {
         escape_html_text(item$label)
       } else {
         weekly_html_link(item$url, item$label)
+      }
+      if (!is.null(entry$practical) && entry$week %in% c(1:3, 9:13)) {
+        content <- paste0(
+          '<span class="bi bi-flask me-2" aria-hidden="true"></span>',
+          content
+        )
       }
       paste0("<li>", content, "</li>")
     },
