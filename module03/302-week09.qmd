@@ -46,7 +46,7 @@ This module involves report writing and data collection. You will submit two sep
    - Worth: 15% of your total unit mark.
    - Due date: **06 November 2026 at 23:59.**
 
-Additional details on the report format, marking scheme, and submission instructions are provided in the [Assessment Overview](#assessment-overview) section below.
+Additional details on the report format, marking scheme, and submission instructions are provided in the [Report 1 overview](#assessment-overview) section below.
 
 ## Part 1: Principal components analysis – “perceptions of biology lecturers”
 
@@ -64,7 +64,17 @@ You will use PCA to reduce your set of measured variables to a coherent, smaller
    - Once the data are imported, check that all the columns (variables) are correctly recognised as numeric (look for a ruler icon in the column headers).
    - You may convert columns of interest to numeric in several ways. One way is to use the **Variables** tab to select all the variables of interest (use Shift+click or Ctrl+click) and then click on Edit and change "**Measure Type**" to "**Continuous**".
 
+::: {.panel-tabset}
+
+#### Default
+
 ![Video showing how to load the Week 9 data file in Jamovi.](assets/w09-jamovi-load-data.mp4)
+
+#### Warm tint
+
+![Video showing how to load the Week 9 data file in Jamovi.](assets/w09-jamovi-load-data-manila.mp4)
+
+:::
 
 2. Run Principal Components Analysis.
    - Click on the **“Factor”** tab in the top toolbar.
@@ -74,7 +84,17 @@ You will use PCA to reduce your set of measured variables to a coherent, smaller
    - In the new section, select the variables of interest from the panel on the left and move them into the **“Variables”** box.
    - You can do this by either clicking on the arrow button or dragging and dropping them.
 
+::: {.panel-tabset}
+
+#### Default
+
 ![Video showing how to open the PCA analysis in Jamovi.](assets/w09-jamovi-run-pca.mp4)
+
+#### Warm tint
+
+![Video showing how to open the PCA analysis in Jamovi.](assets/w09-jamovi-run-pca-manila.mp4)
+
+:::
 
 4. Descriptive statistics and suitability tests.
    - Under **“Assumption Checks”**, tick the box for **Bartlett’s Test of Sphericity** (to check if your data is suitable for PCA).
@@ -88,7 +108,17 @@ You will use PCA to reduce your set of measured variables to a coherent, smaller
    - In the **“Rotation”** section, choose **Varimax** rotation (this is the most common rotation method).
    - Tick **Display Rotated Solution**.
 
+::: {.panel-tabset}
+
+#### Default
+
 ![Video showing the Jamovi PCA options to select.](assets/w09-jamovi-pca-options.mp4)
+
+#### Warm tint
+
+![Video showing the Jamovi PCA options to select.](assets/w09-jamovi-pca-options-manila.mp4)
+
+:::
 
 7. Save component scores.
    - Tick “Save component scores to data set” (usually found under the Scores section at the bottom).
@@ -104,10 +134,7 @@ You will use PCA to reduce your set of measured variables to a coherent, smaller
 ### Review the output
 
 - **Correlation Matrix**: Check for variables that are not correlated with the others. These may not be suitable for PCA — you can remove them and rerun the analysis if needed.
-- **Bartlett’s Test of Sphericity** tests whether your correlation matrix is significantly different from an identity matrix—a matrix where all off-diagonal values are zero (no correlation between variables), and all diagonal values are one (each variable only correlates with itself). Bartlett’s Test should be significant (p < .05): a **significant result** means that your correlation matrix is not an identity matrix, and PCA ***can*** be used.
-
-  That said, this test is most useful when used **alongside visual inspection** of your correlation matrix. If many variables aren’t correlated with others, they may not contribute much to PCA and could be removed.
-
+- **Bartlett’s Test of Sphericity** tests whether your correlation matrix is significantly different from an identity matrix—a matrix where all off-diagonal values are zero (no correlation between variables), and all diagonal values are one (each variable only correlates with itself). Bartlett’s Test should be significant (p < .05): a **significant result** means that your correlation matrix is not an identity matrix, and PCA ***can*** be used. That said, this test is most useful when used **alongside visual inspection** of your correlation matrix. If many variables aren’t correlated with others, they may not contribute much to PCA and could be removed.
 - **Scree Plot**: Helps determine how many components to retain.
 - **Rotated Solution**: Makes it easier to interpret your components.
 - **Saved Scores**: You can now use these component scores in further analyses (e.g., regression or cluster analysis).
@@ -187,7 +214,41 @@ Your presentation should include:
 - A list of **habitat variables** you will measure at each site (and how you will measure them)
 - A simple **map of your sites**
 
-## Assessment overview {#assessment-overview .border .border-bottom-0 .rounded-top .px-3 .pt-3 .mb-0 .bg-body-tertiary}
+## Install *miso* for next week {#install-miso}
+
+*miso* (Multivariate Inference, Similarity and Ordination) is a jamovi module developed by us to facilitate the analysis of multivariate data. It is freely available and can be installed manually using a downloaded `.jmo` file.
+
+If you prefer not to use R and the `vegan` package, or are unable to obtain a licensed copy of PRIMER, *miso* provides a convenient alternative within jamovi.
+
+We will use *miso* in next week’s practical to analyse community data. If you have time during today’s practical, install it now. Otherwise, install it at home before your next practical.
+
+### Install the module
+
+1. Go to the *miso* [GitHub releases page](https://github.com/usyd-soles-edu/miso/releases).
+2. Scroll to the latest release (usually at the top of the page) and choose the `.jmo` file for your operating system (Windows or macOS). macOS users have two options: Intel or Apple Silicon. If you are unsure, check your Mac’s specifications.
+3. Download the file to a location you can easily access (e.g., your Desktop or Downloads folder).
+4. Open jamovi, select the **Analyses** tab if needed, then click **Modules** in the top-right corner.
+5. In the Modules window, select **jamovi library → Sideload**, then click the large grey upload icon.
+6. In the file browser pop-up, navigate to the location where you saved the `.jmo` file, select it, and click **Open**.
+7. A "Module installed successfully" message will appear. After installation, check that a new **Multivariate** section appears under **Analyses** in jamovi.
+
+::: {.panel-tabset}
+
+#### Default
+
+![Installing *miso* in jamovi.](assets/w09-jamovi-install-miso.mp4)
+
+#### Warm tint
+
+![Installing *miso* in jamovi.](assets/w09-jamovi-install-miso-manila.mp4)
+
+:::
+
+That is it! You are now ready to use *miso* in next week’s practical.
+
+::: {.border .rounded .p-3 .mb-4 .bg-body-tertiary}
+
+## Report 1 overview {#assessment-overview}
 
 To give you the maximum opportunity to analyse your data and understand your results, your group’s dataset will be checked during Week 11 by demonstrators.
 
@@ -216,7 +277,7 @@ Each student will submit an individual short report, focusing primarily on the M
   - Accurate description of the data collected
   - Clear and concise presentation of results
 
-## Report submission details {.border .border-top-0 .rounded-bottom .px-3 .pb-3 .mt-0 .mb-4 .bg-body-tertiary}
+## Report submission details
 
 Your individual report is due by **23:59 on 6 November 2026**. Please ensure it is submitted electronically and anonymously via Canvas.
 
@@ -237,6 +298,8 @@ You are expected to complete your report independently and uphold the principles
 ### Report format
 
 Your report should follow the format of a short scientific article suitable for submission to Austral Ecology. The “Notice to Contributors” is available at: [Austral Ecology – Author Guidelines](https://onlinelibrary.wiley.com/page/journal/14429993/homepage/ForAuthors.html)
+
+:::
 
 ## References and resources
 
