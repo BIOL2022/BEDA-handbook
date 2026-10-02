@@ -544,27 +544,17 @@ ul.task-list li input[type="checkbox"] {
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
   <ul class="collapse">
-  <li><a href="#community-and-assemblage-structure" id="toc-community-and-assemblage-structure" class="nav-link" data-scroll-target="#community-and-assemblage-structure">Community and assemblage structure</a></li>
-  </ul></li>
-  <li><a href="#using-jamovi-and-miso" id="toc-using-jamovi-and-miso" class="nav-link" data-scroll-target="#using-jamovi-and-miso">Using jamovi and MISO</a>
-  <ul class="collapse">
-  <li><a href="#open-the-data" id="toc-open-the-data" class="nav-link" data-scroll-target="#open-the-data">1. Open the data</a></li>
-  <li><a href="#select-the-ant-abundance-variables" id="toc-select-the-ant-abundance-variables" class="nav-link" data-scroll-target="#select-the-ant-abundance-variables">2. Select the ant abundance variables</a></li>
-  <li><a href="#transform-the-abundance-data" id="toc-transform-the-abundance-data" class="nav-link" data-scroll-target="#transform-the-abundance-data">3. Transform the abundance data</a></li>
-  <li><a href="#select-the-braycurtis-dissimilarity" id="toc-select-the-braycurtis-dissimilarity" class="nav-link" data-scroll-target="#select-the-braycurtis-dissimilarity">4. Select the Bray–Curtis dissimilarity</a></li>
-  <li><a href="#create-an-nmds-ordination" id="toc-create-an-nmds-ordination" class="nav-link" data-scroll-target="#create-an-nmds-ordination">5. Create an nMDS ordination</a></li>
-  <li><a href="#create-a-cluster-analysis" id="toc-create-a-cluster-analysis" class="nav-link" data-scroll-target="#create-a-cluster-analysis">6. Create a cluster analysis</a></li>
-  <li><a href="#test-for-differences-among-communities-using-anosim" id="toc-test-for-differences-among-communities-using-anosim" class="nav-link" data-scroll-target="#test-for-differences-among-communities-using-anosim">7. Test for differences among Communities using ANOSIM</a></li>
-  <li><a href="#test-community-and-sample-effects-using-permanova" id="toc-test-community-and-sample-effects-using-permanova" class="nav-link" data-scroll-target="#test-community-and-sample-effects-using-permanova">8. Test Community and Sample effects using PERMANOVA</a></li>
-  <li><a href="#check-multivariate-dispersion-using-permdisp" id="toc-check-multivariate-dispersion-using-permdisp" class="nav-link" data-scroll-target="#check-multivariate-dispersion-using-permdisp">9. Check multivariate dispersion using PERMDISP</a></li>
-  <li><a href="#identify-contributing-species-using-simper" id="toc-identify-contributing-species-using-simper" class="nav-link" data-scroll-target="#identify-contributing-species-using-simper">10. Identify contributing species using SIMPER</a></li>
-  <li><a href="#analysis-sequence-for-antdatatotal" id="toc-analysis-sequence-for-antdatatotal" class="nav-link" data-scroll-target="#analysis-sequence-for-antdatatotal">11. Analysis sequence for AntDataTotal</a></li>
-  <li><a href="#prepare-your-own-assemblage-or-community-data" id="toc-prepare-your-own-assemblage-or-community-data" class="nav-link" data-scroll-target="#prepare-your-own-assemblage-or-community-data">12. Prepare your own assemblage or community data</a></li>
-  <li><a href="#prepare-data-for-next-weeks-practical" id="toc-prepare-data-for-next-weeks-practical" class="nav-link" data-scroll-target="#prepare-data-for-next-weeks-practical">13. Prepare data for next week’s practical</a></li>
-  </ul></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#using-jamovi-and-miso" id="toc-using-jamovi-and-miso" class="nav-link" data-scroll-target="#using-jamovi-and-miso">Using jamovi and <em>miso</em></a></li>
+  <li><a href="#nmds" id="toc-nmds" class="nav-link" data-scroll-target="#nmds">1. nMDS</a></li>
+  <li><a href="#cluster-analysis" id="toc-cluster-analysis" class="nav-link" data-scroll-target="#cluster-analysis">2. Cluster analysis</a></li>
+  <li><a href="#anosim" id="toc-anosim" class="nav-link" data-scroll-target="#anosim">3. ANOSIM</a></li>
+  <li><a href="#permanova" id="toc-permanova" class="nav-link" data-scroll-target="#permanova">4. PERMANOVA</a></li>
+  <li><a href="#permdisp" id="toc-permdisp" class="nav-link" data-scroll-target="#permdisp">5. PERMDISP</a></li>
+  <li><a href="#simper" id="toc-simper" class="nav-link" data-scroll-target="#simper">6. SIMPER</a></li>
+  <li><a href="#prepare-your-own-assemblage-or-community-data" id="toc-prepare-your-own-assemblage-or-community-data" class="nav-link" data-scroll-target="#prepare-your-own-assemblage-or-community-data">Prepare your own assemblage or community data</a></li>
+  <li><a href="#prepare-data-for-next-weeks-practical" id="toc-prepare-data-for-next-weeks-practical" class="nav-link" data-scroll-target="#prepare-data-for-next-weeks-practical">Prepare data for next week’s practical</a></li>
   <li><a href="#important-note-about-transformations" id="toc-important-note-about-transformations" class="nav-link" data-scroll-target="#important-note-about-transformations">Important note about transformations</a></li>
   <li><a href="#example-data-sheets" id="toc-example-data-sheets" class="nav-link" data-scroll-target="#example-data-sheets">Example data sheets</a></li>
   </ul>
@@ -613,7 +603,7 @@ ul.task-list li input[type="checkbox"] {
 <p>For this practical you will:</p>
 <ul>
 <li>Present group presentations of model systems and experimental design.</li>
-<li>Analyse sample ecological data in jamovi using MISO to:
+<li>Analyse sample ecological data in jamovi using <em>miso</em> to:
 <ul>
 <li>Visualise assemblage structure using cluster analysis and nMDS.</li>
 <li>Test one- and two-factor multivariate hypotheses using ANOSIM and PERMANOVA.</li>
@@ -637,56 +627,58 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 <section id="using-jamovi-and-miso" class="level2">
-<h2 class="anchored" data-anchor-id="using-jamovi-and-miso">Using jamovi and MISO</h2>
+<h2 class="anchored" data-anchor-id="using-jamovi-and-miso">Using jamovi and <em>miso</em></h2>
+<p>In this practical, we will use <em>miso</em> (Multivariate Inference, Similarity and Ordination) to analyse the ant community data in jamovi.</p>
+<p>If you have not installed <em>miso</em> yet, follow the <a href="../module03/302-week09.html#install-miso">installation instructions in the week 9 practical</a> before continuing.</p>
+<section id="understand-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="understand-the-data">Understand the data</h3>
+<p>Each row is one sample. The first three columns describe where it came from:</p>
+<ul>
+<li><strong>Site</strong> identifies the sampling site.</li>
+<li><strong>Community</strong> has five levels.</li>
+<li><strong>Sample</strong> is either <strong>Edge</strong> or <strong>Interior</strong>.</li>
+</ul>
+<p>The remaining 100 columns contain ant abundance data. Keep <strong>Site</strong> as an identifier, but leave it out of the analyses.</p>
+</section>
 <section id="open-the-data" class="level3">
-<h3 class="anchored" data-anchor-id="open-the-data">1. Open the data</h3>
-<p>Download <a href="assets/AntDataTotal.csv">AntDataTotal.csv</a> to your computer. In jamovi, select the <strong>☰ menu → Open → This PC → Browse</strong>, then locate the downloaded file and select <strong>Open</strong>.</p>
-<p>Each row in the dataset represents <strong>one sample</strong>. The first three variables are:</p>
-<ul>
-<li><strong>Site</strong></li>
-<li><strong>Community</strong></li>
-<li><strong>Sample</strong></li>
-</ul>
-<p>These are followed by the ant abundance variables.</p>
-<p>Check the variable types before starting the analyses:</p>
-<ul>
-<li><strong>Community</strong> should be set to <strong>Nominal</strong></li>
-<li><strong>Sample</strong> should be set to <strong>Nominal</strong></li>
-<li>All ant abundance variables should be set to <strong>Continuous</strong></li>
-</ul>
-<p><strong>Site</strong> can be retained as an identifier.</p>
-<p>To check a variable, double-click its column heading and inspect <strong>Measure type</strong>. To set all abundance variables at once, select the <strong>Variables</strong> tab, use the select-all checkbox, then deselect <strong>Site</strong>, <strong>Community</strong>, and <strong>Sample</strong>. Set <strong>Measure type → Continuous</strong> for the remaining 100 variables.</p>
-<p>For this dataset:</p>
-<ul>
-<li><strong>Community</strong> has five levels</li>
-<li><strong>Sample</strong> has two levels: <strong>Edge</strong> and <strong>Interior</strong></li>
-</ul>
-<p>The video starts with the file already loaded and shows how to check the grouping variables and set the abundance variables to Continuous.</p>
+<h3 class="anchored" data-anchor-id="open-the-data">Open the data</h3>
+<ol type="1">
+<li>Download <a href="assets/AntDataTotal.csv">AntDataTotal.csv</a> to your computer.</li>
+<li>In jamovi, select <strong>☰ menu → Open → This PC → Browse</strong>, find the downloaded file and select <strong>Open</strong>.</li>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><video src="assets/w10-jamovi-check-data.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-check-data.mp4">Video</a></video></p>
-<figcaption>Checking the Week 10 variable types in jamovi on macOS.</figcaption>
+<p><video src="assets/w10-jamovi-open-file.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-open-file.mp4">Video</a></video></p>
+<figcaption>Opening the downloaded data file in jamovi.</figcaption>
 </figure>
 </div>
 </section>
-<section id="select-the-ant-abundance-variables" class="level3">
-<h3 class="anchored" data-anchor-id="select-the-ant-abundance-variables">2. Select the ant abundance variables</h3>
-<p>For the MISO community analyses, use <strong>only the ant abundance variables</strong> as the multivariate response data.</p>
-<p>Place the ant abundance variables into:</p>
-<p><strong>Feature Variables</strong></p>
-<p>Do <strong>not</strong> include the following variables in <strong>Feature Variables</strong>:</p>
+<section id="check-the-variable-types" class="level3">
+<h3 class="anchored" data-anchor-id="check-the-variable-types">Check the variable types</h3>
+<p>Before starting the analyses, check that <strong>Community</strong> and <strong>Sample</strong> are set to <strong>Nominal</strong>. If needed, double-click the column heading and change <strong>Measure type</strong>.</p>
+<p>Set the 100 ant abundance variables to <strong>Continuous</strong> together:</p>
+<ol type="1">
+<li>Select the <strong>Variables</strong> tab and use the select-all checkbox.</li>
+<li>Deselect <strong>Site</strong>, <strong>Community</strong> and <strong>Sample</strong>.</li>
+<li>Set <strong>Measure type → Continuous</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w10-jamovi-variable-types.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-variable-types.mp4">Video</a></video></p>
+<figcaption>Checking the variable types in jamovi.</figcaption>
+</figure>
+</div>
+</section>
+<section id="ant-abundance-variables" class="level3">
+<h3 class="anchored" data-anchor-id="ant-abundance-variables">Ant abundance variables</h3>
+<p>For the <em>miso</em> community analyses, use <strong>only the ant abundance variables</strong> as the multivariate response data.</p>
+<p>In each analysis, place the ant abundance variables into <strong>Feature Variables</strong>. Do <strong>not</strong> include <strong>Site</strong>, <strong>Community</strong> or <strong>Sample</strong>. These variables have different roles:</p>
 <ul>
-<li>Site</li>
-<li>Community</li>
-<li>Sample</li>
+<li><strong>Site</strong> identifies individual sampling locations.</li>
+<li><strong>Community</strong> is a grouping factor.</li>
+<li><strong>Sample</strong> is a grouping factor distinguishing <strong>Edge</strong> and <strong>Interior</strong> samples.</li>
 </ul>
-<p>These variables have different roles:</p>
-<ul>
-<li><strong>Site</strong> identifies individual sampling locations</li>
-<li><strong>Community</strong> is a grouping factor</li>
-<li><strong>Sample</strong> is a grouping factor distinguishing Edge and Interior samples</li>
-</ul>
-<p>Your dataset should therefore be organised as:</p>
+<p>The supplied dataset is already organised with:</p>
 <ul>
 <li><strong>Rows = samples</strong></li>
 <li><strong>Columns = species or taxa</strong></li>
@@ -731,15 +723,16 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>In the analyses that follow, you will normally place all of the <strong>Species</strong> columns into <strong>Feature Variables</strong>, while <strong>Community</strong> and/or <strong>Sample</strong> will be entered separately as grouping factors.</p>
+<p>This structure keeps the species abundance data separate from the variables that identify samples and define groups. Use the same structure when preparing your own community dataset.</p>
+<p>In the analyses that follow, place all of the <strong>ant abundance columns</strong> into <strong>Feature Variables</strong>, while <strong>Community</strong> and/or <strong>Sample</strong> will be entered separately as grouping factors.</p>
 </section>
-<section id="transform-the-abundance-data" class="level3">
-<h3 class="anchored" data-anchor-id="transform-the-abundance-data">3. Transform the abundance data</h3>
+<section id="transformation-settings" class="level3">
+<h3 class="anchored" data-anchor-id="transformation-settings">Transformation settings</h3>
 <p>Ecological abundance datasets are often dominated by a few very abundant species. Transforming the data reduces the influence of these dominant species and allows moderately abundant and less common species to contribute more to the analysis.</p>
 <p>For this exercise, use:</p>
 <p><strong>Transformation → Fourth root</strong></p>
-<p>You do <strong>not</strong> need to create a separately transformed dataset. MISO applies the selected transformation as part of each analysis.</p>
-<p>Other transformations that may be useful for your own data include:</p>
+<p>You do <strong>not</strong> need to create a separately transformed dataset. <em>miso</em> applies the selected transformation as part of each analysis.</p>
+<p>For your own data, other transformation choices that may be useful include:</p>
 <ul>
 <li>None</li>
 <li>Square root</li>
@@ -749,270 +742,28 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>For this ant dataset, use the <strong>fourth-root transformation</strong> throughout the analyses below.</p>
 </section>
-<section id="select-the-braycurtis-dissimilarity" class="level3">
-<h3 class="anchored" data-anchor-id="select-the-braycurtis-dissimilarity">4. Select the Bray–Curtis dissimilarity</h3>
+<section id="dissimilarity-settings" class="level3">
+<h3 class="anchored" data-anchor-id="dissimilarity-settings">Dissimilarity settings</h3>
 <p>For these ant abundance data, use:</p>
 <p><strong>Dissimilarity index → Bray-Curtis</strong></p>
 <p>Bray–Curtis dissimilarity measures differences in species composition and abundance between samples and is widely used for ecological community data.</p>
-<p>MISO calculates the dissimilarities automatically within each analysis. You therefore only need to specify:</p>
+<p><em>miso</em> calculates the dissimilarities automatically within each analysis. You therefore only need to specify:</p>
 <ul>
 <li><strong>Feature Variables</strong> – the ant abundance variables</li>
 <li><strong>Transformation</strong> – Fourth root</li>
 <li><strong>Dissimilarity index</strong> – Bray-Curtis</li>
 </ul>
+<p>These settings are selected within each analysis, after opening it. They are not separate data-processing steps.</p>
 <p>Use these same settings throughout the analyses below unless instructed otherwise.</p>
 </section>
-<section id="create-an-nmds-ordination" class="level3">
-<h3 class="anchored" data-anchor-id="create-an-nmds-ordination">5. Create an nMDS ordination</h3>
-<p>Non-metric multidimensional scaling (<strong>nMDS</strong>) provides a visual representation of similarities and differences in ant assemblage composition among samples.</p>
-<p>Go to:</p>
-<p><strong>Analyses → MISO → nMDS</strong></p>
-<p><strong>Set up the analysis</strong></p>
-<p><strong>Feature Variables</strong></p>
-<p>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</p>
-<p><strong>Grouping Variable</strong></p>
-<p>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</p>
-<p><strong>Analysis Choices</strong></p>
-<p>Set:</p>
-<ul>
-<li><strong>Transformation → Fourth root</strong></li>
-<li><strong>Dissimilarity index → Bray-Curtis</strong></li>
-</ul>
-<p><strong>Plots</strong></p>
-<p>Keep the following selected:</p>
-<ul>
-<li><strong>Shepard Diagram</strong></li>
-<li><strong>Group point styling</strong></li>
-</ul>
-<p>You can also select:</p>
-<ul>
-<li><strong>Group hulls</strong></li>
-<li><strong>Group dispersion ellipses</strong></li>
-<li><strong>Group spiders</strong></li>
-</ul>
-<p>These additional options can help you visualise the separation and overlap among Communities.</p>
-<p><strong>Random starts</strong></p>
-<p>Set:</p>
-<p><strong>Maximum random starts = 20</strong></p>
-<p><strong>Interpret the nMDS</strong></p>
-<p>In an nMDS plot:</p>
-<ul>
-<li>samples positioned <strong>close together</strong> have more similar ant assemblages;</li>
-<li>samples positioned <strong>far apart</strong> have more dissimilar ant assemblages.</li>
-</ul>
-<p>Look for:</p>
-<ul>
-<li>separation among Communities;</li>
-<li>overlap among Communities;</li>
-<li>unusual or outlying samples;</li>
-<li>differences in the spread of samples within Communities.</li>
-</ul>
-<p>Also examine the <strong>stress value</strong>. Lower stress indicates that the two-dimensional ordination provides a better representation of the multivariate relationships among samples.</p>
-<p><strong>Important:</strong> nMDS is primarily a visualisation technique. Do not conclude that Communities are significantly different simply because they appear separated on the plot. Formal tests of differences among Communities are conducted using ANOSIM and PERMANOVA.</p>
-</section>
-<section id="create-a-cluster-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="create-a-cluster-analysis">6. Create a cluster analysis</h3>
-<p>Cluster analysis provides another way of visualising similarities among samples. Samples with more similar ant assemblages are grouped together in the dendrogram.</p>
-<p>Go to:</p>
-<p><strong>Analyses → MISO → Cluster analysis</strong></p>
-<p><strong>Set up the analysis</strong></p>
-<p><strong>Feature Variables</strong></p>
-<p>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</p>
-<p><strong>Sample Labels</strong></p>
-<p>Move <strong>Site</strong> into <strong>Sample Labels</strong> if you want individual samples identified on the dendrogram.</p>
-<p><strong>Analysis Choices</strong></p>
-<p>Set:</p>
-<ul>
-<li><strong>Transformation → Fourth root</strong></li>
-<li><strong>Dissimilarity index → Bray-Curtis</strong></li>
-</ul>
-<p><strong>Interpret the cluster analysis</strong></p>
-<p>Examine whether samples from the same <strong>Community</strong> tend to cluster together.</p>
-<p>Compare the pattern in the dendrogram with the pattern you observed in the nMDS. The two approaches display the same underlying multivariate relationships in different ways.</p>
-</section>
-<section id="test-for-differences-among-communities-using-anosim" class="level3">
-<h3 class="anchored" data-anchor-id="test-for-differences-among-communities-using-anosim">7. Test for differences among Communities using ANOSIM</h3>
-<p>Analysis of Similarities (<strong>ANOSIM</strong>) tests whether assemblage composition differs among groups defined by a single factor.</p>
-<p>For this analysis, the question is:</p>
-<p><strong>Do ant assemblages differ among Communities?</strong></p>
-<p>Go to:</p>
-<p><strong>Analyses → MISO → ANOSIM</strong></p>
-<p><strong>Set up the analysis</strong></p>
-<p><strong>Feature Variables</strong></p>
-<p>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</p>
-<p><strong>Grouping Variable</strong></p>
-<p>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</p>
-<p><strong>Analysis Choices</strong></p>
-<p>Set:</p>
-<ul>
-<li><strong>Transformation → Fourth root</strong></li>
-<li><strong>Dissimilarity index → Bray-Curtis</strong></li>
-</ul>
-<p><strong>Permutations</strong></p>
-<p>Set:</p>
-<p><strong>Permutations = 999</strong></p>
-<p>Set:</p>
-<p><strong>Permutation restriction → Free</strong></p>
-<p>Because Community has more than two levels, select:</p>
-<p><strong>Pairwise ANOSIM comparisons</strong></p>
-<p>For multiple comparisons, use:</p>
-<p><strong>P-value adjustment → Holm</strong></p>
-<p><strong>Interpret the ANOSIM</strong></p>
-<p>The two main results are:</p>
-<ul>
-<li><strong>Global R</strong></li>
-<li><strong>P-value</strong></li>
-</ul>
-<p>The <strong>Global R statistic</strong> describes the degree of separation among Communities.</p>
-<p>As a general guide:</p>
-<ul>
-<li>values near <strong>0</strong> indicate little separation among groups;</li>
-<li>larger positive values indicate greater separation;</li>
-<li>values approaching <strong>1</strong> indicate strong separation.</li>
-</ul>
-<p>Use the <strong>P-value</strong> to determine whether there is statistical evidence that assemblage composition differs among Communities.</p>
-<p>If the overall ANOSIM is significant, examine the pairwise comparisons to determine <strong>which Communities differ from one another</strong>.</p>
-<p>An example of how to report the result is:</p>
-<p>ANOSIM indicated that ant assemblage composition differed among Communities (Global R = …, P = …, 999 permutations).</p>
-</section>
-<section id="test-community-and-sample-effects-using-permanova" class="level3">
-<h3 class="anchored" data-anchor-id="test-community-and-sample-effects-using-permanova">8. Test Community and Sample effects using PERMANOVA</h3>
-<p>Permutational Multivariate Analysis of Variance (<strong>PERMANOVA</strong>) allows us to test more complex hypotheses involving multiple factors.</p>
-<p>For AntDataTotal, we will test:</p>
-<ul>
-<li><strong>Community</strong></li>
-<li><strong>Sample</strong></li>
-<li><strong>Community × Sample</strong></li>
-</ul>
-<p>These terms answer three different biological questions:</p>
-<ul>
-<li><strong>Community:</strong> Does ant assemblage composition differ among Communities?</li>
-<li><strong>Sample:</strong> Does ant assemblage composition differ between <strong>Edge</strong> and <strong>Interior</strong> samples?</li>
-<li><strong>Community × Sample:</strong> Does the difference between Edge and Interior samples vary among Communities?</li>
-</ul>
-<p>Go to:</p>
-<p><strong>Analyses → MISO → PERMANOVA</strong></p>
-<p><strong>Set up the analysis</strong></p>
-<p><strong>Feature Variables</strong></p>
-<p>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</p>
-<p><strong>Grouping Variable</strong></p>
-<p>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</p>
-<p><strong>Additional Factors</strong></p>
-<p>Move <strong>Sample</strong> into <strong>Additional Factors</strong>.</p>
-<p><strong>Analysis Choices</strong></p>
-<p>Set:</p>
-<ul>
-<li><strong>Transformation → Fourth root</strong></li>
-<li><strong>Dissimilarity index → Bray-Curtis</strong></li>
-</ul>
-<p>Select:</p>
-<p><strong>Model Interactions</strong></p>
-<p>This adds the <strong>Community × Sample</strong> interaction to the model.</p>
-<p><strong>Permutations</strong></p>
-<p>Set:</p>
-<p><strong>Number of permutations = 999</strong></p>
-<p>Set:</p>
-<p><strong>Permutation restrictions → Free</strong></p>
-<p><strong>Test type</strong></p>
-<p>Select:</p>
-<p><strong>Test type → Marginal terms</strong></p>
-<p>This tests each term while accounting for the other terms in the model.</p>
-<p><strong>Pairwise comparisons</strong></p>
-<p>Select:</p>
-<p><strong>Pairwise comparisons</strong></p>
-<p>Set:</p>
-<p><strong>P-value adjustment → Holm</strong></p>
-<p><strong>Interpret the PERMANOVA</strong></p>
-<p>Examine the PERMANOVA results for:</p>
-<ul>
-<li><strong>Community</strong></li>
-<li><strong>Sample</strong></li>
-<li><strong>Community × Sample</strong></li>
-</ul>
-<p>For each term, examine:</p>
-<ul>
-<li>degrees of freedom (<strong>df</strong>);</li>
-<li><strong>pseudo-F</strong> statistic;</li>
-<li><strong>R²</strong> or variance explained, where provided;</li>
-<li><strong>P-value</strong>.</li>
-</ul>
-<p>Interpret the effects as follows:</p>
-<ul>
-<li>A significant <strong>Community</strong> effect indicates that ant assemblage composition differs among Communities.</li>
-<li>A significant <strong>Sample</strong> effect indicates that assemblage composition differs between Edge and Interior samples overall.</li>
-<li>A significant <strong>Community × Sample</strong> interaction indicates that the difference between Edge and Interior samples varies among Communities.</li>
-</ul>
-<p><strong>Important:</strong> If the <strong>Community × Sample interaction is significant</strong>, examine and interpret the interaction before drawing conclusions about the main effects of Community or Sample.</p>
-</section>
-<section id="check-multivariate-dispersion-using-permdisp" class="level3">
-<h3 class="anchored" data-anchor-id="check-multivariate-dispersion-using-permdisp">9. Check multivariate dispersion using PERMDISP</h3>
-<p>PERMANOVA tests for differences in multivariate assemblage composition. However, groups can also differ in how variable or dispersed their samples are.</p>
-<p><strong>PERMDISP</strong> tests whether Communities differ in their multivariate dispersion.</p>
-<p>Go to:</p>
-<p><strong>Analyses → MISO → PERMDISP</strong></p>
-<p><strong>Set up the analysis</strong></p>
-<p><strong>Feature Variables</strong></p>
-<p>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</p>
-<p><strong>Grouping Variable</strong></p>
-<p>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</p>
-<p><strong>Analysis Choices</strong></p>
-<p>Set:</p>
-<ul>
-<li><strong>Transformation → Fourth root</strong></li>
-<li><strong>Dissimilarity index → Bray-Curtis</strong></li>
-<li><strong>Group centre → Median</strong></li>
-<li><strong>Permutations = 999</strong></li>
-</ul>
-<p>Keep:</p>
-<p><strong>Distance-to-centre diagnostic</strong></p>
-<p>selected.</p>
-<p>You may also select:</p>
-<p><strong>Pairwise dispersion comparisons</strong></p>
-<p>if the overall PERMDISP test is significant.</p>
-<p><strong>Interpret PERMDISP</strong></p>
-<p>A <strong>non-significant PERMDISP</strong> result indicates that there is no evidence that the Communities differ in their multivariate dispersion.</p>
-<p>A <strong>significant PERMDISP</strong> result indicates that at least some Communities differ in their multivariate spread.</p>
-<p>If PERMDISP is significant, interpret the PERMANOVA result with additional caution and examine the nMDS and distance-to-centre plot to understand the pattern.</p>
-</section>
-<section id="identify-contributing-species-using-simper" class="level3">
-<h3 class="anchored" data-anchor-id="identify-contributing-species-using-simper">10. Identify contributing species using SIMPER</h3>
-<p>Similarity Percentages (<strong>SIMPER</strong>) helps identify which species contribute most to the average differences in assemblage composition among Communities.</p>
-<p>SIMPER is primarily a <strong>descriptive follow-up analysis</strong>.</p>
-<p>Go to:</p>
-<p><strong>Analyses → MISO → SIMPER</strong></p>
-<p><strong>Set up the analysis</strong></p>
-<p><strong>Feature Variables</strong></p>
-<p>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</p>
-<p><strong>Grouping Variable</strong></p>
-<p>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</p>
-<p><strong>Transformation</strong></p>
-<p>Select:</p>
-<p><strong>Fourth root</strong></p>
-<p><strong>Output settings</strong></p>
-<p>Set:</p>
-<ul>
-<li><strong>Top N features = 10</strong></li>
-<li><strong>Cumulative contribution = 70%</strong></li>
-</ul>
-<p>You may also select:</p>
-<ul>
-<li><strong>Contribution plots</strong></li>
-<li><strong>Contrast overview heatmap</strong></li>
-<li><strong>Detailed Statistics</strong></li>
-</ul>
-<p><strong>Interpret SIMPER</strong></p>
-<p>For each pair of Communities, identify the species that make the largest contributions to the average Bray–Curtis dissimilarity.</p>
-<p>Species with larger contributions are more important in explaining the observed compositional difference between those two Communities.</p>
-<p><strong>Important:</strong> SIMPER is descriptive. A high SIMPER contribution does <strong>not</strong> demonstrate that an individual species differs significantly between Communities.</p>
-</section>
 <section id="analysis-sequence-for-antdatatotal" class="level3">
-<h3 class="anchored" data-anchor-id="analysis-sequence-for-antdatatotal">11. Analysis sequence for AntDataTotal</h3>
+<h3 class="anchored" data-anchor-id="analysis-sequence-for-antdatatotal">Analysis sequence for AntDataTotal</h3>
 <p>Complete the analyses in the following order:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 4%">
-<col style="width: 14%">
-<col style="width: 80%">
+<col style="width: 19%">
+<col style="width: 32%">
+<col style="width: 48%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1057,8 +808,298 @@ ul.task-list li input[type="checkbox"] {
 <p>This sequence takes you through four stages of multivariate analysis:</p>
 <p><strong>Visualise patterns → Test hypotheses → Check dispersion → Identify contributing species</strong></p>
 </section>
-<section id="prepare-your-own-assemblage-or-community-data" class="level3">
-<h3 class="anchored" data-anchor-id="prepare-your-own-assemblage-or-community-data">12. Prepare your own assemblage or community data</h3>
+</section>
+<section id="nmds" class="level2">
+<h2 class="anchored" data-anchor-id="nmds">1. nMDS</h2>
+<section id="create-an-nmds-ordination" class="level3">
+<h3 class="anchored" data-anchor-id="create-an-nmds-ordination">Create an nMDS ordination</h3>
+<p>Non-metric multidimensional scaling (<strong>nMDS</strong>) provides a visual representation of similarities and differences in ant assemblage composition among samples.</p>
+</section>
+<section id="set-up-the-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="set-up-the-analysis">Set up the analysis</h3>
+<ol type="1">
+<li>Select <strong>Analyses → Multivariate → nMDS</strong>.</li>
+<li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
+<li>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</li>
+<li>Under <strong>Analysis Choices</strong>, set:
+<ul>
+<li><strong>Transformation → Fourth root</strong></li>
+<li><strong>Dissimilarity index → Bray-Curtis</strong></li>
+</ul></li>
+<li>Under <strong>Plots</strong>, keep the following selected:
+<ul>
+<li><strong>Shepard Diagram</strong></li>
+<li><strong>Group point styling</strong></li>
+</ul>
+<strong>Optional:</strong> You can also select:
+<ul>
+<li><strong>Group hulls</strong></li>
+<li><strong>Group dispersion ellipses</strong></li>
+<li><strong>Group spiders</strong></li>
+</ul>
+These additional options can help you visualise the separation and overlap among Communities.</li>
+<li>Set <strong>Maximum random starts = 20</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w10-jamovi-nmds-setup.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-nmds-setup.mp4">Video</a></video></p>
+<figcaption>Setting up the nMDS analysis in jamovi.</figcaption>
+</figure>
+</div>
+</section>
+<section id="read-the-output" class="level3">
+<h3 class="anchored" data-anchor-id="read-the-output">Read the output</h3>
+<p>In an nMDS plot:</p>
+<ul>
+<li>samples positioned <strong>close together</strong> have more similar ant assemblages;</li>
+<li>samples positioned <strong>far apart</strong> have more dissimilar ant assemblages.</li>
+</ul>
+<p>Look for:</p>
+<ul>
+<li>separation among Communities;</li>
+<li>overlap among Communities;</li>
+<li>unusual or outlying samples;</li>
+<li>differences in the spread of samples within Communities.</li>
+</ul>
+<p>Also examine the <strong>stress value</strong>. Lower stress indicates that the two-dimensional ordination provides a better representation of the multivariate relationships among samples.</p>
+<p><strong>Important:</strong> nMDS is primarily a visualisation technique. Do not conclude that Communities are significantly different simply because they appear separated on the plot. Formal tests of differences among Communities are conducted using ANOSIM and PERMANOVA.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w10-jamovi-nmds-results.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-nmds-results.mp4">Video</a></video></p>
+<figcaption>Reading the nMDS output in jamovi.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="cluster-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="cluster-analysis">2. Cluster analysis</h2>
+<section id="create-a-cluster-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-cluster-analysis">Create a cluster analysis</h3>
+<p>Cluster analysis provides another way of visualising similarities among samples. Samples with more similar ant assemblages are grouped together in the dendrogram.</p>
+</section>
+<section id="set-up-the-analysis-1" class="level3">
+<h3 class="anchored" data-anchor-id="set-up-the-analysis-1">Set up the analysis</h3>
+<ol type="1">
+<li>Select <strong>Analyses → <em>miso</em> → Cluster analysis</strong>.</li>
+<li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
+<li><strong>Optional:</strong> Move <strong>Site</strong> into <strong>Sample Labels</strong> if you want individual samples identified on the dendrogram.</li>
+<li>Under <strong>Analysis Choices</strong>, set:
+<ul>
+<li><strong>Transformation → Fourth root</strong></li>
+<li><strong>Dissimilarity index → Bray-Curtis</strong>.</li>
+</ul></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w10-jamovi-cluster-analysis.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-cluster-analysis.mp4">Video</a></video></p>
+<figcaption>Setting up the cluster analysis in jamovi.</figcaption>
+</figure>
+</div>
+</section>
+<section id="read-the-output-1" class="level3">
+<h3 class="anchored" data-anchor-id="read-the-output-1">Read the output</h3>
+<p>Examine whether samples from the same <strong>Community</strong> tend to cluster together.</p>
+<p>Compare the pattern in the dendrogram with the pattern you observed in the nMDS. The two approaches display the same underlying multivariate relationships in different ways.</p>
+</section>
+</section>
+<section id="anosim" class="level2">
+<h2 class="anchored" data-anchor-id="anosim">3. ANOSIM</h2>
+<section id="test-for-differences-among-communities-using-anosim" class="level3">
+<h3 class="anchored" data-anchor-id="test-for-differences-among-communities-using-anosim">Test for differences among Communities using ANOSIM</h3>
+<p>Analysis of Similarities (<strong>ANOSIM</strong>) tests whether assemblage composition differs among groups defined by a single factor.</p>
+<p>For this analysis, the question is:</p>
+<p><strong>Do ant assemblages differ among Communities?</strong></p>
+</section>
+<section id="set-up-the-analysis-2" class="level3">
+<h3 class="anchored" data-anchor-id="set-up-the-analysis-2">Set up the analysis</h3>
+<ol type="1">
+<li>Select <strong>Analyses → <em>miso</em> → ANOSIM</strong>.</li>
+<li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
+<li>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</li>
+<li>Under <strong>Analysis Choices</strong>, set:
+<ul>
+<li><strong>Transformation → Fourth root</strong></li>
+<li><strong>Dissimilarity index → Bray-Curtis</strong></li>
+</ul></li>
+<li>Set <strong>Permutations = 999</strong>.</li>
+<li>Set <strong>Permutation restriction → Free</strong>.</li>
+<li>Because Community has more than two levels, select <strong>Pairwise ANOSIM comparisons</strong>.</li>
+<li>For multiple comparisons, set <strong>P-value adjustment → Holm</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w10-jamovi-anosim.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-anosim.mp4">Video</a></video></p>
+<figcaption>Setting up the ANOSIM analysis in jamovi.</figcaption>
+</figure>
+</div>
+</section>
+<section id="read-the-output-2" class="level3">
+<h3 class="anchored" data-anchor-id="read-the-output-2">Read the output</h3>
+<p>The two main results are:</p>
+<ul>
+<li><strong>Global R</strong></li>
+<li><strong>P-value</strong></li>
+</ul>
+<p>The <strong>Global R statistic</strong> describes the degree of separation among Communities.</p>
+<p>As a general guide:</p>
+<ul>
+<li>values near <strong>0</strong> indicate little separation among groups;</li>
+<li>larger positive values indicate greater separation;</li>
+<li>values approaching <strong>1</strong> indicate strong separation.</li>
+</ul>
+<p>Use the <strong>P-value</strong> to determine whether there is statistical evidence that assemblage composition differs among Communities.</p>
+<p>If the overall ANOSIM is significant, examine the pairwise comparisons to determine <strong>which Communities differ from one another</strong>.</p>
+<p>An example of how to report the result is:</p>
+<p>ANOSIM indicated that ant assemblage composition differed among Communities (Global R = …, P = …, 999 permutations).</p>
+</section>
+</section>
+<section id="permanova" class="level2">
+<h2 class="anchored" data-anchor-id="permanova">4. PERMANOVA</h2>
+<section id="test-community-and-sample-effects-using-permanova" class="level3">
+<h3 class="anchored" data-anchor-id="test-community-and-sample-effects-using-permanova">Test Community and Sample effects using PERMANOVA</h3>
+<p>Permutational Multivariate Analysis of Variance (<strong>PERMANOVA</strong>) allows us to test more complex hypotheses involving multiple factors.</p>
+<p>For AntDataTotal, we will test:</p>
+<ul>
+<li><strong>Community</strong></li>
+<li><strong>Sample</strong></li>
+<li><strong>Community × Sample</strong></li>
+</ul>
+<p>These terms answer three different biological questions:</p>
+<ul>
+<li><strong>Community:</strong> Does ant assemblage composition differ among Communities?</li>
+<li><strong>Sample:</strong> Does ant assemblage composition differ between <strong>Edge</strong> and <strong>Interior</strong> samples?</li>
+<li><strong>Community × Sample:</strong> Does the difference between Edge and Interior samples vary among Communities?</li>
+</ul>
+</section>
+<section id="set-up-the-analysis-3" class="level3">
+<h3 class="anchored" data-anchor-id="set-up-the-analysis-3">Set up the analysis</h3>
+<ol type="1">
+<li>Select <strong>Analyses → <em>miso</em> → PERMANOVA</strong>.</li>
+<li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
+<li>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</li>
+<li>Move <strong>Sample</strong> into <strong>Additional Factors</strong>.</li>
+<li>Under <strong>Analysis Choices</strong>, set:
+<ul>
+<li><strong>Transformation → Fourth root</strong></li>
+<li><strong>Dissimilarity index → Bray-Curtis</strong></li>
+</ul></li>
+<li>Select <strong>Model Interactions</strong>. This adds the <strong>Community × Sample</strong> interaction to the model.</li>
+<li>Set <strong>Number of permutations = 999</strong>.</li>
+<li>Set <strong>Permutation restrictions → Free</strong>.</li>
+<li>Select <strong>Test type → Marginal terms</strong>. This tests each term while accounting for the other terms in the model.</li>
+<li>Select <strong>Pairwise comparisons</strong>.</li>
+<li>Set <strong>P-value adjustment → Holm</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w10-jamovi-permanova.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-permanova.mp4">Video</a></video></p>
+<figcaption>Setting up the PERMANOVA analysis in jamovi.</figcaption>
+</figure>
+</div>
+</section>
+<section id="read-the-output-3" class="level3">
+<h3 class="anchored" data-anchor-id="read-the-output-3">Read the output</h3>
+<p>Examine the PERMANOVA results for:</p>
+<ul>
+<li><strong>Community</strong></li>
+<li><strong>Sample</strong></li>
+<li><strong>Community × Sample</strong></li>
+</ul>
+<p>For each term, examine:</p>
+<ul>
+<li>degrees of freedom (<strong>df</strong>);</li>
+<li><strong>pseudo-F</strong> statistic;</li>
+<li><strong>R²</strong> or variance explained, where provided;</li>
+<li><strong>P-value</strong>.</li>
+</ul>
+<p>Interpret the effects as follows:</p>
+<ul>
+<li>A significant <strong>Community</strong> effect indicates that ant assemblage composition differs among Communities.</li>
+<li>A significant <strong>Sample</strong> effect indicates that assemblage composition differs between Edge and Interior samples overall.</li>
+<li>A significant <strong>Community × Sample</strong> interaction indicates that the difference between Edge and Interior samples varies among Communities.</li>
+</ul>
+<p><strong>Important:</strong> If the <strong>Community × Sample interaction is significant</strong>, examine and interpret the interaction before drawing conclusions about the main effects of Community or Sample.</p>
+</section>
+</section>
+<section id="permdisp" class="level2">
+<h2 class="anchored" data-anchor-id="permdisp">5. PERMDISP</h2>
+<section id="check-multivariate-dispersion-using-permdisp" class="level3">
+<h3 class="anchored" data-anchor-id="check-multivariate-dispersion-using-permdisp">Check multivariate dispersion using PERMDISP</h3>
+<p>PERMANOVA tests for differences in multivariate assemblage composition. However, groups can also differ in how variable or dispersed their samples are.</p>
+<p><strong>PERMDISP</strong> tests whether Communities differ in their multivariate dispersion.</p>
+</section>
+<section id="set-up-the-analysis-4" class="level3">
+<h3 class="anchored" data-anchor-id="set-up-the-analysis-4">Set up the analysis</h3>
+<ol type="1">
+<li>Select <strong>Analyses → <em>miso</em> → PERMDISP</strong>.</li>
+<li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
+<li>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</li>
+<li>Under <strong>Analysis Choices</strong>, set:
+<ul>
+<li><strong>Transformation → Fourth root</strong></li>
+<li><strong>Dissimilarity index → Bray-Curtis</strong></li>
+<li><strong>Group centre → Median</strong></li>
+<li><strong>Permutations = 999</strong></li>
+</ul></li>
+<li>Keep <strong>Distance-to-centre diagnostic</strong> selected.</li>
+<li><strong>Conditional:</strong> You may also select <strong>Pairwise dispersion comparisons</strong> if the overall PERMDISP test is significant.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w10-jamovi-permdisp.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-permdisp.mp4">Video</a></video></p>
+<figcaption>Setting up the PERMDISP analysis in jamovi.</figcaption>
+</figure>
+</div>
+</section>
+<section id="read-the-output-4" class="level3">
+<h3 class="anchored" data-anchor-id="read-the-output-4">Read the output</h3>
+<p>A <strong>non-significant PERMDISP</strong> result indicates that there is no evidence that the Communities differ in their multivariate dispersion.</p>
+<p>A <strong>significant PERMDISP</strong> result indicates that at least some Communities differ in their multivariate spread.</p>
+<p>If PERMDISP is significant, interpret the PERMANOVA result with additional caution and examine the nMDS and distance-to-centre plot to understand the pattern.</p>
+</section>
+</section>
+<section id="simper" class="level2">
+<h2 class="anchored" data-anchor-id="simper">6. SIMPER</h2>
+<section id="identify-contributing-species-using-simper" class="level3">
+<h3 class="anchored" data-anchor-id="identify-contributing-species-using-simper">Identify contributing species using SIMPER</h3>
+<p>Similarity Percentages (<strong>SIMPER</strong>) helps identify which species contribute most to the average differences in assemblage composition among Communities.</p>
+<p>SIMPER is primarily a <strong>descriptive follow-up analysis</strong>.</p>
+</section>
+<section id="set-up-the-analysis-5" class="level3">
+<h3 class="anchored" data-anchor-id="set-up-the-analysis-5">Set up the analysis</h3>
+<ol type="1">
+<li>Select <strong>Analyses → <em>miso</em> → SIMPER</strong>.</li>
+<li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
+<li>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</li>
+<li>Under <strong>Transformation</strong>, select <strong>Fourth root</strong>.</li>
+<li>Under <strong>Output settings</strong>, set:
+<ul>
+<li><strong>Top N features = 10</strong></li>
+<li><strong>Cumulative contribution = 70%</strong></li>
+</ul>
+<strong>Optional:</strong> You may also select:
+<ul>
+<li><strong>Contribution plots</strong></li>
+<li><strong>Contrast overview heatmap</strong></li>
+<li><strong>Detailed Statistics</strong>.</li>
+</ul></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w10-jamovi-simper.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-simper.mp4">Video</a></video></p>
+<figcaption>Setting up the SIMPER analysis in jamovi.</figcaption>
+</figure>
+</div>
+</section>
+<section id="read-the-output-5" class="level3">
+<h3 class="anchored" data-anchor-id="read-the-output-5">Read the output</h3>
+<p>For each pair of Communities, identify the species that make the largest contributions to the average Bray–Curtis dissimilarity.</p>
+<p>Species with larger contributions are more important in explaining the observed compositional difference between those two Communities.</p>
+<p><strong>Important:</strong> SIMPER is descriptive. A high SIMPER contribution does <strong>not</strong> demonstrate that an individual species differs significantly between Communities.</p>
+</section>
+</section>
+<section id="prepare-your-own-assemblage-or-community-data" class="level2">
+<h2 class="anchored" data-anchor-id="prepare-your-own-assemblage-or-community-data">Prepare your own assemblage or community data</h2>
 <p>For your own community dataset, organise your spreadsheet so that:</p>
 <ul>
 <li><strong>Rows = sampling units or sites</strong></li>
@@ -1121,11 +1162,11 @@ ul.task-list li input[type="checkbox"] {
 <li>species abundance variables are set to <strong>Continuous</strong>.</li>
 </ul>
 </section>
-<section id="prepare-data-for-next-weeks-practical" class="level3">
-<h3 class="anchored" data-anchor-id="prepare-data-for-next-weeks-practical">13. Prepare data for next week’s practical</h3>
+<section id="prepare-data-for-next-weeks-practical" class="level2">
+<h2 class="anchored" data-anchor-id="prepare-data-for-next-weeks-practical">Prepare data for next week’s practical</h2>
 <p>By the <strong>start of next week’s practical</strong>, each group must have <strong>three spreadsheets</strong> prepared. These will be checked and <strong>marked out of 5</strong> by your demonstrators.</p>
-<section id="habitat-data-file" class="level4">
-<h4 class="anchored" data-anchor-id="habitat-data-file">1. Habitat data file</h4>
+<section id="habitat-data-file" class="level3">
+<h3 class="anchored" data-anchor-id="habitat-data-file">Habitat data file</h3>
 <p>Prepare the habitat data for analysis in <strong>jamovi or R</strong>.</p>
 <p>Your spreadsheet should have:</p>
 <ul>
@@ -1142,9 +1183,9 @@ ul.task-list li input[type="checkbox"] {
 <p>Before the practical, check the dataset carefully for missing values.</p>
 <p>Habitat variables that will be used in <strong>PCA</strong> should be numeric.</p>
 </section>
-<section id="assemblage-community-data-file" class="level4">
-<h4 class="anchored" data-anchor-id="assemblage-community-data-file">2. Assemblage / community data file</h4>
-<p>Prepare the community data for analysis in <strong>jamovi/MISO or R</strong>.</p>
+<section id="assemblage-community-data-file" class="level3">
+<h3 class="anchored" data-anchor-id="assemblage-community-data-file">Assemblage / community data file</h3>
+<p>Prepare the community data for analysis in <strong>jamovi/<em>miso</em> or R</strong>.</p>
 <p>Your spreadsheet should have:</p>
 <ul>
 <li><strong>Rows = sampling units or sites</strong></li>
@@ -1165,8 +1206,8 @@ ul.task-list li input[type="checkbox"] {
 <li>check that species abundance variables are recognised as <strong>Continuous</strong>.</li>
 </ul>
 </section>
-<section id="summary-statistics-file" class="level4">
-<h4 class="anchored" data-anchor-id="summary-statistics-file">3. Summary statistics file</h4>
+<section id="summary-statistics-file" class="level3">
+<h3 class="anchored" data-anchor-id="summary-statistics-file">Summary statistics file</h3>
 <p>Prepare a separate spreadsheet containing useful summary variables.</p>
 <p>These may include:</p>
 <ul>
@@ -1183,10 +1224,9 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-</section>
 <section id="important-note-about-transformations" class="level2">
 <h2 class="anchored" data-anchor-id="important-note-about-transformations">Important note about transformations</h2>
-<p>MISO allows multivariate analyses to be run on <strong>untransformed data</strong>. However, ecological abundance datasets are often strongly influenced by a small number of highly abundant taxa.</p>
+<p><em>miso</em> allows multivariate analyses to be run on <strong>untransformed data</strong>. However, ecological abundance datasets are often strongly influenced by a small number of highly abundant taxa.</p>
 <p>A transformation can reduce the influence of dominant species and allow moderately abundant and less common species to contribute more to the multivariate pattern.</p>
 <p>For this practical, use:</p>
 <p><strong>Transformation → Fourth root</strong></p>
@@ -1211,8 +1251,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="assets/w10-jamovi-community-datasheet.png" class="img-fluid figure-img" alt="Spreadsheet layout showing a jamovi-ready community data sheet for MISO analyses."></p>
-<figcaption>Example jamovi-ready community data sheet layout for MISO analyses.</figcaption>
+<p><img src="assets/w10-jamovi-community-datasheet.png" class="img-fluid figure-img" alt="Spreadsheet layout showing a jamovi-ready community data sheet for miso analyses."></p>
+<figcaption>Example jamovi-ready community data sheet layout for <em>miso</em> analyses.</figcaption>
 </figure>
 </div>
 
