@@ -2,6 +2,7 @@
 title: '<i class="bi bi-flask me-2" aria-hidden="true"></i> **Week 10**: Multivariate methods in biology'
 number-sections: false
 toc-location: left
+toc-depth: 2
 ---
 
 ::: {.border .rounded .p-3 .mb-4 .bg-body-tertiary}
@@ -22,7 +23,7 @@ This module introduces widely used techniques for analysing multivariate biologi
 For this practical you will:
 
 - Present group presentations of model systems and experimental design.
-- Analyse sample ecological data in jamovi using MISO to:
+- Analyse sample ecological data in jamovi using *miso* to:
   - Visualise assemblage structure using cluster analysis and nMDS.
   - Test one- and two-factor multivariate hypotheses using ANOSIM and PERMANOVA.
   - Assess multivariate dispersion using PERMDISP.
@@ -42,60 +43,52 @@ A typical workflow for analysing community data is:
 6. Use **PERMDISP** to assess whether groups differ in multivariate dispersion.
 7. Use **SIMPER** where appropriate to identify species contributing most to differences among groups.
 
-## Using jamovi and MISO
+## Using jamovi and *miso*
 
-### 1. Open the data
+In this practical, we will use *miso* (Multivariate Inference, Similarity and Ordination) to analyse the ant community data in jamovi.
 
-Download [AntDataTotal.csv](assets/AntDataTotal.csv) to your computer. In jamovi, select the **☰ menu → Open → This PC → Browse**, then locate the downloaded file and select **Open**.
+If you have not installed *miso* yet, follow the [installation instructions in the week 9 practical](302-week09.qmd#install-miso) before continuing.
 
-Each row in the dataset represents **one sample**. The first three variables are:
+### Understand the data
 
-* **Site**
-* **Community**
-* **Sample**
+Each row is one sample. The first three columns describe where it came from:
 
-These are followed by the ant abundance variables.
+- **Site** identifies the sampling site.
+- **Community** has five levels.
+- **Sample** is either **Edge** or **Interior**.
 
-Check the variable types before starting the analyses:
+The remaining 100 columns contain ant abundance data. Keep **Site** as an identifier, but leave it out of the analyses.
 
-* **Community** should be set to **Nominal**
-* **Sample** should be set to **Nominal**
-* All ant abundance variables should be set to **Continuous**
+### Open the data
 
-**Site** can be retained as an identifier.
+1. Download [AntDataTotal.csv](assets/AntDataTotal.csv) to your computer.
+2. In jamovi, select **☰ menu → Open → This PC → Browse**, find the downloaded file and select **Open**.
 
-To check a variable, double-click its column heading and inspect **Measure type**. To set all abundance variables at once, select the **Variables** tab, use the select-all checkbox, then deselect **Site**, **Community**, and **Sample**. Set **Measure type → Continuous** for the remaining 100 variables.
+![Opening the downloaded data file in jamovi.](assets/w10-jamovi-open-file.mp4)
 
-For this dataset:
+### Check the variable types
 
-* **Community** has five levels
-* **Sample** has two levels: **Edge** and **Interior**
+Before starting the analyses, check that **Community** and **Sample** are set to **Nominal**. If needed, double-click the column heading and change **Measure type**.
 
-The video starts with the file already loaded and shows how to check the grouping variables and set the abundance variables to Continuous.
+Set the 100 ant abundance variables to **Continuous** together:
 
-![Checking the Week 10 variable types in jamovi on macOS.](assets/w10-jamovi-check-data.mp4)
+1. Select the **Variables** tab and use the select-all checkbox.
+2. Deselect **Site**, **Community** and **Sample**.
+3. Set **Measure type → Continuous**.
 
-### 2. Select the ant abundance variables
+![Checking the variable types in jamovi.](assets/w10-jamovi-variable-types.mp4)
 
-For the MISO community analyses, use **only the ant abundance variables** as the multivariate response data.
+### Ant abundance variables
 
-Place the ant abundance variables into:
+For the *miso* community analyses, use **only the ant abundance variables** as the multivariate response data.
 
-**Feature Variables**
+In each analysis, place the ant abundance variables into **Feature Variables**. Do **not** include **Site**, **Community** or **Sample**. These variables have different roles:
 
-Do **not** include the following variables in **Feature Variables**:
+* **Site** identifies individual sampling locations.
+* **Community** is a grouping factor.
+* **Sample** is a grouping factor distinguishing **Edge** and **Interior** samples.
 
-* Site
-* Community
-* Sample
-
-These variables have different roles:
-
-* **Site** identifies individual sampling locations
-* **Community** is a grouping factor
-* **Sample** is a grouping factor distinguishing Edge and Interior samples
-
-Your dataset should therefore be organised as:
+The supplied dataset is already organised with:
 
 * **Rows = samples**
 * **Columns = species or taxa**
@@ -103,15 +96,17 @@ Your dataset should therefore be organised as:
 
 For example:
 
-| Site    | Community   | Sample   | Species_A | Species_B | Species_C |
-|---------|-------------|----------|-----------|-----------|-----------|
-| Site01  | Community1  | Edge     | 3         | 0         | 12        |
-| Site02  | Community1  | Interior | 1         | 2         | 7         |
-| Site03  | Community2  | Edge     | 0         | 4         | 2         |
+| Site | Community | Sample | Species_A | Species_B | Species_C |
+|------|-----------|--------|-----------|-----------|-----------|
+| Site01 | Community1 | Edge | 3 | 0 | 12 |
+| Site02 | Community1 | Interior | 1 | 2 | 7 |
+| Site03 | Community2 | Edge | 0 | 4 | 2 |
 
-In the analyses that follow, you will normally place all of the **Species** columns into **Feature Variables**, while **Community** and/or **Sample** will be entered separately as grouping factors.
+This structure keeps the species abundance data separate from the variables that identify samples and define groups. Use the same structure when preparing your own community dataset.
 
-### 3. Transform the abundance data
+In the analyses that follow, place all of the **ant abundance columns** into **Feature Variables**, while **Community** and/or **Sample** will be entered separately as grouping factors.
+
+### Transformation settings
 
 Ecological abundance datasets are often dominated by a few very abundant species. Transforming the data reduces the influence of these dominant species and allows moderately abundant and less common species to contribute more to the analysis.
 
@@ -119,9 +114,9 @@ For this exercise, use:
 
 **Transformation → Fourth root**
 
-You do **not** need to create a separately transformed dataset. MISO applies the selected transformation as part of each analysis.
+You do **not** need to create a separately transformed dataset. *miso* applies the selected transformation as part of each analysis.
 
-Other transformations that may be useful for your own data include:
+For your own data, other transformation choices that may be useful include:
 
 * None
 * Square root
@@ -131,7 +126,7 @@ Other transformations that may be useful for your own data include:
 
 For this ant dataset, use the **fourth-root transformation** throughout the analyses below.
 
-### 4. Select the Bray–Curtis dissimilarity
+### Dissimilarity settings
 
 For these ant abundance data, use:
 
@@ -139,61 +134,61 @@ For these ant abundance data, use:
 
 Bray–Curtis dissimilarity measures differences in species composition and abundance between samples and is widely used for ecological community data.
 
-MISO calculates the dissimilarities automatically within each analysis. You therefore only need to specify:
+*miso* calculates the dissimilarities automatically within each analysis. You therefore only need to specify:
 
 * **Feature Variables** – the ant abundance variables
 * **Transformation** – Fourth root
 * **Dissimilarity index** – Bray-Curtis
 
+These settings are selected within each analysis, after opening it. They are not separate data-processing steps.
+
 Use these same settings throughout the analyses below unless instructed otherwise.
 
-### 5. Create an nMDS ordination
+### Analysis sequence for AntDataTotal
+
+Complete the analyses in the following order:
+
+| Step | Analysis | Main settings |
+|------|----------|---------------|
+| 1 | nMDS | Fourth root; Bray–Curtis; Group = Community |
+| 2 | Cluster analysis | Fourth root; Bray–Curtis; Labels = Site |
+| 3 | ANOSIM | Community; 999 permutations |
+| 4 | PERMANOVA | Community + Sample + Community × Sample; 999 permutations; Marginal terms |
+| 5 | PERMDISP | Community; 999 permutations |
+| 6 | SIMPER | Community; Fourth root |
+
+This sequence takes you through four stages of multivariate analysis:
+
+**Visualise patterns → Test hypotheses → Check dispersion → Identify contributing species**
+
+## 1. nMDS
+### Create an nMDS ordination
 
 Non-metric multidimensional scaling (**nMDS**) provides a visual representation of similarities and differences in ant assemblage composition among samples.
 
-Go to:
+### Set up the analysis
 
-**Analyses → MISO → nMDS**
+1. Select **Analyses → Multivariate → nMDS**.
+2. Move **all ant abundance variables** into **Feature Variables**.
+3. Move **Community** into **Grouping Variable**.
+4. Under **Analysis Choices**, set:
+   - **Transformation → Fourth root**
+   - **Dissimilarity index → Bray-Curtis**
+5. Under **Plots**, keep the following selected:
+   - **Shepard Diagram**
+   - **Group point styling**
 
-**Set up the analysis**
+   **Optional:** You can also select:
+   - **Group hulls**
+   - **Group dispersion ellipses**
+   - **Group spiders**
 
-**Feature Variables**
+   These additional options can help you visualise the separation and overlap among Communities.
+6. Set **Maximum random starts = 20**.
 
-Move **all ant abundance variables** into **Feature Variables**.
+![Setting up the nMDS analysis in jamovi.](assets/w10-jamovi-nmds-setup.mp4)
 
-**Grouping Variable**
-
-Move **Community** into **Grouping Variable**.
-
-**Analysis Choices**
-
-Set:
-
-* **Transformation → Fourth root**
-* **Dissimilarity index → Bray-Curtis**
-
-**Plots**
-
-Keep the following selected:
-
-* **Shepard Diagram**
-* **Group point styling**
-
-You can also select:
-
-* **Group hulls**
-* **Group dispersion ellipses**
-* **Group spiders**
-
-These additional options can help you visualise the separation and overlap among Communities.
-
-**Random starts**
-
-Set:
-
-**Maximum random starts = 20**
-
-**Interpret the nMDS**
+### Read the output
 
 In an nMDS plot:
 
@@ -211,38 +206,32 @@ Also examine the **stress value**. Lower stress indicates that the two-dimension
 
 **Important:** nMDS is primarily a visualisation technique. Do not conclude that Communities are significantly different simply because they appear separated on the plot. Formal tests of differences among Communities are conducted using ANOSIM and PERMANOVA.
 
-### 6. Create a cluster analysis
+![Reading the nMDS output in jamovi.](assets/w10-jamovi-nmds-results.mp4)
+
+## 2. Cluster analysis
+### Create a cluster analysis
 
 Cluster analysis provides another way of visualising similarities among samples. Samples with more similar ant assemblages are grouped together in the dendrogram.
 
-Go to:
+### Set up the analysis
 
-**Analyses → MISO → Cluster analysis**
+1. Select **Analyses → *miso* → Cluster analysis**.
+2. Move **all ant abundance variables** into **Feature Variables**.
+3. **Optional:** Move **Site** into **Sample Labels** if you want individual samples identified on the dendrogram.
+4. Under **Analysis Choices**, set:
+   - **Transformation → Fourth root**
+   - **Dissimilarity index → Bray-Curtis**.
 
-**Set up the analysis**
+![Setting up the cluster analysis in jamovi.](assets/w10-jamovi-cluster-analysis.mp4)
 
-**Feature Variables**
-
-Move **all ant abundance variables** into **Feature Variables**.
-
-**Sample Labels**
-
-Move **Site** into **Sample Labels** if you want individual samples identified on the dendrogram.
-
-**Analysis Choices**
-
-Set:
-
-* **Transformation → Fourth root**
-* **Dissimilarity index → Bray-Curtis**
-
-**Interpret the cluster analysis**
+### Read the output
 
 Examine whether samples from the same **Community** tend to cluster together.
 
 Compare the pattern in the dendrogram with the pattern you observed in the nMDS. The two approaches display the same underlying multivariate relationships in different ways.
 
-### 7. Test for differences among Communities using ANOSIM
+## 3. ANOSIM
+### Test for differences among Communities using ANOSIM
 
 Analysis of Similarities (**ANOSIM**) tests whether assemblage composition differs among groups defined by a single factor.
 
@@ -250,46 +239,22 @@ For this analysis, the question is:
 
 **Do ant assemblages differ among Communities?**
 
-Go to:
+### Set up the analysis
 
-**Analyses → MISO → ANOSIM**
+1. Select **Analyses → *miso* → ANOSIM**.
+2. Move **all ant abundance variables** into **Feature Variables**.
+3. Move **Community** into **Grouping Variable**.
+4. Under **Analysis Choices**, set:
+   - **Transformation → Fourth root**
+   - **Dissimilarity index → Bray-Curtis**
+5. Set **Permutations = 999**.
+6. Set **Permutation restriction → Free**.
+7. Because Community has more than two levels, select **Pairwise ANOSIM comparisons**.
+8. For multiple comparisons, set **P-value adjustment → Holm**.
 
-**Set up the analysis**
+![Setting up the ANOSIM analysis in jamovi.](assets/w10-jamovi-anosim.mp4)
 
-**Feature Variables**
-
-Move **all ant abundance variables** into **Feature Variables**.
-
-**Grouping Variable**
-
-Move **Community** into **Grouping Variable**.
-
-**Analysis Choices**
-
-Set:
-
-* **Transformation → Fourth root**
-* **Dissimilarity index → Bray-Curtis**
-
-**Permutations**
-
-Set:
-
-**Permutations = 999**
-
-Set:
-
-**Permutation restriction → Free**
-
-Because Community has more than two levels, select:
-
-**Pairwise ANOSIM comparisons**
-
-For multiple comparisons, use:
-
-**P-value adjustment → Holm**
-
-**Interpret the ANOSIM**
+### Read the output
 
 The two main results are:
 
@@ -312,7 +277,8 @@ An example of how to report the result is:
 
 ANOSIM indicated that ant assemblage composition differed among Communities (Global R = ..., P = ..., 999 permutations).
 
-### 8. Test Community and Sample effects using PERMANOVA
+## 4. PERMANOVA
+### Test Community and Sample effects using PERMANOVA
 
 Permutational Multivariate Analysis of Variance (**PERMANOVA**) allows us to test more complex hypotheses involving multiple factors.
 
@@ -328,66 +294,25 @@ These terms answer three different biological questions:
 * **Sample:** Does ant assemblage composition differ between **Edge** and **Interior** samples?
 * **Community × Sample:** Does the difference between Edge and Interior samples vary among Communities?
 
-Go to:
+### Set up the analysis
 
-**Analyses → MISO → PERMANOVA**
+1. Select **Analyses → *miso* → PERMANOVA**.
+2. Move **all ant abundance variables** into **Feature Variables**.
+3. Move **Community** into **Grouping Variable**.
+4. Move **Sample** into **Additional Factors**.
+5. Under **Analysis Choices**, set:
+   - **Transformation → Fourth root**
+   - **Dissimilarity index → Bray-Curtis**
+6. Select **Model Interactions**. This adds the **Community × Sample** interaction to the model.
+7. Set **Number of permutations = 999**.
+8. Set **Permutation restrictions → Free**.
+9. Select **Test type → Marginal terms**. This tests each term while accounting for the other terms in the model.
+10. Select **Pairwise comparisons**.
+11. Set **P-value adjustment → Holm**.
 
-**Set up the analysis**
+![Setting up the PERMANOVA analysis in jamovi.](assets/w10-jamovi-permanova.mp4)
 
-**Feature Variables**
-
-Move **all ant abundance variables** into **Feature Variables**.
-
-**Grouping Variable**
-
-Move **Community** into **Grouping Variable**.
-
-**Additional Factors**
-
-Move **Sample** into **Additional Factors**.
-
-**Analysis Choices**
-
-Set:
-
-* **Transformation → Fourth root**
-* **Dissimilarity index → Bray-Curtis**
-
-Select:
-
-**Model Interactions**
-
-This adds the **Community × Sample** interaction to the model.
-
-**Permutations**
-
-Set:
-
-**Number of permutations = 999**
-
-Set:
-
-**Permutation restrictions → Free**
-
-**Test type**
-
-Select:
-
-**Test type → Marginal terms**
-
-This tests each term while accounting for the other terms in the model.
-
-**Pairwise comparisons**
-
-Select:
-
-**Pairwise comparisons**
-
-Set:
-
-**P-value adjustment → Holm**
-
-**Interpret the PERMANOVA**
+### Read the output
 
 Examine the PERMANOVA results for:
 
@@ -410,48 +335,29 @@ Interpret the effects as follows:
 
 **Important:** If the **Community × Sample interaction is significant**, examine and interpret the interaction before drawing conclusions about the main effects of Community or Sample.
 
-### 9. Check multivariate dispersion using PERMDISP
+## 5. PERMDISP
+### Check multivariate dispersion using PERMDISP
 
 PERMANOVA tests for differences in multivariate assemblage composition. However, groups can also differ in how variable or dispersed their samples are.
 
 **PERMDISP** tests whether Communities differ in their multivariate dispersion.
 
-Go to:
+### Set up the analysis
 
-**Analyses → MISO → PERMDISP**
+1. Select **Analyses → *miso* → PERMDISP**.
+2. Move **all ant abundance variables** into **Feature Variables**.
+3. Move **Community** into **Grouping Variable**.
+4. Under **Analysis Choices**, set:
+   - **Transformation → Fourth root**
+   - **Dissimilarity index → Bray-Curtis**
+   - **Group centre → Median**
+   - **Permutations = 999**
+5. Keep **Distance-to-centre diagnostic** selected.
+6. **Conditional:** You may also select **Pairwise dispersion comparisons** if the overall PERMDISP test is significant.
 
-**Set up the analysis**
+![Setting up the PERMDISP analysis in jamovi.](assets/w10-jamovi-permdisp.mp4)
 
-**Feature Variables**
-
-Move **all ant abundance variables** into **Feature Variables**.
-
-**Grouping Variable**
-
-Move **Community** into **Grouping Variable**.
-
-**Analysis Choices**
-
-Set:
-
-* **Transformation → Fourth root**
-* **Dissimilarity index → Bray-Curtis**
-* **Group centre → Median**
-* **Permutations = 999**
-
-Keep:
-
-**Distance-to-centre diagnostic**
-
-selected.
-
-You may also select:
-
-**Pairwise dispersion comparisons**
-
-if the overall PERMDISP test is significant.
-
-**Interpret PERMDISP**
+### Read the output
 
 A **non-significant PERMDISP** result indicates that there is no evidence that the Communities differ in their multivariate dispersion.
 
@@ -459,46 +365,31 @@ A **significant PERMDISP** result indicates that at least some Communities diffe
 
 If PERMDISP is significant, interpret the PERMANOVA result with additional caution and examine the nMDS and distance-to-centre plot to understand the pattern.
 
-### 10. Identify contributing species using SIMPER
+## 6. SIMPER
+### Identify contributing species using SIMPER
 
 Similarity Percentages (**SIMPER**) helps identify which species contribute most to the average differences in assemblage composition among Communities.
 
 SIMPER is primarily a **descriptive follow-up analysis**.
 
-Go to:
+### Set up the analysis
 
-**Analyses → MISO → SIMPER**
+1. Select **Analyses → *miso* → SIMPER**.
+2. Move **all ant abundance variables** into **Feature Variables**.
+3. Move **Community** into **Grouping Variable**.
+4. Under **Transformation**, select **Fourth root**.
+5. Under **Output settings**, set:
+   - **Top N features = 10**
+   - **Cumulative contribution = 70%**
 
-**Set up the analysis**
+   **Optional:** You may also select:
+   - **Contribution plots**
+   - **Contrast overview heatmap**
+   - **Detailed Statistics**.
 
-**Feature Variables**
+![Setting up the SIMPER analysis in jamovi.](assets/w10-jamovi-simper.mp4)
 
-Move **all ant abundance variables** into **Feature Variables**.
-
-**Grouping Variable**
-
-Move **Community** into **Grouping Variable**.
-
-**Transformation**
-
-Select:
-
-**Fourth root**
-
-**Output settings**
-
-Set:
-
-* **Top N features = 10**
-* **Cumulative contribution = 70%**
-
-You may also select:
-
-* **Contribution plots**
-* **Contrast overview heatmap**
-* **Detailed Statistics**
-
-**Interpret SIMPER**
+### Read the output
 
 For each pair of Communities, identify the species that make the largest contributions to the average Bray–Curtis dissimilarity.
 
@@ -506,24 +397,7 @@ Species with larger contributions are more important in explaining the observed 
 
 **Important:** SIMPER is descriptive. A high SIMPER contribution does **not** demonstrate that an individual species differs significantly between Communities.
 
-### 11. Analysis sequence for AntDataTotal
-
-Complete the analyses in the following order:
-
-| Step | Analysis         | Main settings                                                                                     |
-|------|------------------|---------------------------------------------------------------------------------------------------|
-| 1    | nMDS             | Fourth root; Bray–Curtis; Group = Community                                                       |
-| 2    | Cluster analysis | Fourth root; Bray–Curtis; Labels = Site                                                           |
-| 3    | ANOSIM           | Community; 999 permutations                                                                       |
-| 4    | PERMANOVA        | Community + Sample + Community × Sample; 999 permutations; Marginal terms                         |
-| 5    | PERMDISP         | Community; 999 permutations                                                                       |
-| 6    | SIMPER           | Community; Fourth root                                                                            |
-
-This sequence takes you through four stages of multivariate analysis:
-
-**Visualise patterns → Test hypotheses → Check dispersion → Identify contributing species**
-
-### 12. Prepare your own assemblage or community data
+## Prepare your own assemblage or community data
 
 For your own community dataset, organise your spreadsheet so that:
 
@@ -559,11 +433,11 @@ When the file is opened in jamovi, check that:
 * grouping variables such as **Community** and **Sample** are set to **Nominal**;
 * species abundance variables are set to **Continuous**.
 
-### 13. Prepare data for next week's practical
+## Prepare data for next week's practical
 
 By the **start of next week's practical**, each group must have **three spreadsheets** prepared. These will be checked and **marked out of 5** by your demonstrators.
 
-#### 1. Habitat data file
+### Habitat data file
 
 Prepare the habitat data for analysis in **jamovi or R**.
 
@@ -583,9 +457,9 @@ Before the practical, check the dataset carefully for missing values.
 
 Habitat variables that will be used in **PCA** should be numeric.
 
-#### 2. Assemblage / community data file
+### Assemblage / community data file
 
-Prepare the community data for analysis in **jamovi/MISO or R**.
+Prepare the community data for analysis in **jamovi/*miso* or R**.
 
 Your spreadsheet should have:
 
@@ -606,7 +480,7 @@ Before the practical:
 * check that **Community**, **Sample**, and other grouping factors are recognised as **Nominal** variables in jamovi;
 * check that species abundance variables are recognised as **Continuous**.
 
-#### 3. Summary statistics file
+### Summary statistics file
 
 Prepare a separate spreadsheet containing useful summary variables.
 
@@ -625,7 +499,7 @@ These summaries can be calculated for individual sites or grouped by variables s
 
 ## Important note about transformations
 
-MISO allows multivariate analyses to be run on **untransformed data**. However, ecological abundance datasets are often strongly influenced by a small number of highly abundant taxa.
+*miso* allows multivariate analyses to be run on **untransformed data**. However, ecological abundance datasets are often strongly influenced by a small number of highly abundant taxa.
 
 A transformation can reduce the influence of dominant species and allow moderately abundant and less common species to contribute more to the multivariate pattern.
 
@@ -649,4 +523,4 @@ When comparing transformations, consider whether the biological interpretation o
 
 ![Example jamovi-ready data sheet layout for PCA.](assets/w10-jamovi-pca-datasheet.png){fig-alt="Spreadsheet layout showing a jamovi-ready data sheet for PCA."}
 
-![Example jamovi-ready community data sheet layout for MISO analyses.](assets/w10-jamovi-community-datasheet.png){fig-alt="Spreadsheet layout showing a jamovi-ready community data sheet for MISO analyses."}
+![Example jamovi-ready community data sheet layout for *miso* analyses.](assets/w10-jamovi-community-datasheet.png){fig-alt="Spreadsheet layout showing a jamovi-ready community data sheet for miso analyses."}
