@@ -37,10 +37,10 @@ Today we focus on **study design and sampling**. You will work in groups of at l
 
 This is optional, but you may download these files and unzip them if you want to work offline.
 
-- [Download **Week 2 Site 1 photos (ZIP)**](https://canvas.sydney.edu.au/courses/74353/files/51851648/download?download_frd=1)
-- [Download **Week 2 Site 2 photos (ZIP)**](https://canvas.sydney.edu.au/courses/74353/files/51851649/download?download_frd=1)
+- [Download **Week 2 Site 1 photos (ZIP)**](canvas:/files/51851648/download?download_frd=1)
+- [Download **Week 2 Site 2 photos (ZIP)**](canvas:/files/51851649/download?download_frd=1)
 
-If the links do not work, you can also download the files from [Canvas - Module Content and Resources](https://canvas.sydney.edu.au/courses/74353/pages/biol2022-module-content-and-resources).
+If the links do not work, you can also download the files from [Canvas - Module Content and Resources](canvas:/pages/biol2022-module-content-and-resources).
 :::
 
 ### Learning outcomes {.unnumbered}
@@ -211,7 +211,7 @@ Snails?
 
 **Snails!**
 
-See the [snail collecting competition](https://canvas.sydney.edu.au/courses/74353/pages/snail-collecting-competition) if you missed this announcement. If you are interested, you may take one or more containers and some gloves at the end of this practical, then do some nice "field" sampling in your own time.
+See the [snail collecting competition](canvas:/pages/snail-collecting-competition) if you missed this announcement. If you are interested, you may take one or more containers and some gloves at the end of this practical, then do some nice "field" sampling in your own time.
 
 ### Attendance
 

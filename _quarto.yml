@@ -2,15 +2,20 @@ quarto-required: ">=1.9.17"
 
 project:
   type: website
+  pre-render:
+    - node scripts/sync-semester-settings.mjs
   resources:
     # Anchor to the project root so other profiles' output is not copied back in.
     - /canvas/semester-status.html
     - /canvas/semester-status.svg
     - /canvas/semester-status-narrow.svg
+    - /scripts/semester-config.js
+    - /scripts/semester-calendar.js
   render:
     - "**/*.qmd"
     - "!_book/**"
     - "!_partials/**"
+    - "!renv/**"
     - "!about-unit.qmd"
     - "!module02/book-*.qmd"
     - "!module02/module02-word.qmd"
@@ -20,8 +25,10 @@ project:
 
 metadata-files:
   - _edition.yml
+  - _semester.json
 filters:
   - word/docx-mockup-table.lua
+  - filters/semester-links.lua
 
 website:
   title: "BIOL2022 Handbook"
@@ -52,13 +59,6 @@ website:
       - icon: file-earmark-text
         text: Cheatsheets
         href: cheatsheets.qmd
-    right:
-      - icon: mortarboard-fill
-        text: Canvas
-        href: https://canvas.sydney.edu.au/courses/74353/
-      - icon: chat-dots-fill
-        text: Ed
-        href: https://edstem.org/au/courses/36475/
   page-footer:
     left:
       - text: About this handbook

@@ -94,15 +94,16 @@ Ordinary punctuation is allowed.
 The `url` field accepts:
 
 - a blank value for an unlinked item;
+- a `canvas:/...` or `ed:/...` course resource path (resolved from `_semester.json`);
 - an absolute `http://` or `https://` URL with a non-empty host; or
 - a repository-relative path without a leading slash, optionally followed by a
   query or fragment.
 
 Valid examples include `prerequisites.qmd`,
 `module02/202-timeline.qmd#wk6`, and
-`https://canvas.sydney.edu.au/courses/74353`.
+`canvas:/assignments/696326`.
 
-Do not use surrounding whitespace, other URL schemes, protocol-relative URLs
+Do not use surrounding whitespace, schemes other than those above, protocol-relative URLs
 such as `//example.com`, site-root or filesystem paths, backslashes, control
 characters, or HTTP(S) URLs without a host. Validation checks syntax only, so a
 future or unpublished destination is allowed.
@@ -133,3 +134,12 @@ be Resource. An Ed announcement is Notice, an Ed thread stating authoritative
 assessment requirements is Assessment, and an explanatory Ed post is Resource.
 Discuss genuinely new cases with the unit coordinator, then add the agreed case
 here.
+
+## Shared semester settings
+
+`semester_breaks.csv` is generated from `_semester.json`; edit the calendar there
+and run `node scripts/sync-semester-settings.mjs`. Its displayed end date excludes
+the weekend and holiday, while the status widgets use the calendar's inclusive
+break end. In `weekly_content.csv`, use `canvas:/...` for course resource URLs.
+The schedule reader resolves these through the same semester settings before
+validating or rendering links.

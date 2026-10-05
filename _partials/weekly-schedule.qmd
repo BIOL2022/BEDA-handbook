@@ -1,5 +1,7 @@
 <p id="semester-status" role="status" aria-live="polite">Loading semester status…</p>
 
+<script src="scripts/semester-config.js"></script>
+<script src="scripts/semester-calendar.js"></script>
 <script src="scripts/semester-status.js"></script>
 
 ::: {#weekly-content role="region" aria-label="Weekly content schedule"}

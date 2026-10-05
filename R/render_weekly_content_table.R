@@ -1,3 +1,5 @@
+source("R/semester_settings.R")
+
 weekly_content_weeks <- 1:13
 weekly_content_sections <- c("lecture", "workshop", "practical", "extra")
 weekly_module_two_welcome_url <- "module02/200-welcome.qmd"
@@ -12,12 +14,14 @@ weekly_note_registry <- list(
 weekly_note_types <- names(weekly_note_registry)
 
 read_weekly_content_csv <- function(path) {
-  read.csv(
+  data <- read.csv(
     path,
     stringsAsFactors = FALSE,
     check.names = FALSE,
     colClasses = c(note_weight = "character")
   )
+  data$url <- resolve_course_urls(data$url)
+  data
 }
 
 weekly_row_context <- function(data, index) {

@@ -24,5 +24,7 @@ sidebar: module-2
 ```
 
 ```{=html}
+<script src="../scripts/semester-config.js"></script>
+<script src="../scripts/semester-calendar.js"></script>
 <script src="../scripts/semester-status.js"></script>
 ```

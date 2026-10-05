@@ -111,7 +111,7 @@ This is a short **quiz**, designed to give you early feedback on your prior unde
 It will help you identify areas where you may need to focus your study efforts. 
 
 <p class="assessment-countdown"><strong>Due in:</strong> <span id="countdown-eft"></span></p>
-[View in Canvas](https://canvas.sydney.edu.au/courses/74353/assignments/696326){.assessment-link}
+[View in Canvas](canvas:/assignments/696326){.assessment-link}
 :::
 
 ::: {.assessment-section}
@@ -121,7 +121,7 @@ It will help you identify areas where you may need to focus your study efforts.
 This is a **quiz** that covers key ideas about statistics and how experiments are set up based on Module 1. The higher score of two attempts will be recorded, so you can learn from the feedback instead of being penalised for them. More importantly, we hope that you use this quiz as a means of reflection, rather than a test of your knowledge.
 
 <p class="assessment-countdown"><strong>Due in:</strong> <span id="countdown-mod1-quiz"></span></p>
-[View in Canvas](https://canvas.sydney.edu.au/courses/74353/assignments/696327){.assessment-link}
+[View in Canvas](canvas:/assignments/696327){.assessment-link}
 :::
 
 ::: {.assessment-section}
@@ -134,7 +134,7 @@ You will use what you have learned so far to design and analyse an experiment ba
 Practicals are designed to be flexible and student-driven. Rather than following a set procedure, you are encouraged to use practical sessions to seek feedback on your project ideas, experimental design, and analysis plans. Demonstrators act as advisors, similar to how support works in a research group, and you are welcome to interact with them and your peers for advice, just as you would with postdocs or supervisors. If you are organised, you can also request feedback on your report drafts during practicals to help improve your work.
 
 <p class="assessment-countdown"><strong>Due in:</strong> <span id="countdown-report1"></span></p>
-[View in Canvas](https://canvas.sydney.edu.au/courses/74353/assignments/696331){.assessment-link}
+[View in Canvas](canvas:/assignments/696331){.assessment-link}
 :::
 
 :::: {.assessment-section}
@@ -158,7 +158,7 @@ was collected. It is due at **10 am on the day of your Week 11 practical**:
 - **Wednesday classes:** 21 October 2026 — <span id="countdown-report2-dataset-wed"></span>
 - **Friday classes:** 23 October 2026 — <span id="countdown-report2-dataset-fri"></span>
 
-[View in Canvas](https://canvas.sydney.edu.au/courses/74353/assignments/696332){.assessment-link}
+[View in Canvas](canvas:/assignments/696332){.assessment-link}
 :::
 
 ::: {.assessment-part}
@@ -168,7 +168,7 @@ Submit your individual four-page report by **6 November 2026 at 23:59**.
 
 <p class="assessment-countdown"><strong>Due in:</strong> <span id="countdown-report2"></span></p>
 
-[View in Canvas](https://canvas.sydney.edu.au/courses/74353/assignments/696333){.assessment-link}
+[View in Canvas](canvas:/assignments/696333){.assessment-link}
 :::
 
 :::

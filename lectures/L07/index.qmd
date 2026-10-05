@@ -3,12 +3,12 @@ title: "Week 7 — Relationships and binary responses"
 ---
 
 ::: {.lecture-actions}
-**Tuesday: Does wind reduce tree growth? Detecting differences versus describing relationships** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open in Canvas](https://canvas.sydney.edu.au/courses/74353/pages/week-07-tue-does-wind-reduce-tree-growth-detecting-differences-versus-describing-relationships){.lecture-action target="_blank" rel="noopener noreferrer"}
+**Tuesday: Does wind reduce tree growth? Detecting differences versus describing relationships** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open in Canvas](canvas:/pages/week-07-tue-does-wind-reduce-tree-growth-detecting-differences-versus-describing-relationships){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<a href="https://canvas.sydney.edu.au/courses/74353/pages/week-07-tue-does-wind-reduce-tree-growth-detecting-differences-versus-describing-relationships" class="lecture-deck-preview" target="_blank" rel="noopener noreferrer">
+<a href="canvas:/pages/week-07-tue-does-wind-reduce-tree-growth-detecting-differences-versus-describing-relationships" class="lecture-deck-preview" target="_blank" rel="noopener noreferrer">
   <span class="lecture-deck-title">McArthur_BEDA_L3_final POST-lecture.pdf</span>
   <span class="lecture-deck-utility">PDF slides &middot; Opens in Canvas</span>
 </a>
@@ -16,12 +16,12 @@ title: "Week 7 — Relationships and binary responses"
 :::
 
 ::: {.lecture-actions}
-**Wednesday: What are the chances of finding a bandicoot? Dealing with binary response data** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open in Canvas](https://canvas.sydney.edu.au/courses/74353/pages/week-07-wed-what-are-the-chances-of-finding-a-bandicoot-dealing-with-binary-response-data){.lecture-action target="_blank" rel="noopener noreferrer"}
+**Wednesday: What are the chances of finding a bandicoot? Dealing with binary response data** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open in Canvas](canvas:/pages/week-07-wed-what-are-the-chances-of-finding-a-bandicoot-dealing-with-binary-response-data){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<a href="https://canvas.sydney.edu.au/courses/74353/pages/week-07-wed-what-are-the-chances-of-finding-a-bandicoot-dealing-with-binary-response-data" class="lecture-deck-preview" target="_blank" rel="noopener noreferrer">
+<a href="canvas:/pages/week-07-wed-what-are-the-chances-of-finding-a-bandicoot-dealing-with-binary-response-data" class="lecture-deck-preview" target="_blank" rel="noopener noreferrer">
   <span class="lecture-deck-title">McArthur_BEDA_L4_final.pdf</span>
   <span class="lecture-deck-utility">PDF slides &middot; Opens in Canvas</span>
 </a>

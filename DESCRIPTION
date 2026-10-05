@@ -1,0 +1,15 @@
+Package: bedahandbook
+Title: BEDA Handbook Build Dependencies
+Version: 0.0.0
+Imports:
+    ggplot2,
+    gt,
+    jsonlite,
+    knitr,
+    palmerpenguins,
+    patchwork,
+    quarto,
+    readxl,
+    renv,
+    rmarkdown,
+    tidyverse
