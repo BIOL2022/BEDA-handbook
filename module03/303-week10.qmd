@@ -47,7 +47,7 @@ A typical workflow for analysing community data is:
 
 In this practical, we will use *miso* (Multivariate Inference, Similarity and Ordination) to analyse the ant community data in jamovi.
 
-If you have not installed *miso* yet, follow the [installation instructions in the week 9 practical](302-week09.qmd#install-miso) before continuing.
+Install or update *miso* using the [installation instructions in the week 9 practical](302-week09.qmd#install-miso) before continuing.
 
 ### Understand the data
 
@@ -153,7 +153,7 @@ Complete the analyses in the following order:
 | 1 | nMDS | Fourth root; Bray–Curtis; Group = Community |
 | 2 | Cluster analysis | Fourth root; Bray–Curtis; Labels = Site |
 | 3 | ANOSIM | Community; 999 permutations |
-| 4 | PERMANOVA | Community + Sample + Community × Sample; 999 permutations; Marginal terms |
+| 4 | PERMANOVA | Community × Sample interaction; marginal terms; 999 permutations; pairwise Community comparisons within Edge and Interior |
 | 5 | PERMDISP | Community; 999 permutations |
 | 6 | SIMPER | Community; Fourth root |
 
@@ -215,7 +215,7 @@ Cluster analysis provides another way of visualising similarities among samples.
 
 ### Set up the analysis
 
-1. Select **Analyses → *miso* → Cluster analysis**.
+1. Select **Analyses → Multivariate → Cluster analysis**.
 2. Move **all ant abundance variables** into **Feature Variables**.
 3. **Optional:** Move **Site** into **Sample Labels** if you want individual samples identified on the dendrogram.
 4. Under **Analysis Choices**, set:
@@ -241,7 +241,7 @@ For this analysis, the question is:
 
 ### Set up the analysis
 
-1. Select **Analyses → *miso* → ANOSIM**.
+1. Select **Analyses → Multivariate → ANOSIM**.
 2. Move **all ant abundance variables** into **Feature Variables**.
 3. Move **Community** into **Grouping Variable**.
 4. Under **Analysis Choices**, set:
@@ -282,58 +282,68 @@ ANOSIM indicated that ant assemblage composition differed among Communities (Glo
 
 Permutational Multivariate Analysis of Variance (**PERMANOVA**) allows us to test more complex hypotheses involving multiple factors.
 
-For AntDataTotal, we will test:
+For AntDataTotal, we will fit a model containing:
 
 * **Community**
 * **Sample**
 * **Community × Sample**
 
-These terms answer three different biological questions:
+These terms represent three biological questions:
 
 * **Community:** Does ant assemblage composition differ among Communities?
 * **Sample:** Does ant assemblage composition differ between **Edge** and **Interior** samples?
 * **Community × Sample:** Does the difference between Edge and Interior samples vary among Communities?
 
+In this exercise, we use **marginal terms** to test the interaction. Community and Sample remain in the model, but are not tested separately while their interaction is included.
+
 ### Set up the analysis
 
-1. Select **Analyses → *miso* → PERMANOVA**.
+1. Select **Analyses → Multivariate → PERMANOVA**.
 2. Move **all ant abundance variables** into **Feature Variables**.
 3. Move **Community** into **Grouping Variable**.
-4. Move **Sample** into **Additional Factors**.
+4. Move **Sample** into **Additional Factors**, then select **Model interactions** beneath it.
 5. Under **Analysis Choices**, set:
    - **Transformation → Fourth root**
    - **Dissimilarity index → Bray-Curtis**
-6. Select **Model Interactions**. This adds the **Community × Sample** interaction to the model.
-7. Set **Number of permutations = 999**.
-8. Set **Permutation restrictions → Free**.
-9. Select **Test type → Marginal terms**. This tests each term while accounting for the other terms in the model.
-10. Select **Pairwise comparisons**.
-11. Set **P-value adjustment → Holm**.
+   - **Permutation restrictions → Free**
+   - **Test type → Marginal terms**
+6. Select **Pairwise comparisons** and set **P-value adjustment → Holm**.
+7. Under **Reproducibility and Technical Settings**, set **Number of permutations = 999**.
+
+Leave **Blocking Variable** and **Continuous Covariates** empty for this exercise. Keep **Binary (presence/absence)** and **Square-root distances** unchecked, and **Additive constant → None**.
 
 ![Setting up the PERMANOVA analysis in jamovi.](assets/w10-jamovi-permanova.mp4)
 
+**Video note:** This recording shows an earlier interface and finishes with a model without interactions. Follow the written settings above for this exercise.
+
 ### Read the output
 
-Examine the PERMANOVA results for:
-
-* **Community**
-* **Sample**
-* **Community × Sample**
-
-For each term, examine:
+Read the **Community × Sample** row in the PERMANOVA results. Examine:
 
 * degrees of freedom (**df**);
 * **pseudo-F** statistic;
 * **R²** or variance explained, where provided;
 * **P-value**.
 
-Interpret the effects as follows:
+A significant interaction indicates that the difference between Edge and Interior assemblages varies among Communities.
 
-* A significant **Community** effect indicates that ant assemblage composition differs among Communities.
-* A significant **Sample** effect indicates that assemblage composition differs between Edge and Interior samples overall.
-* A significant **Community × Sample** interaction indicates that the difference between Edge and Interior samples varies among Communities.
+**Community** and **Sample** are not shown as separate tests because they are included in the interaction. Their absence does not mean that their effects are non-significant.
 
-**Important:** If the **Community × Sample interaction is significant**, examine and interpret the interaction before drawing conclusions about the main effects of Community or Sample.
+### Read the pairwise results
+
+The pairwise tables compare Communities separately within **Edge** and **Interior** samples. These are conditional comparisons: for example, BGHF versus CCIF within Edge samples.
+
+Use **Adjusted p** to assess each comparison. Holm adjustment covers all 20 planned comparisons across both tables. Each comparison uses only the samples belonging to that pair of Communities and Sample level.
+
+These tables do **not** compare Edge against Interior within each Community. A comparison marked **not estimated** could not be tested; do not interpret it as non-significant.
+
+### Report the analysis
+
+For example:
+
+“The Community × Sample interaction was [significant/not significant] (pseudo-F = …, df = …, permutation p = …). The analysis used fourth-root-transformed abundances, Bray–Curtis dissimilarities, marginal terms and … permutations (seed = …).”
+
+Use the permutation count and seed shown in your output. When reporting pairwise results, identify the Sample level and give the adjusted p-value.
 
 ## 5. PERMDISP
 ### Check multivariate dispersion using PERMDISP
@@ -344,7 +354,7 @@ PERMANOVA tests for differences in multivariate assemblage composition. However,
 
 ### Set up the analysis
 
-1. Select **Analyses → *miso* → PERMDISP**.
+1. Select **Analyses → Multivariate → PERMDISP**.
 2. Move **all ant abundance variables** into **Feature Variables**.
 3. Move **Community** into **Grouping Variable**.
 4. Under **Analysis Choices**, set:
@@ -374,7 +384,7 @@ SIMPER is primarily a **descriptive follow-up analysis**.
 
 ### Set up the analysis
 
-1. Select **Analyses → *miso* → SIMPER**.
+1. Select **Analyses → Multivariate → SIMPER**.
 2. Move **all ant abundance variables** into **Feature Variables**.
 3. Move **Community** into **Grouping Variable**.
 4. Under **Transformation**, select **Fourth root**.
