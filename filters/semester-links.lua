@@ -14,7 +14,11 @@ end
 return {
   {
     Meta = function()
-      local file = assert(io.open(quarto.project.directory .. "/_semester.json", "r"))
+      -- Single-file previews may not provide quarto.project.directory.
+      local settings_path = pandoc.path.join({
+        pandoc.path.directory(PANDOC_SCRIPT_FILE), "..", "_semester.json"
+      })
+      local file = assert(io.open(settings_path, "r"))
       local settings = pandoc.json.decode(file:read("*a"))
       file:close()
       for _, item in ipairs(settings.website.navbar.right) do
