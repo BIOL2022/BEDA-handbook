@@ -24,6 +24,11 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.9.37"
+
       - name: Test site helpers
         run: node --test scripts/tests/*.test.js
 
@@ -32,11 +37,6 @@ jobs:
 
       - name: Refresh Canvas semester status images
         run: node scripts/generate-semester-status-svg.mjs
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          version: "1.9.37"
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
