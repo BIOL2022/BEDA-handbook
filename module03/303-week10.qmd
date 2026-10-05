@@ -312,9 +312,19 @@ In this exercise, we use **marginal terms** to test the interaction. Community a
 
 Leave **Blocking Variable** and **Continuous Covariates** empty for this exercise. Keep **Binary (presence/absence)** and **Square-root distances** unchecked, and **Additive constant → None**.
 
+::: {.panel-tabset}
+
+#### Default
+
 ![Setting up the PERMANOVA analysis in jamovi.](assets/w10-jamovi-permanova.mp4)
 
-**Video note:** This recording shows an earlier interface and finishes with a model without interactions. Follow the written settings above for this exercise.
+#### Warm tint
+
+![Setting up the PERMANOVA analysis in jamovi.](assets/w10-jamovi-permanova-manila.mp4)
+
+:::
+
+**Video note:** This recording finishes with a model without interactions. Follow the written settings above for this exercise.
 
 ### Read the output
 
