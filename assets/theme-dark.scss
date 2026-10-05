@@ -31,4 +31,26 @@ body.quarto-dark {
   --bs-tertiary-bg-rgb: 39, 46, 55;
   --bs-border-color: #46515d;
   --bs-border-color-translucent: rgb(184 192 200 / 24%);
+
+  .lecture-deck-title {
+    color: var(--bs-link-color);
+  }
+
+  .lecture-deck-utility {
+    color: var(--bs-secondary-color);
+  }
+
+  .lecture-deck-preview:hover,
+  .lecture-deck-preview:focus {
+    background-color: $card-bg;
+    border-color: var(--bs-link-hover-color);
+
+    .lecture-deck-title {
+      color: var(--bs-link-hover-color);
+    }
+  }
+
+  .lecture-deck-preview:focus-visible {
+    outline-color: var(--bs-link-color);
+  }
 }
