@@ -1,9 +1,12 @@
+quarto-required: ">=1.9.17"
+
 project:
   type: website
   resources:
-    - canvas/semester-status.html
-    - canvas/semester-status.svg
-    - canvas/semester-status-narrow.svg
+    # Anchor to the project root so other profiles' output is not copied back in.
+    - /canvas/semester-status.html
+    - /canvas/semester-status.svg
+    - /canvas/semester-status-narrow.svg
   render:
     - "**/*.qmd"
     - "!_book/**"

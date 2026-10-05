@@ -1,0 +1,17 @@
+<script>
+(() => {
+  // Quarto replaces tab-heading IDs; the inline anchor keeps existing links stable.
+  function openLinkedTab() {
+    if (window.location.hash !== "#modules") return;
+    const tab = document.getElementById("modules")?.closest('[role="tab"]');
+    if (tab) window.bootstrap.Tab.getOrCreateInstance(tab).show();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", openLinkedTab, { once: true });
+  } else {
+    openLinkedTab();
+  }
+  window.addEventListener("hashchange", openLinkedTab);
+})();
+</script>

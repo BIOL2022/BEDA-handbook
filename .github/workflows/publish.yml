@@ -2,35 +2,58 @@ on:
   workflow_dispatch:
   push:
     branches: main
+  pull_request:
+    branches: main
 
 name: Quarto Publish
 
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.event_name == 'pull_request' && format('handbook-pr-{0}', github.event.pull_request.number) || 'gh-pages' }}
+  queue: max
+  cancel-in-progress: false
+
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Test navigation checker
+        run: node --test scripts/tests/check_navigation.test.js
 
       - name: Refresh Canvas semester status images
         run: node scripts/generate-semester-status-svg.mjs
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.9.37"
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
         with:
-          r-version: release
+          r-version: "4.6.1"
 
       - name: Install R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: |
+          packages: |
             any::knitr
             any::rmarkdown
+            any::ggplot2
+            any::tidyverse
+            any::readxl
+            any::gt
+            any::palmerpenguins
+            any::patchwork
+          dependencies: 'NA'
+          install-quarto: false
 
       - name: Render Typst handbook
         run: quarto render --profile book
@@ -40,6 +63,39 @@ jobs:
 
       - name: Stage PDF download
         run: bash scripts/stage-handbook-pdf.sh
+
+      - name: Check website navigation
+        run: node scripts/check_navigation.js _site
+
+      - name: Save rendered website
+        uses: actions/upload-artifact@v4
+        with:
+          name: rendered-site
+          path: _site/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.9.37"
+
+      - name: Restore rendered website
+        uses: actions/download-artifact@v4
+        with:
+          name: rendered-site
+          path: _site/
 
       - name: Publish
         uses: quarto-dev/quarto-actions/publish@v2

@@ -1,5 +1,9 @@
 ---
 title: "Unit information"
+format:
+  html:
+    include-after-body:
+      - _partials/unit-information-tabs.html
 ---
 
 {{< include _partials/unit-information-content.qmd >}}

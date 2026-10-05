@@ -36,7 +36,7 @@ If you decide to stick around, use [Am I ready for BEDA?](prerequisites.qmd) to 
 If you decide to stick around, use [Am I ready for BEDA?](https://biol2022.github.io/BEDA-handbook/prerequisites.html) to see what you need to review so that you can get the most out of the unit.
 :::
 
-## Modules {.section-rail}
+## Modules`<span id="modules"></span>`{=html} {.section-rail}
 
 BEDA is organised into three modules, each taught by a different lecturer. Ideas introduced early in the unit continue through the semester as they are applied to different kinds of biological research. Importantly the focus is on the reasoning behind the analysis and how the data are collected, rather than just the analysis itself.
 
