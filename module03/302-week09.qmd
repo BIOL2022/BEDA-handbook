@@ -58,7 +58,7 @@ You will use PCA to reduce your set of measured variables to a coherent, smaller
 
 **The process in JAMOVI is listed below. R instructions are given on Canvas in an R script file.**
 
-1. Import your data. [**Download it here**](canvas:/pages/module-3-resources). If the link does not work, please go on to [Canvas](canvas:). A new **Module 3 Resources** link has been added to the front page.
+1. Import your data. [**Download the Week 9 PCA data file**](canvas:/files/50497754/download?download_frd=1). If the direct download does not work, open [**Module 3 Resources on Canvas**](canvas:/pages/module-3-resources) and download the file there.
    - Open **Jamovi**.
    - Go to the top-left menu (☰) → click **Open** → **Browse** and select your Excel/csv file (e.g., your lecturer dataset).
    - Once the data are imported, check that all the columns (variables) are correctly recognised as numeric (look for a ruler icon in the column headers).
