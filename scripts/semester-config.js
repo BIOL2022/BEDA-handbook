@@ -1,0 +1,107 @@
+// Generated from _semester.json; run node scripts/sync-semester-settings.mjs.
+window.BedaSemester = {
+  "edition-year": 2026,
+  "edition-semester": 2,
+  "semester-calendar": {
+    "label": "Semester 2",
+    "start": "2026-08-03",
+    "teachingWeeks": [
+      {
+        "week": 1,
+        "start": "2026-08-03",
+        "end": "2026-08-09"
+      },
+      {
+        "week": 2,
+        "start": "2026-08-10",
+        "end": "2026-08-16"
+      },
+      {
+        "week": 3,
+        "start": "2026-08-17",
+        "end": "2026-08-23"
+      },
+      {
+        "week": 4,
+        "start": "2026-08-24",
+        "end": "2026-08-30"
+      },
+      {
+        "week": 5,
+        "start": "2026-08-31",
+        "end": "2026-09-06"
+      },
+      {
+        "week": 6,
+        "start": "2026-09-07",
+        "end": "2026-09-13"
+      },
+      {
+        "week": 7,
+        "start": "2026-09-14",
+        "end": "2026-09-20"
+      },
+      {
+        "week": 8,
+        "start": "2026-09-21",
+        "end": "2026-09-27"
+      },
+      {
+        "week": 9,
+        "start": "2026-10-06",
+        "end": "2026-10-11"
+      },
+      {
+        "week": 10,
+        "start": "2026-10-12",
+        "end": "2026-10-18"
+      },
+      {
+        "week": 11,
+        "start": "2026-10-19",
+        "end": "2026-10-25"
+      },
+      {
+        "week": 12,
+        "start": "2026-10-26",
+        "end": "2026-11-01"
+      },
+      {
+        "week": 13,
+        "start": "2026-11-02",
+        "end": "2026-11-08"
+      }
+    ],
+    "midSemesterBreak": {
+      "start": "2026-09-28",
+      "end": "2026-10-05",
+      "displayEnd": "2026-10-02",
+      "afterWeek": 8,
+      "title": "Mid-semester break"
+    },
+    "studyVacation": {
+      "start": "2026-11-09",
+      "end": "2026-11-15"
+    },
+    "examinations": {
+      "start": "2026-11-16",
+      "end": "2026-11-28"
+    }
+  },
+  "website": {
+    "navbar": {
+      "right": [
+        {
+          "icon": "mortarboard-fill",
+          "text": "Canvas",
+          "href": "https://canvas.sydney.edu.au/courses/74353/"
+        },
+        {
+          "icon": "chat-dots-fill",
+          "text": "Ed",
+          "href": "https://edstem.org/au/courses/36475/"
+        }
+      ]
+    }
+  }
+};

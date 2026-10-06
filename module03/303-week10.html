@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-17141385aa4b0bf0ecbdc929bff632d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-aa8b43372feb8603cbf58c1870be21ad.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-dark-6b47e39b6bee3225cb7c93008a39cf07.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-17141385aa4b0bf0ecbdc929bff632d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -626,7 +626,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="using-jamovi-and-miso" class="level2">
 <h2 class="anchored" data-anchor-id="using-jamovi-and-miso">Using jamovi and <em>miso</em></h2>
 <p>In this practical, we will use <em>miso</em> (Multivariate Inference, Similarity and Ordination) to analyse the ant community data in jamovi.</p>
-<p>If you have not installed <em>miso</em> yet, follow the <a href="../module03/302-week09.html#install-miso">installation instructions in the week 9 practical</a> before continuing.</p>
+<p>Install or update <em>miso</em> using the <a href="../module03/302-week09.html#install-miso">installation instructions in the week 9 practical</a> before continuing.</p>
 <section id="understand-the-data" class="level3">
 <h3 class="anchored" data-anchor-id="understand-the-data">Understand the data</h3>
 <p>Each row is one sample. The first three columns describe where it came from:</p>
@@ -788,7 +788,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td>4</td>
 <td>PERMANOVA</td>
-<td>Community + Sample + Community × Sample; 999 permutations; Marginal terms</td>
+<td>Community × Sample interaction; marginal terms; 999 permutations; pairwise Community comparisons within Edge and Interior</td>
 </tr>
 <tr class="odd">
 <td>5</td>
@@ -877,7 +877,7 @@ These additional options can help you visualise the separation and overlap among
 <section id="set-up-the-analysis-1" class="level3">
 <h3 class="anchored" data-anchor-id="set-up-the-analysis-1">Set up the analysis</h3>
 <ol type="1">
-<li>Select <strong>Analyses → <em>miso</em> → Cluster analysis</strong>.</li>
+<li>Select <strong>Analyses → Multivariate → Cluster analysis</strong>.</li>
 <li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
 <li><strong>Optional:</strong> Move <strong>Site</strong> into <strong>Sample Labels</strong> if you want individual samples identified on the dendrogram.</li>
 <li>Under <strong>Analysis Choices</strong>, set:
@@ -910,7 +910,7 @@ These additional options can help you visualise the separation and overlap among
 <section id="set-up-the-analysis-2" class="level3">
 <h3 class="anchored" data-anchor-id="set-up-the-analysis-2">Set up the analysis</h3>
 <ol type="1">
-<li>Select <strong>Analyses → <em>miso</em> → ANOSIM</strong>.</li>
+<li>Select <strong>Analyses → Multivariate → ANOSIM</strong>.</li>
 <li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
 <li>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</li>
 <li>Under <strong>Analysis Choices</strong>, set:
@@ -955,67 +955,84 @@ These additional options can help you visualise the separation and overlap among
 <section id="test-community-and-sample-effects-using-permanova" class="level3">
 <h3 class="anchored" data-anchor-id="test-community-and-sample-effects-using-permanova">Test Community and Sample effects using PERMANOVA</h3>
 <p>Permutational Multivariate Analysis of Variance (<strong>PERMANOVA</strong>) allows us to test more complex hypotheses involving multiple factors.</p>
-<p>For AntDataTotal, we will test:</p>
+<p>For AntDataTotal, we will fit a model containing:</p>
 <ul>
 <li><strong>Community</strong></li>
 <li><strong>Sample</strong></li>
 <li><strong>Community × Sample</strong></li>
 </ul>
-<p>These terms answer three different biological questions:</p>
+<p>These terms represent three biological questions:</p>
 <ul>
 <li><strong>Community:</strong> Does ant assemblage composition differ among Communities?</li>
 <li><strong>Sample:</strong> Does ant assemblage composition differ between <strong>Edge</strong> and <strong>Interior</strong> samples?</li>
 <li><strong>Community × Sample:</strong> Does the difference between Edge and Interior samples vary among Communities?</li>
 </ul>
+<p>In this exercise, we use <strong>marginal terms</strong> to test the interaction. Community and Sample remain in the model, but are not tested separately while their interaction is included.</p>
 </section>
 <section id="set-up-the-analysis-3" class="level3">
 <h3 class="anchored" data-anchor-id="set-up-the-analysis-3">Set up the analysis</h3>
 <ol type="1">
-<li>Select <strong>Analyses → <em>miso</em> → PERMANOVA</strong>.</li>
+<li>Select <strong>Analyses → Multivariate → PERMANOVA</strong>.</li>
 <li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
 <li>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</li>
-<li>Move <strong>Sample</strong> into <strong>Additional Factors</strong>.</li>
+<li>Move <strong>Sample</strong> into <strong>Additional Factors</strong>, then select <strong>Model interactions</strong> beneath it.</li>
 <li>Under <strong>Analysis Choices</strong>, set:
 <ul>
 <li><strong>Transformation → Fourth root</strong></li>
 <li><strong>Dissimilarity index → Bray-Curtis</strong></li>
+<li><strong>Permutation restrictions → Free</strong></li>
+<li><strong>Test type → Marginal terms</strong></li>
 </ul></li>
-<li>Select <strong>Model Interactions</strong>. This adds the <strong>Community × Sample</strong> interaction to the model.</li>
-<li>Set <strong>Number of permutations = 999</strong>.</li>
-<li>Set <strong>Permutation restrictions → Free</strong>.</li>
-<li>Select <strong>Test type → Marginal terms</strong>. This tests each term while accounting for the other terms in the model.</li>
-<li>Select <strong>Pairwise comparisons</strong>.</li>
-<li>Set <strong>P-value adjustment → Holm</strong>.</li>
+<li>Select <strong>Pairwise comparisons</strong> and set <strong>P-value adjustment → Holm</strong>.</li>
+<li>Under <strong>Reproducibility and Technical Settings</strong>, set <strong>Number of permutations = 999</strong>.</li>
 </ol>
+<p>Leave <strong>Blocking Variable</strong> and <strong>Continuous Covariates</strong> empty for this exercise. Keep <strong>Binary (presence/absence)</strong> and <strong>Square-root distances</strong> unchecked, and <strong>Additive constant → None</strong>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Default</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Warm tint</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><video src="assets/w10-jamovi-permanova.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-permanova.mp4">Video</a></video></p>
 <figcaption>Setting up the PERMANOVA analysis in jamovi.</figcaption>
 </figure>
 </div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w10-jamovi-permanova-manila.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-permanova-manila.mp4">Video</a></video></p>
+<figcaption>Setting up the PERMANOVA analysis in jamovi.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Video note:</strong> This recording finishes with a model without interactions. Follow the written settings above for this exercise.</p>
 </section>
 <section id="read-the-output-3" class="level3">
 <h3 class="anchored" data-anchor-id="read-the-output-3">Read the output</h3>
-<p>Examine the PERMANOVA results for:</p>
-<ul>
-<li><strong>Community</strong></li>
-<li><strong>Sample</strong></li>
-<li><strong>Community × Sample</strong></li>
-</ul>
-<p>For each term, examine:</p>
+<p>Read the <strong>Community × Sample</strong> row in the PERMANOVA results. Examine:</p>
 <ul>
 <li>degrees of freedom (<strong>df</strong>);</li>
 <li><strong>pseudo-F</strong> statistic;</li>
 <li><strong>R²</strong> or variance explained, where provided;</li>
 <li><strong>P-value</strong>.</li>
 </ul>
-<p>Interpret the effects as follows:</p>
-<ul>
-<li>A significant <strong>Community</strong> effect indicates that ant assemblage composition differs among Communities.</li>
-<li>A significant <strong>Sample</strong> effect indicates that assemblage composition differs between Edge and Interior samples overall.</li>
-<li>A significant <strong>Community × Sample</strong> interaction indicates that the difference between Edge and Interior samples varies among Communities.</li>
-</ul>
-<p><strong>Important:</strong> If the <strong>Community × Sample interaction is significant</strong>, examine and interpret the interaction before drawing conclusions about the main effects of Community or Sample.</p>
+<p>A significant interaction indicates that the difference between Edge and Interior assemblages varies among Communities.</p>
+<p><strong>Community</strong> and <strong>Sample</strong> are not shown as separate tests because they are included in the interaction. Their absence does not mean that their effects are non-significant.</p>
+</section>
+<section id="read-the-pairwise-results" class="level3">
+<h3 class="anchored" data-anchor-id="read-the-pairwise-results">Read the pairwise results</h3>
+<p>The pairwise tables compare Communities separately within <strong>Edge</strong> and <strong>Interior</strong> samples. These are conditional comparisons: for example, BGHF versus CCIF within Edge samples.</p>
+<p>Use <strong>Adjusted p</strong> to assess each comparison. Holm adjustment covers all 20 planned comparisons across both tables. Each comparison uses only the samples belonging to that pair of Communities and Sample level.</p>
+<p>These tables do <strong>not</strong> compare Edge against Interior within each Community. A comparison marked <strong>not estimated</strong> could not be tested; do not interpret it as non-significant.</p>
+</section>
+<section id="report-the-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="report-the-analysis">Report the analysis</h3>
+<p>For example:</p>
+<p>“The Community × Sample interaction was [significant/not significant] (pseudo-F = …, df = …, permutation p = …). The analysis used fourth-root-transformed abundances, Bray–Curtis dissimilarities, marginal terms and … permutations (seed = …).”</p>
+<p>Use the permutation count and seed shown in your output. When reporting pairwise results, identify the Sample level and give the adjusted p-value.</p>
 </section>
 </section>
 <section id="permdisp" class="level2">
@@ -1028,7 +1045,7 @@ These additional options can help you visualise the separation and overlap among
 <section id="set-up-the-analysis-4" class="level3">
 <h3 class="anchored" data-anchor-id="set-up-the-analysis-4">Set up the analysis</h3>
 <ol type="1">
-<li>Select <strong>Analyses → <em>miso</em> → PERMDISP</strong>.</li>
+<li>Select <strong>Analyses → Multivariate → PERMDISP</strong>.</li>
 <li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
 <li>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</li>
 <li>Under <strong>Analysis Choices</strong>, set:
@@ -1065,7 +1082,7 @@ These additional options can help you visualise the separation and overlap among
 <section id="set-up-the-analysis-5" class="level3">
 <h3 class="anchored" data-anchor-id="set-up-the-analysis-5">Set up the analysis</h3>
 <ol type="1">
-<li>Select <strong>Analyses → <em>miso</em> → SIMPER</strong>.</li>
+<li>Select <strong>Analyses → Multivariate → SIMPER</strong>.</li>
 <li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
 <li>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</li>
 <li>Under <strong>Transformation</strong>, select <strong>Fourth root</strong>.</li>

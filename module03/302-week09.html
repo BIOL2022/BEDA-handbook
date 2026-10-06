@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-17141385aa4b0bf0ecbdc929bff632d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-aa8b43372feb8603cbf58c1870be21ad.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-dark-6b47e39b6bee3225cb7c93008a39cf07.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-17141385aa4b0bf0ecbdc929bff632d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -647,12 +647,10 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="run-the-pca">Run the PCA</h3>
 <p><strong>The process in JAMOVI is listed below. R instructions are given on Canvas in an R script file.</strong></p>
 <ol type="1">
-<li>Import your data. <a href="https://canvas.sydney.edu.au/courses/74353/pages/module-3-resources"><strong>Download it here</strong></a>. If the link does not work, please go on to <a href="https://canvas.sydney.edu.au/courses/74353">Canvas</a>. A new <strong>Module 3 Resources</strong> link has been added to the front page.
+<li>Import your data. <a href="https://canvas.sydney.edu.au/courses/74353/files/50497754/download?download_frd=1"><strong>Download the Week 9 PCA data file</strong></a>. If the direct download does not work, open <a href="https://canvas.sydney.edu.au/courses/74353/pages/module-3-resources"><strong>Module 3 Resources on Canvas</strong></a> and download the file there.
 <ul>
 <li>Open <strong>Jamovi</strong>.</li>
 <li>Go to the top-left menu (☰) → click <strong>Open</strong> → <strong>Browse</strong> and select your Excel/csv file (e.g., your lecturer dataset).</li>
-<li>Once the data are imported, check that all the columns (variables) are correctly recognised as numeric (look for a ruler icon in the column headers).</li>
-<li>You may convert columns of interest to numeric in several ways. One way is to use the <strong>Variables</strong> tab to select all the variables of interest (use Shift+click or Ctrl+click) and then click on Edit and change “<strong>Measure Type</strong>” to “<strong>Continuous</strong>”.</li>
 </ul></li>
 </ol>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
@@ -662,7 +660,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><video src="assets/w09-jamovi-load-data.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-load-data.mp4">Video</a></video></p>
-<figcaption>Video showing how to load the Week 9 data file in Jamovi.</figcaption>
+<figcaption>Video showing how to open the Week 9 lecturer dataset in jamovi.</figcaption>
 </figure>
 </div>
 </div>
@@ -670,7 +668,30 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><video src="assets/w09-jamovi-load-data-manila.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-load-data-manila.mp4">Video</a></video></p>
-<figcaption>Video showing how to load the Week 9 data file in Jamovi.</figcaption>
+<figcaption>Video showing how to open the Week 9 lecturer dataset in jamovi.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Set the 21 lecturer-rating variables, from <strong>accessible_approachable</strong> to <strong>well respected in their field</strong>, to <strong>Continuous</strong> (look for a ruler icon in the column headers). Leave <strong>gender</strong>, <strong>main organism</strong> and <strong>main system</strong> as <strong>Nominal</strong>.</p>
+<p>To change the rating variables together, go to the <strong>Variables</strong> tab. Click <strong>accessible_approachable</strong>, then hold <strong>Shift</strong> and click <strong>well respected in their field</strong> to select all 21 rating variables. Click <strong>Edit</strong> and set <strong>Measure type</strong> to <strong>Continuous</strong>. The video below shows how to do this for the lecturer dataset.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Default</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Warm tint</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w09-jamovi-variables-continuous.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-variables-continuous.mp4">Video</a></video></p>
+<figcaption>Video showing how to set the lecturer-rating variables to Continuous in jamovi.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w09-jamovi-variables-continuous-manila.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-variables-continuous-manila.mp4">Video</a></video></p>
+<figcaption>Video showing how to set the lecturer-rating variables to Continuous in jamovi.</figcaption>
 </figure>
 </div>
 </div>
@@ -679,51 +700,11 @@ ul.task-list li input[type="checkbox"] {
 <ol start="2" type="1">
 <li>Run Principal Components Analysis.
 <ul>
-<li>Click on the <strong>“Factor”</strong> tab in the top toolbar.</li>
-<li>Select <strong>Principal Component Analysis</strong>.</li>
+<li>Go to <strong>Analyses → Factor → Principal Component Analysis</strong>.</li>
 </ul></li>
 <li>Select your variables.
 <ul>
-<li>In the new section, select the variables of interest from the panel on the left and move them into the <strong>“Variables”</strong> box.</li>
-<li>You can do this by either clicking on the arrow button or dragging and dropping them.</li>
-</ul></li>
-</ol>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Default</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Warm tint</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><video src="assets/w09-jamovi-run-pca.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-run-pca.mp4">Video</a></video></p>
-<figcaption>Video showing how to open the PCA analysis in Jamovi.</figcaption>
-</figure>
-</div>
-</div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><video src="assets/w09-jamovi-run-pca-manila.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-run-pca-manila.mp4">Video</a></video></p>
-<figcaption>Video showing how to open the PCA analysis in Jamovi.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<ol start="4" type="1">
-<li>Descriptive statistics and suitability tests.
-<ul>
-<li>Under <strong>“Assumption Checks”</strong>, tick the box for <strong>Bartlett’s Test of Sphericity</strong> (to check if your data is suitable for PCA).</li>
-</ul></li>
-<li>Extraction settings.
-<ul>
-<li>Select <strong>“Based on eigenvalue”</strong> so that components with <strong>eigenvalues &gt; 1</strong> (Kaiser’s criterion) are retained. Change this only if you have a specific reason to do so.</li>
-<li>Tick <strong>Scree Plot</strong>.</li>
-<li>Tick <strong>Unrotated solution</strong>.</li>
-</ul></li>
-<li>Rotation.
-<ul>
-<li>In the <strong>“Rotation”</strong> section, choose <strong>Varimax</strong> rotation (this is the most common rotation method).</li>
-<li>Tick <strong>Display Rotated Solution</strong>.</li>
+<li>Click <strong>accessible_approachable</strong>, then hold <strong>Shift</strong> and click <strong>well respected in their field</strong> to select all 21 rating variables. Click the arrow to move them into <strong>Variables</strong>. Check that you have left out the student ID and the grouping columns.</li>
 </ul></li>
 </ol>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
@@ -732,35 +713,100 @@ ul.task-list li input[type="checkbox"] {
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><video src="assets/w09-jamovi-pca-options.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-pca-options.mp4">Video</a></video></p>
-<figcaption>Video showing the Jamovi PCA options to select.</figcaption>
+<p><video src="assets/w09-jamovi-run-pca.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-run-pca.mp4">Video</a></video></p>
+<figcaption>Video showing how to open Principal Component Analysis and move the lecturer-rating variables into the analysis.</figcaption>
 </figure>
 </div>
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><video src="assets/w09-jamovi-pca-options-manila.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-pca-options-manila.mp4">Video</a></video></p>
-<figcaption>Video showing the Jamovi PCA options to select.</figcaption>
+<p><video src="assets/w09-jamovi-run-pca-manila.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-run-pca-manila.mp4">Video</a></video></p>
+<figcaption>Video showing how to open Principal Component Analysis and move the lecturer-rating variables into the analysis.</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </div>
-<ol start="7" type="1">
+<p>Some options may already be selected by default. Check that your settings match those below, and change them where needed.</p>
+<ol start="4" type="1">
+<li>Method.
+<ul>
+<li>Check that <strong>Varimax</strong> is selected in the <strong>Rotation</strong> dropdown. The rotated loadings will appear in the <strong>Component Loadings</strong> table.</li>
+</ul></li>
+<li>Assumption Checks.
+<ul>
+<li>Check that <strong>Bartlett’s test of sphericity</strong> is ticked (to help assess whether the data are suitable for PCA).</li>
+</ul></li>
+<li>Number of Components.
+<ul>
+<li>Select <strong>Based on eigenvalue</strong> and check that <strong>Eigenvalues greater than</strong> is set to <strong>1</strong> (Kaiser’s criterion). Change this only if you have a specific reason to do so.</li>
+</ul></li>
+<li>Additional Output.
+<ul>
+<li>Check that <strong>Component summary</strong>, <strong>Initial eigenvalues</strong> and <strong>Scree plot</strong> are ticked.</li>
+</ul></li>
+</ol>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Default</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Warm tint</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w09-jamovi-pca-options.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-pca-options.mp4">Video</a></video></p>
+<figcaption>Video showing how to set the PCA options in jamovi.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w09-jamovi-pca-options-manila.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-pca-options-manila.mp4">Video</a></video></p>
+<figcaption>Video showing how to set the PCA options in jamovi.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<ol start="8" type="1">
 <li>Save component scores.
 <ul>
-<li>Tick “Save component scores to data set” (usually found under the Scores section at the bottom).</li>
-<li>This will add new variables to your dataset representing each component.</li>
-<li>You can view the new variables by clicking on the <strong>Data</strong> tab at the top of the screen and scrolling to the right.</li>
+<li>Open <strong>Save</strong> and check that <strong>Component scores</strong> is ticked.</li>
+<li>Go to the <strong>Data</strong> tab and scroll to the right to find the new columns: <strong>Score Component 1</strong>, <strong>Score Component 2</strong>, and so on.</li>
 </ul></li>
-<li>Missing data handling.
+</ol>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href="">Default</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href="">Warm tint</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w09-jamovi-save-component-scores.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-save-component-scores.mp4">Video</a></video></p>
+<figcaption>Video showing how to save component scores and view the new columns in the Data tab.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="assets/w09-jamovi-save-component-scores-manila.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-save-component-scores-manila.mp4">Video</a></video></p>
+<figcaption>Video showing how to save component scores and view the new columns in the Data tab.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<ol start="9" type="1">
+<li>Check your data and results.
 <ul>
-<li>At the bottom of the PCA panel, set <strong>“Missing values”</strong> to <strong>Exclude cases listwise</strong>.</li>
+<li>Check the rating columns for missing entries before interpreting your results.</li>
+<li>jamovi updates the results as you change the settings, so wait for it to finish before reading the tables.</li>
 </ul></li>
-<li>Run the analysis.
+<li>Produce the correlation matrix.
 <ul>
-<li>Click anywhere outside the setup panel, and Jamovi will display your PCA results.</li>
+<li>Go to <strong>Analyses → Regression → Correlation Matrix</strong>.</li>
+<li>Select the same 21 lecturer-rating variables and click the arrow to move them into the analysis.</li>
+<li>Under <strong>Correlation Coefficients</strong>, check that <strong>Pearson</strong> is ticked.</li>
 </ul></li>
 </ol>
 </section>
@@ -785,7 +831,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="compare-groups-using-component-scores" class="level3">
 <h3 class="anchored" data-anchor-id="compare-groups-using-component-scores">Compare groups using component scores</h3>
-<p>Examine whether gender, system biases (marine v. terrestrial) and taxon (animal v. plant) biases may affect the perceptions of biology lecturers. You will need to code the columns for each factor (i.e., males = 0, females = 1) for Jamovi to perform its standard one-way ANOVAs or t-tests.</p>
+<p>Examine whether gender, system biases (marine v. terrestrial) and taxon (animal v. plant) biases may affect the perceptions of biology lecturers. You can use the text labels already in <strong>gender</strong>, <strong>main organism</strong> and <strong>main system</strong> for the group comparisons. Check that these columns are set to <strong>Nominal</strong>; there is no need to recode them as numbers.</p>
+<p>For an independent-samples t-test, go to <strong>Analyses → T-Tests → Independent Samples T-Test</strong>. Put the saved component scores into <strong>Dependent Variables</strong> and the relevant nominal grouping column into <strong>Grouping Variable</strong>. Under <strong>Tests</strong>, untick <strong>Student’s</strong> and tick <strong>Welch’s</strong> if the assumption of equal variances is not met.</p>
 <p>Questions to consider:</p>
 <ul>
 <li>Do males and females perceive lecturer qualities the same way?</li>
@@ -872,9 +919,9 @@ ul.task-list li input[type="checkbox"] {
 <li>A “Module installed successfully” message will appear. After installation, check that a new <strong>Multivariate</strong> section appears under <strong>Analyses</strong> in jamovi.</li>
 </ol>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Default</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Warm tint</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true" href="">Default</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false" href="">Warm tint</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><video src="assets/w09-jamovi-install-miso.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-install-miso.mp4">Video</a></video></p>
@@ -882,7 +929,7 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><video src="assets/w09-jamovi-install-miso-manila.mp4" class="img-fluid" controls=""><a href="assets/w09-jamovi-install-miso-manila.mp4">Video</a></video></p>
