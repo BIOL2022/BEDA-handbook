@@ -377,6 +377,7 @@
     },
     "bitops": {
       "Package": "bitops",
+      "Imports": [],
       "Version": "1.0-9",
       "Source": "Repository",
       "Date": "2024-10-03",
@@ -924,6 +925,7 @@
     },
     "curl": {
       "Package": "curl",
+      "Imports": [],
       "Version": "7.1.0",
       "Source": "Repository",
       "Type": "Package",
