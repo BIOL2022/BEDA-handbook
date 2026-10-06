@@ -62,13 +62,33 @@ You will use PCA to reduce your set of measured variables to a coherent, smaller
    - Open **Jamovi**.
    - Go to the top-left menu (☰) → click **Open** → **Browse** and select your Excel/csv file (e.g., your lecturer dataset).
 
+::: {.panel-tabset}
+
+#### Default
+
 ![Video showing how to open the Week 9 lecturer dataset in jamovi.](assets/w09-jamovi-load-data.mp4)
+
+#### Warm tint
+
+![Video showing how to open the Week 9 lecturer dataset in jamovi.](assets/w09-jamovi-load-data-manila.mp4)
+
+:::
 
 Set the 21 lecturer-rating variables, from **accessible_approachable** to **well respected in their field**, to **Continuous** (look for a ruler icon in the column headers). Leave **gender**, **main organism** and **main system** as **Nominal**.
 
 To change the rating variables together, go to the **Variables** tab. Click **accessible_approachable**, then hold **Shift** and click **well respected in their field** to select all 21 rating variables. Click **Edit** and set **Measure type** to **Continuous**. The video below shows how to do this for the lecturer dataset.
 
+::: {.panel-tabset}
+
+#### Default
+
 ![Video showing how to set the lecturer-rating variables to Continuous in jamovi.](assets/w09-jamovi-variables-continuous.mp4)
+
+#### Warm tint
+
+![Video showing how to set the lecturer-rating variables to Continuous in jamovi.](assets/w09-jamovi-variables-continuous-manila.mp4)
+
+:::
 
 2. Run Principal Components Analysis.
    - Go to **Analyses → Factor → Principal Component Analysis**.
@@ -76,7 +96,17 @@ To change the rating variables together, go to the **Variables** tab. Click **ac
 3. Select your variables.
    - Click **accessible_approachable**, then hold **Shift** and click **well respected in their field** to select all 21 rating variables. Click the arrow to move them into **Variables**. Check that you have left out the student ID and the grouping columns.
 
+::: {.panel-tabset}
+
+#### Default
+
 ![Video showing how to open Principal Component Analysis and move the lecturer-rating variables into the analysis.](assets/w09-jamovi-run-pca.mp4)
+
+#### Warm tint
+
+![Video showing how to open Principal Component Analysis and move the lecturer-rating variables into the analysis.](assets/w09-jamovi-run-pca-manila.mp4)
+
+:::
 
 Some options may already be selected by default. Check that your settings match those below, and change them where needed.
 
@@ -92,13 +122,33 @@ Some options may already be selected by default. Check that your settings match 
 7. Additional Output.
    - Check that **Component summary**, **Initial eigenvalues** and **Scree plot** are ticked.
 
+::: {.panel-tabset}
+
+#### Default
+
 ![Video showing how to set the PCA options in jamovi.](assets/w09-jamovi-pca-options.mp4)
+
+#### Warm tint
+
+![Video showing how to set the PCA options in jamovi.](assets/w09-jamovi-pca-options-manila.mp4)
+
+:::
 
 8. Save component scores.
    - Open **Save** and check that **Component scores** is ticked.
    - Go to the **Data** tab and scroll to the right to find the new columns: **Score Component 1**, **Score Component 2**, and so on.
 
+::: {.panel-tabset}
+
+#### Default
+
 ![Video showing how to save component scores and view the new columns in the Data tab.](assets/w09-jamovi-save-component-scores.mp4)
+
+#### Warm tint
+
+![Video showing how to save component scores and view the new columns in the Data tab.](assets/w09-jamovi-save-component-scores-manila.mp4)
+
+:::
 
 9. Check your data and results.
    - Check the rating columns for missing entries before interpreting your results.
