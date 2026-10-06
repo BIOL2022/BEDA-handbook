@@ -61,75 +61,53 @@ You will use PCA to reduce your set of measured variables to a coherent, smaller
 1. Import your data. [**Download the Week 9 PCA data file**](canvas:/files/50497754/download?download_frd=1). If the direct download does not work, open [**Module 3 Resources on Canvas**](canvas:/pages/module-3-resources) and download the file there.
    - Open **Jamovi**.
    - Go to the top-left menu (☰) → click **Open** → **Browse** and select your Excel/csv file (e.g., your lecturer dataset).
-   - Once the data are imported, check that all the columns (variables) are correctly recognised as numeric (look for a ruler icon in the column headers).
-   - You may convert columns of interest to numeric in several ways. One way is to use the **Variables** tab to select all the variables of interest (use Shift+click or Ctrl+click) and then click on Edit and change "**Measure Type**" to "**Continuous**".
 
-::: {.panel-tabset}
+![Video showing how to open the Week 9 lecturer dataset in jamovi.](assets/w09-jamovi-load-data.mp4)
 
-#### Default
+Set the 21 lecturer-rating variables, from **accessible_approachable** to **well respected in their field**, to **Continuous** (look for a ruler icon in the column headers). Leave **gender**, **main organism** and **main system** as **Nominal**.
 
-![Video showing how to load the Week 9 data file in Jamovi.](assets/w09-jamovi-load-data.mp4)
+To change the rating variables together, go to the **Variables** tab, select them, then click **Edit** and set **Measure type** to **Continuous**. The video below shows how to do this for the lecturer dataset.
 
-#### Warm tint
-
-![Video showing how to load the Week 9 data file in Jamovi.](assets/w09-jamovi-load-data-manila.mp4)
-
-:::
+![Video showing how to set the lecturer-rating variables to Continuous in jamovi.](assets/w09-jamovi-variables-continuous.mp4)
 
 2. Run Principal Components Analysis.
-   - Click on the **“Factor”** tab in the top toolbar.
-   - Select **Principal Component Analysis**.
+   - Go to **Analyses → Factor → Principal Component Analysis**.
 
 3. Select your variables.
-   - In the new section, select the variables of interest from the panel on the left and move them into the **“Variables”** box.
-   - You can do this by either clicking on the arrow button or dragging and dropping them.
+   - Select the 21 lecturer-rating variables and click the arrow to move them into **Variables**. Check that you have left out the student ID and the grouping columns.
 
-::: {.panel-tabset}
+![Video showing how to open Principal Component Analysis and move the lecturer-rating variables into the analysis.](assets/w09-jamovi-run-pca.mp4)
 
-#### Default
+Some options may already be selected by default. Check that your settings match those below, and change them where needed.
 
-![Video showing how to open the PCA analysis in Jamovi.](assets/w09-jamovi-run-pca.mp4)
+4. Method.
+   - Check that **Varimax** is selected in the **Rotation** dropdown. The rotated loadings will appear in the **Component Loadings** table.
 
-#### Warm tint
+5. Assumption Checks.
+   - Check that **Bartlett’s test of sphericity** is ticked (to help assess whether the data are suitable for PCA).
 
-![Video showing how to open the PCA analysis in Jamovi.](assets/w09-jamovi-run-pca-manila.mp4)
+6. Number of Components.
+   - Select **Based on eigenvalue** and check that **Eigenvalues greater than** is set to **1** (Kaiser’s criterion). Change this only if you have a specific reason to do so.
 
-:::
+7. Additional Output.
+   - Check that **Component summary**, **Initial eigenvalues** and **Scree plot** are ticked.
 
-4. Descriptive statistics and suitability tests.
-   - Under **“Assumption Checks”**, tick the box for **Bartlett’s Test of Sphericity** (to check if your data is suitable for PCA).
+![Video showing how to set the PCA options in jamovi.](assets/w09-jamovi-pca-options.mp4)
 
-5. Extraction settings.
-   - Select **“Based on eigenvalue”** so that components with **eigenvalues > 1** (Kaiser’s criterion) are retained. Change this only if you have a specific reason to do so.
-   - Tick **Scree Plot**.
-   - Tick **Unrotated solution**.
+8. Save component scores.
+   - Open **Save** and check that **Component scores** is ticked.
+   - Go to the **Data** tab and scroll to the right to find the new columns: **Score Component 1**, **Score Component 2**, and so on.
 
-6. Rotation.
-   - In the **“Rotation”** section, choose **Varimax** rotation (this is the most common rotation method).
-   - Tick **Display Rotated Solution**.
+![Video showing how to save component scores and view the new columns in the Data tab.](assets/w09-jamovi-save-component-scores.mp4)
 
-::: {.panel-tabset}
+9. Check your data and results.
+   - Check the rating columns for missing entries before interpreting your results.
+   - jamovi updates the results as you change the settings, so wait for it to finish before reading the tables.
 
-#### Default
-
-![Video showing the Jamovi PCA options to select.](assets/w09-jamovi-pca-options.mp4)
-
-#### Warm tint
-
-![Video showing the Jamovi PCA options to select.](assets/w09-jamovi-pca-options-manila.mp4)
-
-:::
-
-7. Save component scores.
-   - Tick “Save component scores to data set” (usually found under the Scores section at the bottom).
-   - This will add new variables to your dataset representing each component.
-   - You can view the new variables by clicking on the **Data** tab at the top of the screen and scrolling to the right.
-
-8. Missing data handling.
-   - At the bottom of the PCA panel, set **“Missing values”** to **Exclude cases listwise**.
-
-9. Run the analysis.
-   - Click anywhere outside the setup panel, and Jamovi will display your PCA results.
+10. Produce the correlation matrix.
+   - Go to **Analyses → Regression → Correlation Matrix**.
+   - Select the same 21 lecturer-rating variables and click the arrow to move them into the analysis.
+   - Under **Correlation Coefficients**, check that **Pearson** is ticked.
 
 ### Review the output
 
@@ -149,7 +127,9 @@ You need to:
 
 ### Compare groups using component scores
 
-Examine whether gender, system biases (marine v. terrestrial) and taxon (animal v. plant) biases may affect the perceptions of biology lecturers. You will need to code the columns for each factor (i.e., males = 0, females = 1) for Jamovi to perform its standard one-way ANOVAs or t-tests.
+Examine whether gender, system biases (marine v. terrestrial) and taxon (animal v. plant) biases may affect the perceptions of biology lecturers. You can use the text labels already in **gender**, **main organism** and **main system** for the group comparisons. Check that these columns are set to **Nominal**; there is no need to recode them as numbers.
+
+For an independent-samples t-test, go to **Analyses → T-Tests → Independent Samples T-Test**. Put the saved component scores into **Dependent Variables** and the relevant nominal grouping column into **Grouping Variable**. Under **Tests**, untick **Student’s** and tick **Welch’s** if the assumption of equal variances is not met.
 
 Questions to consider:
 
