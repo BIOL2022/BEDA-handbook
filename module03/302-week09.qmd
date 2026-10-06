@@ -66,7 +66,7 @@ You will use PCA to reduce your set of measured variables to a coherent, smaller
 
 Set the 21 lecturer-rating variables, from **accessible_approachable** to **well respected in their field**, to **Continuous** (look for a ruler icon in the column headers). Leave **gender**, **main organism** and **main system** as **Nominal**.
 
-To change the rating variables together, go to the **Variables** tab, select them, then click **Edit** and set **Measure type** to **Continuous**. The video below shows how to do this for the lecturer dataset.
+To change the rating variables together, go to the **Variables** tab. Click **accessible_approachable**, then hold **Shift** and click **well respected in their field** to select all 21 rating variables. Click **Edit** and set **Measure type** to **Continuous**. The video below shows how to do this for the lecturer dataset.
 
 ![Video showing how to set the lecturer-rating variables to Continuous in jamovi.](assets/w09-jamovi-variables-continuous.mp4)
 
@@ -74,7 +74,7 @@ To change the rating variables together, go to the **Variables** tab, select the
    - Go to **Analyses → Factor → Principal Component Analysis**.
 
 3. Select your variables.
-   - Select the 21 lecturer-rating variables and click the arrow to move them into **Variables**. Check that you have left out the student ID and the grouping columns.
+   - Click **accessible_approachable**, then hold **Shift** and click **well respected in their field** to select all 21 rating variables. Click the arrow to move them into **Variables**. Check that you have left out the student ID and the grouping columns.
 
 ![Video showing how to open Principal Component Analysis and move the lecturer-rating variables into the analysis.](assets/w09-jamovi-run-pca.mp4)
 
@@ -105,9 +105,9 @@ Some options may already be selected by default. Check that your settings match 
    - jamovi updates the results as you change the settings, so wait for it to finish before reading the tables.
 
 10. Produce the correlation matrix.
-   - Go to **Analyses → Regression → Correlation Matrix**.
-   - Select the same 21 lecturer-rating variables and click the arrow to move them into the analysis.
-   - Under **Correlation Coefficients**, check that **Pearson** is ticked.
+    - Go to **Analyses → Regression → Correlation Matrix**.
+    - Select the same 21 lecturer-rating variables and click the arrow to move them into the analysis.
+    - Under **Correlation Coefficients**, check that **Pearson** is ticked.
 
 ### Review the output
 
