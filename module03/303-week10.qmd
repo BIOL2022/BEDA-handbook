@@ -144,6 +144,8 @@ These settings are selected within each analysis, after opening it. They are not
 
 Use these same settings throughout the analyses below unless instructed otherwise.
 
+Some options may already be selected by default. Check that your settings match those below, and change them where needed. **Fourth root** must be selected in each new analysis; **Bray-Curtis** is the default dissimilarity index and is fixed in SIMPER.
+
 ### Analysis sequence for AntDataTotal
 
 Complete the analyses in the following order:
@@ -153,7 +155,7 @@ Complete the analyses in the following order:
 | 1 | nMDS | Fourth root; Bray–Curtis; Group = Community |
 | 2 | Cluster analysis | Fourth root; Bray–Curtis; Labels = Site |
 | 3 | ANOSIM | Community; 999 permutations |
-| 4 | PERMANOVA | Community × Sample interaction; marginal terms; 999 permutations; pairwise Community comparisons within Edge and Interior |
+| 4 | PERMANOVA | Marginal terms; 999 permutations; test Community × Sample; optionally refit without a non-significant interaction; pairwise comparisons follow the fitted model |
 | 5 | PERMDISP | Community; 999 permutations |
 | 6 | SIMPER | Community; Fourth root |
 
@@ -171,20 +173,17 @@ Non-metric multidimensional scaling (**nMDS**) provides a visual representation 
 1. Select **Analyses → Multivariate → nMDS**.
 2. Move **all ant abundance variables** into **Feature Variables**.
 3. Move **Community** into **Grouping Variable**.
-4. Under **Analysis Choices**, set:
-   - **Transformation → Fourth root**
-   - **Dissimilarity index → Bray-Curtis**
-5. Under **Plots**, keep the following selected:
-   - **Shepard Diagram**
-   - **Group point styling**
+4. Under **Analysis Choices**, select **Transformation → Fourth root** and check that **Dissimilarity index → Bray-Curtis** is selected.
+5. Under **Plots**, check that **Shepard Diagram** is ticked (the default).
+6. Under **Group Display**, check that **Group point styling** is ticked (the default).
 
    **Optional:** You can also select:
    - **Group hulls**
-   - **Group dispersion ellipses**
+   - **Group dispersion ellipses (1 SD)**
    - **Group spiders**
 
-   These additional options can help you visualise the separation and overlap among Communities.
-6. Set **Maximum random starts = 20**.
+   These additional options can help you visualise the separation and overlap among Communities. The ellipses show group spread, not confidence intervals.
+7. Under **Reproducibility**, leave **Maximum random starts = 20** at its default.
 
 ![Setting up the nMDS analysis in jamovi.](assets/w10-jamovi-nmds-setup.mp4)
 
@@ -218,9 +217,10 @@ Cluster analysis provides another way of visualising similarities among samples.
 1. Select **Analyses → Multivariate → Cluster analysis**.
 2. Move **all ant abundance variables** into **Feature Variables**.
 3. **Optional:** Move **Site** into **Sample Labels** if you want individual samples identified on the dendrogram.
-4. Under **Analysis Choices**, set:
-   - **Transformation → Fourth root**
-   - **Dissimilarity index → Bray-Curtis**.
+4. Under **Analysis Choices**, select **Transformation → Fourth root** and check that **Dissimilarity index → Bray-Curtis** is selected.
+5. **Optional:** Under **Tables**, tick **Sample order** and move **Community** and **Sample** into **Sample context (optional)**. This table identifies the samples in dendrogram order and helps you compare their Communities.
+
+*miso* uses **group-average linkage** automatically; there is no linkage setting to change.
 
 ![Setting up the cluster analysis in jamovi.](assets/w10-jamovi-cluster-analysis.mp4)
 
@@ -244,13 +244,10 @@ For this analysis, the question is:
 1. Select **Analyses → Multivariate → ANOSIM**.
 2. Move **all ant abundance variables** into **Feature Variables**.
 3. Move **Community** into **Grouping Variable**.
-4. Under **Analysis Choices**, set:
-   - **Transformation → Fourth root**
-   - **Dissimilarity index → Bray-Curtis**
-5. Set **Permutations = 999**.
-6. Set **Permutation restriction → Free**.
-7. Because Community has more than two levels, select **Pairwise ANOSIM comparisons**.
-8. For multiple comparisons, set **P-value adjustment → Holm**.
+4. Under **Analysis Choices**, select **Transformation → Fourth root** and check that **Dissimilarity index → Bray-Curtis** is selected. Leave **Binary (presence/absence)** unticked.
+5. Because Community has more than two levels, tick **Pairwise ANOSIM comparisons (three or more groups)**. Check that **P-value adjustment → Holm** is selected beneath it (the default).
+6. Under **Study Design and Permutation Restrictions**, leave **Blocking Variable** empty and **Permutation restriction → Free** at its default.
+7. Under **Reproducibility and Computation**, leave **Permutations = 999** at its default.
 
 ![Setting up the ANOSIM analysis in jamovi.](assets/w10-jamovi-anosim.mp4)
 
@@ -301,30 +298,27 @@ In this exercise, we use **marginal terms** to test the interaction. Community a
 1. Select **Analyses → Multivariate → PERMANOVA**.
 2. Move **all ant abundance variables** into **Feature Variables**.
 3. Move **Community** into **Grouping Variable**.
-4. Move **Sample** into **Additional Factors**, then select **Model interactions** beneath it.
-5. Under **Analysis Choices**, set:
-   - **Transformation → Fourth root**
-   - **Dissimilarity index → Bray-Curtis**
-   - **Permutation restrictions → Free**
-   - **Test type → Marginal terms**
-6. Select **Pairwise comparisons** and set **P-value adjustment → Holm**.
-7. Under **Reproducibility and Technical Settings**, set **Number of permutations = 999**.
+4. Move **Sample** into **Additional Factors**, then tick **Model Interactions** beneath it (unticked by default).
+5. Under **Analysis Choices**:
+   - Select **Transformation → Fourth root**.
+   - Check that **Dissimilarity index → Bray-Curtis** and **Permutation restrictions → Free** are selected (the defaults).
+   - Change **Test type** from **Sequential terms** to **Marginal terms**.
+6. Tick **Pairwise comparisons** and check that **P-value adjustment → Holm** is selected beneath it (the default). If pairwise comparisons are unavailable, check the settings above first.
+7. Under **Reproducibility and Technical Settings**, leave **Number of permutations = 999** at its default.
 
-Leave **Blocking Variable** and **Continuous Covariates** empty for this exercise. Keep **Binary (presence/absence)** and **Square-root distances** unchecked, and **Additive constant → None**.
+Leave **Blocking Variable** and **Continuous Covariates** empty for this exercise. Under **Analysis Choices**, leave **Binary (presence/absence)** and **Square-root distances** unticked, and **Additive constant → None** (the defaults).
 
 ::: {.panel-tabset}
 
 #### Default
 
-![Setting up the PERMANOVA analysis in jamovi.](assets/w10-jamovi-permanova.mp4)
+![Setting up the PERMANOVA analysis in jamovi. If the interaction is not significant, you can untick **Model Interactions** to refit an additive model; keep **Marginal terms** selected.](assets/w10-jamovi-permanova.mp4)
 
 #### Warm tint
 
-![Setting up the PERMANOVA analysis in jamovi.](assets/w10-jamovi-permanova-manila.mp4)
+![Setting up the PERMANOVA analysis in jamovi. If the interaction is not significant, you can untick **Model Interactions** to refit an additive model; keep **Marginal terms** selected.](assets/w10-jamovi-permanova-manila.mp4)
 
 :::
-
-**Video note:** This recording finishes with a model without interactions. Follow the written settings above for this exercise.
 
 ### Read the output
 
@@ -337,23 +331,35 @@ Read the **Community × Sample** row in the PERMANOVA results. Examine:
 
 A significant interaction indicates that the difference between Edge and Interior assemblages varies among Communities.
 
-**Community** and **Sample** are not shown as separate tests because they are included in the interaction. Their absence does not mean that their effects are non-significant.
+While **Model Interactions** is ticked, **Community** and **Sample** are not shown as separate marginal tests because they are included in the interaction. Their absence does not mean that their effects are non-significant.
+
+If the interaction is not significant, you may retain the interaction model or refit an additive model. To refit, untick **Model Interactions**, keep **Sample** in **Additional Factors**, and leave **Test type → Marginal terms** selected. jamovi updates the results automatically. Read the separate **Community** and **Sample** rows in this additive model; each tests that factor while accounting for the other.
 
 ### Read the pairwise results
 
-The pairwise tables compare Communities separately within **Edge** and **Interior** samples. These are conditional comparisons: for example, BGHF versus CCIF within Edge samples.
+**For this exercise, only interpret the conditional pairwise comparisons if the Community × Sample interaction is significant.** If it is not significant, do not interpret those comparisons. If you choose to refit an additive model, use its Community comparisons only if the Community effect is significant.
 
-Use **Adjusted p** to assess each comparison. Holm adjustment covers all 20 planned comparisons across both tables. Each comparison uses only the samples belonging to that pair of Communities and Sample level.
+The comparisons change when you untick **Model Interactions**:
 
-These tables do **not** compare Edge against Interior within each Community. A comparison marked **not estimated** could not be tested; do not interpret it as non-significant.
+* **Interactions ticked:** The **Pairwise PERMANOVA** table compares Communities separately within **Edge** and **Interior** samples. These are conditional comparisons: for example, BGHF versus CCIF within Edge samples. Holm adjustment covers all **20 planned comparisons** across both Sample levels. Each comparison uses only the samples belonging to that pair of Communities and Sample level.
+* **Interactions unticked:** The table compares each pair of Communities using both Edge and Interior samples, with **Sample** retained in each additive model. Holm adjustment covers the **10 Community comparisons**. These are not separate comparisons within Edge and Interior.
+
+Use **Adjusted p** to assess each comparison and check the table note for its scope. Neither mode compares Edge against Interior within each Community. A comparison marked **not estimated** could not be tested; do not interpret it as non-significant.
 
 ### Report the analysis
 
-For example:
+Report the interaction result, for example:
 
 “The Community × Sample interaction was [significant/not significant] (pseudo-F = …, df = …, permutation p = …). The analysis used fourth-root-transformed abundances, Bray–Curtis dissimilarities, marginal terms and … permutations (seed = …).”
 
-Use the permutation count and seed shown in your output. When reporting pairwise results, identify the Sample level and give the adjusted p-value.
+If the interaction is not significant, you have two options:
+
+* **Retain the interaction model:** Report its interaction result. With **Marginal terms** selected, this model does not provide separate Community and Sample tests; do not describe these effects as non-significant.
+* **Refit an additive model:** Untick **Model Interactions**, retaining both factors and **Test type → Marginal terms**. Report the separate Community and Sample results (pseudo-F, df and permutation p), and state that you refitted the model without the non-significant interaction.
+
+**Both options use marginal tests.** The choice is whether to retain the interaction in the model, not whether to use marginal tests.
+
+Use the permutation count and seed shown in your output. Report conditional pairwise comparisons only if the interaction is significant. For an additive model, report Community pairwise comparisons only if the Community effect is significant. Give adjusted p-values and identify the Sample level for conditional comparisons.
 
 ## 5. PERMDISP
 ### Check multivariate dispersion using PERMDISP
@@ -367,13 +373,12 @@ PERMANOVA tests for differences in multivariate assemblage composition. However,
 1. Select **Analyses → Multivariate → PERMDISP**.
 2. Move **all ant abundance variables** into **Feature Variables**.
 3. Move **Community** into **Grouping Variable**.
-4. Under **Analysis Choices**, set:
-   - **Transformation → Fourth root**
-   - **Dissimilarity index → Bray-Curtis**
-   - **Group centre → Median**
-   - **Permutations = 999**
-5. Keep **Distance-to-centre diagnostic** selected.
-6. **Conditional:** You may also select **Pairwise dispersion comparisons** if the overall PERMDISP test is significant.
+4. Under **Analysis Choices**, select **Transformation → Fourth root** and check that **Dissimilarity index → Bray-Curtis** and **Group centre → Median** are selected (the defaults).
+5. Under **Plots**, check that **Distance-to-centre diagnostic** is ticked (the default).
+6. Under **Reproducibility and Computation**, leave **Permutations = 999** and **Permutation restriction → Free** at their defaults.
+7. **Conditional:** If the overall PERMDISP test is significant, you may tick **Pairwise dispersion comparisons** under **Analysis Choices**. Check that **P-value adjustment → Holm** is selected beneath it (the default).
+
+Leave the **Advanced Options** at their defaults: **Binary (presence/absence)**, **Square-root distances** and **Bias adjustment** unticked, and **Additive constant → None**.
 
 ![Setting up the PERMDISP analysis in jamovi.](assets/w10-jamovi-permdisp.mp4)
 
@@ -383,7 +388,9 @@ A **non-significant PERMDISP** result indicates that there is no evidence that t
 
 A **significant PERMDISP** result indicates that at least some Communities differ in their multivariate spread.
 
-If PERMDISP is significant, interpret the PERMANOVA result with additional caution and examine the nMDS and distance-to-centre plot to understand the pattern.
+This check assesses dispersion among Communities, pooling Edge and Interior samples; it does not assess dispersion across the Community × Sample groups. If you also interpret the Sample effect, repeat PERMDISP with **Sample** as the **Grouping Variable**.
+
+If PERMDISP is significant, interpret the corresponding PERMANOVA comparison with additional caution and examine the nMDS and distance-to-centre plot to understand the pattern.
 
 ## 6. SIMPER
 ### Identify contributing species using SIMPER
@@ -397,15 +404,15 @@ SIMPER is primarily a **descriptive follow-up analysis**.
 1. Select **Analyses → Multivariate → SIMPER**.
 2. Move **all ant abundance variables** into **Feature Variables**.
 3. Move **Community** into **Grouping Variable**.
-4. Under **Transformation**, select **Fourth root**.
-5. Under **Output settings**, set:
+4. Under **Analysis Choices**, select **Transformation → Fourth root**. SIMPER uses **Bray-Curtis** automatically; there is no dissimilarity dropdown to change.
+5. Under **Plots → Features Shown in Results**, check the defaults:
    - **Top N features = 10**
-   - **Cumulative contribution = 70%**
+   - **Cumulative contribution (%) = 70**
 
-   **Optional:** You may also select:
-   - **Contribution plots**
-   - **Contrast overview heatmap**
-   - **Detailed Statistics**.
+   Results stop at 10 features or when cumulative contribution reaches 70%, whichever comes first, including the feature that crosses the threshold.
+6. **Optional:** Under **Plots**, tick **Contribution plots** and/or **Contrast overview heatmap**. Under **Tables**, tick **Group means and contribution variability** for additional statistics.
+
+Leave **Permutation contribution assessment** unticked under **Permutation Assessment (Advanced)** for this descriptive exercise.
 
 ![Setting up the SIMPER analysis in jamovi.](assets/w10-jamovi-simper.mp4)
 
@@ -541,6 +548,6 @@ When comparing transformations, consider whether the biological interpretation o
 
 ## Example data sheets
 
-![Example jamovi-ready data sheet layout for PCA.](assets/w10-jamovi-pca-datasheet.png){fig-alt="Spreadsheet layout showing a jamovi-ready data sheet for PCA."}
+![Example jamovi-ready data sheet layout for PCA.](assets/w10-excel-habitat-datasheet.png){fig-alt="Spreadsheet layout showing a jamovi-ready data sheet for PCA."}
 
-![Example jamovi-ready community data sheet layout for *miso* analyses.](assets/w10-jamovi-community-datasheet.png){fig-alt="Spreadsheet layout showing a jamovi-ready community data sheet for miso analyses."}
+![Example jamovi-ready community data sheet layout for *miso* analyses.](assets/w10-excel-community-datasheet.png){fig-alt="Spreadsheet layout showing a jamovi-ready community data sheet for miso analyses."}
