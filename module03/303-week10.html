@@ -752,6 +752,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>These settings are selected within each analysis, after opening it. They are not separate data-processing steps.</p>
 <p>Use these same settings throughout the analyses below unless instructed otherwise.</p>
+<p>Some options may already be selected by default. Check that your settings match those below, and change them where needed. <strong>Fourth root</strong> must be selected in each new analysis; <strong>Bray-Curtis</strong> is the default dissimilarity index and is fixed in SIMPER.</p>
 </section>
 <section id="analysis-sequence-for-antdatatotal" class="level3">
 <h3 class="anchored" data-anchor-id="analysis-sequence-for-antdatatotal">Analysis sequence for AntDataTotal</h3>
@@ -788,7 +789,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td>4</td>
 <td>PERMANOVA</td>
-<td>Community × Sample interaction; marginal terms; 999 permutations; pairwise Community comparisons within Edge and Interior</td>
+<td>Marginal terms; 999 permutations; test Community × Sample; optionally refit without a non-significant interaction; pairwise comparisons follow the fitted model</td>
 </tr>
 <tr class="odd">
 <td>5</td>
@@ -815,27 +816,20 @@ ul.task-list li input[type="checkbox"] {
 <section id="set-up-the-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="set-up-the-analysis">Set up the analysis</h3>
 <ol type="1">
-<li>Select <strong>Analyses → Multivariate → nMDS</strong>.</li>
-<li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
-<li>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</li>
-<li>Under <strong>Analysis Choices</strong>, set:
-<ul>
-<li><strong>Transformation → Fourth root</strong></li>
-<li><strong>Dissimilarity index → Bray-Curtis</strong></li>
-</ul></li>
-<li>Under <strong>Plots</strong>, keep the following selected:
-<ul>
-<li><strong>Shepard Diagram</strong></li>
-<li><strong>Group point styling</strong></li>
-</ul>
-<strong>Optional:</strong> You can also select:
+<li><p>Select <strong>Analyses → Multivariate → nMDS</strong>.</p></li>
+<li><p>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</p></li>
+<li><p>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</p></li>
+<li><p>Under <strong>Analysis Choices</strong>, select <strong>Transformation → Fourth root</strong> and check that <strong>Dissimilarity index → Bray-Curtis</strong> is selected.</p></li>
+<li><p>Under <strong>Plots</strong>, check that <strong>Shepard Diagram</strong> is ticked (the default).</p></li>
+<li><p>Under <strong>Group Display</strong>, check that <strong>Group point styling</strong> is ticked (the default).</p>
+<p><strong>Optional:</strong> You can also select:</p>
 <ul>
 <li><strong>Group hulls</strong></li>
-<li><strong>Group dispersion ellipses</strong></li>
+<li><strong>Group dispersion ellipses (1 SD)</strong></li>
 <li><strong>Group spiders</strong></li>
 </ul>
-These additional options can help you visualise the separation and overlap among Communities.</li>
-<li>Set <strong>Maximum random starts = 20</strong>.</li>
+<p>These additional options can help you visualise the separation and overlap among Communities. The ellipses show group spread, not confidence intervals.</p></li>
+<li><p>Under <strong>Reproducibility</strong>, leave <strong>Maximum random starts = 20</strong> at its default.</p></li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -880,12 +874,10 @@ These additional options can help you visualise the separation and overlap among
 <li>Select <strong>Analyses → Multivariate → Cluster analysis</strong>.</li>
 <li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
 <li><strong>Optional:</strong> Move <strong>Site</strong> into <strong>Sample Labels</strong> if you want individual samples identified on the dendrogram.</li>
-<li>Under <strong>Analysis Choices</strong>, set:
-<ul>
-<li><strong>Transformation → Fourth root</strong></li>
-<li><strong>Dissimilarity index → Bray-Curtis</strong>.</li>
-</ul></li>
+<li>Under <strong>Analysis Choices</strong>, select <strong>Transformation → Fourth root</strong> and check that <strong>Dissimilarity index → Bray-Curtis</strong> is selected.</li>
+<li><strong>Optional:</strong> Under <strong>Tables</strong>, tick <strong>Sample order</strong> and move <strong>Community</strong> and <strong>Sample</strong> into <strong>Sample context (optional)</strong>. This table identifies the samples in dendrogram order and helps you compare their Communities.</li>
 </ol>
+<p><em>miso</em> uses <strong>group-average linkage</strong> automatically; there is no linkage setting to change.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><video src="assets/w10-jamovi-cluster-analysis.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-cluster-analysis.mp4">Video</a></video></p>
@@ -913,15 +905,10 @@ These additional options can help you visualise the separation and overlap among
 <li>Select <strong>Analyses → Multivariate → ANOSIM</strong>.</li>
 <li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
 <li>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</li>
-<li>Under <strong>Analysis Choices</strong>, set:
-<ul>
-<li><strong>Transformation → Fourth root</strong></li>
-<li><strong>Dissimilarity index → Bray-Curtis</strong></li>
-</ul></li>
-<li>Set <strong>Permutations = 999</strong>.</li>
-<li>Set <strong>Permutation restriction → Free</strong>.</li>
-<li>Because Community has more than two levels, select <strong>Pairwise ANOSIM comparisons</strong>.</li>
-<li>For multiple comparisons, set <strong>P-value adjustment → Holm</strong>.</li>
+<li>Under <strong>Analysis Choices</strong>, select <strong>Transformation → Fourth root</strong> and check that <strong>Dissimilarity index → Bray-Curtis</strong> is selected. Leave <strong>Binary (presence/absence)</strong> unticked.</li>
+<li>Because Community has more than two levels, tick <strong>Pairwise ANOSIM comparisons (three or more groups)</strong>. Check that <strong>P-value adjustment → Holm</strong> is selected beneath it (the default).</li>
+<li>Under <strong>Study Design and Permutation Restrictions</strong>, leave <strong>Blocking Variable</strong> empty and <strong>Permutation restriction → Free</strong> at its default.</li>
+<li>Under <strong>Reproducibility and Computation</strong>, leave <strong>Permutations = 999</strong> at its default.</li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -975,18 +962,17 @@ These additional options can help you visualise the separation and overlap among
 <li>Select <strong>Analyses → Multivariate → PERMANOVA</strong>.</li>
 <li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
 <li>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</li>
-<li>Move <strong>Sample</strong> into <strong>Additional Factors</strong>, then select <strong>Model interactions</strong> beneath it.</li>
-<li>Under <strong>Analysis Choices</strong>, set:
+<li>Move <strong>Sample</strong> into <strong>Additional Factors</strong>, then tick <strong>Model Interactions</strong> beneath it (unticked by default).</li>
+<li>Under <strong>Analysis Choices</strong>:
 <ul>
-<li><strong>Transformation → Fourth root</strong></li>
-<li><strong>Dissimilarity index → Bray-Curtis</strong></li>
-<li><strong>Permutation restrictions → Free</strong></li>
-<li><strong>Test type → Marginal terms</strong></li>
+<li>Select <strong>Transformation → Fourth root</strong>.</li>
+<li>Check that <strong>Dissimilarity index → Bray-Curtis</strong> and <strong>Permutation restrictions → Free</strong> are selected (the defaults).</li>
+<li>Change <strong>Test type</strong> from <strong>Sequential terms</strong> to <strong>Marginal terms</strong>.</li>
 </ul></li>
-<li>Select <strong>Pairwise comparisons</strong> and set <strong>P-value adjustment → Holm</strong>.</li>
-<li>Under <strong>Reproducibility and Technical Settings</strong>, set <strong>Number of permutations = 999</strong>.</li>
+<li>Tick <strong>Pairwise comparisons</strong> and check that <strong>P-value adjustment → Holm</strong> is selected beneath it (the default). If pairwise comparisons are unavailable, check the settings above first.</li>
+<li>Under <strong>Reproducibility and Technical Settings</strong>, leave <strong>Number of permutations = 999</strong> at its default.</li>
 </ol>
-<p>Leave <strong>Blocking Variable</strong> and <strong>Continuous Covariates</strong> empty for this exercise. Keep <strong>Binary (presence/absence)</strong> and <strong>Square-root distances</strong> unchecked, and <strong>Additive constant → None</strong>.</p>
+<p>Leave <strong>Blocking Variable</strong> and <strong>Continuous Covariates</strong> empty for this exercise. Under <strong>Analysis Choices</strong>, leave <strong>Binary (presence/absence)</strong> and <strong>Square-root distances</strong> unticked, and <strong>Additive constant → None</strong> (the defaults).</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Default</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Warm tint</a></li></ul>
 <div class="tab-content">
@@ -994,7 +980,7 @@ These additional options can help you visualise the separation and overlap among
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><video src="assets/w10-jamovi-permanova.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-permanova.mp4">Video</a></video></p>
-<figcaption>Setting up the PERMANOVA analysis in jamovi.</figcaption>
+<figcaption>Setting up the PERMANOVA analysis in jamovi. If the interaction is not significant, you can untick <strong>Model Interactions</strong> to refit an additive model; keep <strong>Marginal terms</strong> selected.</figcaption>
 </figure>
 </div>
 </div>
@@ -1002,13 +988,12 @@ These additional options can help you visualise the separation and overlap among
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><video src="assets/w10-jamovi-permanova-manila.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-permanova-manila.mp4">Video</a></video></p>
-<figcaption>Setting up the PERMANOVA analysis in jamovi.</figcaption>
+<figcaption>Setting up the PERMANOVA analysis in jamovi. If the interaction is not significant, you can untick <strong>Model Interactions</strong> to refit an additive model; keep <strong>Marginal terms</strong> selected.</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </div>
-<p><strong>Video note:</strong> This recording finishes with a model without interactions. Follow the written settings above for this exercise.</p>
 </section>
 <section id="read-the-output-3" class="level3">
 <h3 class="anchored" data-anchor-id="read-the-output-3">Read the output</h3>
@@ -1020,19 +1005,30 @@ These additional options can help you visualise the separation and overlap among
 <li><strong>P-value</strong>.</li>
 </ul>
 <p>A significant interaction indicates that the difference between Edge and Interior assemblages varies among Communities.</p>
-<p><strong>Community</strong> and <strong>Sample</strong> are not shown as separate tests because they are included in the interaction. Their absence does not mean that their effects are non-significant.</p>
+<p>While <strong>Model Interactions</strong> is ticked, <strong>Community</strong> and <strong>Sample</strong> are not shown as separate marginal tests because they are included in the interaction. Their absence does not mean that their effects are non-significant.</p>
+<p>If the interaction is not significant, you may retain the interaction model or refit an additive model. To refit, untick <strong>Model Interactions</strong>, keep <strong>Sample</strong> in <strong>Additional Factors</strong>, and leave <strong>Test type → Marginal terms</strong> selected. jamovi updates the results automatically. Read the separate <strong>Community</strong> and <strong>Sample</strong> rows in this additive model; each tests that factor while accounting for the other.</p>
 </section>
 <section id="read-the-pairwise-results" class="level3">
 <h3 class="anchored" data-anchor-id="read-the-pairwise-results">Read the pairwise results</h3>
-<p>The pairwise tables compare Communities separately within <strong>Edge</strong> and <strong>Interior</strong> samples. These are conditional comparisons: for example, BGHF versus CCIF within Edge samples.</p>
-<p>Use <strong>Adjusted p</strong> to assess each comparison. Holm adjustment covers all 20 planned comparisons across both tables. Each comparison uses only the samples belonging to that pair of Communities and Sample level.</p>
-<p>These tables do <strong>not</strong> compare Edge against Interior within each Community. A comparison marked <strong>not estimated</strong> could not be tested; do not interpret it as non-significant.</p>
+<p><strong>For this exercise, only interpret the conditional pairwise comparisons if the Community × Sample interaction is significant.</strong> If it is not significant, do not interpret those comparisons. If you choose to refit an additive model, use its Community comparisons only if the Community effect is significant.</p>
+<p>The comparisons change when you untick <strong>Model Interactions</strong>:</p>
+<ul>
+<li><strong>Interactions ticked:</strong> The <strong>Pairwise PERMANOVA</strong> table compares Communities separately within <strong>Edge</strong> and <strong>Interior</strong> samples. These are conditional comparisons: for example, BGHF versus CCIF within Edge samples. Holm adjustment covers all <strong>20 planned comparisons</strong> across both Sample levels. Each comparison uses only the samples belonging to that pair of Communities and Sample level.</li>
+<li><strong>Interactions unticked:</strong> The table compares each pair of Communities using both Edge and Interior samples, with <strong>Sample</strong> retained in each additive model. Holm adjustment covers the <strong>10 Community comparisons</strong>. These are not separate comparisons within Edge and Interior.</li>
+</ul>
+<p>Use <strong>Adjusted p</strong> to assess each comparison and check the table note for its scope. Neither mode compares Edge against Interior within each Community. A comparison marked <strong>not estimated</strong> could not be tested; do not interpret it as non-significant.</p>
 </section>
 <section id="report-the-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="report-the-analysis">Report the analysis</h3>
-<p>For example:</p>
+<p>Report the interaction result, for example:</p>
 <p>“The Community × Sample interaction was [significant/not significant] (pseudo-F = …, df = …, permutation p = …). The analysis used fourth-root-transformed abundances, Bray–Curtis dissimilarities, marginal terms and … permutations (seed = …).”</p>
-<p>Use the permutation count and seed shown in your output. When reporting pairwise results, identify the Sample level and give the adjusted p-value.</p>
+<p>If the interaction is not significant, you have two options:</p>
+<ul>
+<li><strong>Retain the interaction model:</strong> Report its interaction result. With <strong>Marginal terms</strong> selected, this model does not provide separate Community and Sample tests; do not describe these effects as non-significant.</li>
+<li><strong>Refit an additive model:</strong> Untick <strong>Model Interactions</strong>, retaining both factors and <strong>Test type → Marginal terms</strong>. Report the separate Community and Sample results (pseudo-F, df and permutation p), and state that you refitted the model without the non-significant interaction.</li>
+</ul>
+<p><strong>Both options use marginal tests.</strong> The choice is whether to retain the interaction in the model, not whether to use marginal tests.</p>
+<p>Use the permutation count and seed shown in your output. Report conditional pairwise comparisons only if the interaction is significant. For an additive model, report Community pairwise comparisons only if the Community effect is significant. Give adjusted p-values and identify the Sample level for conditional comparisons.</p>
 </section>
 </section>
 <section id="permdisp" class="level2">
@@ -1048,16 +1044,12 @@ These additional options can help you visualise the separation and overlap among
 <li>Select <strong>Analyses → Multivariate → PERMDISP</strong>.</li>
 <li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
 <li>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</li>
-<li>Under <strong>Analysis Choices</strong>, set:
-<ul>
-<li><strong>Transformation → Fourth root</strong></li>
-<li><strong>Dissimilarity index → Bray-Curtis</strong></li>
-<li><strong>Group centre → Median</strong></li>
-<li><strong>Permutations = 999</strong></li>
-</ul></li>
-<li>Keep <strong>Distance-to-centre diagnostic</strong> selected.</li>
-<li><strong>Conditional:</strong> You may also select <strong>Pairwise dispersion comparisons</strong> if the overall PERMDISP test is significant.</li>
+<li>Under <strong>Analysis Choices</strong>, select <strong>Transformation → Fourth root</strong> and check that <strong>Dissimilarity index → Bray-Curtis</strong> and <strong>Group centre → Median</strong> are selected (the defaults).</li>
+<li>Under <strong>Plots</strong>, check that <strong>Distance-to-centre diagnostic</strong> is ticked (the default).</li>
+<li>Under <strong>Reproducibility and Computation</strong>, leave <strong>Permutations = 999</strong> and <strong>Permutation restriction → Free</strong> at their defaults.</li>
+<li><strong>Conditional:</strong> If the overall PERMDISP test is significant, you may tick <strong>Pairwise dispersion comparisons</strong> under <strong>Analysis Choices</strong>. Check that <strong>P-value adjustment → Holm</strong> is selected beneath it (the default).</li>
 </ol>
+<p>Leave the <strong>Advanced Options</strong> at their defaults: <strong>Binary (presence/absence)</strong>, <strong>Square-root distances</strong> and <strong>Bias adjustment</strong> unticked, and <strong>Additive constant → None</strong>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><video src="assets/w10-jamovi-permdisp.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-permdisp.mp4">Video</a></video></p>
@@ -1069,7 +1061,8 @@ These additional options can help you visualise the separation and overlap among
 <h3 class="anchored" data-anchor-id="read-the-output-4">Read the output</h3>
 <p>A <strong>non-significant PERMDISP</strong> result indicates that there is no evidence that the Communities differ in their multivariate dispersion.</p>
 <p>A <strong>significant PERMDISP</strong> result indicates that at least some Communities differ in their multivariate spread.</p>
-<p>If PERMDISP is significant, interpret the PERMANOVA result with additional caution and examine the nMDS and distance-to-centre plot to understand the pattern.</p>
+<p>This check assesses dispersion among Communities, pooling Edge and Interior samples; it does not assess dispersion across the Community × Sample groups. If you also interpret the Sample effect, repeat PERMDISP with <strong>Sample</strong> as the <strong>Grouping Variable</strong>.</p>
+<p>If PERMDISP is significant, interpret the corresponding PERMANOVA comparison with additional caution and examine the nMDS and distance-to-centre plot to understand the pattern.</p>
 </section>
 </section>
 <section id="simper" class="level2">
@@ -1085,19 +1078,16 @@ These additional options can help you visualise the separation and overlap among
 <li>Select <strong>Analyses → Multivariate → SIMPER</strong>.</li>
 <li>Move <strong>all ant abundance variables</strong> into <strong>Feature Variables</strong>.</li>
 <li>Move <strong>Community</strong> into <strong>Grouping Variable</strong>.</li>
-<li>Under <strong>Transformation</strong>, select <strong>Fourth root</strong>.</li>
-<li>Under <strong>Output settings</strong>, set:
+<li>Under <strong>Analysis Choices</strong>, select <strong>Transformation → Fourth root</strong>. SIMPER uses <strong>Bray-Curtis</strong> automatically; there is no dissimilarity dropdown to change.</li>
+<li>Under <strong>Plots → Features Shown in Results</strong>, check the defaults:
 <ul>
 <li><strong>Top N features = 10</strong></li>
-<li><strong>Cumulative contribution = 70%</strong></li>
+<li><strong>Cumulative contribution (%) = 70</strong></li>
 </ul>
-<strong>Optional:</strong> You may also select:
-<ul>
-<li><strong>Contribution plots</strong></li>
-<li><strong>Contrast overview heatmap</strong></li>
-<li><strong>Detailed Statistics</strong>.</li>
-</ul></li>
+Results stop at 10 features or when cumulative contribution reaches 70%, whichever comes first, including the feature that crosses the threshold.</li>
+<li><strong>Optional:</strong> Under <strong>Plots</strong>, tick <strong>Contribution plots</strong> and/or <strong>Contrast overview heatmap</strong>. Under <strong>Tables</strong>, tick <strong>Group means and contribution variability</strong> for additional statistics.</li>
 </ol>
+<p>Leave <strong>Permutation contribution assessment</strong> unticked under <strong>Permutation Assessment (Advanced)</strong> for this descriptive exercise.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><video src="assets/w10-jamovi-simper.mp4" class="img-fluid" controls=""><a href="assets/w10-jamovi-simper.mp4">Video</a></video></p>
@@ -1259,13 +1249,13 @@ These additional options can help you visualise the separation and overlap among
 <h2 class="anchored" data-anchor-id="example-data-sheets">Example data sheets</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="assets/w10-jamovi-pca-datasheet.png" class="img-fluid figure-img" alt="Spreadsheet layout showing a jamovi-ready data sheet for PCA."></p>
+<p><img src="assets/w10-excel-habitat-datasheet.png" class="img-fluid figure-img" alt="Spreadsheet layout showing a jamovi-ready data sheet for PCA."></p>
 <figcaption>Example jamovi-ready data sheet layout for PCA.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="assets/w10-jamovi-community-datasheet.png" class="img-fluid figure-img" alt="Spreadsheet layout showing a jamovi-ready community data sheet for miso analyses."></p>
+<p><img src="assets/w10-excel-community-datasheet.png" class="img-fluid figure-img" alt="Spreadsheet layout showing a jamovi-ready community data sheet for miso analyses."></p>
 <figcaption>Example jamovi-ready community data sheet layout for <em>miso</em> analyses.</figcaption>
 </figure>
 </div>
