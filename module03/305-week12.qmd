@@ -2,6 +2,7 @@
 title: '<i class="bi bi-flask me-2" aria-hidden="true"></i> **Weeks 12 and 13**: Multivariate methods in biology (continued)'
 number-sections: false
 toc-location: left
+toc-depth: 2
 ---
 
 ::: {.border .rounded .p-3 .mb-4 .bg-body-tertiary}
@@ -17,14 +18,21 @@ This module introduces widely used techniques for analysing multivariate biologi
 
 :::
 
+## Introduction
 
-## Outline
+For these practicals you will continue working on your own group data, with demonstrators on hand to help:
 
-- **Week 12:** Carry out additional analyses, summarise your findings, and review guidance on describing multivariate methods and results in your report. Demonstrators will provide support with this work.
-- **Week 13:** Further support for additional analyses and any remaining work.
+- **Week 12:** Carry out additional analyses, summarise your findings, and review guidance on describing multivariate methods and results in your report.
+- **Week 13:** Complete any remaining analyses and finish your report.
 
-During these weeks, we will be in the lab to help with any analyses that groups wish to undertake. This may involve integrating the analyses (e.g. testing the relationships between PCs and univariate measures) or tweaking (not twerking) your analyses by examining subsets of your data using the options available in Jamovi.
+## Week 12: Additional analyses and reporting
+
+During the practical, we will be in the lab to help with any analyses that groups wish to undertake. This may involve integrating the analyses (e.g. testing the relationships between PCs and univariate measures) or tweaking (not twerking) your analyses by examining subsets of your data using the options available in jamovi.
+
+## Week 13: Completing remaining work
+
+Further support for additional analyses and any remaining work on your report.
 
 ## Marking scheme
 
-The marking scheme is included in the Week 9 practical notes and is also available on Canvas, in the Assignments section under **Report 2**.
+The marking scheme is included in the [week 9 practical](302-week09.qmd) notes and is also available on Canvas, in the Assignments section under **Report 2**.

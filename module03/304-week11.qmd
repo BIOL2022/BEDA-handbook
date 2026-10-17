@@ -2,6 +2,7 @@
 title: '<i class="bi bi-flask me-2" aria-hidden="true"></i> **Week 11**: Multivariate methods in biology (continued)'
 number-sections: false
 toc-location: left
+toc-depth: 2
 ---
 
 ::: {.border .rounded .p-3 .mb-4 .bg-body-tertiary}
@@ -17,32 +18,37 @@ This module introduces widely used techniques for analysing multivariate biologi
 
 :::
 
-For this specific practical you will:
-- Analyse and interpret your group data using multivariate techniques learnt in weeks 1 (PCA) and 2 (nMDS, PERMANOVA, SIMPER (if appropriate, etc). 
-- Perform analyses (ANOVA, regressions etc) to test additional univariate hypotheses.
+## Introduction
 
+For this practical you will:
 
+- Analyse and interpret your own group data using the multivariate techniques covered in the [week 9 practical](302-week09.qmd) (**PCA**) and the [week 10 practical](303-week10.qmd) (**nMDS**, **PERMANOVA** and **SIMPER**, where appropriate).
+- Perform additional univariate analyses (**regression**, **ANOVA**) to test further hypotheses using your PCA results.
 
-## Outline
+## What you should have at the end of the practical
 
-At the end of the practical you should have:
+By the end of the practical, you should have saved the following outputs for your report:
 
-1. Appropriate outputs for your community structure analyses
-   - nMDS (saved as suitable image file)
-   - PERMANOVA results (in rtf/doc file)
-   - SIMPER if justified
-2. Appropriate outputs for your PCA
-   - File with Jamovi or R output
-3. Univariate tests using your PCA results
-   - File with Jamovi or R output with Regression and/or ANOVA results (testing hypotheses using your newly derived PCs)
+### Community structure analyses
+
+- An **nMDS** ordination, saved as a suitable image file
+- **PERMANOVA** results, in an rtf/doc file
+- **SIMPER** results, if justified for your data
+
+### PCA outputs
+
+- A file with your jamovi or R output
+
+### Univariate tests using your PCA results
+
+- A file with your jamovi or R output containing **regression** and/or **ANOVA** results, testing hypotheses using your newly derived PCs
 
 ## Your own data
-At this stage it’s very easy to fiddle with your data – is there any reason you might want to standardise or transform your data in any way? Some things to consider at this stage:
+
+At this stage it’s very easy to fiddle with your data. Is there any reason you might want to standardise or transform your data in any way? Some things to consider:
 
 - Do the abundances matter?
 - Are you intending to make every sample equal?
-- Would it be worth analysing using your data at a higher “taxonomic” level?
+- Would it be worth analysing your data at a higher “taxonomic” level?
 
-
-
-If you don’t complete your analyses, I will make the program available to you outside of prac times. There will also be further support in Week 13 for any remaining analyses.
+If you don’t complete your analyses during the practical, the software will be available to you outside of prac times, and there will be further support in Weeks 12 and 13 for any remaining analyses.
