@@ -22,6 +22,6 @@ Browse the lecture hubs by week, or return to [Weekly content](index.qmd#weekly-
 
 - [Week 9 — Multivariate analysis and PCA](lectures/L09/index.qmd)
 - [Week 10 — Clustering and multidimensional scaling](lectures/L10/index.qmd)
-- [Week 11 — MANOVA and multivariate revision](lectures/L11/index.qmd)
-- [Week 12 — Rarefaction and Bayesian analysis](lectures/L12/index.qmd)
+- [Week 11 — MANOVA, rarefaction and Bayesian analysis](lectures/L11/index.qmd)
+- [Week 12 — Module 3 revision and exam revision Part 1](lectures/L12/index.qmd)
 - [Week 13 — Exam revision](lectures/L13/index.qmd)

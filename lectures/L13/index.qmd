@@ -8,5 +8,5 @@ draft: true
 Coming soon.
 
 ::: {.lecture-week-nav}
-[← Week 12: Rarefaction and Bayesian analysis](../L12/index.qmd){.lecture-previous}
+[← Week 12: Module 3 revision and exam revision Part 1](../L12/index.qmd){.lecture-previous}
 :::
