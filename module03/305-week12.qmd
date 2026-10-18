@@ -35,4 +35,4 @@ Further support for additional analyses and any remaining work on your report.
 
 ## Marking scheme
 
-The marking scheme is included in the [week 9 practical](302-week09.qmd) notes and is also available on Canvas, in the Assignments section under **Report 2**.
+Use the [Report 2 marking scheme](../assessments/assessment-report-2.qmd#marking-scheme) to check your report before submission.

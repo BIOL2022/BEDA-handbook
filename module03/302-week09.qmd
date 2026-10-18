@@ -42,11 +42,11 @@ This module involves report writing and data collection. You will submit two sep
 
 2. **Individual Report**
    - Submit your **individual report** based on your group's study.
-   - Format: A **short scientific article** (see assessment guidelines on Canvas for details), submitted as one **PDF, DOC or DOCX** file.
+   - Format: A **short scientific article** (see the [Report 2 instructions](../assessments/assessment-report-2.qmd)), submitted as one **PDF, DOC or DOCX** file.
    - Worth: 15% of your total unit mark.
    - Due date: **06 November 2026 at 23:59.**
 
-Additional details on the report format, marking scheme, and submission instructions are provided in the [Report 2 overview](#assessment-overview) section below.
+Full report requirements, the marking scheme and submission instructions are provided on the [Report 2 assessment page](../assessments/assessment-report-2.qmd).
 
 ## Part 1: Principal components analysis – “perceptions of biology lecturers”
 
@@ -280,58 +280,7 @@ That is it! You are now ready to use *miso* in next week’s practical.
 
 ## Report 2 overview {#assessment-overview}
 
-To give you the maximum opportunity to analyse your data and understand your results, your group’s dataset will be checked during Week 11 by demonstrators.
-
-### Group data submission (5%)
-
-- This is a group assessment: only one group member needs to upload the group’s data files to Canvas on behalf of the group.
-- Submit your species (assemblage) and habitat data as one Excel workbook (one worksheet or multiple worksheets) or as two clearly labelled CSV files, with consistent sample identifiers. A separate worksheet for each dataset is not required.
-- The dataset must be submitted by **10:00 am** on the day of your Week 11 practical session.
-- It is worth 5% of your total unit mark.
-- Near-perfect datasets that are well-organised, correctly formatted, and ready for analysis will receive the full 5%.
-- Because this is a group submission, the University's [Simple Extension](https://www.sydney.edu.au/students/simple-extensions.html) process for assignments does not apply; refer to the University's official [Special Consideration](https://www.sydney.edu.au/students/special-consideration.html) process if serious circumstances affect your group's ability to submit.
-
-### Individual report (15%)
-
-Each student will submit an individual short report, focusing primarily on the Methods and Results sections, as outlined in the attached marking rubric.
-
-- **The report must include:**
-  - A brief Abstract, then an Introduction with clearly stated hypotheses
-  - A detailed Methods section, describing your data collection and analyses, including **nMDS and PCA**
-  - A well-presented Results section with appropriate tables, figures, and descriptions, including an **nMDS plot**, **ANOSIM or PERMANOVA** results, a **PCA loadings table**, and a **scree plot**
-  - A short Discussion
-- You are not required to invent a detailed rationale or references for your study, although you are welcome to include them if you wish. Cite any references you do use accurately.
-- Your report must be written in the format of a manuscript suitable for submission to Austral Ecology, and submitted as one **PDF, DOC or DOCX** file.
-- Length limit: Maximum of **four single-spaced pages**
-  (not including the cover sheet, title/abstract page, references, tables, figures, or your AI-use declaration)
-- Do not include your name in the report or the filename; your report is marked anonymously.
-- Emphasis will be placed on:
-  - Clear explanation of analytical methods
-  - Accurate description of the data collected
-  - Clear and concise presentation of results
-
-## Report submission details
-
-Your individual report is due by **23:59 on 6 November 2026**. Please ensure it is submitted electronically and anonymously via Canvas.
-
-We aim to return reports with summative feedback approximately one week after submission.
-
-### Academic integrity
-
-You are expected to complete your report independently and uphold the principles of academic honesty.
-
-- Plagiarism or copying from others will result in loss of marks and may lead to further disciplinary action.
-- Refer to the University’s policies on academic integrity: [Academic Integrity at the University of Sydney](https://www.sydney.edu.au/students/academic-integrity.html)
-
-### Use of AI tools
-
-- You may use AI tools for grammar and language assistance and for coding/debugging support.
-- You remain responsible for conducting and understanding your analyses, checking outputs, and producing your own scientific reasoning, interpretation and report — do not substitute AI-generated work for these responsibilities.
-- After the references, include a concise declaration naming the tool or platform, describing how it assisted you, and summarising relevant prompts or providing short representative examples. If you did not use AI, state that. Full chat transcripts are not required, and the declaration sits outside the four-page limit.
-
-### Report format
-
-Your report should follow the format of a short scientific article suitable for submission to Austral Ecology. The “Notice to Contributors” is available at: [Austral Ecology – Author Guidelines](https://onlinelibrary.wiley.com/page/journal/14429993/homepage/ForAuthors.html)
+See the [Report 2 assessment page](../assessments/assessment-report-2.qmd) for the group dataset and individual report requirements, deadlines, submission instructions and [marking scheme](../assessments/assessment-report-2.qmd#marking-scheme).
 
 :::
 

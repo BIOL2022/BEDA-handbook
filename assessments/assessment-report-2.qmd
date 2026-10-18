@@ -2,77 +2,119 @@
 title: "Report 2"
 ---
 
-## Group Data Submission
+This page contains the requirements for preparing and submitting your group dataset and individual Report 2, including the [marking scheme](#marking-scheme).
 
-This assessment involves a group data submission in addition to the individual report.
+## Group data submission (5%)
 
-- Submit your group’s:
-  - **Species (assemblage) data**
-  - **Habitat data**, including any relevant factors
-- You may submit **one Excel workbook** (`xls` or `xlsx`), with both datasets on **one worksheet or multiple worksheets**, or **two clearly labelled CSV files** uploaded together.
-- Use consistent **sample identifiers** so the species and habitat records can be matched.
-- Only **one group member** needs to upload the files on behalf of the group.
-- Due: By **10:00 am** on the day of your **Week 11 practical session** (Tuesday 20, Wednesday 21 or Friday 23 October 2026)
-- Worth: **5%** of your total unit mark
+Submit your group's species (assemblage) and habitat data via Canvas. Only **one group member** needs to upload the files on behalf of the group.
 
-Make sure the data are clearly organised and correctly formatted for analysis in **R or Jamovi**. A separate worksheet for each dataset is **not required**.
+- Include **species data** and **habitat data**, including relevant factors.
+- Submit **one Excel workbook** (`xls` or `xlsx`), with both datasets on **one worksheet or multiple worksheets**, or **two clearly labelled CSV files** uploaded together.
+- Use consistent **sample identifiers** so the species and habitat records can be matched, and include the information needed to understand how the data were collected.
+- Make sure the data are clearly organised and correctly formatted for analysis in **R or jamovi**. A separate worksheet for each dataset is **not required**.
+- Submit by **10:00 am Sydney time (AEDT)** on the day of your **Week 11 practical session**: **Tuesday 20, Wednesday 21 or Friday 23 October 2026**, according to your practical class.
+- This submission is worth **5%** of your total unit mark.
 
-## Individual Report
-Instructions for this assessment are in [Week 9 Practical](../module03/302-week09.qmd#assessment-overview). Please read the instructions carefully. 
+[Submit your group dataset in Canvas](canvas:/assignments/696332){.assessment-link}
 
-Below is a brief summary of the requirements. **You must still read the full instructions above in full.**
+## Individual report (15%)
 
-1. This is an individual report based on your group's multivariate study, focusing primarily on the Methods and Results sections.
-2. The report must follow the format of a short scientific article suitable for submission to Austral Ecology, including a Title, brief Abstract, Introduction, Materials and Methods, Results, Discussion (brief), and References.
-3. Submit your report anonymously via Canvas by **06 November 2026 at 23:59**, as one **PDF, DOC or DOCX** file with an appropriate filename (do not include your name in the report or the filename).
-4. **Page limit: maximum 4 single-spaced pages** (not including cover sheet, title/abstract page, references, tables, figures, or your AI-use declaration).
-5. Include a brief Introduction with clearly stated hypotheses, a detailed Methods section describing data collection and analyses, and a well-presented Results section with tables, figures, and descriptions. Your Methods must describe **nMDS and PCA**, and your Results must include an **nMDS plot**, **ANOSIM or PERMANOVA** results, a **PCA loadings table**, and a **scree plot**.
-6. Emphasis is on clear explanation of analytical methods, accurate description of data, and concise presentation of results.
-7. **Write the report in your own words.** You may use AI for grammar/language assistance and coding/debugging support, but you remain responsible for your analyses, interpretation and report. After the references, include a **concise AI-use declaration** naming the tool, describing how it helped and summarising relevant prompts (or state that you did not use AI); the declaration sits outside the page limit.
-8. **Follow academic integrity guidelines:** avoid plagiarism, and be prepared for plagiarism checking.
-9. **Use the marking rubric as a checklist** to ensure all criteria are met before submission.
-10. Consult the provided references and resources for guidance on analyses and reporting.
+Write an individual short scientific report based on your group's multivariate study. The emphasis is on explaining your analytical methods, accurately describing the data and presenting your results clearly and concisely. This report is worth **15%** of your total unit mark.
 
-## Marking scheme
+### Required report content
 
-### Introduction (use your imagination) -- **10 marks**
-- Aims of the experiment and hypotheses being tested
-- Why is the study important and/or interesting
-- Study system – species, location of experiment (brief)
-- Welcome to use imagination with references and background, but will not be penalised if you are unable to provide real examples.
+Include a **Title**, brief **Abstract**, **Introduction**, **Materials and Methods**, **Results**, short **Discussion**, and **References** where used.
 
+- **Introduction:** state the study aim and hypotheses and briefly describe the study system. An imaginative ecological context is acceptable; a detailed real-world rationale or real examples are not required. Any references you use must be genuine and cited accurately.
+- **Materials and Methods:** describe your study design, data collection and analyses, including **nMDS and PCA**. Explain relevant variables, replication, analytical choices and software.
+- **Results:** explain the main data patterns and statistical findings, referring to your figures and tables. Include an **nMDS plot**, **ANOSIM or PERMANOVA results**, a **PCA loadings table**, and a **scree plot**. Present summary data rather than raw data, and do not use screenshots of figures or tables.
+- **Discussion:** interpret the findings in relation to the aims and hypotheses, discuss limitations, and suggest improvements or useful future work.
 
-### Materials and Methods -- **30 marks**
-- Set-up of experiment/survey
-- Data / variables recorded and how
-- Sampling design and justifications for analyses
-- Statistical analyses used, including which are dependent/independent variable(s) (if applicable), unit of replication, actual test(s) and statistical package(s)
-- Must include descriptions of **nMDS and PCA**
+Use the [marking scheme](#marking-scheme) as a checklist before submission.
 
+### Format and page limit
 
-### Results -- **40 marks**
-- Statement of results (data and stats). Refer to tables and figures as needed.
-- Summary presentation of data (no raw data) as tables, figures or in text as appropriate. Use tables for large amounts of data where detail is important, use figures to illustrate patterns. Indicate sample size and errors, and note whether the latter are standard errors or standard deviations. Format consistently.
-- Evidence of thought in choices of analyses.
-- Results of statistical analyses presented either in text, on figures, or in tables.
-- Must include an **nMDS plot**, **ANOSIM or PERMANOVA** results, a **PCA loadings table**, and a **scree plot**
-- Do not screenshot figures of tables
+Follow the format of a short scientific article suitable for *Austral Ecology*. The journal's [author guidelines](https://onlinelibrary.wiley.com/page/journal/14429993/homepage/ForAuthors.html) are supplementary guidance; the assessment requirements on this page take precedence.
 
+- Maximum **four single-spaced pages** of report text.
+- The limit **excludes the cover sheet, title/abstract page, references, tables, figures and AI-use declaration**.
+- Include your tables, figures and declaration in the same submitted document.
+- Put the concise AI-use declaration **after the references**. Full chat transcripts and a detailed AI appendix are **not required**.
 
-### Discussion -- **10 marks**
-- Main conclusions or findings
-- Interpretation of results – what do they mean? How do they relate to original aims?
-- Limitations of approach or methods
-- Future studies – what would you do next to improve what you did and/or extend the understanding of the subject?  
+### Submission
 
+Submit anonymously via Canvas by **Friday 6 November 2026 at 23:59 Sydney time (AEDT)**.
 
-### General -- **10 marks**
-- Brief Abstract at start of report
-- Written in plain English
-- Presentation (format/length)
-- No screenshotting of figures and tables
-- References if used and cited correctly
-- Concise AI-use declaration (or statement that no AI was used), placed after the references
+- Upload **one PDF, DOC or DOCX file**.
+- **Do not include your name in the report or the filename.**
 
+[Submit your individual report in Canvas](canvas:/assignments/696333){.assessment-link}
+
+### Academic integrity and AI use
+
+Complete the report independently and write it in your own words. Follow the University's [academic integrity guidance](https://www.sydney.edu.au/students/academic-integrity.html).
+
+You may use AI tools for **grammar and language assistance** and **coding/debugging support**. You remain responsible for conducting and understanding your analyses, checking outputs, and producing your own scientific reasoning, interpretation and report. Do not substitute AI-generated work for these responsibilities.
+
+After the references, include a concise declaration that:
+
+- names the tool or platform;
+- describes how it assisted you; and
+- summarises relevant prompts or gives short representative examples.
+
+If you did not use AI, state that. The declaration is outside the four-page limit.
+
+## Marking scheme {#marking-scheme}
+
+The individual report is marked out of **100**, using the existing allocation below.
+
++------------------------------+------------------------------------------------------------------------------------------------------+---------+
+| Section                      | What is assessed                                                                                     | Marks   |
++==============================+======================================================================================================+=========+
+| **Introduction**             | - **Aims and hypotheses:** state what the study tests and why it is important or interesting.        | 10      |
+|                              | - **Study context:** briefly describe the system, species and location. An imaginative background is |         |
+|                              |   acceptable; real examples are not required. Cite genuine sources accurately where used.            |         |
++------------------------------+------------------------------------------------------------------------------------------------------+---------+
+| **Materials and Methods**    | - **Design:** explain the experiment/survey set-up.                                                  | 30      |
+|                              | - **Data:** describe the variables recorded and how they were recorded.                              |         |
+|                              | - **Sampling:** explain the sampling design and unit of replication.                                 |         |
+|                              | - **Analyses:** justify the choices; identify dependent/independent variables where applicable,      |         |
+|                              |   statistical tests and software.                                                                    |         |
+|                              | - **Required methods:** include descriptions of **nMDS and PCA**.                                    |         |
++------------------------------+------------------------------------------------------------------------------------------------------+---------+
+| **Results**                  | - **Findings:** clearly report data patterns and statistical results, referring to tables and        | 40      |
+|                              |   figures.                                                                                           |         |
+|                              | - **Analysis choices:** demonstrate thought in the choice of analyses.                               |         |
+|                              | - **Presentation:** summarise rather than reproduce raw data; use tables for detail and figures for  |         |
+|                              |   patterns.                                                                                          |         |
+|                              | - **Sample sizes and errors:** state sample sizes and identify errors as standard errors or standard |         |
+|                              |   deviations where relevant; format consistently.                                                    |         |
+|                              | - **Required outputs:** an **nMDS plot**, **ANOSIM or PERMANOVA results**, a **PCA loadings table**, |         |
+|                              |   and a **scree plot**, with statistical results presented in text, figures or tables.               |         |
+|                              | - **Figures and tables:** do not use screenshots.                                                    |         |
++------------------------------+------------------------------------------------------------------------------------------------------+---------+
+| **Discussion**               | - **Interpretation:** explain the main findings and conclusions in relation to the original aims and | 10      |
+|                              |   hypotheses.                                                                                        |         |
+|                              | - **Limitations:** discuss limitations of the approach or methods.                                   |         |
+|                              | - **Future work:** propose studies that improve or extend the work.                                  |         |
++------------------------------+------------------------------------------------------------------------------------------------------+---------+
+| **General**                  | - A brief **Abstract** at the start.                                                                 | 10      |
+|                              | - Clear plain English.                                                                               |         |
+|                              | - Appropriate presentation, format and length.                                                       |         |
+|                              | - No screenshots of figures or tables.                                                               |         |
+|                              | - Accurate citation of references used.                                                              |         |
+|                              | - The concise AI-use declaration (or statement of no AI use) after the references.                   |         |
++------------------------------+------------------------------------------------------------------------------------------------------+---------+
+| **Total**                    |                                                                                                      | **100** |
++------------------------------+------------------------------------------------------------------------------------------------------+---------+
+
+## References and resources
+
+You are encouraged to consult the annotated lecture reading list. Relevant references include:
+
+- Gaston, K. J., Blackburn, T. M., & Lawton, J. H. (1993). Comparing animals and automobiles – a vehicle for understanding body size and abundance relationships in species assemblages. *Oikos*, 66, 172–179.
+- Quinn, G. P., & Keough, M. J. (2023). *Experimental Design and Data Analysis for Biologists* (2nd ed.). Cambridge: Cambridge University Press. (Relevant chapters.)
+
+For information about submission arrangements, consult the University's [Simple Extensions](https://www.sydney.edu.au/students/simple-extensions.html) and [Special Consideration](https://www.sydney.edu.au/students/special-consideration.html) guidance.
 
 [Back to assessments](assessments.qmd)
