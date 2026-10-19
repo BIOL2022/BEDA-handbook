@@ -37,7 +37,7 @@ week,section,position,title,url,description,show_on_schedule,note_type,note_weig
 10,extra,1,Present your experimental design for feedback,,,TRUE,notice,
 10,extra,2,Prepare for Report 2,,,TRUE,notice,
 11,lecture,1,"MANOVA, rarefaction and Bayesian analysis",lectures/L11/index.qmd,"Tuesday: MANOVA. Wednesday: rarefaction for diversity comparisons and Bayesian inference.",TRUE,,
-11,practical,1,Report 2 data analysis,,,TRUE,,
+11,practical,1,Report 2 data analysis,module03/304-week11.qmd,,TRUE,,
 11,extra,1,Report 2 group dataset due at 10:00 on your practical day,,,TRUE,assessment,5
 12,lecture,1,Module 3 revision and exam revision Part 1,lectures/L12/index.qmd,"Tuesday: Module 3 revision. Wednesday: exam revision (Part 1).",TRUE,,
 12,practical,1,Report 2 support,,,TRUE,,
