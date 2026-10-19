@@ -14,6 +14,34 @@
     "text": "practicals.qmd"
   },
   {
+    "objectID": "module03/304-week11.html",
+    "href": "module03/304-week11.html",
+    "title": " Week 11: Multivariate methods in biology (continued)",
+    "section": "",
+    "text": "Module 3 objectives\nThis module introduces widely used techniques for analysing multivariate biological data. By the end of this module, you will be able to:\n\nUnderstand the principles underlying Principal Components Analysis (PCA) and Non-metric Multidimensional Scaling (nMDS)\nBe familiar with the concepts behind multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA\nBe able to plan and conduct experiments that test multivariate hypotheses\nKnow how to carry out these analyses using relevant statistical software\nBe able to interpret, present, and report your findings clearly and effectively"
+  },
+  {
+    "objectID": "module03/304-week11.html#introduction",
+    "href": "module03/304-week11.html#introduction",
+    "title": " Week 11: Multivariate methods in biology (continued)",
+    "section": "Introduction",
+    "text": "Introduction\nFor this practical you will:\n\nAnalyse and interpret your own group data using the multivariate techniques covered in the week 9 practical (PCA) and the week 10 practical (nMDS, PERMANOVA and SIMPER, where appropriate).\nPerform additional univariate analyses (regression, ANOVA) to test further hypotheses using your PCA results."
+  },
+  {
+    "objectID": "module03/304-week11.html#what-you-should-have-at-the-end-of-the-practical",
+    "href": "module03/304-week11.html#what-you-should-have-at-the-end-of-the-practical",
+    "title": " Week 11: Multivariate methods in biology (continued)",
+    "section": "What you should have at the end of the practical",
+    "text": "What you should have at the end of the practical\nBy the end of the practical, you should have saved the following outputs for your report:\n\nCommunity structure analyses\n\nAn nMDS ordination, saved as a suitable image file\nPERMANOVA results, in an rtf/doc file\nSIMPER results, if justified for your data\n\n\n\nPCA outputs\n\nA file with your jamovi or R output\n\n\n\nUnivariate tests using your PCA results\n\nA file with your jamovi or R output containing regression and/or ANOVA results, testing hypotheses using your newly derived PCs"
+  },
+  {
+    "objectID": "module03/304-week11.html#your-own-data",
+    "href": "module03/304-week11.html#your-own-data",
+    "title": " Week 11: Multivariate methods in biology (continued)",
+    "section": "Your own data",
+    "text": "Your own data\nAt this stage it’s very easy to fiddle with your data. Is there any reason you might want to standardise or transform your data in any way? Some things to consider:\n\nDo the abundances matter?\nAre you intending to make every sample equal?\nWould it be worth analysing your data at a higher “taxonomic” level?\n\nIf you don’t complete your analyses during the practical, the software will be available to you outside of prac times, and there will be further support in Weeks 12 and 13 for any remaining analyses."
+  },
+  {
     "objectID": "module03/302-week09.html",
     "href": "module03/302-week09.html",
     "title": " Week 9: Multivariate methods in biology",
