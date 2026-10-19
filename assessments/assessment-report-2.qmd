@@ -12,7 +12,7 @@ Submit your group's species (assemblage) and habitat data via Canvas. Only **one
 - Submit **one Excel workbook** (`xls` or `xlsx`), with both datasets on **one worksheet or multiple worksheets**, or **two clearly labelled CSV files** uploaded together.
 - Use consistent **sample identifiers** so the species and habitat records can be matched, and include the information needed to understand how the data were collected.
 - Make sure the data are clearly organised and correctly formatted for analysis in **R or jamovi**. A separate worksheet for each dataset is **not required**.
-- Submit by **10:00 am Sydney time (AEDT)** on the day of your **Week 11 practical session**: **Tuesday 20, Wednesday 21 or Friday 23 October 2026**, according to your practical class.
+- Submit by **10:00 am Sydney time (AEDT)** on the day of your **Week 12 practical session**: **Tuesday 27, Wednesday 28 or Friday 30 October 2026**, according to your practical class.
 - This submission is worth **5%** of your total unit mark.
 
 [Submit your group dataset in Canvas](canvas:/assignments/696332){.assessment-link}

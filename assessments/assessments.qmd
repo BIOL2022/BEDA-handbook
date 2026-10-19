@@ -139,7 +139,7 @@ Practicals are designed to be flexible and student-driven. Rather than following
 
 :::: {.assessment-section}
 ## <i class="bi bi-file-earmark-bar-graph" aria-hidden="true"></i> Report 2 (Module 3) - 20%
-<p class="assessment-due"><strong>Due:</strong> Week 11 (group dataset) · 6 November 2026 at 23:59 (individual report)</p>
+<p class="assessment-due"><strong>Due:</strong> Week 12 (group dataset) · 6 November 2026 at 23:59 (individual report)</p>
 
 Report 2 is similar to Report 1, but you will need to focus on a project with a multivariate context. Note that there is a 5% group work component to this report that will be assessed via dataset submission, and the report is individually written and assessed (15%). You will have 5 weeks to complete the report.
 
@@ -152,11 +152,11 @@ Practicals are a mix of structured and unstructured sessions. Each practical beg
 ### Part 1: Group dataset (5%)
 
 Submit your group's dataset with the information needed to understand how it
-was collected. It is due at **10 am on the day of your Week 11 practical**:
+was collected. It is due at **10:00 am Sydney time (AEDT) on the day of your Week 12 practical**:
 
-- **Tuesday classes:** 20 October 2026 — <span id="countdown-report2-dataset-tue"></span>
-- **Wednesday classes:** 21 October 2026 — <span id="countdown-report2-dataset-wed"></span>
-- **Friday classes:** 23 October 2026 — <span id="countdown-report2-dataset-fri"></span>
+- **Tuesday classes:** 27 October 2026 — <span id="countdown-report2-dataset-tue"></span>
+- **Wednesday classes:** 28 October 2026 — <span id="countdown-report2-dataset-wed"></span>
+- **Friday classes:** 30 October 2026 — <span id="countdown-report2-dataset-fri"></span>
 
 [View in Canvas](canvas:/assignments/696332){.assessment-link}
 :::
@@ -182,9 +182,9 @@ Submit your individual four-page report by **6 November 2026 at 23:59**.
     startCountdown('2026-08-28T23:59:00+10:00', 'countdown-eft');
     startCountdown('2026-09-04T23:59:00+10:00', 'countdown-mod1-quiz');
     startCountdown('2026-09-25T23:59:00+10:00', 'countdown-report1');
-    startCountdown('2026-10-20T10:00:00+11:00', 'countdown-report2-dataset-tue');
-    startCountdown('2026-10-21T10:00:00+11:00', 'countdown-report2-dataset-wed');
-    startCountdown('2026-10-23T10:00:00+11:00', 'countdown-report2-dataset-fri');
+    startCountdown('2026-10-27T10:00:00+11:00', 'countdown-report2-dataset-tue');
+    startCountdown('2026-10-28T10:00:00+11:00', 'countdown-report2-dataset-wed');
+    startCountdown('2026-10-30T10:00:00+11:00', 'countdown-report2-dataset-fri');
     startCountdown('2026-11-06T23:59:00+11:00', 'countdown-report2');
   });
 </script>

@@ -35,7 +35,7 @@ This module involves report writing and data collection. You will submit two sep
    - You may submit **one Excel workbook** (`xls` or `xlsx`), with both datasets on **one worksheet or multiple worksheets**, or **two clearly labelled CSV files** uploaded together.
    - Use consistent **sample identifiers** so the species and habitat records can be matched.
    - Only **one group member** needs to upload the files on behalf of the group.
-   - Due: By **10:00 am** on the day of your **Week 11 practical session** (Tuesday 20, Wednesday 21 or Friday 23 October 2026)
+   - Due: By **10:00 am Sydney time (AEDT)** on the day of your **Week 12 practical session** (Tuesday 27, Wednesday 28 or Friday 30 October 2026)
    - Worth: **5%** of your total unit mark
 
    Make sure the data are clearly organised and correctly formatted for analysis in **R or Jamovi**. A separate worksheet for each dataset is **not required**.

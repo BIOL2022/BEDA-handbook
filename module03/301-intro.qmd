@@ -72,6 +72,6 @@ It calculates the percentage contribution of each variable, helping us interpret
 
 - **Week 9:** Explore PCA using lecture data and work in groups to design model systems for testing multivariate hypotheses for your reports.
 - **Week 10:** Present your model systems and experimental designs, and learn how to perform nMDS, PERMANOVA, ANOSIM, and SIMPER using sample data.
-- **Week 11:** Submit your complete data files to Canvas and analyse your report data.
-- **Week 12:** Carry out additional analyses, summarise your findings, and review guidance on describing multivariate methods and results in your report.
+- **Week 11:** Analyse your report data.
+- **Week 12:** Submit your complete data files to Canvas by **10:00 am Sydney time (AEDT)** on your practical day (**Tuesday 27, Wednesday 28 or Friday 30 October 2026**). Carry out additional analyses, summarise your findings, and review guidance on describing multivariate methods and results in your report.
 - **Week 13:** Further support for additional analyses and any remaining work.
