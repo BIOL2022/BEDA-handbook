@@ -4,6 +4,12 @@ title: "Updates"
 
 This page records changes to the handbook that may be useful to students. Small corrections to spelling or formatting are not listed.
 
+#### 19 Oct 2026
+
+- **New:** The [Week 11 practical](module03/304-week11.qmd) is now available.
+- **FIX:** The [Report 2 group dataset](assessments/assessment-report-2.qmd) deadline has been extended by one week. It is now due at 10:00 am on the day of your Week 12 practical. The individual report deadline is still 6 November at 23:59.
+- **FIX:** The [weekly schedule](index.qmd#weekly-content) now shows the extension and links directly to both Report 2 submissions in Canvas.
+
 #### 22 Sep 2026
 
 - **New:** The Module 3 practicals now teach multivariate analyses (nMDS, cluster analysis, ANOSIM, PERMANOVA, PERMDISP and SIMPER) in jamovi using the MISO module, with a new ant-community dataset for the Week 10 practical.
