@@ -16,14 +16,12 @@ title: "Week 12 — Module 3 revision and exam revision Part 1"
 :::
 
 ::: {.lecture-actions}
-**Wednesday: Exam revision Part 1**
+**Wednesday: Exam revision Part 1** [<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open slides](https://biol2022.github.io/2026-lectures/lectures/L12b-exam-revision/index.html){.lecture-action target="_blank" rel="noopener noreferrer"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF](https://biol2022.github.io/2026-lectures/lectures/L12b-exam-revision/slides.pdf){.lecture-action target="_blank" rel="noopener noreferrer"} [<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF (solarised)](https://biol2022.github.io/2026-lectures/lectures/L12b-exam-revision/slides-solarized.pdf){.lecture-action target="_blank" rel="noopener noreferrer"}
 :::
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="lecture-deck-preview">
-  <span class="lecture-deck-title">Materials will appear in Canvas</span>
-</div>
+<iframe class="lecture-preview" src="https://biol2022.github.io/2026-lectures/lectures/L12b-exam-revision/index.html" title="Preview of Week 12 Wednesday exam revision slides" loading="lazy" allowfullscreen></iframe>
 ```
 :::
 
