@@ -224,6 +224,8 @@ As a group, you will:
 - Design a **sampling strategy** that allows you to collect the required data.
 - **Assign a data coordinator within your group to manage dataset preparation.**
 
+Plan how your hypotheses will be tested using the [Report 2 required analysis checklist](../assessments/assessment-report-2.qmd#required-analysis-checklist). Your analyses should address assemblage patterns, differences in habitat PC scores among groups, and relationships between habitat PC scores and selected species measures. The numbered hypotheses in the completed car-park proforma are examples; use hypotheses that fit your own model system. Check with your demonstrator that your proposed design supports the required analyses, particularly if a two-factor design is not feasible.
+
 ### Project-planning downloads
 
 - [Download the blank project-planning proforma (Word)](assets/w09-project-planning-template.docx){download="w09-project-planning-template.docx"} and type your group's plan into the document.

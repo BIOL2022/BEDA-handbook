@@ -804,8 +804,8 @@ weekly_practical_resource_items <- function(entry) {
   }
   if (identical(entry$week, 13L)) {
     return(list(list(
-      label = "Exam revision practical",
-      url = NULL
+      label = practical$title,
+      url = destination
     )))
   }
 

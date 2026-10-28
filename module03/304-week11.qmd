@@ -23,7 +23,7 @@ This module introduces widely used techniques for analysing multivariate biologi
 For this practical you will:
 
 - Analyse and interpret your own group data using the multivariate techniques covered in the [week 9 practical](302-week09.qmd) (**PCA**) and the [week 10 practical](303-week10.qmd) (**nMDS**, **PERMANOVA** and **SIMPER**, where appropriate).
-- Perform additional univariate analyses (**regression**, **ANOVA**) to test further hypotheses using your PCA results.
+- Test differences in habitat **PC1 and PC2 scores** using **two-way ANOVA**, and examine relationships between habitat PC scores and selected species measures using **linear regression**. Follow the [Report 2 required analysis checklist](../assessments/assessment-report-2.qmd#required-analysis-checklist), and check with your demonstrator if your approved design needs a different approach.
 
 ## What you should have at the end of the practical
 
@@ -31,17 +31,22 @@ By the end of the practical, you should have saved the following outputs for you
 
 ### Community structure analyses
 
-- An **nMDS** ordination, saved as a suitable image file
-- **PERMANOVA** results, in an rtf/doc file
-- **SIMPER** results, if justified for your data
+- An **nMDS plot**, including the **stress value**
+- A **PERMANOVA table**
+- A **SIMPER table**, where appropriate
 
 ### PCA outputs
 
-- A file with your jamovi or R output
+- PCA **eigenvalues** and a **scree plot**
+- A **loadings table**, clearly stating whether the loadings are rotated or unrotated
+- Saved **PC scores for each sample** for use in the analyses below
 
 ### Univariate tests using your PCA results
 
-- A file with your jamovi or R output containing **regression** and/or **ANOVA** results, testing hypotheses using your newly derived PCs
+- Separate **two-way ANOVA tables for PC1 and PC2 scores**, with **boxplots** showing the scores across the factor combinations
+- **Scatterplots and linear regression results** relating habitat PC scores to selected species measures, such as abundance, richness or Simpson's diversity
+
+Identify the response and explanatory variables for each model and relate each analysis to your study hypotheses. If your approved study design does not support a two-way ANOVA, or you are unsure which PCs or regression models to use, discuss the appropriate analysis with your demonstrator or the unit coordinator.
 
 ## Your own data
 

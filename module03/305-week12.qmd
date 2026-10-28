@@ -23,16 +23,20 @@ This module introduces widely used techniques for analysing multivariate biologi
 For these practicals you will continue working on your own group data, with demonstrators on hand to help:
 
 - **Week 12:** Carry out additional analyses, summarise your findings, and review guidance on describing multivariate methods and results in your report.
-- **Week 13:** Complete any remaining analyses and finish your report.
+- **Week 13:** Work with demonstrators on Report 2 analyses and reporting, or use the practical for exam revision. This is a scheduled practical and attendance will be recorded.
 
 ## Week 12: Additional analyses and reporting
 
-During the practical, we will be in the lab to help with any analyses that groups wish to undertake. This may involve integrating the analyses (e.g. testing the relationships between PCs and univariate measures) or tweaking (not twerking) your analyses by examining subsets of your data using the options available in jamovi.
+Use the [Report 2 required analysis checklist](../assessments/assessment-report-2.qmd#required-analysis-checklist) to identify any outstanding analyses and outputs. Demonstrators will help you analyse and interpret your data, including ANOVAs of habitat PC scores and regressions relating those scores to selected species measures, and discuss how to describe your methods and results.
 
-## Week 13: Completing remaining work
+## Week 13: Report support and exam revision
 
-Further support for additional analyses and any remaining work on your report.
+**Week 13 is a scheduled practical. Attend your allocated class and record your attendance as usual. The usual practical attendance requirement applies.**
 
-## Marking scheme
+You can work with demonstrators to finalise your Report 2 analyses and reporting, or ask questions and revise for the exam with your tutors and peers. If you have finished your report, use the practical for exam revision.
 
-Use the [Report 2 marking scheme](../assessments/assessment-report-2.qmd#marking-scheme) to check your report before submission.
+## Before submitting Report 2
+
+Check the [required analyses and outputs](../assessments/assessment-report-2.qmd#required-analysis-checklist) and [marking scheme](../assessments/assessment-report-2.qmd#marking-scheme) on the [Report 2 instructions page](../assessments/assessment-report-2.qmd), which contains the full report, presentation and submission requirements.
+
+Your report should explain how the analyses address your hypotheses, rather than simply reproduce software output. Use these practicals to resolve outstanding analyses and questions about reporting.

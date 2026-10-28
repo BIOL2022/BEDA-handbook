@@ -74,4 +74,4 @@ It calculates the percentage contribution of each variable, helping us interpret
 - **Week 10:** Present your model systems and experimental designs, and learn how to perform nMDS, PERMANOVA, ANOSIM, and SIMPER using sample data.
 - **Week 11:** Analyse your report data.
 - **Week 12:** Submit your complete data files to Canvas by **10:00 am Sydney time (AEDT)** on your practical day (**Tuesday 27, Wednesday 28 or Friday 30 October 2026**). Carry out additional analyses, summarise your findings, and review guidance on describing multivariate methods and results in your report.
-- **Week 13:** Further support for additional analyses and any remaining work.
+- **Week 13:** Attend your scheduled practical for Report 2 support or exam revision. Attendance will be recorded and the usual practical attendance requirement applies. See the [Weeks 12 and 13 practical guidance](305-week12.qmd).

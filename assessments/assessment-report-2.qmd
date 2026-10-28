@@ -26,11 +26,25 @@ Write an individual short scientific report based on your group's multivariate s
 Include a **Title**, brief **Abstract**, **Introduction**, **Materials and Methods**, **Results**, short **Discussion**, and **References** where used.
 
 - **Introduction:** state the study aim and hypotheses and briefly describe the study system. An imaginative ecological context is acceptable; a detailed real-world rationale or real examples are not required. Any references you use must be genuine and cited accurately.
-- **Materials and Methods:** describe your study design, data collection and analyses, including **nMDS and PCA**. Explain relevant variables, replication, analytical choices and software.
-- **Results:** explain the main data patterns and statistical findings, referring to your figures and tables. Include an **nMDS plot**, **ANOSIM or PERMANOVA results**, a **PCA loadings table**, and a **scree plot**. Present summary data rather than raw data, and do not use screenshots of figures or tables.
+- **Materials and Methods:** describe your study design, data collection and analyses, including **nMDS, PERMANOVA, PCA, ANOVA of PC scores and linear regression**. Describe **SIMPER** where used. Explain relevant variables, replication, analytical choices and software. For ANOVA, identify the PC scores used as responses and the factors tested. For regression, identify the species measure used as the response and the PC score or scores used as predictors.
+- **Results:** explain the main data patterns and statistical findings, referring to your figures and tables. Include the outputs in the [required analysis checklist](#required-analysis-checklist). Present summary data rather than raw data, and do not use screenshots of figures or tables.
 - **Discussion:** interpret the findings in relation to the aims and hypotheses, discuss limitations, and suggest improvements or useful future work.
 
 Use the [marking scheme](#marking-scheme) as a checklist before submission.
+
+### Required analysis checklist {#required-analysis-checklist}
+
+Include the following analyses and outputs, explaining how they address your study hypotheses:
+
+| Data | Required analyses and outputs |
+|---|---|
+| **Species (assemblage) data** | An **nMDS plot**, including the **stress value**; a **PERMANOVA table**; and a **SIMPER table**, where appropriate. |
+| **Habitat data** | PCA **eigenvalues**, a **scree plot** and a **loadings table**, clearly stating whether the loadings are rotated or unrotated. Include separate **two-way ANOVA tables for PC1 and PC2 scores**, with **boxplots** showing the scores across the factor combinations. |
+| **Species and habitat data combined** | **Scatterplots** showing relationships between habitat PC scores and selected species measures, such as **species abundance, species richness or Simpson's diversity**, with **linear regression results** for these relationships. Choose the species measure or measures to address your hypotheses and explain your choice. |
+
+Use the saved **PC scores for each sample**, rather than PCA loadings, in the ANOVAs and regressions. Explain the patterns and statistical results rather than simply attaching software output.
+
+If your approved study design does not support a two-way ANOVA, or you are unsure which PCs or regression models to use, discuss the appropriate analysis with your demonstrator or the unit coordinator before finalising your report.
 
 ### Format and page limit
 
@@ -80,7 +94,8 @@ The individual report is marked out of **100**, using the existing allocation be
 |                              | - **Sampling:** explain the sampling design and unit of replication.                                 |         |
 |                              | - **Analyses:** justify the choices; identify dependent/independent variables where applicable,      |         |
 |                              |   statistical tests and software.                                                                    |         |
-|                              | - **Required methods:** include descriptions of **nMDS and PCA**.                                    |         |
+|                              | - **Required methods:** describe **nMDS, PERMANOVA, PCA, ANOVA of PC scores and linear regression**; |         |
+|                              | describe **SIMPER** where used. Identify the responses, predictors and factors for your models.      |         |
 +------------------------------+------------------------------------------------------------------------------------------------------+---------+
 | **Results**                  | - **Findings:** clearly report data patterns and statistical results, referring to tables and        | 40      |
 |                              |   figures.                                                                                           |         |
@@ -89,8 +104,12 @@ The individual report is marked out of **100**, using the existing allocation be
 |                              |   patterns.                                                                                          |         |
 |                              | - **Sample sizes and errors:** state sample sizes and identify errors as standard errors or standard |         |
 |                              |   deviations where relevant; format consistently.                                                    |         |
-|                              | - **Required outputs:** an **nMDS plot**, **ANOSIM or PERMANOVA results**, a **PCA loadings table**, |         |
-|                              |   and a **scree plot**, with statistical results presented in text, figures or tables.               |         |
+|                              | - **Species data:** an **nMDS plot with stress**, a **PERMANOVA table** and **SIMPER** where         |         |
+|                              | appropriate.                                                                                         |         |
+|                              | - **Habitat data:** **eigenvalues**, **scree plot**, labelled rotated/unrotated **loadings table**,  |         |
+|                              | separate **two-way ANOVA tables for PC1 and PC2 scores**, and **boxplots** by factor combinations.   |         |
+|                              | - **Combined data:** **scatterplots and linear regression results** relating habitat PC scores to    |         |
+|                              | selected species measures. See the required analysis checklist for study-design guidance.            |         |
 |                              | - **Figures and tables:** do not use screenshots.                                                    |         |
 +------------------------------+------------------------------------------------------------------------------------------------------+---------+
 | **Discussion**               | - **Interpretation:** explain the main findings and conclusions in relation to the original aims and | 10      |
