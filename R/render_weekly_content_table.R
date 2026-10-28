@@ -822,6 +822,14 @@ weekly_practical_resources_html <- function(entry) {
       } else {
         weekly_html_link(item$url, item$label)
       }
+      if (identical(entry$week, 13L) && !is.null(entry$practical$description)) {
+        content <- paste0(
+          content,
+          ' <strong class="text-danger">',
+          escape_html_text(entry$practical$description),
+          '</strong>'
+        )
+      }
       if (!is.null(entry$practical) && entry$week %in% c(1:3, 9:13)) {
         content <- paste0(
           '<span class="bi bi-flask me-2" aria-hidden="true"></span>',

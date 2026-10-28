@@ -45,5 +45,5 @@ week,section,position,title,url,description,show_on_schedule,note_type,note_weig
 12,extra,2,Report 2 instructions and marking scheme,assessments/assessment-report-2.qmd,,TRUE,notice,
 12,extra,3,Analysis and plotting resources,cheatsheets.qmd,,TRUE,notice,
 13,lecture,1,Exam revision,,You will review the course's experimental-design and modelling concepts for the final exam.,TRUE,,
-13,practical,1,Report 2 support and exam revision,module03/305-week12.qmd,Attendance will be recorded; the usual practical attendance requirement applies.,TRUE,,
+13,practical,1,Report 2 support and exam revision,module03/305-week12.qmd,⚠️ Important: Practical 13 is still compulsory.,TRUE,,
 13,extra,1,Report 2 individual report due Friday 6 November at 23:59,canvas:/assignments/696333,,TRUE,assessment,15
