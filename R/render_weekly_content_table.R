@@ -804,7 +804,7 @@ weekly_practical_resource_items <- function(entry) {
   }
   if (identical(entry$week, 13L)) {
     return(list(list(
-      label = practical$title,
+      label = paste("Practical", entry$week),
       url = destination
     )))
   }
