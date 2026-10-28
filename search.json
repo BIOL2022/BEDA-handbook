@@ -1092,6 +1092,41 @@
     "text": "Example data sheets\n\n\n\nExample jamovi-ready data sheet layout for PCA.\n\n\n\n\n\nExample jamovi-ready community data sheet layout for miso analyses."
   },
   {
+    "objectID": "module03/305-week12.html",
+    "href": "module03/305-week12.html",
+    "title": " Weeks 12 and 13: Multivariate methods in biology (continued)",
+    "section": "",
+    "text": "Module 3 objectives\nThis module introduces widely used techniques for analysing multivariate biological data. By the end of this module, you will be able to:\n\nUnderstand the principles underlying Principal Components Analysis (PCA) and Non-metric Multidimensional Scaling (nMDS)\nBe familiar with the concepts behind multivariate hypothesis testing using permutational techniques such as ANOSIM and PERMANOVA\nBe able to plan and conduct experiments that test multivariate hypotheses\nKnow how to carry out these analyses using relevant statistical software\nBe able to interpret, present, and report your findings clearly and effectively"
+  },
+  {
+    "objectID": "module03/305-week12.html#introduction",
+    "href": "module03/305-week12.html#introduction",
+    "title": " Weeks 12 and 13: Multivariate methods in biology (continued)",
+    "section": "Introduction",
+    "text": "Introduction\nFor these practicals you will continue working on your own group data, with demonstrators on hand to help:\n\nWeek 12: Carry out additional analyses, summarise your findings, and review guidance on describing multivariate methods and results in your report.\nWeek 13: Complete any remaining analyses and finish your report."
+  },
+  {
+    "objectID": "module03/305-week12.html#week-12-additional-analyses-and-reporting",
+    "href": "module03/305-week12.html#week-12-additional-analyses-and-reporting",
+    "title": " Weeks 12 and 13: Multivariate methods in biology (continued)",
+    "section": "Week 12: Additional analyses and reporting",
+    "text": "Week 12: Additional analyses and reporting\nDuring the practical, we will be in the lab to help with any analyses that groups wish to undertake. This may involve integrating the analyses (e.g. testing the relationships between PCs and univariate measures) or tweaking (not twerking) your analyses by examining subsets of your data using the options available in jamovi."
+  },
+  {
+    "objectID": "module03/305-week12.html#week-13-completing-remaining-work",
+    "href": "module03/305-week12.html#week-13-completing-remaining-work",
+    "title": " Weeks 12 and 13: Multivariate methods in biology (continued)",
+    "section": "Week 13: Completing remaining work",
+    "text": "Week 13: Completing remaining work\nFurther support for additional analyses and any remaining work on your report."
+  },
+  {
+    "objectID": "module03/305-week12.html#marking-scheme",
+    "href": "module03/305-week12.html#marking-scheme",
+    "title": " Weeks 12 and 13: Multivariate methods in biology (continued)",
+    "section": "Marking scheme",
+    "text": "Marking scheme\nUse the Report 2 marking scheme to check your report before submission."
+  },
+  {
     "objectID": "prerequisites.html",
     "href": "prerequisites.html",
     "title": "Am I ready for BEDA?",
