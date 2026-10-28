@@ -40,7 +40,7 @@ week,section,position,title,url,description,show_on_schedule,note_type,note_weig
 11,practical,1,Report 2 data analysis,module03/304-week11.qmd,,TRUE,,
 11,extra,1,Report 2 group dataset deadline has been extended by one week.,,,TRUE,notice,
 12,lecture,1,Module 3 revision and exam revision Part 1,lectures/L12/index.qmd,"Tuesday: Module 3 revision. Wednesday: exam revision (Part 1).",TRUE,,
-12,practical,1,Report 2 support,,,TRUE,,
+12,practical,1,Report 2 support,module03/305-week12.qmd,,TRUE,,
 12,extra,1,Report 2 group dataset due at 10:00 on your practical day,canvas:/assignments/696332,,TRUE,assessment,5
 13,lecture,1,Exam revision,,You will review the course's experimental-design and modelling concepts for the final exam.,TRUE,,
 13,practical,1,Feedback and discussion practical,,,TRUE,,
