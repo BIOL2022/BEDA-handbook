@@ -44,9 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-17141385aa4b0bf0ecbdc929bff632d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-6b47e39b6bee3225cb7c93008a39cf07.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-17141385aa4b0bf0ecbdc929bff632d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4eea5fe13b18bb252840e22df3d02075.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-f25804c4adb27d6791738e69470a5054.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4eea5fe13b18bb252840e22df3d02075.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -547,6 +547,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#individual-report-15" id="toc-individual-report-15" class="nav-link" data-scroll-target="#individual-report-15">Individual report (15%)</a>
   <ul class="collapse">
   <li><a href="#required-report-content" id="toc-required-report-content" class="nav-link" data-scroll-target="#required-report-content">Required report content</a></li>
+  <li><a href="#required-analysis-checklist" id="toc-required-analysis-checklist" class="nav-link" data-scroll-target="#required-analysis-checklist">Required analysis checklist</a></li>
   <li><a href="#format-and-page-limit" id="toc-format-and-page-limit" class="nav-link" data-scroll-target="#format-and-page-limit">Format and page limit</a></li>
   <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
   <li><a href="#academic-integrity-and-ai-use" id="toc-academic-integrity-and-ai-use" class="nav-link" data-scroll-target="#academic-integrity-and-ai-use">Academic integrity and AI use</a></li>
@@ -601,11 +602,43 @@ ul.task-list li input[type="checkbox"] {
 <p>Include a <strong>Title</strong>, brief <strong>Abstract</strong>, <strong>Introduction</strong>, <strong>Materials and Methods</strong>, <strong>Results</strong>, short <strong>Discussion</strong>, and <strong>References</strong> where used.</p>
 <ul>
 <li><strong>Introduction:</strong> state the study aim and hypotheses and briefly describe the study system. An imaginative ecological context is acceptable; a detailed real-world rationale or real examples are not required. Any references you use must be genuine and cited accurately.</li>
-<li><strong>Materials and Methods:</strong> describe your study design, data collection and analyses, including <strong>nMDS and PCA</strong>. Explain relevant variables, replication, analytical choices and software.</li>
-<li><strong>Results:</strong> explain the main data patterns and statistical findings, referring to your figures and tables. Include an <strong>nMDS plot</strong>, <strong>ANOSIM or PERMANOVA results</strong>, a <strong>PCA loadings table</strong>, and a <strong>scree plot</strong>. Present summary data rather than raw data, and do not use screenshots of figures or tables.</li>
+<li><strong>Materials and Methods:</strong> describe your study design, data collection and analyses, including <strong>nMDS, PERMANOVA, PCA, ANOVA of PC scores and linear regression</strong>. Describe <strong>SIMPER</strong> where used. Explain relevant variables, replication, analytical choices and software. For ANOVA, identify the PC scores used as responses and the factors tested. For regression, identify the species measure used as the response and the PC score or scores used as predictors.</li>
+<li><strong>Results:</strong> explain the main data patterns and statistical findings, referring to your figures and tables. Include the outputs in the <a href="#required-analysis-checklist">required analysis checklist</a>. Present summary data rather than raw data, and do not use screenshots of figures or tables.</li>
 <li><strong>Discussion:</strong> interpret the findings in relation to the aims and hypotheses, discuss limitations, and suggest improvements or useful future work.</li>
 </ul>
 <p>Use the <a href="#marking-scheme">marking scheme</a> as a checklist before submission.</p>
+</section>
+<section id="required-analysis-checklist" class="level3">
+<h3 class="anchored" data-anchor-id="required-analysis-checklist">Required analysis checklist</h3>
+<p>Include the following analyses and outputs, explaining how they address your study hypotheses:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Data</th>
+<th>Required analyses and outputs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Species (assemblage) data</strong></td>
+<td>An <strong>nMDS plot</strong>, including the <strong>stress value</strong>; a <strong>PERMANOVA table</strong>; and a <strong>SIMPER table</strong>, where appropriate.</td>
+</tr>
+<tr class="even">
+<td><strong>Habitat data</strong></td>
+<td>PCA <strong>eigenvalues</strong>, a <strong>scree plot</strong> and a <strong>loadings table</strong>, clearly stating whether the loadings are rotated or unrotated. Include separate <strong>two-way ANOVA tables for PC1 and PC2 scores</strong>, with <strong>boxplots</strong> showing the scores across the factor combinations.</td>
+</tr>
+<tr class="odd">
+<td><strong>Species and habitat data combined</strong></td>
+<td><strong>Scatterplots</strong> showing relationships between habitat PC scores and selected species measures, such as <strong>species abundance, species richness or Simpson’s diversity</strong>, with <strong>linear regression results</strong> for these relationships. Choose the species measure or measures to address your hypotheses and explain your choice.</td>
+</tr>
+</tbody>
+</table>
+<p>Use the saved <strong>PC scores for each sample</strong>, rather than PCA loadings, in the ANOVAs and regressions. Explain the patterns and statistical results rather than simply attaching software output.</p>
+<p>If your approved study design does not support a two-way ANOVA, or you are unsure which PCs or regression models to use, discuss the appropriate analysis with your demonstrator or the unit coordinator before finalising your report.</p>
 </section>
 <section id="format-and-page-limit" class="level3">
 <h3 class="anchored" data-anchor-id="format-and-page-limit">Format and page limit</h3>
@@ -671,7 +704,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Data:</strong> describe the variables recorded and how they were recorded.</li>
 <li><strong>Sampling:</strong> explain the sampling design and unit of replication.</li>
 <li><strong>Analyses:</strong> justify the choices; identify dependent/independent variables where applicable, statistical tests and software.</li>
-<li><strong>Required methods:</strong> include descriptions of <strong>nMDS and PCA</strong>.</li>
+<li><strong>Required methods:</strong> describe <strong>nMDS, PERMANOVA, PCA, ANOVA of PC scores and linear regression</strong>; describe <strong>SIMPER</strong> where used. Identify the responses, predictors and factors for your models.</li>
 </ul></td>
 <td>30</td>
 </tr>
@@ -682,7 +715,9 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Analysis choices:</strong> demonstrate thought in the choice of analyses.</li>
 <li><strong>Presentation:</strong> summarise rather than reproduce raw data; use tables for detail and figures for patterns.</li>
 <li><strong>Sample sizes and errors:</strong> state sample sizes and identify errors as standard errors or standard deviations where relevant; format consistently.</li>
-<li><strong>Required outputs:</strong> an <strong>nMDS plot</strong>, <strong>ANOSIM or PERMANOVA results</strong>, a <strong>PCA loadings table</strong>, and a <strong>scree plot</strong>, with statistical results presented in text, figures or tables.</li>
+<li><strong>Species data:</strong> an <strong>nMDS plot with stress</strong>, a <strong>PERMANOVA table</strong> and <strong>SIMPER</strong> where appropriate.</li>
+<li><strong>Habitat data:</strong> <strong>eigenvalues</strong>, <strong>scree plot</strong>, labelled rotated/unrotated <strong>loadings table</strong>, separate <strong>two-way ANOVA tables for PC1 and PC2 scores</strong>, and <strong>boxplots</strong> by factor combinations.</li>
+<li><strong>Combined data:</strong> <strong>scatterplots and linear regression results</strong> relating habitat PC scores to selected species measures. See the required analysis checklist for study-design guidance.</li>
 <li><strong>Figures and tables:</strong> do not use screenshots.</li>
 </ul></td>
 <td>40</td>

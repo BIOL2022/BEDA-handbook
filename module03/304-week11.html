@@ -44,9 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-17141385aa4b0bf0ecbdc929bff632d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-6b47e39b6bee3225cb7c93008a39cf07.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-17141385aa4b0bf0ecbdc929bff632d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4eea5fe13b18bb252840e22df3d02075.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-f25804c4adb27d6791738e69470a5054.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4eea5fe13b18bb252840e22df3d02075.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -591,7 +591,7 @@ ul.task-list li input[type="checkbox"] {
 <p>For this practical you will:</p>
 <ul>
 <li>Analyse and interpret your own group data using the multivariate techniques covered in the <a href="../module03/302-week09.html">week 9 practical</a> (<strong>PCA</strong>) and the <a href="../module03/303-week10.html">week 10 practical</a> (<strong>nMDS</strong>, <strong>PERMANOVA</strong> and <strong>SIMPER</strong>, where appropriate).</li>
-<li>Perform additional univariate analyses (<strong>regression</strong>, <strong>ANOVA</strong>) to test further hypotheses using your PCA results.</li>
+<li>Test differences in habitat <strong>PC1 and PC2 scores</strong> using <strong>two-way ANOVA</strong>, and examine relationships between habitat PC scores and selected species measures using <strong>linear regression</strong>. Follow the <a href="../assessments/assessment-report-2.html#required-analysis-checklist">Report 2 required analysis checklist</a>, and check with your demonstrator if your approved design needs a different approach.</li>
 </ul>
 </section>
 <section id="what-you-should-have-at-the-end-of-the-practical" class="level2">
@@ -600,22 +600,26 @@ ul.task-list li input[type="checkbox"] {
 <section id="community-structure-analyses" class="level3">
 <h3 class="anchored" data-anchor-id="community-structure-analyses">Community structure analyses</h3>
 <ul>
-<li>An <strong>nMDS</strong> ordination, saved as a suitable image file</li>
-<li><strong>PERMANOVA</strong> results, in an rtf/doc file</li>
-<li><strong>SIMPER</strong> results, if justified for your data</li>
+<li>An <strong>nMDS plot</strong>, including the <strong>stress value</strong></li>
+<li>A <strong>PERMANOVA table</strong></li>
+<li>A <strong>SIMPER table</strong>, where appropriate</li>
 </ul>
 </section>
 <section id="pca-outputs" class="level3">
 <h3 class="anchored" data-anchor-id="pca-outputs">PCA outputs</h3>
 <ul>
-<li>A file with your jamovi or R output</li>
+<li>PCA <strong>eigenvalues</strong> and a <strong>scree plot</strong></li>
+<li>A <strong>loadings table</strong>, clearly stating whether the loadings are rotated or unrotated</li>
+<li>Saved <strong>PC scores for each sample</strong> for use in the analyses below</li>
 </ul>
 </section>
 <section id="univariate-tests-using-your-pca-results" class="level3">
 <h3 class="anchored" data-anchor-id="univariate-tests-using-your-pca-results">Univariate tests using your PCA results</h3>
 <ul>
-<li>A file with your jamovi or R output containing <strong>regression</strong> and/or <strong>ANOVA</strong> results, testing hypotheses using your newly derived PCs</li>
+<li>Separate <strong>two-way ANOVA tables for PC1 and PC2 scores</strong>, with <strong>boxplots</strong> showing the scores across the factor combinations</li>
+<li><strong>Scatterplots and linear regression results</strong> relating habitat PC scores to selected species measures, such as abundance, richness or Simpson’s diversity</li>
 </ul>
+<p>Identify the response and explanatory variables for each model and relate each analysis to your study hypotheses. If your approved study design does not support a two-way ANOVA, or you are unsure which PCs or regression models to use, discuss the appropriate analysis with your demonstrator or the unit coordinator.</p>
 </section>
 </section>
 <section id="your-own-data" class="level2">
